@@ -1,4 +1,4 @@
-body{
+body {
   background-color: antiquewhite;
   font-family: "Arial";
   user-select: none;
@@ -10,15 +10,16 @@ body{
   display: grid;
   flex-direction: row;
   outline: 1px black;
-  gap:1em;
+  gap: 1em;
 }
 
-.six-by-four{
+.six-by-four {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.nine-by-six{
+.nine-by-six {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5em
 }
 
 .item:hover {
@@ -27,6 +28,7 @@ body{
 
 .item {
   font-size: large;
+  font-weight: bold;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,10 +38,17 @@ body{
   padding: 3px;
 }
 
-.icon{
+.icon {
   object-fit: contain;
   max-width: 8vw;
   max-height: 8vw;
+  pointer-events: none;
+}
+
+.icon-small {
+  object-fit: contain;
+  max-width: 4vw;
+  max-height: 4vw;
   pointer-events: none;
 }
 
@@ -61,22 +70,22 @@ body{
   max-width: 50px;
 }
 
-.green{
+.green {
   background-color: rgb(188, 248, 188);
 }
 
-.blue{
+.blue {
   background-color: rgb(167, 237, 237);
 }
 
-.black{
+.black {
   background-color: gainsboro;
 }
 
-.red{
+.red {
   background-color: rgb(240, 111, 111);
 }
 
-.pink{
+.pink {
   background-color: pink;
 }

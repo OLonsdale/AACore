@@ -53,7 +53,21 @@ async function playSentence(i = 0, recurse = false){
   }
   sentence[i].play()
   //seconds -> ms -> plus gap between words
-  let timeout = sentence[i].duration * 1000
+  let timeout = sentence[i].duration * 1000 + 100
   i++
   setTimeout(() => {playSentence(i, true)}, timeout)
 }
+
+document.getElementById("boardOne").addEventListener("click", ev => {
+  console.log("here")
+  if(!pageLocked){
+    window.location = "./index.html"
+  }
+})
+
+document.getElementById("boardTwo").addEventListener("click", ev => {
+  console.log("here")
+  if(!pageLocked){
+    window.location = "./board2.html"
+  }
+})

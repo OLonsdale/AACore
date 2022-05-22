@@ -1,125 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AACore - Board 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./resouces/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AACore - Board 1</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="shortcut icon" href="./resouces/favicon.png" type="image/x-icon" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <button id="boardOne" class="navButton">Grid 1</button>
+        <button id="boardTwo" class="navButton">Grid 2</button>
+        <button id="lockButton" class="lockButton">
+          <img class="lockIcon" src="./resouces/unlocked.png" />
+        </button>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <button class="navButton">Grid 1</button>
-      <button class="navButton">Grid 2</button>
-      <button id="lockButton" class="lockButton"><img class="lockIcon" src="./resouces/unlocked.png"></button>
-    </nav>
-  </header>
+    <div class="container">
+      <h1>AACore Board 1</h1>
 
-  <input id="sentenceDisplay" type="text" disabled>
-  <button id="playButton">Play</button>
-  <button id="clearButton">Clear</button>
+      <div>
+        <input id="sentenceDisplay" type="text" disabled />
+        <button id="playButton">Play</button>
+        <button id="clearButton">Clear</button>
+      </div>
 
-  <div class="container">
-    <h1>AACore Board 1</h1>
+      <br />
 
-    <span class="grid six-by-four">
+      <span class="grid six-by-four">
+        <audio id="wantClip" src="./resouces/clips/want.mp3"></audio>
+        <button id="want" class="item green" aria-label="want">
+          want<img class="icon" src="./resouces/icons/want.png" />
+        </button>
 
-      <audio id="wantClip" src="./resouces/clips/want.mp3"></audio>
-      <button id="want" class="item green" aria-label="want">
-        want<img class="icon" src="./resouces/icons/want.png" />
-      </button>
+        <audio id="moreClip" src="./resouces/clips/more.mp3"></audio>
+        <button id="more" class="item blue" aria-label="more">
+          more<img class="icon" src="./resouces/icons/more.png" />
+        </button>
 
-      <audio id="moreClip" src="./resouces/clips/more.mp3"></audio>
-      <button id="more" class="item blue" aria-label="more">
-        more<img class="icon" src="./resouces/icons/more.png" />
-      </button>
+        <audio id="notClip" src="./resouces/clips/not.mp3"></audio>
+        <button id="not" class="item black" aria-label="not">
+          not<img class="icon" src="./resouces/icons/not.png" />
+        </button>
 
-      <audio id="notClip" src="./resouces/clips/not.mp3"></audio>
-      <button id="not" class="item black" aria-label="not">
-        not<img class="icon" src="./resouces/icons/not.png" />
-      </button>
+        <audio id="goClip" src="./resouces/clips/go.mp3"></audio>
+        <button id="go" class="item green" aria-label="go">
+          go<img class="icon" src="./resouces/icons/go.png" />
+        </button>
 
-      <audio id="goClip" src="./resouces/clips/go.mp3"></audio>
-      <button id="go" class="item green" aria-label="go">
-        go<img class="icon" src="./resouces/icons/go.png" />
-      </button>
+        <audio id="helpClip" src="./resouces/clips/help.mp3"></audio>
+        <button id="help" class="item green" aria-label="help">
+          help<img class="icon" src="./resouces/icons/help.png" />
+        </button>
 
-      <audio id="helpClip" src="./resouces/clips/help.mp3"></audio>
-      <button id="help" class="item green" aria-label="help">
-        help<img class="icon" src="./resouces/icons/help.png" />
-      </button>
+        <audio id="lookClip" src="./resouces/clips/look.mp3"></audio>
+        <button id="look" class="item green" aria-label="look">
+          look<img class="icon" src="./resouces/icons/look.png" />
+        </button>
 
-      <audio id="lookClip" src="./resouces/clips/look.mp3"></audio>
-      <button id="look" class="item green" aria-label="look">
-        look<img class="icon" src="./resouces/icons/look.png" />
-      </button>
+        <audio id="playClip" src="./resouces/clips/play.mp3"></audio>
+        <button id="play" class="item green" aria-label="play">
+          play<img class="icon" src="./resouces/icons/play.png" />
+        </button>
 
-      <audio id="playClip" src="./resouces/clips/play.mp3"></audio>
-      <button id="play" class="item green" aria-label="play">
-        play<img class="icon" src="./resouces/icons/play.png" />
-      </button>
+        <audio id="sameClip" src="./resouces/clips/same.mp3"></audio>
+        <button id="same" class="item blue" aria-label="same">
+          same<img class="icon" src="./resouces/icons/same.png" />
+        </button>
 
-      <audio id="sameClip" src="./resouces/clips/same.mp3"></audio>
-      <button id="same" class="item blue" aria-label="same">
-        same<img class="icon" src="./resouces/icons/same.png" />
-      </button>
+        <audio id="differentClip" src="./resouces/clips/different.mp3"></audio>
+        <button id="different" class="item blue" aria-label="different">
+          different<img class="icon" src="./resouces/icons/different.png" />
+        </button>
 
-      <audio id="differentClip" src="./resouces/clips/different.mp3"></audio>
-      <button id="different" class="item blue" aria-label="different">
-        different<img class="icon" src="./resouces/icons/different.png" />
-      </button>
+        <audio id="whatClip" src="./resouces/clips/what.mp3"></audio>
+        <button id="what" class="item pink" aria-label="what">
+          what<img class="icon" src="./resouces/icons/what.png" />
+        </button>
 
-      <audio id="whatClip" src="./resouces/clips/what.mp3"></audio>
-      <button id="what" class="item pink" aria-label="what">
-        what<img class="icon" src="./resouces/icons/what.png" />
-      </button>
+        <audio id="likeClip" src="./resouces/clips/like.mp3"></audio>
+        <button id="like" class="item green" aria-label="like">
+          like<img class="icon" src="./resouces/icons/like.png" />
+        </button>
 
-      <audio id="likeClip" src="./resouces/clips/like.mp3"></audio>
-      <button id="like" class="item green" aria-label="like">
-        like<img class="icon" src="./resouces/icons/like.png" />
-      </button>
+        <audio id="stopClip" src="./resouces/clips/stop.mp3"></audio>
+        <button id="stop" class="item green" aria-label="stop">
+          stop<img class="icon" src="./resouces/icons/stop.png" />
+        </button>
 
-      <audio id="stopClip" src="./resouces/clips/stop.mp3"></audio>
-      <button id="stop" class="item green" aria-label="stop">
-        stop<img class="icon" src="./resouces/icons/stop.png" />
-      </button>
+        <audio id="drinkClip" src="./resouces/clips/drink.mp3"></audio>
+        <button id="drink" class="item green" aria-label="drink">
+          drink<img class="icon" src="./resouces/icons/drink.png" />
+        </button>
 
-      <audio id="drinkClip" src="./resouces/clips/drink.mp3"></audio>
-      <button id="drink" class="item green" aria-label="drink">
-        drink<img class="icon" src="./resouces/icons/drink.png" />
-      </button>
+        <audio id="eatClip" src="./resouces/clips/eat.mp3"></audio>
+        <button id="eat" class="item green" aria-label="eat">
+          eat<img class="icon" src="./resouces/icons/eat.png" />
+        </button>
 
-      <audio id="eatClip" src="./resouces/clips/eat.mp3"></audio>
-      <button id="eat" class="item green" aria-label="eat">
-        eat<img class="icon" src="./resouces/icons/eat.png" />
-      </button>
+        <audio id="turnClip" src="./resouces/clips/turn.mp3"></audio>
+        <button id="turn" class="item black" aria-label="turn">
+          turn<img class="icon" src="./resouces/icons/turn.png" />
+        </button>
 
-      <audio id="turnClip" src="./resouces/clips/turn.mp3"></audio>
-      <button id="turn" class="item black" aria-label="turn">
-        turn<img class="icon" src="./resouces/icons/turn.png" />
-      </button>
+        <audio id="upClip" src="./resouces/clips/up.mp3"></audio>
+        <button id="up" class="item red" aria-label="up">
+          up<img class="icon" src="./resouces/icons/up.png" />
+        </button>
 
-      <audio id="upClip" src="./resouces/clips/up.mp3"></audio>
-      <button id="up" class="item red" aria-label="up">
-        up<img class="icon" src="./resouces/icons/up.png" />
-      </button>
+        <audio id="downClip" src="./resouces/clips/down.mp3"></audio>
+        <button id="down" class="item red" aria-label="down">
+          down<img class="icon" src="./resouces/icons/down.png" />
+        </button>
 
-      <audio id="downClip" src="./resouces/clips/down.mp3"></audio>
-      <button id="down" class="item red" aria-label="down">
-        down<img class="icon" src="./resouces/icons/down.png" />
-      </button>
-
-      <audio id="finishClip" src="./resouces/clips/finish.mp3"></audio>
-      <button id="finish" class="item green" aria-label="finish">
-        finish<img class="icon" src="./resouces/icons/finish.png" />
-      </button>
-    </span>
-  </div>
-  <script src="scripts.js"></script>
-</body>
-
+        <audio id="finishClip" src="./resouces/clips/finish.mp3"></audio>
+        <button id="finish" class="item green" aria-label="finish">
+          finish<img class="icon" src="./resouces/icons/finish.png" />
+        </button>
+      </span>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
 </html>
