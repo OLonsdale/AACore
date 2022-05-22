@@ -31,7 +31,6 @@ lockButton.addEventListener("click",ev => {
 })
 
 document.getElementById("clearButton").addEventListener("click", ev=> {
-  if(lockSentence) return
   sentence = []
   sentenceText = []
   sentenceDisplay.value = sentenceText.join(" ")
