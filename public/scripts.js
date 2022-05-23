@@ -26,7 +26,6 @@ let boards = [
       ["he","yellow"],  ["eat","green"],  ["drink","green"], ["turn","green"],    ["up","red"],     ["down","red"],   ["finish","green"], ["who","pink"],   ["on","red"],
       ["she","yellow"], ["do","green"],   ["loud","blue"],   ["quiet","blue"],    ["fast","blue"],  ["slow","blue"],  ["funny","blue"],   ["talk","green"], ["off","red"],
       ["it","yellow"],  ["put","green"],  ["make","green"],  ["feel","green"],    ["think","green"],["is","green"],   ["close","green"],  ["open","green"], ["here","grey"],
-      ["here","grey"],
     ]
   },
   { // TOYS
