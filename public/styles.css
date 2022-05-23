@@ -2,10 +2,11 @@ body {
   background-color: antiquewhite;
   font-family: "Arial";
   user-select: none;
+  overflow: hidden;
 }
 
 .grid {
-  width: 90vw;
+  max-width: 80%;
   justify-content: center;
   display: grid;
   flex-direction: row;
@@ -13,17 +14,18 @@ body {
   gap: 1em;
 }
 
-.six-by-four {
+.six-cols {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.nine-by-six {
+.nine-cols {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0.5em
 }
 
 .item:hover {
   filter: brightness(90%);
+  cursor: pointer;
 }
 
 .item {
@@ -31,24 +33,13 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   outline: 1px black;
-  background-color: burlywood;
-  gap: 5px;
-  padding: 3px;
 }
 
 .icon {
-  object-fit: contain;
-  max-width: 8vw;
-  max-height: 8vw;
-  pointer-events: none;
-}
-
-.icon-small {
-  object-fit: contain;
-  max-width: 4vw;
-  max-height: 4vw;
+  max-width: 70%;
   pointer-events: none;
 }
 
@@ -58,16 +49,24 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 2em;
 }
 
-.lockButton {
-  background-color: transparent;
-  border: 0;
+#sentenceSection {
+  width: 90%;
+  padding-top: 0;
+  display: flex;
+  gap: 2px;
 }
 
-.lockIcon {
-  height: 30px;
-  max-width: 50px;
+#sentenceDisplay {
+  font-size: xx-large;
+  width: 90%;
+}
+
+#playButton, #clearButton {
+  height: 50px;
+  width: 50px;
 }
 
 .green {
@@ -78,12 +77,16 @@ body {
   background-color: rgb(167, 237, 237);
 }
 
-.black {
+.dark-blue {
+  background-color: darkcyan;
+}
+
+.grey {
   background-color: gainsboro;
 }
 
 .red {
-  background-color: rgb(240, 111, 111);
+  background-color: rgb(202, 77, 77);
 }
 
 .pink {
