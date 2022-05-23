@@ -50,12 +50,57 @@ let boards = [
     source: 1,
     master: false,
     tiles: [
-      ["0","grey"],["add","grey"],["minus","grey"],["divide","grey"],["times","grey"],["equals","grey"],["-","-"],["count","grey"], //one missing here for back button
+    /*[back]*/ ["0","grey"],["add","grey"],["minus","grey"],["divide","grey"],["times","grey"],["equals","grey"],["-","-"],["count","grey"],
       ["1","grey"],["2","grey"],["3","grey"],["4","grey"],["5","grey"],["6","grey"],["7","grey"],["8","grey"],["9","grey"],
       ["learn","green"],["cut","green"],["colour","green"],["paint","green"],["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],
       ["red","red"],["orange","red"],["yellow","red"],["green","red"],["blue","red"],["purple","red"],["pink","red"],["black","red"],["brown","red"],
       ["stripes","red"],["dots","red"],["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],["grey","red"],
       ["pen","grey"],["pencil","grey"],["scissors","grey"],["sharpener","grey"],["ruler","grey"],["glitter","grey"],["light","grey"],["-","-"],["dark","grey"],
+    ]
+  },
+  { // TOPIC
+    name: "board4",
+    columns: 9,
+    sub: true,
+    source: 1,
+    master: false,
+    tiles: [
+    /*[back]*/ ["animal","grey"],["pet","grey"],["zoo","grey"],["farm","grey"],["wild","grey"],["fluffy","pink"],["scally","pink"],["big","pink"], 
+      ["cat","grey"],["dog","grey"],["rabbit","grey"],["hamster","grey"],["lizard","grey"],["tortoise","grey"],["snake","grey"],["bird","grey"],["-","-"],
+      ["cow","grey"],["sheep","grey"],["chicken","grey"],["horse","grey"],["pig","grey"],["elephant","grey"],["spider","grey"],["bug","grey"],["small","pink"],
+      ["car","grey"],["bus","grey"],["train","grey"],["moterbike","grey"],["plane","grey"],["helicopter","grey"],["-","-"],["paw","grey"],["tail","grey"],
+      ["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],["claw","grey"],["-","-"],
+      ["wheel","grey"],["-","-"],["left","pink"],["-","-"],["right","pink"],["-","-"],["drive","green"],["fly","green"],["ride","green"],
+    ]
+  },
+  { // BODY
+    name: "board5",
+    columns: 9,
+    sub: true,
+    source: 1,
+    master: false,
+    tiles: [
+    /*[back]*/ ["body","grey"],["poo","grey"],["wee","grey"],["hurt","grey"],["blood","grey"],["itch","grey"],["broken","grey"],["bruise","grey"], 
+      ["-","-"],["-","-"],["nappy","grey"],["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],["-","-"],
+      ["finger","grey"],["hand","grey"],["arm","grey"],["elbow","grey"],["tummy","grey"],["private parts","grey"],["eye","grey"],["nose","grey"],["mouth","grey"],
+      ["toe","grey"],["foot","grey"],["leg","grey"],["knee","grey"],["chest","grey"],["head","grey"],["ear","grey"],["hair","grey"],["tooth","grey"],
+      ["pants","grey"],["socks","grey"],["shoe","grey"],["trousers","grey"],["shorts","grey"],["shirt","grey"],["skirt","grey"],["tights","grey"],["jumper","grey"],
+      ["-","-"],["zip","grey"],["button","grey"],["lace","grey"],["velcro","grey"],["-","-"],["-","-"],["coat","grey"],["-","-"],
+    ]
+  },
+  { // HOME
+    name: "board5",
+    columns: 9,
+    sub: true,
+    source: 1,
+    master: false,
+    tiles: [
+    /*[back]*/ ["school","blue"],["home","blue"],["park","blue"],["swimming pool","blue"],["restaurant","blue"],["shop","blue"],["outside","grey"],["weather","pink"], 
+      ["toilet","blue"],["kitchen","blue"],["living room","blue"],["bedroom","blue"],["bathroom","blue"],["dining room","blue"],["stairs","blue"],["garden","blue"],["rain","grey"],
+      ["cooker","grey"],["soap","grey"],["chair","grey"],["bed","grey"],["swim","green"],["table","grey"],["buy","green"],["window","grey"],["sun","grey"],
+      ["cook","green"],["sponge","grey"],["sofa","grey"],["sleep","green"],["bath","grey"],["cutlery","grey"],["more","grey"],["door","grey"],["cloud","grey"],
+      ["-","-"],["towel","grey"],["TV","grey"],["-","-"],["sink","grey"],["dish","grey"],["-","-"],["-","-"],["mud","grey"],
+      ["-","-"],["wash","green"],["sit","green"],["-","-"],["shower","grey"],["-","-"],["hot","pink"],["cold","pink"],["snow","grey"],
     ]
   },
 ]
