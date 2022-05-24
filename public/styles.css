@@ -39,8 +39,8 @@ body {
   flex-direction: column;
   outline: solid 1px black;
   color: black;
-  height: 120px;
-  width: 120px;
+  height: 5vw;
+  width: 5vw;
 }
 
 .linkItem {
