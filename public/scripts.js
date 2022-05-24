@@ -439,7 +439,7 @@ const boards = [{ // LITTLE
       ["toast", "grey"],
       ["cereal", "grey"],
       ["egg", "grey"],
-      ["milk", "grey"],
+      ["-", "-"],
       ["cheese", "grey"],
       ["chocolate", "grey"],
       ["biscuit", "grey"],
@@ -464,59 +464,64 @@ const boards = [{ // LITTLE
     source: 1,
     tiles: [
       /*[back]*/
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
-      ["word", "grey"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["hot", "blue"],
+      ["-", "-"],
+      ["cold", "blue"],
+      ["-", "-"],
+      ["-", "-"],
+
+      ["juice", "orange"],
+      ["water", "orange"],
+      ["milk", "orange"],
+      ["milkshake", "orange"],
+      ["fizzy", "orange"],
+      ["lemonade", "orange"],
+      ["cola", "orange"],
+      ["-", "-"],
+      ["-", "-"],
+
+      ["tea", "orange"],
+      ["coffee", "orange"],
+      ["hot chocolate", "orange"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+
+      ["fruit", "grey"],
+      ["apple", "grey"],
+      ["banana", "grey"],
+      ["orange", "grey"],
+      ["pear", "grey"],
+      ["lemon", "grey"],
+      ["grape", "grey"],
+      ["raisin", "grey"],
+      ["black current", "grey"],
+
+      ["strawberry", "grey"],
+      ["raspberry", "grey"],
+      ["blueberry", "grey"],
+      ["cherry", "grey"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
+      ["-", "-"],
     ]
   },
   { // People
@@ -680,11 +685,11 @@ function drawBoard(index) {
   //add row of links
   if (board.master) {
     board.links.forEach(link => {
-      const button = document.createElement("button")
+      const button = document.createElement("div")
       button.innerHTML = link[0]
       button.classList.add("item")
       button.classList.add("linkItem")
-      button.innerHTML = link[0] + `<img class="icon" src="./resouces/icons/${link[0].toLowerCase()}.png"></img>`
+      button.innerHTML = link[0] + `<img class="icon" src="./resouces/icons/${link[0].toLowerCase().replaceAll(" ","")}.png"></img>`
       button.addEventListener("click", _ev => {
         drawBoard(link[1])
       })
@@ -694,7 +699,7 @@ function drawBoard(index) {
 
   //add back button
   if (board.sub) {
-    const button = document.createElement("button")
+    const button = document.createElement("div")
     button.innerHTML = "Back"
     button.classList.add("item")
     button.classList.add("linkItem")
@@ -713,7 +718,7 @@ function drawBoard(index) {
     }
 
     //create button
-    const button = document.createElement("button")
+    const button = document.createElement("div")
     button.classList.add("item")
     button.classList.add(tile[1]) //sets colour
     button.id = tile[0].replace(" ", "-")
@@ -784,6 +789,7 @@ drawBoard(localStorage.getItem("activeGrid"))
 function populateVoiceList() {
 
   setTimeout(() => {
+    console.log("Get voices")
     voices = synth.getVoices().sort(function (a, b) {
       const aname = a.name.toUpperCase(),
         bname = b.name.toUpperCase();
