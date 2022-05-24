@@ -37,10 +37,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  -webkit-border-radius:0;
-  border-radius:0;
   outline: solid 1px black;
   color: black;
+  height: 120px;
+  width: 120px;
 }
 
 .linkItem {
