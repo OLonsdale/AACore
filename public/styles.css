@@ -37,7 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  outline: solid 1px black;
+  box-shadow: 0px 0px 0px 1px black;
   color: black;
   height: 5vw;
   width: 5vw;
