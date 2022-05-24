@@ -12,20 +12,28 @@
       type="image/x-icon"
     />
   </head>
-
-  <body class="container">
-
+  
+  <body>
     <div id="sentenceSection">
       <input id="sentenceDisplay" type="text" disabled />
       <button title="Play Sentence" aria-label="Play Sentence" id="playButton"><img alt="play icon" src="./resouces/play.svg"></button>
       <button title="Delete Sentence" aria-label="Clear Sentence" id="clearButton"><img alt="delete icon" src="./resouces/delete.svg"></button>
     </div>
+    <div class="container">
 
-    <div id="gridSection" class="grid">
-      <!-- JavaScript fills this -->
+      
+      <div id="gridSection" class="grid">
+        <!-- JavaScript fills this -->
+      </div>
+      
+      <div>
+        <button id="swapButton">swap grid</button>
+        <label for="voicesSelect">Select Voice:</label>
+        <select id="voicesSelect"></select>
+      </div>
+    
+      
     </div>
-
-
     <script src="scripts.js"></script>
   </body>
 </html>

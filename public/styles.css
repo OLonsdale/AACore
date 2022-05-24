@@ -2,7 +2,9 @@ body {
   background-color: antiquewhite;
   font-family: "Arial";
   user-select: none;
-  overflow: hidden;
+  /* overflow: hidden; */
+  -webkit-appearance:none;
+  color: black;
 }
 
 .grid {
@@ -36,6 +38,13 @@ body {
   justify-content: center;
   flex-direction: column;
   outline: 1px black;
+  -webkit-border-radius:0;
+  border-radius:0;
+}
+
+.linkItem {
+  background-color: darkcyan;
+  border-radius: 15px;
 }
 
 .icon {
@@ -53,19 +62,21 @@ body {
 }
 
 #sentenceSection {
-  width: 90%;
+  width: 100%;
+  height: fit-content;
   padding-top: 0;
   display: flex;
-  gap: 2px;
+  margin-bottom: 1em;
+  align-items: center;
 }
 
 #sentenceDisplay {
-  font-size: xx-large;
-  width: 90%;
+  font-size: 5ch;
+  width: 100%;
 }
 
 #playButton, #clearButton {
-  height: 50px;
+  height: 100%;
   width: 50px;
 }
 
@@ -86,7 +97,7 @@ body {
 }
 
 .red {
-  background-color: rgb(202, 77, 77);
+  background-color: rgb(255, 79, 79);
 }
 
 .pink {
@@ -95,4 +106,8 @@ body {
 
 .yellow {
   background-color: rgb(248, 207, 103);
+}
+
+.orange {
+  background-color: orange;
 }
