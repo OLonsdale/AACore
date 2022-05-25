@@ -245,7 +245,7 @@ const boards = [{ // LITTLE
       ["car", "grey"],
       ["bus", "grey"],
       ["train", "grey"],
-      ["moterbike", "grey"],
+      ["motorbike", "grey"],
       ["plane", "grey"],
       ["helicopter", "grey"],
       ["boat", "grey"],
@@ -416,12 +416,12 @@ const boards = [{ // LITTLE
       ["rice", "grey"],
       ["pasta", "grey"],
       ["pizza", "grey"],
-      ["raw", "pink"],
+      ["favourite", "pink"],
       ["burned", "pink"],
       ["healthy", "pink"],
       ["veg", "grey"],
       ["carrot", "grey"],
-      ["brocolli", "grey"],
+      ["broccoli", "grey"],
       ["potato", "grey"],
       ["pea", "grey"],
       ["bean", "grey"],
@@ -445,7 +445,7 @@ const boards = [{ // LITTLE
       ["biscuit", "grey"],
       ["crisp", "grey"],
       ["chip", "grey"],
-      ["sandwhich", "grey"],
+      ["sandwich", "grey"],
       ["soup", "grey"],
       ["noodles", "grey"],
       ["pancake", "grey"],
@@ -501,7 +501,7 @@ const boards = [{ // LITTLE
       ["lemon", "grey"],
       ["grape", "grey"],
       ["raisin", "grey"],
-      ["black current", "grey"],
+      ["blackcurrant", "grey"],
 
       ["strawberry", "grey"],
       ["raspberry", "grey"],
@@ -636,7 +636,7 @@ const boards = [{ // LITTLE
       ["-", "-"],
       ["-", "-"],
       ["-", "-"],
-      ["embarassed", "orange"],
+      ["embarrassed", "orange"],
       ["birthday", "grey"],
       ["christmas", "grey"],
       ["easter", "grey"],
@@ -689,7 +689,7 @@ function drawBoard(index) {
       button.innerHTML = link[0]
       button.classList.add("item")
       button.classList.add("linkItem")
-      button.innerHTML = link[0] + `<img class="icon" src="./resouces/icons/${link[0].toLowerCase().replaceAll(" ","")}.png"></img>`
+      button.innerHTML = link[0] + `<img class="icon" src="./resouces/icons/${link[0].toLowerCase()}.png"></img>`
       button.addEventListener("click", _ev => {
         drawBoard(link[1])
       })
@@ -700,7 +700,7 @@ function drawBoard(index) {
   //add back button
   if (board.sub) {
     const button = document.createElement("div")
-    button.innerHTML = "Back"
+    button.innerHTML = "Back" + `<img class="icon" src="./resouces/back.svg"></img>`
     button.classList.add("item")
     button.classList.add("linkItem")
     button.addEventListener("click", _ev => drawBoard(board.source))
@@ -722,7 +722,7 @@ function drawBoard(index) {
     button.classList.add("item")
     button.classList.add(tile[1]) //sets colour
     button.id = tile[0].replace(" ", "-")
-    button.innerHTML = tile[0] + `<img class="icon" src="./resouces/icons/${tile[0]}.png"></img>`
+    button.innerHTML = tile[0] + `<img class="icon" src="./resouces/icons/${tile[0].replaceAll(" ","-")}.png"></img>`
 
     //play sound and add to sentence
     button.addEventListener("click", ev => {

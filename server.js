@@ -8,7 +8,7 @@ app.use(logger("short"))
 
 app.use(express.static(path.join(__dirname,"public")))
 
-app.use((req, res) => { res.redirect("./public/index.html") })
+// app.use((req, res) => { res.redirect("./public/index.html") })
 
 const PORT = process.env.PORT || 5500
 
