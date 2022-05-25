@@ -2,26 +2,26 @@ body {
   background-color: antiquewhite;
   font-family: "Arial";
   user-select: none;
-  /* overflow: hidden; */
-  -webkit-appearance:none;
+  /* overflow: scroll; */
+  -webkit-appearance: none;
   color: black;
 }
 
 .grid {
   max-width: 80%;
-  justify-content: center;
+  max-height: 50%;
   display: grid;
-  flex-direction: row;
-  outline: 1px black;
   gap: 1em;
 }
 
 .six-cols {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .nine-cols {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0.5em
 }
 
@@ -31,13 +31,13 @@ body {
 }
 
 .item {
-  font-size: large;
+  font-size: 2ch;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0px 0px 0px 1px black;
+  box-shadow: 0 0 0 1px black;
   color: black;
   height: 100%;
   width: 100%;
@@ -69,6 +69,7 @@ body {
   display: flex;
   margin-bottom: 1em;
   align-items: center;
+  justify-content: center;
 }
 
 #sentenceDisplay {
@@ -76,9 +77,26 @@ body {
   width: 100%;
 }
 
-#playButton, #clearButton {
+#playButton,
+#clearButton {
   height: 50px;
   width: 50px;
+}
+
+.red {
+  background-color: rgb(255, 79, 79);
+}
+
+.pink {
+  background-color: pink;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: rgb(248, 207, 103);
 }
 
 .green {
@@ -95,20 +113,4 @@ body {
 
 .grey {
   background-color: gainsboro;
-}
-
-.red {
-  background-color: rgb(255, 79, 79);
-}
-
-.pink {
-  background-color: pink;
-}
-
-.yellow {
-  background-color: rgb(248, 207, 103);
-}
-
-.orange {
-  background-color: orange;
 }
