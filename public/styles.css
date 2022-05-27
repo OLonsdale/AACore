@@ -44,13 +44,16 @@ body {
 }
 
 .linkItem {
-  background-color: darkcyan;
   border-radius: 15px;
 }
 
 .icon {
   max-width: 70%;
   pointer-events: none;
+}
+
+.largeText {
+  font-size: xx-large;
 }
 
 .container {
@@ -107,7 +110,7 @@ body {
   background-color: rgb(167, 237, 237);
 }
 
-.dark-blue {
+.linkColour {
   background-color: darkcyan;
 }
 
