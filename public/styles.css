@@ -16,13 +16,19 @@ body {
 
 .six-cols {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.three-rows {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
 .nine-cols {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0.5em
+}
+
+.six-rows {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .item:hover {
