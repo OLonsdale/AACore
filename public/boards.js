@@ -654,6 +654,7 @@ const boards = {
         colour: "grey",
         linkTo: "main",
         internalName: "wind up",
+        pronounciation: "wined up", 
       },
       {
         type: "textAndIcon",
