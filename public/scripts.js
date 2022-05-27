@@ -2,6 +2,8 @@
 
 import { boards } from "./boards.js";
 
+console.log(boards)
+
 // Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
 const sentenceSpeak = [];
