@@ -49,6 +49,11 @@ body {
   width: 100%;
 }
 
+.hidden {
+  display: none;
+  background-color: red;
+}
+
 .linkItem {
   border-radius: 15px;
 }

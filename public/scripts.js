@@ -13,6 +13,10 @@ let voices = [];
 let voice;
 let selectedVoiceIndex;
 
+settingsButton.addEventListener("click", ev => {
+  settingsMenu.classList.toggle("hidden")
+})
+
 //set
 if (!localStorage.getItem("activeGrid")) {
   localStorage.setItem("activeGrid", "main");
@@ -46,11 +50,14 @@ function drawBoard(name) {
     //if not blank, add what is common to all tiles
     tileElement.classList.add(tile.colour); //sets colour
     tileElement.id = tile.internalName;
-    tileElement.innerHTML = tile.displayName;
+    tileElement.append(tile.displayName)
 
     //then add conditional elements
     if (tile.type !== "textOnly") {
-      tileElement.innerHTML += `<img class="icon" src="./resouces/icons/${tile.iconName}.png"></img>`;
+      let image = new Image()
+      image.src = `./resouces/icons/${tile.iconName}.png`
+      image.classList.add("icon")
+      tileElement.append(image)
     }
 
     if (tile.type === "textOnly") {
@@ -129,30 +136,32 @@ swapButton.addEventListener("click", (_ev) => switchGrids());
 
 /// speech stuff
 function populateVoiceList() {
-  // setTimeout(() => {
-  //   console.log("Get voices")
-  //   voices = synth.getVoices().sort(function (a, b) {
-  //     const aname = a.lang.toUpperCase(),
-  //       bname = b.lang.toUpperCase();
-  //     if (aname < bname) return -1;
-  //     else if (aname == bname) return 0;
-  //     else return +1;
-  //   }).filter(voice => voice.lang === "en-GB" || voice.lang === "en-US");
-  // let selectedIndex = voiceSelect.selectedIndex < 0 ? 0 : voiceSelect.selectedIndex;
-  // voiceSelect.innerHTML = '';
-  // for (let i = 0; i < voices.length; i++) {
-  //   let option = document.createElement('option');
-  //   option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
-  //   if (voices[i].default) {
-  //     option.textContent += ' -- DEFAULT';
-  //   }
-  //   option.setAttribute('data-lang', voices[i].lang);
-  //   option.setAttribute('data-name', voices[i].name);
-  //   voiceSelect.appendChild(option);
-  // }
-  // voiceSelect.selectedIndex = selectedIndex;
-  // selectedVoiceIndex = selectedIndex
-  // }, 1000);
+  setTimeout(() => {
+    console.log("Loading voices")
+
+    voices = synth.getVoices().sort(function (a, b) {
+      const aname = a.lang.toUpperCase(),
+        bname = b.lang.toUpperCase();
+      if (aname < bname) return -1;
+      else if (aname == bname) return 0;
+      else return +1;
+    })
+
+  let selectedIndex = voiceSelect.selectedIndex < 0 ? 0 : voiceSelect.selectedIndex;
+  voiceSelect.innerHTML = '';
+  for (let i = 0; i < voices.length; i++) {
+    let option = document.createElement('option');
+    option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
+    if (voices[i].default) {
+      option.textContent += ' -- DEFAULT';
+    }
+    option.setAttribute('data-lang', voices[i].lang);
+    option.setAttribute('data-name', voices[i].name);
+    voiceSelect.appendChild(option);
+  }
+  voiceSelect.selectedIndex = selectedIndex;
+  selectedVoiceIndex = selectedIndex
+  }, 1000);
 }
 
 voiceSelect.onchange = () => {
