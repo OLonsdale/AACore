@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AACore</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="shortcut icon"
-      href="./resouces/ear.svg"
-      type="image/x-icon"
-      />
-  </head>
-  
-  <body>
 
-    <div>
-      <nav id="settingsMenu" class="hidden">
-        <button id="swapButton">swap grid</button>  
-        <label for="voicesSelect">Select Voice:</label>
-        <select id="voicesSelect"></select> 
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AACore</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="./resouces/ear.svg" type="image/x-icon" />
+</head>
+
+<body>
+
+  <div id="sentenceSection">
+    <button id="settingsButton"><img height="20" width="20" src="./resouces/settings.svg"></button>
+    <input id="sentenceDisplay" type="text" disabled />
+    <button title="Play Sentence" aria-label="Play Sentence" id="playButton"><img alt="play icon" src="./resouces/play.svg"></button>
+    <button title="Delete Sentence" aria-label="Clear Sentence" id="clearButton"><img alt="delete icon" src="./resouces/delete.svg"></button>
+    <button title="Pluralise Last Word" aria-label="Pluralise Last Word" id="pluraliseButton">Pluralise</button>
+  </div>
+  <div class="container">
+
+    <div id="settingsMenu" class="hidden">
+      <button id="swapButton">swap grid</button>
+      <label for="voicesSelect">Select Voice:</label>
+      <select id="voicesSelect"></select>
     </div>
 
-    <div id="sentenceSection">
-      <button id="settingsButton"><img height="20" width="20" src="./resouces/settings.svg"></button>
-      <input id="sentenceDisplay" type="text" disabled />
-      <button title="Play Sentence" aria-label="Play Sentence" id="playButton"><img alt="play icon" src="./resouces/play.svg"></button>
-      <button title="Delete Sentence" aria-label="Clear Sentence" id="clearButton"><img alt="delete icon" src="./resouces/delete.svg"></button>
+    <div id="gridSection" class="grid">
+      <!-- JavaScript fills this -->
     </div>
-    <div class="container">
 
-      
-      <div id="gridSection" class="grid">
-        <!-- JavaScript fills this -->
-      </div>
-      
-      <div>
-        
+  </div>
 
-      </div>
-    
-      
-    </div>
-    
-    <script type="module" src="scripts.js"></script>
-  </body>
+  <script type="module" src="scripts.js"></script>
+</body>
+
 </html>

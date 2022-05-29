@@ -17,6 +17,22 @@ settingsButton.addEventListener("click", ev => {
   settingsMenu.classList.toggle("hidden")
 })
 
+pluraliseButton.addEventListener("click", ev => {
+  pluraliseLastWord()
+})
+
+function pluraliseLastWord() {
+  if(sentenceSpeak.length > 0){
+    let last = sentenceSpeak.pop()
+    last += "s"
+    sentenceSpeak.push(last)
+    last = sentenceShow.pop()
+    last += "s"
+    sentenceShow.push(last)
+    updateSentence()
+  }
+}
+
 //set
 if (!localStorage.getItem("activeGrid")) {
   localStorage.setItem("activeGrid", "main");
