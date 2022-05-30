@@ -4,32 +4,23 @@ body {
   user-select: none;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  outline: 3px dashed green;
+}
+
 .grid {
-  max-width: 70%;
+  max-width: 80%;
   display: grid;
-  gap: 1em;
-  grid-auto-rows: 1fr;
-  grid-auto-columns: 1fr;
+  gap: 0.5em;
+  outline: 3px red dotted;
 }
 
-.six-cols {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.three-rows {
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.nine-cols {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0.5em
-}
-
-.six-rows {
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.item:hover {
+.item:hover,
+.item:focus {
   filter: brightness(90%);
   cursor: pointer;
 }
@@ -43,17 +34,6 @@ body {
   flex-direction: column;
   box-shadow: 0 0 0 1px black;
   color: black;
-  height: 100%;
-  width: 100%;
-}
-
-.hidden {
-  display: none;
-  background-color: red;
-}
-
-.linkItem {
-  border-radius: 15px;
 }
 
 .icon {
@@ -61,38 +41,115 @@ body {
   pointer-events: none;
 }
 
+.hidden {
+  display: none;
+}
+
+.linkItem {
+  border-radius: 15px;
+}
+
+
 .largeText {
   font-size: xx-large;
 }
 
-.container {
+.sentenceSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 2em;
-}
-
-#sentenceSection {
-  width: 100%;
-  height: fit-content;
-  padding-top: 0;
-  display: flex;
+  gap: 5px;
   margin-bottom: 1em;
   align-items: center;
   justify-content: center;
+  outline: 3px dotted purple;
 }
 
-#sentenceDisplay {
+.sentenceDisplay {
   font-size: 5ch;
   width: 100%;
 }
 
-#playButton,
-#clearButton {
+button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grammarMarker {
+  box-shadow: 0 0 0 1px black;
+  background-color: grey;
+}
+
+.sidebarButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  left: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(184, 184, 184, 0.87);
+  min-height: 80vh;
+  max-width: 25vw;
+  padding: 1em;
+}
+
+.setSelectButton {
+  box-shadow: 0 0 0 1px black;
+  padding: 0.3em;
+  margin: 1em;
+  background-color: darkcyan;
+  border-radius: 5px;
+}
+
+.playbackButton {
   height: 50px;
   width: 50px;
+}
+
+.four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.five-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.six-cols {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.seven-cols {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.eight-cols {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.nine-cols {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.three-rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.four-rows {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.five-rows {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.six-rows {
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .red {
@@ -119,10 +176,14 @@ body {
   background-color: rgb(167, 237, 237);
 }
 
-.linkColour {
-  background-color: darkcyan;
-}
-
 .grey {
   background-color: gainsboro;
+}
+
+.white {
+  background-color: white;
+}
+
+.linkColour {
+  background-color: darkcyan;
 }

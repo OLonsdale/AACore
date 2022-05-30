@@ -8,17 +8,17 @@
 "dir": "auto",
 "theme_color": "#000000",
 "background_color": "#faebd7",
-"orientation": "any",
+"orientation": "landscape",
 "icons": [
   {
-    "src": "./resouces/ear_512x.png",
-    "sizes": "512x512",
+    "src": "./resouces/favicon-128.png",
+    "sizes": "128x128",
     "type": "image/png",
     "purpose": "maskable"
   },
   {
-    "src": "./resouces/ear_192x.png",
-    "sizes": "192x192",
+    "src": "./resouces/favicon-128.png",
+    "sizes": "128x128",
     "type": "image/png",
     "purpose": "any"
   }

@@ -4,38 +4,57 @@ import { boards } from "./boards.js";
 
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
-const sentenceSpeak = [];
-const sentenceShow = [];
 const synth = window.speechSynthesis;
 
-let voiceSelect = document.getElementById("voicesSelect");
+const sentenceDisplayElement = document.getElementById("sentenceDisplay")
+const sentence = []
+
+const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
-let voice;
-let selectedVoiceIndex;
+let selectedVoice;
 
-settingsButton.addEventListener("click", ev => {
-  settingsMenu.classList.toggle("hidden")
+
+sidebarButton.addEventListener("click", () => {
+  sidebar.classList.toggle("hidden");
+});
+
+document.addEventListener('keydown', ev => {
+  if(ev.key === "Enter"){
+    ev.preventDefault()
+    speakSentence()
+  }
+});
+
+removeMenuButtonButton.addEventListener("click", () => {
+  sidebarButton.remove();
+  sidebar.classList.toggle("hidden");
 })
 
-pluraliseButton.addEventListener("click", ev => {
-  pluraliseLastWord()
-})
+pluraliseButton.addEventListener("click", () => pluraliseLastWord());
+playButton.addEventListener("click", () => speakSentence());
+clearButton.addEventListener("click", () =>  clearSentence());
+loadSetOne.addEventListener("click",() => drawBoard("initial"))
+loadSetTwo.addEventListener("click",() => drawBoard("standard"))
+loadSetThree.addEventListener("click",() => drawBoard("complex"))
+
+
+// swapButton.addEventListener("click", () => switchGrids());
 
 function pluraliseLastWord() {
-  if(sentenceSpeak.length > 0){
-    let last = sentenceSpeak.pop()
-    last += "s"
-    sentenceSpeak.push(last)
-    last = sentenceShow.pop()
-    last += "s"
-    sentenceShow.push(last)
-    updateSentence()
+  console.log("last word pluralised, if it has a plural form")
+  if (sentence.length > 0) {
+    let last = sentence.pop();
+    last.pronounciation = last.pluralFormPronounciation ?? last.pluralForm ?? last.pronounciation ?? last.displayName
+    last.displayName = last.pluralForm ?? last.displayName
+    sentence.push(last);
+    updateSentence();
   }
 }
 
-//set
+
+
 if (!localStorage.getItem("activeGrid")) {
-  localStorage.setItem("activeGrid", "main");
+  localStorage.setItem("activeGrid", "standard");
 }
 
 function drawBoard(name) {
@@ -54,7 +73,7 @@ function drawBoard(name) {
 
   board.tiles.forEach((tile) => {
     //create button
-    const tileElement = document.createElement("div");
+    const tileElement = document.createElement("button");
     tileElement.classList.add("item");
 
     //if blank, just add streight to grid and return
@@ -66,14 +85,14 @@ function drawBoard(name) {
     //if not blank, add what is common to all tiles
     tileElement.classList.add(tile.colour); //sets colour
     tileElement.id = tile.internalName;
-    tileElement.append(tile.displayName)
+    tileElement.append(tile.displayName);
 
     //then add conditional elements
     if (tile.type !== "textOnly") {
-      let image = new Image()
-      image.src = `./resouces/icons/${tile.iconName}.png`
-      image.classList.add("icon")
-      tileElement.append(image)
+      let image = new Image();
+      image.src = `./resouces/icons/${tile.iconName}.png`;
+      image.classList.add("icon");
+      tileElement.append(image);
     }
 
     if (tile.type === "textOnly") {
@@ -81,28 +100,24 @@ function drawBoard(name) {
     }
 
     if (tile.linkTo) {
-      tileElement.addEventListener("click", (ev) => {
+      tileElement.addEventListener("click", () => {
         drawBoard(tile.linkTo);
       });
     }
 
     if (tile.type === "link") {
       tileElement.classList.add("linkItem");
-    } else {
-      //play sound and add to sentence
-      tileElement.addEventListener("click", (ev) => {
-        let word = tile.pronounciation ?? tile.displayName;
-        if (synth.speaking || synth.pending) {
-          synth.cancel();
-        }
+    } 
+    
+    if(tile.type !== "link"){
 
-        sentenceShow.push(tile.displayName);
-        sentenceSpeak.push(word);
+      tileElement.addEventListener("click", () => {
 
+        sentence.push(tile);
         updateSentence();
-        let utterance = new SpeechSynthesisUtterance(word);
-        if (voice) utterance.voice = voice;
-        synth.speak(utterance);
+
+        let word = tile.pronounciation ?? tile.displayName;
+        speak(word)
       });
     }
 
@@ -111,77 +126,83 @@ function drawBoard(name) {
 }
 
 function updateSentence() {
-  sentenceDisplay.value = sentenceShow
+
+  const sentenceDisplayArray = sentence.map(tile => tile.displayName)
+  
+  sentenceDisplayElement.value = sentenceDisplayArray
     .join(" ")
     .replaceAll("⠀ ⠀", "")
     .replaceAll("⠀", "");
+
+}
+
+function speak(arg) {
+  if (synth.speaking || synth.pending) synth.cancel();
+
+  const utterance = new SpeechSynthesisUtterance(arg);
+  if (selectedVoice) utterance.voice = selectedVoice;
+  synth.speak(utterance)
 }
 
 function speakSentence() {
-  if (sentenceSpeak.length === 0) return;
-  //numbers together will be spoken as a single number, e.g. "2 3 4" = "two hundred and thirty four"
-  let cleanSentence = sentenceSpeak
+
+  if (synth.speaking || synth.pending) synth.cancel(); 
+
+  if (sentence.length === 0) return;
+
+  const toSpeak = sentence.map(tile => tile.pronounciation ?? tile.displayName)
+
+  const speakSentence = toSpeak
     .join(" ")
     .replaceAll("⠀ ⠀", "")
     .replaceAll("⠀", "");
 
-  let utterance = new SpeechSynthesisUtterance(cleanSentence);
-  utterance.onend = () => clearSentence();
-  if (voice) utterance.voice = voice;
-  synth.speak(utterance);
+  const utterance = new SpeechSynthesisUtterance(speakSentence)
+  if (selectedVoice) utterance.voice = selectedVoice;
+  utterance.onend = () => clearSentence()
+  synth.speak(utterance)
 }
 
 function clearSentence() {
   synth.cancel();
-  sentenceSpeak.length = 0;
-  sentenceShow.length = 0;
+  sentence.length = 0;
   updateSentence();
 }
 
 function switchGrids() {
-  if (localStorage.getItem("activeGrid") === "main") {
-    localStorage.setItem("activeGrid", "simple");
-  } else localStorage.setItem("activeGrid", "main");
+  if (localStorage.getItem("activeGrid") === "standard") {
+    localStorage.setItem("activeGrid", "initial");
+  } else localStorage.setItem("activeGrid", "standard");
 
   drawBoard(localStorage.getItem("activeGrid"));
 }
 
-playButton.addEventListener("click", (_ev) => speakSentence());
-clearButton.addEventListener("click", (_ev) => clearSentence());
-swapButton.addEventListener("click", (_ev) => switchGrids());
+
 
 /// speech stuff
 function populateVoiceList() {
+  console.log("Waiting");
   setTimeout(() => {
-    console.log("Loading voices")
+    // voiceSelectElement.innerHTML = "";
+    console.log("Loading voices");
 
-    voices = synth.getVoices().sort(function (a, b) {
-      const aname = a.lang.toUpperCase(),
-        bname = b.lang.toUpperCase();
-      if (aname < bname) return -1;
-      else if (aname == bname) return 0;
-      else return +1;
-    })
+    voices = synth.getVoices().filter((voice) => voice.lang === "en-GB");
 
-  let selectedIndex = voiceSelect.selectedIndex < 0 ? 0 : voiceSelect.selectedIndex;
-  voiceSelect.innerHTML = '';
-  for (let i = 0; i < voices.length; i++) {
-    let option = document.createElement('option');
-    option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
-    if (voices[i].default) {
-      option.textContent += ' -- DEFAULT';
-    }
-    option.setAttribute('data-lang', voices[i].lang);
-    option.setAttribute('data-name', voices[i].name);
-    voiceSelect.appendChild(option);
-  }
-  voiceSelect.selectedIndex = selectedIndex;
-  selectedVoiceIndex = selectedIndex
-  }, 1000);
+    voices.forEach(voice => {
+      let option = document.createElement("option");
+      option.textContent = voice.name.replaceAll("(United Kingdom)","");
+      option.setAttribute("data-name", voice.name);
+      voiceSelectElement.appendChild(option);
+    });
+
+    voiceSelectElement.selectedIndex = 0
+
+  }, 500);
 }
 
-voiceSelect.onchange = () => {
-  voice = voices[voiceSelect.selectedIndex];
+voiceSelectElement.onchange = () => {
+  selectedVoice = voices[voiceSelectElement.selectedIndex-1];
+  console.log("Selected voice: " + selectedVoice.name)
 };
 
 drawBoard(localStorage.getItem("activeGrid"));

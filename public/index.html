@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AACore</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./resouces/favicon_16px.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./resouces/favicon-ios.png"
+    />
+    <script>
+      navigator.serviceWorker.register("sw.js");
+    </script>
+    <link rel="manifest" href="./manifest.json" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AACore</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="shortcut icon" href="./resouces/ear.svg" type="image/x-icon" />
-  <script>navigator.serviceWorker.register("sw.js")</script>
-  <link rel="manifest" href="./manifest.json">
-</head>
+  <body>
+    <div class="sentenceSection" id="sentenceSection">
+      <button id="sidebarButton" class="largeText"><div>☰</div></button>
+      <input
+        class="sentenceDisplay"
+        id="sentenceDisplay"
+        type="text"
+        disabled
+      />
+      <button
+        title="Play Sentence"
+        aria-label="Play Sentence"
+        id="playButton"
+        class="playbackButton"
+      >
+        <img alt="play icon" src="./resouces/play.svg" />
+      </button>
+      <button
+        title="Delete Sentence"
+        aria-label="Clear Sentence"
+        id="clearButton"
+        class="playbackButton"
+        >
+        <img alt="delete icon" src="./resouces/delete.svg" />
+      </button>
+    </div>
+    
+    
+        <div id="sidebar" class="hidden sidebar">
+          <h2>Settings:</h2>
+          <div>
+            <label for="voicesSelect">Select Voice:</label>
+            <select id="voicesSelect">
+              <option disabled>Select Voice</option>
+            </select>
+          </div>
+          <h3>Select Set:</h3>
+          <div>
+            <button class="setSelectButton" id="loadSetOne">Load Initial</button>
+            <button class="setSelectButton" id="loadSetTwo">Load Standard</button>
+            <button class="setSelectButton" id="loadSetThree">
+              Load Set Three
+            </button>
+          </div>
 
-<body>
+          <h3>Remove Menu Button Until Refresh:</h3>
+          <button class="setSelectButton" id="removeMenuButtonButton">Remove</button>
 
-  <div id="sentenceSection">
-    <button id="settingsButton"><img height="20" width="20" src="./resouces/settings.svg"></button>
-    <input id="sentenceDisplay" type="text" disabled />
-    <button title="Play Sentence" aria-label="Play Sentence" id="playButton"><img alt="play icon" src="./resouces/play.svg"></button>
-    <button title="Delete Sentence" aria-label="Clear Sentence" id="clearButton"><img alt="delete icon" src="./resouces/delete.svg"></button>
-    <button title="Pluralise Last Word" aria-label="Pluralise Last Word" id="pluraliseButton">Pluralise</button>
-  </div>
-  <div class="container">
+          <h2>About:</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste,
+            voluptates laboriosam commodi deserunt nemo voluptate ratione distinctio
+            culpa nihil quis! Minima doloribus iusto magni reiciendis totam odit?
+            Hic, eligendi ea? Numquam illo tempore blanditiis repudiandae! Fugit,
+            necessitatibus. Magnam aliquid similique ad debitis rerum nostrum
+            exercitationem unde tenetur odit velit.
+          </p>
+        </div>
 
-    <div id="settingsMenu" class="hidden">
-      <button id="swapButton">swap grid</button>
-      <label for="voicesSelect">Select Voice:</label>
-      <select id="voicesSelect"></select>
+    <div class="container">
+      <div id="gridSection" class="grid">
+        <noscript>
+          You need JavaScript to use this site. Please upgrade to a modern
+          browser or disable script blocking plugins.
+        </noscript>
+      </div>
     </div>
 
-    <div id="gridSection" class="grid">
-      <!-- JavaScript fills this -->
-    </div>
-
-  </div>
-
-  <script type="module" src="scripts.js"></script>
-</body>
-
+    <button
+      title="Pluralise Last Word"
+      aria-label="Pluralise Last Word"
+      class="largeText grammarMarker"
+      id="pluraliseButton"
+    >
+      +s
+    </button>
+    <script type="module" src="scripts.js"></script>
+  </body>
 </html>
