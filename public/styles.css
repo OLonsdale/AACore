@@ -9,14 +9,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  outline: 3px dashed green;
 }
 
 .grid {
   max-width: 80%;
   display: grid;
   gap: 0.5em;
-  outline: 3px red dotted;
 }
 
 .item:hover,
@@ -60,7 +58,6 @@ body {
   margin-bottom: 1em;
   align-items: center;
   justify-content: center;
-  outline: 3px dotted purple;
 }
 
 .sentenceDisplay {
@@ -76,6 +73,7 @@ button {
 }
 
 .grammarMarker {
+  display: none;
   box-shadow: 0 0 0 1px black;
   background-color: grey;
 }
