@@ -100,7 +100,7 @@ function drawBoard(name) {
     //then add conditional elements. Avoiding elses for clarity.
     if (tile.type !== "textOnly") {
       let image = new Image();
-      image.src = `./resouces/icons/${tile.iconName}.png`;
+      image.src = `./resouces/icons/${tile.iconName}.webp`;
       image.classList.add("icon");
       tileElement.append(image);
     }
@@ -128,6 +128,7 @@ function drawBoard(name) {
         speak(word);
       });
     }
+
     //adds it to dom
     gridSection.append(tileElement);
   });
