@@ -72,13 +72,56 @@ function drawBoard(name) {
   //clear existing
   gridSection.replaceChildren();
 
-  //sets dimentions. room for improvement here
   gridSection.classList = "grid";
-  if (board.rows === 6) gridSection.classList.add("six-rows");
-  if (board.rows === 3) gridSection.classList.add("three-rows");
 
-  if (board.columns === 9) gridSection.classList.add("nine-cols");
-  if (board.columns === 6) gridSection.classList.add("six-cols");
+  //sets dimentions. room for improvement here
+  switch (board.rows) {
+    case 3:
+      gridSection.classList.add("three-rows");
+      break;
+    case 4:
+      gridSection.classList.add("four-rows");
+      break;
+    case 5:
+      gridSection.classList.add("five-rows");
+      break;
+    case 6:
+      gridSection.classList.add("six-rows");
+      break;
+    case 7:
+      gridSection.classList.add("seven-rows");
+      break;
+    case 8:
+      gridSection.classList.add("eight-rows");
+      break;
+    case 9:
+      gridSection.classList.add("nine-rows");
+      break;
+  }
+
+  switch (board.columns) {
+    case 3:
+      gridSection.classList.add("three-cols");
+      break;
+    case 4:
+      gridSection.classList.add("four-cols");
+      break;
+    case 5:
+      gridSection.classList.add("five-cols");
+      break;
+    case 6:
+      gridSection.classList.add("six-cols");
+      break;
+    case 7:
+      gridSection.classList.add("seven-cols");
+      break;
+    case 8:
+      gridSection.classList.add("eight-cols");
+      break;
+    case 9:
+      gridSection.classList.add("nine-cols");
+      break;
+  }
 
   //for each tile
   board.tiles.forEach((tile) => {
@@ -130,7 +173,9 @@ function drawBoard(name) {
     }
 
     //adds it to dom
-    gridSection.append(tileElement);
+    let li = document.createElement("li")
+    li.append(tileElement)
+    gridSection.append(li);
   });
 }
 
@@ -202,7 +247,7 @@ function populateVoiceList() {
   }, 500);
 }
 
-voiceSelectElement.addEventListener( "change", () => {
+voiceSelectElement.addEventListener("change", () => {
   // -1 for the "select" option
   selectedVoice = voices[voiceSelectElement.selectedIndex - 1];
   console.log("Selected voice: " + selectedVoice.name);

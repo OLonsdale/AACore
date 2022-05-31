@@ -12,9 +12,11 @@ body {
 }
 
 .grid {
-  max-width: 80%;
+  max-width: 75vw;
   display: grid;
   gap: 0.5em;
+  grid-auto-flow: row;
+
 }
 
 .item:hover,
@@ -30,8 +32,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   box-shadow: 0 0 0 1px black;
-  color: black;
+  width: 100%;
+  height: 100%;
 }
 
 .icon {
@@ -63,6 +67,10 @@ body {
 .sentenceDisplay {
   font-size: 5ch;
   width: 100%;
+}
+
+li {
+  all:unset
 }
 
 button {
@@ -110,6 +118,10 @@ button {
   width: 50px;
 }
 
+.three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .four-cols {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -131,7 +143,7 @@ button {
 }
 
 .nine-cols {
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(9, 6.5vw);
 }
 
 .three-rows {
@@ -147,7 +159,7 @@ button {
 }
 
 .six-rows {
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 6.5vw);
 }
 
 .red {

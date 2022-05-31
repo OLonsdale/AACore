@@ -1,6 +1,6 @@
 mogrify -format webp *.png
 
-
+firebase deploy
 
 for (const board in boards) {
   if (Object.hasOwnProperty.call(boards, board)) {
