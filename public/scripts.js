@@ -12,8 +12,6 @@ const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
 let selectedVoice;
 
-
-
 //hides and shows the sidebar
 sidebarButton.addEventListener("click", () => {
   sidebar.classList.toggle("hidden");
@@ -31,8 +29,6 @@ createGridMenuButton.addEventListener("click", ev=> {
   sidebar.classList.toggle("hidden");
   createGridSidebar.classList.toggle("hidden");
 })
-
-let customBoardName;
 
 document.getElementById("generateEmptyButton").addEventListener("click", ev=> {
 
@@ -88,7 +84,6 @@ createTileSubmitButton.addEventListener("click",() => {
     image.src = `./resouces/icons/${iconNameeInput.value}.webp`
     selectedTile.append(image)
   } else selectedTile.classList.add("textOnly")
-
 })
 
 //takes the grid from boards.js and adds it to the dom
