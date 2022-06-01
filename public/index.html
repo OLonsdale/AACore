@@ -49,39 +49,95 @@
       </button>
     </div>
     
-    
-        <div id="sidebar" class="hidden sidebar">
-          <h2>Settings:</h2>
-          <div>
-            <label for="voicesSelect">Select Voice:</label>
-            <select id="voicesSelect">
-              <option disabled>Select Voice</option>
-            </select>
-          </div>
-          <h3>Select Set:</h3>
-          <div>
-            <button class="setSelectButton" id="loadSetOneButton">Load Initial</button>
-            <button class="setSelectButton" id="loadSetTwoButton">Load Standard</button>
-            <button class="setSelectButton" id="loadSetThreeButton">
-              Load Set Three
-            </button>
-          </div>
+    <div id="sidebar" class="hidden sidebar">
+      <h2>Settings:</h2>
+      <div>
+        <label for="voicesSelect">Select Voice:</label>
+        <select id="voicesSelect">
+          <option disabled>Select Voice</option>
+        </select>
+      </div>
+      <h3>Select Set:</h3>
+      <div>
+        <button class="sidebarButton" id="loadSetOneButton">Load Initial</button>
+        <button class="sidebarButton" id="loadSetTwoButton">Load Standard</button>
+        <button class="sidebarButton" id="loadSetThreeButton">Load Set Three</button>
+      </div>
 
-          <h3>Remove Menu Button Until Refresh:</h3>
-          <button class="setSelectButton" id="removeMenuButtonButton">Remove</button>
+      <h3>Create Grid</h3>
+      <button class="sidebarButton" id="createGridMenuButton">New Grid</button>
 
-          <h2>About:</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste,
-            voluptates laboriosam commodi deserunt nemo voluptate ratione distinctio
-            culpa nihil quis! Minima doloribus iusto magni reiciendis totam odit?
-            Hic, eligendi ea? Numquam illo tempore blanditiis repudiandae! Fugit,
-            necessitatibus. Magnam aliquid similique ad debitis rerum nostrum
-            exercitationem unde tenetur odit velit.
-          </p>
-        </div>
+      <h3>Remove Menu Button Until Refresh:</h3>
+      <button class="sidebarButton" id="removeMenuButtonButton">Remove</button>
 
-    <div class="container">
+      <h2>About:</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste,
+        voluptates laboriosam commodi deserunt nemo voluptate ratione distinctio
+        culpa nihil quis! Minima doloribus iusto magni reiciendis totam odit?
+        Hic, eligendi ea? Numquam illo tempore blanditiis repudiandae! Fugit,
+        necessitatibus. Magnam aliquid similique ad debitis rerum nostrum
+        exercitationem unde tenetur odit velit.
+      </p>
+    </div>
+
+    <div id="createGridSidebar" class="hidden sidebar">
+      <button class="sidebarButton" id="closeCreateGridSidebarButton">Close</button>
+      <h2>Create Grid</h2>
+      <div>
+        <label for="nameInput">Name:</label>
+        <input id="nameInput" type="text">
+      </div>
+      <div>
+        <label for="rowsInput">Rows:</label>
+        <input id="rowsInput" type="number" min="3" max="6">
+      </div>
+      <div>
+        <label for="colsInput">Cols:</label>
+        <input id="colsInput" type="number" min="3" max="9">
+      </div>
+      <button class="sidebarButton" id="generateEmptyButton">Create</button>
+
+    </div>
+
+    <div id="createTileSidebar" class="hidden sidebar">
+      <button class="sidebarButton" id="closeCreateTileSidebarButton">Close</button>
+      <h2>Create Tile</h2>
+      <div>
+        <label for="selectedTileNumber">Selected Tile:</label>
+        <input id="selectedTileNumber" type="text" disabled>
+      </div>
+      <div>
+        <label for="displayNameInput">Display Name:</label>
+        <input id="displayNameInput" type="text">
+      </div>
+      <div>
+        <label for="hasIconInput">Has Icon:</label>
+        <input id="hasIconInput" type="checkbox">
+      </div>
+      <div>
+        <label for="iconNameeInput">Icon Name (all lower case, no spaces):</label>
+        <input id="iconNameeInput" type="text">
+      </div>
+      <div>
+        <label for="colourInput">Colour:</label>
+        <select id="colourInput">
+          <option id="red">Red</option>
+          <option id="pink">Pink</option>
+          <option id="orange">Orange</option>
+          <option id="yellow">Yellow</option>
+          <option id="green">Green</option>
+          <option id="blue">Blue</option>
+          <option id="grey">Grey</option>
+          <option id="white">White</option>
+        </select>
+      </div>
+      
+      <button class="sidebarButton" id="createTileSubmitButton">Create</button>
+
+    </div>
+
+    <div id="container" class="container">
       <ol id="gridSection" class="grid">
         <noscript>
           You need JavaScript to use this site. Please upgrade to a modern

@@ -12,11 +12,9 @@ body {
 }
 
 .grid {
-  max-width: 75vw;
   display: grid;
   gap: 0.5em;
   grid-auto-flow: row;
-
 }
 
 .item:hover,
@@ -86,13 +84,6 @@ button {
   background-color: grey;
 }
 
-.sidebarButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
 .sidebar {
   position: absolute;
   left: 1;
@@ -105,7 +96,7 @@ button {
   padding: 1em;
 }
 
-.setSelectButton {
+.sidebarButton {
   box-shadow: 0 0 0 1px black;
   padding: 0.3em;
   margin: 1em;
@@ -118,49 +109,55 @@ button {
   width: 50px;
 }
 
+/* Cols */
+
 .three-cols {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 6.5vw);
 }
 
 .four-cols {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 6.5vw);
 }
 
 .five-cols {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 6.5vw);
 }
 
 .six-cols {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 6.5vw);
 }
 
 .seven-cols {
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 6.5vw);
 }
 
 .eight-cols {
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 6.5vw);
 }
 
 .nine-cols {
   grid-template-columns: repeat(9, 6.5vw);
 }
 
+/* Rows */
+
 .three-rows {
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 6.5vw);
 }
 
 .four-rows {
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 6.5vw);
 }
 
 .five-rows {
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 6.5vw);
 }
 
 .six-rows {
   grid-template-rows: repeat(6, 6.5vw);
 }
+
+/* Colours */
 
 .red {
   background-color: rgb(255, 79, 79);

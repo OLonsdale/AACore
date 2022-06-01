@@ -12,6 +12,8 @@ const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
 let selectedVoice;
 
+
+
 //hides and shows the sidebar
 sidebarButton.addEventListener("click", () => {
   sidebar.classList.toggle("hidden");
@@ -25,44 +27,69 @@ document.addEventListener("keydown", (ev) => {
   }
 });
 
-//removes the menu button to prevent wandering fingers
-removeMenuButtonButton.addEventListener("click", () => {
-  sidebarButton.remove();
+createGridMenuButton.addEventListener("click", ev=> {
   sidebar.classList.toggle("hidden");
-});
+  createGridSidebar.classList.toggle("hidden");
+})
 
-pluraliseButton.addEventListener("click", () => pluraliseLastWord());
-playButton.addEventListener("click", () => speakSentence());
-clearButton.addEventListener("click", () => clearSentence());
-loadSetOneButton.addEventListener("click", () => {
-  drawBoard("initial");
-  localStorage.setItem("activeGrid", "initial");
-});
-loadSetTwoButton.addEventListener("click", () => {
-  drawBoard("standard");
-  localStorage.setItem("activeGrid", "standard");
-});
-loadSetThreeButton.addEventListener("click", () => {
-  drawBoard("complex");
-  localStorage.setItem("activeGrid", "complex");
-});
+let customBoardName;
 
-//makes the last word plural, if plural form specified
-function pluraliseLastWord() {
-  console.log("last word pluralised, if it has a plural form");
-  if (sentence.length > 0) {
-    let last = sentence.pop();
-    //coveres edgecases where worst case, the word only has a display name set
-    last.pronounciation =
-      last.pluralFormPronounciation ??
-      last.pluralForm ??
-      last.pronounciation ??
-      last.displayName;
-    last.displayName = last.pluralForm ?? last.displayName;
-    sentence.push(last);
-    updateSentence();
+document.getElementById("generateEmptyButton").addEventListener("click", ev=> {
+
+  let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ","-")
+  let rows = Number(rowsInput.value)
+  let columns = Number(colsInput.value)
+
+  if(
+    boards.hasOwnProperty(boardName) ||
+    !boardName ||
+    boardName.length > 30 ||
+    !rows ||
+    rows > 6 ||
+    rows < 3 ||
+    !Number.isInteger(rows) ||
+    !columns ||
+    columns > 9 ||
+    columns < 3 ||
+    !Number.isInteger(columns)
+  ) {
+    alert("Please check your inputs\nName must be unique and under 30 chars,\nNumbers must be in bounds, use arrows")
+    return
   }
-}
+  createGridSidebar.classList.toggle("hidden");
+
+  let tiles = []
+  for(let i = 0; i != (columns * rows); i++){
+    tiles.push({type:"placeholder", count:i})
+  }
+
+  console.log(tiles)
+
+  boards[boardName] = {
+    rows,
+    columns,
+    tiles
+  }
+  drawBoard(boardName)
+  customBoardName = boardName
+})
+
+closeCreateGridSidebarButton.addEventListener("click",() => createGridSidebar.classList.toggle("hidden"))
+closeCreateTileSidebarButton.addEventListener("click",() => createTileSidebar.classList.toggle("hidden"))
+
+
+createTileSubmitButton.addEventListener("click",() => {
+  console.log("here")
+  let selectedTile = document.getElementById(`placeholder${selectedTileNumber.value}`)
+  selectedTile.classList.add(colourInput.options[colourInput.selectedIndex].id)
+  selectedTile.append(displayNameInput.value)
+  if(hasIconInput.value){
+    let image = document.createElement("image")
+    image.src = `./resouces/icons/${iconNameeInput.value}.webp`
+    selectedTile.append(image)
+  } else selectedTile.classList.add("textOnly")
+
+})
 
 //takes the grid from boards.js and adds it to the dom
 function drawBoard(name) {
@@ -129,6 +156,16 @@ function drawBoard(name) {
     const tileElement = document.createElement("button");
     tileElement.classList.add("item");
 
+    if (tile.type === "placeholder"){
+      tileElement.addEventListener("click", () => {
+        selectedTileNumber.value = tile.count
+        createTileSidebar.classList.toggle("hidden")       
+      });
+      tileElement.id = `placeholder${tile.count}`
+      gridSection.append(tileElement);
+      return;
+    }
+
     //if blank, just add streight to grid and return
     if (tile.type === "blank") {
       gridSection.append(tileElement);
@@ -178,6 +215,46 @@ function drawBoard(name) {
     gridSection.append(li);
   });
 }
+
+//removes the menu button to prevent wandering fingers
+removeMenuButtonButton.addEventListener("click", () => {
+  sidebarButton.remove();
+  sidebar.classList.toggle("hidden");
+});
+
+pluraliseButton.addEventListener("click", () => pluraliseLastWord());
+playButton.addEventListener("click", () => speakSentence());
+clearButton.addEventListener("click", () => clearSentence());
+loadSetOneButton.addEventListener("click", () => {
+  drawBoard("initial");
+  localStorage.setItem("activeGrid", "initial");
+});
+loadSetTwoButton.addEventListener("click", () => {
+  drawBoard("standard");
+  localStorage.setItem("activeGrid", "standard");
+});
+loadSetThreeButton.addEventListener("click", () => {
+  drawBoard("complex");
+  localStorage.setItem("activeGrid", "complex");
+});
+
+//makes the last word plural, if plural form specified
+function pluraliseLastWord() {
+  console.log("last word pluralised, if it has a plural form");
+  if (sentence.length > 0) {
+    let last = sentence.pop();
+    //coveres edgecases where worst case, the word only has a display name set
+    last.pronounciation =
+      last.pluralFormPronounciation ??
+      last.pluralForm ??
+      last.pronounciation ??
+      last.displayName;
+    last.displayName = last.pluralForm ?? last.displayName;
+    sentence.push(last);
+    updateSentence();
+  }
+}
+
 
 //updates the sentence display bar
 function updateSentence() {
