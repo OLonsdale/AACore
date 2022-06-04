@@ -16,15 +16,148 @@
       sizes="180x180"
       href="./resouces/favicon-ios.png"
     />
-    <!-- <script>
-      navigator.serviceWorker.register("sw.js");
-    </script> -->
+
+    <!-- <script> navigator.serviceWorker.register("sw.js"); </script> -->
+    <!-- <script>navigator.serviceWorker.register("public/pwabuilder-adv-sw.js")</script>  -->
+    <!-- <script>navigator.serviceWorker.register("sw.js")</script>  -->
     <link rel="manifest" href="./manifest.json" />
   </head>
 
   <body>
-    <div class="sentenceSection" id="sentenceSection">
-      <button id="sidebarButton" class="largeText"><div>☰✖</div></button>
+
+    <div id="sidebar" class="hidden sidebar">
+      <h2>Settings:</h2>
+      <div>
+        <label for="voicesSelect">Select Voice:</label>
+        <select id="voicesSelect">
+          <option disabled>Select Voice</option>
+        </select>
+      </div>
+      <h3>Select Set:</h3>
+      <div>
+        <button class="sidebarButton" id="loadSetOneButton">
+          Load Initial
+        </button>
+        <button class="sidebarButton" id="loadSetTwoButton">
+          Load Standard
+        </button>
+        <button class="sidebarButton" id="loadSetThreeButton">
+          Load Set Three
+        </button>
+      </div>
+
+      <h3>Create Grid</h3>
+      <button class="sidebarButton" id="createGridMenuButton">New Grid</button>
+
+      <h3>Remove Menu Button Until Refresh:</h3>
+      <button class="sidebarButton" id="removeMenuButtonButton">Remove</button>
+
+      <h3>About:</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste,
+        voluptates laboriosam commodi deserunt nemo voluptate ratione distinctio
+        culpa nihil quis! Minima doloribus iusto magni reiciendis totam odit?
+        Hic, eligendi ea? Numquam illo tempore blanditiis repudiandae! Fugit,
+        necessitatibus. Magnam aliquid similique ad debitis rerum nostrum
+        exercitationem unde tenetur odit velit.
+      </p>
+
+      <h2>Version:</h2>
+      <p>0.0.41</p>
+    </div>
+
+    <div id="createGridSidebar" class="hidden sidebar">
+      <button class="sidebarButton" id="closeCreateGridSidebarButton">
+        Close
+      </button>
+      <h2>Create Grid</h2>
+      <div>
+        <label for="nameInput">Name: (must be unique)</label>
+      </div>
+      <div>
+        <input id="nameInput" type="text" />
+      </div>
+      <div>
+        <label for="rowsInput">Rows:</label>
+      </div>
+      <div class="displayFlexRow">
+        <input
+          id="rowsInput"
+          type="range"
+          min="3"
+          max="10"
+          step="1"
+          value="3"
+        />
+        <div id="rowsInputDisplay">3</div>
+      </div>
+      <div>
+        <label for="colsInput">Columns:</label>
+      </div>
+      <div class="displayFlexRow">
+        <input
+          id="colsInput"
+          type="range"
+          min="3"
+          max="12"
+          step="1"
+          value="3"
+        />
+        <div id="colsInputDisplay">3</div>
+      </div>
+
+      <button class="sidebarButton" id="generateEmptyButton">Create</button>
+    </div>
+
+    <div id="createTileSidebar" class="hidden sidebar">
+      <button class="sidebarButton" id="closeCreateTileSidebarButton">
+        Close
+      </button>
+      <h2>Create Tile</h2>
+      <div><label for="selectedTileNumber">Selected Tile:</label></div>
+      <div><input id="selectedTileNumber" type="text" disabled /></div>
+      <div><label for="displayNameInput">Display Name:</label></div>
+      <div><input id="displayNameInput" type="text" /></div>
+      <div>
+        <label for="iconNameInput"
+          >Icon Name<br />(all lower case, no spaces):</label
+        >
+      </div>
+      <div><input id="iconNameInput" type="text" /></div>
+
+      <div>
+        <label for="tileType">Type:</label>
+      </div>
+      <div>
+        <select id="tileType">
+          <option id="iconAndText">Icon and Text</option>
+          <option id="textOnly">Text Only</option>
+          <option id="link">Link to another board</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="colourInput">Colour:</label>
+      </div>
+      <div>
+        <select id="colourInput">
+          <option id="red">Red</option>
+          <option id="pink">Pink</option>
+          <option id="orange">Orange</option>
+          <option id="yellow">Yellow</option>
+          <option id="green">Green</option>
+          <option id="blue">Blue</option>
+          <option id="grey">Grey</option>
+          <option id="white">White</option>
+          <option id="linkColour">For Links Only</option>
+        </select>
+      </div>
+
+      <button class="sidebarButton" id="createTileSubmitButton">Create</button>
+    </div>
+
+    <div id="sentenceSection" class="sentenceSection">
+      <button id="sidebarButton" class="largeText">☰</button>
       <input
         class="sentenceDisplay"
         id="sentenceDisplay"
@@ -44,104 +177,21 @@
         aria-label="Clear Sentence"
         id="clearButton"
         class="playbackButton"
-        >
-        <img alt="delete icon" width="40" height="40" src="./resouces/delete.svg" />
+      >
+        <img
+          alt="delete icon"
+          width="40"
+          height="40"
+          src="./resouces/delete.svg"
+        />
       </button>
     </div>
-    
-    <div id="sidebar" class="hidden sidebar">
-      <h2>Settings:</h2>
-      <div>
-        <label for="voicesSelect">Select Voice:</label>
-        <select id="voicesSelect">
-          <option disabled>Select Voice</option>
-        </select>
-      </div>
-      <h3>Select Set:</h3>
-      <div>
-        <button class="sidebarButton" id="loadSetOneButton">Load Initial</button>
-        <button class="sidebarButton" id="loadSetTwoButton">Load Standard</button>
-        <button class="sidebarButton" id="loadSetThreeButton">Load Set Three</button>
-      </div>
 
-      <h3>Create Grid</h3>
-      <button class="sidebarButton" id="createGridMenuButton">New Grid</button>
-
-      <h3>Remove Menu Button Until Refresh:</h3>
-      <button class="sidebarButton" id="removeMenuButtonButton">Remove</button>
-
-      <h2>About:</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste,
-        voluptates laboriosam commodi deserunt nemo voluptate ratione distinctio
-        culpa nihil quis! Minima doloribus iusto magni reiciendis totam odit?
-        Hic, eligendi ea? Numquam illo tempore blanditiis repudiandae! Fugit,
-        necessitatibus. Magnam aliquid similique ad debitis rerum nostrum
-        exercitationem unde tenetur odit velit.
-      </p>
-    </div>
-
-    <div id="createGridSidebar" class="hidden sidebar">
-      <button class="sidebarButton" id="closeCreateGridSidebarButton">Close</button>
-      <h2>Create Grid</h2>
-      <div>
-        <label for="nameInput">Name:</label>
-        <input id="nameInput" type="text">
-      </div>
-      <div>
-        <label for="rowsInput">Rows:</label>
-        <input id="rowsInput" type="number" min="3" max="6">
-      </div>
-      <div>
-        <label for="colsInput">Cols:</label>
-        <input id="colsInput" type="number" min="3" max="9">
-      </div>
-      <button class="sidebarButton" id="generateEmptyButton">Create</button>
-
-    </div>
-
-    <div id="createTileSidebar" class="hidden sidebar">
-      <button class="sidebarButton" id="closeCreateTileSidebarButton">Close</button>
-      <h2>Create Tile</h2>
-      <div>
-        <label for="selectedTileNumber">Selected Tile:</label>
-        <input id="selectedTileNumber" type="text" disabled>
-      </div>
-      <div>
-        <label for="displayNameInput">Display Name:</label>
-        <input id="displayNameInput" type="text">
-      </div>
-      <div>
-        <label for="hasIconInput">Has Icon:</label>
-        <input id="hasIconInput" type="checkbox">
-      </div>
-      <div>
-        <label for="iconNameeInput">Icon Name (all lower case, no spaces):</label>
-        <input id="iconNameeInput" type="text">
-      </div>
-      <div>
-        <label for="colourInput">Colour:</label>
-        <select id="colourInput">
-          <option id="red">Red</option>
-          <option id="pink">Pink</option>
-          <option id="orange">Orange</option>
-          <option id="yellow">Yellow</option>
-          <option id="green">Green</option>
-          <option id="blue">Blue</option>
-          <option id="grey">Grey</option>
-          <option id="white">White</option>
-        </select>
-      </div>
-      
-      <button class="sidebarButton" id="createTileSubmitButton">Create</button>
-
-    </div>
-
-    <div id="container" class="container">
+    <div class="container">
       <ol id="gridSection" class="grid">
-        <noscript>
-          You need JavaScript to use this site. Please upgrade to a modern
-          browser or disable script blocking plugins.
+      <noscript>
+        You need JavaScript to use this site. Please upgrade to a modern browser
+          or disable script blocking plugins.
         </noscript>
       </ol>
     </div>
@@ -153,7 +203,7 @@
       id="pluraliseButton"
     >
       +s
-    </button> 
+    </button>
     <script type="module" src="scripts.js"></script>
   </body>
 </html>

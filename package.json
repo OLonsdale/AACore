@@ -21,6 +21,7 @@
     "express": "^4.18.1",
     "firebase": "^9.8.2",
     "morgan": "^1.10.0",
-    "node-fetch": "^3.2.4"
+    "node-fetch": "^3.2.4",
+    "workbox-precaching": "^6.5.3"
   }
 }

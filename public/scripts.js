@@ -1,5 +1,13 @@
 "use strict";
 
+if (window.navigator && navigator.serviceWorker) {
+  navigator.serviceWorker.getRegistrations().then(function (registrations) {
+    for (let registration of registrations) {
+      registration.unregister();
+    }
+  });
+}
+
 import { boards } from "./boards.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
@@ -12,81 +20,100 @@ const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
 let selectedVoice;
 
+function showSidebar() {
+  sidebarButton.textContent = "✖";
+  sidebar.classList.remove("hidden");
+  createGridSidebar.classList.add("hidden");
+  createTileSidebar.classList.add("hidden");
+}
+
+function closeSidebar() {
+  sidebarButton.textContent = "☰";
+  sidebar.classList.add("hidden");
+  createGridSidebar.classList.add("hidden");
+  createTileSidebar.classList.add("hidden");
+}
+
+function showCreateGridSidebar() {
+  createGridSidebar.classList.remove("hidden");
+  sidebar.classList.add("hidden");
+  createTileSidebar.classList.add("hidden");
+}
+
+function showCreateTileSidebar() {
+  createTileSidebar.classList.remove("hidden");
+  createGridSidebar.classList.add("hidden");
+  sidebar.classList.add("hidden");
+}
+
 //hides and shows the sidebar
 sidebarButton.addEventListener("click", () => {
-  sidebar.classList.toggle("hidden");
+  if (sidebar.classList.contains("hidden")) {
+    showSidebar();
+  } else closeSidebar();
 });
 
-//speaks the sentence when hitting enter, instead of adding selected word
-document.addEventListener("keydown", (ev) => {
-  if (ev.key === "Enter") {
-    ev.preventDefault();
-    speakSentence();
-  }
-});
+createGridMenuButton.addEventListener("click", () => showCreateGridSidebar());
+closeCreateGridSidebarButton.addEventListener("click", () =>
+  createGridSidebar.classList.add("hidden")
+);
+closeCreateTileSidebarButton.addEventListener("click", () =>
+  createTileSidebar.classList.add("hidden")
+);
 
-createGridMenuButton.addEventListener("click", ev=> {
-  sidebar.classList.toggle("hidden");
-  createGridSidebar.classList.toggle("hidden");
-})
+let customBoardName;
+function generateEmptyGrid() {
+  let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ", "-");
+  let rows = Number(rowsInput.value);
+  let columns = Number(colsInput.value);
 
-document.getElementById("generateEmptyButton").addEventListener("click", ev=> {
-
-  let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ","-")
-  let rows = Number(rowsInput.value)
-  let columns = Number(colsInput.value)
-
-  if(
-    boards.hasOwnProperty(boardName) ||
-    !boardName ||
-    boardName.length > 30 ||
-    !rows ||
-    rows > 6 ||
-    rows < 3 ||
-    !Number.isInteger(rows) ||
-    !columns ||
-    columns > 9 ||
-    columns < 3 ||
-    !Number.isInteger(columns)
-  ) {
-    alert("Please check your inputs\nName must be unique and under 30 chars,\nNumbers must be in bounds, use arrows")
-    return
+  if (boards.hasOwnProperty(boardName) || !boardName || boardName.length > 30) {
+    alert("Please check your inputs\nName must be unique and under 30 chars");
+    return;
   }
   createGridSidebar.classList.toggle("hidden");
 
-  let tiles = []
-  for(let i = 0; i != (columns * rows); i++){
-    tiles.push({type:"placeholder", count:i})
+  let tiles = [];
+  for (let i = 0; i != columns * rows; i++) {
+    tiles.push({ type: "placeholder", count: i });
   }
-
-  console.log(tiles)
 
   boards[boardName] = {
     rows,
     columns,
-    tiles
+    tiles,
+  };
+  drawBoard(boardName);
+  customBoardName = boardName;
+}
+
+document
+  .getElementById("generateEmptyButton")
+  .addEventListener("click", (ev) => {
+    generateEmptyGrid();
+  });
+
+//convert to edit json object and redraw grid rather than changing the dom
+createTileSubmitButton.addEventListener("click", () => {
+  updatePlaceholderGrid();
+});
+
+//vulnerable to injection
+function updatePlaceholderGrid() {
+  let board = boards[customBoardName];
+  let selectedTile = board.tiles[selectedTileNumber.value];
+  selectedTile.colour = colourInput.options[colourInput.selectedIndex].id;
+  selectedTile.displayName = displayNameInput.value;
+  selectedTile.type = hasIconInput.value ? "textAndIcon" : "textOnly";
+  if (selectedTile.type !== "textOnly") {
+    selectedTile.iconName = iconNameInput.value;
   }
-  drawBoard(boardName)
-  customBoardName = boardName
-})
 
-closeCreateGridSidebarButton.addEventListener("click",() => createGridSidebar.classList.toggle("hidden"))
-closeCreateTileSidebarButton.addEventListener("click",() => createTileSidebar.classList.toggle("hidden"))
-
-
-createTileSubmitButton.addEventListener("click",() => {
-  console.log("here")
-  let selectedTile = document.getElementById(`placeholder${selectedTileNumber.value}`)
-  selectedTile.classList.add(colourInput.options[colourInput.selectedIndex].id)
-  selectedTile.append(displayNameInput.value)
-  if(hasIconInput.value){
-    let image = document.createElement("image")
-    image.src = `./resouces/icons/${iconNameeInput.value}.webp`
-    selectedTile.append(image)
-  } else selectedTile.classList.add("textOnly")
-})
+  drawBoard(customBoardName);
+}
 
 //takes the grid from boards.js and adds it to the dom
+//need to break down into smaller modules
 function drawBoard(name) {
   const gridSection = document.getElementById("gridSection");
   const board = boards[name];
@@ -95,55 +122,8 @@ function drawBoard(name) {
   gridSection.replaceChildren();
 
   gridSection.classList = "grid";
-
-  //sets dimentions. room for improvement here
-  switch (board.rows) {
-    case 3:
-      gridSection.classList.add("three-rows");
-      break;
-    case 4:
-      gridSection.classList.add("four-rows");
-      break;
-    case 5:
-      gridSection.classList.add("five-rows");
-      break;
-    case 6:
-      gridSection.classList.add("six-rows");
-      break;
-    case 7:
-      gridSection.classList.add("seven-rows");
-      break;
-    case 8:
-      gridSection.classList.add("eight-rows");
-      break;
-    case 9:
-      gridSection.classList.add("nine-rows");
-      break;
-  }
-
-  switch (board.columns) {
-    case 3:
-      gridSection.classList.add("three-cols");
-      break;
-    case 4:
-      gridSection.classList.add("four-cols");
-      break;
-    case 5:
-      gridSection.classList.add("five-cols");
-      break;
-    case 6:
-      gridSection.classList.add("six-cols");
-      break;
-    case 7:
-      gridSection.classList.add("seven-cols");
-      break;
-    case 8:
-      gridSection.classList.add("eight-cols");
-      break;
-    case 9:
-      gridSection.classList.add("nine-cols");
-      break;
-  }
+  gridSection.classList.add(`rows-${board.rows}`);
+  gridSection.classList.add(`cols-${board.columns}`);
 
   //for each tile
   board.tiles.forEach((tile) => {
@@ -151,12 +131,12 @@ function drawBoard(name) {
     const tileElement = document.createElement("button");
     tileElement.classList.add("item");
 
-    if (tile.type === "placeholder"){
+    if (tile.type === "placeholder") {
       tileElement.addEventListener("click", () => {
-        selectedTileNumber.value = tile.count
-        createTileSidebar.classList.toggle("hidden")       
+        selectedTileNumber.value = tile.count;
+        showCreateTileSidebar();
       });
-      tileElement.id = `placeholder${tile.count}`
+      tileElement.id = `placeholder${tile.count}`;
       gridSection.append(tileElement);
       return;
     }
@@ -205,8 +185,8 @@ function drawBoard(name) {
     }
 
     //adds it to dom
-    let li = document.createElement("li")
-    li.append(tileElement)
+    let li = document.createElement("li");
+    li.append(tileElement);
     gridSection.append(li);
   });
 }
@@ -214,12 +194,15 @@ function drawBoard(name) {
 //removes the menu button to prevent wandering fingers
 removeMenuButtonButton.addEventListener("click", () => {
   sidebarButton.remove();
-  sidebar.classList.toggle("hidden");
+  closeSidebar()
 });
+
+//Event Listeners
 
 pluraliseButton.addEventListener("click", () => pluraliseLastWord());
 playButton.addEventListener("click", () => speakSentence());
 clearButton.addEventListener("click", () => clearSentence());
+
 loadSetOneButton.addEventListener("click", () => {
   drawBoard("initial");
   localStorage.setItem("activeGrid", "initial");
@@ -249,7 +232,6 @@ function pluraliseLastWord() {
     updateSentence();
   }
 }
-
 
 //updates the sentence display bar
 function updateSentence() {
@@ -329,6 +311,22 @@ voiceSelectElement.addEventListener("change", () => {
 if (!localStorage.getItem("activeGrid")) {
   localStorage.setItem("activeGrid", "standard");
 }
+
+document.getElementById("rowsInput").addEventListener("change", () => {
+  rowsInputDisplay.textContent = rowsInput.value;
+});
+
+document.getElementById("colsInput").addEventListener("change", () => {
+  colsInputDisplay.textContent = colsInput.value;
+});
+
+//speaks the sentence when hitting enter, instead of adding selected word
+document.addEventListener("keydown", (ev) => {
+  if (ev.key === "Enter") {
+    ev.preventDefault();
+    speakSentence();
+  }
+});
 
 //loads grid from localstorage to keep same grid on page refresh
 drawBoard(localStorage.getItem("activeGrid"));

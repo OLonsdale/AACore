@@ -22,3 +22,5 @@ Update service worker before deploying
 Sentence bar should scroll
 
 Page scaling with media queries
+
+Debug info copy paste. Current voice, screen res, platform, browser
