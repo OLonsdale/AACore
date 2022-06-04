@@ -104,9 +104,10 @@ button {
   display: flex;
   position: absolute;
   flex-direction: column;
-  background-color: rgba(184, 184, 184, 0.87);
+  background-color: rgba(184, 184, 184, 0.925);
   width: 300px;
   gap: 1em;
+  z-index: 3;
 }
 
 .sidebarButton {
@@ -115,6 +116,7 @@ button {
   background-color: darkcyan;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+  z-index: -1;
 }
 
 .playbackButton {

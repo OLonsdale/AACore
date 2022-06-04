@@ -1,5 +1,6 @@
 const boards = {
   "initial": {
+    topLevel: true,
     rows: 3,
     columns: 6,
     tiles: [
@@ -132,6 +133,7 @@ const boards = {
     ],
   },
   "standard": {
+    topLevel: true,
     rows: 6,
     columns: 9,
     tiles: [

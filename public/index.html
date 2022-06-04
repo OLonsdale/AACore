@@ -100,6 +100,11 @@
         <div id="colsInputDisplay">3</div>
       </div>
 
+      <div>
+        <label for="topLevelInput">Show in sidebar:</label>
+        <input type="checkbox" id="topLevelInput">
+      </div>
+
       <button class="sidebarButton" id="generateEmptyButton">Create</button>
     </div>
 
@@ -107,17 +112,14 @@
       <button class="sidebarButton" id="closeCreateTileSidebarButton">
         Close
       </button>
+
       <h2>Create Tile</h2>
+      
       <div><label for="selectedTileNumber">Selected Tile:</label></div>
       <div><input id="selectedTileNumber" type="text" disabled /></div>
+
       <div><label for="displayNameInput">Display Name:</label></div>
       <div><input id="displayNameInput" type="text" /></div>
-      <div>
-        <label for="iconNameInput"
-          >Icon Name<br />(all lower case, no spaces):</label
-        >
-      </div>
-      <div><input id="iconNameInput" type="text" /></div>
 
       <div>
         <label for="tileType">Type:</label>
@@ -126,9 +128,20 @@
         <select id="tileType">
           <option id="iconAndText">Icon and Text</option>
           <option id="textOnly">Text Only</option>
-          <option id="link">Link to another board</option>
+          <option id="link">Link to another board (unspoken)</option>
         </select>
       </div>
+
+      <div>
+        <label for="iconNameInput">Icon Name</label>
+      </div>
+      <div><input id="iconNameInput" type="text" /></div>
+
+      <div>
+        <label for="linkToInput">Link to board:</label>
+      </div>
+      <div><input id="linkToInput" type="text" /></div>
+
 
       <div>
         <label for="colourInput">Colour:</label>
@@ -147,7 +160,8 @@
         </select>
       </div>
 
-      <button class="sidebarButton" id="createTileSubmitButton">Create</button>
+      <button class="sidebarButton" id="createTileSubmitButton">Save Edit to Tile</button>
+      <button class="sidebarButton" id="finaliseBoardButton">Finalise Board</button>
     </div>
 
     <div id="topBar" class="topBar">

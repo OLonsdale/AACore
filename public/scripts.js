@@ -1,7 +1,11 @@
 "use strict";
 
-import { boards } from "./boards.js";
+import { boards as stockBoards } from "./boards.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
+
+let boards = {...stockBoards, ...JSON.parse(localStorage.getItem("customBoards"))}
+
+console.log(boards)
 
 const synth = window.speechSynthesis;
 
@@ -16,14 +20,17 @@ function showSidebar() {
   sidebar.classList.remove("hidden");
   createGridSidebar.classList.add("hidden");
   createTileSidebar.classList.add("hidden");
+
   gridSelectionList.replaceChildren()
   for (const board in boards) {
     if (Object.hasOwnProperty.call(boards, board)) {
       const element = boards[board];
+      if(!element.topLevel) continue
       let loadButton = document.createElement("button")
       loadButton.classList.add("sidebarButton")
-      loadButton.textContent = board
+      loadButton.textContent = board.charAt(0).toUpperCase() + board.slice(1)
       loadButton.addEventListener("click",()=>{
+        localStorage.setItem("activeGrid",board)
         drawBoard(board)
       })
       gridSelectionList.append(loadButton)
@@ -69,6 +76,16 @@ closeCreateTileSidebarButton.addEventListener("click", () =>
   createTileSidebar.classList.add("hidden")
 );
 
+finaliseBoardButton.addEventListener("click", ()=> {
+  finaliseBoard()
+})
+
+function finaliseBoard(){
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"))
+  customBoards[localStorage.getItem("activeGrid")] = boards[localStorage.getItem("activeGrid")]
+  localStorage.setItem("customBoards",JSON.stringify(customBoards))
+  // delete boards[localStorage.getItem("activeGrid")]
+}
 
 function generateEmptyGrid() {
   let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ", "-");
@@ -89,15 +106,16 @@ function generateEmptyGrid() {
     tiles.push({ type: "placeholder", count: i });
   }
 
+
+
   boards[boardName] = {
     rows,
     columns,
     tiles,
+    topLevel: topLevelInput.value,
   };
   drawBoard(boardName);
 }
-
-
 
 document.getElementById("generateEmptyButton").addEventListener("click", (ev) => {
     generateEmptyGrid();
@@ -105,21 +123,25 @@ document.getElementById("generateEmptyButton").addEventListener("click", (ev) =>
 
 //convert to edit json object and redraw grid rather than changing the dom
 createTileSubmitButton.addEventListener("click", () => {
-  updatePlaceholderGrid();
+  updatePlaceholderTile();
 });
 
 //vulnerable to injection
-function updatePlaceholderGrid() {
-  let board = boards[customBoardName];
+function updatePlaceholderTile() {
+  let board = boards[localStorage.getItem("activeGrid")];
   let selectedTile = board.tiles[selectedTileNumber.value];
-  selectedTile.colour = colourInput.options[colourInput.selectedIndex].id;
   selectedTile.displayName = displayNameInput.value;
-  selectedTile.type = hasIconInput.value ? "textAndIcon" : "textOnly";
-  if (selectedTile.type !== "textOnly") {
-    selectedTile.iconName = iconNameInput.value;
+  selectedTile.type = tileType.options[tileType.selectedIndex].id;
+  if(iconNameInput.value){
+    selectedTile.iconName = iconNameInput.value
   }
+  if(linkToInput.value){
+    selectedTile.linkTo = linkToInput.value
+  }
+  selectedTile.colour = colourInput.options[colourInput.selectedIndex].id;
+  
 
-  drawBoard(customBoardName);
+  drawBoard(localStorage.getItem("activeGrid"));
 }
 
 window.onresize = () => drawBoard(localStorage.getItem("activeGrid"))
@@ -129,6 +151,7 @@ function drawBoard(name) {
   console.log("grid draw")
   const gridSection = document.getElementById("gridSection");
   const board = boards[name];
+  localStorage.setItem("activeGrid",name)
 
   //clear existing
   gridSection.replaceChildren();
@@ -316,6 +339,11 @@ voiceSelectElement.addEventListener("change", () => {
 //set default grid
 if (!localStorage.getItem("activeGrid")) {
   localStorage.setItem("activeGrid", "standard");
+}
+
+if (!localStorage.getItem("customBoards")) {
+  let customBoards = {}
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
 }
 
 document.getElementById("rowsInput").addEventListener("change", () => {
