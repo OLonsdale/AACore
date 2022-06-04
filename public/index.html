@@ -24,8 +24,10 @@
   </head>
 
   <body>
-
     <div id="sidebar" class="hidden sidebar">
+      <button class="sidebarButton" id="closeSidebarButton">
+        Close
+      </button>
       <h2>Settings:</h2>
       <div>
         <label for="voicesSelect">Select Voice:</label>
@@ -34,16 +36,8 @@
         </select>
       </div>
       <h3>Select Set:</h3>
-      <div>
-        <button class="sidebarButton" id="loadSetOneButton">
-          Load Initial
-        </button>
-        <button class="sidebarButton" id="loadSetTwoButton">
-          Load Standard
-        </button>
-        <button class="sidebarButton" id="loadSetThreeButton">
-          Load Set Three
-        </button>
+      <div id="gridSelectionList">
+        <!-- Filled by JS -->
       </div>
 
       <h3>Create Grid</h3>
@@ -63,7 +57,7 @@
       </p>
 
       <h2>Version:</h2>
-      <p>0.0.43</p>
+      <p>0.0.44</p>
     </div>
 
     <div id="createGridSidebar" class="hidden sidebar">
@@ -156,7 +150,7 @@
       <button class="sidebarButton" id="createTileSubmitButton">Create</button>
     </div>
 
-    <div id="sentenceSection" class="sentenceSection">
+    <div id="topBar" class="topBar">
       <button id="sidebarButton" class="largeText">☰</button>
       <input
         class="sentenceDisplay"

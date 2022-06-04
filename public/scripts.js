@@ -1,14 +1,5 @@
 "use strict";
 
-function unbindServiceWorker(){
-  navigator.serviceWorker.getRegistrations().then(function (registrations) {
-    for (let registration of registrations) {
-      registration.unregister();
-    }
-  });
-}
-
-
 import { boards } from "./boards.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
@@ -22,14 +13,26 @@ let voices = [];
 let selectedVoice;
 
 function showSidebar() {
-  sidebarButton.textContent = "✖";
   sidebar.classList.remove("hidden");
   createGridSidebar.classList.add("hidden");
   createTileSidebar.classList.add("hidden");
+  gridSelectionList.replaceChildren()
+  for (const board in boards) {
+    if (Object.hasOwnProperty.call(boards, board)) {
+      const element = boards[board];
+      let loadButton = document.createElement("button")
+      loadButton.classList.add("sidebarButton")
+      loadButton.textContent = board
+      loadButton.addEventListener("click",()=>{
+        drawBoard(board)
+      })
+      gridSelectionList.append(loadButton)
+    }
+  }
+
 }
 
 function closeSidebar() {
-  sidebarButton.textContent = "☰";
   sidebar.classList.add("hidden");
   createGridSidebar.classList.add("hidden");
   createTileSidebar.classList.add("hidden");
@@ -54,6 +57,10 @@ sidebarButton.addEventListener("click", () => {
   } else closeSidebar();
 });
 
+closeSidebarButton.addEventListener("click", () => {
+  closeSidebar();
+});
+
 createGridMenuButton.addEventListener("click", () => showCreateGridSidebar());
 closeCreateGridSidebarButton.addEventListener("click", () =>
   createGridSidebar.classList.add("hidden")
@@ -62,7 +69,7 @@ closeCreateTileSidebarButton.addEventListener("click", () =>
   createTileSidebar.classList.add("hidden")
 );
 
-let customBoardName;
+
 function generateEmptyGrid() {
   let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ", "-");
   let rows = Number(rowsInput.value);
@@ -72,6 +79,9 @@ function generateEmptyGrid() {
     alert("Please check your inputs\nName must be unique and under 30 chars");
     return;
   }
+
+  localStorage.setItem("activeGrid",boardName)
+
   createGridSidebar.classList.toggle("hidden");
 
   let tiles = [];
@@ -85,8 +95,9 @@ function generateEmptyGrid() {
     tiles,
   };
   drawBoard(boardName);
-  customBoardName = boardName;
 }
+
+
 
 document.getElementById("generateEmptyButton").addEventListener("click", (ev) => {
     generateEmptyGrid();
@@ -111,9 +122,11 @@ function updatePlaceholderGrid() {
   drawBoard(customBoardName);
 }
 
+window.onresize = () => drawBoard(localStorage.getItem("activeGrid"))
 //takes the grid from boards.js and adds it to the dom
 //need to break down into smaller modules
 function drawBoard(name) {
+  console.log("grid draw")
   const gridSection = document.getElementById("gridSection");
   const board = boards[name];
 
@@ -124,8 +137,8 @@ function drawBoard(name) {
   gridSection.classList.add(`rows-${board.rows}`);
   gridSection.classList.add(`cols-${board.columns}`);
   
-  let tileWidth = Math.floor(window.innerWidth / board.columns) - 15
-  let tileHeight = Math.floor((window.innerHeight-document.getElementById("sentenceSection").offsetHeight) / board.rows) - 15
+  let tileWidth = Math.floor(window.innerWidth / board.columns) - 20
+  let tileHeight = Math.floor((window.innerHeight-document.getElementById("topBar").offsetHeight) / board.rows) - 20
   let itemSize = tileWidth > tileHeight ? tileHeight : tileWidth
   
   const root = document.documentElement
@@ -208,19 +221,6 @@ removeMenuButtonButton.addEventListener("click", () => {
 pluraliseButton.addEventListener("click", () => pluraliseLastWord());
 playButton.addEventListener("click", () => speakSentence());
 clearButton.addEventListener("click", () => clearSentence());
-
-loadSetOneButton.addEventListener("click", () => {
-  drawBoard("initial");
-  localStorage.setItem("activeGrid", "initial");
-});
-loadSetTwoButton.addEventListener("click", () => {
-  drawBoard("standard");
-  localStorage.setItem("activeGrid", "standard");
-});
-loadSetThreeButton.addEventListener("click", () => {
-  drawBoard("complex");
-  localStorage.setItem("activeGrid", "complex");
-});
 
 //makes the last word plural, if plural form specified
 function pluraliseLastWord() {
@@ -339,4 +339,11 @@ drawBoard(localStorage.getItem("activeGrid"));
 
 populateVoiceList();
 
+function unbindServiceWorker(){
+  navigator.serviceWorker.getRegistrations().then(function (registrations) {
+    for (let registration of registrations) {
+      registration.unregister();
+    }
+  });
+}
 unbindServiceWorker()

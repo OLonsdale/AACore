@@ -61,7 +61,7 @@ body {
   font-size: xx-large;
 }
 
-.sentenceSection {
+.topBar {
   display: flex;
   gap: 5px;
   margin-bottom: 1em;
@@ -103,10 +103,8 @@ button {
 .sidebar {
   display: flex;
   position: absolute;
-  bottom: 0;
   flex-direction: column;
   background-color: rgba(184, 184, 184, 0.87);
-  height: 90vh;
   width: 300px;
   gap: 1em;
 }
