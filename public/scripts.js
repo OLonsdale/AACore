@@ -1,12 +1,13 @@
 "use strict";
 
-if (window.navigator && navigator.serviceWorker) {
+function unbindServiceWorker(){
   navigator.serviceWorker.getRegistrations().then(function (registrations) {
     for (let registration of registrations) {
       registration.unregister();
     }
   });
 }
+
 
 import { boards } from "./boards.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
@@ -332,3 +333,5 @@ document.addEventListener("keydown", (ev) => {
 drawBoard(localStorage.getItem("activeGrid"));
 
 populateVoiceList();
+
+unbindServiceWorker()
