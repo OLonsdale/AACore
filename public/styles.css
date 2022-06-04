@@ -1,3 +1,7 @@
+:root {
+  --grid-size: 100px;
+}
+
 body {
   background-color: #faebd7 !important;
   font-family: "Arial";
@@ -11,6 +15,8 @@ body {
 }
 
 .grid {
+  align-items: center;
+  justify-content: center;
   width: 80%;
   height: 90vh;
   display: grid;
@@ -33,8 +39,8 @@ body {
   flex-direction: column;
   text-align: center;
   box-shadow: 0 0 0 1px black;
-  width: 100%;
-  height: 100%;
+  width: var(--grid-size);
+  height: var(--grid-size);
 }
 
 .icon {
@@ -128,77 +134,77 @@ button {
 /* Cols */
 
 .cols-3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, var(--grid-size));
 }
 
 .cols-4 {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, var(--grid-size));
 }
 
 .cols-5 {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, var(--grid-size));
 }
 
 .cols-6 {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, var(--grid-size));
 }
 
 .cols-7 {
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, var(--grid-size));
 }
 
 .cols-8 {
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, var(--grid-size));
 }
 
 .cols-9 {
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(9, var(--grid-size));
 }
 
 .cols-10 {
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, var(--grid-size));
 }
 
 .cols-11 {
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(11, var(--grid-size));
 }
 
 .cols-12 {
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, var(--grid-size));
 }
 
 /* Rows */
 
 .rows-3 {
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, var(--grid-size));
 }
 
 .rows-4 {
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, var(--grid-size));
 }
 
 .rows-5 {
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, var(--grid-size));
 }
 
 .rows-6 {
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, var(--grid-size));
 }
 
 .rows-7 {
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(7, var(--grid-size));
 }
 
 .rows-8 {
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(8, var(--grid-size));
 }
 
 .rows-9 {
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(9, var(--grid-size));
 }
 
 .rows-10 {
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(10, var(--grid-size));
 }
 
 /* Colours */
@@ -233,6 +239,10 @@ button {
 
 .white {
   background-color: white;
+}
+
+.grammarMarkerColour {
+  background-color: rgb(102, 56, 102);
 }
 
 .linkColour {

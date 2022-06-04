@@ -88,9 +88,7 @@ function generateEmptyGrid() {
   customBoardName = boardName;
 }
 
-document
-  .getElementById("generateEmptyButton")
-  .addEventListener("click", (ev) => {
+document.getElementById("generateEmptyButton").addEventListener("click", (ev) => {
     generateEmptyGrid();
   });
 
@@ -125,7 +123,14 @@ function drawBoard(name) {
   gridSection.classList = "grid";
   gridSection.classList.add(`rows-${board.rows}`);
   gridSection.classList.add(`cols-${board.columns}`);
-
+  
+  let tileWidth = Math.floor(window.innerWidth / board.columns) - 15
+  let tileHeight = Math.floor((window.innerHeight-document.getElementById("sentenceSection").offsetHeight) / board.rows) - 15
+  let itemSize = tileWidth > tileHeight ? tileHeight : tileWidth
+  
+  const root = document.documentElement
+  root.style.setProperty("--grid-size",itemSize+"px")
+  
   //for each tile
   board.tiles.forEach((tile) => {
     //create button
@@ -194,8 +199,8 @@ function drawBoard(name) {
 
 //removes the menu button to prevent wandering fingers
 removeMenuButtonButton.addEventListener("click", () => {
+  closeSidebar();
   sidebarButton.remove();
-  closeSidebar()
 });
 
 //Event Listeners
