@@ -41,7 +41,11 @@
       </div>
 
       <h3>Create Grid</h3>
-      <button class="sidebarButton" id="createGridMenuButton">New Grid</button>
+      <div>
+        <button class="sidebarButton" id="createGridMenuButton">New Grid</button>
+        <button class="sidebarButton" id="importGridButton">Import Grid</button>
+      </div>
+      <input id="importInput" type="file" class="hidden" />
 
       <h3>Remove Menu Button Until Refresh:</h3>
       <button class="sidebarButton" id="removeMenuButtonButton">Remove</button>
@@ -57,7 +61,7 @@
       </p>
 
       <h2>Version:</h2>
-      <p>0.0.47</p>
+      <p>0.0.48</p>
     </div>
 
     <div id="createGridSidebar" class="hidden sidebar">
@@ -161,7 +165,8 @@
       </div>
 
       <button class="sidebarButton" id="createTileSubmitButton">Save Edit to Tile</button>
-      <button class="sidebarButton" id="finaliseBoardButton">Finalise Board</button>
+      <button class="sidebarButton" id="saveBoardButton">Save Board</button>
+      <button class="sidebarButton" id="exportBoardButton">Export Board</button>
     </div>
 
     <div id="topBar" class="topBar">

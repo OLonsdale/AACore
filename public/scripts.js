@@ -76,16 +76,41 @@ closeCreateTileSidebarButton.addEventListener("click", () =>
   createTileSidebar.classList.add("hidden")
 );
 
-finaliseBoardButton.addEventListener("click", ()=> {
-  finaliseBoard()
+saveBoardButton.addEventListener("click", ()=> {
+  saveBoard()
 })
 
-function finaliseBoard(){
+function saveBoard(){
   let customBoards = JSON.parse(localStorage.getItem("customBoards"))
   customBoards[localStorage.getItem("activeGrid")] = boards[localStorage.getItem("activeGrid")]
   localStorage.setItem("customBoards",JSON.stringify(customBoards))
   // delete boards[localStorage.getItem("activeGrid")]
 }
+
+exportBoardButton.addEventListener("click", ()=>{
+  exportBoard()
+})
+
+function exportBoard(){
+  const filename = `${localStorage.getItem("activeGrid")}.json`;
+  const jsonStr = JSON.stringify(boards[localStorage.getItem("activeGrid")]);
+
+  let element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(jsonStr));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+importGridButton.addEventListener("click",()=>{
+  importInput.click()
+  
+})
 
 function generateEmptyGrid() {
   let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ", "-");
