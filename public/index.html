@@ -47,21 +47,11 @@
       </div>
       <input id="importInput" type="file" accept=".json" class="hidden" />
 
-      <h3>Remove Menu Button Until Refresh:</h3>
-      <button class="sidebarButton" id="removeMenuButtonButton">Remove</button>
-
-      <h3>About:</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste,
-        voluptates laboriosam commodi deserunt nemo voluptate ratione distinctio
-        culpa nihil quis! Minima doloribus iusto magni reiciendis totam odit?
-        Hic, eligendi ea? Numquam illo tempore blanditiis repudiandae! Fugit,
-        necessitatibus. Magnam aliquid similique ad debitis rerum nostrum
-        exercitationem unde tenetur odit velit.
-      </p>
+      <h3>Lock sidebar:</h3>
+      <button class="sidebarButton" id="lockSidebarButton">Lock sidebar</button>
 
       <h2>Version:</h2>
-      <p>0.0.49</p>
+      <p>0.0.50</p>
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
@@ -144,7 +134,10 @@
       <div>
         <label for="linkToInput">Link to board:</label>
       </div>
-      <div><input id="linkToInput" type="text" /></div>
+      <div><select id="linkToInput">
+        <option id="">None</option>
+        <!-- Other options added by JS -->
+      </select></div>
 
 
       <div>

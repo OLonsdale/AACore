@@ -16,7 +16,14 @@ const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
 let selectedVoice;
 
+let sidebarLocked = false;
+let unlockAttempt = []
+
 function showSidebar() {
+  if(sidebarLocked){
+    showLockScreen()
+    return
+  }
   sidebar.classList.remove("hidden");
   createBoardSidebar.classList.add("hidden");
   createTileSidebar.classList.add("hidden");
@@ -39,6 +46,70 @@ function showSidebar() {
 
 }
 
+function showLockScreen() {
+  let numbers = []
+  let order = (Math.random()>=0.5)? "ascending" : "descending";
+
+  for (let i = 0; i < 4; i++) {
+    let number = Math.floor(Math.random() * (100 - 1) + 1)
+    if(!numbers.includes(number)){
+      numbers[i] = number
+    }
+    else i--
+  }
+
+  let popup = document.createElement("div")
+  popup.classList.add("sidebar")
+  popup.id="unlockSidebar"
+
+  let message = document.createElement("h2")
+  message.innerText = `Click these numbers in ${order} order`
+
+  let closeButton = document.createElement("button")
+  closeButton.classList = "sidebarButton"
+  closeButton.innerText = "Back"
+  closeButton.id = "closePasswordButton"
+  closeButton.addEventListener("click",()=>{
+    unlockAttempt = []
+    unlockSidebar.remove()
+    console.log("here")
+  })
+
+  popup.append(closeButton, message)
+
+  numbers.forEach(number => {
+    let button = document.createElement("button")
+    button.textContent = number
+    button.classList.add("sidebarButton")
+
+    button.addEventListener("click", ev => {
+      button.disabled = true
+      unlockAttempt.push(number)
+
+      if(order === "ascending"){
+        numbers.sort((a, b) => a - b);
+      } else numbers.sort((a, b) => b - a);
+
+      if(unlockAttempt.length === 4){
+        if(
+          unlockAttempt[0] === numbers[0] &&
+          unlockAttempt[1] === numbers[1] &&
+          unlockAttempt[2] === numbers[2] &&
+          unlockAttempt[3] === numbers[3] ){
+            sidebarLocked = false
+            showSidebar()
+        } else alert("wrong order, try again")
+        closePasswordButton.click()
+      }
+    })
+
+    popup.append(button)
+  })
+
+  document.body.prepend(popup)
+
+}
+
 function closeSidebar() {
   sidebar.classList.add("hidden");
   createBoardSidebar.classList.add("hidden");
@@ -55,6 +126,16 @@ function showCreateTileSidebar() {
   createTileSidebar.classList.remove("hidden");
   createBoardSidebar.classList.add("hidden");
   sidebar.classList.add("hidden");
+
+  for (const board in boards) {
+    if (Object.hasOwnProperty.call(boards, board)) {
+      const element = boards[board];
+      const option = document.createElement("option")
+      option.id = board
+      option.innerText = board
+      linkToInput.append(option)
+    }
+  }
 }
 
 //hides and shows the sidebar
@@ -117,7 +198,7 @@ importInput.addEventListener("change",(ev)=>{
   reader.addEventListener('load', (event) => {
     let newBoard = JSON.parse(event.target.result);
     let customBoards = JSON.parse(localStorage.getItem("customBoards"))
-    customBoards[ev.target.files[0].name] = newBoard
+    customBoards[ev.target.files[0].name.replace(".json","")] = newBoard
     localStorage.setItem("customBoards",JSON.stringify(customBoards))
     console.log("custom board imported")
     boards = {...stockBoards, ...JSON.parse(localStorage.getItem("customBoards"))}
@@ -151,7 +232,7 @@ function generateEmptyBoard() {
     rows,
     columns,
     tiles,
-    topLevel: topLevelInput.value,
+    topLevel: topLevelInput.checked,
   };
   drawBoard(boardName);
 }
@@ -204,7 +285,7 @@ function drawBoard(name) {
   let itemSize = tileWidth > tileHeight ? tileHeight : tileWidth
   
   const root = document.documentElement
-  root.style.setProperty("--board-size",itemSize+"px")
+  root.style.setProperty("--grid-size",itemSize+"px")
   
   //for each tile
   board.tiles.forEach((tile) => {
@@ -273,9 +354,9 @@ function drawBoard(name) {
 }
 
 //removes the menu button to prevent wandering fingers
-removeMenuButtonButton.addEventListener("click", () => {
+lockSidebarButton.addEventListener("click", () => {
   closeSidebar();
-  sidebarButton.remove();
+  sidebarLocked = true
 });
 
 //Event Listeners

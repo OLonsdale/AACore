@@ -97,6 +97,10 @@ button {
   align-items: center;
 }
 
+button:disabled {
+  background-color: grey;
+}
+
 .grammarMarker {
   display: none;
   box-shadow: 0 0 0 1px black;
