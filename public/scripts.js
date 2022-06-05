@@ -18,10 +18,10 @@ let selectedVoice;
 
 function showSidebar() {
   sidebar.classList.remove("hidden");
-  createGridSidebar.classList.add("hidden");
+  createBoardSidebar.classList.add("hidden");
   createTileSidebar.classList.add("hidden");
 
-  gridSelectionList.replaceChildren()
+  boardSelectionList.replaceChildren()
   for (const board in boards) {
     if (Object.hasOwnProperty.call(boards, board)) {
       const element = boards[board];
@@ -30,10 +30,10 @@ function showSidebar() {
       loadButton.classList.add("sidebarButton")
       loadButton.textContent = board.charAt(0).toUpperCase() + board.slice(1)
       loadButton.addEventListener("click",()=>{
-        localStorage.setItem("activeGrid",board)
+        localStorage.setItem("activeBoard",board)
         drawBoard(board)
       })
-      gridSelectionList.append(loadButton)
+      boardSelectionList.append(loadButton)
     }
   }
 
@@ -41,19 +41,19 @@ function showSidebar() {
 
 function closeSidebar() {
   sidebar.classList.add("hidden");
-  createGridSidebar.classList.add("hidden");
+  createBoardSidebar.classList.add("hidden");
   createTileSidebar.classList.add("hidden");
 }
 
-function showCreateGridSidebar() {
-  createGridSidebar.classList.remove("hidden");
+function showCreateBoardSidebar() {
+  createBoardSidebar.classList.remove("hidden");
   sidebar.classList.add("hidden");
   createTileSidebar.classList.add("hidden");
 }
 
 function showCreateTileSidebar() {
   createTileSidebar.classList.remove("hidden");
-  createGridSidebar.classList.add("hidden");
+  createBoardSidebar.classList.add("hidden");
   sidebar.classList.add("hidden");
 }
 
@@ -68,9 +68,9 @@ closeSidebarButton.addEventListener("click", () => {
   closeSidebar();
 });
 
-createGridMenuButton.addEventListener("click", () => showCreateGridSidebar());
-closeCreateGridSidebarButton.addEventListener("click", () =>
-  createGridSidebar.classList.add("hidden")
+createBoardMenuButton.addEventListener("click", () => showCreateBoardSidebar());
+closeCreateBoardSidebarButton.addEventListener("click", () =>
+  createBoardSidebar.classList.add("hidden")
 );
 closeCreateTileSidebarButton.addEventListener("click", () =>
   createTileSidebar.classList.add("hidden")
@@ -82,9 +82,9 @@ saveBoardButton.addEventListener("click", ()=> {
 
 function saveBoard(){
   let customBoards = JSON.parse(localStorage.getItem("customBoards"))
-  customBoards[localStorage.getItem("activeGrid")] = boards[localStorage.getItem("activeGrid")]
+  customBoards[localStorage.getItem("activeBoard")] = boards[localStorage.getItem("activeBoard")]
   localStorage.setItem("customBoards",JSON.stringify(customBoards))
-  // delete boards[localStorage.getItem("activeGrid")]
+  // delete boards[localStorage.getItem("activeBoard")]
 }
 
 exportBoardButton.addEventListener("click", ()=>{
@@ -92,8 +92,8 @@ exportBoardButton.addEventListener("click", ()=>{
 })
 
 function exportBoard(){
-  const filename = `${localStorage.getItem("activeGrid")}.json`;
-  const jsonStr = JSON.stringify(boards[localStorage.getItem("activeGrid")]);
+  const filename = `${localStorage.getItem("activeBoard")}.json`;
+  const jsonStr = JSON.stringify(boards[localStorage.getItem("activeBoard")]);
 
   let element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(jsonStr));
@@ -107,12 +107,26 @@ function exportBoard(){
   document.body.removeChild(element);
 }
 
-importGridButton.addEventListener("click",()=>{
+importBoardButton.addEventListener("click",()=>{
   importInput.click()
-  
 })
 
-function generateEmptyGrid() {
+importInput.addEventListener("change",(ev)=>{
+  const fileList = ev.target.files;
+  const reader = new FileReader()
+  reader.addEventListener('load', (event) => {
+    let newBoard = JSON.parse(event.target.result);
+    let customBoards = JSON.parse(localStorage.getItem("customBoards"))
+    customBoards[ev.target.files[0].name] = newBoard
+    localStorage.setItem("customBoards",JSON.stringify(customBoards))
+    console.log("custom board imported")
+    boards = {...stockBoards, ...JSON.parse(localStorage.getItem("customBoards"))}
+    showSidebar()
+  });
+  reader.readAsText(fileList[0])
+})
+
+function generateEmptyBoard() {
   let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ", "-");
   let rows = Number(rowsInput.value);
   let columns = Number(colsInput.value);
@@ -122,9 +136,9 @@ function generateEmptyGrid() {
     return;
   }
 
-  localStorage.setItem("activeGrid",boardName)
+  localStorage.setItem("activeBoard",boardName)
 
-  createGridSidebar.classList.toggle("hidden");
+  createBoardSidebar.classList.toggle("hidden");
 
   let tiles = [];
   for (let i = 0; i != columns * rows; i++) {
@@ -143,17 +157,17 @@ function generateEmptyGrid() {
 }
 
 document.getElementById("generateEmptyButton").addEventListener("click", (ev) => {
-    generateEmptyGrid();
+    generateEmptyBoard();
   });
 
-//convert to edit json object and redraw grid rather than changing the dom
+//convert to edit json object and redraw board rather than changing the dom
 createTileSubmitButton.addEventListener("click", () => {
   updatePlaceholderTile();
 });
 
 //vulnerable to injection
 function updatePlaceholderTile() {
-  let board = boards[localStorage.getItem("activeGrid")];
+  let board = boards[localStorage.getItem("activeBoard")];
   let selectedTile = board.tiles[selectedTileNumber.value];
   selectedTile.displayName = displayNameInput.value;
   selectedTile.type = tileType.options[tileType.selectedIndex].id;
@@ -166,31 +180,31 @@ function updatePlaceholderTile() {
   selectedTile.colour = colourInput.options[colourInput.selectedIndex].id;
   
 
-  drawBoard(localStorage.getItem("activeGrid"));
+  drawBoard(localStorage.getItem("activeBoard"));
 }
 
-window.onresize = () => drawBoard(localStorage.getItem("activeGrid"))
-//takes the grid from boards.js and adds it to the dom
+window.onresize = () => drawBoard(localStorage.getItem("activeBoard"))
+//takes the board from boards.js and adds it to the dom
 //need to break down into smaller modules
 function drawBoard(name) {
-  console.log("grid draw")
-  const gridSection = document.getElementById("gridSection");
+  console.log("board draw")
+  const boardSection = document.getElementById("boardSection");
   const board = boards[name];
-  localStorage.setItem("activeGrid",name)
+  localStorage.setItem("activeBoard",name)
 
   //clear existing
-  gridSection.replaceChildren();
+  boardSection.replaceChildren();
 
-  gridSection.classList = "grid";
-  gridSection.classList.add(`rows-${board.rows}`);
-  gridSection.classList.add(`cols-${board.columns}`);
+  boardSection.classList = "board";
+  boardSection.classList.add(`rows-${board.rows}`);
+  boardSection.classList.add(`cols-${board.columns}`);
   
   let tileWidth = Math.floor(window.innerWidth / board.columns) - 20
   let tileHeight = Math.floor((window.innerHeight-document.getElementById("topBar").offsetHeight) / board.rows) - 20
   let itemSize = tileWidth > tileHeight ? tileHeight : tileWidth
   
   const root = document.documentElement
-  root.style.setProperty("--grid-size",itemSize+"px")
+  root.style.setProperty("--board-size",itemSize+"px")
   
   //for each tile
   board.tiles.forEach((tile) => {
@@ -204,13 +218,13 @@ function drawBoard(name) {
         showCreateTileSidebar();
       });
       tileElement.id = `placeholder${tile.count}`;
-      gridSection.append(tileElement);
+      boardSection.append(tileElement);
       return;
     }
 
-    //if blank, just add streight to grid and return
+    //if blank, just add streight to board and return
     if (tile.type === "blank") {
-      gridSection.append(tileElement);
+      boardSection.append(tileElement);
       return;
     }
 
@@ -254,7 +268,7 @@ function drawBoard(name) {
     //adds it to dom
     let li = document.createElement("li");
     li.append(tileElement);
-    gridSection.append(li);
+    boardSection.append(li);
   });
 }
 
@@ -361,9 +375,9 @@ voiceSelectElement.addEventListener("change", () => {
   console.log("Selected voice: " + selectedVoice.name);
 });
 
-//set default grid
-if (!localStorage.getItem("activeGrid")) {
-  localStorage.setItem("activeGrid", "standard");
+//set default board
+if (!localStorage.getItem("activeBoard")) {
+  localStorage.setItem("activeBoard", "standard");
 }
 
 if (!localStorage.getItem("customBoards")) {
@@ -387,8 +401,8 @@ document.addEventListener("keydown", (ev) => {
   }
 });
 
-//loads grid from localstorage to keep same grid on page refresh
-drawBoard(localStorage.getItem("activeGrid"));
+//loads board from localstorage to keep same board on page refresh
+drawBoard(localStorage.getItem("activeBoard"));
 
 populateVoiceList();
 

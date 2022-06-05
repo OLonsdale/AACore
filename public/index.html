@@ -36,16 +36,16 @@
         </select>
       </div>
       <h3>Select Set:</h3>
-      <div id="gridSelectionList">
+      <div id="boardSelectionList">
         <!-- Filled by JS -->
       </div>
 
-      <h3>Create Grid</h3>
+      <h3>Create Board</h3>
       <div>
-        <button class="sidebarButton" id="createGridMenuButton">New Grid</button>
-        <button class="sidebarButton" id="importGridButton">Import Grid</button>
+        <button class="sidebarButton" id="createBoardMenuButton">New Board</button>
+        <button class="sidebarButton" id="importBoardButton">Import Board</button>
       </div>
-      <input id="importInput" type="file" class="hidden" />
+      <input id="importInput" type="file" accept=".json" class="hidden" />
 
       <h3>Remove Menu Button Until Refresh:</h3>
       <button class="sidebarButton" id="removeMenuButtonButton">Remove</button>
@@ -61,14 +61,14 @@
       </p>
 
       <h2>Version:</h2>
-      <p>0.0.48</p>
+      <p>0.0.49</p>
     </div>
 
-    <div id="createGridSidebar" class="hidden sidebar">
-      <button class="sidebarButton" id="closeCreateGridSidebarButton">
+    <div id="createBoardSidebar" class="hidden sidebar">
+      <button class="sidebarButton" id="closeCreateBoardSidebarButton">
         Close
       </button>
-      <h2>Create Grid</h2>
+      <h2>Create Board</h2>
       <div>
         <label for="nameInput">Name: (must be unique)</label>
       </div>
@@ -201,7 +201,7 @@
     </div>
 
     <div class="container">
-      <ol id="gridSection" class="grid">
+      <ol id="boardSection" class="board">
       <noscript>
         You need JavaScript to use this site. Please upgrade to a modern browser
           or disable script blocking plugins.
