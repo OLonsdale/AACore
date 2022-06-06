@@ -26,7 +26,7 @@ const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
 let selectedVoice;
 
-let sidebarLocked = localStorage.getItem("sidebarLocked")
+let sidebarLocked = JSON.parse(localStorage.getItem("sidebarLocked"))
 let unlockAttempt = [];
 
 let editMode = false;
@@ -242,7 +242,9 @@ function editTile() {
   if (linkToInput.value) {
     selectedTile.linkTo = linkToInput.value;
   }
-  selectedTile.colour = colourInput.value;
+  if(colourInput.value){
+    selectedTile.colour = colourInput.value;
+  }
 
   drawBoard(localStorage.getItem("activeBoard"));
 }
