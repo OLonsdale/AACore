@@ -40,18 +40,22 @@
         <!-- Filled by JS -->
       </div>
 
-      <h3>Create Board</h3>
+      <h3>Boards:</h3>
       <div>
         <button class="sidebarButton" id="createBoardMenuButton">New Board</button>
         <button class="sidebarButton" id="importBoardButton">Import Board</button>
+        <button class="sidebarButton" id="exportBoardButton">Export Board</button>
       </div>
       <input id="importInput" type="file" accept=".json" class="hidden" />
 
       <h3>Lock sidebar:</h3>
       <button class="sidebarButton" id="lockSidebarButton">Lock sidebar</button>
 
+      <h3>Edit Mode (for custom boards):</h3>
+      <button class="sidebarButton" id="editToggleButton">Enable/Disable Edit Mode</button>
+
       <h2>Version:</h2>
-      <p>0.0.50</p>
+      <p>0.0.51</p>
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
@@ -102,64 +106,71 @@
       <button class="sidebarButton" id="generateEmptyButton">Create</button>
     </div>
 
-    <div id="createTileSidebar" class="hidden sidebar">
-      <button class="sidebarButton" id="closeCreateTileSidebarButton">
+    <div id="editTileSidebar" class="hidden sidebar">
+      <button class="sidebarButton" id="closeEditTileSidebarButton">
         Close
       </button>
 
-      <h2>Create Tile</h2>
+      <h2>Edit Tile</h2>
       
       <div><label for="selectedTileNumber">Selected Tile:</label></div>
       <div><input id="selectedTileNumber" type="text" disabled /></div>
 
       <div><label for="displayNameInput">Display Name:</label></div>
       <div><input id="displayNameInput" type="text" /></div>
-
-      <div>
-        <label for="tileType">Type:</label>
-      </div>
-      <div>
-        <select id="tileType">
-          <option id="iconAndText">Icon and Text</option>
-          <option id="textOnly">Text Only</option>
-          <option id="link">Link to another board (unspoken)</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="iconNameInput">Icon Name</label>
-      </div>
-      <div><input id="iconNameInput" type="text" /></div>
-
-      <div>
-        <label for="linkToInput">Link to board:</label>
-      </div>
-      <div><select id="linkToInput">
-        <option id="">None</option>
-        <!-- Other options added by JS -->
-      </select></div>
-
+      
+      <div><label for="pronounciationInput">Pronounciation (if required):</label></div>
+      <div><input id="pronounciationInput" type="text" /></div>
 
       <div>
         <label for="colourInput">Colour:</label>
       </div>
       <div>
         <select id="colourInput">
-          <option id="red">Red</option>
-          <option id="pink">Pink</option>
-          <option id="orange">Orange</option>
-          <option id="yellow">Yellow</option>
-          <option id="green">Green</option>
-          <option id="blue">Blue</option>
-          <option id="grey">Grey</option>
-          <option id="white">White</option>
-          <option id="linkColour">For Links Only</option>
+          <option value="red">Red</option>
+          <option value="pink">Pink</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="grey">Grey</option>
+          <option value="white">White</option>
+          <option value="linkColour">For Type:Link</option>
         </select>
       </div>
 
-      <button class="sidebarButton" id="createTileSubmitButton">Save Edit to Tile</button>
+      <div>
+        <label for="tileType">Type:</label>
+      </div>
+      <div>
+        <select id="tileTypeInput">
+          <option value="blank">Blank</option>
+          <option value="iconAndText">Icon and Text</option>
+          <option value="textOnly">Text Only</option>
+          <option value="link">Link to another board (unspoken)</option>
+        </select>
+      </div>
+
+      <div>
+        <label id="iconNameInputLable" for="iconNameInput">Icon Name:</label>
+      </div>
+      <div><input id="iconNameInput" type="text" /></div>
+
+      <div>
+        <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
+      </div>
+      <div><input id="iconLinkInput" type="text" /></div>
+
+      <div>
+        <label for="linkToInput">Link to board:</label>
+      </div>
+      <div><select id="linkToInput">
+        <option value="">None</option>
+        <!-- Other options added by JS -->
+      </select></div>
+
+      <button class="sidebarButton" id="editTileSubmitButton">Save Edit to Tile</button>
       <button class="sidebarButton" id="saveBoardButton">Save Board</button>
-      <button class="sidebarButton" id="exportBoardButton">Export Board</button>
     </div>
 
     <div id="topBar" class="topBar">
