@@ -8,6 +8,13 @@ let boards = {
   ...JSON.parse(localStorage.getItem("customBoards")),
 };
 
+function blendBoards(){
+  boards = {
+    ...stockBoards,
+    ...JSON.parse(localStorage.getItem("customBoards")),
+  };
+}
+
 console.log(boards);
 
 const synth = window.speechSynthesis;
@@ -19,7 +26,7 @@ const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
 let selectedVoice;
 
-let sidebarLocked = false;
+let sidebarLocked = localStorage.getItem("sidebarLocked")
 let unlockAttempt = [];
 
 let editMode = false;
@@ -70,10 +77,10 @@ function showCreateBoardSidebar() {
 }
 
 function showEditTile() {
-  if (localStorage.getItem("activeBoard").charAt(0) !== "_") {
-    alert("Edit mode is only for custom boards");
-    return;
-  }
+  // if (localStorage.getItem("activeBoard").charAt(0) !== "_") {
+  //   alert("Edit mode is only for custom boards");
+  //   return;
+  // }
   editTileSidebar.classList.remove("hidden");
   createBoardSidebar.classList.add("hidden");
   sidebar.classList.add("hidden");
@@ -117,10 +124,13 @@ saveBoardButton.addEventListener("click", () => {
 
 function saveBoard() {
   let customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  customBoards[localStorage.getItem("activeBoard")] =
-    boards[localStorage.getItem("activeBoard")];
+  let name = localStorage.getItem("activeBoard")
+  if(name.charAt(0) !== "_"){
+    name = "_" + name
+  }
+  customBoards[name] = boards[localStorage.getItem("activeBoard")];
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
-  // delete boards[localStorage.getItem("activeBoard")]
+  blendBoards()
 }
 
 exportBoardButton.addEventListener("click", () => {
@@ -163,10 +173,7 @@ importInput.addEventListener("change", (ev) => {
     customBoards[ev.target.files[0].name.replace(".json", "")] = newBoard;
     localStorage.setItem("customBoards", JSON.stringify(customBoards));
     console.log("custom board imported");
-    boards = {
-      ...stockBoards,
-      ...JSON.parse(localStorage.getItem("customBoards")),
-    };
+    blendBoards()
     showSidebar();
   });
   reader.readAsText(fileList[0]);
@@ -201,10 +208,7 @@ function generateEmptyBoard() {
   };
 
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
-  boards = {
-    ...stockBoards,
-    ...JSON.parse(localStorage.getItem("customBoards")),
-  };
+  blendBoards()
   drawBoard(boardName);
   if (!editMode) editToggleButton.click();
 }
@@ -302,7 +306,7 @@ function drawBoard(name) {
         displayNameInput.value = tile.displayName ?? "";
         tileTypeInput.value = tile.type;
         pronounciationInput.value = tile.pronounciation ?? ""
-        colourInput.value = tile.colour
+        colourInput.value = tile.colour ?? "red"
         iconNameInput.value = tile.iconName ?? ""
         iconLinkInput.value = tile.iconLink ?? ""
 
@@ -367,6 +371,7 @@ function drawBoard(name) {
 lockSidebarButton.addEventListener("click", () => {
   closeSidebar();
   sidebarLocked = true;
+  localStorage.setItem("sidebarLocked",true)
 });
 
 //Event Listeners
@@ -477,6 +482,10 @@ if (!localStorage.getItem("customBoards")) {
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
 }
 
+if(!localStorage.getItem("sidebarLocked")){
+  localStorage.setItem("sidebarLocked",false)
+}
+
 document.getElementById("rowsInput").addEventListener("change", () => {
   rowsInputDisplay.textContent = rowsInput.value;
 });
@@ -506,3 +515,68 @@ populateVoiceList();
 //   });
 // }
 // unbindServiceWorker()
+
+function showLockScreen() {
+  let numbers = []
+  let order = (Math.random()>=0.5)? "low-to-high" : "high-to-low";
+
+  for (let i = 0; i < 4; i++) {
+    let number = Math.floor(Math.random() * (100 - 1) + 1)
+    if(!numbers.includes(number)){
+      numbers[i] = number
+    }
+    else i--
+  }
+
+  let popup = document.createElement("div")
+  popup.classList.add("sidebar")
+  popup.id="unlockSidebar"
+
+  let message = document.createElement("h2")
+  message.innerText = `Click these numbers in order of ${order}`
+
+  let closeButton = document.createElement("button")
+  closeButton.classList = "sidebarButton"
+  closeButton.innerText = "Back"
+  closeButton.id = "closePasswordButton"
+  closeButton.addEventListener("click",()=>{
+    unlockAttempt = []
+    unlockSidebar.remove()
+    console.log("here")
+  })
+
+  popup.append(closeButton, message)
+
+  numbers.forEach(number => {
+    let button = document.createElement("button")
+    button.textContent = number
+    button.classList.add("sidebarButton")
+
+    button.addEventListener("click", ev => {
+      button.disabled = true
+      unlockAttempt.push(number)
+
+      if(order === "low-to-high"){
+        numbers.sort((a, b) => a - b);
+      } else numbers.sort((a, b) => b - a);
+
+      if(unlockAttempt.length === 4){
+        if(
+          unlockAttempt[0] === numbers[0] &&
+          unlockAttempt[1] === numbers[1] &&
+          unlockAttempt[2] === numbers[2] &&
+          unlockAttempt[3] === numbers[3] ){
+            sidebarLocked = false
+            localStorage.setItem("sidebarLocked",false)
+            showSidebar()
+        } else alert("wrong order, try again")
+        closePasswordButton.click()
+      }
+    })
+
+    popup.append(button)
+  })
+
+  document.body.prepend(popup)
+
+}
