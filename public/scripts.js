@@ -8,7 +8,7 @@ let boards = {
   ...JSON.parse(localStorage.getItem("customBoards")),
 };
 
-function blendBoards(){
+function blendBoards() {
   boards = {
     ...stockBoards,
     ...JSON.parse(localStorage.getItem("customBoards")),
@@ -26,7 +26,7 @@ const voiceSelectElement = document.getElementById("voicesSelect");
 let voices = [];
 let selectedVoice;
 
-let sidebarLocked = JSON.parse(localStorage.getItem("sidebarLocked"))
+let sidebarLocked = JSON.parse(localStorage.getItem("sidebarLocked"));
 let unlockAttempt = [];
 
 let editMode = false;
@@ -34,8 +34,14 @@ let editMode = false;
 editToggleButton.addEventListener("click", () => {
   editMode = !editMode;
   if (editMode) {
+    console.log("Edit mode enabled")
     sentenceDisplayElement.value = "edit mode enabled";
-  } else sentenceDisplayElement.value = "";
+    editToggleButton.textContent = "Disable Edit Mode"
+  } else {
+    console.log("Edit mode disabled")
+    sentenceDisplayElement.value = "";
+    editToggleButton.textContent = "Enable Edit Mode"
+  }
 });
 
 function showSidebar() {
@@ -56,12 +62,35 @@ function showSidebar() {
       loadButton.classList.add("sidebarButton");
       loadButton.textContent = board.charAt(0).toUpperCase() + board.slice(1);
       loadButton.addEventListener("click", () => {
-        localStorage.setItem("activeBoard", board);
+        localStorage.setItem("currentBoardName", board);
         drawBoard(board);
       });
       boardSelectionList.append(loadButton);
     }
   }
+
+  boardDeleteList.replaceChildren();
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  for (const board in customBoards) {
+    let item = document.createElement("button");
+    item.classList = "sidebarButton";
+    item.textContent = "delete " + board;
+    item.addEventListener("click", () => {
+      delete customBoards[board];
+      localStorage.setItem("customBoards", JSON.stringify(customBoards));
+      blendBoards();
+      closeSidebar();
+      showSidebar();
+      if (board === localStorage.getItem("currentBoardName")) {
+        drawBoard("initial");
+      }
+    });
+    boardDeleteList.append(item);
+  }
+}
+
+function findPathToWord(word, startBoard) {
+  //scuffed mess
 }
 
 function closeSidebar() {
@@ -77,10 +106,7 @@ function showCreateBoardSidebar() {
 }
 
 function showEditTile() {
-  // if (localStorage.getItem("activeBoard").charAt(0) !== "_") {
-  //   alert("Edit mode is only for custom boards");
-  //   return;
-  // }
+
   editTileSidebar.classList.remove("hidden");
   createBoardSidebar.classList.add("hidden");
   sidebar.classList.add("hidden");
@@ -88,7 +114,6 @@ function showEditTile() {
   //lists boards for the linkTo dropdown
   for (const board in boards) {
     if (Object.hasOwnProperty.call(boards, board)) {
-      const element = boards[board];
       const option = document.createElement("option");
       option.value = board;
       option.innerText = board;
@@ -124,13 +149,13 @@ saveBoardButton.addEventListener("click", () => {
 
 function saveBoard() {
   let customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  let name = localStorage.getItem("activeBoard")
-  if(name.charAt(0) !== "_"){
-    name = "_" + name
+  let name = localStorage.getItem("currentBoardName");
+  if (name.charAt(0) !== "_") {
+    name = "_" + name;
   }
-  customBoards[name] = boards[localStorage.getItem("activeBoard")];
+  customBoards[name] = boards[localStorage.getItem("currentBoardName")];
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
-  blendBoards()
+  blendBoards();
 }
 
 exportBoardButton.addEventListener("click", () => {
@@ -138,8 +163,10 @@ exportBoardButton.addEventListener("click", () => {
 });
 
 function exportBoard() {
-  const filename = `${localStorage.getItem("activeBoard")}.json`;
-  const jsonStr = JSON.stringify(boards[localStorage.getItem("activeBoard")]);
+  const filename = `${localStorage.getItem("currentBoardName")}.json`;
+  const jsonStr = JSON.stringify(
+    boards[localStorage.getItem("currentBoardName")]
+  );
 
   let element = document.createElement("a");
   element.setAttribute(
@@ -164,16 +191,16 @@ importInput.addEventListener("change", (ev) => {
   const fileList = ev.target.files;
   const reader = new FileReader();
   reader.addEventListener("load", (event) => {
-    if(ev.target.files[0].name.charAt(0) !== "_"){
-      alert("File names must begin with an underscore")
-      return
+    if (ev.target.files[0].name.charAt(0) !== "_") {
+      alert("File names must begin with an underscore");
+      return;
     }
     let newBoard = JSON.parse(event.target.result);
     let customBoards = JSON.parse(localStorage.getItem("customBoards"));
     customBoards[ev.target.files[0].name.replace(".json", "")] = newBoard;
     localStorage.setItem("customBoards", JSON.stringify(customBoards));
     console.log("custom board imported");
-    blendBoards()
+    blendBoards();
     showSidebar();
   });
   reader.readAsText(fileList[0]);
@@ -189,7 +216,7 @@ function generateEmptyBoard() {
     return;
   }
 
-  localStorage.setItem("activeBoard", boardName);
+  localStorage.setItem("currentBoardName", boardName);
 
   createBoardSidebar.classList.toggle("hidden");
 
@@ -208,7 +235,7 @@ function generateEmptyBoard() {
   };
 
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
-  blendBoards()
+  blendBoards();
   drawBoard(boardName);
   if (!editMode) editToggleButton.click();
 }
@@ -226,7 +253,7 @@ editTileSubmitButton.addEventListener("click", () => {
 
 //vulnerable to injection?
 function editTile() {
-  let board = boards[localStorage.getItem("activeBoard")];
+  let board = boards[localStorage.getItem("currentBoardName")];
   let selectedTile = board.tiles[selectedTileNumber.value];
   selectedTile.displayName = displayNameInput.value;
   selectedTile.type = tileTypeInput.value;
@@ -242,17 +269,17 @@ function editTile() {
   if (linkToInput.value) {
     selectedTile.linkTo = linkToInput.value;
   }
-  if(colourInput.value){
+  if (colourInput.value) {
     selectedTile.colour = colourInput.value;
   }
 
-  drawBoard(localStorage.getItem("activeBoard"));
+  drawBoard(localStorage.getItem("currentBoardName"));
 }
 
 window.onresize = () => sizeGrid();
 
 function sizeGrid() {
-  let board = boards[localStorage.getItem("activeBoard")];
+  let board = boards[localStorage.getItem("currentBoardName")];
   let tileWidth = Math.floor(window.innerWidth / board.columns) - 20;
   let tileHeight =
     Math.floor(
@@ -264,26 +291,31 @@ function sizeGrid() {
   root.style.setProperty("--grid-size", itemSize + "px");
 }
 
-tileTypeInput.addEventListener("change", ev => {
-  if(tileTypeInput.value === "textOnly"){
-    iconNameInput.classList.add("hidden")
-    iconLinkInput.classList.add("hidden")
-    iconNameInputLable.classList.add("hidden")
-    iconLinkInputLable.classList.add("hidden")
+tileTypeInput.addEventListener("change", (ev) => {
+  if (tileTypeInput.value === "textOnly") {
+    iconNameInput.classList.add("hidden");
+    iconLinkInput.classList.add("hidden");
+    iconNameInputLable.classList.add("hidden");
+    iconLinkInputLable.classList.add("hidden");
   } else {
-    iconNameInput.classList.remove("hidden")
-    iconLinkInput.classList.remove("hidden")
-    iconNameInputLable.classList.remove("hidden")
-    iconLinkInputLable.classList.remove("hidden")
+    iconNameInput.classList.remove("hidden");
+    iconLinkInput.classList.remove("hidden");
+    iconNameInputLable.classList.remove("hidden");
+    iconLinkInputLable.classList.remove("hidden");
   }
-})
+});
 
 //takes the board from boards.js and adds it to the dom
 //need to break down into smaller modules
 function drawBoard(name) {
+  if (!boards.hasOwnProperty(name)) {
+    drawBoard("standard");
+    return;
+  }
   const boardSection = document.getElementById("boardSection");
   const board = boards[name];
-  localStorage.setItem("activeBoard", name);
+
+  localStorage.setItem("currentBoardName", name);
 
   //clear existing
   boardSection.replaceChildren();
@@ -307,10 +339,10 @@ function drawBoard(name) {
         selectedTileNumber.value = tileElement.id;
         displayNameInput.value = tile.displayName ?? "";
         tileTypeInput.value = tile.type;
-        pronounciationInput.value = tile.pronounciation ?? ""
-        colourInput.value = tile.colour ?? "red"
-        iconNameInput.value = tile.iconName ?? ""
-        iconLinkInput.value = tile.iconLink ?? ""
+        pronounciationInput.value = tile.pronounciation ?? "";
+        colourInput.value = tile.colour ?? "red";
+        iconNameInput.value = tile.iconName ?? "";
+        iconLinkInput.value = tile.iconLink ?? "";
 
         showEditTile();
       }
@@ -373,7 +405,7 @@ function drawBoard(name) {
 lockSidebarButton.addEventListener("click", () => {
   closeSidebar();
   sidebarLocked = true;
-  localStorage.setItem("sidebarLocked",true)
+  localStorage.setItem("sidebarLocked", true);
 });
 
 //Event Listeners
@@ -475,8 +507,8 @@ voiceSelectElement.addEventListener("change", () => {
 });
 
 //set default board
-if (!localStorage.getItem("activeBoard")) {
-  localStorage.setItem("activeBoard", "standard");
+if (!localStorage.getItem("currentBoardName")) {
+  localStorage.setItem("currentBoardName", "standard");
 }
 
 if (!localStorage.getItem("customBoards")) {
@@ -484,8 +516,8 @@ if (!localStorage.getItem("customBoards")) {
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
 }
 
-if(!localStorage.getItem("sidebarLocked")){
-  localStorage.setItem("sidebarLocked",false)
+if (!localStorage.getItem("sidebarLocked")) {
+  localStorage.setItem("sidebarLocked", false);
 }
 
 document.getElementById("rowsInput").addEventListener("change", () => {
@@ -505,7 +537,7 @@ document.addEventListener("keydown", (ev) => {
 });
 
 //loads board from localstorage to keep same board on page refresh
-drawBoard(localStorage.getItem("activeBoard"));
+drawBoard(localStorage.getItem("currentBoardName"));
 
 populateVoiceList();
 
@@ -519,66 +551,65 @@ populateVoiceList();
 // unbindServiceWorker()
 
 function showLockScreen() {
-  let numbers = []
-  let order = (Math.random()>=0.5)? "low-to-high" : "high-to-low";
+  let numbers = [];
+  let order = Math.random() >= 0.5 ? "low-to-high" : "high-to-low";
 
   for (let i = 0; i < 4; i++) {
-    let number = Math.floor(Math.random() * (100 - 1) + 1)
-    if(!numbers.includes(number)){
-      numbers[i] = number
-    }
-    else i--
+    let number = Math.floor(Math.random() * (100 - 1) + 1);
+    if (!numbers.includes(number)) {
+      numbers[i] = number;
+    } else i--;
   }
 
-  let popup = document.createElement("div")
-  popup.classList.add("sidebar")
-  popup.id="unlockSidebar"
+  let popup = document.createElement("div");
+  popup.classList.add("sidebar");
+  popup.id = "unlockSidebar";
 
-  let message = document.createElement("h2")
-  message.innerText = `Click these numbers in order of ${order}`
+  let message = document.createElement("h2");
+  message.innerText = `Click these numbers in order of ${order}`;
 
-  let closeButton = document.createElement("button")
-  closeButton.classList = "sidebarButton"
-  closeButton.innerText = "Back"
-  closeButton.id = "closePasswordButton"
-  closeButton.addEventListener("click",()=>{
-    unlockAttempt = []
-    unlockSidebar.remove()
-    console.log("here")
-  })
+  let closeButton = document.createElement("button");
+  closeButton.classList = "sidebarButton";
+  closeButton.innerText = "Back";
+  closeButton.id = "closePasswordButton";
+  closeButton.addEventListener("click", () => {
+    unlockAttempt = [];
+    unlockSidebar.remove();
+    console.log("here");
+  });
 
-  popup.append(closeButton, message)
+  popup.append(closeButton, message);
 
-  numbers.forEach(number => {
-    let button = document.createElement("button")
-    button.textContent = number
-    button.classList.add("sidebarButton")
+  numbers.forEach((number) => {
+    let button = document.createElement("button");
+    button.textContent = number;
+    button.classList.add("sidebarButton");
 
-    button.addEventListener("click", ev => {
-      button.disabled = true
-      unlockAttempt.push(number)
+    button.addEventListener("click", (ev) => {
+      button.disabled = true;
+      unlockAttempt.push(number);
 
-      if(order === "low-to-high"){
+      if (order === "low-to-high") {
         numbers.sort((a, b) => a - b);
       } else numbers.sort((a, b) => b - a);
 
-      if(unlockAttempt.length === 4){
-        if(
+      if (unlockAttempt.length === 4) {
+        if (
           unlockAttempt[0] === numbers[0] &&
           unlockAttempt[1] === numbers[1] &&
           unlockAttempt[2] === numbers[2] &&
-          unlockAttempt[3] === numbers[3] ){
-            sidebarLocked = false
-            localStorage.setItem("sidebarLocked",false)
-            showSidebar()
-        } else alert("wrong order, try again")
-        closePasswordButton.click()
+          unlockAttempt[3] === numbers[3]
+        ) {
+          sidebarLocked = false;
+          localStorage.setItem("sidebarLocked", false);
+          showSidebar();
+        } else alert("wrong order, try again");
+        closePasswordButton.click();
       }
-    })
+    });
 
-    popup.append(button)
-  })
+    popup.append(button);
+  });
 
-  document.body.prepend(popup)
-
+  document.body.prepend(popup);
 }

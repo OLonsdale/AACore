@@ -74,6 +74,7 @@ body {
   font-size: 3vh;
   width: 100%;
   height: 100%;
+  overscroll-behavior: scroll;
 }
 
 ol {
