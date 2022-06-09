@@ -109,13 +109,15 @@ button:disabled {
 }
 
 .sidebar {
+  box-sizing: border-box;
   display: flex;
   position: absolute;
   flex-direction: column;
   background-color: rgba(184, 184, 184, 0.925);
-  width: 300px;
+  width: min-content;
   gap: 1em;
   z-index: 3;
+  padding: 0.5em;
 }
 
 .sidebarButton {

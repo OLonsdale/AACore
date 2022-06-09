@@ -34,13 +34,13 @@ let editMode = false;
 editToggleButton.addEventListener("click", () => {
   editMode = !editMode;
   if (editMode) {
-    console.log("Edit mode enabled")
+    console.log("Edit mode enabled");
     sentenceDisplayElement.value = "edit mode enabled";
-    editToggleButton.textContent = "Disable Edit Mode"
+    editToggleButton.textContent = "Disable Edit Mode";
   } else {
-    console.log("Edit mode disabled")
+    console.log("Edit mode disabled");
     sentenceDisplayElement.value = "";
-    editToggleButton.textContent = "Enable Edit Mode"
+    editToggleButton.textContent = "Enable Edit Mode";
   }
 });
 
@@ -106,7 +106,6 @@ function showCreateBoardSidebar() {
 }
 
 function showEditTile() {
-
   editTileSidebar.classList.remove("hidden");
   createBoardSidebar.classList.add("hidden");
   sidebar.classList.add("hidden");
@@ -263,6 +262,24 @@ function editTile() {
   if (pronounciationInput.value) {
     selectedTile.pronounciation = pronounciationInput.value;
   }
+  if (pastTenseInput.value) {
+    selectedTile.pastTense = pastTenseInput.value;
+  }
+  if (pastTensePronounciationInput.value) {
+    selectedTile.pastTensePronounciation = pastTensePronounciationInput.value;
+  }
+  if (pluralInput.value) {
+    selectedTile.pluralForm = pluralInput.value;
+  }
+  if (pluralPronounciationInput.value) {
+    selectedTile.pluralFormPronounciation = pluralPronounciationInput.value;
+  }
+  if (negationInput.value) {
+    selectedTile.negativeForm = negationInput.value;
+  }
+  if (negationPronounciationInput.value) {
+    selectedTile.negativeFormPronounciation = negationPronounciationInput.value;
+  }
   if (iconNameInput.value) {
     selectedTile.iconName = iconNameInput.value;
   }
@@ -293,17 +310,15 @@ function sizeGrid() {
 
 tileTypeInput.addEventListener("change", (ev) => {
   if (tileTypeInput.value === "textOnly") {
-    iconNameInput.classList.add("hidden");
-    iconLinkInput.classList.add("hidden");
-    iconNameInputLable.classList.add("hidden");
-    iconLinkInputLable.classList.add("hidden");
+    iconTileSettings.classList.add("hidden");
   } else {
-    iconNameInput.classList.remove("hidden");
-    iconLinkInput.classList.remove("hidden");
-    iconNameInputLable.classList.remove("hidden");
-    iconLinkInputLable.classList.remove("hidden");
+    iconTileSettings.classList.remove("hidden");
   }
 });
+
+toggleEditTileExtra.addEventListener("click", () => {
+  editTileExtra.classList.toggle("hidden")
+})
 
 //takes the board from boards.js and adds it to the dom
 //need to break down into smaller modules
@@ -338,12 +353,18 @@ function drawBoard(name) {
       if (editMode) {
         selectedTileNumber.value = tileElement.id;
         displayNameInput.value = tile.displayName ?? "";
-        tileTypeInput.value = tile.type;
+        tileTypeInput.value = tile.type ?? "blank";
         pronounciationInput.value = tile.pronounciation ?? "";
+        pastTenseInput.value = tile.pastTense ?? ""
+        pastTensePronounciationInput.value = tile.pastTensePronounciation ?? ""
+        pluralInput.value = tile.pluralForm ?? ""
+        pluralPronounciationInput.value = tile.pluralFormPronounciation ?? ""
+        negationInput.value = tile.negativeForm ?? ""
+        negationPronounciationInput.value = tile.negativeFormPronounciation ?? ""
+        iconNameInput.value = tile.iconName ?? ""
         colourInput.value = tile.colour ?? "red";
         iconNameInput.value = tile.iconName ?? "";
         iconLinkInput.value = tile.iconLink ?? "";
-
         showEditTile();
       }
     });

@@ -17,3 +17,5 @@ for (const board in boards) {
 
 ctrl + alt + s -> w
 Update service worker before deploying
+
+Edit grid name and "main" status

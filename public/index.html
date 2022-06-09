@@ -59,7 +59,7 @@
         <!-- filled by JS -->
       </div>
       <h2>Version:</h2>
-      <p>0.0.54</p>
+      <p>0.0.55</p>
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
@@ -122,10 +122,32 @@
 
       <div><label for="displayNameInput">Display Name:</label></div>
       <div><input id="displayNameInput" type="text" /></div>
-      
-      <div><label for="pronounciationInput">Pronounciation (if required):</label></div>
-      <div><input id="pronounciationInput" type="text" /></div>
 
+      <button id="toggleEditTileExtra" class="sidebarButton">Show Extra Options</button>
+
+      <div id="editTileExtra" class="hidden">
+        <div><label for="pronounciationInput">Pronounciation (if required):</label></div>
+        <div><input id="pronounciationInput" type="text" /></div>
+
+        <div><label for="pastTenseInput">Past Tense:</label></div>
+        <div><input id="pastTenseInput" type="text" /></div>
+
+        <div><label for="pastTensePronounciationInput">Past Tense Pronounciation:</label></div>
+        <div><input id="pastTensePronounciationInput" type="text" /></div>
+
+        <div><label for="pluralInput">Plural Form:</label></div>
+        <div><input id="pluralInput" type="text" /></div>
+
+        <div><label for="pluralPronounciationInput">Plural Pronounciation:</label></div>
+        <div><input id="pluralPronounciationInput" type="text" /></div>
+
+        <div><label for="negationInput">Negative Form:</label></div>
+        <div><input id="negationInput" type="text" /></div>
+
+        <div><label for="negationPronounciationInput">Negative Pronounciation:</label></div>
+        <div><input id="negationPronounciationInput" type="text" /></div>
+      </div>
+      
       <div>
         <label for="colourInput">Colour:</label>
       </div>
@@ -154,16 +176,17 @@
           <option value="link">Link to another board (unspoken)</option>
         </select>
       </div>
-
-      <div>
-        <label id="iconNameInputLable" for="iconNameInput">Icon Name:</label>
+      <div id="iconTileSettings" class="hidden">
+        <div>
+          <label id="iconNameInputLable" for="iconNameInput">Icon Name:</label>
+        </div>
+        <div><input id="iconNameInput" type="text" /></div>
+  
+        <div>
+          <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
+        </div>
+        <div><input id="iconLinkInput" type="text" /></div>
       </div>
-      <div><input id="iconNameInput" type="text" /></div>
-
-      <div>
-        <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
-      </div>
-      <div><input id="iconLinkInput" type="text" /></div>
 
       <div>
         <label for="linkToInput">Link to board:</label>
