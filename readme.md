@@ -17,8 +17,9 @@
 - Not all grids are the same size.
 - The layout of the grids must be consistant accross devices.
 - Some icons need to modify other icons on the grid.
-- There needs to be a button to change the last word into its plural form.
+- There needs to be a button to change the last word into its plural form etc,
 - There needs to be a locakable settings menu.
+- User Generated Content
 
 ## Notes
 
@@ -32,8 +33,8 @@ System developed in vanilla HTML, Javascript and CSS, using visual studio code.
 
 Tile grids are defined as JSON objects, and rendered on the client side via javascript.
 
-Icons are all PNG files stored on the server.
+Icons are all WEBP files stored on the server.
 
-[Live version](https://aacore.herokuapp.com/) hosted on Google Firebase
+[Live version](https://aacore-80543.web.app) hosted on Google Firebase
 
-Installable as a PWA for offline use.
+Will be installable as a PWA for offline use.

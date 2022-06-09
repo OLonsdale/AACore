@@ -19,3 +19,5 @@ ctrl + alt + s -> w
 Update service worker before deploying
 
 Edit grid name and "main" status
+
+Reuse existing words
