@@ -252,9 +252,13 @@ button:disabled {
 }
 
 .grammarMarkerColour {
-  background-color: rgb(102, 56, 102);
+  background-color: rgb(177, 156, 217);
 }
 
 .linkColour {
   background-color: darkcyan;
+}
+
+.editMode{
+  background-color: rgb(153, 71, 149);
 }

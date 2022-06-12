@@ -35,6 +35,18 @@
           <option disabled>Select Voice</option>
         </select>
       </div>
+      <div>
+        <label for="sentenceAutoDelete">
+          Delete sentence after speaking:
+        </label>
+        <input type="checkbox" name="delete" id="sentenceAutoDeleteCheckbox" />
+      </div>
+
+      <div>
+        <label for="editModeCheckbox">Edit boards:</label>
+        <input type="checkbox" name="editMode" id="editModeCheckbox" />
+      </div>
+
       <h3>Select Set:</h3>
       <div id="boardSelectionList">
         <!-- Filled by JS -->
@@ -42,24 +54,28 @@
 
       <h3>Boards:</h3>
       <nav>
-        <button class="sidebarButton" id="createBoardMenuButton">New Board</button>
-        <button class="sidebarButton" id="importBoardButton">Import Board</button>
-        <button class="sidebarButton" id="exportBoardButton">Export Board</button>
+        <button class="sidebarButton" id="createBoardMenuButton">
+          New Board
+        </button>
+        <button class="sidebarButton" id="importBoardButton">
+          Import Board
+        </button>
+        <button class="sidebarButton" id="exportBoardButton">
+          Export Board
+        </button>
       </nav>
       <input id="importInput" type="file" accept=".json" class="hidden" />
 
       <h3>Lock sidebar:</h3>
       <button class="sidebarButton" id="lockSidebarButton">Lock sidebar</button>
 
-      <h3>Edit Mode:</h3>
-      <button class="sidebarButton" id="editToggleButton">Enable Edit Mode</button>
-
-      <h3>Delete custom boards:</h3>
-      <div id="boardDeleteList">
-        <!-- filled by JS -->
+      <div id="deleteBoardArea" class="hidden">
+        <h3>Delete Current Board:</h3>
+        <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
       </div>
+
       <h2>Version:</h2>
-      <p>0.0.56</p>
+      <p>0.0.57</p>
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
@@ -104,7 +120,7 @@
 
       <div>
         <label for="topLevelInput">Show in sidebar:</label>
-        <input type="checkbox" id="topLevelInput">
+        <input type="checkbox" id="topLevelInput" />
       </div>
 
       <button class="sidebarButton" id="generateEmptyButton">Create</button>
@@ -116,38 +132,55 @@
       </button>
 
       <h2>Edit Tile</h2>
-      
+
       <div><label for="selectedTileNumber">Selected Tile:</label></div>
       <div><input id="selectedTileNumber" type="text" disabled /></div>
 
       <div><label for="displayNameInput">Display Name:</label></div>
       <div><input id="displayNameInput" type="text" /></div>
 
-      <button id="toggleEditTileExtra" class="sidebarButton">Show Extra Options</button>
+      <button id="toggleEditTileExtra" class="sidebarButton">
+        Show Extra Options
+      </button>
 
       <div id="editTileExtra" class="hidden">
-        <div><label for="pronounciationInput">Pronounciation (if required):</label></div>
+        <div>
+          <label for="pronounciationInput">Pronounciation (if required):</label>
+        </div>
         <div><input id="pronounciationInput" type="text" /></div>
 
         <div><label for="pastTenseInput">Past Tense:</label></div>
         <div><input id="pastTenseInput" type="text" /></div>
 
-        <div><label for="pastTensePronounciationInput">Past Tense Pronounciation:</label></div>
+        <div>
+          <label for="pastTensePronounciationInput">
+            Past Tense Pronounciation:
+          </label>
+        </div>
         <div><input id="pastTensePronounciationInput" type="text" /></div>
 
-        <div><label for="pluralInput">Plural Form:</label></div>
+        <div><label for="pluralInput">Plural/Third Person Form:</label></div>
         <div><input id="pluralInput" type="text" /></div>
 
-        <div><label for="pluralPronounciationInput">Plural Pronounciation:</label></div>
+        <div>
+          <label for="pluralPronounciationInput">
+            Plural/Third Person Pronounciation:
+          </label>
+        </div>
+
         <div><input id="pluralPronounciationInput" type="text" /></div>
 
         <div><label for="negationInput">Negative Form:</label></div>
         <div><input id="negationInput" type="text" /></div>
 
-        <div><label for="negationPronounciationInput">Negative Pronounciation:</label></div>
+        <div>
+          <label for="negationPronounciationInput">
+            Negative Pronounciation:
+          </label>
+        </div>
         <div><input id="negationPronounciationInput" type="text" /></div>
       </div>
-      
+
       <div>
         <label for="colourInput">Colour:</label>
       </div>
@@ -181,7 +214,7 @@
           <label id="iconNameInputLable" for="iconNameInput">Icon Name:</label>
         </div>
         <div><input id="iconNameInput" type="text" /></div>
-  
+
         <div>
           <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
         </div>
@@ -191,13 +224,16 @@
       <div>
         <label for="linkToInput">Link to board:</label>
       </div>
-      <div><select id="linkToInput">
-        <option value="">None</option>
-        <!-- Other options added by JS -->
-      </select></div>
+      <div>
+        <select id="linkToInput">
+          <option value="">None</option>
+          <!-- Other options added by JS -->
+        </select>
+      </div>
 
-      <button class="sidebarButton" id="editTileSubmitButton">Save Edit to Tile</button>
-      <button class="sidebarButton" id="saveBoardButton">Save Board</button>
+      <button class="sidebarButton" id="editTileSubmitButton">
+        Save Edit to Tile
+      </button>
     </div>
 
     <div id="topBar" class="topBar">
@@ -233,9 +269,9 @@
 
     <div class="container">
       <ol id="boardSection" class="board">
-      <noscript>
-        You need JavaScript to use this site. Please upgrade to a modern browser
-          or disable script blocking plugins.
+        <noscript>
+          You need JavaScript to use this site. Please upgrade to a modern
+          browser or disable script blocking plugins.
         </noscript>
       </ol>
     </div>
@@ -256,7 +292,7 @@
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
-    
+
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
@@ -266,9 +302,9 @@
         storageBucket: "aacore-80543.appspot.com",
         messagingSenderId: "977847235379",
         appId: "1:977847235379:web:e8cf0e8ae82dbd5f448446",
-        measurementId: "G-CBG84BD8M8"
+        measurementId: "G-CBG84BD8M8",
       };
-    
+
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
