@@ -1,19 +1,22 @@
 "use strict";
 
-import { boards as stockBoards } from "./boards.js";
+import { expanded } from "./board-sets/expanded.js";
+import { initial } from "./board-sets/initial.js";
+import { standard } from "./board-sets/standard.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
-let boards = {
-  ...stockBoards,
-  ...JSON.parse(localStorage.getItem("customBoards")),
-};
+let boards = {};
 
 function blendBoards() {
   boards = {
-    ...stockBoards,
+    ...initial,
+    ...standard,
+    ...expanded,
     ...JSON.parse(localStorage.getItem("customBoards")),
   };
 }
+
+blendBoards()
 
 console.log(boards);
 
@@ -39,12 +42,12 @@ editModeCheckbox.addEventListener("change", () => {
 function toggleEditMode() {
   editMode = !editMode;
   if (editMode) {
-    deleteBoardArea.classList = ""
+    deleteBoardArea.classList = "";
     console.log("Edit mode enabled");
     document.body.classList.add("editMode");
     sentenceDisplayElement.value = "edit mode enabled";
   } else {
-    deleteBoardArea.classList = "hidden"
+    deleteBoardArea.classList = "hidden";
     console.log("Edit mode disabled");
     document.body.classList.remove("editMode");
     sentenceDisplayElement.value = "";
@@ -77,8 +80,8 @@ function showSidebar() {
     }
   }
 
-  deleteCurrentBoardButton.textContent = "Delete " +
-    localStorage.getItem("currentBoardName");
+  deleteCurrentBoardButton.textContent =
+    "Delete " + localStorage.getItem("currentBoardName");
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -99,15 +102,15 @@ function deleteCurrentBoard() {
     return;
   }
   //delete custom board
-  let customBoards =  JSON.parse(localStorage.getItem("customBoards"))
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
 
-  delete customBoards[localStorage.getItem("currentBoardName")]
+  delete customBoards[localStorage.getItem("currentBoardName")];
 
-  localStorage.setItem("customBoards",JSON.stringify(customBoards))
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
 
   blendBoards();
   drawBoard("standard");
-  showSidebar()
+  showSidebar();
 }
 
 function findPathToWord(word, startBoard) {
@@ -253,7 +256,7 @@ function generateEmptyBoard() {
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
   blendBoards();
   drawBoard(boardName);
-  if (!editMode) editToggleButton.click();
+  if (!editMode) editModeCheckbox.click();
 }
 
 document
