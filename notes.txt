@@ -1,3 +1,4 @@
+In WSL:
 mogrify -format webp *.png
 
 firebase deploy

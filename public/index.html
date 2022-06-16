@@ -75,7 +75,7 @@
       </div>
 
       <h2>Version:</h2>
-      <p>0.0.58</p>
+      <p>0.0.59</p>
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
@@ -238,20 +238,25 @@
 
     <div id="topBar" class="topBar">
       <button id="sidebarButton" class="largeText">☰</button>
-      <input
+      <div
         class="sentenceDisplay"
         id="sentenceDisplay"
-        type="text"
-        disabled
-      />
-      <button
-        title="Play Sentence"
-        aria-label="Play Sentence"
-        id="playButton"
-        class="playbackButton"
       >
-        <img alt="play icon" width="40" height="40" src="./resouces/play.svg" />
-      </button>
+      </div>
+
+      <button
+      title="Delete Last Word"
+      aria-label="Delete Last Word"
+      id="deleteLastButton"
+      class="playbackButton"
+    >
+      <img
+        alt="delete icon"
+        width="40"
+        height="40"
+        src="./resouces/delete.svg"
+      />
+    </button>
       <button
         title="Delete Sentence"
         aria-label="Clear Sentence"
@@ -262,7 +267,7 @@
           alt="delete icon"
           width="40"
           height="40"
-          src="./resouces/delete.svg"
+          src="./resouces/delete-all.svg"
         />
       </button>
     </div>

@@ -485,6 +485,7 @@ const expanded = {
       },
     ],
   },
+
   "expanded-am": {
     rows: 6,
     columns: 10,
@@ -1233,7 +1234,7 @@ const expanded = {
       {
         type: "link",
         displayName: "Back",
-        iconName:"navigate-back",
+        iconName: "navigate-back",
         colour: "linkColour",
         linkTo: "expanded",
       },
@@ -1243,14 +1244,14 @@ const expanded = {
         displayName: "toy",
         iconName: "toys",
         colour: "linkColour",
-        linkTo: "expanded",
+        linkTo: "expanded-toy",
       },
       {
         type: "link",
         displayName: "game",
         iconName: "game",
         colour: "linkColour",
-        linkTo: "expanded",
+        linkTo: "expanded-game",
       },
       {
         type: "link",
@@ -1451,6 +1452,249 @@ const expanded = {
     ],
   },
 
+  "expanded-game": {
+    rows: 6,
+    columns: 9,
+    tiles: [
+      {
+        type: "link",
+        displayName: "back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "game ",
+        pastTenseForm: "gamed ",
+        pluralForm: "games",
+        iconName: "game",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "board",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/sudoku_756_g.svg",
+        pluralForm: "boards",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "dice",
+        iconName: "dice",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "roll",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/rolling_590_g.svg",
+        pastTenseForm: "rolled",
+        pluralForm: "rolls",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "piece",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/counters.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "point",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/points.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "win",
+        pastTenseForm: "won",
+        pluralForm: "wins",
+        iconName: "win",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "chase",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chase.png.varianted-skin.png",
+        pastTenseForm: "chased",
+        pluralForm: "chases",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "hide and seek",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hide-and-seek.png.varianted-skin.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "tig",
+        iconName:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20run%20holding%20hands.png.variant-medium-dark.png",
+        linkTo: "expanded",
+        colour: "orange",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20run%20holding%20hands.png.variant-medium-dark.png",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "peekaboo",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hide_2.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "lose",
+        pastTenseForm: "lost",
+        pluralForm: "loses",
+        iconName: "lose",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "monopoly",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/Monopoly.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "ludo",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ludo.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "snakes and ladders",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/language-craft/snakes.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "checkers",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/draughts.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "noughts and crosses",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tic-Tac-Toe_969_g.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "connect four",
+        iconName:"connect-four",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Pop up pirate",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pirate.png.variant-medium-dark.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "card",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/playing%20card%20picture.svg.varianted-skin.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "snap",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Playing%20Cards-8b8b4f26ba.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "go fish",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fish%20,%20to.svg.varianted-skin.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "happy families",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/family.svg.varianted-skin.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      {
+        type: "blank",
+        displayName: "win",
+        pastTenseForm: "won",
+        pluralForm: "wins",
+        iconName: "win",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+    ],
+  },
 };
 
 export { expanded };

@@ -16,13 +16,14 @@ function blendBoards() {
   };
 }
 
-blendBoards()
+blendBoards();
 
 console.log(boards);
 
 const synth = window.speechSynthesis;
 
 const sentenceDisplayElement = document.getElementById("sentenceDisplay");
+
 const sentence = [];
 
 const voiceSelectElement = document.getElementById("voicesSelect");
@@ -45,12 +46,12 @@ function toggleEditMode() {
     deleteBoardArea.classList = "";
     console.log("Edit mode enabled");
     document.body.classList.add("editMode");
-    sentenceDisplayElement.value = "edit mode enabled";
+    sentenceDisplayElement.innerHTML = "edit mode enabled";
   } else {
     deleteBoardArea.classList = "hidden";
     console.log("Edit mode disabled");
     document.body.classList.remove("editMode");
-    sentenceDisplayElement.value = "";
+    sentenceDisplayElement.innerHTML = "";
   }
 }
 
@@ -486,67 +487,93 @@ function toggleSentenceAutoDelete() {
 }
 
 //Event Listeners
-playButton.addEventListener("click", () => speakSentence());
-sentenceDisplay.addEventListener("click", () => speakSentence());
+// playButton.addEventListener("click", () => speakSentence());
+
+sentenceDisplayElement.addEventListener("click", () => {
+  speakSentence()
+});
+
+deleteLastButton.addEventListener("click", () => {
+  sentence.pop();
+  updateSentence();
+});
+
 clearButton.addEventListener("click", () => clearSentence());
 
+//todo, combine grammar markers
 //makes the last word plural, if plural form specified
 function pluraliseLastWord() {
   console.log("last word pluralised, if it has a plural form");
-  if (sentence.length > 0) {
-    let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-    //coveres edgecases where worst case, the word only has a display name set
-    last.pronounciation =
-      last.pluralFormPronounciation ??
-      last.pluralForm ??
-      last.pronounciation ??
-      last.displayName;
-    last.displayName = last.pluralForm ?? last.displayName;
-    sentence[sentence.length - 1] = last;
+  if (sentence.length === 0) return;
+
+  //get by value not reference
+  let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
+
+  let lastInitial = last.pronounciation ?? last.displayName;
+  //coveres edgecases where worst case, the word only has a display name set
+  last.pronounciation =
+    last.pluralFormPronounciation ??
+    last.pluralForm ??
+    last.pronounciation ??
+    last.displayName;
+  last.displayName = last.pluralForm ?? last.displayName;
+  sentence[sentence.length - 1] = last;
+
+  if (lastInitial !== last.pronounciation) {
+    //no change, don't speak
     speak(last.pronounciation ?? last.displayName);
-    updateSentence();
   }
+
+  updateSentence();
 }
 
 function pastTenseLastWord() {
   console.log("last word made past tense, if it has a past tense form");
-  if (sentence.length > 0) {
-    let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-    //coveres edgecases where worst case, the word only has a display name set
-    last.pronounciation =
-      last.pastTensePronounciation ??
-      last.pastTenseForm ??
-      last.pronounciation ??
-      last.displayName;
-    last.displayName = last.pastTenseForm ?? last.displayName;
-    sentence[sentence.length - 1] = last;
+  if (sentence.length === 0) return;
+
+  let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
+  let lastInitial = last.pronounciation ?? last.displayName;
+  //coveres edgecases where worst case, the word only has a display name set
+  last.pronounciation =
+    last.pastTensePronounciation ??
+    last.pastTenseForm ??
+    last.pronounciation ??
+    last.displayName;
+  last.displayName = last.pastTenseForm ?? last.displayName;
+  sentence[sentence.length - 1] = last;
+  if (lastInitial !== last.pronounciation) {
+    //no change, don't speak
     speak(last.pronounciation ?? last.displayName);
-    updateSentence();
   }
+  updateSentence();
 }
 
 function negateLastWord() {
   console.log("last word negated, if it has such a form");
-  if (sentence.length > 0) {
-    let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-    //coveres edgecases where worst case, the word only has a display name set
-    last.pronounciation =
-      last.negativeFormPronounciation ??
-      last.negativeForm ??
-      last.pronounciation ??
-      last.displayName;
-    last.displayName = last.negativeForm ?? last.displayName;
-    sentence[sentence.length - 1] = last;
+  if (sentence.length === 0) return;
+
+  let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
+  let lastInitial = last.pronounciation ?? last.displayName;
+  //coveres edgecases where worst case, the word only has a display name set
+  last.pronounciation =
+    last.negativeFormPronounciation ??
+    last.negativeForm ??
+    last.pronounciation ??
+    last.displayName;
+  last.displayName = last.negativeForm ?? last.displayName;
+  sentence[sentence.length - 1] = last;
+  if (lastInitial !== last.pronounciation) {
+    //no change, don't speak
     speak(last.pronounciation ?? last.displayName);
-    updateSentence();
   }
+  updateSentence();
 }
 
 //updates the sentence display bar
 function updateSentence() {
   const sentenceDisplayArray = sentence.map((tile) => tile.displayName);
 
-  sentenceDisplayElement.value = sentenceDisplayArray
+  sentenceDisplayElement.innerHTML = sentenceDisplayArray
     .join(" ")
     .replaceAll("⠀ ⠀", "")
     .replaceAll("⠀", "");
