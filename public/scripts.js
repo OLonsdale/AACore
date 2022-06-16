@@ -573,7 +573,7 @@ function negateLastWord() {
 function updateSentence() {
   const sentenceDisplayArray = sentence.map((tile) => tile.displayName);
 
-  sentenceDisplayElement.innerHTML = sentenceDisplayArray
+  sentenceDisplayElement.value = sentenceDisplayArray
     .join(" ")
     .replaceAll("⠀ ⠀", "")
     .replaceAll("⠀", "");
