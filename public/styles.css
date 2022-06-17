@@ -13,13 +13,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .board {
   align-items: center;
   justify-content: center;
-  /* width: 80%; */
-  /* height: 90vh; */
+  width: 100%;
+  height: 100%;
   display: grid;
   /* gap: 0.5em; */
   grid-auto-flow: row;
@@ -102,12 +104,6 @@ button {
 }
 
 button:disabled {
-  background-color: grey;
-}
-
-.grammarMarker {
-  display: none;
-  box-shadow: 0 0 0 1px black;
   background-color: grey;
 }
 

@@ -25,9 +25,7 @@
 
   <body>
     <div id="sidebar" class="hidden sidebar">
-      <button name="Open Sidebar" class="sidebarButton" id="closeSidebarButton">
-        Close
-      </button>
+      <button class="sidebarButton closeSidebarButton">Close</button>
       <h2>Settings:</h2>
       <div>
         <label for="voicesSelect">Select Voice:</label>
@@ -75,11 +73,11 @@
       </div>
 
       <h2>Version:</h2>
-      <p>0.0.61</p>
+      <p>0.0.62</p>
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
-      <button class="sidebarButton" id="closeCreateBoardSidebarButton">
+      <button class="sidebarButton closeSidebarButton">
         Close
       </button>
       <h2>Create Board</h2>
@@ -127,7 +125,7 @@
     </div>
 
     <div id="editTileSidebar" class="hidden sidebar">
-      <button class="sidebarButton" id="closeEditTileSidebarButton">
+      <button class="sidebarButton closeSidebarButton">
         Close
       </button>
 
@@ -236,6 +234,15 @@
       </button>
     </div>
 
+    <div id="aboutSidebar" class="hidden sidebar">
+      <button class="sidebarButton closeSidebarButton">Close</button>
+      <h2>About</h2>
+      <p>Welcome to AACore. This is an initiative to provide free access to a robust voice output communication system for children and young people with communication difficulties. 
+        <br/>
+        Resources to be used under supervision of a Speech and Language Therapist 
+        </p>
+    </div>
+
     <div id="topBar" class="topBar">
       <button id="sidebarButton" class="largeText">☰</button>
       <input
@@ -282,14 +289,6 @@
       </ol>
     </div>
 
-    <button
-      title="Pluralise Last Word"
-      aria-label="Pluralise Last Word"
-      class="largeText grammarMarker"
-      id="pluraliseButton"
-    >
-      +s
-    </button>
     <script type="module" src="scripts.js"></script>
 
     <script type="module">

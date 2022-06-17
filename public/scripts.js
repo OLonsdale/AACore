@@ -117,23 +117,30 @@ function deleteCurrentBoard() {
 function findPathToWord(word, startBoard) {
   //scuffed mess
 }
+Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(button => {
+  button.addEventListener("click", closeAllSidebars)
+})
 
-function closeSidebar() {
-  sidebar.classList.add("hidden");
-  createBoardSidebar.classList.add("hidden");
-  editTileSidebar.classList.add("hidden");
+function closeAllSidebars(){
+  sidebar.classList.add("hidden")
+  createBoardSidebar.classList.add("hidden")
+  editTileSidebar.classList.add("hidden")
+  aboutSidebar.classList.add("hidden")
+}
+
+function showAbout(){
+  closeAllSidebars()
+  aboutSidebar.classList.remove("hidden")
 }
 
 function showCreateBoardSidebar() {
+  closeAllSidebars()
   createBoardSidebar.classList.remove("hidden");
-  sidebar.classList.add("hidden");
-  editTileSidebar.classList.add("hidden");
 }
 
 function showEditTile() {
+  closeAllSidebars()
   editTileSidebar.classList.remove("hidden");
-  createBoardSidebar.classList.add("hidden");
-  sidebar.classList.add("hidden");
 
   //lists boards for the linkTo dropdown
   for (const board in boards) {
@@ -153,30 +160,7 @@ sidebarButton.addEventListener("click", () => {
   } else closeSidebar();
 });
 
-closeSidebarButton.addEventListener("click", () => {
-  closeSidebar();
-});
-
 createBoardMenuButton.addEventListener("click", () => showCreateBoardSidebar());
-
-closeCreateBoardSidebarButton.addEventListener("click", () =>
-  createBoardSidebar.classList.add("hidden")
-);
-
-closeEditTileSidebarButton.addEventListener("click", () =>
-  editTileSidebar.classList.add("hidden")
-);
-
-function saveBoard() {
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  let name = localStorage.getItem("currentBoardName");
-  if (name.charAt(0) !== "_") {
-    name = "_" + name;
-  }
-  customBoards[name] = boards[localStorage.getItem("currentBoardName")];
-  localStorage.setItem("customBoards", JSON.stringify(customBoards));
-  blendBoards();
-}
 
 exportBoardButton.addEventListener("click", () => {
   exportBoard();
@@ -207,6 +191,7 @@ importBoardButton.addEventListener("click", () => {
   importInput.click();
 });
 
+//this is a mess, but opens a file picker, then reads the contents of the file and stores it in localstorage 
 importInput.addEventListener("change", (ev) => {
   const fileList = ev.target.files;
   const reader = new FileReader();
@@ -232,7 +217,7 @@ function generateEmptyBoard() {
   let columns = Number(colsInput.value);
 
   if (boards.hasOwnProperty(boardName) || !boardName || boardName.length > 30) {
-    alert("Please check your inputs\nName must be unique and under 30 chars");
+    alert("Name must be unique and under 30 chars");
     return;
   }
 
@@ -327,18 +312,25 @@ function editTile() {
 
 window.onresize = () => sizeGrid();
 
+//still imperfect
 function sizeGrid() {
   let board = boards[localStorage.getItem("currentBoardName")];
 
   let largest = board.columns > board.rows ? board.columns : board.rows
 
-  console.log(largest)
+  // console.log("longestBoardSide = " + largest)
 
   let tileWidth = Math.floor( window.innerWidth / board.columns )
 
   let tileHeight = Math.floor( window.innerHeight / board.rows )
 
-  let itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - ( ( topBar.offsetHeight / board.rows ) )
+  let shortestScreenSide = window.innerWidth < window.innerHeight ? "width" : "height"
+
+  console.log(shortestScreenSide)
+
+  let itemSize = Math.round( (tileWidth > tileHeight ? tileHeight : tileWidth) - ( ( topBar.offsetHeight / board.rows ) ))
+
+  console.log(itemSize)
   
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
@@ -667,6 +659,11 @@ if (!localStorage.getItem("sentenceAutoDelete")) {
   localStorage.setItem("sentenceAutoDelete", true);
 }
 
+if (!localStorage.getItem("firstVisit")) {
+  localStorage.setItem("firstVisit", false);
+  showAbout()
+}
+
 document.getElementById("rowsInput").addEventListener("change", () => {
   rowsInputDisplay.textContent = rowsInput.value;
 });
@@ -682,20 +679,6 @@ document.addEventListener("keydown", (ev) => {
     speakSentence();
   }
 });
-
-//loads board from localstorage to keep same board on page refresh
-drawBoard(localStorage.getItem("currentBoardName"));
-
-populateVoiceList();
-
-// function unbindServiceWorker(){
-//   navigator.serviceWorker.getRegistrations().then(function (registrations) {
-//     for (let registration of registrations) {
-//       registration.unregister();
-//     }
-//   });
-// }
-// unbindServiceWorker()
 
 function showLockScreen() {
   let numbers = [];
@@ -760,3 +743,19 @@ function showLockScreen() {
 
   document.body.prepend(popup);
 }
+
+
+//loads board from localstorage to keep same board on page refresh
+drawBoard(localStorage.getItem("currentBoardName"));
+
+populateVoiceList();
+
+// function unbindServiceWorker(){
+//   navigator.serviceWorker.getRegistrations().then(function (registrations) {
+//     for (let registration of registrations) {
+//       registration.unregister();
+//     }
+//   });
+// }
+// unbindServiceWorker()
+

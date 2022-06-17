@@ -1292,7 +1292,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/technology.png",
         colour: "linkColour",
-        linkTo: "expanded",
+        linkTo: "expanded-game-electronic",
       },
       { type: "blank" },
       { type: "blank" },
@@ -1625,7 +1625,7 @@ const expanded = {
       {
         type: "textAndIcon",
         displayName: "connect four",
-        iconName:"connect-four",
+        iconName: "connect-four",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -1694,6 +1694,282 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
     ],
+  },
+
+  "expanded-game-electronic": {
+    rows: 6,
+    columns: 9,
+    tiles: [
+      {
+        type: "link",
+        displayName: "back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "electric",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/electricity.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "charge",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/plug%20in%20power%20outlet.png",
+        pastTenseForm: "charged",
+        pluralForm: "charges",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "charger",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plug.png",
+        pluralForm: "chargers",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "computer",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/computer.png",
+        pluralForm: "computers",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "laptop",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/laptop%20computer.png",
+        pluralForm: "laptops",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "tablet",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tablet.png",
+        pluralForm: "tablets",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "iPad ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/iPad-6b1c3b4f8f.svg",
+        pluralForm: "Ipads",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "phone",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/take%20photos.png.variant-dark.png",
+        pastTenseForm: "phoned",
+        pluralForm: "phones",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "tv",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/television.png",
+        pronounciation: "Teevee ",
+        pluralForm: "tvs ",
+        pluralFormPronounciation: "teevees ",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "volume",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Volume_625_g.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "keyboard",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Computer%20Keyboard-19d40c3f5a.svg",
+        pluralForm: "keyboards",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "mouse",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mouse_1.png",
+        pluralForm: "mice",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "battery",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Battery-766ec3b631.svg",
+        pluralForm: "batteries",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "remote",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Remote-Control_753_597698.svg",
+        pluralForm: "remotes",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "youtube ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/Youtube.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "app",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/Windows_Media_Player.png",
+        pluralForm: "apps",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "text",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/text-message_250_g.svg",
+        pastTenseForm: "texted",
+        pluralForm: "texts",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "call",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20telephone_1.png.variant-medium.png",
+        pastTenseForm: "called",
+        pluralForm: "calls",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "website",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/web.png.varianted-skin.png",
+        pluralForm: "websites",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "google",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/Chrome.png",
+        pastTenseForm: "googled ",
+        pluralForm: "googles ",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "channel",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/change%20channel.png.variant-medium-dark.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "xbox ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/console.png",
+        pronounciation: "exsbx ",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "nintendo ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/nintendo%20wii.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "play station ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20computer%20games.png.varianted-skin.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "controller",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f3ae.svg",
+        pluralForm: "controllers",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "headphones",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/headphones.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+    ],
+    topLevel: true,
   },
 };
 
