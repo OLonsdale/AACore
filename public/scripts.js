@@ -46,12 +46,12 @@ function toggleEditMode() {
     deleteBoardArea.classList = "";
     console.log("Edit mode enabled");
     document.body.classList.add("editMode");
-    sentenceDisplayElement.innerHTML = "edit mode enabled";
+    sentenceDisplayElement.value = "edit mode enabled";
   } else {
     deleteBoardArea.classList = "hidden";
     console.log("Edit mode disabled");
     document.body.classList.remove("editMode");
-    sentenceDisplayElement.innerHTML = "";
+    sentenceDisplayElement.value = "";
   }
 }
 
@@ -329,13 +329,17 @@ window.onresize = () => sizeGrid();
 
 function sizeGrid() {
   let board = boards[localStorage.getItem("currentBoardName")];
-  let tileWidth = Math.floor(window.innerWidth / board.columns) - 10;
-  let tileHeight =
-    Math.floor(
-      (window.innerHeight - document.getElementById("topBar").offsetHeight) /
-        board.rows
-    ) - 10;
-  let itemSize = tileWidth > tileHeight ? tileHeight : tileWidth;
+
+  let largest = board.columns > board.rows ? board.columns : board.rows
+
+  console.log(largest)
+
+  let tileWidth = Math.floor( window.innerWidth / board.columns )
+
+  let tileHeight = Math.floor( window.innerHeight / board.rows )
+
+  let itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - ( ( topBar.offsetHeight / board.rows ) )
+  
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
 }

@@ -3,6 +3,7 @@
 }
 
 body {
+  margin: 0;
   background-color: #faebd7;
   font-family: "Arial";
   user-select: none;
@@ -17,10 +18,10 @@ body {
 .board {
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 90vh;
+  /* width: 80%; */
+  /* height: 90vh; */
   display: grid;
-  gap: 0.5em;
+  /* gap: 0.5em; */
   grid-auto-flow: row;
 }
 
@@ -45,6 +46,7 @@ body {
 
 .icon {
   max-width: 70%;
+  max-height: 70%;
   pointer-events: none;
 }
 
@@ -64,10 +66,11 @@ body {
 .topBar {
   display: flex;
   gap: 5px;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   align-items: center;
   justify-content: center;
   height: 5vh;
+  overflow: hidden;
 }
 
 .sentenceDisplay {
