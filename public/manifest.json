@@ -1,14 +1,16 @@
 {
+
 "name": "AACore",
 "short_name": "AACore",
 "start_url": "/",
-"display": "standalone",
+"display": "fullscreen",
 "description": "An Open Source PWA for Augmentative and Alternative Commication",
 "lang": "english",
 "dir": "auto",
 "theme_color": "#000000",
 "background_color": "#faebd7",
 "orientation": "landscape",
+"screenshots": [{}], 
 "icons": [
   {
     "src": "./resouces/favicon-128.png",
@@ -21,13 +23,14 @@
     "sizes": "128x128",
     "type": "image/png",
     "purpose": "any"
-  }
-],
-"screenshots": [
+  },
   {
+    "src": "./resouces/favicon-512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any"
   }
 ],
-"prefer_related_applications": false,
 "shortcuts": [
   {
     "name":"AACore",

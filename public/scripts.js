@@ -162,9 +162,7 @@ sidebarButton.addEventListener("click", () => {
 
 createBoardMenuButton.addEventListener("click", () => showCreateBoardSidebar());
 
-exportBoardButton.addEventListener("click", () => {
-  exportBoard();
-});
+exportBoardButton.addEventListener("click", () => exportBoard());
 
 function exportBoard() {
   const filename = `${localStorage.getItem("currentBoardName")}.json`;
@@ -187,9 +185,7 @@ function exportBoard() {
   document.body.removeChild(element);
 }
 
-importBoardButton.addEventListener("click", () => {
-  importInput.click();
-});
+importBoardButton.addEventListener("click", () => importInput.click());
 
 //this is a mess, but opens a file picker, then reads the contents of the file and stores it in localstorage 
 importInput.addEventListener("change", (ev) => {
@@ -247,7 +243,7 @@ function generateEmptyBoard() {
 
 document
   .getElementById("generateEmptyButton")
-  .addEventListener("click", (ev) => {
+  .addEventListener("click", () => {
     generateEmptyBoard();
   });
 
@@ -316,21 +312,11 @@ window.onresize = () => sizeGrid();
 function sizeGrid() {
   let board = boards[localStorage.getItem("currentBoardName")];
 
-  let largest = board.columns > board.rows ? board.columns : board.rows
-
-  // console.log("longestBoardSide = " + largest)
-
   let tileWidth = Math.floor( window.innerWidth / board.columns )
 
   let tileHeight = Math.floor( window.innerHeight / board.rows )
 
-  let shortestScreenSide = window.innerWidth < window.innerHeight ? "width" : "height"
-
-  console.log(shortestScreenSide)
-
-  let itemSize = Math.round( (tileWidth > tileHeight ? tileHeight : tileWidth) - ( ( topBar.offsetHeight / board.rows ) ))
-
-  console.log(itemSize)
+  let itemSize = Math.round( (tileWidth > tileHeight ? (tileHeight - ( topBar.offsetHeight / board.rows )) : tileWidth) ) - 5
   
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
@@ -640,6 +626,8 @@ voiceSelectElement.addEventListener("change", () => {
   selectedVoice = voices[voiceSelectElement.selectedIndex - 1];
   console.log("Selected voice: " + selectedVoice.name);
 });
+
+showAboutButton.addEventListener("click", showAbout)
 
 //set default board
 if (!localStorage.getItem("currentBoardName")) {

@@ -2324,8 +2324,6 @@ const expanded = {
       {
         type: "link",
         displayName: "pet",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pet.png",
         iconName: "pet",
         colour: "linkColour",
       },
