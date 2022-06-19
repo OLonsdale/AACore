@@ -5,22 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#faebd7"/>
-    <title>AACore</title>
+
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="shortcut icon"
-      href="./resouces/favicon_16px.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./resouces/favicon-ios.png"
-    />
+    <link rel="shortcut icon" href="./resouces/favicon_16px.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./resouces/favicon-ios.png" />
+    
     <link rel="manifest" href="./manifest.json" />
 
-    <script> navigator.serviceWorker.register("sw.js"); </script>
-
+    <title>AACore</title>
   </head>
 
   <body>
@@ -244,7 +236,7 @@
         Resources to be used under supervision of a Speech and Language Therapist 
       </p>
       <h2>Version</h2>
-      <p>0.0.66</p>
+      <p>0.0.67</p>
     </div>
 
     <div id="topBar" class="topBar">
@@ -319,5 +311,13 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
+
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(function() { 
+      console.log("Service Worker Registered"); 
+    });
+  }
+  </script>
   </body>
 </html>

@@ -80,9 +80,6 @@ function showSidebar() {
       boardSelectionList.append(loadButton);
     }
   }
-
-  deleteCurrentBoardButton.textContent =
-    "Delete " + localStorage.getItem("currentBoardName");
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -345,6 +342,9 @@ function drawBoard(name) {
   const board = boards[name];
 
   localStorage.setItem("currentBoardName", name);
+
+  deleteCurrentBoardButton.textContent =
+  "Delete " + localStorage.getItem("currentBoardName");
 
   //clear existing
   boardSection.replaceChildren();
