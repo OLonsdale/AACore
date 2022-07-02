@@ -3,6 +3,7 @@ const standard = {
     topLevel: true,
     rows: 6,
     columns: 9,
+    path:"standard",
     tiles: [
       {
         type: "link",
@@ -394,9 +395,11 @@ const standard = {
       },
     ],
   },
+
   "standard-am": {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ I",
     tiles: [
       {
         type: "link",
@@ -831,9 +834,11 @@ const standard = {
       },
     ],
   },
+
   toys: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ toys",
     tiles: [
       {
         type: "link",
@@ -1165,9 +1170,11 @@ const standard = {
       { type: "blank" },
     ],
   },
+
   learn: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ learn",
     tiles: [
       {
         type: "link",
@@ -1523,9 +1530,11 @@ const standard = {
       },
     ],
   },
+
   topic: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ topic",
     tiles: [
       {
         type: "link",
@@ -1877,9 +1886,11 @@ const standard = {
       },
     ],
   },
+
   body: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ body",
     tiles: [
       {
         type: "link",
@@ -2273,9 +2284,11 @@ const standard = {
       { type: "blank" },
     ],
   },
+
   home: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ home",
     tiles: [
       {
         type: "link",
@@ -2662,9 +2675,11 @@ const standard = {
       },
     ],
   },
+
   food: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ food",
     tiles: [
       {
         type: "link",
@@ -3079,9 +3094,11 @@ const standard = {
       },
     ],
   },
+
   drinks: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ drinks",
     tiles: [
       {
         type: "link",
@@ -3335,9 +3352,11 @@ const standard = {
       },
     ],
   },
+
   people: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ people",
     tiles: [
       {
         type: "link",
@@ -3592,9 +3611,11 @@ const standard = {
       },
     ],
   },
+
   feelings: {
     rows: 6,
     columns: 9,
+    path:"standard ⇾ feelings",
     tiles: [
       {
         type: "link",
@@ -3641,6 +3662,7 @@ const standard = {
         displayName: "sick",
         iconName: "sick",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "blank",
@@ -3675,24 +3697,28 @@ const standard = {
         displayName: "worried",
         iconName: "worried",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "bored",
         iconName: "bored",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "excited",
         iconName: "excited",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "tired",
         iconName: "tired",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3740,24 +3766,28 @@ const standard = {
         displayName: "laugh",
         iconName: "laugh",
         colour: "green",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "cry",
         iconName: "cry",
         colour: "green",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "smile",
         iconName: "smile",
         colour: "green",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "shout",
         iconName: "shout",
         colour: "green",
+        linkTo: "standard",
       },
       {
         type: "blank",
@@ -3774,6 +3804,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Yes%20(M).png",
         iconName: "yes",
         colour: "white",
+        linkTo: "standard",
       },
       {
         type: "blank",
@@ -3796,12 +3827,14 @@ const standard = {
         displayName: "win",
         iconName: "win",
         colour: "green",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "lose",
         iconName: "lose",
         colour: "green",
+        linkTo: "standard",
       },
       {
         type: "blank",
@@ -3824,6 +3857,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/morning.png",
         iconName: "morning",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3832,6 +3866,7 @@ const standard = {
         colour: "blue",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/afternoon.png",
+          linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3840,6 +3875,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/day.png",
         iconName: "day",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3856,6 +3892,7 @@ const standard = {
         displayName: "easy",
         iconName: "easy",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3879,6 +3916,7 @@ const standard = {
         displayName: "good",
         iconName: "like",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "blank",
@@ -3892,6 +3930,7 @@ const standard = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bad.svg.varianted-skin.svg",
         colour: "blue",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3940,6 +3979,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Halloween.svg.varianted-skin.svg",
         iconName: "halloween",
         colour: "orange",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3948,12 +3988,14 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fireworks.svg",
         iconName: "firework",
         colour: "orange",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
         displayName: "present",
         iconName: "present",
         colour: "orange",
+        linkTo: "standard",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/gift_1.png",
       },
@@ -3964,6 +4006,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pray_2.png",
         iconName: "pray",
         colour: "orange",
+        linkTo: "standard",
       },
     ],
   },

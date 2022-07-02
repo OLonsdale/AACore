@@ -3,22 +3,22 @@ mogrify -format webp *.png
 
 firebase deploy
 
-for (const board in boards) {
-  if (Object.hasOwnProperty.call(boards, board)) {
-    const element = boards[board];
-
-    element.tiles.forEach(tile => {
-      if(tile.type === "blank") return
-      library[tile.internalName] = tile
-    })
-    
-  }
-}
-
-
 ctrl + alt + s -> w
 Update service worker before deploying
 
-Edit grid name and "main" status
 
-Reuse existing words
+Clear old service worker (all goes in sw.js):
+
+  self.addEventListener('install', function(e) {
+    self.skipWaiting();
+  });
+
+  self.addEventListener('activate', function(e) {
+    self.registration.unregister()
+      .then(function() {
+        return self.clients.matchAll();
+      })
+      .then(function(clients) {
+        clients.forEach(client => client.navigate(client.url))
+      });
+  });

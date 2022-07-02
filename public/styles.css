@@ -108,6 +108,10 @@ button:disabled {
   background-color: grey;
 }
 
+select {
+  width: 30ch;
+}
+
 .sidebar {
   box-sizing: border-box;
   display: flex;
@@ -118,6 +122,9 @@ button:disabled {
   z-index: 3;
   padding: 0.5em;
   width: 30ch;
+  max-height: 90vw;
+  overflow: auto;
+  box-shadow: 0 0 0 1px black;
 }
 
 .sidebarButton {
@@ -127,6 +134,18 @@ button:disabled {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   z-index: -1;
+}
+
+.inlineSidebarButton{
+  box-shadow: 0 0 0 1px black;
+  background-color: darkcyan;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  z-index: 1;
+}
+
+.sidebarButton:active, .inlineSidebarButton:active {
+  background-color: rgb(3, 99, 99);
 }
 
 .playbackButton {

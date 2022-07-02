@@ -60,9 +60,8 @@ function showSidebar() {
     showLockScreen();
     return;
   }
-  sidebar.classList.remove("hidden");
-  createBoardSidebar.classList.add("hidden");
-  editTileSidebar.classList.add("hidden");
+  closeAllSidebars();
+  document.getElementById("sidebar").classList.remove("hidden");
 
   //board selection buttons
   boardSelectionList.replaceChildren();
@@ -111,33 +110,68 @@ function deleteCurrentBoard() {
   showSidebar();
 }
 
-function findPathToWord(word, startBoard) {
-  //scuffed mess
+function findPathToWord(word) {
+  //bad approach as far as big O goes.
+  let paths = [];
+
+  for (const board in boards) {
+    //don't even know what this check's for, it's just added by the IDE so I left it in
+    if (!Object.hasOwnProperty.call(boards, board)) continue;
+
+    const currentBoard = boards[board];
+    currentBoard.tiles.forEach((tile) => {
+      if (tile.displayName === word) {
+        paths.push(`${currentBoard.path} ⇨ ${word}`);
+      }
+    });
+  }
+  return paths || null;
 }
-Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(button => {
-  button.addEventListener("click", closeAllSidebars)
+
+findWordSearchButton.addEventListener("click", () => {
+  let searchTerm = findWordInput.value
+  let resultsElement = document.getElementById("wordSearchResultsElement")
+  resultsElement.innerHTML = ""
+  if(!searchTerm) return
+  let results = findPathToWord(searchTerm)
+  results.forEach(result => {
+    let text = document.createElement("p")
+    text.innerHTML = `<b>${result}</b>`
+    resultsElement.append(text)
+  })
 })
 
-function closeAllSidebars(){
-  sidebar.classList.add("hidden")
-  createBoardSidebar.classList.add("hidden")
-  editTileSidebar.classList.add("hidden")
-  aboutSidebar.classList.add("hidden")
+Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(
+  (button) => {
+    button.addEventListener("click", closeAllSidebars);
+  }
+);
+
+function closeAllSidebars() {
+  document.getElementById("sidebar").classList.add("hidden");
+  createBoardSidebar.classList.add("hidden");
+  editTileSidebar.classList.add("hidden");
+  aboutSidebar.classList.add("hidden");
 }
 
-function showAbout(){
-  closeAllSidebars()
-  aboutSidebar.classList.remove("hidden")
+function showAbout() {
+  closeAllSidebars();
+  aboutSidebar.classList.remove("hidden");
 }
 
 function showCreateBoardSidebar() {
-  closeAllSidebars()
+  closeAllSidebars();
   createBoardSidebar.classList.remove("hidden");
 }
 
 function showEditTile() {
-  closeAllSidebars()
+  closeAllSidebars();
   editTileSidebar.classList.remove("hidden");
+  linkToInput.innerHTML = "";
+
+  let noneOption = document.createElement("option");
+  noneOption.innerText = "None";
+  linkToInput.append(noneOption);
 
   //lists boards for the linkTo dropdown
   for (const board in boards) {
@@ -152,9 +186,7 @@ function showEditTile() {
 
 //hides and shows the sidebar
 sidebarButton.addEventListener("click", () => {
-  if (sidebar.classList.contains("hidden")) {
-    showSidebar();
-  } else closeSidebar();
+  showSidebar();
 });
 
 createBoardMenuButton.addEventListener("click", () => showCreateBoardSidebar());
@@ -184,7 +216,7 @@ function exportBoard() {
 
 importBoardButton.addEventListener("click", () => importInput.click());
 
-//this is a mess, but opens a file picker, then reads the contents of the file and stores it in localstorage 
+//this is a mess, but opens a file picker, then reads the contents of the file and stores it in localstorage
 importInput.addEventListener("change", (ev) => {
   const fileList = ev.target.files;
   const reader = new FileReader();
@@ -238,21 +270,43 @@ function generateEmptyBoard() {
   if (!editMode) editModeCheckbox.click();
 }
 
-document
-  .getElementById("generateEmptyButton")
-  .addEventListener("click", () => {
-    generateEmptyBoard();
-  });
+document.getElementById("generateEmptyButton").addEventListener("click", () => {
+  generateEmptyBoard();
+});
 
-//convert to edit json object and redraw board rather than changing the dom
+clearCurrentTileButton.addEventListener("click", () => {
+  clearCurrentTile();
+});
+
+function clearCurrentTile() {
+  displayNameInput.value = "";
+  tileTypeInput.value = "blank";
+  iconLinkInput.value = "";
+  pronounciationInput.value = "";
+  pastTenseInput.value = "";
+  pastTensePronounciationInput.value = "";
+  pluralInput.value = "";
+  pluralPronounciationInput.value = "";
+  negationInput.value = "";
+  negationPronounciationInput.value = "";
+  iconNameInput.value = "";
+  linkToInput.value = "";
+  colourInput.value = "red";
+}
+
 editTileSubmitButton.addEventListener("click", () => {
   editTile();
 });
 
 //vulnerable to injection?
 function editTile() {
+  if (!displayNameInput.value && tileTypeInput.value !== "blank") {
+    alert("You must enter a display name if the tile is not blank");
+  }
+
   let board = boards[localStorage.getItem("currentBoardName")];
   let selectedTile = board.tiles[selectedTileNumber.value];
+
   selectedTile.displayName = displayNameInput.value;
   selectedTile.type = tileTypeInput.value;
 
@@ -307,14 +361,22 @@ window.onresize = () => sizeGrid();
 
 //still imperfect
 function sizeGrid() {
+  let aspectRatio = window.innerWidth / window.innerHeight;
+  console.log("aspect ratio: " + aspectRatio);
+
   let board = boards[localStorage.getItem("currentBoardName")];
 
-  let tileWidth = Math.floor( window.innerWidth / board.columns )
+  let tileWidth = Math.floor(window.innerWidth / board.columns);
 
-  let tileHeight = Math.floor( window.innerHeight / board.rows )
+  let tileHeight = Math.floor(window.innerHeight / board.rows);
 
-  let itemSize = Math.round( (tileWidth > tileHeight ? (tileHeight - ( topBar.offsetHeight / board.rows )) : tileWidth) ) - 5
-  
+  let itemSize =
+    Math.round(
+      tileWidth > tileHeight
+        ? tileHeight - topBar.offsetHeight / board.rows
+        : tileWidth
+    ) - 5;
+
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
 }
@@ -344,7 +406,7 @@ function drawBoard(name) {
   localStorage.setItem("currentBoardName", name);
 
   deleteCurrentBoardButton.textContent =
-  "Delete " + localStorage.getItem("currentBoardName");
+    "Delete " + localStorage.getItem("currentBoardName");
 
   //clear existing
   boardSection.replaceChildren();
@@ -452,7 +514,7 @@ function drawBoard(name) {
 }
 
 lockSidebarButton.addEventListener("click", () => {
-  closeSidebar();
+  closeAllSidebars();
   sidebarLocked = true;
   localStorage.setItem("sidebarLocked", true);
 });
@@ -472,7 +534,7 @@ function toggleSentenceAutoDelete() {
 // playButton.addEventListener("click", () => speakSentence());
 
 sentenceDisplayElement.addEventListener("click", () => {
-  speakSentence()
+  speakSentence();
 });
 
 deleteLastButton.addEventListener("click", () => {
@@ -627,7 +689,7 @@ voiceSelectElement.addEventListener("change", () => {
   console.log("Selected voice: " + selectedVoice.name);
 });
 
-showAboutButton.addEventListener("click", showAbout)
+showAboutButton.addEventListener("click", showAbout);
 
 //set default board
 if (!localStorage.getItem("currentBoardName")) {
@@ -649,7 +711,7 @@ if (!localStorage.getItem("sentenceAutoDelete")) {
 
 if (!localStorage.getItem("firstVisit")) {
   localStorage.setItem("firstVisit", false);
-  showAbout()
+  showAbout();
 }
 
 document.getElementById("rowsInput").addEventListener("change", () => {
@@ -668,10 +730,14 @@ document.addEventListener("keydown", (ev) => {
   }
 });
 
+//lock screen generates four random numbers between 0 and 100
+//and randomly selects ascending or descending order
+//the numbers are put into buttons, and must be clicked in the order chosen
 function showLockScreen() {
   let numbers = [];
   let order = Math.random() >= 0.5 ? "low-to-high" : "high-to-low";
 
+  //generates a number, and adds it to the numbers array if not a duplicate
   for (let i = 0; i < 4; i++) {
     let number = Math.floor(Math.random() * (100 - 1) + 1);
     if (!numbers.includes(number)) {
@@ -679,17 +745,19 @@ function showLockScreen() {
     } else i--;
   }
 
+  //elements for the UI
   let popup = document.createElement("div");
   popup.classList.add("sidebar");
   popup.id = "unlockSidebar";
 
   let message = document.createElement("h2");
-  message.innerText = `Click these numbers in order of ${order}`;
+  message.innerText = `Select these numbers in order of ${order}`;
 
   let closeButton = document.createElement("button");
   closeButton.classList = "sidebarButton";
   closeButton.innerText = "Back";
   closeButton.id = "closePasswordButton";
+
   closeButton.addEventListener("click", () => {
     unlockAttempt = [];
     unlockSidebar.remove();
@@ -698,11 +766,19 @@ function showLockScreen() {
 
   popup.append(closeButton, message);
 
+  //for the numbers in the array, add a button to the element
   numbers.forEach((number) => {
     let button = document.createElement("button");
     button.textContent = number;
     button.classList.add("sidebarButton");
 
+    //the logic for the unlocking is contained in the event listner and the global variables at the top
+    //disables the button when clicked, and adds the value to "unlock attempt"
+    //if the length of unlock attempt is 4, check sort the "numbers" array containing the password,
+    //based on the randomly chosen method, asc/desc,
+    //then compare each element of the unlock attempt to the element in the same possition in the password array
+    //if it passes, set locked to false, and show sidebar
+    //if it fails, just show a message and clear the attempt array
     button.addEventListener("click", (ev) => {
       button.disabled = true;
       unlockAttempt.push(number);
@@ -722,7 +798,7 @@ function showLockScreen() {
           localStorage.setItem("sidebarLocked", false);
           showSidebar();
         } else alert("wrong order, try again");
-        closePasswordButton.click();
+        closePasswordButton.click(); //dirty
       }
     });
 
@@ -731,7 +807,6 @@ function showLockScreen() {
 
   document.body.prepend(popup);
 }
-
 
 //loads board from localstorage to keep same board on page refresh
 drawBoard(localStorage.getItem("currentBoardName"));
@@ -746,4 +821,3 @@ populateVoiceList();
 //   });
 // }
 // unbindServiceWorker()
-

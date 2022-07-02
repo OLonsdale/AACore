@@ -37,6 +37,15 @@
         <input type="checkbox" name="editMode" id="editModeCheckbox" />
       </div>
 
+      <h3>Find Word:</h3>
+      <div class="displayFlexRow">
+        <input type="text" id="findWordInput">
+        <button id="findWordSearchButton" title="Search" aria-label="search for word" class="inlineSidebarButton">&#x1F50E;</button>
+      </div>
+      <div id="wordSearchResultsElement">
+        <!-- filled by JS on search button -->
+      </div>
+
       <h3>Select Set:</h3>
       <div id="boardSelectionList">
         <!-- Filled by JS -->
@@ -120,11 +129,13 @@
       <button class="sidebarButton closeSidebarButton">
         Close
       </button>
-
+      
       <h2>Edit Tile</h2>
+      <div><button class="sidebarButton" id="clearCurrentTileButton">Clear Current Tile</button></div>
 
       <div><label for="selectedTileNumber">Selected Tile:</label></div>
       <div><input id="selectedTileNumber" type="text" disabled /></div>
+
 
       <div><label for="displayNameInput">Display Name:</label></div>
       <div><input id="displayNameInput" type="text" /></div>
@@ -236,7 +247,7 @@
         Resources to be used under supervision of a Speech and Language Therapist 
       </p>
       <h2>Version</h2>
-      <p>0.0.67</p>
+      <p>0.0.68</p>
     </div>
 
     <div id="topBar" class="topBar">
@@ -312,12 +323,13 @@
       const analytics = getAnalytics(app);
     </script>
 
-<script>
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(function() { 
-      console.log("Service Worker Registered"); 
-    });
-  }
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(function() { 
+        console.log("Service Worker Registered"); 
+      });
+    }
   </script>
+
   </body>
 </html>
