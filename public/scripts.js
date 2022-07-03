@@ -33,7 +33,7 @@ let selectedVoice;
 let sidebarLocked = JSON.parse(localStorage.getItem("sidebarLocked"));
 let unlockAttempt = [];
 
-let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete");
+let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete") ?? true;
 let editMode = false;
 
 editModeCheckbox.addEventListener("change", () => {
@@ -120,15 +120,16 @@ function findPathToWord(word) {
 
     const currentBoard = boards[board];
     currentBoard.tiles.forEach((tile) => {
-      if (tile.displayName === word) {
-        paths.push(`${currentBoard.path} ⇨ ${word}`);
+      if(!tile.displayName || tile.type === "link") return
+      if ( tile.displayName.toLowerCase() === word.toLowerCase() ) {
+        paths.push(`${currentBoard.path} ⇨ ${word.toLowerCase()}`);
       }
     });
   }
   return paths || null;
 }
 
-findWordSearchButton.addEventListener("click", () => {
+findWordInput.addEventListener("change", () => {
   let searchTerm = findWordInput.value
   let resultsElement = document.getElementById("wordSearchResultsElement")
   resultsElement.innerHTML = ""
@@ -518,6 +519,8 @@ lockSidebarButton.addEventListener("click", () => {
   sidebarLocked = true;
   localStorage.setItem("sidebarLocked", true);
 });
+
+console.log("sentence auto delete default:" + sentenceAutoDelete + "\n" + localStorage.getItem("sentenceAutoDelete"))
 
 sentenceAutoDeleteCheckbox.checked = sentenceAutoDelete;
 

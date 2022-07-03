@@ -1,3 +1,5 @@
+//clears the current event listner, including cache
+
 self.addEventListener('install', function(e) {
   self.skipWaiting();
 });

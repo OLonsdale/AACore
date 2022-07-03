@@ -3408,6 +3408,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/family_8.png.variant-medium.png",
         iconName: "family",
         colour: "orange",
+        linkTo:"standard"
       },
       {
         type: "textAndIcon",
@@ -3520,7 +3521,12 @@ const standard = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "textOnly", displayName: "me", colour: "yellow" },
+      { 
+        type: "textOnly", 
+        displayName: "me", 
+        colour: "yellow", 
+        linkTo:"standard" 
+      },
       {
         type: "textOnly",
         displayName: "my",
