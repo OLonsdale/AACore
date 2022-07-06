@@ -1,5 +1,6 @@
 const expanded = {
   expanded: {
+    name: "Expanded",
     topLevel: true,
     rows: 6,
     columns: 10,
@@ -55,11 +56,11 @@ const expanded = {
       },
       {
         type: "link",
-        displayName: "Drinks[missing]",
-        iconName: "drinks",
+        displayName: "Time[missing]",
+        iconName: "time",
         linkTo: "",
         colour: "linkColour",
-        internalName: "Drinks",
+        internalName: "Time",
       },
       {
         type: "link",
@@ -542,11 +543,11 @@ const expanded = {
       },
       {
         type: "link",
-        displayName: "Drinks[missing]",
-        iconName: "drinks",
+        displayName: "Time[missing]",
+        iconName: "time",
         linkTo: "",
         colour: "linkColour",
-        internalName: "Drinks",
+        internalName: "Time",
       },
       {
         type: "link",
@@ -3639,7 +3640,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "Back",
+        displayName: "back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -3685,7 +3686,7 @@ const expanded = {
       { type: "blank" },
       {
         type: "link",
-        displayName: "Furniture",
+        displayName: " furniture",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/furniture.svg",
         linkTo: "expanded",
@@ -3716,7 +3717,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "sleep",
+        displayName: "sleep ",
         pastTenseForm: "slept",
         pluralForm: "sleeps",
         iconName: "sleep",
@@ -3751,7 +3752,7 @@ const expanded = {
       { type: "blank" },
       {
         type: "link",
-        displayName: "Weather",
+        displayName: "weather",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/how%20is%20the%20weather.png",
         linkTo: "expanded",
@@ -3820,7 +3821,15 @@ const expanded = {
         colour: "orange",
       },
       { type: "blank" },
-      { type: "blank" },
+      {
+        type: "link",
+        displayName: "street",
+        iconName: "street",
+        linkTo: "None",
+        colour: "linkColour",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/street.png",
+      },
       {
         type: "textAndIcon",
         displayName: "dining room",
@@ -3901,7 +3910,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "corridor",
+        displayName: "corridor ",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/corridor.png",
         linkTo: "expanded",
@@ -3938,8 +3947,22 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "with",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/with.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "link",
+        displayName: "position",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20place.png.variant-medium-dark.png",
+        linkTo: "None",
+        colour: "linkColour",
+      },
       {
         type: "textAndIcon",
         displayName: "shop",
@@ -3988,116 +4011,502 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
+      {
+        type: "textAndIcon",
+        displayName: "curtain",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curtain.png",
+        pluralForm: "curtains",
+        linkTo: "None",
+        colour: "orange",
+      },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
+      {
+        type: "link",
+        displayName: "Countries",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/the%20world.png",
+        linkTo: "expanded-places-countries",
+        colour: "linkColour",
+      },
     ],
   },
 
-  "expanded-learn-write": {
+  "expanded-places-countries": {
     rows: 6,
-    columns: 11,
-    path: "expanded ⇾ learn ⇾ write",
+    columns: 9,
+    path: "expanded ⇾ places ⇾ countries",
     tiles: [
       {
         type: "link",
-        displayName: "Back",
+        displayName: "back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
-        displayName: "spell",
+        displayName: "world",
         iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cast%20a%20spell%20on.png.varianted-skin.png",
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/the%20world.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "country",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/world%20map.png",
+        pluralForm: "countries",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "map",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/map.png",
+        pastTenseForm: "mapped",
+        pluralForm: "maps",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "direction",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20direct_3.png.variant-medium.png",
+        linkTo: "expanded",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "travel",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/travel.png.varianted-skin.png",
+        pastTenseForm: "travelled",
+        pluralForm: "travels",
+        linkTo: "None",
         colour: "green",
       },
-      { type: "textOnly", displayName: "word", colour: "orange" },
       {
         type: "textAndIcon",
-        displayName: "letter",
+        displayName: "passport",
         iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/a%20-%20lower%20case.svg",
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/passport.svg",
+        linkTo: "None",
         colour: "orange",
-        linkTo: "grammar",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      {
-        type: "blank",
-        displayName: "delete letter",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cross%20out.png.varianted-skin.png",
-        colour: "grey",
-        linkTo: "grammar",
-      },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "textOnly", displayName: "⠀q⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀w⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀e⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀r⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀t⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀y⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀u⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀i⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀o⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀p⠀", colour: "white" },
-      { type: "blank" },
-      { type: "textOnly", displayName: "⠀a⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀s⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀d⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀f⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀g⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀h⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀j⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀k⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀l⠀", colour: "white" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "textOnly", displayName: "⠀z⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀x⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀c⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀v⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀b⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀n⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀m⠀", colour: "white" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
-        displayName: "⠀ ⠀",
+        displayName: "island",
         iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/astronaut.png",
-        iconName: "space",
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/island.png",
+        pluralForm: "islands",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "region",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/regional%20state_32.png",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Europe",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Europe.png",
+        linkTo: "None",
         colour: "grey",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "United Kingdom",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/United%20Kingdom.png",
+        linkTo: "None",
+        colour: "grey",
+        pastTenseForm: "British",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "France",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/France.png",
+        linkTo: "None",
+        colour: "grey",
+        pastTenseForm: "French",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Spain",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Spain_1.png",
+        pastTenseForm: "Spanish",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Italy",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Italy.png",
+        pastTenseForm: "Italian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Germany",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Germany.png",
+        pastTenseForm: "German",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Poland",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Poland_1.png",
+        pastTenseForm: "Polish",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Greece",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Greece.png",
+        pastTenseForm: "Greek",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Turkey",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Turkey_3.png",
+        pastTenseForm: "Turkish",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Africa",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Africa.png",
+        linkTo: "None",
+        colour: "white",
+        pastTensePronounciation: "African",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Egypt",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Egypt.svg",
+        linkTo: "None",
+        colour: "grey",
+        pastTenseForm: "Egyptian",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Democratic Republic of Congo ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Congo%20Kinshasa.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Nigeria",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Nigeria.svg",
+        pastTenseForm: "Nigerian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Zimbabwe",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Zimbabwe.svg",
+        pastTenseForm: "Zimbabwean ",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Sudan",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20The%20Sudan.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Tunisia",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Tunisia.svg",
+        pastTenseForm: "Tunisian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Libya",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1f1-1f1fe.svg",
+        pastTenseForm: "Libyan",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Somalia",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Somalia.svg",
+        pastTenseForm: "Somalian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Asia",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/continent_2.png",
+        pastTenseForm: "Asian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Russia",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1f7-1f1fa.svg",
+        pastTenseForm: "Russian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "China",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20China.svg",
+        pastTenseForm: "Chinese",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "India",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20India.svg",
+        pastTenseForm: "Indian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Japan",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Japan.svg",
+        pastTenseForm: "Japanese ",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Philippines",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Philippines.svg",
+        pastTenseForm: "Philippino",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Australia",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1e6-1f1fa.svg",
+        pastTensePronounciation: "Australian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "New Zealand",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20New%20Zealand.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Indonesia",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Indonesia.svg",
+        pastTenseForm: "Indonesian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "America",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/America.png",
+        pastTenseForm: "American",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "USA",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/country%20United%20States.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Brazil",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Brazil.svg",
+        pastTenseForm: "Brazilian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Canada",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Canada.svg",
+        pastTenseForm: "Canadian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Argentina",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Argentina.svg",
+        pastTenseForm: "Argentinan",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Mexico",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Mexico.svg",
+        pastTenseForm: "Mexican",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Caribbean ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sea%20conch_1.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Chile",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Chile.svg",
+        pronounciation: "Chilly",
+        pastTenseForm: "Chillian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Peru",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Peru.svg",
+        pastTenseForm: "Peruvian ",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Saudi Arabia",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Saudi%20Arabia.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Pakistan",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Pakistan.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Afganistan",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Afghanistan.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Syria",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Syria.svg",
+        pastTenseForm: "Syrian",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "Iraq",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Iraq.svg",
+        pastTenseForm: "Iraqi",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "North",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/North.png",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "East",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/East.png",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "South",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/South.png",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "West",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/West.png",
+        linkTo: "None",
+        colour: "blue",
+      },
     ],
   },
 
@@ -4124,9 +4533,9 @@ const expanded = {
       },
       {
         type: "link",
-        displayName: "Maths[missing]",
+        displayName: "Maths",
         iconName: "maths",
-        linkTo: "",
+        linkTo: "expanded-learn-maths",
         colour: "linkColour",
       },
       {
@@ -4140,9 +4549,9 @@ const expanded = {
       },
       {
         type: "link",
-        displayName: "Shapes[missing]",
+        displayName: "Shapes",
         iconName: "art",
-        linkTo: "",
+        linkTo: "expanded-learn-shapes",
         colour: "linkColour",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/shapes.svg",
@@ -4414,6 +4823,574 @@ const expanded = {
     ],
   },
 
+  "expanded-learn-write": {
+    name: "TTS Keyboard",
+    topLevel: true,
+    rows: 6,
+    columns: 11,
+    path: "expanded ⇾ learn ⇾ write",
+    tiles: [
+      {
+        type: "link",
+        displayName: "Back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "spell",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cast%20a%20spell%20on.png.varianted-skin.png",
+        colour: "green",
+      },
+      { type: "textOnly", displayName: "word", colour: "orange" },
+      {
+        type: "textAndIcon",
+        displayName: "letter",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/a%20-%20lower%20case.svg",
+        colour: "orange",
+        linkTo: "grammar",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "blank",
+        displayName: "delete letter",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cross%20out.png.varianted-skin.png",
+        colour: "grey",
+        linkTo: "grammar",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "textOnly", displayName: "⠀q⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀w⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀e⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀r⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀t⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀y⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀u⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀i⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀o⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀p⠀", colour: "white" },
+      { type: "blank" },
+      { type: "textOnly", displayName: "⠀a⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀s⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀d⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀f⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀g⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀h⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀j⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀k⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀l⠀", colour: "white" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "textOnly", displayName: "⠀z⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀x⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀c⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀v⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀b⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀n⠀", colour: "white" },
+      { type: "textOnly", displayName: "⠀m⠀", colour: "white" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "⠀ ⠀",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/astronaut.png",
+        iconName: "space",
+        colour: "grey",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+    ],
+  },
+
+  "expanded-learn-shapes": {
+    rows: 6,
+    columns: 9,
+    path: "expanded ⇾ learn ⇾ shapes",
+    tiles: [
+      {
+        type: "link",
+        displayName: "back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "shape",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/shapes.svg",
+        pastTenseForm: "shaped",
+        pluralForm: "shapes",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "side",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/side.svg",
+        pastTenseForm: "sided",
+        pluralForm: "sides",
+        linkTo: "None",
+        colour: "red",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "corner",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/corner_1.png",
+        pastTenseForm: "cornered",
+        pluralForm: "corners",
+        linkTo: "None",
+        colour: "red",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "2D",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/ranges_230_g.svg",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "3D",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/shape_135_g.svg",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "straight",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ruler_720_g.svg",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "curve",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curved%20line.png",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "angle",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Degree-Angle_774_599172.svg",
+        linkTo: "None",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "circle",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/circle.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "triangle",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/triangle%20equilateral.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "square",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/square.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "rectangle",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rectangle.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "pentagon ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pentagon.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "hexagon",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hexagon.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "octagon",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/octagon.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "sphere",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sphere_2.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "pyramid",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pyramid_2.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "cube",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bucket_6.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "cylinder ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cylinder.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "cone",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cone_3.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "prism",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/prism.png",
+        linkTo: "None",
+        colour: "grey",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+    ],
+  },
+
+  "expanded-learn-maths": {
+    rows: 6,
+    columns: 9,
+    path: "expanded ⇾ learn ⇾ maths",
+    tiles: [
+      {
+        type: "link",
+        displayName: "back",
+        iconName: "navigate-back",
+        linkTo: "None",
+        colour: "linkColour",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "maths",
+        iconName: "maths",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textOnly",
+        displayName: "0",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "1",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "2",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "3",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "4",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "5",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "number",
+        iconName: "number",
+        linkTo: "None",
+        colour: "orange",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f522.svg",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "count",
+        iconName: "count",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textOnly",
+        displayName: "6",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "7",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "8",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      {
+        type: "textOnly",
+        displayName: "9",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      { type: "textOnly", displayName: "10", linkTo: "None", colour: "grey" },
+      {
+        type: "textAndIcon",
+        displayName: "hundred",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f4af.svg",
+        linkTo: "None",
+        colour: "grey",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "how many",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/how%20many_1.png",
+        linkTo: "expanded",
+        colour: "pink",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "add",
+        pastTenseForm: "added",
+        pluralForm: "adds",
+        iconName: "add",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "minus",
+        iconName: "minus",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "times",
+        iconName: "times",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "divide",
+        iconName: "divide",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "equals",
+        iconName: "equals",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "times table",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/multiplication.png",
+        pluralForm: "times tables",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "thousand",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/one%20thousand.png",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "whole",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/whole.svg",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "half",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/half.svg",
+        linkTo: "expanded",
+        colour: "blue",
+        pastTenseForm: "halved",
+        pluralForm: "halves",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "quarter",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/quarter.svg",
+        pastTenseForm: "quartered",
+        pluralForm: "quarters",
+        linkTo: "expanded",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "third",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/one%20third.svg",
+        pluralFormPronounciation: "thirds",
+        linkTo: "expanded",
+        colour: "blue",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "million",
+        pluralForm: "millions",
+        linkTo: "None",
+        colour: "grey",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+    ],
+  },
+
   "expanded-topic": {
     rows: 6,
     columns: 9,
@@ -4484,10 +5461,11 @@ const expanded = {
       },
       {
         type: "link",
-        displayName: "Insect[missing]",
+        displayName: "Insects",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/insects.png",
         colour: "linkColour",
+        linkTo: "expanded-topic-insects",
       },
       { type: "blank" },
       { type: "blank" },
@@ -4531,7 +5509,7 @@ const expanded = {
   "expanded-topic-domestic": {
     rows: 6,
     columns: 9,
-    path:"expanded ⇾ topic ⇾ domestic",
+    path: "expanded ⇾ topic ⇾ domestic",
     tiles: [
       {
         type: "link",
@@ -4787,7 +5765,7 @@ const expanded = {
   "expanded-topic-wild": {
     rows: 6,
     columns: 9,
-    path:"expanded ⇾ topic ⇾ wild",
+    path: "expanded ⇾ topic ⇾ wild",
     tiles: [
       {
         type: "link",
@@ -5103,7 +6081,7 @@ const expanded = {
   "expanded-topic-water": {
     rows: 6,
     columns: 9,
-    path:"expanded ⇾ topic ⇾ water",
+    path: "expanded ⇾ topic ⇾ water",
     tiles: [
       {
         type: "link",
@@ -5376,7 +6354,7 @@ const expanded = {
   "expanded-topic-birds": {
     rows: 6,
     columns: 9,
-    path:"expanded ⇾ topic ⇾ birds",
+    path: "expanded ⇾ topic ⇾ birds",
     tiles: [
       {
         type: "link",
@@ -5654,6 +6632,194 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
+    ],
+  },
+
+  "expanded-topic-insects": {
+    rows: 6,
+    columns: 9,
+    path: "expanded ⇾ topic ⇾ insects",
+    tiles: [
+      {
+        type: "link",
+        displayName: "back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "insect",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/insect.png",
+        pluralForm: "insects",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "bug",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/beetle.png",
+        pastTenseForm: "bugged",
+        pluralForm: "bugs",
+        linkTo: "None",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "slimy",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sticky.svg.varianted-skin.svg",
+        linkTo: "None",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "ant",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/ant.svg",
+        pluralForm: "ants",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "ladybird",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ladybug.png",
+        pluralForm: "ladybirds",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "spider",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/spider.svg",
+        pluralForm: "spiders",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "bee",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bee%20bumble.svg",
+        pluralForm: "bees",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "wasp",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wasp.png",
+        pluralForm: "wasps",
+        linkTo: "None",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "worm",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/worm_1.png",
+        pluralForm: "worms",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "beetle",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/beetle.svg",
+        pluralForm: "beetles",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "caterpillar ",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/caterpillar.svg",
+        pluralForm: "caterpillars",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "butterfly",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/butterfly.png",
+        pluralForm: "butterflies",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "grasshopper",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/grasshopper_2.png",
+        pluralForm: "grasshoppers",
+        linkTo: "None",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "slug",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/slug.svg",
+        pluralForm: "slugs",
+        linkTo: "None",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "snail",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snail_1.png",
+        pluralForm: "snails",
+        linkTo: "None",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
     ],
   },
 };

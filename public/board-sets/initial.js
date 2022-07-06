@@ -1,5 +1,6 @@
 const initial = {
   initial: {
+    name:"Initial",
     topLevel: true,
     rows: 3,
     columns: 6,

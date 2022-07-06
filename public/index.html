@@ -37,6 +37,27 @@
         <input type="checkbox" name="editMode" id="editModeCheckbox" />
       </div>
 
+      <div id="editBoardArea" class="inlineSidebar hidden">
+        <h3>Edit Board:</h3>
+        <br>
+        <div>
+          <label for="deleteCurrentBoardButton">Delete Board</label>
+          <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
+        </div>
+        <br>
+        <div>
+          <label for="boardNameEditInput">Rename Board:</label> 
+          <input id="boardNameEditInput">
+        </div>
+        <br>
+        <div>
+          <label for="topLevelEditInput">Board is visible in sidebar</label>
+          <input type="checkbox" id="topLevelEditInput">
+        </div>
+        <br>
+        <button class="sidebarButton" id="saveBoardEditButton">Save Edit</button>
+      </div>
+
       <h3>Find Word:</h3>
       <div class="displayFlexRow">
         <input type="text" id="findWordInput">
@@ -46,8 +67,13 @@
         <!-- filled by JS on search button -->
       </div>
 
-      <h3>Select Set:</h3>
-      <div id="boardSelectionList">
+      <h3>Premade Boards:</h3>
+      <div id="premadeBoardSelectionList">
+        <!-- Filled by JS -->
+      </div>
+
+      <h3>Custom Boards:</h3>
+      <div id="customBoardSelectionList">
         <!-- Filled by JS -->
       </div>
 
@@ -68,10 +94,7 @@
       <h3>Other:</h3>
       <button class="sidebarButton" id="lockSidebarButton">Lock sidebar</button>
 
-      <div id="deleteBoardArea" class="hidden">
-        <h3>Delete Current Board:</h3>
-        <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
-      </div>
+      
 
       <button id="showAboutButton" class="sidebarButton">About</button>
       
@@ -247,7 +270,7 @@
         Resources to be used under supervision of a Speech and Language Therapist 
       </p>
       <h2>Version</h2>
-      <p>0.0.69</p>
+      <p>0.0.70</p>
     </div>
 
     <div id="topBar" class="topBar">

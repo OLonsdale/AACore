@@ -7,6 +7,8 @@ import { standard } from "./board-sets/standard.js";
 
 let boards = {};
 
+//takes all the board files and the boards in local storage and puts them into one object
+//should maybe check for duplicate boards and alert user, currently overides
 function blendBoards() {
   boards = {
     ...initial,
@@ -43,15 +45,43 @@ editModeCheckbox.addEventListener("change", () => {
 function toggleEditMode() {
   editMode = !editMode;
   if (editMode) {
-    deleteBoardArea.classList = "";
+    editBoardArea.classList.remove("hidden");
     console.log("Edit mode enabled");
     document.body.classList.add("editMode");
     sentenceDisplayElement.value = "edit mode enabled";
   } else {
-    deleteBoardArea.classList = "hidden";
+    editBoardArea.classList.add("hidden");
     console.log("Edit mode disabled");
     document.body.classList.remove("editMode");
     sentenceDisplayElement.value = "";
+  }
+  boardNameEditInput.value = localStorage.getItem("currentBoardName");
+  topLevelEditInput.checked =
+    boards[localStorage.getItem("currentBoardName")].topLevel;
+}
+
+saveBoardEditButton.addEventListener("click", saveBoardEdit);
+
+function saveBoardEdit() {
+  if (localStorage.getItem("currentBoardName").charAt(0) !== "_") {
+    alert("You can only edit custom boards");
+    return;
+  }
+  let currentBoard = boards[localStorage.getItem("currentBoardName")];
+  currentBoard.topLevel = topLevelEditInput.checked;
+
+  if (localStorage.getItem("currentBoardName") !== boardNameEditInput.value) {
+    if (boardNameEditInput.value.charAt(0) !== "_") {
+      boardNameEditInput.value = "_" + boardNameEditInput.value;
+    }
+    if (boards.hasOwnProperty(boardNameEditInput.value)) {
+      alert("This name is already in use");
+      return;
+    }
+    boards[boardNameEditInput.value] =
+      boards[localStorage.getItem("currentBoardName")];
+    delete boards[localStorage.getItem("currentBoardName")];
+    drawBoard(boardNameEditInput.value);
   }
 }
 
@@ -64,19 +94,23 @@ function showSidebar() {
   document.getElementById("sidebar").classList.remove("hidden");
 
   //board selection buttons
-  boardSelectionList.replaceChildren();
+  premadeBoardSelectionList.replaceChildren();
+  customBoardSelectionList.replaceChildren();
+
   for (const board in boards) {
     if (Object.hasOwnProperty.call(boards, board)) {
       const element = boards[board];
       if (!element.topLevel) continue;
       let loadButton = document.createElement("button");
       loadButton.classList.add("sidebarButton");
-      loadButton.textContent = board.charAt(0).toUpperCase() + board.slice(1);
+      loadButton.textContent = element.name ?? board;
       loadButton.addEventListener("click", () => {
         localStorage.setItem("currentBoardName", board);
         drawBoard(board);
       });
-      boardSelectionList.append(loadButton);
+      if (loadButton.textContent.charAt(0) === "_")
+        customBoardSelectionList.append(loadButton);
+      else premadeBoardSelectionList.append(loadButton);
     }
   }
 }
@@ -117,11 +151,16 @@ function findPathToWord(word) {
   for (const board in boards) {
     //don't even know what this check's for, it's just added by the IDE so I left it in
     if (!Object.hasOwnProperty.call(boards, board)) continue;
+    if (
+      (board === "expanded-am" || board === "standard-am") &&
+      (word != "am" || word != "Am")
+    )
+      continue;
 
     const currentBoard = boards[board];
     currentBoard.tiles.forEach((tile) => {
-      if(!tile.displayName || tile.type === "link") return
-      if ( tile.displayName.toLowerCase() === word.toLowerCase() ) {
+      if (!tile.displayName || tile.type === "link") return;
+      if (tile.displayName.toLowerCase() === word.toLowerCase()) {
         paths.push(`${currentBoard.path} ⇨ ${word.toLowerCase()}`);
       }
     });
@@ -130,23 +169,18 @@ function findPathToWord(word) {
 }
 
 findWordInput.addEventListener("change", () => {
-  let searchTerm = findWordInput.value
-  let resultsElement = document.getElementById("wordSearchResultsElement")
-  resultsElement.innerHTML = ""
-  if(!searchTerm) return
-  let results = findPathToWord(searchTerm)
-  results.forEach(result => {
-    let text = document.createElement("p")
-    text.innerHTML = `<b>${result}</b>`
-    resultsElement.append(text)
-  })
-})
-
-Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(
-  (button) => {
-    button.addEventListener("click", closeAllSidebars);
-  }
-);
+  console.log("searched");
+  let searchTerm = findWordInput.value;
+  let resultsElement = document.getElementById("wordSearchResultsElement");
+  resultsElement.innerHTML = "";
+  if (!searchTerm) return;
+  let results = findPathToWord(searchTerm);
+  results.forEach((result) => {
+    let text = document.createElement("p");
+    text.innerHTML = `<b>${result}</b>`;
+    resultsElement.append(text);
+  });
+});
 
 function closeAllSidebars() {
   document.getElementById("sidebar").classList.add("hidden");
@@ -168,8 +202,8 @@ function showCreateBoardSidebar() {
 function showEditTile() {
   closeAllSidebars();
   editTileSidebar.classList.remove("hidden");
-  linkToInput.innerHTML = "";
 
+  linkToInput.innerHTML = "";
   let noneOption = document.createElement("option");
   noneOption.innerText = "None";
   linkToInput.append(noneOption);
@@ -183,6 +217,8 @@ function showEditTile() {
       linkToInput.append(option);
     }
   }
+  let board = boards[localStorage.getItem("currentBoardName")];
+  linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
 }
 
 //hides and shows the sidebar
@@ -311,39 +347,33 @@ function editTile() {
   selectedTile.displayName = displayNameInput.value;
   selectedTile.type = tileTypeInput.value;
 
-  if (iconLinkInput.value) {
-    selectedTile.iconLink = iconLinkInput.value;
-  }
-  if (pronounciationInput.value) {
-    selectedTile.pronounciation = pronounciationInput.value;
-  }
-  if (pastTenseInput.value) {
-    selectedTile.pastTenseForm = pastTenseInput.value;
-  }
-  if (pastTensePronounciationInput.value) {
-    selectedTile.pastTensePronounciation = pastTensePronounciationInput.value;
-  }
-  if (pluralInput.value) {
-    selectedTile.pluralForm = pluralInput.value;
-  }
-  if (pluralPronounciationInput.value) {
-    selectedTile.pluralFormPronounciation = pluralPronounciationInput.value;
-  }
-  if (negationInput.value) {
-    selectedTile.negativeForm = negationInput.value;
-  }
-  if (negationPronounciationInput.value) {
-    selectedTile.negativeFormPronounciation = negationPronounciationInput.value;
-  }
-  if (iconNameInput.value) {
-    selectedTile.iconName = iconNameInput.value;
-  }
-  if (linkToInput.value) {
-    selectedTile.linkTo = linkToInput.value;
-  }
-  if (colourInput.value) {
-    selectedTile.colour = colourInput.value;
-  }
+  selectedTile.iconLink = iconLinkInput.value;
+
+  selectedTile.pronounciation = pronounciationInput.value;
+
+  selectedTile.pastTenseForm = pastTenseInput.value;
+
+  selectedTile.pastTensePronounciation = pastTensePronounciationInput.value;
+
+  selectedTile.pluralForm = pluralInput.value;
+
+  selectedTile.pluralFormPronounciation = pluralPronounciationInput.value;
+
+  selectedTile.negativeForm = negationInput.value;
+
+  selectedTile.negativeFormPronounciation = negationPronounciationInput.value;
+
+  selectedTile.iconName = iconNameInput.value;
+
+  selectedTile.linkTo = linkToInput.value;
+
+  selectedTile.colour = colourInput.value;
+
+  //clear empty
+  selectedTile = Object.entries(selectedTile).reduce(
+    (obj, [key, value]) => (value ? ((obj[key] = value), obj) : obj),
+    {}
+  );
 
   let saveName = localStorage.getItem("currentBoardName");
   if (saveName.charAt(0) !== "_") {
@@ -383,7 +413,7 @@ function sizeGrid() {
 }
 
 tileTypeInput.addEventListener("change", (ev) => {
-  if (tileTypeInput.value === "textOnly") {
+  if (tileTypeInput.value === "textOnly" || tileTypeInput.value === "blank") {
     iconTileSettings.classList.add("hidden");
   } else {
     iconTileSettings.classList.remove("hidden");
@@ -398,6 +428,7 @@ toggleEditTileExtra.addEventListener("click", () => {
 //need to break down into smaller modules
 function drawBoard(name) {
   if (!boards.hasOwnProperty(name)) {
+    console.error("Tried to draw non-existing board");
     drawBoard("standard");
     return;
   }
@@ -408,6 +439,8 @@ function drawBoard(name) {
 
   deleteCurrentBoardButton.textContent =
     "Delete " + localStorage.getItem("currentBoardName");
+
+  boardNameEditInput.value = localStorage.getItem("currentBoardName");
 
   //clear existing
   boardSection.replaceChildren();
@@ -443,6 +476,7 @@ function drawBoard(name) {
         colourInput.value = tile.colour ?? "red";
         iconNameInput.value = tile.iconName ?? "";
         iconLinkInput.value = tile.iconLink ?? "";
+        linkToInput.value = tile.linkTo ?? "";
         showEditTile();
       }
     });
@@ -520,7 +554,12 @@ lockSidebarButton.addEventListener("click", () => {
   localStorage.setItem("sidebarLocked", true);
 });
 
-console.log("sentence auto delete default:" + sentenceAutoDelete + "\n" + localStorage.getItem("sentenceAutoDelete"))
+console.log(
+  "sentence auto delete default:" +
+    sentenceAutoDelete +
+    "\n" +
+    localStorage.getItem("sentenceAutoDelete")
+);
 
 sentenceAutoDeleteCheckbox.checked = sentenceAutoDelete;
 
@@ -733,6 +772,13 @@ document.addEventListener("keydown", (ev) => {
   }
 });
 
+//binds the close function to all close buttons
+Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(
+  (button) => {
+    button.addEventListener("click", closeAllSidebars);
+  }
+);
+
 //lock screen generates four random numbers between 0 and 100
 //and randomly selects ascending or descending order
 //the numbers are put into buttons, and must be clicked in the order chosen
@@ -815,12 +861,3 @@ function showLockScreen() {
 drawBoard(localStorage.getItem("currentBoardName"));
 
 populateVoiceList();
-
-// function unbindServiceWorker(){
-//   navigator.serviceWorker.getRegistrations().then(function (registrations) {
-//     for (let registration of registrations) {
-//       registration.unregister();
-//     }
-//   });
-// }
-// unbindServiceWorker()

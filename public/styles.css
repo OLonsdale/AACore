@@ -127,6 +127,12 @@ select {
   box-shadow: 0 0 0 1px black;
 }
 
+.inlineSidebar {
+  box-shadow: 0 0 0 1px black;
+  background-color: rgba(122, 117, 117, 0.788);
+
+}
+
 .sidebarButton {
   box-shadow: 0 0 0 1px black;
   width: 100%;

@@ -1,5 +1,6 @@
 const standard = {
   standard: {
+    name:"Standard",
     topLevel: true,
     rows: 6,
     columns: 9,
