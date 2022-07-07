@@ -401,6 +401,14 @@ function editTile() {
     {}
   );
 
+  Object.keys(selectedTile).forEach(key => {
+    if (selectedTile[key] === "") {
+      delete selectedTile[key];
+    }
+  });
+
+  console.log(selectedTile)
+
   let saveName = localStorage.getItem("currentBoardName");
   if (saveName.charAt(0) !== "_") {
     saveName = "_" + saveName;
