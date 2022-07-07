@@ -61,35 +61,57 @@ function toggleEditMode() {
 }
 
 saveBoardEditButton.addEventListener("click", saveBoardEdit);
-
+//renames boards and changes whether they show on the sidebar via a menu shown in the main sidebar when edit mode is enabled.
 function saveBoardEdit() {
+  let changes = false;
   if (localStorage.getItem("currentBoardName").charAt(0) !== "_") {
     alert("You can only edit custom boards");
     return;
   }
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
   let currentBoard = boards[localStorage.getItem("currentBoardName")];
-  currentBoard.topLevel = topLevelEditInput.checked;
 
+  //change whether the board is shown on the sidebar
+  if (currentBoard.topLevel !== topLevelEditInput.checked) {
+    currentBoard.topLevel = topLevelEditInput.checked;
+    changes = true;
+  }
+
+  //rename board
+  //first check it begins with an underscore or adds one if not
+  //then check for a duplicate name and stop if there is,
+  //then copy the value to a key with the new name, and delete old key:value pair
   if (localStorage.getItem("currentBoardName") !== boardNameEditInput.value) {
     if (boardNameEditInput.value.charAt(0) !== "_") {
       boardNameEditInput.value = "_" + boardNameEditInput.value;
     }
-    if (boards.hasOwnProperty(boardNameEditInput.value)) {
+    if (customBoards.hasOwnProperty(boardNameEditInput.value)) {
       alert("This name is already in use");
       return;
     }
-    boards[boardNameEditInput.value] =
+    changes = true;
+    customBoards[boardNameEditInput.value] =
       boards[localStorage.getItem("currentBoardName")];
-    delete boards[localStorage.getItem("currentBoardName")];
+    delete customBoards[localStorage.getItem("currentBoardName")];
+  }
+
+  //if changes, update board and state
+  if (changes) {
+    localStorage.setItem("customBoards", JSON.stringify(customBoards));
+    blendBoards();
     drawBoard(boardNameEditInput.value);
+    closeAllSidebars();
+    showSidebar();
   }
 }
 
+//show sidebar and update menus in it.
 function showSidebar() {
   if (sidebarLocked) {
     showLockScreen();
     return;
   }
+  //hide all, then unhide main sidebar
   closeAllSidebars();
   document.getElementById("sidebar").classList.remove("hidden");
 
@@ -97,21 +119,30 @@ function showSidebar() {
   premadeBoardSelectionList.replaceChildren();
   customBoardSelectionList.replaceChildren();
 
+  //add boards to lists for main and custom boards
   for (const board in boards) {
-    if (Object.hasOwnProperty.call(boards, board)) {
-      const element = boards[board];
-      if (!element.topLevel) continue;
-      let loadButton = document.createElement("button");
-      loadButton.classList.add("sidebarButton");
-      loadButton.textContent = element.name ?? board;
-      loadButton.addEventListener("click", () => {
-        localStorage.setItem("currentBoardName", board);
-        drawBoard(board);
-      });
-      if (loadButton.textContent.charAt(0) === "_")
-        customBoardSelectionList.append(loadButton);
-      else premadeBoardSelectionList.append(loadButton);
-    }
+    if (!Object.hasOwnProperty.call(boards, board)) {
+      continue;
+    } //still no idea, IDE did it.
+
+    const element = boards[board];
+
+    if (!element.topLevel) continue;
+
+    let loadButton = document.createElement("button");
+    loadButton.classList.add("sidebarButton");
+    loadButton.textContent = element.name ?? board;
+
+    loadButton.addEventListener("click", () => {
+      localStorage.setItem("currentBoardName", board);
+      localStorage.setItem("currentSet", board);
+      drawBoard(board);
+    });
+
+    //bad. should check board from localstorage or a "custom" flag in the board
+    if (loadButton.textContent.charAt(0) === "_") {
+      customBoardSelectionList.append(loadButton);
+    } else premadeBoardSelectionList.append(loadButton);
   }
 }
 
@@ -140,7 +171,7 @@ function deleteCurrentBoard() {
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
 
   blendBoards();
-  drawBoard("standard");
+  drawBoard(localStorage.getItem("currentSet"));
   showSidebar();
 }
 
@@ -154,8 +185,9 @@ function findPathToWord(word) {
     if (
       (board === "expanded-am" || board === "standard-am") &&
       (word != "am" || word != "Am")
-    )
+    ) {
       continue;
+    }
 
     const currentBoard = boards[board];
     currentBoard.tiles.forEach((tile) => {
@@ -222,13 +254,11 @@ function showEditTile() {
 }
 
 //hides and shows the sidebar
-sidebarButton.addEventListener("click", () => {
-  showSidebar();
-});
+sidebarButton.addEventListener("click", showSidebar);
 
-createBoardMenuButton.addEventListener("click", () => showCreateBoardSidebar());
+createBoardMenuButton.addEventListener("click", showCreateBoardSidebar);
 
-exportBoardButton.addEventListener("click", () => exportBoard());
+exportBoardButton.addEventListener("click", exportBoard);
 
 function exportBoard() {
   const filename = `${localStorage.getItem("currentBoardName")}.json`;
@@ -307,13 +337,11 @@ function generateEmptyBoard() {
   if (!editMode) editModeCheckbox.click();
 }
 
-document.getElementById("generateEmptyButton").addEventListener("click", () => {
-  generateEmptyBoard();
-});
+document
+  .getElementById("generateEmptyButton")
+  .addEventListener("click", generateEmptyBoard);
 
-clearCurrentTileButton.addEventListener("click", () => {
-  clearCurrentTile();
-});
+clearCurrentTileButton.addEventListener("click", clearCurrentTile);
 
 function clearCurrentTile() {
   displayNameInput.value = "";
@@ -331,9 +359,7 @@ function clearCurrentTile() {
   colourInput.value = "red";
 }
 
-editTileSubmitButton.addEventListener("click", () => {
-  editTile();
-});
+editTileSubmitButton.addEventListener("click", editTile);
 
 //vulnerable to injection?
 function editTile() {
@@ -378,6 +404,7 @@ function editTile() {
   let saveName = localStorage.getItem("currentBoardName");
   if (saveName.charAt(0) !== "_") {
     saveName = "_" + saveName;
+    board.name = saveName;
   }
 
   let customBoards = JSON.parse(localStorage.getItem("customBoards"));
@@ -429,7 +456,7 @@ toggleEditTileExtra.addEventListener("click", () => {
 function drawBoard(name) {
   if (!boards.hasOwnProperty(name)) {
     console.error("Tried to draw non-existing board");
-    drawBoard("standard");
+    drawBoard(localStorage.getItem("currentSet"));
     return;
   }
   const boardSection = document.getElementById("boardSection");
@@ -556,9 +583,9 @@ lockSidebarButton.addEventListener("click", () => {
 
 console.log(
   "sentence auto delete default:" +
-    sentenceAutoDelete +
-    "\n" +
-    localStorage.getItem("sentenceAutoDelete")
+  sentenceAutoDelete +
+  "\n" +
+  localStorage.getItem("sentenceAutoDelete")
 );
 
 sentenceAutoDeleteCheckbox.checked = sentenceAutoDelete;
@@ -572,19 +599,14 @@ function toggleSentenceAutoDelete() {
   localStorage.setItem("sentenceAutoDelete", sentenceAutoDelete);
 }
 
-//Event Listeners
-// playButton.addEventListener("click", () => speakSentence());
-
-sentenceDisplayElement.addEventListener("click", () => {
-  speakSentence();
-});
+sentenceDisplayElement.addEventListener("click", speakSentence);
 
 deleteLastButton.addEventListener("click", () => {
   sentence.pop();
   updateSentence();
 });
 
-clearButton.addEventListener("click", () => clearSentence());
+clearButton.addEventListener("click", clearSentence);
 
 //todo, combine grammar markers
 //makes the last word plural, if plural form specified
@@ -733,29 +755,6 @@ voiceSelectElement.addEventListener("change", () => {
 
 showAboutButton.addEventListener("click", showAbout);
 
-//set default board
-if (!localStorage.getItem("currentBoardName")) {
-  localStorage.setItem("currentBoardName", "standard");
-}
-
-if (!localStorage.getItem("customBoards")) {
-  let customBoards = {};
-  localStorage.setItem("customBoards", JSON.stringify(customBoards));
-}
-
-if (!localStorage.getItem("sidebarLocked")) {
-  localStorage.setItem("sidebarLocked", false);
-}
-
-if (!localStorage.getItem("sentenceAutoDelete")) {
-  localStorage.setItem("sentenceAutoDelete", true);
-}
-
-if (!localStorage.getItem("firstVisit")) {
-  localStorage.setItem("firstVisit", false);
-  showAbout();
-}
-
 document.getElementById("rowsInput").addEventListener("change", () => {
   rowsInputDisplay.textContent = rowsInput.value;
 });
@@ -855,6 +854,34 @@ function showLockScreen() {
   });
 
   document.body.prepend(popup);
+}
+
+//set default board
+if (!localStorage.getItem("currentBoardName")) {
+  localStorage.setItem("currentBoardName", "standard");
+}
+
+//set default board
+if (!localStorage.getItem("currentSet")) {
+  localStorage.setItem("currentSet", "initial");
+}
+
+if (!localStorage.getItem("customBoards")) {
+  let customBoards = {};
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
+}
+
+if (!localStorage.getItem("sidebarLocked")) {
+  localStorage.setItem("sidebarLocked", false);
+}
+
+if (!localStorage.getItem("sentenceAutoDelete")) {
+  localStorage.setItem("sentenceAutoDelete", true);
+}
+
+if (!localStorage.getItem("firstVisit")) {
+  localStorage.setItem("firstVisit", false);
+  showAbout();
 }
 
 //loads board from localstorage to keep same board on page refresh
