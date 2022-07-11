@@ -155,8 +155,15 @@ select {
 }
 
 .playbackButton {
-  height: 50px;
-  width: 50px;
+  /* background-color: aqua; */
+  height: 100%;
+  width: max-content;
+}
+
+.playbackButton > img {
+  /* background-color: red; */
+  height: 2rem;
+  width: 2rem;
 }
 
 .displayFlexRow {

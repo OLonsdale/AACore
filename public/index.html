@@ -41,6 +41,11 @@
         <h3>Edit Board:</h3>
         <br>
         <div>
+          <label for="duplicateCurrentBoardButton">Duplicate Board</label>
+          <button id="duplicateCurrentBoardButton" class="sidebarButton">Duplicate Current Board</button>
+        </div>
+        <br>
+        <div>
           <label for="deleteCurrentBoardButton">Delete Board</label>
           <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
         </div>
@@ -61,7 +66,7 @@
       <h3>Find Word:</h3>
       <div class="displayFlexRow">
         <input type="text" id="findWordInput">
-        <button id="findWordSearchButton" title="Search" aria-label="search for word" class="inlineSidebarButton">&#x1F50E;</button>
+        <button id="clearWordSearchButton" title="Clear" aria-label="Clear search" class="inlineSidebarButton"><img alt="delete icon" width="30" height="20" src="./resouces/delete.svg"></button>
       </div>
       <div id="wordSearchResultsElement">
         <!-- filled by JS on search button -->
@@ -270,7 +275,7 @@
         Resources to be used under supervision of a Speech and Language Therapist 
       </p>
       <h2>Version</h2>
-      <p>0.0.72</p>
+      <p>0.0.73</p>
     </div>
 
     <div id="topBar" class="topBar">
@@ -291,8 +296,6 @@
     >
       <img
         alt="delete icon"
-        width="40"
-        height="40"
         src="./resouces/delete.svg"
       />
     </button>
@@ -304,8 +307,6 @@
       >
         <img
           alt="delete icon"
-          width="40"
-          height="40"
           src="./resouces/delete-all.svg"
         />
       </button>
@@ -346,13 +347,13 @@
       const analytics = getAnalytics(app);
     </script>
 
-  <script>
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(function() { 
-        console.log("Service Worker Registered"); 
-      });
-    }
-  </script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').then(function() { 
+          console.log("Service Worker Registered"); 
+        });
+      }
+    </script>
 
   </body>
 </html>

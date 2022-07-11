@@ -175,6 +175,28 @@ function deleteCurrentBoard() {
   showSidebar();
 }
 
+duplicateCurrentBoardButton.addEventListener("click", () => {
+  console.log("duplicating board")
+  let oldName = localStorage.getItem("currentBoardName")
+  let newName = `${oldName} copy`
+  if(oldName.charAt(0) !== "_"){
+    newName = "_" + newName
+  }
+  while(boards.hasOwnProperty(newName)){
+    newName += " copy"
+  }
+  console.log("new name = " + newName)
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"))
+  customBoards[newName] = boards[oldName]
+  customBoards[newName].topLevel = true
+  delete customBoards[newName].name
+
+  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+  blendBoards()
+  closeAllSidebars()
+  showSidebar()
+})
+
 function findPathToWord(word) {
   //bad approach as far as big O goes.
   let paths = [];
@@ -200,7 +222,7 @@ function findPathToWord(word) {
   return paths || null;
 }
 
-findWordInput.addEventListener("change", () => {
+findWordInput.addEventListener("input", () => {
   console.log("searched");
   let searchTerm = findWordInput.value;
   let resultsElement = document.getElementById("wordSearchResultsElement");
@@ -212,7 +234,18 @@ findWordInput.addEventListener("change", () => {
     text.innerHTML = `<b>${result}</b>`;
     resultsElement.append(text);
   });
+  if(results.length === 0 && findWordInput.value){
+    console.log("no results")
+    let text = document.createElement("p");
+    text.innerHTML = `<b>No Results</b>`;
+    resultsElement.append(text);
+  }
 });
+
+clearWordSearchButton.addEventListener("click", _ => {
+  findWordInput.value = ""
+  findWordInput.dispatchEvent(new Event('input', {bubbles:true}));
+})
 
 function closeAllSidebars() {
   document.getElementById("sidebar").classList.add("hidden");
@@ -363,8 +396,15 @@ editTileSubmitButton.addEventListener("click", editTile);
 
 //vulnerable to injection?
 function editTile() {
+
+  if(localStorage.getItem("currentBoardName").charAt(0) !== "_"){
+    alert("You can only edit custom boards. Please duplicate the board first")
+    return
+  }
+
   if (!displayNameInput.value && tileTypeInput.value !== "blank") {
     alert("You must enter a display name if the tile is not blank");
+    return
   }
 
   let board = boards[localStorage.getItem("currentBoardName")];
