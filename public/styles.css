@@ -122,7 +122,7 @@ select {
   z-index: 3;
   padding: 0.5em;
   width: 30ch;
-  max-height: 90vw;
+  max-height: 95%;
   overflow: auto;
   box-shadow: 0 0 0 1px black;
 }

@@ -35,7 +35,7 @@ let selectedVoice;
 let sidebarLocked = JSON.parse(localStorage.getItem("sidebarLocked"));
 let unlockAttempt = [];
 
-let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete") ?? true;
+let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete") || true;
 let editMode = false;
 
 editModeCheckbox.addEventListener("change", () => {
@@ -131,7 +131,7 @@ function showSidebar() {
 
     let loadButton = document.createElement("button");
     loadButton.classList.add("sidebarButton");
-    loadButton.textContent = element.name ?? board;
+    loadButton.textContent = element.name || board;
 
     loadButton.addEventListener("click", () => {
       localStorage.setItem("currentBoardName", board);
@@ -523,21 +523,21 @@ function drawBoard(name) {
     tileElement.addEventListener("click", () => {
       if (editMode) {
         selectedTileNumber.value = tileElement.id;
-        displayNameInput.value = tile.displayName ?? "";
-        tileTypeInput.value = tile.type ?? "blank";
-        pronounciationInput.value = tile.pronounciation ?? "";
-        pastTenseInput.value = tile.pastTenseForm ?? "";
-        pastTensePronounciationInput.value = tile.pastTensePronounciation ?? "";
-        pluralInput.value = tile.pluralForm ?? "";
-        pluralPronounciationInput.value = tile.pluralFormPronounciation ?? "";
-        negationInput.value = tile.negativeForm ?? "";
+        displayNameInput.value = tile.displayName || "";
+        tileTypeInput.value = tile.type || "blank";
+        pronounciationInput.value = tile.pronounciation || "";
+        pastTenseInput.value = tile.pastTenseForm || "";
+        pastTensePronounciationInput.value = tile.pastTensePronounciation || "";
+        pluralInput.value = tile.pluralForm || "";
+        pluralPronounciationInput.value = tile.pluralFormPronounciation || "";
+        negationInput.value = tile.negativeForm || "";
         negationPronounciationInput.value =
-          tile.negativeFormPronounciation ?? "";
-        iconNameInput.value = tile.iconName ?? "";
-        colourInput.value = tile.colour ?? "red";
-        iconNameInput.value = tile.iconName ?? "";
-        iconLinkInput.value = tile.iconLink ?? "";
-        linkToInput.value = tile.linkTo ?? "";
+          tile.negativeFormPronounciation || "";
+        iconNameInput.value = tile.iconName || "";
+        colourInput.value = tile.colour || "red";
+        iconNameInput.value = tile.iconName || "";
+        iconLinkInput.value = tile.iconLink || "";
+        linkToInput.value = tile.linkTo || "";
         showEditTile();
       }
     });
@@ -556,7 +556,9 @@ function drawBoard(name) {
     //then add conditional elements. Avoiding elses for clarity.
     if (tile.type !== "textOnly") {
       let image = new Image();
-      image.src = tile.iconLink ?? `./resouces/icons/${tile.iconName}.webp`;
+      image.src = tile.iconLink || `./resouces/icons/${tile.iconName}.webp`;
+      console.log("here123")
+      console.log(image.src)
       image.classList.add("icon");
       tileElement.append(image);
     }
@@ -596,7 +598,7 @@ function drawBoard(name) {
           sentence.push(tile);
           updateSentence();
 
-          const word = tile.pronounciation ?? tile.displayName;
+          const word = tile.pronounciation || tile.displayName;
           speak(word);
         }
       });
@@ -624,9 +626,7 @@ console.log(
 
 sentenceAutoDeleteCheckbox.checked = sentenceAutoDelete;
 
-sentenceAutoDeleteCheckbox.addEventListener("click", (ev) => {
-  toggleSentenceAutoDelete();
-});
+sentenceAutoDeleteCheckbox.addEventListener("click", toggleSentenceAutoDelete);
 
 function toggleSentenceAutoDelete() {
   sentenceAutoDelete = !sentenceAutoDelete;
@@ -651,19 +651,19 @@ function pluraliseLastWord() {
   //get by value not reference
   let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
 
-  let lastInitial = last.pronounciation ?? last.displayName;
+  let lastInitial = last.pronounciation || last.displayName;
   //coveres edgecases where worst case, the word only has a display name set
   last.pronounciation =
-    last.pluralFormPronounciation ??
-    last.pluralForm ??
-    last.pronounciation ??
+    last.pluralFormPronounciation ||
+    last.pluralForm ||
+    last.pronounciation ||
     last.displayName;
-  last.displayName = last.pluralForm ?? last.displayName;
+  last.displayName = last.pluralForm || last.displayName;
   sentence[sentence.length - 1] = last;
 
   if (lastInitial !== last.pronounciation) {
     //no change, don't speak
-    speak(last.pronounciation ?? last.displayName);
+    speak(last.pronounciation || last.displayName);
   }
 
   updateSentence();
@@ -674,18 +674,18 @@ function pastTenseLastWord() {
   if (sentence.length === 0) return;
 
   let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-  let lastInitial = last.pronounciation ?? last.displayName;
+  let lastInitial = last.pronounciation || last.displayName;
   //coveres edgecases where worst case, the word only has a display name set
   last.pronounciation =
-    last.pastTensePronounciation ??
-    last.pastTenseForm ??
-    last.pronounciation ??
+    last.pastTensePronounciation ||
+    last.pastTenseForm ||
+    last.pronounciation ||
     last.displayName;
-  last.displayName = last.pastTenseForm ?? last.displayName;
+  last.displayName = last.pastTenseForm || last.displayName;
   sentence[sentence.length - 1] = last;
   if (lastInitial !== last.pronounciation) {
     //no change, don't speak
-    speak(last.pronounciation ?? last.displayName);
+    speak(last.pronounciation || last.displayName);
   }
   updateSentence();
 }
@@ -695,18 +695,18 @@ function negateLastWord() {
   if (sentence.length === 0) return;
 
   let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-  let lastInitial = last.pronounciation ?? last.displayName;
+  let lastInitial = last.pronounciation || last.displayName;
   //coveres edgecases where worst case, the word only has a display name set
   last.pronounciation =
-    last.negativeFormPronounciation ??
-    last.negativeForm ??
-    last.pronounciation ??
+    last.negativeFormPronounciation ||
+    last.negativeForm ||
+    last.pronounciation ||
     last.displayName;
-  last.displayName = last.negativeForm ?? last.displayName;
+  last.displayName = last.negativeForm || last.displayName;
   sentence[sentence.length - 1] = last;
   if (lastInitial !== last.pronounciation) {
     //no change, don't speak
-    speak(last.pronounciation ?? last.displayName);
+    speak(last.pronounciation || last.displayName);
   }
   updateSentence();
 }
@@ -738,7 +738,7 @@ function speakSentence() {
   if (sentence.length === 0) return;
 
   const toSpeak = sentence.map(
-    (tile) => tile.pronounciation ?? tile.displayName
+    (tile) => tile.pronounciation || tile.displayName
   );
 
   const speakSentence = toSpeak
@@ -768,7 +768,7 @@ function populateVoiceList() {
     console.log("Loading voices");
 
     //gets uk voices
-    voices = synth.getVoices().filter((voice) => voice.lang === "en-GB");
+    // voices = synth.getVoices().filter((voice) => voice.lang === "en-GB");
 
     voices.forEach((voice) => {
       let option = document.createElement("option");

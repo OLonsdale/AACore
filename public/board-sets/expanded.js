@@ -40,11 +40,11 @@ const expanded = {
       },
       {
         type: "link",
-        displayName: "Home[missing]",
+        displayName: "Places",
         iconName: "home",
-
         colour: "linkColour",
         internalName: "Home",
+        linkTo:"expanded-places"
       },
       {
         type: "link",

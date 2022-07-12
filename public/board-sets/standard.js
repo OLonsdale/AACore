@@ -1,10 +1,10 @@
 const standard = {
   standard: {
-    name:"Standard",
+    name: "Standard",
     topLevel: true,
     rows: 6,
     columns: 9,
-    path:"standard",
+    path: "standard",
     tiles: [
       {
         type: "link",
@@ -400,7 +400,7 @@ const standard = {
   "standard-am": {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ I",
+    path: "standard ⇾ I",
     tiles: [
       {
         type: "link",
@@ -839,7 +839,7 @@ const standard = {
   toys: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ toys",
+    path: "standard ⇾ toys",
     tiles: [
       {
         type: "link",
@@ -1175,7 +1175,7 @@ const standard = {
   learn: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ learn",
+    path: "standard ⇾ learn",
     tiles: [
       {
         type: "link",
@@ -1535,7 +1535,7 @@ const standard = {
   topic: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ topic",
+    path: "standard ⇾ topic",
     tiles: [
       {
         type: "link",
@@ -1891,7 +1891,7 @@ const standard = {
   body: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ body",
+    path: "standard ⇾ body",
     tiles: [
       {
         type: "link",
@@ -2289,7 +2289,7 @@ const standard = {
   home: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ home",
+    path: "standard ⇾ home",
     tiles: [
       {
         type: "link",
@@ -2421,11 +2421,20 @@ const standard = {
       },
       {
         type: "textAndIcon",
-        displayName: "garden",
-        iconName: "garden",
+        displayName: "inside",
+        iconName: "",
         colour: "red",
         linkTo: "standard",
         internalName: "garden",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/inside%20room.svg.varianted-skin.svg",
+        pronounciation: "",
+        pastTenseForm: "",
+        pastTensePronounciation: "",
+        pluralForm: "",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
       },
       {
         type: "textAndIcon",
@@ -2446,10 +2455,19 @@ const standard = {
       {
         type: "textAndIcon",
         displayName: "soap",
-        iconName: "soap",
+        iconName: "",
         colour: "orange",
         linkTo: "standard",
         internalName: "soap",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Soap%20liquid.png",
+        pronounciation: "",
+        pastTenseForm: "",
+        pastTensePronounciation: "",
+        pluralForm: "",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
       },
       {
         type: "textAndIcon",
@@ -2549,11 +2567,20 @@ const standard = {
       },
       {
         type: "textAndIcon",
-        displayName: "cutlery",
-        iconName: "cutlery",
+        displayName: "spoon",
+        iconName: "",
         colour: "orange",
         linkTo: "standard",
         internalName: "cutlery",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spoon.png",
+        pronounciation: "",
+        pastTenseForm: "spooned",
+        pastTensePronounciation: "",
+        pluralForm: "spoons",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
       },
       {
         type: "textAndIcon",
@@ -2596,25 +2623,88 @@ const standard = {
         linkTo: "standard",
         internalName: "TV",
       },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "sheet",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bottom%20sheet.png",
+        pronounciation: "",
+        pastTenseForm: "",
+        pastTensePronounciation: "",
+        pluralForm: "sheets",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
+        iconName: "",
+        linkTo: "standard",
+        colour: "orange",
+      },
       {
         type: "textAndIcon",
         displayName: "sink",
-        iconName: "sink",
+        iconName: "",
         colour: "orange",
         linkTo: "standard",
         internalName: "sink",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adapted%20wash%20basin.png",
+        pronounciation: "",
+        pastTenseForm: "",
+        pastTensePronounciation: "",
+        pluralForm: "",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
       },
       {
         type: "textAndIcon",
-        displayName: "dish",
-        iconName: "dish",
+        displayName: "fork",
+        iconName: "",
         colour: "orange",
         linkTo: "standard",
         internalName: "dish",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fork.png",
+        pronounciation: "",
+        pastTenseForm: "forked",
+        pastTensePronounciation: "",
+        pluralForm: "forks",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
       },
-      { type: "blank" },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "knife",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/knife_3.png",
+        pronounciation: "",
+        pastTenseForm: "knifed",
+        pastTensePronounciation: "",
+        pluralForm: "knives",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
+        iconName: "",
+        linkTo: "standard",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "curtain",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curtain.png",
+        pronounciation: "",
+        pastTenseForm: "",
+        pastTensePronounciation: "",
+        pluralForm: "",
+        pluralFormPronounciation: "curtains",
+        negativeForm: "",
+        negativeFormPronounciation: "",
+        iconName: "",
+        linkTo: "standard",
+        colour: "orange",
+      },
       {
         type: "textAndIcon",
         displayName: "mud",
@@ -2640,7 +2730,22 @@ const standard = {
         linkTo: "standard",
         internalName: "sit",
       },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "pillow",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pillow.png",
+        pronounciation: "",
+        pastTenseForm: "",
+        pastTensePronounciation: "",
+        pluralForm: "pillows",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
+        iconName: "",
+        linkTo: "standard",
+        colour: "orange",
+      },
       {
         type: "textAndIcon",
         displayName: "swim",
@@ -2649,7 +2754,22 @@ const standard = {
         linkTo: "standard",
         internalName: "swim",
       },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "dish",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/soup%20dish.png",
+        pronounciation: "",
+        pastTenseForm: "",
+        pastTensePronounciation: "",
+        pluralForm: "dishes",
+        pluralFormPronounciation: "",
+        negativeForm: "",
+        negativeFormPronounciation: "",
+        iconName: "",
+        linkTo: "standard",
+        colour: "orange",
+      },
       {
         type: "textAndIcon",
         displayName: "hot",
@@ -2680,7 +2800,7 @@ const standard = {
   food: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ food",
+    path: "standard ⇾ food",
     tiles: [
       {
         type: "link",
@@ -3099,7 +3219,7 @@ const standard = {
   drinks: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ drinks",
+    path: "standard ⇾ drinks",
     tiles: [
       {
         type: "link",
@@ -3357,7 +3477,7 @@ const standard = {
   people: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ people",
+    path: "standard ⇾ people",
     tiles: [
       {
         type: "link",
@@ -3409,7 +3529,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/family_8.png.variant-medium.png",
         iconName: "family",
         colour: "orange",
-        linkTo:"standard"
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -3522,11 +3642,11 @@ const standard = {
       },
       { type: "blank" },
       { type: "blank" },
-      { 
-        type: "textOnly", 
-        displayName: "me", 
-        colour: "yellow", 
-        linkTo:"standard" 
+      {
+        type: "textOnly",
+        displayName: "me",
+        colour: "yellow",
+        linkTo: "standard",
       },
       {
         type: "textOnly",
@@ -3622,7 +3742,7 @@ const standard = {
   feelings: {
     rows: 6,
     columns: 9,
-    path:"standard ⇾ feelings",
+    path: "standard ⇾ feelings",
     tiles: [
       {
         type: "link",
@@ -3873,7 +3993,7 @@ const standard = {
         colour: "blue",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/afternoon.png",
-          linkTo: "standard",
+        linkTo: "standard",
       },
       {
         type: "textAndIcon",
@@ -4017,6 +4137,6 @@ const standard = {
       },
     ],
   },
-}
+};
 
-export {standard}
+export { standard };

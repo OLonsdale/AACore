@@ -6,6 +6,8 @@ firebase deploy
 ctrl + alt + s -> w
 Update service worker before deploying
 
+open symbols api search cheeky
+https://www.opensymbols.org/api/v1/symbols/search?q=zzzz
 
 Clear old service worker (all goes in sw.js):
 
