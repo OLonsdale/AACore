@@ -1320,8 +1320,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/chance_100_g.svg",
         colour: "white",
-        negativeForm: "wasn't",
-        pronounciation: "woz",
         linkTo: "expanded",
       },
       {
@@ -4944,7 +4942,7 @@ const expanded = {
         pastTenseForm: "coloured",
         pluralForm: "colours",
         iconName: "colour",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "green",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20colour.png.variant-medium.png",
@@ -4953,14 +4951,14 @@ const expanded = {
         type: "textAndIcon",
         displayName: "light",
         iconName: "light",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "blue",
       },
       {
         type: "textAndIcon",
         displayName: "heavy",
         iconName: "heavy",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "blue",
       },
       { type: "blank" },
@@ -4968,7 +4966,7 @@ const expanded = {
         type: "textAndIcon",
         displayName: "dark",
         iconName: "dark",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "blue",
       },
     ],

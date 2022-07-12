@@ -409,30 +409,18 @@ function editTile() {
 
   let board = boards[localStorage.getItem("currentBoardName")];
   let selectedTile = board.tiles[selectedTileNumber.value];
-
   selectedTile.displayName = displayNameInput.value;
   selectedTile.type = tileTypeInput.value;
-
   selectedTile.iconLink = iconLinkInput.value;
-
   selectedTile.pronounciation = pronounciationInput.value;
-
   selectedTile.pastTenseForm = pastTenseInput.value;
-
   selectedTile.pastTensePronounciation = pastTensePronounciationInput.value;
-
   selectedTile.pluralForm = pluralInput.value;
-
   selectedTile.pluralFormPronounciation = pluralPronounciationInput.value;
-
   selectedTile.negativeForm = negationInput.value;
-
   selectedTile.negativeFormPronounciation = negationPronounciationInput.value;
-
   selectedTile.iconName = iconNameInput.value;
-
   selectedTile.linkTo = linkToInput.value;
-
   selectedTile.colour = colourInput.value;
 
   //clear empty
@@ -463,31 +451,22 @@ function editTile() {
   drawBoard(localStorage.getItem("currentBoardName"));
 }
 
-window.onresize = () => sizeGrid();
+window.onresize = sizeGrid;
 
 //still imperfect
 function sizeGrid() {
-  let aspectRatio = window.innerWidth / window.innerHeight;
-  console.log("aspect ratio: " + aspectRatio);
+  const board = boards[localStorage.getItem("currentBoardName")];
 
-  let board = boards[localStorage.getItem("currentBoardName")];
+  const tileWidth = Math.floor(window.innerWidth / board.columns);
+  const tileHeight = Math.floor((window.innerHeight - topBar.offsetHeight) / board.rows) 
 
-  let tileWidth = Math.floor(window.innerWidth / board.columns);
-
-  let tileHeight = Math.floor(window.innerHeight / board.rows);
-
-  let itemSize =
-    Math.round(
-      tileWidth > tileHeight
-        ? tileHeight - topBar.offsetHeight / board.rows
-        : tileWidth
-    ) - 5;
+  const itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - 5
 
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
 }
 
-tileTypeInput.addEventListener("change", (ev) => {
+tileTypeInput.addEventListener("change", () => {
   if (tileTypeInput.value === "textOnly" || tileTypeInput.value === "blank") {
     iconTileSettings.classList.add("hidden");
   } else {
@@ -502,8 +481,15 @@ toggleEditTileExtra.addEventListener("click", () => {
 //takes the board from boards.js and adds it to the dom
 //need to break down into smaller modules
 function drawBoard(name) {
+  //fallback for trying to load board that has been deleted
+  //then fallback for the current set having been deleted
   if (!boards.hasOwnProperty(name)) {
     console.error("Tried to draw non-existing board");
+    if(!boards.hasOwnProperty(localStorage.getItem("currentSet"))){
+      console.error("Failed to draw fallback board")
+      drawBoard("initial")
+      return
+    } 
     drawBoard(localStorage.getItem("currentSet"));
     return;
   }
