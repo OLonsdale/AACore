@@ -10,11 +10,22 @@ let boards = {};
 //takes all the board files and the boards in local storage and puts them into one object
 //should maybe check for duplicate boards and alert user, currently overides
 function blendBoards() {
+  //patch for old custom boards, to remove next update
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  for (const board in customBoards) {
+    if (Object.hasOwnProperty.call(customBoards, board)) {
+      const selectedBoard = customBoards[board];
+      if (!selectedBoard.customBoard) {
+        selectedBoard.customBoard = true;
+      }
+    }
+  }
+
   boards = {
     ...initial,
     ...standard,
     ...expanded,
-    ...JSON.parse(localStorage.getItem("customBoards")),
+    ...customBoards,
   };
 }
 
@@ -64,7 +75,7 @@ saveBoardEditButton.addEventListener("click", saveBoardEdit);
 //renames boards and changes whether they show on the sidebar via a menu shown in the main sidebar when edit mode is enabled.
 function saveBoardEdit() {
   let changes = false;
-  if (localStorage.getItem("currentBoardName").charAt(0) !== "_") {
+  if (!boards[localStorage.getItem("currentBoardName")].customBoard) {
     alert("You can only edit custom boards");
     return;
   }
@@ -82,9 +93,6 @@ function saveBoardEdit() {
   //then check for a duplicate name and stop if there is,
   //then copy the value to a key with the new name, and delete old key:value pair
   if (localStorage.getItem("currentBoardName") !== boardNameEditInput.value) {
-    if (boardNameEditInput.value.charAt(0) !== "_") {
-      boardNameEditInput.value = "_" + boardNameEditInput.value;
-    }
     if (customBoards.hasOwnProperty(boardNameEditInput.value)) {
       alert("This name is already in use");
       return;
@@ -140,18 +148,20 @@ function showSidebar() {
     });
 
     //bad. should check board from localstorage or a "custom" flag in the board
-    if (loadButton.textContent.charAt(0) === "_") {
+    if (element.customBoard) {
       customBoardSelectionList.append(loadButton);
-    } else premadeBoardSelectionList.append(loadButton);
+    } else {
+      premadeBoardSelectionList.append(loadButton);
+    }
   }
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
   if (
     confirm(
-      `Are you sure you want to delete ${localStorage.getItem(
+      `Click "OK" to delete ${localStorage.getItem(
         "currentBoardName"
-      )}?`
+      )} irreversably`
     )
   ) {
     deleteCurrentBoard();
@@ -159,7 +169,7 @@ deleteCurrentBoardButton.addEventListener("click", () => {
 });
 
 function deleteCurrentBoard() {
-  if (localStorage.getItem("currentBoardName").charAt(0) !== "_") {
+  if (!boards[localStorage.getItem("currentBoardName")].customBoard) {
     alert("You can only delete custom boards");
     return;
   }
@@ -176,26 +186,26 @@ function deleteCurrentBoard() {
 }
 
 duplicateCurrentBoardButton.addEventListener("click", () => {
-  console.log("duplicating board")
-  let oldName = localStorage.getItem("currentBoardName")
-  let newName = `${oldName} copy`
-  if(oldName.charAt(0) !== "_"){
-    newName = "_" + newName
+  console.log("duplicating board");
+  let oldName = localStorage.getItem("currentBoardName");
+  let newName = `${oldName} copy`;
+  while (boards.hasOwnProperty(newName)) {
+    newName += " copy";
   }
-  while(boards.hasOwnProperty(newName)){
-    newName += " copy"
-  }
-  console.log("new name = " + newName)
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"))
-  customBoards[newName] = boards[oldName]
-  customBoards[newName].topLevel = true
-  delete customBoards[newName].name
 
-  localStorage.setItem("customBoards", JSON.stringify(customBoards))
-  blendBoards()
-  closeAllSidebars()
-  showSidebar()
-})
+  console.log("new name is " + newName);
+
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  customBoards[newName] = boards[oldName];
+  customBoards[newName].topLevel = true;
+  customBoards[newName].customBoard = true;
+  delete customBoards[newName].name;
+
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
+  blendBoards();
+  closeAllSidebars();
+  showSidebar();
+});
 
 function findPathToWord(word) {
   //bad approach as far as big O goes.
@@ -234,18 +244,18 @@ findWordInput.addEventListener("input", () => {
     text.innerHTML = `<b>${result}</b>`;
     resultsElement.append(text);
   });
-  if(results.length === 0 && findWordInput.value){
-    console.log("no results")
+  if (results.length === 0 && findWordInput.value) {
+    console.log("no results");
     let text = document.createElement("p");
     text.innerHTML = `<b>No Results</b>`;
     resultsElement.append(text);
   }
 });
 
-clearWordSearchButton.addEventListener("click", _ => {
-  findWordInput.value = ""
-  findWordInput.dispatchEvent(new Event('input', {bubbles:true}));
-})
+clearWordSearchButton.addEventListener("click", () => {
+  findWordInput.value = "";
+  findWordInput.dispatchEvent(new Event("input", { bubbles: true }));
+});
 
 function closeAllSidebars() {
   document.getElementById("sidebar").classList.add("hidden");
@@ -261,10 +271,16 @@ function showAbout() {
 
 function showCreateBoardSidebar() {
   closeAllSidebars();
+  nameInput.value = "";
+  rowsInput.value = 3;
+  rowsInputDisplay.textContent = 3;
+  colsInput.value = 3;
+  colsInputDisplay.textContent = 3;
+  topLevelInput.checked = true;
   createBoardSidebar.classList.remove("hidden");
 }
 
-function showEditTile() {
+function showEditTileSidebar() {
   closeAllSidebars();
   editTileSidebar.classList.remove("hidden");
 
@@ -320,12 +336,21 @@ importBoardButton.addEventListener("click", () => importInput.click());
 importInput.addEventListener("change", (ev) => {
   const fileList = ev.target.files;
   const reader = new FileReader();
+
   reader.addEventListener("load", (event) => {
-    if (ev.target.files[0].name.charAt(0) !== "_") {
-      alert("File names must begin with an underscore");
-      return;
+    try {
+      if (ev.target.files[0].name.slice(-5) !== ".json") {
+        throw "Invalid file type";
+      }
+      JSON.parse(event.target.result);
+    } catch (error) {
+      alert("Invalid File");
+      console.alert("Attempted to load invalid file");
     }
+
     let newBoard = JSON.parse(event.target.result);
+    newBoard.customBoard = true;
+    delete newBoard.name;
     let customBoards = JSON.parse(localStorage.getItem("customBoards"));
     customBoards[ev.target.files[0].name.replace(".json", "")] = newBoard;
     localStorage.setItem("customBoards", JSON.stringify(customBoards));
@@ -333,11 +358,12 @@ importInput.addEventListener("change", (ev) => {
     blendBoards();
     showSidebar();
   });
+
   reader.readAsText(fileList[0]);
 });
 
 function generateEmptyBoard() {
-  let boardName = "_" + nameInput.value.toLowerCase().replaceAll(" ", "-");
+  let boardName = nameInput.value;
   let rows = Number(rowsInput.value);
   let columns = Number(colsInput.value);
 
@@ -348,7 +374,7 @@ function generateEmptyBoard() {
 
   localStorage.setItem("currentBoardName", boardName);
 
-  createBoardSidebar.classList.toggle("hidden");
+  closeAllSidebars();
 
   let tiles = [];
   for (let i = 0; i != columns * rows; i++) {
@@ -362,6 +388,7 @@ function generateEmptyBoard() {
     columns,
     tiles,
     topLevel: topLevelInput.checked,
+    customBoard: true,
   };
 
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
@@ -381,8 +408,8 @@ function clearCurrentTile() {
   tileTypeInput.value = "blank";
   iconLinkInput.value = "";
   pronounciationInput.value = "";
-  pastTenseInput.value = "";
-  pastTensePronounciationInput.value = "";
+  pastInput.value = "";
+  pastPronounciationInput.value = "";
   pluralInput.value = "";
   pluralPronounciationInput.value = "";
   negationInput.value = "";
@@ -396,15 +423,14 @@ editTileSubmitButton.addEventListener("click", editTile);
 
 //vulnerable to injection?
 function editTile() {
-
-  if(localStorage.getItem("currentBoardName").charAt(0) !== "_"){
-    alert("You can only edit custom boards. Please duplicate the board first")
-    return
+  if (!boards[localStorage.getItem("currentBoardName")].customBoard) {
+    alert("You can only edit custom boards. Please duplicate the board first");
+    return;
   }
 
   if (!displayNameInput.value && tileTypeInput.value !== "blank") {
     alert("You must enter a display name if the tile is not blank");
-    return
+    return;
   }
 
   let board = boards[localStorage.getItem("currentBoardName")];
@@ -413,8 +439,8 @@ function editTile() {
   selectedTile.type = tileTypeInput.value;
   selectedTile.iconLink = iconLinkInput.value;
   selectedTile.pronounciation = pronounciationInput.value;
-  selectedTile.pastTenseForm = pastTenseInput.value;
-  selectedTile.pastTensePronounciation = pastTensePronounciationInput.value;
+  selectedTile.pastForm = pastInput.value;
+  selectedTile.pastPronounciation = pastPronounciationInput.value;
   selectedTile.pluralForm = pluralInput.value;
   selectedTile.pluralFormPronounciation = pluralPronounciationInput.value;
   selectedTile.negativeForm = negationInput.value;
@@ -423,26 +449,21 @@ function editTile() {
   selectedTile.linkTo = linkToInput.value;
   selectedTile.colour = colourInput.value;
 
-  //clear empty
+  //clear empty - //todo: fix?
   selectedTile = Object.entries(selectedTile).reduce(
     (obj, [key, value]) => (value ? ((obj[key] = value), obj) : obj),
     {}
   );
 
-  Object.keys(selectedTile).forEach(key => {
+  Object.keys(selectedTile).forEach((key) => {
     if (selectedTile[key] === "") {
       delete selectedTile[key];
     }
   });
 
-  console.log(selectedTile)
+  console.log(selectedTile);
 
   let saveName = localStorage.getItem("currentBoardName");
-  if (saveName.charAt(0) !== "_") {
-    saveName = "_" + saveName;
-    board.name = saveName;
-  }
-
   let customBoards = JSON.parse(localStorage.getItem("customBoards"));
   customBoards[saveName] = board;
 
@@ -458,9 +479,11 @@ function sizeGrid() {
   const board = boards[localStorage.getItem("currentBoardName")];
 
   const tileWidth = Math.floor(window.innerWidth / board.columns);
-  const tileHeight = Math.floor((window.innerHeight - topBar.offsetHeight) / board.rows) 
+  const tileHeight = Math.floor(
+    (window.innerHeight - topBar.offsetHeight) / board.rows
+  );
 
-  const itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - 5
+  const itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - 5;
 
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
@@ -478,18 +501,18 @@ toggleEditTileExtra.addEventListener("click", () => {
   editTileExtra.classList.toggle("hidden");
 });
 
-//takes the board from boards.js and adds it to the dom
+//takes the board and adds it to the dom
 //need to break down into smaller modules
 function drawBoard(name) {
   //fallback for trying to load board that has been deleted
   //then fallback for the current set having been deleted
   if (!boards.hasOwnProperty(name)) {
     console.error("Tried to draw non-existing board");
-    if(!boards.hasOwnProperty(localStorage.getItem("currentSet"))){
-      console.error("Failed to draw fallback board")
-      drawBoard("initial")
-      return
-    } 
+    if (!boards.hasOwnProperty(localStorage.getItem("currentSet"))) {
+      console.error("Failed to draw fallback board");
+      drawBoard("initial");
+      return;
+    }
     drawBoard(localStorage.getItem("currentSet"));
     return;
   }
@@ -526,8 +549,8 @@ function drawBoard(name) {
         displayNameInput.value = tile.displayName || "";
         tileTypeInput.value = tile.type || "blank";
         pronounciationInput.value = tile.pronounciation || "";
-        pastTenseInput.value = tile.pastTenseForm || "";
-        pastTensePronounciationInput.value = tile.pastTensePronounciation || "";
+        pastInput.value = tile.pastForm || "";
+        pastPronounciationInput.value = tile.pastPronounciation || "";
         pluralInput.value = tile.pluralForm || "";
         pluralPronounciationInput.value = tile.pluralFormPronounciation || "";
         negationInput.value = tile.negativeForm || "";
@@ -538,7 +561,7 @@ function drawBoard(name) {
         iconNameInput.value = tile.iconName || "";
         iconLinkInput.value = tile.iconLink || "";
         linkToInput.value = tile.linkTo || "";
-        showEditTile();
+        showEditTileSidebar();
       }
     });
 
@@ -557,20 +580,14 @@ function drawBoard(name) {
     if (tile.type !== "textOnly") {
       let image = new Image();
       image.src = tile.iconLink || `./resouces/icons/${tile.iconName}.webp`;
-      console.log("here123")
-      console.log(image.src)
+      console.log("here123");
+      console.log(image.src);
       image.classList.add("icon");
       tileElement.append(image);
     }
 
     if (tile.type === "grammarMarker") {
-      if (tile.internalName === "plural") {
-        tileElement.addEventListener("click", pluraliseLastWord);
-      } else if (tile.internalName === "past") {
-        tileElement.addEventListener("click", pastTenseLastWord);
-      } else if (tile.internalName === "negation") {
-        tileElement.addEventListener("click", negateLastWord);
-      }
+      tileElement.addEventListener("click", ammendLastWord(tile.internalName));
       li.append(tileElement);
       boardSection.append(li);
       return;
@@ -619,9 +636,9 @@ lockSidebarButton.addEventListener("click", () => {
 
 console.log(
   "sentence auto delete default:" +
-  sentenceAutoDelete +
-  "\n" +
-  localStorage.getItem("sentenceAutoDelete")
+    sentenceAutoDelete +
+    "\n" +
+    localStorage.getItem("sentenceAutoDelete")
 );
 
 sentenceAutoDeleteCheckbox.checked = sentenceAutoDelete;
@@ -644,21 +661,19 @@ clearButton.addEventListener("click", clearSentence);
 
 //todo, combine grammar markers
 //makes the last word plural, if plural form specified
-function pluraliseLastWord() {
-  console.log("last word pluralised, if it has a plural form");
+
+function ammendLastWord(type) {
   if (sentence.length === 0) return;
-
-  //get by value not reference
   let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-
   let lastInitial = last.pronounciation || last.displayName;
-  //coveres edgecases where worst case, the word only has a display name set
+
   last.pronounciation =
-    last.pluralFormPronounciation ||
-    last.pluralForm ||
+    last[`${type}FormPronounciation`] ||
+    last[`${type}Form`] ||
     last.pronounciation ||
     last.displayName;
   last.displayName = last.pluralForm || last.displayName;
+
   sentence[sentence.length - 1] = last;
 
   if (lastInitial !== last.pronounciation) {
@@ -666,48 +681,6 @@ function pluraliseLastWord() {
     speak(last.pronounciation || last.displayName);
   }
 
-  updateSentence();
-}
-
-function pastTenseLastWord() {
-  console.log("last word made past tense, if it has a past tense form");
-  if (sentence.length === 0) return;
-
-  let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-  let lastInitial = last.pronounciation || last.displayName;
-  //coveres edgecases where worst case, the word only has a display name set
-  last.pronounciation =
-    last.pastTensePronounciation ||
-    last.pastTenseForm ||
-    last.pronounciation ||
-    last.displayName;
-  last.displayName = last.pastTenseForm || last.displayName;
-  sentence[sentence.length - 1] = last;
-  if (lastInitial !== last.pronounciation) {
-    //no change, don't speak
-    speak(last.pronounciation || last.displayName);
-  }
-  updateSentence();
-}
-
-function negateLastWord() {
-  console.log("last word negated, if it has such a form");
-  if (sentence.length === 0) return;
-
-  let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-  let lastInitial = last.pronounciation || last.displayName;
-  //coveres edgecases where worst case, the word only has a display name set
-  last.pronounciation =
-    last.negativeFormPronounciation ||
-    last.negativeForm ||
-    last.pronounciation ||
-    last.displayName;
-  last.displayName = last.negativeForm || last.displayName;
-  sentence[sentence.length - 1] = last;
-  if (lastInitial !== last.pronounciation) {
-    //no change, don't speak
-    speak(last.pronounciation || last.displayName);
-  }
   updateSentence();
 }
 
@@ -768,7 +741,7 @@ function populateVoiceList() {
     console.log("Loading voices");
 
     //gets uk voices
-    // voices = synth.getVoices().filter((voice) => voice.lang === "en-GB");
+    voices = synth.getVoices(); //.filter((voice) => voice.lang === "en-GB");
 
     voices.forEach((voice) => {
       let option = document.createElement("option");
@@ -789,11 +762,11 @@ voiceSelectElement.addEventListener("change", () => {
 
 showAboutButton.addEventListener("click", showAbout);
 
-document.getElementById("rowsInput").addEventListener("change", () => {
+document.getElementById("rowsInput").addEventListener("input", () => {
   rowsInputDisplay.textContent = rowsInput.value;
 });
 
-document.getElementById("colsInput").addEventListener("change", () => {
+document.getElementById("colsInput").addEventListener("input", () => {
   colsInputDisplay.textContent = colsInput.value;
 });
 
