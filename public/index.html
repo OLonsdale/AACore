@@ -12,6 +12,16 @@
     
     <link rel="manifest" href="./manifest.json" />
 
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').then(function() { 
+          console.log("Service Worker Registered"); 
+        });
+      }
+    </script>
+
+  <script type="module" src="scripts.js" defer></script>
+
     <title>AACore</title>
   </head>
 
@@ -213,15 +223,15 @@
       </div>
       <div>
         <select id="colourInput">
+          <option value="orange">Orange</option>
           <option value="red">Red</option>
           <option value="pink">Pink</option>
-          <option value="orange">Orange</option>
           <option value="yellow">Yellow</option>
           <option value="green">Green</option>
           <option value="blue">Blue</option>
           <option value="grey">Grey</option>
           <option value="white">White</option>
-          <option value="linkColour">For Type:Link</option>
+          <option value="linkColour">Link</option>
         </select>
       </div>
 
@@ -273,7 +283,7 @@
         Resources to be used under supervision of a Speech and Language Therapist 
       </p>
       <h2>Version</h2>
-      <p>0.0.79</p>
+      <p>0.0.82</p>
     </div>
 
     <div id="topBar" class="topBar">
@@ -319,7 +329,7 @@
       </ol>
     </div>
 
-    <script type="module" src="scripts.js"></script>
+    
 
     <!-- <script type="module">
       // Import the functions you need from the SDKs you need
@@ -344,14 +354,5 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script> -->
-
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').then(function() { 
-          console.log("Service Worker Registered"); 
-        });
-      }
-    </script>
-
   </body>
 </html>

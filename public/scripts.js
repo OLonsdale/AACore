@@ -11,15 +11,7 @@ let boards = {};
 //should maybe check for duplicate boards and alert user, currently overides
 function blendBoards() {
   //patch for old custom boards, to remove next update
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  for (const board in customBoards) {
-    if (Object.hasOwnProperty.call(customBoards, board)) {
-      const selectedBoard = customBoards[board];
-      if (!selectedBoard.customBoard) {
-        selectedBoard.customBoard = true;
-      }
-    }
-  }
+  const customBoards = JSON.parse(localStorage.getItem("customBoards"));
 
   boards = {
     ...initial,
@@ -79,8 +71,8 @@ function saveBoardEdit() {
     alert("You can only edit custom boards");
     return;
   }
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  let currentBoard = boards[localStorage.getItem("currentBoardName")];
+  const customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  const currentBoard = boards[localStorage.getItem("currentBoardName")];
 
   //change whether the board is shown on the sidebar
   if (currentBoard.topLevel !== topLevelEditInput.checked) {
@@ -137,7 +129,7 @@ function showSidebar() {
 
     if (!element.topLevel) continue;
 
-    let loadButton = document.createElement("button");
+    const loadButton = document.createElement("button");
     loadButton.classList.add("sidebarButton");
     loadButton.textContent = element.name || board;
 
@@ -147,7 +139,6 @@ function showSidebar() {
       drawBoard(board);
     });
 
-    //bad. should check board from localstorage or a "custom" flag in the board
     if (element.customBoard) {
       customBoardSelectionList.append(loadButton);
     } else {
@@ -157,13 +148,7 @@ function showSidebar() {
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
-  if (
-    confirm(
-      `Click "OK" to delete ${localStorage.getItem(
-        "currentBoardName"
-      )} irreversably`
-    )
-  ) {
+  if (confirm(`Click "OK" to delete ${localStorage.getItem("currentBoardName")}`)) {
     deleteCurrentBoard();
   }
 });
@@ -174,7 +159,7 @@ function deleteCurrentBoard() {
     return;
   }
   //delete custom board
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  const customBoards = JSON.parse(localStorage.getItem("customBoards"));
 
   delete customBoards[localStorage.getItem("currentBoardName")];
 
@@ -187,7 +172,7 @@ function deleteCurrentBoard() {
 
 duplicateCurrentBoardButton.addEventListener("click", () => {
   console.log("duplicating board");
-  let oldName = localStorage.getItem("currentBoardName");
+  const oldName = localStorage.getItem("currentBoardName");
   let newName = `${oldName} copy`;
   while (boards.hasOwnProperty(newName)) {
     newName += " copy";
@@ -195,7 +180,7 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
 
   console.log("new name is " + newName);
 
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  const customBoards = JSON.parse(localStorage.getItem("customBoards"));
   customBoards[newName] = boards[oldName];
   customBoards[newName].topLevel = true;
   customBoards[newName].customBoard = true;
@@ -208,8 +193,7 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
 });
 
 function findPathToWord(word) {
-  //bad approach as far as big O goes.
-  let paths = [];
+  const paths = [];
 
   for (const board in boards) {
     //don't even know what this check's for, it's just added by the IDE so I left it in
@@ -238,20 +222,20 @@ findWordInput.addEventListener("input", () => {
 
 function findWord(word){
   console.log("searched");
-  let resultsElement = document.getElementById("wordSearchResultsElement");
+  const resultsElement = document.getElementById("wordSearchResultsElement");
   resultsElement.innerHTML = "";
   if (!word) return;
-  let results = findPathToWord(word);
+  const results = findPathToWord(word);
   results.forEach((result) => {
     if(result.includes(localStorage.getItem("currentSet"))){
-      let text = document.createElement("p");
+      const text = document.createElement("p");
       text.innerHTML = `<b>${result}</b>`;
       resultsElement.append(text);
     }
   });
   if (resultsElement.length === 0 && findWordInput.value) {
     console.log("no results");
-    let text = document.createElement("p");
+    const text = document.createElement("p");
     text.innerHTML = `<b>No Results</b>`;
     resultsElement.append(text);
   }
@@ -290,7 +274,7 @@ function showEditTileSidebar() {
   editTileSidebar.classList.remove("hidden");
 
   linkToInput.innerHTML = "";
-  let noneOption = document.createElement("option");
+  const noneOption = document.createElement("option");
   noneOption.innerText = "None";
   linkToInput.append(noneOption);
 
@@ -303,7 +287,7 @@ function showEditTileSidebar() {
       linkToInput.append(option);
     }
   }
-  let board = boards[localStorage.getItem("currentBoardName")];
+  const board = boards[localStorage.getItem("currentBoardName")];
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
 }
 
@@ -320,7 +304,7 @@ function exportBoard() {
     boards[localStorage.getItem("currentBoardName")]
   );
 
-  let element = document.createElement("a");
+  const element = document.createElement("a");
   element.setAttribute(
     "href",
     "data:text/plain;charset=utf-8," + encodeURIComponent(jsonStr)
@@ -353,10 +337,10 @@ importInput.addEventListener("change", (ev) => {
       console.alert("Attempted to load invalid file");
     }
 
-    let newBoard = JSON.parse(event.target.result);
+    const newBoard = JSON.parse(event.target.result);
     newBoard.customBoard = true;
     delete newBoard.name;
-    let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+    const customBoards = JSON.parse(localStorage.getItem("customBoards"));
     customBoards[ev.target.files[0].name.replace(".json", "")] = newBoard;
     localStorage.setItem("customBoards", JSON.stringify(customBoards));
     console.log("custom board imported");
@@ -368,9 +352,9 @@ importInput.addEventListener("change", (ev) => {
 });
 
 function generateEmptyBoard() {
-  let boardName = nameInput.value;
-  let rows = Number(rowsInput.value);
-  let columns = Number(colsInput.value);
+  const boardName = nameInput.value;
+  const rows = Number(rowsInput.value);
+  const columns = Number(colsInput.value);
 
   if (boards.hasOwnProperty(boardName) || !boardName || boardName.length > 30) {
     alert("Name must be unique and under 30 chars");
@@ -381,12 +365,12 @@ function generateEmptyBoard() {
 
   closeAllSidebars();
 
-  let tiles = [];
+  const tiles = [];
   for (let i = 0; i != columns * rows; i++) {
     tiles.push({ type: "blank" });
   }
 
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  const customBoards = JSON.parse(localStorage.getItem("customBoards"));
 
   customBoards[boardName] = {
     rows,
@@ -410,7 +394,7 @@ clearCurrentTileButton.addEventListener("click", clearCurrentTile);
 
 function clearCurrentTile() {
   displayNameInput.value = "";
-  tileTypeInput.value = "blank";
+  tileTypeInput.value = "";
   iconLinkInput.value = "";
   pronounciationInput.value = "";
   pastInput.value = "";
@@ -421,7 +405,7 @@ function clearCurrentTile() {
   negationPronounciationInput.value = "";
   iconNameInput.value = "";
   linkToInput.value = "";
-  colourInput.value = "red";
+  colourInput.value = "orange";
 }
 
 editTileSubmitButton.addEventListener("click", editTile);
@@ -438,8 +422,8 @@ function editTile() {
     return;
   }
 
-  let board = boards[localStorage.getItem("currentBoardName")];
-  let selectedTile = board.tiles[selectedTileNumber.value];
+  const board = boards[localStorage.getItem("currentBoardName")];
+  const selectedTile = board.tiles[selectedTileNumber.value];
   selectedTile.displayName = displayNameInput.value;
   selectedTile.type = tileTypeInput.value;
   selectedTile.iconLink = iconLinkInput.value;
@@ -454,22 +438,16 @@ function editTile() {
   selectedTile.linkTo = linkToInput.value;
   selectedTile.colour = colourInput.value;
 
-  //clear empty - //todo: fix?
-  selectedTile = Object.entries(selectedTile).reduce(
-    (obj, [key, value]) => (value ? ((obj[key] = value), obj) : obj),
-    {}
-  );
+  console.log(selectedTile);
 
-  Object.keys(selectedTile).forEach((key) => {
-    if (selectedTile[key] === "") {
-      delete selectedTile[key];
+  Object.keys(board).forEach((key) => {
+    if (board[key] === "") {
+      delete board[key];
     }
   });
 
-  console.log(selectedTile);
-
-  let saveName = localStorage.getItem("currentBoardName");
-  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  const saveName = localStorage.getItem("currentBoardName");
+  const customBoards = JSON.parse(localStorage.getItem("customBoards"));
   customBoards[saveName] = board;
 
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
@@ -583,7 +561,7 @@ function drawBoard(name) {
 
     //then add conditional elements. Avoiding elses for clarity.
     if (tile.type !== "textOnly") {
-      let image = new Image();
+      const image = new Image();
       image.src = tile.iconLink || `./resouces/icons/${tile.iconName}.webp`;
       image.classList.add("icon");
       tileElement.append(image);
@@ -669,8 +647,8 @@ clearButton.addEventListener("click", clearSentence);
 
 function applyGrammarMarker(type) {
   if (sentence.length === 0) return;
-  let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
-  let lastInitial = last.pronounciation || last.displayName;
+  const last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
+  const lastInitial = last.pronounciation || last.displayName;
 
   console.log(type)
 
@@ -751,7 +729,7 @@ function populateVoiceList() {
     voices = synth.getVoices(); //.filter((voice) => voice.lang === "en-GB");
 
     voices.forEach((voice) => {
-      let option = document.createElement("option");
+      const option = document.createElement("option");
       option.textContent = voice.name.replaceAll("(United Kingdom)", "");
       option.setAttribute("data-name", voice.name);
       voiceSelectElement.appendChild(option);
@@ -796,8 +774,8 @@ Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(
 //and randomly selects ascending or descending order
 //the numbers are put into buttons, and must be clicked in the order chosen
 function showLockScreen() {
-  let numbers = [];
-  let order = Math.random() >= 0.5 ? "low-to-high" : "high-to-low";
+  const numbers = [];
+  const order = Math.random() >= 0.5 ? "low-to-high" : "high-to-low";
 
   //generates a number, and adds it to the numbers array if not a duplicate
   for (let i = 0; i < 4; i++) {
@@ -808,14 +786,14 @@ function showLockScreen() {
   }
 
   //elements for the UI
-  let popup = document.createElement("div");
+  const popup = document.createElement("div");
   popup.classList.add("sidebar");
   popup.id = "unlockSidebar";
 
-  let message = document.createElement("h2");
+  const message = document.createElement("h2");
   message.innerText = `Select these numbers in order of ${order}`;
 
-  let closeButton = document.createElement("button");
+  const closeButton = document.createElement("button");
   closeButton.classList = "sidebarButton";
   closeButton.innerText = "Back";
   closeButton.id = "closePasswordButton";
@@ -830,7 +808,7 @@ function showLockScreen() {
 
   //for the numbers in the array, add a button to the element
   numbers.forEach((number) => {
-    let button = document.createElement("button");
+    const button = document.createElement("button");
     button.textContent = number;
     button.classList.add("sidebarButton");
 
@@ -881,7 +859,7 @@ if (!localStorage.getItem("currentSet")) {
 }
 
 if (!localStorage.getItem("customBoards")) {
-  let customBoards = {};
+  const customBoards = {};
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
 }
 
