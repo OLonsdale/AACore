@@ -326,7 +326,7 @@ const expanded = {
         displayName: "negation",
         iconName: "negation",
         colour: "grammarMarkerColour",
-        internalName: "negation",
+        internalName: "negative",
       },
       {
         type: "textAndIcon",
@@ -527,7 +527,7 @@ const expanded = {
       },
       {
         type: "link",
-        displayName: "Home",
+        displayName: "Places",
         iconName: "home",
         linkTo:"expanded-home",
         colour: "linkColour",
@@ -544,7 +544,7 @@ const expanded = {
       {
         type: "link",
         displayName: "Time",
-        iconName: "time",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/clock.svg",
         linkTo:"expanded-time",
         colour: "linkColour",
         internalName: "Time",
@@ -841,7 +841,7 @@ const expanded = {
         displayName: "negation",
         iconName: "negation",
         colour: "grammarMarkerColour",
-        internalName: "negation",
+        internalName: "negative",
         linkTo: "expanded",
       },
       {
@@ -4386,7 +4386,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -4778,7 +4778,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -5256,7 +5256,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -6094,7 +6094,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded-topic",
         colour: "linkColour",
@@ -6272,7 +6272,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -6493,16 +6493,14 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
-
         colour: "linkColour",
       },
       {
         type: "textAndIcon",
         displayName: "maths",
         iconName: "maths",
-
         colour: "orange",
       },
       {
@@ -6884,7 +6882,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -7140,7 +7138,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -7456,7 +7454,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -7729,7 +7727,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -8013,7 +8011,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -8771,7 +8769,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
 
         iconName: "navigate-back",
         linkTo: "expanded",
@@ -9835,7 +9833,7 @@ const expanded = {
     tiles: [
       {
         type: "link",
-        displayName: "back",
+        displayName: "Back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -10044,7 +10042,7 @@ const expanded = {
         displayName: "negation",
         iconName: "negation",
         colour: "grammarMarkerColour",
-        internalName: "negation",
+        internalName: "negative",
         linkTo: "expanded",
       },
       {

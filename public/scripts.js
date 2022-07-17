@@ -233,24 +233,29 @@ function findPathToWord(word) {
 }
 
 findWordInput.addEventListener("input", () => {
+  findWord(findWordInput.value)
+});
+
+function findWord(word){
   console.log("searched");
-  let searchTerm = findWordInput.value;
   let resultsElement = document.getElementById("wordSearchResultsElement");
   resultsElement.innerHTML = "";
-  if (!searchTerm) return;
-  let results = findPathToWord(searchTerm);
+  if (!word) return;
+  let results = findPathToWord(word);
   results.forEach((result) => {
-    let text = document.createElement("p");
-    text.innerHTML = `<b>${result}</b>`;
-    resultsElement.append(text);
+    if(result.includes(localStorage.getItem("currentSet"))){
+      let text = document.createElement("p");
+      text.innerHTML = `<b>${result}</b>`;
+      resultsElement.append(text);
+    }
   });
-  if (results.length === 0 && findWordInput.value) {
+  if (resultsElement.length === 0 && findWordInput.value) {
     console.log("no results");
     let text = document.createElement("p");
     text.innerHTML = `<b>No Results</b>`;
     resultsElement.append(text);
   }
-});
+}
 
 clearWordSearchButton.addEventListener("click", () => {
   findWordInput.value = "";
@@ -580,14 +585,15 @@ function drawBoard(name) {
     if (tile.type !== "textOnly") {
       let image = new Image();
       image.src = tile.iconLink || `./resouces/icons/${tile.iconName}.webp`;
-      console.log("here123");
-      console.log(image.src);
       image.classList.add("icon");
       tileElement.append(image);
     }
 
     if (tile.type === "grammarMarker") {
-      tileElement.addEventListener("click", ammendLastWord(tile.internalName));
+      if(editMode) return
+      tileElement.addEventListener("click", () => {
+        applyGrammarMarker(tile.internalName)
+      });
       li.append(tileElement);
       boardSection.append(li);
       return;
@@ -614,7 +620,6 @@ function drawBoard(name) {
         if (!editMode) {
           sentence.push(tile);
           updateSentence();
-
           const word = tile.pronounciation || tile.displayName;
           speak(word);
         }
@@ -662,17 +667,19 @@ clearButton.addEventListener("click", clearSentence);
 //todo, combine grammar markers
 //makes the last word plural, if plural form specified
 
-function ammendLastWord(type) {
+function applyGrammarMarker(type) {
   if (sentence.length === 0) return;
   let last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
   let lastInitial = last.pronounciation || last.displayName;
+
+  console.log(type)
 
   last.pronounciation =
     last[`${type}FormPronounciation`] ||
     last[`${type}Form`] ||
     last.pronounciation ||
     last.displayName;
-  last.displayName = last.pluralForm || last.displayName;
+  last.displayName = last[`${type}Form`] || last.displayName;
 
   sentence[sentence.length - 1] = last;
 
