@@ -2837,7 +2837,7 @@ const expanded = {
     ],
   },
 
-  "expanded-fun-story":{},
+  // "expanded-fun-story":{},
 
   "expanded-fun-playground": {
     rows: 6,
@@ -5352,7 +5352,7 @@ const expanded = {
         type: "textAndIcon",
         displayName: "flightless bird",
         pluralForm: "flightless birds",
-        iconName: "add symbol",
+        iconName: "flightless-bird",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -6143,7 +6143,7 @@ const expanded = {
     ],
   },
 
-  "expanded-topic-vehicles": {},
+  // "expanded-topic-vehicles": {},
 
   "expanded-body": {
     rows: 6,
@@ -6501,13 +6501,13 @@ const expanded = {
     ],
   },
 
-  "expanded-body-parts": {},
+  // "expanded-body-parts": {},
 
-  "expanded-body-functions": {},
+  // "expanded-body-functions": {},
 
-  "expanded-body-ill": {},
+  // "expanded-body-ill": {},
 
-  "expanded-body-clothes": {},
+  // "expanded-body-clothes": {},
 
   "expanded-places": {
     rows: 6,
@@ -6902,7 +6902,7 @@ const expanded = {
     ],
   },
 
-  "expanded-places-furniture": {},
+  // "expanded-places-furniture": {},
 
   "expanded-places-weather": {
     rows: 6,
@@ -8054,7 +8054,7 @@ const expanded = {
     ],
   },
 
-  "expanded-places-position": {},
+  // "expanded-places-position": {},
 
   "expanded-places-countries": {
     rows: 6,
@@ -10507,9 +10507,9 @@ const expanded = {
     ],
   },
 
-  "expanded-food-meals": {},
+  // "expanded-food-meals": {},
 
-  "expanded-food-treats": {},
+  // "expanded-food-treats": {},
 
   "expanded-food-sauces": {
     rows: 6,
@@ -11870,7 +11870,7 @@ const expanded = {
     ],
   },
 
-  "expanded-time-celebrations": {},
+  // "expanded-time-celebrations": {},
 
   "expanded-people": {
     rows: 6,
@@ -12272,11 +12272,11 @@ const expanded = {
     ],
   },
 
-  "expanded-people-relationships": {},
+  // "expanded-people-relationships": {},
 
-  "expanded-people-polite": {},
+  // "expanded-people-polite": {},
 
-  "expanded-people-describe": {},
+  // "expanded-people-describe": {},
 
   "expanded-feelings": {
     rows: 6,

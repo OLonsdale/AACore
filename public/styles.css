@@ -1,11 +1,14 @@
+@import url('http://fonts.cdnfonts.com/css/opendyslexic');
+
 :root {
   --grid-size: 100px;
+  --font: "Comic Sans Ms";
 }
 
 body {
   margin: 0;
   background-color: #faebd7;
-  font-family: "Arial";
+  font-family: var(--font);
   user-select: none;
 }
 

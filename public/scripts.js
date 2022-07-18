@@ -23,8 +23,6 @@ function blendBoards() {
 
 blendBoards();
 
-console.log(boards);
-
 const synth = window.speechSynthesis;
 
 const sentenceDisplayElement = document.getElementById("sentenceDisplay");
@@ -41,11 +39,23 @@ let unlockAttempt = [];
 let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete") || true;
 let editMode = false;
 
-editModeCheckbox.addEventListener("change", () => {
-  toggleEditMode();
+//load selected font
+document.documentElement.style.setProperty(
+  "--font",
+  localStorage.getItem("selectedFont")
+);
+
+//change font to selected font in dropdown
+fontSelectionDropdown.addEventListener("change", () => {
+  const root = document.documentElement;
+  localStorage.setItem("selectedFont", fontSelectionDropdown.value);
+  root.style.setProperty("--font", localStorage.getItem("selectedFont"));
 });
 
+editModeCheckbox.addEventListener("change", toggleEditMode);
+
 function toggleEditMode() {
+  //toggle editmode
   editMode = !editMode;
   if (editMode) {
     editBoardArea.classList.remove("hidden");
@@ -139,16 +149,20 @@ function showSidebar() {
       drawBoard(board);
     });
 
+    console.log(element)
     if (element.customBoard) {
       customBoardSelectionList.append(loadButton);
     } else {
       premadeBoardSelectionList.append(loadButton);
     }
   }
+  fontSelectionDropdown.value = localStorage.getItem("selectedFont");
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
-  if (confirm(`Click "OK" to delete ${localStorage.getItem("currentBoardName")}`)) {
+  if (
+    confirm(`Click "OK" to delete ${localStorage.getItem("currentBoardName")}`)
+  ) {
     deleteCurrentBoard();
   }
 });
@@ -170,6 +184,7 @@ function deleteCurrentBoard() {
   showSidebar();
 }
 
+//Copies any board into new custom board, name is the origional name plus "copy" as many times as required till unique
 duplicateCurrentBoardButton.addEventListener("click", () => {
   console.log("duplicating board");
   const oldName = localStorage.getItem("currentBoardName");
@@ -180,24 +195,53 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
 
   console.log("new name is " + newName);
 
+  //actually copy the board, sets attributes
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
   customBoards[newName] = boards[oldName];
   customBoards[newName].topLevel = true;
   customBoards[newName].customBoard = true;
   delete customBoards[newName].name;
-
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
+
+  localStorage.setItem("currentBoardName", newName);
+  drawBoard(newName);
   blendBoards();
   closeAllSidebars();
   showSidebar();
 });
 
+findWordInput.addEventListener("input", () => {
+  findWord(findWordInput.value);
+});
+
+function findWord(word) {
+  console.log("searched");
+  const resultsElement = document.getElementById("wordSearchResultsElement");
+  resultsElement.innerHTML = "";
+  if (!word) return;
+  const results = findPathToWord(word);
+  results.forEach((result) => {
+    if (result.includes(localStorage.getItem("currentSet"))) {
+      const text = document.createElement("p");
+      text.innerHTML = `<b>${result}</b>`;
+      resultsElement.append(text);
+    }
+  });
+  if (results.length === 0 && findWordInput.value) {
+    console.log("no results");
+    const text = document.createElement("p");
+    text.innerHTML = `<b>No Results</b>`;
+    resultsElement.append(text);
+  }
+}
+
 function findPathToWord(word) {
   const paths = [];
-
+  console.log(boards)
   for (const board in boards) {
     //don't even know what this check's for, it's just added by the IDE so I left it in
     if (!Object.hasOwnProperty.call(boards, board)) continue;
+    //shitty bodge to prevent duplicates for the "am" boards
     if (
       (board === "expanded-am" || board === "standard-am") &&
       (word != "am" || word != "Am")
@@ -206,6 +250,7 @@ function findPathToWord(word) {
     }
 
     const currentBoard = boards[board];
+    console.log(currentBoard.tiles)
     currentBoard.tiles.forEach((tile) => {
       if (!tile.displayName || tile.type === "link") return;
       if (tile.displayName.toLowerCase() === word.toLowerCase()) {
@@ -214,31 +259,6 @@ function findPathToWord(word) {
     });
   }
   return paths || null;
-}
-
-findWordInput.addEventListener("input", () => {
-  findWord(findWordInput.value)
-});
-
-function findWord(word){
-  console.log("searched");
-  const resultsElement = document.getElementById("wordSearchResultsElement");
-  resultsElement.innerHTML = "";
-  if (!word) return;
-  const results = findPathToWord(word);
-  results.forEach((result) => {
-    if(result.includes(localStorage.getItem("currentSet"))){
-      const text = document.createElement("p");
-      text.innerHTML = `<b>${result}</b>`;
-      resultsElement.append(text);
-    }
-  });
-  if (resultsElement.length === 0 && findWordInput.value) {
-    console.log("no results");
-    const text = document.createElement("p");
-    text.innerHTML = `<b>No Results</b>`;
-    resultsElement.append(text);
-  }
 }
 
 clearWordSearchButton.addEventListener("click", () => {
@@ -380,7 +400,6 @@ function generateEmptyBoard() {
     customBoard: true,
   };
 
-  localStorage.setItem("customBoards", JSON.stringify(customBoards));
   blendBoards();
   drawBoard(boardName);
   if (!editMode) editModeCheckbox.click();
@@ -568,9 +587,9 @@ function drawBoard(name) {
     }
 
     if (tile.type === "grammarMarker") {
-      if(editMode) return
+      if (editMode) return;
       tileElement.addEventListener("click", () => {
-        applyGrammarMarker(tile.internalName)
+        applyGrammarMarker(tile.internalName);
       });
       li.append(tileElement);
       boardSection.append(li);
@@ -605,7 +624,6 @@ function drawBoard(name) {
     }
 
     //adds it to dom
-
     li.append(tileElement);
     boardSection.append(li);
   });
@@ -616,13 +634,6 @@ lockSidebarButton.addEventListener("click", () => {
   sidebarLocked = true;
   localStorage.setItem("sidebarLocked", true);
 });
-
-console.log(
-  "sentence auto delete default:" +
-    sentenceAutoDelete +
-    "\n" +
-    localStorage.getItem("sentenceAutoDelete")
-);
 
 sentenceAutoDeleteCheckbox.checked = sentenceAutoDelete;
 
@@ -650,7 +661,7 @@ function applyGrammarMarker(type) {
   const last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
   const lastInitial = last.pronounciation || last.displayName;
 
-  console.log(type)
+  console.log(type);
 
   last.pronounciation =
     last[`${type}FormPronounciation`] ||
@@ -673,6 +684,7 @@ function applyGrammarMarker(type) {
 function updateSentence() {
   const sentenceDisplayArray = sentence.map((tile) => tile.displayName);
 
+  //dirty hack for getting consecutive letters/numbers from keyboard to be spoken as a single word
   sentenceDisplayElement.value = sentenceDisplayArray
     .join(" ")
     .replaceAll("⠀ ⠀", "")
@@ -721,20 +733,17 @@ function clearSentence() {
 
 //Requires delay because voices aren't instantly accessible, annoyingly
 function populateVoiceList() {
-  console.log("Waiting");
   setTimeout(() => {
-    console.log("Loading voices");
-
     //gets uk voices
     voices = synth.getVoices(); //.filter((voice) => voice.lang === "en-GB");
 
     voices.forEach((voice) => {
       const option = document.createElement("option");
-      option.textContent = voice.name.replaceAll("(United Kingdom)", "");
+      option.textContent = `${voice.lang} - ${voice.name}`;
       option.setAttribute("data-name", voice.name);
       voiceSelectElement.appendChild(option);
     });
-
+    1;
     voiceSelectElement.selectedIndex = 0;
   }, 500);
 }
@@ -848,17 +857,22 @@ function showLockScreen() {
   document.body.prepend(popup);
 }
 
-//set default board
+if (!localStorage.getItem("selectedFont")) {
+  localStorage.setItem("selectedFont", "Helvetica");
+}
+
 if (!localStorage.getItem("currentBoardName")) {
   localStorage.setItem("currentBoardName", "standard");
 }
 
-//set default board
 if (!localStorage.getItem("currentSet")) {
   localStorage.setItem("currentSet", "initial");
 }
 
-if (!localStorage.getItem("customBoards")) {
+if (
+  !localStorage.getItem("customBoards") ||
+  localStorage.getItem("customBoards") === ""
+) {
   const customBoards = {};
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
 }
