@@ -535,6 +535,8 @@ function drawBoard(name) {
   boardSection.classList.add(`rows-${board.rows}`);
   boardSection.classList.add(`cols-${board.columns}`);
 
+  document.title = `AACore - ${name[0].toUpperCase() + name.substring(1)}`;
+
   sizeGrid();
 
   //for each tile
