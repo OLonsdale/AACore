@@ -73,6 +73,10 @@ function toggleEditMode() {
     boards[localStorage.getItem("currentBoardName")].topLevel;
 }
 
+toggleSettingsButton.addEventListener("click", () => {
+  sidebarSettings.classList.toggle("hidden")
+})
+
 saveBoardEditButton.addEventListener("click", saveBoardEdit);
 //renames boards and changes whether they show on the sidebar via a menu shown in the main sidebar when edit mode is enabled.
 function saveBoardEdit() {
@@ -149,7 +153,6 @@ function showSidebar() {
       drawBoard(board);
     });
 
-    console.log(element)
     if (element.customBoard) {
       customBoardSelectionList.append(loadButton);
     } else {
@@ -237,7 +240,7 @@ function findWord(word) {
 
 function findPathToWord(word) {
   const paths = [];
-  console.log(boards)
+
   for (const board in boards) {
     //don't even know what this check's for, it's just added by the IDE so I left it in
     if (!Object.hasOwnProperty.call(boards, board)) continue;
@@ -371,7 +374,7 @@ importInput.addEventListener("change", (ev) => {
   reader.readAsText(fileList[0]);
 });
 
-function generateEmptyBoard() {
+function createNewBoard() {
   const boardName = nameInput.value;
   const rows = Number(rowsInput.value);
   const columns = Number(colsInput.value);
@@ -400,6 +403,8 @@ function generateEmptyBoard() {
     customBoard: true,
   };
 
+  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+
   blendBoards();
   drawBoard(boardName);
   if (!editMode) editModeCheckbox.click();
@@ -407,7 +412,7 @@ function generateEmptyBoard() {
 
 document
   .getElementById("generateEmptyButton")
-  .addEventListener("click", generateEmptyBoard);
+  .addEventListener("click", createNewBoard);
 
 clearCurrentTileButton.addEventListener("click", clearCurrentTile);
 

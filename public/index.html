@@ -28,60 +28,63 @@
   <body>
     <div id="sidebar" class="hidden sidebar">
       <button class="sidebarButton closeSidebarButton">Close</button>
-      <h2>Settings:</h2>
-      <div>
-        <label for="voicesSelect">Select Voice:</label>
-        <select id="voicesSelect">
-          <option disabled>Select Voice</option>
-        </select>
-      </div>
-      <div>
-        <label for="sentenceAutoDeleteCheckbox">
-          Delete sentence after speaking:
-        </label>
-        <input type="checkbox" name="delete" id="sentenceAutoDeleteCheckbox" />
-      </div>
-
-      <div>
-        <label for="fontSelectionDropdown">Font:</label>
-        <select id="fontSelectionDropdown" >
-          <option value="Helvetica">Standard</option>
-          <option value="Comic Sans MS">Comic Sans</option>
-          <option value="OpenDyslexic">Dyslexia Friendly</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="editModeCheckbox">Edit boards:</label>
-        <input type="checkbox" name="editMode" id="editModeCheckbox" />
-      </div>
-
-      <div id="editBoardArea" class="inlineSidebar hidden">
-        <h3>Edit Board:</h3>
-        <br>
+      <button id="toggleSettingsButton" class="sidebarButton">Show/Hide Settings</button>
+      <div id="sidebarSettings" class="inlideSidebar hidden">
+        <h2>Settings:</h2>
         <div>
-          <label for="duplicateCurrentBoardButton">Duplicate Board</label>
-          <button id="duplicateCurrentBoardButton" class="sidebarButton">Duplicate current board</button>
+          <label for="voicesSelect">Select Voice:</label>
+          <select id="voicesSelect">
+            <option disabled>Select Voice</option>
+          </select>
         </div>
-        <br>
         <div>
-          <label for="deleteCurrentBoardButton">Delete Board</label>
-          <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
+          <label for="sentenceAutoDeleteCheckbox">
+            Delete sentence after speaking:
+          </label>
+          <input type="checkbox" name="delete" id="sentenceAutoDeleteCheckbox" />
         </div>
-        <br>
+  
         <div>
-          <label for="boardNameEditInput">Rename Board:</label> 
-          <input id="boardNameEditInput">
+          <label for="fontSelectionDropdown">Font:</label>
+          <select id="fontSelectionDropdown" >
+            <option value="Helvetica">Standard</option>
+            <option value="Comic Sans MS">Comic Sans</option>
+            <option value="OpenDyslexic">Dyslexia Friendly</option>
+          </select>
         </div>
-        <br>
+  
         <div>
-          <label for="topLevelEditInput">Board is visible in sidebar</label>
-          <input type="checkbox" id="topLevelEditInput">
+          <label for="editModeCheckbox">Edit boards:</label>
+          <input type="checkbox" name="editMode" id="editModeCheckbox" />
         </div>
-        <br>
-        <button class="sidebarButton" id="saveBoardEditButton">Save Edit</button>
-      </div>
+      
 
+        <div id="editBoardArea" class="inlineSidebar hidden">
+          <h3>Edit Board:</h3>
+          <br>
+          <div>
+            <label for="duplicateCurrentBoardButton">Duplicate Board</label>
+            <button id="duplicateCurrentBoardButton" class="sidebarButton">Duplicate current board</button>
+          </div>
+          <br>
+          <div>
+            <label for="deleteCurrentBoardButton">Delete Board</label>
+            <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
+          </div>
+          <br>
+          <div>
+            <label for="boardNameEditInput">Rename Board:</label> 
+            <input id="boardNameEditInput">
+          </div>
+          <br>
+          <div>
+            <label for="topLevelEditInput">Board is visible in sidebar</label>
+            <input type="checkbox" id="topLevelEditInput">
+          </div>
+          <br>
+          <button class="sidebarButton" id="saveBoardEditButton">Save Edit</button>
+        </div>
+      </div>
       <h3>Find Word:</h3>
       <div class="displayFlexRow">
         <input type="text" id="findWordInput">
@@ -294,7 +297,7 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>0.0.85</p>
+      <p>0.0.86</p>
     </div>
 
     <div id="topBar" class="topBar">
