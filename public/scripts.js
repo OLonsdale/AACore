@@ -13,6 +13,17 @@ function blendBoards() {
   //patch for old custom boards, to remove next update
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
 
+  for (const board in customBoards) {
+    if (Object.hasOwnProperty.call(customBoards, board)) {
+      const selectedBoard = customBoards[board];
+      if (!selectedBoard.customBoard) {
+        selectedBoard.customBoard = true;
+      }
+    }
+  }
+
+  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+
   boards = {
     ...initial,
     ...standard,
