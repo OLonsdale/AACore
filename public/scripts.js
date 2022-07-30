@@ -56,12 +56,24 @@ document.documentElement.style.setProperty(
   localStorage.getItem("selectedFont")
 );
 
+//set background colour
+document.documentElement.style.setProperty(
+  "--background-colour",
+  localStorage.getItem("selectedBackgroundColour")
+);
+
 //change font to selected font in dropdown
 fontSelectionDropdown.addEventListener("change", () => {
   const root = document.documentElement;
   localStorage.setItem("selectedFont", fontSelectionDropdown.value);
   root.style.setProperty("--font", localStorage.getItem("selectedFont"));
 });
+
+backgroundColourSelection.addEventListener("input", () => {
+  console.log("background colour changed")
+  localStorage.setItem("selectedBackgroundColour", backgroundColourSelection.value);
+  document.documentElement.style.setProperty("--background-colour", backgroundColourSelection.value);
+})
 
 editModeCheckbox.addEventListener("change", toggleEditMode);
 
@@ -171,6 +183,7 @@ function showSidebar() {
     }
   }
   fontSelectionDropdown.value = localStorage.getItem("selectedFont");
+  backgroundColourSelection.value = localStorage.getItem("selectedBackgroundColour");
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -876,7 +889,11 @@ function showLockScreen() {
 }
 
 if (!localStorage.getItem("selectedFont")) {
-  localStorage.setItem("selectedFont", "Helvetica");
+  localStorage.setItem("selectedFont", "Helvetica, sans-serif");
+}
+
+if (!localStorage.getItem("selectedBackgroundColour")) {
+  localStorage.setItem("selectedBackgroundColour", "#faebd7");
 }
 
 if (!localStorage.getItem("currentBoardName")) {

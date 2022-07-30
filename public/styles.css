@@ -1,14 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/opendyslexic');
+@import url('http://fonts.cdnfonts.com/css/comic-neue');
 
 :root {
   --grid-size: 100px;
-  --font: "Comic Sans Ms";
+  --font: "Helvetica, sans-serif";
+  --background-colour: #faebd7;
 }
 
 body {
   margin: 0;
-  background-color: #faebd7;
   font-family: var(--font);
+  background-color: var(--background-colour);
   user-select: none;
 }
 
