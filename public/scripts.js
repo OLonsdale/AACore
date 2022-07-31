@@ -277,7 +277,7 @@ function findPathToWord(word) {
     }
 
     const currentBoard = boards[board];
-    console.log(currentBoard.tiles)
+
     currentBoard.tiles.forEach((tile) => {
       if (!tile.displayName || tile.type === "link") return;
       if (tile.displayName.toLowerCase() === word.toLowerCase()) {
@@ -503,7 +503,8 @@ function editTile() {
   drawBoard(localStorage.getItem("currentBoardName"));
 }
 
-window.onresize = sizeGrid;
+window.addEventListener("resize", sizeGrid)
+window.addEventListener("scroll",sizeGrid)
 
 //still imperfect
 function sizeGrid() {
@@ -728,7 +729,7 @@ function speak(arg) {
 
   const utterance = new SpeechSynthesisUtterance(arg);
   if (selectedVoice) utterance.voice = selectedVoice;
-  console.log(utterance);
+
   synth.speak(utterance);
 }
 
@@ -841,7 +842,6 @@ function showLockScreen() {
   closeButton.addEventListener("click", () => {
     unlockAttempt = [];
     unlockSidebar.remove();
-    console.log("here");
   });
 
   popup.append(closeButton, message);
