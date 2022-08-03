@@ -10,6 +10,15 @@ let boards = {};
 //takes all the board files and the boards in local storage and puts them into one object
 //should maybe check for duplicate boards and alert user, currently overides
 function blendBoards() {
+
+  if (
+    !(localStorage.getItem("customBoards")) ||
+    localStorage.getItem("customBoards") === ""
+  ) {
+    localStorage.setItem("customBoards", "{}");
+  }
+  
+
   //patch for old custom boards, to remove next update
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
 
@@ -921,11 +930,10 @@ if (!localStorage.getItem("currentSet")) {
 }
 
 if (
-  !localStorage.getItem("customBoards") ||
+  !(localStorage.getItem("customBoards")) ||
   localStorage.getItem("customBoards") === ""
 ) {
-  const customBoards = {};
-  localStorage.setItem("customBoards", JSON.stringify(customBoards));
+  localStorage.setItem("customBoards", "{}");
 }
 
 if (!localStorage.getItem("sidebarLocked")) {
