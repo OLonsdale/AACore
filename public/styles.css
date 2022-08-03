@@ -3,7 +3,7 @@
 
 :root {
   --grid-size: 100px;
-  --font: "Helvetica, sans-serif";
+  --font: "Helvetica", "sans-serif";
   --background-colour: #faebd7;
 }
 
@@ -39,6 +39,7 @@ body {
 }
 
 .item {
+  /* Set scale font size to hopefully fit in the boxes */
   font-size: min(calc(var(--grid-size) * 0.3), 2ch);
   font-weight: bold;
   display: flex;
@@ -47,6 +48,21 @@ body {
   flex-direction: column;
   text-align: center;
   box-shadow: 0 0 0 1px black;
+  width: var(--grid-size);
+  height: var(--grid-size);
+  overflow: hidden;
+}
+
+.blank-item {
+  /* Set scale font size to hopefully fit in the boxes */
+  font-size: min(calc(var(--grid-size) * 0.3), 2ch);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  /* box-shadow: 0 0 0 1px black; */
   width: var(--grid-size);
   height: var(--grid-size);
   overflow: hidden;

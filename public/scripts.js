@@ -22,7 +22,7 @@ function blendBoards() {
     }
   }
 
-  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
 
   boards = {
     ...initial,
@@ -64,16 +64,23 @@ document.documentElement.style.setProperty(
 
 //change font to selected font in dropdown
 fontSelectionDropdown.addEventListener("change", () => {
+  console.log("Font selected");
   const root = document.documentElement;
   localStorage.setItem("selectedFont", fontSelectionDropdown.value);
   root.style.setProperty("--font", localStorage.getItem("selectedFont"));
 });
 
 backgroundColourSelection.addEventListener("input", () => {
-  console.log("background colour changed")
-  localStorage.setItem("selectedBackgroundColour", backgroundColourSelection.value);
-  document.documentElement.style.setProperty("--background-colour", backgroundColourSelection.value);
-})
+  console.log("background colour changed");
+  localStorage.setItem(
+    "selectedBackgroundColour",
+    backgroundColourSelection.value
+  );
+  document.documentElement.style.setProperty(
+    "--background-colour",
+    backgroundColourSelection.value
+  );
+});
 
 editModeCheckbox.addEventListener("change", toggleEditMode);
 
@@ -97,9 +104,10 @@ function toggleEditMode() {
 }
 
 toggleSettingsButton.addEventListener("click", () => {
-  sidebarSettings.classList.toggle("hidden")
-})
+  sidebarSettings.classList.toggle("hidden");
+});
 
+//
 saveBoardEditButton.addEventListener("click", saveBoardEdit);
 //renames boards and changes whether they show on the sidebar via a menu shown in the main sidebar when edit mode is enabled.
 function saveBoardEdit() {
@@ -183,7 +191,9 @@ function showSidebar() {
     }
   }
   fontSelectionDropdown.value = localStorage.getItem("selectedFont");
-  backgroundColourSelection.value = localStorage.getItem("selectedBackgroundColour");
+  backgroundColourSelection.value = localStorage.getItem(
+    "selectedBackgroundColour"
+  );
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -347,9 +357,8 @@ exportBoardButton.addEventListener("click", exportBoard);
 
 function exportBoard() {
   const filename = `${localStorage.getItem("currentBoardName")}.json`;
-  const jsonStr = JSON.stringify(
-    boards[localStorage.getItem("currentBoardName")]
-  );
+  const board = boards[localStorage.getItem("currentBoardName")];
+  const jsonStr = JSON.stringify(board);
 
   const element = document.createElement("a");
   element.setAttribute(
@@ -381,7 +390,7 @@ importInput.addEventListener("change", (ev) => {
       JSON.parse(event.target.result);
     } catch (error) {
       alert("Invalid File");
-      console.alert("Attempted to load invalid file");
+      console.error("Attempted to load invalid file");
     }
 
     const newBoard = JSON.parse(event.target.result);
@@ -427,7 +436,7 @@ function createNewBoard() {
     customBoard: true,
   };
 
-  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
 
   blendBoards();
   drawBoard(boardName);
@@ -442,7 +451,7 @@ clearCurrentTileButton.addEventListener("click", clearCurrentTile);
 
 function clearCurrentTile() {
   displayNameInput.value = "";
-  tileTypeInput.value = "";
+  tileTypeInput.value = "blank";
   iconLinkInput.value = "";
   pronounciationInput.value = "";
   pastInput.value = "";
@@ -486,28 +495,31 @@ function editTile() {
   selectedTile.linkTo = linkToInput.value;
   selectedTile.colour = colourInput.value;
 
-  console.log(selectedTile);
-
-  Object.keys(board).forEach((key) => {
-    if (board[key] === "") {
-      delete board[key];
+  //removes empty props from tile, not board.
+  Object.keys(selectedTile).forEach((key) => {
+    if (selectedTile[key] === "") {
+      delete selectedTile[key];
     }
   });
 
   const saveName = localStorage.getItem("currentBoardName");
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
   customBoards[saveName] = board;
-
+  console.log("Selected tile edited");
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
   blendBoards();
   drawBoard(localStorage.getItem("currentBoardName"));
 }
 
-window.addEventListener("resize", sizeGrid)
-window.addEventListener("scroll",sizeGrid)
+window.addEventListener("resize", sizeGrid);
+window.addEventListener("scroll", sizeGrid);
+
+//bad
+setInterval(sizeGrid, 1000);
 
 //still imperfect
 function sizeGrid() {
+  // console.log("sized")
   const board = boards[localStorage.getItem("currentBoardName")];
 
   const tileWidth = Math.floor(window.innerWidth / board.columns);
@@ -573,7 +585,13 @@ function drawBoard(name) {
   board.tiles.forEach((tile) => {
     //create button
     const tileElement = document.createElement("button");
+
+    // if(tile.type === "blank"){
+    //   tileElement.classList.add("blank-item");
+    // } else {
     tileElement.classList.add("item");
+    // }
+
     tileElement.id = board.tiles.indexOf(tile);
     const li = document.createElement("li");
 
@@ -685,15 +703,13 @@ deleteLastButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", clearSentence);
 
-//todo, combine grammar markers
-//makes the last word plural, if plural form specified
-
 function applyGrammarMarker(type) {
   if (sentence.length === 0) return;
+  //copy by value not reference
   const last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
   const lastInitial = last.pronounciation || last.displayName;
 
-  console.log(type);
+  console.log("Converting last word to " + type);
 
   last.pronounciation =
     last[`${type}FormPronounciation`] ||
