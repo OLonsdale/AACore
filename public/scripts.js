@@ -524,7 +524,7 @@ window.addEventListener("resize", sizeGrid);
 window.addEventListener("scroll", sizeGrid);
 
 //bad
-setInterval(sizeGrid, 1000);
+// setInterval(sizeGrid, 1000);
 
 //still imperfect
 function sizeGrid() {
@@ -536,7 +536,7 @@ function sizeGrid() {
     (window.innerHeight - topBar.offsetHeight) / board.rows
   );
 
-  const itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - 5;
+  const itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - 1;
 
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
