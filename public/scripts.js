@@ -12,8 +12,8 @@ let boards = {};
 function blendBoards() {
 
   if (
-    !(localStorage.getItem("customBoards")) ||
-    localStorage.getItem("customBoards") === ""
+    JSON.parse(localStorage.getItem("customBoards")) === null ||
+    JSON.parse(localStorage.getItem("customBoards")) === ""
   ) {
     localStorage.setItem("customBoards", "{}");
   }
@@ -930,8 +930,8 @@ if (!localStorage.getItem("currentSet")) {
 }
 
 if (
-  !(localStorage.getItem("customBoards")) ||
-  localStorage.getItem("customBoards") === ""
+  JSON.parse(localStorage.getItem("customBoards")) === null ||
+  JSON.parse(localStorage.getItem("customBoards")) === ""
 ) {
   localStorage.setItem("customBoards", "{}");
 }
