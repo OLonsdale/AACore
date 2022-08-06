@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
     <meta name="theme-color" content="#faebd7"/>
 
     <link rel="stylesheet" href="styles.css" />
@@ -38,13 +39,7 @@
             <option disabled>Select Voice</option>
           </select>
         </div>
-        <div>
-          <label for="sentenceAutoDeleteCheckbox">
-            Delete sentence after speaking:
-          </label>
-          <input type="checkbox" name="delete" id="sentenceAutoDeleteCheckbox" />
-        </div>
-  
+        
         <div>
           <label for="fontSelectionDropdown">Font:</label>
           <select id="fontSelectionDropdown" >
@@ -55,16 +50,22 @@
         </div>
 
         <div>
-          <label for="backgroundColourSelection">Background Colour:</label>
-          <input id="backgroundColourSelection" type="color">
+          <label for="sentenceAutoDeleteCheckbox">
+            Delete sentence after speaking:
+          </label>
+          <input type="checkbox" name="delete" id="sentenceAutoDeleteCheckbox" />
         </div>
-  
+
         <div>
-          <label for="editModeCheckbox">Edit boards:</label>
+          <label for="darkModeCheckbox">Dark Mode:</label>
+          <input type="checkbox" name="darkModeCheckbox" id="darkModeCheckbox">
+        </div>
+
+        <div>
+          <label for="editModeCheckbox">Edit Mode:</label>
           <input type="checkbox" name="editMode" id="editModeCheckbox" />
         </div>
-      
-
+  
         <div id="editBoardArea" class="inlineSidebar hidden">
           <h3>Edit Board:</h3>
           <br>
@@ -303,11 +304,14 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>Beta 4</p>
+      <p>Beta 6</p>
     </div>
 
     <div id="topBar" class="topBar">
-      <button id="sidebarButton" class="largeText">☰</button>
+      <button id="sidebarButton" class="playbackButton" title="Open Menu"><img
+        alt="hamburger menu icon"
+        src="./resouces/menu.svg"
+      /></button>
       <input
         class="sentenceDisplay"
         id="sentenceDisplay"
@@ -348,29 +352,5 @@
         </noscript>
       </ol>
     </div>
-
-    <!-- <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCSAcOic3TkQX0O2DnDhBNYCUcd0CZQVKM",
-        authDomain: "aacore-80543.firebaseapp.com",
-        projectId: "aacore-80543",
-        storageBucket: "aacore-80543.appspot.com",
-        messagingSenderId: "977847235379",
-        appId: "1:977847235379:web:e8cf0e8ae82dbd5f448446",
-        measurementId: "G-CBG84BD8M8",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script> -->
   </body>
 </html>

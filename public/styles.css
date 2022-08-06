@@ -4,7 +4,8 @@
 :root {
   --grid-size: 100px;
   --font: "Helvetica", "sans-serif";
-  --background-colour: #faebd7;
+  --background-colour: rgb(230, 230, 230);
+  --icon-filter: none;
 }
 
 body {
@@ -12,6 +13,11 @@ body {
   font-family: var(--font);
   background-color: var(--background-colour);
   user-select: none;
+}
+
+body.dark {
+  --icon-filter: invert(100%) sepia(35%) saturate(6%) hue-rotate(65deg) brightness(117%) contrast(87%);
+  --background-colour: #111;
 }
 
 .container {
@@ -82,7 +88,6 @@ body {
   border-radius: 15px;
 }
 
-
 .largeText {
   font-size: xx-large;
 }
@@ -90,7 +95,8 @@ body {
 .topBar {
   display: flex;
   gap: 5px;
-  margin-bottom: 5px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   align-items: center;
   justify-content: center;
   height: 5vh;
@@ -98,6 +104,7 @@ body {
 }
 
 .sentenceDisplay {
+  background-color: #efefef;
   font-size: 3vh;
   line-height: 100%;
   width: 100%;
@@ -175,19 +182,9 @@ select {
   background-color: rgb(3, 99, 99);
 }
 
-#sidebarButton{
-  color: white;
-}
-
-.playbackButton {
-  /* background-color: aqua; */
-  height: 100%;
-  width: max-content;
-  filter: invert();
-}
-
 .playbackButton > img {
-  /* background-color: red; */
+  /* icons to near white #efefef */
+  filter: var(--icon-filter);
   height: 2rem;
   width: 2rem;
 }

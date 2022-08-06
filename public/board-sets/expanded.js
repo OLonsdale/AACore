@@ -6498,8 +6498,9 @@ const expanded = {
       { type: "blank" },
       {
         type: "link",
-        displayName: "Functions[missing]",
+        displayName: "Functions",
         colour: "linkColour",
+        linkTo: "expanded-body-functions",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/senses.svg.variant-medium.svg",
       },
@@ -6520,7 +6521,7 @@ const expanded = {
         colour: "linkColour",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/clothes.png",
-        linkTo:"expanded-body-clothes",
+        linkTo: "expanded-body-clothes",
       },
       { type: "blank" },
       { type: "blank" },
@@ -7213,7 +7214,401 @@ const expanded = {
     ],
   },
 
-  // "expanded-body-functions": {},
+  "expanded-body-functions": {
+    rows: 6,
+    columns: 10,
+    path: "expanded ⇾ body ⇾ functions",
+    tiles: [
+      {
+        type: "link",
+        displayName: "Back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "function",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/occupational%20therapy.png.varianted-skin.png",
+        pastForm: "functioned",
+        pluralForm: "functions",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "chewy",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chewy%20tube.svg.varianted-skin.svg",
+        linkTo: "expanded",
+        colour: "blue",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "breathe",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/breathe%20in.png.varianted-skin.png",
+        pastForm: "breathed",
+        pluralForm: "breathes",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "swallow",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/swallow%20food_1.png",
+        pastForm: "swallowed",
+        pluralForm: "swallows",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "chew",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/chewing%20food_1.png",
+        pastForm: "chewed",
+        pluralForm: "chews",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "lick",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20lick_2.png",
+        pastForm: "licked",
+        pluralForm: "licking",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "watch",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/watch%20television_2.png.variant-medium.png",
+        pastForm: "watched",
+        pluralForm: "watches",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "special food",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/milkshake.png",
+        pluralForm: "special foods",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "glasses",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/glasses.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "hearing aid",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hearing%20aid.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "run",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20run_1.png.variant-medium.png",
+        pastForm: "ran",
+        pluralForm: "runs",
+        iconName: "run",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "jump",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/jump.png.varianted-skin.png",
+        pastForm: "jumped",
+        pluralForm: "jumps",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "walk",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/walk.png.varianted-skin.png",
+        pastForm: "walked",
+        pluralForm: "walks",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "crawl",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20crawl.png.variant-medium-dark.png",
+        pastForm: "crawled",
+        pluralForm: "crawls",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "lay",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lie%20down.png.varianted-skin.png",
+        pastForm: "laid",
+        pluralForm: "lays",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "fall",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fall.png.variant-medium-dark.png",
+        pastForm: "fell",
+        pluralForm: "falls",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "wheelchair",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wheelchair.png",
+        pluralForm: "wheelchairs",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "walker",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/walker_2.png",
+        pluralForm: "walkers",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "walking stick",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/walking%20stick.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "splint",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/splint_1.png",
+        pluralForm: "splints",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "grow",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20grow_3.png.varianted-skin.png",
+        pastForm: "grew",
+        pluralForm: "grows",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "puberty",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adults_1.png.varianted-skin.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "pregnant",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pregnant.png.variant-medium-dark.png",
+        linkTo: "expanded",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "sex",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/make-love_841_g.svg",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "risk",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/chance_100_g.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "dangerous",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/danger.png",
+        linkTo: "expanded",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "safe",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/security.png.varianted-skin.png",
+        linkTo: "expanded",
+        colour: "blue",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "touch",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/touch.png.variant-medium-dark.png",
+        pastForm: "touched",
+        pluralForm: "touches",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "itch",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20itch%20.png.varianted-skin.png",
+        pastForm: "itched",
+        pluralForm: "itches",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "burp",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20burp.png.varianted-skin.png",
+        pastForm: "burped",
+        pluralForm: "burps",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "pardon",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/sorry.jpg",
+        linkTo: "expanded",
+        colour: "grey",
+      },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "speak",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/talk.png.varianted-skin.png",
+        pastForm: "spoke",
+        pluralForm: "speaks",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "say",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20say.png.varianted-skin.png",
+        pastForm: "said",
+        pluralForm: "says",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "sign language",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sign%20language.png.varianted-skin.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "talker",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/communication%20aid%202.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "remember",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20remember.png.variant-medium-dark.png",
+        pastForm: "remembered",
+        pluralForm: "remembers",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "forget",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lost%20property.png",
+        pastForm: "forgot",
+        pluralForm: "forgets",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "idea",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/have%20an%20idea.png.variant-medium.png",
+        pluralForm: "ideas",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "choice",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/choice.png",
+        pluralForm: "choices",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      { type: "blank" },
+      { type: "blank" },
+    ],
+    topLevel: true,
+    customBoard: true,
+  },
 
   // "expanded-body-ill": {},
 
@@ -7686,7 +8081,8 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-    ],},
+    ],
+  },
 
   "expanded-places": {
     rows: 6,

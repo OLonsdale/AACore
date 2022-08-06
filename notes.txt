@@ -2,6 +2,7 @@ In WSL:
 mogrify -format webp *.png
 
 firebase deploy
+firebase hosting:channel:deploy aacore-beta
 
 ctrl + alt + s -> w
 Update service worker before deploying
@@ -24,3 +25,28 @@ Clear old service worker (all goes in sw.js):
         clients.forEach(client => client.navigate(client.url))
       });
   });
+
+
+<!-- <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCSAcOic3TkQX0O2DnDhBNYCUcd0CZQVKM",
+    authDomain: "aacore-80543.firebaseapp.com",
+    projectId: "aacore-80543",
+    storageBucket: "aacore-80543.appspot.com",
+    messagingSenderId: "977847235379",
+    appId: "1:977847235379:web:e8cf0e8ae82dbd5f448446",
+    measurementId: "G-CBG84BD8M8",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> -->

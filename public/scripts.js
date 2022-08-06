@@ -65,11 +65,11 @@ document.documentElement.style.setProperty(
   localStorage.getItem("selectedFont")
 );
 
-//set background colour
-document.documentElement.style.setProperty(
-  "--background-colour",
-  localStorage.getItem("selectedBackgroundColour")
-);
+// //set background colour
+// document.documentElement.style.setProperty(
+//   "--background-colour",
+//   localStorage.getItem("selectedBackgroundColour")
+// );
 
 //change font to selected font in dropdown
 fontSelectionDropdown.addEventListener("change", () => {
@@ -79,17 +79,17 @@ fontSelectionDropdown.addEventListener("change", () => {
   root.style.setProperty("--font", localStorage.getItem("selectedFont"));
 });
 
-backgroundColourSelection.addEventListener("input", () => {
-  console.log("background colour changed");
-  localStorage.setItem(
-    "selectedBackgroundColour",
-    backgroundColourSelection.value
-  );
-  document.documentElement.style.setProperty(
-    "--background-colour",
-    backgroundColourSelection.value
-  );
-});
+// backgroundColourSelection.addEventListener("input", () => {
+//   console.log("background colour changed");
+//   localStorage.setItem(
+//     "selectedBackgroundColour",
+//     backgroundColourSelection.value
+//   );
+//   document.documentElement.style.setProperty(
+//     "--background-colour",
+//     backgroundColourSelection.value
+//   );
+// });
 
 editModeCheckbox.addEventListener("change", toggleEditMode);
 
@@ -200,9 +200,7 @@ function showSidebar() {
     }
   }
   fontSelectionDropdown.value = localStorage.getItem("selectedFont");
-  backgroundColourSelection.value = localStorage.getItem(
-    "selectedBackgroundColour"
-  );
+  darkModeCheckbox.checked = JSON.parse(localStorage.getItem("darkTheme"))
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -836,6 +834,20 @@ Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(
   }
 );
 
+darkModeCheckbox.addEventListener("click", () => {
+  localStorage.setItem("darkTheme", JSON.stringify(darkModeCheckbox.checked))
+  loadTheme()
+});
+
+// set the colours depending on the value of "dark theme" in local storage
+function loadTheme() {
+  if (JSON.parse(localStorage.getItem("darkTheme"))) {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+}
+
 //lock screen generates four random numbers between 0 and 100
 //and randomly selects ascending or descending order
 //the numbers are put into buttons, and must be clicked in the order chosen
@@ -917,10 +929,6 @@ if (!localStorage.getItem("selectedFont")) {
   localStorage.setItem("selectedFont", "Helvetica, sans-serif");
 }
 
-if (!localStorage.getItem("selectedBackgroundColour")) {
-  localStorage.setItem("selectedBackgroundColour", "#faebd7");
-}
-
 if (!localStorage.getItem("currentBoardName")) {
   localStorage.setItem("currentBoardName", "standard");
 }
@@ -949,7 +957,22 @@ if (!localStorage.getItem("firstVisit")) {
   showAbout();
 }
 
+//create dark theme local storage file, checks the default theme as defined by the system
+if (!localStorage.getItem("darkTheme")) {
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  if (darkThemeMq.matches) {
+    localStorage.setItem("darkTheme", "true");
+    console.log("set dark theme as default");
+  } else {
+    localStorage.setItem("darkTheme", "false");
+    console.log("set light theme as default");
+  }
+}
+
 //loads board from localstorage to keep same board on page refresh
 drawBoard(localStorage.getItem("currentBoardName"));
 
+loadTheme()
+
 populateVoiceList();
+
