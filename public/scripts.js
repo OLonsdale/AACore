@@ -5,6 +5,10 @@ import { initial } from "./board-sets/initial.js";
 import { standard } from "./board-sets/standard.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
+// testDiv.addEventListener("click", ()=> {
+//   testDiv.scrollTop = testDiv.scrollHeight;
+// })
+
 let boards = {};
 
 //takes all the board files and the boards in local storage and puts them into one object
@@ -739,11 +743,14 @@ function applyGrammarMarker(type) {
 function updateSentence() {
   const sentenceDisplayArray = sentence.map((tile) => tile.displayName);
 
+
   //dirty hack for getting consecutive letters/numbers from keyboard to be spoken as a single word
-  sentenceDisplayElement.value = sentenceDisplayArray
+  sentenceDisplayElement.innerHTML = sentenceDisplayArray
     .join(" ")
     .replaceAll("⠀ ⠀", "")
     .replaceAll("⠀", "");
+
+    sentenceDisplayElement.scrollTop = sentenceDisplayElement.scrollHeight;
 }
 
 //speaks whatever is passed to it
