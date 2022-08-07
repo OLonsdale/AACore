@@ -5,23 +5,17 @@ import { initial } from "./board-sets/initial.js";
 import { standard } from "./board-sets/standard.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
-// testDiv.addEventListener("click", ()=> {
-//   testDiv.scrollTop = testDiv.scrollHeight;
-// })
-
 let boards = {};
 
 //takes all the board files and the boards in local storage and puts them into one object
 //should maybe check for duplicate boards and alert user, currently overides
 function blendBoards() {
-
   if (
     JSON.parse(localStorage.getItem("customBoards")) === null ||
     JSON.parse(localStorage.getItem("customBoards")) === ""
   ) {
     localStorage.setItem("customBoards", "{}");
   }
-  
 
   //patch for old custom boards, to remove next update
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
@@ -69,12 +63,6 @@ document.documentElement.style.setProperty(
   localStorage.getItem("selectedFont")
 );
 
-// //set background colour
-// document.documentElement.style.setProperty(
-//   "--background-colour",
-//   localStorage.getItem("selectedBackgroundColour")
-// );
-
 //change font to selected font in dropdown
 fontSelectionDropdown.addEventListener("change", () => {
   console.log("Font selected");
@@ -82,18 +70,6 @@ fontSelectionDropdown.addEventListener("change", () => {
   localStorage.setItem("selectedFont", fontSelectionDropdown.value);
   root.style.setProperty("--font", localStorage.getItem("selectedFont"));
 });
-
-// backgroundColourSelection.addEventListener("input", () => {
-//   console.log("background colour changed");
-//   localStorage.setItem(
-//     "selectedBackgroundColour",
-//     backgroundColourSelection.value
-//   );
-//   document.documentElement.style.setProperty(
-//     "--background-colour",
-//     backgroundColourSelection.value
-//   );
-// });
 
 editModeCheckbox.addEventListener("change", toggleEditMode);
 
@@ -204,7 +180,7 @@ function showSidebar() {
     }
   }
   fontSelectionDropdown.value = localStorage.getItem("selectedFont");
-  darkModeCheckbox.checked = JSON.parse(localStorage.getItem("darkTheme"))
+  darkModeCheckbox.checked = JSON.parse(localStorage.getItem("darkTheme"));
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -522,8 +498,8 @@ function editTile() {
   drawBoard(localStorage.getItem("currentBoardName"));
 }
 
-window.addEventListener("resize", sizeGrid);
-window.addEventListener("scroll", sizeGrid);
+// window.addEventListener("resize", sizeGrid);
+// window.addEventListener("scroll", sizeGrid);
 
 //bad
 // setInterval(sizeGrid, 1000);
@@ -743,14 +719,13 @@ function applyGrammarMarker(type) {
 function updateSentence() {
   const sentenceDisplayArray = sentence.map((tile) => tile.displayName);
 
-
   //dirty hack for getting consecutive letters/numbers from keyboard to be spoken as a single word
   sentenceDisplayElement.innerHTML = sentenceDisplayArray
     .join(" ")
     .replaceAll("⠀ ⠀", "")
     .replaceAll("⠀", "");
 
-    sentenceDisplayElement.scrollTop = sentenceDisplayElement.scrollHeight;
+  sentenceDisplayElement.scrollTop = sentenceDisplayElement.scrollHeight;
 }
 
 //speaks whatever is passed to it
@@ -842,18 +817,9 @@ Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(
 );
 
 darkModeCheckbox.addEventListener("click", () => {
-  localStorage.setItem("darkTheme", JSON.stringify(darkModeCheckbox.checked))
-  loadTheme()
+  localStorage.setItem("darkTheme", JSON.stringify(darkModeCheckbox.checked));
+  loadTheme();
 });
-
-// set the colours depending on the value of "dark theme" in local storage
-function loadTheme() {
-  if (JSON.parse(localStorage.getItem("darkTheme"))) {
-    document.body.classList.add("dark");
-  } else {
-    document.body.classList.remove("dark");
-  }
-}
 
 //lock screen generates four random numbers between 0 and 100
 //and randomly selects ascending or descending order
@@ -931,6 +897,14 @@ function showLockScreen() {
 
   document.body.prepend(popup);
 }
+// set the colours depending on the value of "dark theme" in local storage
+function loadTheme() {
+  if (JSON.parse(localStorage.getItem("darkTheme"))) {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+}
 
 if (!localStorage.getItem("selectedFont")) {
   localStorage.setItem("selectedFont", "Helvetica, sans-serif");
@@ -979,7 +953,6 @@ if (!localStorage.getItem("darkTheme")) {
 //loads board from localstorage to keep same board on page refresh
 drawBoard(localStorage.getItem("currentBoardName"));
 
-loadTheme()
+loadTheme();
 
 populateVoiceList();
-
