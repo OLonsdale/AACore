@@ -52,6 +52,7 @@ body.dark {
   width: var(--grid-size);
   height: var(--grid-size);
   overflow: hidden;
+  text-align: center;
 }
 
 .icon {

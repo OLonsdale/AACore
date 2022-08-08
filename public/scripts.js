@@ -513,8 +513,8 @@ function editTile() {
   drawBoard(localStorage.getItem("currentBoardName"));
 }
 
-// window.addEventListener("resize", sizeGrid);
-// window.addEventListener("scroll", sizeGrid);
+window.addEventListener("resize", sizeGrid);
+window.addEventListener("scroll", sizeGrid);
 
 //bad
 // setInterval(sizeGrid, 1000);
