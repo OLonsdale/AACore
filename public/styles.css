@@ -8,11 +8,16 @@
   --icon-filter: none;
 }
 
+html, body {
+  touch-action: none;
+}
+
 body {
   margin: 0;
   font-family: var(--font);
   background-color: var(--background-colour);
   user-select: none;
+  touch-action:none;
 }
 
 body.dark {

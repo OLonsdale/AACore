@@ -31,7 +31,7 @@
     <div id="sidebar" class="hidden sidebar">
       <button class="sidebarButton closeSidebarButton">Close</button>
       <button id="toggleSettingsButton" class="sidebarButton">Show/Hide Settings</button>
-      <div id="sidebarSettings" class="inlideSidebar hidden">
+      <div id="sidebarSettings" class="hidden">
         <h2>Settings:</h2>
         <div>
           <label for="voicesSelect">Select Voice:</label>
@@ -66,7 +66,7 @@
           <input type="checkbox" name="editMode" id="editModeCheckbox" />
         </div>
   
-        <div id="editBoardArea" class="inlineSidebar hidden">
+        <div id="editBoardArea" class="hidden">
           <h3>Edit Board:</h3>
           <br>
           <div>
@@ -106,7 +106,7 @@
         <!-- Filled by JS -->
       </div>
 
-      <h3>Custom Boards:</h3>
+      <h3 id="customBoardsHeader">Custom Boards:</h3>  <!-- Shown and hidden dynamically by JS -->
       <div id="customBoardSelectionList">
         <!-- Filled by JS -->
       </div>
@@ -304,7 +304,7 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>Beta 9</p>
+      <p>Beta 10</p>
     </div>
 
     <div id="topBar" class="topBar">

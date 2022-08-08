@@ -179,6 +179,11 @@ function showSidebar() {
       premadeBoardSelectionList.append(loadButton);
     }
   }
+
+  if(customBoardSelectionList.innerHTML != ""){
+    customBoardsHeader.classList.remove("hidden")
+  } else customBoardsHeader.classList.add("hidden")
+  
   fontSelectionDropdown.value = localStorage.getItem("selectedFont");
   darkModeCheckbox.checked = JSON.parse(localStorage.getItem("darkTheme"));
 }
@@ -238,18 +243,21 @@ findWordInput.addEventListener("input", () => {
   findWord(findWordInput.value);
 });
 
+//displays the route to a given word from within the active set
 function findWord(word) {
   console.log("searched");
   const resultsElement = document.getElementById("wordSearchResultsElement");
   resultsElement.innerHTML = "";
   if (!word) return;
   const results = findPathToWord(word);
+  let outOfSetResults = false
   results.forEach((result) => {
     if (result.includes(localStorage.getItem("currentSet"))) {
       const text = document.createElement("p");
       text.innerHTML = `<b>${result}</b>`;
       resultsElement.append(text);
     }
+    else outOfSetResults = true
   });
   if (results.length === 0 && findWordInput.value) {
     console.log("no results");
@@ -257,8 +265,15 @@ function findWord(word) {
     text.innerHTML = `<b>No Results</b>`;
     resultsElement.append(text);
   }
+  if (outOfSetResults && resultsElement.innerHTML === "") {
+    console.log("no results in set");
+    const text = document.createElement("p");
+    text.innerHTML = `<b>No Results in current set</b>`;
+    resultsElement.append(text);
+  }
 }
 
+//generates an array of paths to the given word
 function findPathToWord(word) {
   const paths = [];
 
@@ -282,7 +297,7 @@ function findPathToWord(word) {
       }
     });
   }
-  return paths || null;
+  return paths;
 }
 
 clearWordSearchButton.addEventListener("click", () => {
