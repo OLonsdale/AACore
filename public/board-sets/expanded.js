@@ -2586,7 +2586,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "title",
@@ -2599,9 +2598,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "subtitle",
@@ -2612,7 +2608,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "text",
@@ -2623,7 +2618,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "invite",
@@ -2634,7 +2628,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "letter",
@@ -2644,7 +2637,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "album",
@@ -2659,11 +2651,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "beanstalk",
@@ -2672,7 +2659,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "monster",
@@ -2682,7 +2668,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "beast",
@@ -2691,7 +2676,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Pinocchio",
@@ -2709,7 +2693,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "castle",
@@ -2719,7 +2702,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cottage",
@@ -2729,7 +2711,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "poison",
@@ -2738,7 +2719,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Puss in Boots",
@@ -2747,7 +2727,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Jack",
@@ -2756,7 +2735,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "giant",
@@ -2765,7 +2743,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Rapunzel ",
@@ -2774,7 +2751,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Aladdin",
@@ -2792,7 +2768,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "magic",
@@ -2801,7 +2776,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Bruno",
@@ -2810,7 +2784,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Anna",
@@ -2819,7 +2792,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Elsa",
@@ -2828,7 +2800,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Sleeping Beauty",
@@ -2837,7 +2808,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Belle",
@@ -2846,7 +2816,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Snow White",
@@ -2855,7 +2824,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Little Red Riding Hood",
@@ -2873,7 +2841,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mermaid",
@@ -2883,7 +2850,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "dwarf",
@@ -2893,7 +2859,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "princess",
@@ -2902,7 +2867,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "prince",
@@ -2911,7 +2875,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fairy",
@@ -2920,7 +2883,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "witch",
@@ -2930,7 +2892,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "superhero",
@@ -2940,7 +2901,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Goldilocks",
@@ -3533,14 +3493,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "write",
@@ -3552,7 +3504,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/write.png.variant-medium.png",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "draw",
@@ -3564,7 +3515,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20draw_2.png.variant-medium.png",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "paint",
@@ -3575,7 +3525,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cut",
@@ -3584,7 +3533,6 @@ const expanded = {
         linkTo: "expanded-topic",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "stick",
@@ -3595,7 +3543,6 @@ const expanded = {
         linkTo: "expanded-topic",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "glitter",
@@ -3603,7 +3550,6 @@ const expanded = {
         linkTo: "expanded-topic",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "ruler",
@@ -3611,8 +3557,6 @@ const expanded = {
         linkTo: "expanded-topic",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -3624,7 +3568,6 @@ const expanded = {
         colour: "orange",
         pluralForm: "pens",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pencil",
@@ -3633,7 +3576,6 @@ const expanded = {
         colour: "orange",
         pluralForm: "pencils",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "paintbrush",
@@ -3644,7 +3586,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/paint%20brush.svg",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "scissors",
@@ -3656,7 +3597,6 @@ const expanded = {
         colour: "orange",
         iconName: "scissors",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "glue",
@@ -3668,7 +3608,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20paste_1.png.variant-medium.png",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "paper",
@@ -3678,7 +3617,6 @@ const expanded = {
         linkTo: "expanded-topic",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sharpener",
@@ -3686,8 +3624,6 @@ const expanded = {
         linkTo: "expanded-topic",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -3705,7 +3641,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "orange",
@@ -3713,7 +3648,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "yellow",
@@ -3721,7 +3655,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "green",
@@ -3729,7 +3662,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "blue",
@@ -3737,7 +3669,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "purple",
@@ -3745,7 +3676,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pink",
@@ -3756,8 +3686,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "black",
@@ -3765,7 +3693,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "white",
@@ -3773,7 +3700,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "brown",
@@ -3781,7 +3707,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "grey",
@@ -3789,7 +3714,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "colour",
@@ -3801,7 +3725,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20colour.png.variant-medium.png",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "light",
@@ -3809,7 +3732,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "heavy",
@@ -3817,8 +3739,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -4015,14 +3935,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "circle",
@@ -4030,7 +3942,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/circle.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "triangle",
@@ -4038,7 +3949,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/triangle%20equilateral.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "square",
@@ -4046,7 +3956,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/square.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "rectangle",
@@ -4054,7 +3963,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rectangle.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pentagon ",
@@ -4062,7 +3970,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pentagon.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hexagon",
@@ -4070,7 +3977,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hexagon.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "octagon",
@@ -4081,8 +3987,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sphere",
@@ -4090,7 +3994,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sphere_2.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pyramid",
@@ -4098,7 +4001,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pyramid_2.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cube",
@@ -4106,7 +4008,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bucket_6.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cylinder ",
@@ -4114,7 +4015,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cylinder.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cone",
@@ -4122,7 +4022,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cone_3.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "prism",
@@ -4130,25 +4029,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/prism.png",
         colour: "grey",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -4239,7 +4119,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f522.svg",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "count",
@@ -4247,37 +4126,31 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "⠀6⠀",
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "⠀7⠀",
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "⠀8⠀",
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "⠀9⠀",
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       { type: "textOnly", displayName: "10", colour: "grey" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hundred",
@@ -4285,7 +4158,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f4af.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "how many",
@@ -4304,7 +4176,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "minus",
@@ -4312,7 +4183,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "times",
@@ -4320,7 +4190,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "divide",
@@ -4328,7 +4197,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "equals",
@@ -4336,7 +4204,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "times table",
@@ -4346,8 +4213,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -4359,7 +4224,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "whole",
@@ -4367,7 +4231,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/whole.svg",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "half",
@@ -4378,7 +4241,6 @@ const expanded = {
         pastForm: "halved",
         pluralForm: "halves",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "quarter",
@@ -4389,7 +4251,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "third",
@@ -4402,33 +4263,12 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "million",
         pluralForm: "millions",
         colour: "grey",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -4495,7 +4335,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "medium",
@@ -4505,7 +4344,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "small",
@@ -4513,12 +4351,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -4534,7 +4366,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Domestic",
@@ -4542,7 +4373,6 @@ const expanded = {
         colour: "linkColour",
         linkTo: "expanded-topic-domestic",
       },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Wild",
@@ -4551,7 +4381,6 @@ const expanded = {
         colour: "linkColour",
         linkTo: "expanded-topic-wild",
       },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Birds",
@@ -4560,7 +4389,6 @@ const expanded = {
         colour: "linkColour",
         linkTo: "expanded-topic-birds",
       },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Water",
@@ -4569,7 +4397,6 @@ const expanded = {
         colour: "linkColour",
         linkTo: "expanded-topic-water",
       },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Insects",
@@ -4592,17 +4419,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Transport",
@@ -4611,22 +4427,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/vehicles.png",
         colour: "linkColour",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -4733,7 +4533,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mouse",
@@ -4743,7 +4542,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "rat",
@@ -4760,12 +4558,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "farm",
@@ -4775,7 +4567,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cow",
@@ -4785,7 +4576,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sheep",
@@ -4794,7 +4584,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "chicken",
@@ -4804,7 +4593,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "goat",
@@ -4814,7 +4602,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "horse",
@@ -4824,7 +4611,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pig",
@@ -4834,7 +4620,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "donkey",
@@ -4867,24 +4652,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fur",
@@ -4893,7 +4660,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "claw",
@@ -4903,7 +4669,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "whisker",
@@ -4913,7 +4678,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tail",
@@ -4923,7 +4687,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "horn",
@@ -4934,8 +4697,6 @@ const expanded = {
         colour: "orange",
       },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "wool",
@@ -4944,7 +4705,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
     ],
@@ -4992,7 +4752,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fox",
@@ -5001,7 +4760,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "badger",
@@ -5010,7 +4768,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "racoon",
@@ -5019,7 +4776,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "skunk",
@@ -5028,7 +4784,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "squirrel",
@@ -5037,7 +4792,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "deer",
@@ -5046,7 +4800,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "meerkat",
@@ -5054,7 +4807,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "kangaroo ",
@@ -5073,7 +4825,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tiger",
@@ -5082,7 +4833,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cheetah",
@@ -5091,7 +4841,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "wolf",
@@ -5100,7 +4849,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bear",
@@ -5110,7 +4858,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "camel",
@@ -5119,7 +4866,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "llama",
@@ -5128,7 +4874,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "warthog",
@@ -5140,7 +4885,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "rhino",
@@ -5149,7 +4893,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hippo",
@@ -5159,7 +4902,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "elephant",
@@ -5168,7 +4910,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "giraffe",
@@ -5178,7 +4919,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "zebra",
@@ -5187,7 +4927,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "gazelle",
@@ -5196,7 +4935,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "porcupine ",
@@ -5205,8 +4943,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -5219,7 +4955,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "gorilla",
@@ -5228,7 +4963,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "panda",
@@ -5237,7 +4971,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "koala",
@@ -5247,7 +4980,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sloth",
@@ -5262,10 +4994,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lizard",
@@ -5275,7 +5003,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "snake",
@@ -5285,7 +5012,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "iguana",
@@ -5295,12 +5021,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -5349,7 +5069,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sting ray",
@@ -5359,7 +5078,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "eel",
@@ -5369,7 +5087,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "star fish",
@@ -5378,7 +5095,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "jelly fish",
@@ -5387,10 +5103,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -5412,7 +5124,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lobster",
@@ -5422,7 +5133,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "oyster",
@@ -5432,7 +5142,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "clam",
@@ -5442,11 +5151,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -5470,7 +5174,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "shark",
@@ -5480,7 +5183,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "whale",
@@ -5490,7 +5192,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "turtle",
@@ -5500,11 +5201,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -5526,7 +5222,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "crocodile",
@@ -5544,13 +5239,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "seal",
@@ -5560,7 +5248,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "otter",
@@ -5570,7 +5257,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "beaver ",
@@ -5580,7 +5266,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sea lion",
@@ -5590,7 +5275,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "polar bear",
@@ -5602,9 +5286,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "shell",
@@ -5614,7 +5295,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fin",
@@ -5687,7 +5367,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "robin",
@@ -5697,7 +5376,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pigeon",
@@ -5707,7 +5385,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "magpie",
@@ -5717,7 +5394,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "raven",
@@ -5727,7 +5403,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "seagull",
@@ -5741,9 +5416,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "owl",
@@ -5753,7 +5425,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "eagle",
@@ -5763,7 +5434,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "vulture",
@@ -5780,12 +5450,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "duck",
@@ -5795,7 +5459,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "goose",
@@ -5805,7 +5468,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "swan",
@@ -5815,7 +5477,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pelican ",
@@ -5825,7 +5486,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "turkey",
@@ -5835,10 +5495,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -5854,7 +5510,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "canary",
@@ -5872,13 +5527,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "flamingo ",
@@ -5888,7 +5536,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "puffin",
@@ -5898,7 +5545,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "penguin",
@@ -5908,7 +5554,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "ostrich",
@@ -5917,9 +5562,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       {
@@ -5932,7 +5574,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "beak",
@@ -5942,7 +5583,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "feather",
@@ -6010,7 +5650,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "ladybird",
@@ -6020,7 +5659,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "spider",
@@ -6030,7 +5668,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bee",
@@ -6040,7 +5677,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "wasp",
@@ -6050,10 +5686,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -6077,7 +5709,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "beetle",
@@ -6087,7 +5718,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "caterpillar ",
@@ -6097,7 +5727,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "butterfly",
@@ -6107,7 +5736,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "grasshopper",
@@ -6122,10 +5750,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "slug",
@@ -6135,7 +5759,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "snail",
@@ -6145,29 +5768,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -6263,7 +5863,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "astronaut",
@@ -6273,7 +5872,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "telescope",
@@ -6289,12 +5887,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mercury",
@@ -6303,7 +5895,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "venus",
@@ -6312,7 +5903,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "earth",
@@ -6321,7 +5911,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mars",
@@ -6330,7 +5919,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "jupiter",
@@ -6339,7 +5927,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "saturn",
@@ -6348,7 +5935,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "uranus ",
@@ -6357,7 +5943,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "neptune",
@@ -6366,7 +5951,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pluto",
@@ -6384,7 +5968,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "twinkle",
@@ -6393,7 +5976,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sparkle",
@@ -6402,28 +5984,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -8868,7 +8428,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bedroom",
@@ -8876,7 +8435,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "classroom",
@@ -8886,7 +8444,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/classroom_2.png",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sleep ",
@@ -8896,7 +8453,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "work",
@@ -8907,7 +8463,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "dirty",
@@ -8916,7 +8471,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bed",
@@ -8924,8 +8478,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "link",
@@ -8945,7 +8497,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Majlis%20(living%20room%20qatari).jpg",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bathroom",
@@ -8954,7 +8505,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "toilet",
@@ -8963,7 +8513,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "wash",
@@ -8973,7 +8522,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "flush",
@@ -8984,7 +8532,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "clean",
@@ -8995,10 +8542,7 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       { type: "blank", colour: "red" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "link",
@@ -9018,7 +8562,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "soft play room",
@@ -9027,7 +8570,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sensory room",
@@ -9036,7 +8578,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sit",
@@ -9046,7 +8587,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lie",
@@ -9057,7 +8597,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "stand",
@@ -9068,7 +8607,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "winow",
@@ -9076,8 +8614,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -9089,7 +8625,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "park",
@@ -9098,7 +8633,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "corridor ",
@@ -9107,7 +8641,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tidy",
@@ -9118,7 +8651,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "shower",
@@ -9126,7 +8658,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bath",
@@ -9134,7 +8665,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "door",
@@ -9142,9 +8672,7 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       { type: "blank", colour: "red" },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Position",
@@ -9164,7 +8692,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "restaurant",
@@ -9173,7 +8700,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "street",
@@ -9182,7 +8708,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sink",
@@ -9191,7 +8716,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "chair",
@@ -9199,7 +8723,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "table",
@@ -9207,7 +8730,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "curtain",
@@ -9216,8 +8738,6 @@ const expanded = {
         pluralForm: "curtains",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "link",
@@ -9275,8 +8795,6 @@ const expanded = {
         colour: "blue",
       },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "windy",
@@ -9285,7 +8803,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sunny",
@@ -9294,7 +8811,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cloudy",
@@ -9303,7 +8819,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "rainy",
@@ -9312,7 +8827,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "snowy",
@@ -9321,7 +8835,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "slippery",
@@ -9330,7 +8843,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       { type: "blank", colour: "red" },
       { type: "blank" },
       {
@@ -9341,7 +8853,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lightning",
@@ -9350,7 +8861,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "wind",
@@ -9359,7 +8869,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sun",
@@ -9368,7 +8877,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cloud",
@@ -9377,7 +8885,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "rain",
@@ -9386,7 +8893,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "snow",
@@ -9395,7 +8901,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "slip",
@@ -9406,7 +8911,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "frost",
@@ -9426,9 +8930,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sun cream",
@@ -9437,8 +8938,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -9449,7 +8948,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "snowball ",
@@ -9458,13 +8956,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -9483,7 +8974,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "snowman",
@@ -9492,7 +8982,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "dark",
@@ -9503,7 +8992,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "melt",
@@ -9512,7 +9000,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "light",
@@ -9521,10 +9008,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -9537,7 +9020,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sledge",
@@ -9548,7 +9030,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "heavy",
@@ -9557,7 +9038,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "freeze",
@@ -9656,7 +9136,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fire fighter",
@@ -9665,7 +9144,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hospital ",
@@ -9674,7 +9152,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "health centre",
@@ -9683,7 +9160,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "doctor",
@@ -9693,7 +9169,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "nurse",
@@ -9702,7 +9177,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "crossing",
@@ -9711,7 +9185,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "traffic light",
@@ -9721,7 +9194,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sign",
@@ -9739,7 +9211,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "post box",
@@ -9748,7 +9219,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "post person",
@@ -9758,7 +9228,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "farm",
@@ -9767,7 +9236,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "farmer",
@@ -9776,7 +9244,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "vet",
@@ -9786,7 +9253,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pub",
@@ -9796,7 +9262,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "waiter",
@@ -9806,7 +9271,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "train station",
@@ -9824,7 +9288,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "electrician",
@@ -9833,7 +9296,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "carpenter",
@@ -9842,7 +9304,6 @@ const expanded = {
         linkTo: "people",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "optician",
@@ -9851,7 +9312,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "dentist",
@@ -9860,7 +9320,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "library",
@@ -9869,7 +9328,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "church",
@@ -9879,7 +9337,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mosque",
@@ -9889,7 +9346,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "synagogue",
@@ -9907,7 +9363,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bakery",
@@ -9916,7 +9371,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "garage",
@@ -9925,7 +9379,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "shopping centre",
@@ -9934,7 +9387,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bank",
@@ -9943,7 +9395,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "assistant",
@@ -9952,7 +9403,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pray",
@@ -9963,7 +9413,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Quran",
@@ -9972,7 +9421,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bible",
@@ -9990,7 +9438,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "social worker",
@@ -9999,7 +9446,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "gardener",
@@ -10008,7 +9454,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "life guard",
@@ -10017,7 +9462,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "launderette",
@@ -10026,7 +9470,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pharmacy",
@@ -10035,7 +9478,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "petrol station",
@@ -10044,7 +9486,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hotel",
@@ -10053,7 +9494,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hairdresser",
@@ -10460,7 +9900,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Europe.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "United Kingdom",
@@ -10469,7 +9908,6 @@ const expanded = {
         colour: "grey",
         pastForm: "British",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "France",
@@ -10478,7 +9916,6 @@ const expanded = {
         colour: "grey",
         pastForm: "French",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Spain",
@@ -10487,7 +9924,6 @@ const expanded = {
         pastForm: "Spanish",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Italy",
@@ -10496,7 +9932,6 @@ const expanded = {
         pastForm: "Italian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Germany",
@@ -10505,7 +9940,6 @@ const expanded = {
         pastForm: "German",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Poland",
@@ -10514,7 +9948,6 @@ const expanded = {
         pastForm: "Polish",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Greece",
@@ -10523,7 +9956,6 @@ const expanded = {
         pastForm: "Greek",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Turkey",
@@ -10541,7 +9973,6 @@ const expanded = {
         colour: "white",
         pastPronounciation: "African",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Egypt",
@@ -10550,7 +9981,6 @@ const expanded = {
         colour: "grey",
         pastForm: "Egyptian",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Democratic Republic of Congo ",
@@ -10558,7 +9988,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Congo%20Kinshasa.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Nigeria",
@@ -10567,7 +9996,6 @@ const expanded = {
         pastForm: "Nigerian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Zimbabwe",
@@ -10576,7 +10004,6 @@ const expanded = {
         pastForm: "Zimbabwean ",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Sudan",
@@ -10584,7 +10011,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20The%20Sudan.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Tunisia",
@@ -10593,7 +10019,6 @@ const expanded = {
         pastForm: "Tunisian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Libya",
@@ -10602,7 +10027,6 @@ const expanded = {
         pastForm: "Libyan",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Somalia",
@@ -10620,7 +10044,6 @@ const expanded = {
         pastForm: "Asian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Russia",
@@ -10629,7 +10052,6 @@ const expanded = {
         pastForm: "Russian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "China",
@@ -10638,7 +10060,6 @@ const expanded = {
         pastForm: "Chinese",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "India",
@@ -10647,7 +10068,6 @@ const expanded = {
         pastForm: "Indian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Japan",
@@ -10656,7 +10076,6 @@ const expanded = {
         pastForm: "Japanese ",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Philippines",
@@ -10665,7 +10084,6 @@ const expanded = {
         pastForm: "Philippino",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Australia",
@@ -10674,7 +10092,6 @@ const expanded = {
         pastPronounciation: "Australian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "New Zealand",
@@ -10682,7 +10099,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20New%20Zealand.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Indonesia",
@@ -10700,7 +10116,6 @@ const expanded = {
         pastForm: "American",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "USA",
@@ -10708,7 +10123,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/country%20United%20States.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Brazil",
@@ -10717,7 +10131,6 @@ const expanded = {
         pastForm: "Brazilian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Canada",
@@ -10726,7 +10139,6 @@ const expanded = {
         pastForm: "Canadian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Argentina",
@@ -10735,7 +10147,6 @@ const expanded = {
         pastForm: "Argentinan",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Mexico",
@@ -10744,7 +10155,6 @@ const expanded = {
         pastForm: "Mexican",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Caribbean ",
@@ -10752,7 +10162,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sea%20conch_1.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Chile",
@@ -10762,7 +10171,6 @@ const expanded = {
         pastForm: "Chillian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Peru",
@@ -10779,7 +10187,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Saudi%20Arabia.svg",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Pakistan",
@@ -10787,7 +10194,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Pakistan.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Afganistan",
@@ -10795,7 +10201,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Afghanistan.png",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Syria",
@@ -10804,7 +10209,6 @@ const expanded = {
         pastForm: "Syrian",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Iraq",
@@ -10813,7 +10217,6 @@ const expanded = {
         pastForm: "Iraqi",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "North",
@@ -10821,7 +10224,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/North.png",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "East",
@@ -10829,7 +10231,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/East.png",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "South",
@@ -10837,7 +10238,6 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/South.png",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "West",
@@ -10919,7 +10319,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
       {
         type: "link",
         displayName: "Drinks",
@@ -10928,7 +10327,6 @@ const expanded = {
         linkTo: "expanded-food-drinks",
         colour: "linkColour",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "water",
@@ -10938,9 +10336,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/drop%20of%20water.png",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       {
@@ -10953,7 +10348,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "spread",
@@ -10964,7 +10358,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pan",
@@ -10974,7 +10367,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bowl",
@@ -10989,10 +10381,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pack up",
@@ -11001,7 +10389,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tin",
@@ -11011,7 +10398,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "peel",
@@ -11022,7 +10408,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fry",
@@ -11033,7 +10418,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "plate",
@@ -11052,7 +10436,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sweet",
@@ -11060,7 +10443,6 @@ const expanded = {
         colour: "blue",
         iconName: "sweet",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "salty",
@@ -11069,8 +10451,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -11081,7 +10461,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "boil",
@@ -11092,7 +10471,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "microwave",
@@ -11101,7 +10479,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "chop",
@@ -11112,7 +10489,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cut%20up.png.variant-dark.png",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "spoon",
@@ -11130,7 +10506,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "burn",
@@ -11140,7 +10515,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "favourite",
@@ -11148,7 +10522,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "raw",
@@ -11157,7 +10530,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bottle",
@@ -11167,7 +10539,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "kettle",
@@ -11177,7 +10548,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hob",
@@ -11187,7 +10557,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mix",
@@ -11199,7 +10568,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/stir%20mix%20,%20to.svg.varianted-skin.svg",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fork",
@@ -11218,7 +10586,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lunch",
@@ -11227,7 +10594,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tea",
@@ -11236,7 +10602,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "snack",
@@ -11245,7 +10610,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "jar",
@@ -11255,7 +10619,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "toaster",
@@ -11265,7 +10628,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "oven",
@@ -11276,7 +10638,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cook",
@@ -11286,7 +10647,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "knife",
@@ -11374,7 +10734,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "apricot",
@@ -11384,7 +10743,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "peach",
@@ -11395,7 +10753,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "plum",
@@ -11405,7 +10762,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pineapple",
@@ -11416,7 +10772,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pomegranate",
@@ -11426,7 +10781,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lemon",
@@ -11435,7 +10789,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lime",
@@ -11445,7 +10798,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "date",
@@ -11465,7 +10817,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cherry",
@@ -11474,7 +10825,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "raspberry ",
@@ -11483,7 +10833,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "blueberry",
@@ -11493,7 +10842,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "kiwi",
@@ -11503,7 +10851,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mango",
@@ -11513,7 +10860,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "melon",
@@ -11523,7 +10869,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "grape",
@@ -11533,7 +10878,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "raisin",
@@ -11565,23 +10909,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pip",
@@ -11590,7 +10917,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "juicy",
@@ -11599,7 +10925,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sour",
@@ -11608,11 +10933,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -11673,7 +10993,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cabbage",
@@ -11684,7 +11003,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cauliflower",
@@ -11695,7 +11013,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "broccoli",
@@ -11703,7 +11020,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pea",
@@ -11712,7 +11028,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bean",
@@ -11721,7 +11036,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "onion",
@@ -11732,7 +11046,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "potato",
@@ -11741,7 +11054,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "garlic",
@@ -11760,7 +11072,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pepper",
@@ -11770,7 +11081,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "chilli",
@@ -11780,7 +11090,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cucumber",
@@ -11790,7 +11099,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "leek",
@@ -11800,7 +11108,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "spinach",
@@ -11809,7 +11116,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sprout",
@@ -11819,7 +11125,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "beetroot",
@@ -11828,7 +11133,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "corn",
@@ -11846,7 +11150,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "aubergine",
@@ -11855,7 +11158,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pumpkin",
@@ -11864,7 +11166,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "butternut squash",
@@ -11873,7 +11174,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "turnip",
@@ -11897,18 +11197,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "herb",
@@ -11917,7 +11205,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "spicy",
@@ -11926,13 +11213,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -12034,7 +11314,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bread",
@@ -12043,7 +11322,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "toast",
@@ -12054,7 +11332,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "wrap",
@@ -12065,7 +11342,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "roll",
@@ -12076,7 +11352,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cereal",
@@ -12085,7 +11360,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "roast potato",
@@ -12095,7 +11369,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bagel",
@@ -12105,7 +11378,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "nacho",
@@ -12125,7 +11397,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "chapatti",
@@ -12134,7 +11405,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "flour",
@@ -12143,7 +11413,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "gluten free",
@@ -12152,7 +11421,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "couscous",
@@ -12161,7 +11429,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "quinoa",
@@ -12170,9 +11437,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -12186,7 +11450,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "nut",
@@ -12196,7 +11459,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lentils",
@@ -12205,28 +11467,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -12293,7 +11533,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "chicken",
@@ -12302,7 +11541,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pork",
@@ -12311,7 +11549,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "beef",
@@ -12320,7 +11557,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lamb",
@@ -12329,7 +11565,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "turkey",
@@ -12338,7 +11573,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fish",
@@ -12347,7 +11581,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tuna",
@@ -12356,7 +11589,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "salmon",
@@ -12375,7 +11607,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "ham",
@@ -12384,7 +11615,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bacon",
@@ -12393,7 +11623,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "patty",
@@ -12402,7 +11631,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "nugget",
@@ -12412,7 +11640,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fish finger",
@@ -12422,9 +11649,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -12439,7 +11663,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "milk",
@@ -12449,7 +11672,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cream",
@@ -12460,7 +11682,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cheese",
@@ -12469,7 +11690,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cream cheese",
@@ -12478,7 +11698,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "yogurt",
@@ -12492,9 +11711,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tofu",
@@ -12503,7 +11719,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "soy",
@@ -12512,7 +11727,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "legumes",
@@ -12521,20 +11735,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -12642,7 +11842,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "dahl ",
@@ -12651,7 +11850,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pakora",
@@ -12661,7 +11859,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "roll",
@@ -12670,7 +11867,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tandoori ",
@@ -12679,7 +11875,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "kebab",
@@ -12689,7 +11884,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "prawn cracker",
@@ -12699,7 +11893,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hot dog",
@@ -12711,7 +11904,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mac and cheese ",
@@ -12720,7 +11912,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bologese ",
@@ -12729,7 +11920,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lasagna",
@@ -12738,7 +11928,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "meatball",
@@ -12748,7 +11937,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pizza",
@@ -12758,7 +11946,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "paella",
@@ -12767,7 +11954,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pho",
@@ -12776,7 +11962,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pad thai ",
@@ -12785,7 +11970,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sushi",
@@ -12803,7 +11987,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "porridge",
@@ -12812,7 +11995,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "rice krispies ",
@@ -12821,7 +12003,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "museli",
@@ -12830,7 +12011,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "corn flakes",
@@ -12839,7 +12019,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "wheatabix ",
@@ -12848,7 +12027,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pancake",
@@ -12858,7 +12036,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "waffle",
@@ -12868,7 +12045,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "dumpling",
@@ -12888,7 +12064,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "fajita",
@@ -12898,7 +12073,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "burrito",
@@ -12908,7 +12082,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "taco",
@@ -12918,7 +12091,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "flan",
@@ -12927,7 +12099,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pasty",
@@ -12936,7 +12107,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "coleslaw",
@@ -12945,7 +12115,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Yorkshire pudding",
@@ -12954,7 +12123,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pastry",
@@ -12965,7 +12133,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank", colour: "orange" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bruschetta",
@@ -12974,13 +12141,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -13366,7 +12526,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "pickle",
@@ -13375,7 +12534,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mustard",
@@ -13384,7 +12542,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mayo",
@@ -13393,7 +12550,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "salad cream",
@@ -13402,7 +12558,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "salsa",
@@ -13411,7 +12566,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hummus ",
@@ -13420,7 +12574,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hot sauce",
@@ -13429,7 +12582,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       {
@@ -13442,7 +12594,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "peanut butter",
@@ -13451,7 +12602,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "chocolate spread",
@@ -13460,7 +12610,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "butter",
@@ -13496,28 +12645,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "herb",
@@ -13526,7 +12653,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "spice",
@@ -13539,10 +12665,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "thick",
@@ -13551,8 +12673,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -13810,7 +12930,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "morning",
@@ -13819,7 +12938,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "afternoon",
@@ -13828,7 +12946,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "night",
@@ -13837,7 +12954,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "week",
@@ -13847,7 +12963,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "month",
@@ -13857,7 +12972,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "celebrate",
@@ -13868,8 +12982,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -13889,7 +13001,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hour",
@@ -13899,23 +13010,8 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       { type: "blank", colour: "red" },
-      { type: "blank" },
       { type: "blank", colour: "red" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -13940,7 +13036,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "next",
@@ -13949,7 +13044,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "last",
@@ -13958,7 +13052,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "before",
@@ -13967,7 +13060,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "after",
@@ -13976,7 +13068,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "early ",
@@ -13985,7 +13076,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "late",
@@ -13994,7 +13084,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "soon",
@@ -14003,7 +13092,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "later",
@@ -14021,7 +13109,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "2nd",
@@ -14030,7 +13117,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "3rd",
@@ -14039,15 +13125,12 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "th",
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -14057,7 +13140,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "timer",
@@ -14066,7 +13148,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "watch",
@@ -14075,7 +13156,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "clock",
@@ -14134,11 +13214,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "weekend",
@@ -14151,9 +13226,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Monday",
@@ -14162,7 +13234,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Tuesday",
@@ -14171,7 +13242,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Wednesday",
@@ -14180,7 +13250,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Thursday",
@@ -14189,7 +13258,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Friday",
@@ -14198,7 +13266,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Saturday",
@@ -14207,7 +13274,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Sunday",
@@ -14216,8 +13282,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -14234,12 +13298,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "end",
@@ -14248,24 +13306,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -14343,14 +13383,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "January",
@@ -14359,7 +13391,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "February",
@@ -14368,7 +13399,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "March",
@@ -14377,7 +13407,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "April",
@@ -14386,7 +13415,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "May",
@@ -14395,7 +13423,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "June",
@@ -14404,7 +13431,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "July",
@@ -14413,7 +13439,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "August",
@@ -14422,7 +13447,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "September",
@@ -14440,7 +13464,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "November",
@@ -14449,7 +13472,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "December",
@@ -14458,20 +13480,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -14498,7 +13506,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "spring",
@@ -14507,7 +13514,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "summer",
@@ -14516,7 +13522,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "autumn ",
@@ -14525,7 +13530,6 @@ const expanded = {
         linkTo: "feelings",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "winter",
@@ -14534,10 +13538,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -14638,7 +13638,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Christmas tree",
@@ -14647,7 +13646,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Santa",
@@ -14656,7 +13654,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "elf",
@@ -14666,7 +13663,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bauble",
@@ -14676,7 +13672,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tinsel",
@@ -14685,7 +13680,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "nativity",
@@ -14694,7 +13688,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Jesus",
@@ -14703,7 +13696,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "reindeer",
@@ -14721,7 +13713,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Al-Jumuah",
@@ -14730,7 +13721,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Kaaba",
@@ -14739,7 +13729,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Ramadam",
@@ -14748,7 +13737,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "red",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "eid ",
@@ -14762,10 +13750,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Hallowe’en",
@@ -14774,7 +13758,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "trick or treat",
@@ -14783,7 +13766,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "mask",
@@ -14794,7 +13776,6 @@ const expanded = {
         colour: "orange",
         pastForm: "masked",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "costume",
@@ -14803,7 +13784,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bonfire night",
@@ -14812,7 +13792,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "guy",
@@ -14821,7 +13800,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "firework",
@@ -14831,7 +13809,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "new year",
@@ -14841,7 +13818,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "valentine",
@@ -14860,7 +13836,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hunt",
@@ -14871,7 +13846,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "remembrance",
@@ -14880,7 +13854,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "card",
@@ -14890,19 +13863,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -14985,7 +13945,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "Dad",
@@ -14993,7 +13952,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "teacher",
@@ -15004,7 +13962,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hi",
@@ -15013,7 +13970,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "how are you",
@@ -15022,7 +13978,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bye",
@@ -15031,7 +13986,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "boy",
@@ -15042,7 +13996,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "girl",
@@ -15052,7 +14005,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "child",
@@ -15070,7 +14022,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "brother",
@@ -15078,7 +14029,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "friend",
@@ -15088,7 +14038,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sorry",
@@ -15097,7 +14046,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "please",
@@ -15108,7 +14056,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "thank",
@@ -15119,7 +14066,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "man",
@@ -15129,7 +14075,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "woman",
@@ -15139,7 +14084,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "adult",
@@ -15153,9 +14097,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "yes",
@@ -15164,7 +14105,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "name",
@@ -15173,7 +14113,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "no",
@@ -15186,65 +14125,54 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "me",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "my",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "mine",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "he",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "his",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "him",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "she",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "hers",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "her",
@@ -15258,21 +14186,18 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "ours",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "they",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "their",
@@ -15280,14 +14205,12 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "them",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "your",
@@ -15295,15 +14218,12 @@ const expanded = {
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
       {
         type: "textOnly",
         displayName: "we",
         linkTo: "expanded",
         colour: "yellow",
       },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -16300,7 +15220,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "bored",
@@ -16308,7 +15227,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "excited",
@@ -16316,7 +15234,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tired",
@@ -16324,7 +15241,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "confused",
@@ -16332,7 +15248,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "calm",
@@ -16341,7 +15256,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "lonely",
@@ -16350,7 +15264,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "sweaty",
@@ -16359,7 +15272,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "blue",
       },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       {
@@ -16371,7 +15283,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "cry",
@@ -16381,7 +15292,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "smile",
@@ -16391,7 +15301,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "shout",
@@ -16401,7 +15310,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "tantrum",
@@ -16411,7 +15319,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hug",
@@ -16422,7 +15329,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "kiss",
@@ -16433,7 +15339,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "love",
@@ -16444,7 +15349,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "hate",
@@ -16455,30 +15359,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "green",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -16584,7 +15464,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "but",
@@ -16594,7 +15473,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/buttock.png.varianted-skin.png",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "because",
@@ -16603,7 +15481,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "so",
@@ -16612,7 +15489,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "or",
@@ -16621,7 +15497,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "if",
@@ -16630,7 +15505,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "white",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "with",
@@ -16642,8 +15516,6 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "maybe",
@@ -16652,7 +15524,6 @@ const expanded = {
         colour: "white",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "likely",
@@ -16664,7 +15535,6 @@ const expanded = {
         negativeForm: "unlikely",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "blank",
         displayName: "going to",
@@ -16673,7 +15543,6 @@ const expanded = {
         colour: "grey",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "blank",
         displayName: "be",
@@ -16683,11 +15552,6 @@ const expanded = {
         pastForm: "been",
         linkTo: "expanded",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -16702,14 +15566,6 @@ const expanded = {
       },
       { type: "blank" },
       { type: "blank", linkTo: "expanded", colour: "red" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -16735,7 +15591,6 @@ const expanded = {
         colour: "grey",
         negativeForm: "wasn't",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "were",
@@ -16745,7 +15600,6 @@ const expanded = {
         colour: "grey",
         negativeForm: "weren't",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "going to",
@@ -16754,7 +15608,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "be",
@@ -16764,7 +15617,6 @@ const expanded = {
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "get",
@@ -16773,10 +15625,6 @@ const expanded = {
         colour: "green",
         pastForm: "got",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -16791,7 +15639,6 @@ const expanded = {
         negativeForm: "can't",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "could",
@@ -16801,7 +15648,6 @@ const expanded = {
         negativeForm: "couldn't",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "should",
@@ -16811,7 +15657,6 @@ const expanded = {
         negativeForm: "shouldn't",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "would",
@@ -16821,7 +15666,6 @@ const expanded = {
         negativeForm: "wouldn't",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "might",
@@ -16831,7 +15675,6 @@ const expanded = {
         negativeForm: "mightn't",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "textAndIcon",
         displayName: "must",
@@ -16841,9 +15684,6 @@ const expanded = {
         negativeForm: "mustn't",
         linkTo: "expanded",
       },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },

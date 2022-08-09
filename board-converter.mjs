@@ -16233,22 +16233,18 @@ let expanded = {
   },
 };
 
-
 for (const board in expanded) {
   const currentBoard = expanded[board];
+  let newTiles = []
   if (currentBoard.columns === 9) {
     currentBoard.columns = 10;
-    let newTiles = []
-    let subIndex = 8
     for (let i = 0; i < currentBoard.tiles.length; i++) {
       newTiles.push(currentBoard.tiles[i])
-      if (i % subIndex === 0 && i != 0) {
-        newTiles.push( { type: "blank" } );
-        subIndex++
+      if( i == 8 || i == 17 || i == 26 || i == 35 || i == 44 || i == 53){
+        newTiles.push({type:"blank"})
       }
     }
-    currentBoard.tiles = newTiles
   }
+  if(newTiles.length > 0) currentBoard.tiles = newTiles
 }
-
 console.log(JSON.stringify(expanded));
