@@ -13909,6 +13909,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/relationship.png.varianted-skin.png",
         colour: "linkColour",
+        linkTo: "expanded-people-relationships",
       },
       { type: "blank" },
       {
@@ -14664,7 +14665,13 @@ const expanded = {
     columns: 10,
     path: "expanded ⇾ people ⇾ polite",
     tiles: [
-      { type: "blank" },
+      {
+        type: "link",
+        displayName: "Back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
       {
         type: "textAndIcon",
         displayName: "polite",
