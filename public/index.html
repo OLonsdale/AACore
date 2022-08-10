@@ -267,14 +267,16 @@
       </div>
       <div id="iconTileSettings" class="hidden">
         <div>
-          <label id="iconNameInputLable" for="iconNameInput">Icon Name:</label>
+          <label id="iconNameInputLabel" for="iconNameInput">Icon Name:</label>
         </div>
         <div><input id="iconNameInput" type="text" /></div>
-
         <div>
           <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
         </div>
-        <div><input id="iconLinkInput" type="text" /></div>
+        <div class="displayFlexRow">
+          <div><input id="iconLinkInput" type="text" /></div>
+          <button id="openIconSearchButton" class="inlineSidebarButton">Find</button>
+        </div>
       </div>
 
       <div>
@@ -292,6 +294,21 @@
       </button>
     </div>
 
+    <div id="findIconSidebar" class="sidebar hidden">
+      <button id="backToEditTileButton" class="sidebarButton">
+        Back
+      </button>
+      <h2>Find an icon</h2>
+      <div class="displayFlexRow">
+        <input id="iconSearchBar" type="text">
+        <button id="searchForIcons" type="submit" class="inlineSidebarButton">Search</button>
+      </div>
+      <div id="iconResults" class="flex-grid cols-2">
+
+      </div>
+      <footer>Results from <a href="https://www.opensymbols.org/">opensymbols.org</a></footer>
+    </div>
+
     <div id="aboutSidebar" class="hidden sidebar">
       <button class="sidebarButton closeSidebarButton">Close</button>
       <h2>About</h2>
@@ -304,7 +321,7 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>Beta 12</p>
+      <p>Beta 13</p>
     </div>
 
     <div id="topBar" class="topBar">

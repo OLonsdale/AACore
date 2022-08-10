@@ -226,7 +226,7 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
 
   //actually copy the board, sets attributes
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  customBoards[newName] = boards[oldName];
+  customBoards[newName] = JSON.parse(JSON.stringify(boards[oldName]));
   customBoards[newName].topLevel = true;
   customBoards[newName].customBoard = true;
   delete customBoards[newName].name;
@@ -310,6 +310,7 @@ function closeAllSidebars() {
   createBoardSidebar.classList.add("hidden");
   editTileSidebar.classList.add("hidden");
   aboutSidebar.classList.add("hidden");
+  findIconSidebar.classList.add("hidden")
 }
 
 function showAbout() {
@@ -348,6 +349,54 @@ function showEditTileSidebar() {
   }
   const board = boards[localStorage.getItem("currentBoardName")];
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
+}
+
+function showFindIconSidebar(){
+  findIconSidebar.classList.remove("hidden")
+}
+
+openIconSearchButton.addEventListener("click", () => {
+  closeAllSidebars()
+  iconSearchBar.value = displayNameInput.value
+  if(iconSearchBar.value) {searchForIcons.click()}
+  showFindIconSidebar()
+})
+
+backToEditTileButton.addEventListener("click", ()=> {
+  closeAllSidebars()
+  showEditTileSidebar()
+})
+
+searchForIcons.addEventListener("click", searchIcons)
+
+async function searchIcons(){
+  iconResults.innerHTML = ""
+  let searchTerm = iconSearchBar.value
+  if(!searchTerm) return
+  console.log(`Searching for ${searchTerm}`)
+  let searchResults = await fetch(`https://www.opensymbols.org/api/v1/symbols/search?q=${searchTerm}`)
+  searchResults = await searchResults.json();
+
+  searchResults.forEach(icon => {
+    
+    let element = document.createElement("img")
+    element.classList.add("inlineSidebarButton")
+    element.src = icon.image_url
+    element.width = 75
+    element.height = 75
+
+    element.addEventListener("click", ()=>{
+      iconLinkInput.value = icon.image_url
+      showEditTileSidebar()
+    })
+
+    iconResults.append(element)
+  })
+
+  if(searchResults.length === 0){
+    iconResults.innerHTML="<a></a><b>No Results</b>"
+  }
+  console.log(searchResults)
 }
 
 //hides and shows the sidebar
