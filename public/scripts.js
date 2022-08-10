@@ -349,6 +349,11 @@ function showEditTileSidebar() {
   }
   const board = boards[localStorage.getItem("currentBoardName")];
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
+  
+  //shows icon settings if it should
+  if(tileTypeInput.value === "textAndIcon"){
+    iconTileSettings.classList.remove("hidden")
+  } else iconTileSettings.classList.add("hidden")
 }
 
 function showFindIconSidebar(){

@@ -836,7 +836,7 @@ const standard = {
     ],
   },
 
-  toys: {
+  "standard-toys": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ toys",
@@ -1172,7 +1172,7 @@ const standard = {
     ],
   },
 
-  learn: {
+  "standard-learn": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ learn",
@@ -1532,7 +1532,7 @@ const standard = {
     ],
   },
 
-  topic: {
+  "standard-topic": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ topic",
@@ -1888,7 +1888,7 @@ const standard = {
     ],
   },
 
-  body: {
+  "standard-body": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ body",
@@ -2286,7 +2286,7 @@ const standard = {
     ],
   },
 
-  home: {
+  "standard-home": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ home",
@@ -2797,7 +2797,7 @@ const standard = {
     ],
   },
 
-  food: {
+  "standard-food": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ food",
@@ -3216,7 +3216,7 @@ const standard = {
     ],
   },
 
-  drinks: {
+  "standard-drinks": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ drinks",
@@ -3474,7 +3474,7 @@ const standard = {
     ],
   },
 
-  people: {
+  "standard-people": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ people",
@@ -3785,7 +3785,7 @@ const standard = {
     ],
   },
 
-  feelings: {
+  "standard-feelings": {
     rows: 6,
     columns: 9,
     path: "standard ⇾ feelings",
