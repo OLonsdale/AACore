@@ -57,12 +57,6 @@ let unlockAttempt = [];
 let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete") || true;
 let editMode = false;
 
-//load selected font
-document.documentElement.style.setProperty(
-  "--font",
-  localStorage.getItem("selectedFont")
-);
-
 //change font to selected font in dropdown
 fontSelectionDropdown.addEventListener("change", () => {
   console.log("Font selected");
@@ -180,12 +174,13 @@ function showSidebar() {
     }
   }
 
-  if(customBoardSelectionList.innerHTML != ""){
-    customBoardsHeader.classList.remove("hidden")
-  } else customBoardsHeader.classList.add("hidden")
-  
+  if (customBoardSelectionList.innerHTML != "") {
+    customBoardsHeader.classList.remove("hidden");
+  } else customBoardsHeader.classList.add("hidden");
+
   fontSelectionDropdown.value = localStorage.getItem("selectedFont");
   darkModeCheckbox.checked = JSON.parse(localStorage.getItem("darkTheme"));
+  speakOnAddCheckbox.checked = JSON.parse(localStorage.getItem("speakOnAdd"));
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -250,14 +245,13 @@ function findWord(word) {
   resultsElement.innerHTML = "";
   if (!word) return;
   const results = findPathToWord(word);
-  let outOfSetResults = false
+  let outOfSetResults = false;
   results.forEach((result) => {
     if (result.includes(localStorage.getItem("currentSet"))) {
       const text = document.createElement("p");
       text.innerHTML = `<b>${result}</b>`;
       resultsElement.append(text);
-    }
-    else outOfSetResults = true
+    } else outOfSetResults = true;
   });
   if (results.length === 0 && findWordInput.value) {
     console.log("no results");
@@ -310,7 +304,7 @@ function closeAllSidebars() {
   createBoardSidebar.classList.add("hidden");
   editTileSidebar.classList.add("hidden");
   aboutSidebar.classList.add("hidden");
-  findIconSidebar.classList.add("hidden")
+  findIconSidebar.classList.add("hidden");
 }
 
 function showAbout() {
@@ -349,60 +343,64 @@ function showEditTileSidebar() {
   }
   const board = boards[localStorage.getItem("currentBoardName")];
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
-  
+
   //shows icon settings if it should
-  if(tileTypeInput.value === "textAndIcon"){
-    iconTileSettings.classList.remove("hidden")
-  } else iconTileSettings.classList.add("hidden")
+  if (tileTypeInput.value === "textAndIcon") {
+    iconTileSettings.classList.remove("hidden");
+  } else iconTileSettings.classList.add("hidden");
 }
 
-function showFindIconSidebar(){
-  findIconSidebar.classList.remove("hidden")
+function showFindIconSidebar() {
+  findIconSidebar.classList.remove("hidden");
 }
 
 openIconSearchButton.addEventListener("click", () => {
-  closeAllSidebars()
-  iconSearchBar.value = displayNameInput.value
-  if(iconSearchBar.value) {searchForIcons.click()}
-  showFindIconSidebar()
-})
+  closeAllSidebars();
+  iconSearchBar.value = displayNameInput.value;
+  if (iconSearchBar.value) {
+    searchForIcons.click();
+  }
+  showFindIconSidebar();
+});
 
-backToEditTileButton.addEventListener("click", ()=> {
-  closeAllSidebars()
-  showEditTileSidebar()
-})
+backToEditTileButton.addEventListener("click", () => {
+  closeAllSidebars();
+  showEditTileSidebar();
+});
 
-searchForIcons.addEventListener("click", searchIcons)
+searchForIcons.addEventListener("click", searchIcons);
 
-async function searchIcons(){
-  iconResults.innerHTML = ""
-  let searchTerm = iconSearchBar.value
-  if(!searchTerm) return
-  console.log(`Searching for ${searchTerm}`)
-  let searchResults = await fetch(`https://www.opensymbols.org/api/v1/symbols/search?q=${searchTerm}`)
+async function searchIcons() {
+  iconResults.innerHTML = "";
+  let searchTerm = iconSearchBar.value;
+  if (!searchTerm) return;
+  console.log(`Searching for ${searchTerm}`);
+  let searchResults = await fetch(
+    `https://www.opensymbols.org/api/v1/symbols/search?q=${searchTerm}`
+  );
   searchResults = await searchResults.json();
 
-  searchResults.forEach(icon => {
-    
-    let element = document.createElement("img")
-    element.classList.add("inlineSidebarButton")
-    element.src = icon.image_url
-    element.width = 75
-    element.height = 75
+  searchResults.forEach((icon) => {
+    let element = document.createElement("img");
+    element.classList.add("inlineSidebarButton");
+    element.src = icon.image_url;
+    element.width = 75;
+    element.height = 75;
 
-    element.addEventListener("click", ()=>{
-      iconLinkInput.value = icon.image_url
-      showEditTileSidebar()
-    })
+    element.addEventListener("click", () => {
+      iconLinkInput.value = icon.image_url;
+      showEditTileSidebar();
+    });
 
-    iconResults.append(element)
-  })
+    iconResults.append(element);
+  });
 
-  if(searchResults.length === 0){
-    iconResults.innerHTML="<a></a><b>No Results</b>"
+  if (searchResults.length === 0) {
+    iconResults.innerHTML = "<a></a><b>No Results</b>";
   }
-  console.log(searchResults)
 }
+
+
 
 //hides and shows the sidebar
 sidebarButton.addEventListener("click", showSidebar);
@@ -445,8 +443,8 @@ importInput.addEventListener("change", (ev) => {
       }
       JSON.parse(event.target.result);
     } catch (error) {
-      alert("Invalid File");
-      console.error("Attempted to load invalid file");
+      alert("This file could not be read");
+      console.error("Attempted to load invalid file", error);
     }
 
     const newBoard = JSON.parse(event.target.result);
@@ -462,6 +460,34 @@ importInput.addEventListener("change", (ev) => {
 
   reader.readAsText(fileList[0]);
 });
+
+goOfflineButton.addEventListener("click", drawAllBoards)
+function drawAllBoards() {
+  const boardNames = Object.keys(boards);
+
+  if (
+    !confirm(
+      `This will load all boards one at a time, with a two-second gap, to allow all of the icons to load for offline use. It will take around ${Math.floor(
+        (boardNames.length * 2) / 60
+      )} minuets to complete.`
+    )
+  )
+    return;
+
+  let i = 0;
+
+  const loop = setInterval(() => {
+    if (i != boardNames.length) {
+      drawBoard(boardNames[i]);
+      console.log(boardNames[i]);
+      i++;
+    } else {
+      console.log("Done");
+      alert("Preloading completed");
+      clearInterval(loop);
+    }
+  }, 2000);
+}
 
 function createNewBoard() {
   const boardName = nameInput.value;
@@ -637,20 +663,17 @@ function drawBoard(name) {
 
   sizeGrid();
 
+  let output = document.createDocumentFragment();
+
   //for each tile
   board.tiles.forEach((tile) => {
     //create button
     const tileElement = document.createElement("button");
-
-    // if(tile.type === "blank"){
-    //   tileElement.classList.add("blank-item");
-    // } else {
     tileElement.classList.add("item");
-    // }
 
     tileElement.id = board.tiles.indexOf(tile);
-    const li = document.createElement("li");
 
+    //open and populate edit tile menu when clicked in edit mode
     tileElement.addEventListener("click", () => {
       if (editMode) {
         selectedTileNumber.value = tileElement.id;
@@ -673,66 +696,57 @@ function drawBoard(name) {
       }
     });
 
-    //if blank, just add streight to board and return
-    if (tile.type === "blank") {
-      li.append(tileElement);
-      boardSection.append(li);
-      return;
-    }
+    if (tile.type !== "blank") {
+      //Colour
+      if (tile.colour) {
+        tileElement.classList.add(tile.colour);
+      }
+      //Tile Label
+      if (tile.displayName) {
+        tileElement.innerHTML = `<label class="tileLabel">${tile.displayName}</label>`;
+      }
 
-    //if not blank, add what is common to all tiles
-    tileElement.classList.add(tile.colour); //sets colour
-    tileElement.append(tile.displayName);
+      //Tile image
+      if (tile.iconLink) {
+        tileElement.innerHTML += `<img src="${tile.iconLink}" class="icon">`;
+      } else if (tile.iconName) {
+        tileElement.innerHTML += `<img src="./resouces/icons/${tile.iconName}.webp" class="icon">`;
+      } else if (tile.displayName) {
+        tileElement.classList.add("largeText");
+      }
 
-    //then add conditional elements. Avoiding elses for clarity.
-    if (tile.type !== "textOnly") {
-      const image = new Image();
-      image.src = tile.iconLink || `./resouces/icons/${tile.iconName}.webp`;
-      image.classList.add("icon");
-      tileElement.append(image);
-    }
-
-    if (tile.type === "grammarMarker") {
-      if (editMode) return;
       tileElement.addEventListener("click", () => {
-        applyGrammarMarker(tile.internalName);
-      });
-      li.append(tileElement);
-      boardSection.append(li);
-      return;
-    }
+        if (editMode) return;
 
-    if (tile.type === "textOnly") {
-      tileElement.classList.add("largeText");
-    }
-
-    if (tile.linkTo) {
-      tileElement.addEventListener("click", () => {
-        if (!editMode) {
-          drawBoard(tile.linkTo);
+        if (tile.type === "grammarMarker") {
+          applyGrammarMarker(tile.internalName);
+          return;
         }
-      });
-    }
 
-    if (tile.type === "link") {
-      tileElement.classList.add("linkItem");
-    }
-
-    if (tile.type !== "link") {
-      tileElement.addEventListener("click", () => {
-        if (!editMode) {
+        //annoying. draws board and doesn't speak if link,
+        //but if not link, checks again after speaking to return from sub-boards to
+        if (tile.type === "link") {
+          drawBoard(tile.linkTo);
+        } else {
+          //add to sentence and speak if desired
           sentence.push(tile);
           updateSentence();
-          const word = tile.pronounciation || tile.displayName;
-          speak(word);
+          if (JSON.parse(localStorage.getItem("speakOnAdd"))) {
+            const word = tile.pronounciation || tile.displayName;
+            speak(word);
+          }
+          if (tile.linkTo) drawBoard(tile.linkTo);
         }
       });
     }
 
-    //adds it to dom
+    //adds it to output
+    const li = document.createElement("li");
     li.append(tileElement);
-    boardSection.append(li);
+    output.appendChild(li);
   });
+  //appends output to the dom
+  boardSection.appendChild(output);
 }
 
 lockSidebarButton.addEventListener("click", () => {
@@ -890,6 +904,11 @@ darkModeCheckbox.addEventListener("click", () => {
   loadTheme();
 });
 
+speakOnAddCheckbox.addEventListener("click", () => {
+  localStorage.setItem("speakOnAdd", JSON.stringify(speakOnAddCheckbox.checked));
+  loadTheme();
+});
+
 //lock screen generates four random numbers between 0 and 100
 //and randomly selects ascending or descending order
 //the numbers are put into buttons, and must be clicked in the order chosen
@@ -931,7 +950,7 @@ function showLockScreen() {
     button.textContent = number;
     button.classList.add("sidebarButton");
 
-    //the logic for the unlocking is contained in the event listner and the global variables at the top
+    //the logic for the unlocking is contained in the event listener and the global variables at the top
     //disables the button when clicked, and adds the value to "unlock attempt"
     //if the length of unlock attempt is 4, check sort the "numbers" array containing the password,
     //based on the randomly chosen method, asc/desc,
@@ -956,7 +975,7 @@ function showLockScreen() {
           sidebarLocked = false;
           localStorage.setItem("sidebarLocked", false);
           showSidebar();
-        } else alert("wrong order, try again");
+        } else alert("That was not correct, please try again");
         closePasswordButton.click(); //dirty
       }
     });
@@ -1002,6 +1021,10 @@ if (!localStorage.getItem("sentenceAutoDelete")) {
   localStorage.setItem("sentenceAutoDelete", true);
 }
 
+if (!localStorage.getItem("speakOnAdd")) {
+  localStorage.setItem("speakOnAdd", true);
+}
+
 if (!localStorage.getItem("firstVisit")) {
   localStorage.setItem("firstVisit", false);
   showAbout();
@@ -1018,6 +1041,12 @@ if (!localStorage.getItem("darkTheme")) {
     console.log("set light theme as default");
   }
 }
+
+//load selected font
+document.documentElement.style.setProperty(
+  "--font",
+  localStorage.getItem("selectedFont")
+);
 
 //loads board from localstorage to keep same board on page refresh
 drawBoard(localStorage.getItem("currentBoardName"));

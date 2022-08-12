@@ -66,10 +66,6 @@ body.dark {
   display: none !important;
 }
 
-.linkItem {
-  border-radius: 15px;
-}
-
 .largeText {
   font-size: xx-large;
 }
@@ -294,6 +290,7 @@ select {
 
 .linkColour {
   background-color: darkcyan;
+  border-radius: 15px;
 }
 
 .editMode{
