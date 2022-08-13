@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#faebd7"/>
-
+    <meta name="name" contents="AACore" />
+    <meta name="application-name" contents="AACore" />
+    <meta name="description" contents="A free and open-source progressive web app for Augmentative and Alternative Communication" />
+    <meta name="author" contents="Beth Lonsdale, Oliver Lonsdale" />
+    <meta name="keywords" contents="AACore, app, AAC, TTS, accessibility, communication, free, online, offline, open-souce" />
+    
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="./resouces/favicon_16px.png" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="./resouces/favicon-ios.png" />
@@ -73,14 +76,18 @@
           <input type="checkbox" name="editMode" id="editModeCheckbox" />
         </div>
 
-        <button class="inlineSidebarButton" id="goOfflineButton">Prepare to go offline</button>
-  
+        <button class="sidebarButton" id="goOfflineButton">Prepare to go offline</button>
+          
         <div id="editBoardArea" class="hidden">
           <h3>Edit Board:</h3>
           <br>
           <div>
             <label for="duplicateCurrentBoardButton">Duplicate Board</label>
             <button id="duplicateCurrentBoardButton" class="sidebarButton">Duplicate current board</button>
+          </div>
+          <div>
+            <label for="duplicateCurrentSetButton">Duplicate Set</label>
+            <button id="duplicateCurrentSetButton" class="sidebarButton">Duplicate current set</button>
           </div>
           <br>
           <div>
@@ -330,7 +337,7 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>Beta 15</p>
+      <p>Beta 17</p>
     </div>
 
     <div id="topBar" class="topBar">

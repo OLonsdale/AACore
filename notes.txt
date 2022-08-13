@@ -1,5 +1,6 @@
 In WSL:
 mogrify -format webp *.png
+                TO    .FROM
 
 firebase deploy
 firebase hosting:channel:deploy aacore-beta
@@ -8,7 +9,7 @@ ctrl + alt + s -> w
 Update service worker before deploying
 
 open symbols api search cheeky
-https://www.opensymbols.org/api/v1/symbols/search?q=zzzz
+https://www.opensymbols.org/api/v1/symbols/search?q=[Query]
 
 Clear old service worker (all goes in sw.js):
 

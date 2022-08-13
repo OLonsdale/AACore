@@ -234,6 +234,49 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
   showSidebar();
 });
 
+duplicateCurrentSetButton.addEventListener("click", duplicateSet)
+
+function duplicateSet() {
+  let current = localStorage.getItem("currentBoardName");
+  if (
+    !(current === "expanded" || current === "standard")
+  ) {
+    alert("Please select (from the sidebar) the set you want to duplicate");
+    return;
+  }
+  let newName = window.prompt("Enter the new prefix for the set", "new");
+  if (
+    !newName ||
+    newName === "expanded" ||
+    newName === "standard"
+  ) {
+    alert("Please enter a new (unique) prefix for the set");
+    return
+  }
+
+  let newSet = JSON.stringify(standard);
+  newSet = newSet.replaceAll(current, newName);
+  newSet = JSON.parse(newSet);
+  newName = `${newName}-${current}`;
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+  
+  for (const board in newSet) {
+    if (Object.hasOwnProperty.call(newSet, board)) {
+      const currentBoard = newSet[board];
+      if(currentBoard.name) delete currentBoard.name
+      currentBoard.customBoard = true;
+      
+    }
+  }
+  
+  customBoards = {...customBoards, ...newSet};
+  console.log(customBoards);
+  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+  blendBoards()
+  closeAllSidebars()
+  showSidebar()
+}
+
 findWordInput.addEventListener("input", () => {
   findWord(findWordInput.value);
 });
@@ -250,6 +293,9 @@ function findWord(word) {
     if (result.includes(localStorage.getItem("currentSet"))) {
       const text = document.createElement("p");
       text.innerHTML = `<b>${result}</b>`;
+      // text.addEventListener("click", () => {
+      //   drawBoard()
+      // })
       resultsElement.append(text);
     } else outOfSetResults = true;
   });
@@ -400,8 +446,6 @@ async function searchIcons() {
   }
 }
 
-
-
 //hides and shows the sidebar
 sidebarButton.addEventListener("click", showSidebar);
 
@@ -461,15 +505,17 @@ importInput.addEventListener("change", (ev) => {
   reader.readAsText(fileList[0]);
 });
 
-goOfflineButton.addEventListener("click", drawAllBoards)
+goOfflineButton.addEventListener("click", drawAllBoards);
 function drawAllBoards() {
   const boardNames = Object.keys(boards);
 
+  // It will take around ${Math.floor(
+  //   (boardNames.length * 2) / 60
+  // )} minutes to complete.
+
   if (
     !confirm(
-      `This will load all boards one at a time, with a two-second gap, to allow all of the icons to load for offline use. It will take around ${Math.floor(
-        (boardNames.length * 2) / 60
-      )} minuets to complete.`
+      `This will load all boards to allow all of the icons to load for offline use.`
     )
   )
     return;
@@ -486,7 +532,7 @@ function drawAllBoards() {
       alert("Preloading completed");
       clearInterval(loop);
     }
-  }, 2000);
+  }, 200);
 }
 
 function createNewBoard() {
@@ -905,7 +951,10 @@ darkModeCheckbox.addEventListener("click", () => {
 });
 
 speakOnAddCheckbox.addEventListener("click", () => {
-  localStorage.setItem("speakOnAdd", JSON.stringify(speakOnAddCheckbox.checked));
+  localStorage.setItem(
+    "speakOnAdd",
+    JSON.stringify(speakOnAddCheckbox.checked)
+  );
   loadTheme();
 });
 
