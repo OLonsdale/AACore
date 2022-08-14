@@ -4,7 +4,7 @@ const initial = {
     topLevel: true,
     rows: 3,
     columns: 6,
-    path:"initial",
+    path:["initial"],
     tiles: [
       {
         type: "textAndIcon",

@@ -61,6 +61,12 @@ body.dark {
   pointer-events: none;
 }
 
+.searchIcon {
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+}
+
 
 .hidden {
   display: none !important;
@@ -174,7 +180,16 @@ select {
   gap: 5px;
 }
 
+.grid {
+  display: grid;
+}
+
 /* Cols */
+
+/* Not used for boards */
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .cols-3 {
   grid-template-columns: repeat(3, var(--grid-size));
@@ -295,4 +310,8 @@ select {
 
 .editMode{
   background-color: rgb(153, 71, 149);
+}
+
+.dimmed {
+  filter: brightness(50%) !important;
 }

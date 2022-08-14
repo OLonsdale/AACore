@@ -3,6 +3,7 @@
 import { expanded } from "./board-sets/expanded.js";
 import { initial } from "./board-sets/initial.js";
 import { standard } from "./board-sets/standard.js";
+import { ttsKeyboard } from "./board-sets/tts-keyboard.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
 let boards = {};
@@ -35,6 +36,7 @@ function blendBoards() {
     ...initial,
     ...standard,
     ...expanded,
+    ...ttsKeyboard,
     ...customBoards,
   };
 }
@@ -56,6 +58,8 @@ let unlockAttempt = [];
 
 let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete") || true;
 let editMode = false;
+
+let activeSearch;
 
 //change font to selected font in dropdown
 fontSelectionDropdown.addEventListener("change", () => {
@@ -234,24 +238,18 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
   showSidebar();
 });
 
-duplicateCurrentSetButton.addEventListener("click", duplicateSet)
+duplicateCurrentSetButton.addEventListener("click", duplicateSet);
 
 function duplicateSet() {
   let current = localStorage.getItem("currentBoardName");
-  if (
-    !(current === "expanded" || current === "standard")
-  ) {
+  if (!(current === "expanded" || current === "standard")) {
     alert("Please select (from the sidebar) the set you want to duplicate");
     return;
   }
   let newName = window.prompt("Enter the new prefix for the set", "new");
-  if (
-    !newName ||
-    newName === "expanded" ||
-    newName === "standard"
-  ) {
+  if (!newName || newName === "expanded" || newName === "standard") {
     alert("Please enter a new (unique) prefix for the set");
-    return
+    return;
   }
 
   let newSet = JSON.stringify(standard);
@@ -259,22 +257,21 @@ function duplicateSet() {
   newSet = JSON.parse(newSet);
   newName = `${newName}-${current}`;
   let customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  
+
   for (const board in newSet) {
     if (Object.hasOwnProperty.call(newSet, board)) {
       const currentBoard = newSet[board];
-      if(currentBoard.name) delete currentBoard.name
+      if (currentBoard.name) delete currentBoard.name;
       currentBoard.customBoard = true;
-      
     }
   }
-  
-  customBoards = {...customBoards, ...newSet};
+
+  customBoards = { ...customBoards, ...newSet };
   console.log(customBoards);
-  localStorage.setItem("customBoards", JSON.stringify(customBoards))
-  blendBoards()
-  closeAllSidebars()
-  showSidebar()
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
+  blendBoards();
+  closeAllSidebars();
+  showSidebar();
 }
 
 findWordInput.addEventListener("input", () => {
@@ -283,39 +280,54 @@ findWordInput.addEventListener("input", () => {
 
 //displays the route to a given word from within the active set
 function findWord(word) {
-  console.log("searched");
   const resultsElement = document.getElementById("wordSearchResultsElement");
   resultsElement.innerHTML = "";
   if (!word) return;
+
   const results = findPathToWord(word);
+
   let outOfSetResults = false;
+
   results.forEach((result) => {
-    if (result.includes(localStorage.getItem("currentSet"))) {
-      const text = document.createElement("p");
-      text.innerHTML = `<b>${result}</b>`;
-      // text.addEventListener("click", () => {
-      //   drawBoard()
-      // })
-      resultsElement.append(text);
+    if (result.path.includes(localStorage.getItem("currentSet"))) {
+      let tile = document.createElement("button");
+      tile.classList.add("inlineSidebarButton");
+      let img = document.createElement("img");
+      img.src =
+        result.target.iconLink ||
+        `./resouces/icons/${result.target.iconName}.webp`;
+      img.classList.add("searchIcon");
+      tile.title = result.path.join("->");
+      tile.append(img);
+
+      tile.addEventListener("click", () => {
+        activeSearch = result;
+        drawBoard(localStorage.getItem("currentBoardName"));
+        closeAllSidebars()
+      });
+
+      resultsElement.classList.add("cols-2");
+      resultsElement.append(tile);
     } else outOfSetResults = true;
   });
   if (results.length === 0 && findWordInput.value) {
-    console.log("no results");
     const text = document.createElement("p");
-    text.innerHTML = `<b>No Results</b>`;
+    text.innerHTML = `<b>No results</b>`;
+    resultsElement.classList.remove("cols-2");
     resultsElement.append(text);
   }
+
   if (outOfSetResults && resultsElement.innerHTML === "") {
-    console.log("no results in set");
     const text = document.createElement("p");
-    text.innerHTML = `<b>No Results in current set</b>`;
+    text.innerHTML = `<b>No results in current set</b>`;
+    resultsElement.classList.remove("cols-2");
     resultsElement.append(text);
   }
 }
 
 //generates an array of paths to the given word
 function findPathToWord(word) {
-  const paths = [];
+  const routes = [];
 
   for (const board in boards) {
     //don't even know what this check's for, it's just added by the IDE so I left it in
@@ -324,20 +336,23 @@ function findPathToWord(word) {
     if (
       (board === "expanded-am" || board === "standard-am") &&
       (word != "am" || word != "Am")
-    ) {
+    )
       continue;
-    }
 
     const currentBoard = boards[board];
 
     currentBoard.tiles.forEach((tile) => {
-      if (!tile.displayName || tile.type === "link") return;
+      if (!tile.displayName || tile.type === "link" || tile.type === "blank")
+        return;
       if (tile.displayName.toLowerCase() === word.toLowerCase()) {
-        paths.push(`${currentBoard.path} ⇨ ${word.toLowerCase()}`);
+        routes.push({
+          target: tile,
+          path: currentBoard.path,
+        });
       }
     });
   }
-  return paths;
+  return routes;
 }
 
 clearWordSearchButton.addEventListener("click", () => {
@@ -711,6 +726,8 @@ function drawBoard(name) {
 
   let output = document.createDocumentFragment();
 
+  let hasTarget = false
+
   //for each tile
   board.tiles.forEach((tile) => {
     //create button
@@ -741,6 +758,27 @@ function drawBoard(name) {
         showEditTileSidebar();
       }
     });
+    
+    
+
+    if (activeSearch) {
+      tileElement.classList.add("dimmed");
+
+
+      if(tile.displayName){
+        if (activeSearch.path.includes(tile.displayName.toLowerCase()) && tile.type === "link"){
+          tileElement.classList.remove("dimmed")
+          hasTarget = true
+        }
+  
+        if(activeSearch.target.displayName.toLowerCase() === tile.displayName.toLowerCase()) {
+          tileElement.classList.remove("dimmed");
+          hasTarget = true
+        }
+      }
+
+    }
+  
 
     if (tile.type !== "blank") {
       //Colour
@@ -777,6 +815,7 @@ function drawBoard(name) {
           //add to sentence and speak if desired
           sentence.push(tile);
           updateSentence();
+          activeSearch = ""
           if (JSON.parse(localStorage.getItem("speakOnAdd"))) {
             const word = tile.pronounciation || tile.displayName;
             speak(word);
@@ -791,8 +830,14 @@ function drawBoard(name) {
     li.append(tileElement);
     output.appendChild(li);
   });
+
   //appends output to the dom
   boardSection.appendChild(output);
+
+  if(activeSearch && !hasTarget){
+    document.getElementById("0").classList.remove("dimmed")
+  }
+
 }
 
 lockSidebarButton.addEventListener("click", () => {

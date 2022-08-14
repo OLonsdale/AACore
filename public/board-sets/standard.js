@@ -4,7 +4,7 @@ const standard = {
     topLevel: true,
     rows: 6,
     columns: 9,
-    path: "standard",
+    path: ["standard"],
     tiles: [
       {
         type: "link",
@@ -400,7 +400,7 @@ const standard = {
   "standard-am": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ I",
+    path: ["standard", "I"],
     tiles: [
       {
         type: "link",
@@ -839,7 +839,7 @@ const standard = {
   "standard-toys": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ toys",
+    path: ["standard", "toys"],
     tiles: [
       {
         type: "link",
@@ -1175,7 +1175,7 @@ const standard = {
   "standard-learn": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ learn",
+    path: ["standard", "learn"],
     tiles: [
       {
         type: "link",
@@ -1535,7 +1535,7 @@ const standard = {
   "standard-topic": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ topic",
+    path: ["standard", "topic"],
     tiles: [
       {
         type: "link",
@@ -1891,7 +1891,7 @@ const standard = {
   "standard-body": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ body",
+    path: ["standard", "body"],
     tiles: [
       {
         type: "link",
@@ -2289,7 +2289,7 @@ const standard = {
   "standard-home": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ home",
+    path: ["standard", "home"],
     tiles: [
       {
         type: "link",
@@ -2730,7 +2730,7 @@ const standard = {
   "standard-food": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ food",
+    path: ["standard", "food"],
     tiles: [
       {
         type: "link",
@@ -3149,7 +3149,7 @@ const standard = {
   "standard-drinks": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ drinks",
+    path: ["standard", "drinks"],
     tiles: [
       {
         type: "link",
@@ -3407,7 +3407,7 @@ const standard = {
   "standard-people": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ people",
+    path: ["standard", "people"],
     tiles: [
       {
         type: "link",
@@ -3856,7 +3856,7 @@ const standard = {
   "standard-feelings": {
     rows: 6,
     columns: 9,
-    path: "standard ⇾ feelings",
+    path: ["standard", "feelings"],
     tiles: [
       {
         type: "link",

@@ -4,36 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#faebd7"/>
+    <meta name="theme-color" content="#faebd7" />
     <meta name="name" contents="AACore" />
     <meta name="application-name" contents="AACore" />
-    <meta name="description" contents="A free and open-source progressive web app for Augmentative and Alternative Communication" />
+    <meta
+      name="description"
+      contents="A free and open-source progressive web app for Augmentative and Alternative Communication"
+    />
     <meta name="author" contents="Beth Lonsdale, Oliver Lonsdale" />
-    <meta name="keywords" contents="AACore, app, AAC, TTS, accessibility, communication, free, online, offline, open-souce" />
-    
+    <meta
+      name="keywords"
+      contents="AACore, app, AAC, TTS, accessibility, communication, free, online, offline, open-souce"
+    />
+
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="./resouces/favicon_16px.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./resouces/favicon-ios.png" />
-    
+    <link
+      rel="shortcut icon"
+      href="./resouces/favicon_16px.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./resouces/favicon-ios.png"
+    />
+
     <link rel="manifest" href="./manifest.json" />
 
     <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').then(function() { 
-          console.log("Service Worker Registered"); 
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").then(function () {
+          console.log("Service Worker Registered");
         });
       }
     </script>
 
     <script type="module" src="scripts.js" defer></script>
-    
+
     <title>AACore</title>
   </head>
 
   <body>
     <div id="sidebar" class="hidden sidebar">
       <button class="sidebarButton closeSidebarButton">Close</button>
-      <button id="toggleSettingsButton" class="sidebarButton">Show/Hide Settings</button>
+      <button id="toggleSettingsButton" class="sidebarButton">
+        Show/Hide Settings
+      </button>
       <div id="sidebarSettings" class="hidden">
         <h2>Settings:</h2>
         <div>
@@ -42,12 +58,14 @@
             <option disabled>Select Voice</option>
           </select>
         </div>
-        
+
         <div>
           <label for="fontSelectionDropdown">Font:</label>
-          <select id="fontSelectionDropdown" >
+          <select id="fontSelectionDropdown">
             <option value="Helvetica, sans-serif">Standard</option>
-            <option value="Comic Sans MS, Comic Neue, sans-serif">Comicbook</option>
+            <option value="Comic Sans MS, Comic Neue, sans-serif">
+              Comicbook
+            </option>
             <option value="OpenDyslexic, sans-serif">Dyslexia Friendly</option>
           </select>
         </div>
@@ -60,15 +78,13 @@
         </div>
 
         <div>
-          <label for="speakOnAddCheckbox">
-            Speak word on click:
-          </label>
+          <label for="speakOnAddCheckbox"> Speak word on click:</label>
           <input type="checkbox" id="speakOnAddCheckbox" />
         </div>
 
         <div>
           <label for="darkModeCheckbox">Dark Mode:</label>
-          <input type="checkbox" id="darkModeCheckbox">
+          <input type="checkbox" id="darkModeCheckbox" />
         </div>
 
         <div>
@@ -76,44 +92,68 @@
           <input type="checkbox" name="editMode" id="editModeCheckbox" />
         </div>
 
-        <button class="sidebarButton" id="goOfflineButton">Prepare to go offline</button>
-          
+        <button class="sidebarButton" id="goOfflineButton">
+          Prepare to go offline
+        </button>
+
         <div id="editBoardArea" class="hidden">
           <h3>Edit Board:</h3>
-          <br>
+          <br />
           <div>
-            <label for="duplicateCurrentBoardButton">Duplicate Board</label>
-            <button id="duplicateCurrentBoardButton" class="sidebarButton">Duplicate current board</button>
+            <label for="duplicateCurrentBoardButton">Duplicate Board:</label>
+            <button id="duplicateCurrentBoardButton" class="sidebarButton">
+              Duplicate current board
+            </button>
           </div>
+          <br />
           <div>
-            <label for="duplicateCurrentSetButton">Duplicate Set</label>
-            <button id="duplicateCurrentSetButton" class="sidebarButton">Duplicate current set</button>
+            <label for="duplicateCurrentSetButton">Duplicate Set:</label>
+            <button id="duplicateCurrentSetButton" class="sidebarButton">
+              Duplicate current set
+            </button>
           </div>
-          <br>
+          <br />
           <div>
-            <label for="deleteCurrentBoardButton">Delete Board</label>
-            <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
+            <label for="deleteCurrentBoardButton">Delete Board:</label>
+            <button
+              id="deleteCurrentBoardButton"
+              class="sidebarButton"
+            ></button>
           </div>
-          <br>
+          <br />
           <div>
-            <label for="boardNameEditInput">Rename Board:</label> 
-            <input id="boardNameEditInput">
+            <label for="boardNameEditInput">Rename Board:</label>
+            <input id="boardNameEditInput" />
           </div>
-          <br>
+          <br />
           <div>
-            <label for="topLevelEditInput">Board is visible in sidebar</label>
-            <input type="checkbox" id="topLevelEditInput">
+            <label for="topLevelEditInput">Board is visible in sidebar:</label>
+            <input type="checkbox" id="topLevelEditInput" />
           </div>
-          <br>
-          <button class="sidebarButton" id="saveBoardEditButton">Save Edit</button>
+          <br />
+          <button class="sidebarButton" id="saveBoardEditButton">
+            Save Edit
+          </button>
         </div>
       </div>
       <h3>Find Word:</h3>
       <div class="displayFlexRow">
-        <input type="text" id="findWordInput">
-        <button id="clearWordSearchButton" title="Clear" aria-label="Clear search" class="inlineSidebarButton"><img alt="delete icon" width="30" height="20" src="./resouces/delete.svg"></button>
+        <input type="text" id="findWordInput" />
+        <button
+          id="clearWordSearchButton"
+          title="Clear"
+          aria-label="Clear search"
+          class="inlineSidebarButton"
+        >
+          <img
+            alt="delete icon"
+            width="30"
+            height="20"
+            src="./resouces/delete.svg"
+          />
+        </button>
       </div>
-      <div id="wordSearchResultsElement">
+      <div id="wordSearchResultsElement" class="grid cols-2">
         <!-- filled by JS on search button -->
       </div>
 
@@ -122,12 +162,13 @@
         <!-- Filled by JS -->
       </div>
 
-      <h3 id="customBoardsHeader">Custom Boards:</h3>  <!-- Shown and hidden dynamically by JS -->
+      <h3 id="customBoardsHeader">Custom Boards:</h3>
+      <!-- Shown and hidden dynamically by JS -->
       <div id="customBoardSelectionList">
         <!-- Filled by JS -->
       </div>
 
-      <h3>Boards:</h3>
+      <h3>Manage Boards:</h3>
       <nav>
         <button class="sidebarButton" id="createBoardMenuButton">
           New Board
@@ -145,13 +186,10 @@
       <button class="sidebarButton" id="lockSidebarButton">Lock sidebar</button>
 
       <button id="showAboutButton" class="sidebarButton">About</button>
-      
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
-      <button class="sidebarButton closeSidebarButton">
-        Close
-      </button>
+      <button class="sidebarButton closeSidebarButton">Close</button>
       <h2>Create Board</h2>
       <div>
         <label for="nameInput">Name: (must be unique)</label>
@@ -197,16 +235,17 @@
     </div>
 
     <div id="editTileSidebar" class="hidden sidebar">
-      <button class="sidebarButton closeSidebarButton">
-        Close
-      </button>
-      
+      <button class="sidebarButton closeSidebarButton">Close</button>
+
       <h2>Edit Tile</h2>
-      <div><button class="sidebarButton" id="clearCurrentTileButton">Clear Current Tile</button></div>
+      <div>
+        <button class="sidebarButton" id="clearCurrentTileButton">
+          Clear Current Tile
+        </button>
+      </div>
 
       <div><label for="selectedTileNumber">Selected Tile:</label></div>
       <div><input id="selectedTileNumber" type="text" disabled /></div>
-
 
       <div><label for="displayNameInput">Display Name:</label></div>
       <div><input id="displayNameInput" type="text" /></div>
@@ -291,7 +330,9 @@
         </div>
         <div class="displayFlexRow">
           <div><input id="iconLinkInput" type="text" /></div>
-          <button id="openIconSearchButton" class="inlineSidebarButton">Find</button>
+          <button id="openIconSearchButton" class="inlineSidebarButton">
+            Find
+          </button>
         </div>
       </div>
 
@@ -311,69 +352,64 @@
     </div>
 
     <div id="findIconSidebar" class="sidebar hidden">
-      <button id="backToEditTileButton" class="sidebarButton">
-        Back
-      </button>
+      <button id="backToEditTileButton" class="sidebarButton">Back</button>
       <h2>Find an icon</h2>
       <div class="displayFlexRow">
-        <input id="iconSearchBar" type="text">
-        <button id="searchForIcons" type="submit" class="inlineSidebarButton">Search</button>
+        <input id="iconSearchBar" type="text" />
+        <button id="searchForIcons" type="submit" class="inlineSidebarButton">
+          Search
+        </button>
       </div>
-      <div id="iconResults" class="flex-grid cols-2">
-
-      </div>
-      <footer>Results from <a href="https://www.opensymbols.org/">opensymbols.org</a></footer>
+      <div id="iconResults" class="flex-grid cols-2"></div>
+      <footer>
+        Results from <a href="https://www.opensymbols.org/">opensymbols.org</a>
+      </footer>
     </div>
 
     <div id="aboutSidebar" class="hidden sidebar">
       <button class="sidebarButton closeSidebarButton">Close</button>
       <h2>About</h2>
-      <p>Welcome to AACore. 
-        <br><br> 
-        This is an initiative to provide free access to a robust voice output communication system for children and young people with communication difficulties. 
-        <br><br>
-        Resources to be used under supervision of a Speech and Language Therapist 
+      <p>
+        Welcome to AACore. <br /><br />
+        This is an initiative to provide free access to a robust voice output
+        communication system for children and young people with communication
+        difficulties.
+        <br /><br />
+        Resources to be used under supervision of a Speech and Language
+        Therapist
       </p>
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>Beta 17</p>
+      <p>Beta 18</p>
     </div>
 
     <div id="topBar" class="topBar">
-      <button id="sidebarButton" class="playbackButton" title="Open Menu"><img
-        alt="hamburger menu icon"
-        src="./resouces/menu.svg"
-      /></button>
+      <button id="sidebarButton" class="playbackButton" title="Open Menu">
+        <img alt="hamburger menu icon" src="./resouces/menu.svg" />
+      </button>
       <div
         class="sentenceDisplay"
         id="sentenceDisplay"
         title="Click to play sentence"
         readonly
-      >
-      </div>
-      
+      ></div>
+
       <button
-      title="Delete Last Word"
-      aria-label="Delete Last Word"
-      id="deleteLastButton"
-      class="playbackButton"
-    >
-      <img
-        alt="delete icon"
-        src="./resouces/delete.svg"
-      />
-    </button>
+        title="Delete Last Word"
+        aria-label="Delete Last Word"
+        id="deleteLastButton"
+        class="playbackButton"
+      >
+        <img alt="delete icon" src="./resouces/delete.svg" />
+      </button>
       <button
         title="Delete Sentence"
         aria-label="Clear Sentence"
         id="clearButton"
         class="playbackButton"
       >
-        <img
-          alt="delete icon"
-          src="./resouces/delete-all.svg"
-        />
+        <img alt="delete icon" src="./resouces/delete-all.svg" />
       </button>
     </div>
 

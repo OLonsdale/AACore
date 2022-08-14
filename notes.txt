@@ -51,3 +51,19 @@ Clear old service worker (all goes in sw.js):
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script> -->
+
+
+ text.addEventListener("click", () => {
+        let drawnTiles = boardSection.children
+        for (let i = 0; i < drawnTiles.length; i++) {
+          let element = drawnTiles[i].children;     //<li>
+          let button = element[0]                   //<button>
+          console.log(button)
+          if(button.innerHTML === "") continue //check for blank tile
+          let label = button.children[0]            //<label>
+          let labelText = label.innerText.toLowerCase()
+
+          if( !result.includes(labelText) || result.includes(word.toLowerCase()) ){
+            button.classList.add("dimmed")
+          }
+        }

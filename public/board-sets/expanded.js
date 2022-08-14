@@ -4,7 +4,7 @@ const expanded = {
     topLevel: true,
     rows: 6,
     columns: 10,
-    path: "expanded",
+    path: ["expanded"],
     tiles: [
       {
         type: "link",
@@ -491,7 +491,7 @@ const expanded = {
   "expanded-am": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ I",
+    path: ["expanded", "I"],
     tiles: [
       {
         type: "link",
@@ -1024,122 +1024,11 @@ const expanded = {
       },
     ],
   },
-  "tts-keyboard": {
-    name: "Text to Speech Keyboard",
-    topLevel: true,
-    rows: 6,
-    columns: 11,
-    path: "Text to Speech Keyboard",
-    tiles: [
-      { type: "blank" },
-      { type: "blank" },
-      {
-        type: "textAndIcon",
-        displayName: "spell",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cast%20a%20spell%20on.png.varianted-skin.png",
-        colour: "green",
-      },
-      { type: "textOnly", displayName: "word", colour: "orange" },
-      {
-        type: "textAndIcon",
-        displayName: "letter",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/a%20-%20lower%20case.svg",
-        colour: "orange",
-      },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      {
-        type: "textAndIcon",
-        displayName: "wait",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Stop-ccf3903bc3.svg",
-        colour: "pink",
-      },
-      {
-        type: "textAndIcon",
-        displayName: "help me",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20help_1.png.variant-medium-dark.png",
-        colour: "pink",
-      },
-      {
-        type: "textAndIcon",
-        displayName: "stop that",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stop_4.png",
-        colour: "pink",
-      },
-      { type: "textOnly", displayName: "⠀0⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀1⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀2⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀3⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀4⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀5⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀6⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀7⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀8⠀", colour: "grey" },
-      { type: "textOnly", displayName: "⠀9⠀", colour: "grey" },
-      { type: "blank" },
-      { type: "textOnly", displayName: "⠀q⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀w⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀e⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀r⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀t⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀y⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀u⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀i⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀o⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀p⠀", colour: "white" },
-      { type: "blank" },
-      { type: "textOnly", displayName: "⠀a⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀s⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀d⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀f⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀g⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀h⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀j⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀k⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀l⠀", colour: "white" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "textOnly", displayName: "⠀z⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀x⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀c⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀v⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀b⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀n⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀m⠀", colour: "white" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      {
-        type: "textAndIcon",
-        displayName: "⠀ ⠀",
-        iconLink:
-          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/astronaut.png",
-        iconName: "space",
-        colour: "grey",
-      },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-      { type: "blank" },
-    ],
-  },
+
   "expanded-fun": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ fun",
+    path: ["expanded", "fun"],
     tiles: [
       {
         type: "link",
@@ -1370,7 +1259,7 @@ const expanded = {
   "expanded-fun-toys": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ toys",
+    path: ["expanded", "food", "toys"],
     tiles: [
       {
         type: "link",
@@ -1445,7 +1334,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "yo-yo ",
+        displayName: "yo-yo",
         iconName: "yo-yo",
         linkTo: "expanded",
         colour: "orange",
@@ -1721,7 +1610,7 @@ const expanded = {
   "expanded-fun-games": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ fun ⇾ game",
+    path: ["expanded", "fun", "games"],
     tiles: [
       {
         type: "link",
@@ -1963,7 +1852,7 @@ const expanded = {
   "expanded-fun-sports": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ fun ⇾ sport",
+    path: ["expanded", "fun", "sports"],
     tiles: [
       {
         type: "link",
@@ -2231,7 +2120,7 @@ const expanded = {
   "expanded-fun-music": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ fun ⇾ music",
+    path: ["expanded", "fun", "music"],
     tiles: [
       {
         type: "link",
@@ -2503,7 +2392,7 @@ const expanded = {
   "expanded-fun-story": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ fun ⇾ story",
+    path: ["expanded", "fun", "story"],
     tiles: [
       {
         type: "link",
@@ -2745,7 +2634,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "Rapunzel ",
+        displayName: "Rapunzel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tower.png",
         linkTo: "expanded",
@@ -2915,7 +2804,7 @@ const expanded = {
   "expanded-fun-playground": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ fun ⇾ playground",
+    path: ["expanded", "fun", "playground"],
     tiles: [
       {
         type: "link",
@@ -3154,7 +3043,7 @@ const expanded = {
   "expanded-fun-electronic": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ fun ⇾ electronic",
+    path: ["expanded", "fun", "electronic"],
     tiles: [
       {
         type: "link",
@@ -3435,7 +3324,7 @@ const expanded = {
   "expanded-learn": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ learn",
+    path: ["expanded", "learn"],
     tiles: [
       {
         type: "link",
@@ -3752,7 +3641,7 @@ const expanded = {
   },
   "expanded-learn-write": {
     rows: 6,
-    path: "expanded ⇾ learn ⇾ write",
+    path: ["expanded", "learn", "write"],
     columns: 11,
     tiles: [
       {
@@ -3773,7 +3662,7 @@ const expanded = {
       { type: "textOnly", displayName: "word", colour: "orange" },
       {
         type: "textAndIcon",
-        displayName: "letter ",
+        displayName: "letter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/a%20-%20lower%20case.svg",
         colour: "orange",
@@ -3853,7 +3742,7 @@ const expanded = {
   "expanded-learn-shapes": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ learn ⇾ shapes",
+    path: ["expanded", "learn", "shapes"],
     tiles: [
       {
         type: "link",
@@ -3965,7 +3854,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "pentagon ",
+        displayName: "pentagon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pentagon.svg",
         colour: "grey",
@@ -4010,7 +3899,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "cylinder ",
+        displayName: "cylinder",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cylinder.png",
         colour: "grey",
@@ -4058,7 +3947,7 @@ const expanded = {
   "expanded-learn-maths": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ learn ⇾ maths",
+    path: ["expanded", "learn", "maths"],
     tiles: [
       {
         type: "link",
@@ -4296,7 +4185,7 @@ const expanded = {
   "expanded-topic": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic",
+    path: ["expanded", "topic"],
     tiles: [
       {
         type: "link",
@@ -4451,7 +4340,7 @@ const expanded = {
   "expanded-topic-domestic": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic ⇾ domestic",
+    path: ["expanded", "topic", "domestic"],
     tiles: [
       {
         type: "link",
@@ -4501,7 +4390,7 @@ const expanded = {
         displayName: "hamster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hamster.svg.varianted-skin.svg",
-        pluralForm: "hamsters ",
+        pluralForm: "hamsters",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -4598,7 +4487,7 @@ const expanded = {
         displayName: "goat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/goat_1.png.varianted-skin.png",
-        pluralForm: "goats ",
+        pluralForm: "goats",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -4625,7 +4514,7 @@ const expanded = {
         displayName: "donkey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/donkey.svg",
-        pluralForm: "donkies ",
+        pluralForm: "donkies",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -4712,7 +4601,7 @@ const expanded = {
   "expanded-topic-wild": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic ⇾ wild",
+    path: ["expanded", "topic", "wild"],
     tiles: [
       {
         type: "link",
@@ -4803,13 +4692,13 @@ const expanded = {
       {
         type: "textAndIcon",
         displayName: "meerkat",
-        iconName: "needs a symbol ",
+        iconName: "needs a symbol",
         linkTo: "expanded",
         colour: "orange",
       },
       {
         type: "textAndIcon",
-        displayName: "kangaroo ",
+        displayName: "kangaroo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/kangaroo.png",
         pluralForm: "kangaroos",
@@ -4937,7 +4826,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "porcupine ",
+        displayName: "porcupine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/porcupine.svg",
         linkTo: "expanded",
@@ -5033,7 +4922,7 @@ const expanded = {
   "expanded-topic-water": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic ⇾ water",
+    path: ["expanded", "topic", "water"],
     tiles: [
       {
         type: "link",
@@ -5065,7 +4954,7 @@ const expanded = {
         displayName: "octopus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/octopus_1.png",
-        pluralForm: "octopuses ",
+        pluralForm: "octopuses",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -5259,10 +5148,10 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "beaver ",
+        displayName: "beaver",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/beaver.png",
-        pluralForm: "beavers ",
+        pluralForm: "beavers",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -5310,7 +5199,7 @@ const expanded = {
   "expanded-topic-birds": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic ⇾ birds",
+    path: ["expanded", "topic", "birds"],
     tiles: [
       {
         type: "link",
@@ -5390,7 +5279,7 @@ const expanded = {
         displayName: "magpie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/magpie.png",
-        pluralForm: "magpies ",
+        pluralForm: "magpies",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -5479,7 +5368,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "pelican ",
+        displayName: "pelican",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pelican.png",
         pluralForm: "pelicans",
@@ -5491,7 +5380,7 @@ const expanded = {
         displayName: "turkey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/turkey.svg",
-        pluralForm: "turkies ",
+        pluralForm: "turkies",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -5505,7 +5394,7 @@ const expanded = {
         displayName: "parrot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/parrot.png",
-        pastForm: "parroted ",
+        pastForm: "parroted",
         pluralForm: "parrots",
         linkTo: "expanded",
         colour: "orange",
@@ -5529,7 +5418,7 @@ const expanded = {
       { type: "blank" },
       {
         type: "textAndIcon",
-        displayName: "flamingo ",
+        displayName: "flamingo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flamingo.svg.varianted-skin.svg",
         pluralForm: "flamingoes",
@@ -5599,7 +5488,7 @@ const expanded = {
   "expanded-topic-insects": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic ⇾ insects",
+    path: ["expanded", "topic", "insects"],
     tiles: [
       {
         type: "link",
@@ -5720,7 +5609,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "caterpillar ",
+        displayName: "caterpillar",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/caterpillar.svg",
         pluralForm: "caterpillars",
@@ -5801,7 +5690,7 @@ const expanded = {
   "expanded-topic-space": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic ⇾ space",
+    path: ["expanded", "topic", "space"],
     tiles: [
       {
         type: "link",
@@ -5937,7 +5826,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "uranus ",
+        displayName: "uranus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Uranus.svg",
         linkTo: "expanded",
@@ -6016,7 +5905,7 @@ const expanded = {
   "expanded-topic-transport": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ topic ⇾ transport",
+    path: ["expanded", "topic", "transport"],
     tiles: [
       {
         type: "link",
@@ -6337,7 +6226,7 @@ const expanded = {
   "expanded-body": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ body",
+    path: ["expanded", "body"],
     tiles: [
       {
         type: "link",
@@ -6694,7 +6583,7 @@ const expanded = {
   "expanded-body-parts": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ body ⇾ parts",
+    path: ["expanded", "body", "parts"],
     tiles: [
       {
         type: "link",
@@ -6734,7 +6623,7 @@ const expanded = {
         displayName: "mouth",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/mouth.svg",
-        pluralForm: "mouthes ",
+        pluralForm: "mouthes",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7076,7 +6965,7 @@ const expanded = {
   "expanded-body-functions": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ body ⇾ functions",
+    path: ["expanded", "body", "functions"],
     tiles: [
       {
         type: "link",
@@ -7469,7 +7358,7 @@ const expanded = {
   "expanded-body-ill": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ body ⇾ ill",
+    path: ["expanded", "body", "ill"],
     tiles: [
       {
         type: "link",
@@ -7896,7 +7785,7 @@ const expanded = {
   "expanded-body-clothes": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ body ⇾ clothes",
+    path: ["expanded", "body", "clothes"],
     tiles: [
       {
         type: "link",
@@ -8253,7 +8142,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "flipflop ",
+        displayName: "flipflop",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/shoes_6.png",
         pluralForm: "flipflops",
@@ -8329,7 +8218,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "velcro ",
+        displayName: "velcro",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/Velcro.png",
         linkTo: "expanded",
@@ -8364,7 +8253,7 @@ const expanded = {
   "expanded-places": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ places",
+    path: ["expanded", "places"],
     tiles: [
       {
         type: "link",
@@ -8446,7 +8335,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "sleep ",
+        displayName: "sleep",
         pastForm: "slept",
         pluralForm: "sleeps",
         iconName: "sleep",
@@ -8635,7 +8524,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "corridor ",
+        displayName: "corridor",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/corridor.png",
         linkTo: "expanded",
@@ -8753,11 +8642,11 @@ const expanded = {
   "expanded-places-weather": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ places ⇾ weather",
+    path: ["expanded", "places", "weather"],
     tiles: [
       {
         type: "link",
-        displayName: "back ",
+        displayName: "back",
         iconName: "navigate-back",
         linkTo: "expanded",
         colour: "linkColour",
@@ -8950,7 +8839,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "snowball ",
+        displayName: "snowball",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snow%20ball.png",
         linkTo: "expanded",
@@ -9053,7 +8942,7 @@ const expanded = {
   "expanded-places-street": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ places ⇾ street",
+    path: ["expanded", "places", "street"],
     tiles: [
       {
         type: "link",
@@ -9146,7 +9035,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "hospital ",
+        displayName: "hospital",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hospital.png",
         linkTo: "expanded",
@@ -9333,7 +9222,7 @@ const expanded = {
         displayName: "church",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/church.png",
-        pluralForm: "churches ",
+        pluralForm: "churches",
         linkTo: "expanded",
         colour: "red",
       },
@@ -9508,7 +9397,7 @@ const expanded = {
   "expanded-places-position": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ places ⇾ position",
+    path: ["expanded", "places", "position"],
     tiles: [
       {
         type: "link",
@@ -9818,7 +9707,7 @@ const expanded = {
   "expanded-places-countries": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ places ⇾ countries",
+    path: ["expanded", "places", "countries"],
     tiles: [
       {
         type: "link",
@@ -9869,6 +9758,7 @@ const expanded = {
         pastForm: "travelled",
         pluralForm: "travels",
         colour: "green",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9876,6 +9766,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/passport.svg",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9884,6 +9775,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/island.png",
         pluralForm: "islands",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9891,6 +9783,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/regional%20state_32.png",
         colour: "blue",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -9899,6 +9792,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Europe.png",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9906,6 +9800,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/United%20Kingdom.png",
         colour: "grey",
+        linkTo: "expanded",
         pastForm: "British",
       },
       {
@@ -9914,6 +9809,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/France.png",
         colour: "grey",
+        linkTo: "expanded",
         pastForm: "French",
       },
       {
@@ -9923,6 +9819,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Spain_1.png",
         pastForm: "Spanish",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9931,6 +9828,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Italy.png",
         pastForm: "Italian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9939,6 +9837,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Germany.png",
         pastForm: "German",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9947,6 +9846,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Poland_1.png",
         pastForm: "Polish",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9955,6 +9855,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Greece.png",
         pastForm: "Greek",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9963,6 +9864,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Turkey_3.png",
         pastForm: "Turkish",
         colour: "grey",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -9971,6 +9873,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Africa.png",
         colour: "white",
+        linkTo: "expanded",
         pastPronounciation: "African",
       },
       {
@@ -9979,14 +9882,16 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Egypt.svg",
         colour: "grey",
+        linkTo: "expanded",
         pastForm: "Egyptian",
       },
       {
         type: "textAndIcon",
-        displayName: "Democratic Republic of Congo ",
+        displayName: "Democratic Republic of Congo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Congo%20Kinshasa.svg",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -9995,14 +9900,16 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Nigeria.svg",
         pastForm: "Nigerian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
         displayName: "Zimbabwe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Zimbabwe.svg",
-        pastForm: "Zimbabwean ",
+        pastForm: "Zimbabwean",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10010,6 +9917,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20The%20Sudan.svg",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10018,6 +9926,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Tunisia.svg",
         pastForm: "Tunisian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10026,6 +9935,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1f1-1f1fe.svg",
         pastForm: "Libyan",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10034,6 +9944,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Somalia.svg",
         pastForm: "Somalian",
         colour: "grey",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -10043,6 +9954,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/continent_2.png",
         pastForm: "Asian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10051,6 +9963,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1f7-1f1fa.svg",
         pastForm: "Russian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10059,6 +9972,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20China.svg",
         pastForm: "Chinese",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10067,14 +9981,16 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20India.svg",
         pastForm: "Indian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
         displayName: "Japan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Japan.svg",
-        pastForm: "Japanese ",
+        pastForm: "Japanese",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10083,6 +9999,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Philippines.svg",
         pastForm: "Philippino",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10091,6 +10008,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1e6-1f1fa.svg",
         pastPronounciation: "Australian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10098,6 +10016,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20New%20Zealand.svg",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10106,6 +10025,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Indonesia.svg",
         pastForm: "Indonesian",
         colour: "grey",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -10115,6 +10035,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/America.png",
         pastForm: "American",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10122,6 +10043,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/country%20United%20States.svg",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10130,6 +10052,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Brazil.svg",
         pastForm: "Brazilian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10138,6 +10061,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Canada.svg",
         pastForm: "Canadian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10146,6 +10070,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Argentina.svg",
         pastForm: "Argentinan",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10154,13 +10079,15 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Mexico.svg",
         pastForm: "Mexican",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
-        displayName: "Caribbean ",
+        displayName: "Caribbean",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sea%20conch_1.png",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10170,14 +10097,16 @@ const expanded = {
         pronounciation: "Chilly",
         pastForm: "Chillian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
         displayName: "Peru",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Peru.svg",
-        pastForm: "Peruvian ",
+        pastForm: "Peruvian",
         colour: "grey",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -10186,6 +10115,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Saudi%20Arabia.svg",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10193,6 +10123,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Pakistan.png",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10200,6 +10131,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Afghanistan.png",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10208,6 +10140,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Syria.svg",
         pastForm: "Syrian",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10216,6 +10149,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Iraq.svg",
         pastForm: "Iraqi",
         colour: "grey",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10223,6 +10157,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/North.png",
         colour: "blue",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10230,6 +10165,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/East.png",
         colour: "blue",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10237,6 +10173,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/South.png",
         colour: "blue",
+        linkTo: "expanded",
       },
       {
         type: "textAndIcon",
@@ -10244,14 +10181,552 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/West.png",
         colour: "blue",
+        linkTo: "expanded",
       },
       { type: "blank" },
+    ],
+  },
+  "expanded-places-furniture": {
+    rows: 6,
+    columns: 10,
+    path: ["expanded", "places", "furniture"],
+    tiles: [
+      {
+        type: "textAndIcon",
+        displayName: "Back",
+        iconName: "navigate-back",
+        linkTo: "expanded",
+        colour: "linkColour",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "furniture",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/furniture.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "sofa",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sofa_1.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "cushion",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cushion.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "hook",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hang.png.varianted-skin.png",
+        pastForm: "hooked",
+        pluralForm: "hooks",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "hang",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hang_2.png.varianted-skin.png",
+        pastForm: "hung",
+        pluralForm: "hangs",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "lamp",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lamp.png",
+        pluralForm: "lamps",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "calendar",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/calendar.png",
+        pluralForm: "calendars",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        colour: "orange",
+        displayName: "whiteboard",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Interactive White Board.png.varianted-skin.png",
+        pluralForm: "whiteboards",
+        linkTo: "expanded",
+      },
+      {
+        type: "textAndIcon",
+        colour: "orange",
+        displayName: "photo",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/framed photo.png.varianted-skin.png",
+        pluralForm: "photos",
+        linkTo: "expanded",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "sheet",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bottom sheet.png",
+        pluralForm: "sheets",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "blanket",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/blanket.svg",
+        pastForm: "blanketed",
+        pluralForm: "blankets",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "duvet",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/duvet.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "pillow",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pillow.png",
+        pluralForm: "pillows",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "sleeping bag",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sleeping bag.png",
+        pluralForm: "sleeping bags",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "wardrobe",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wardrobe.png",
+        pluralForm: "wardrobes",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "draw",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chest of drawers.png",
+        pluralForm: "draws",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "cupboard",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cupboard.svg",
+        pluralForm: "cupboards",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "mirror",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mirror.png.varianted-skin.png",
+        pluralForm: "mirrors",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "picture",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/picture.svg",
+        pluralForm: "pictures",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "beanbag",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/beanbag.svg.varianted-skin.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "desk",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/work desk.png",
+        pluralForm: "desks",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "shelf",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/book shelf.svg",
+        pluralForm: "shelves",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "fireplace",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chimney_1.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "radiator",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/radiator.png",
+        pluralForm: "radiators",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "fan",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fan.png",
+        pluralForm: "fans",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "air con",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/air conditioning.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "freeze",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice cube.png",
+        pastForm: "froze",
+        pluralForm: "freezes",
+        linkTo: "expanded",
+        colour: "green",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "blinds",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/vertical blinds.svg.varianted-skin.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "balcony",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/balcony_1.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "washing machine",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/washing machine.png",
+        pluralForm: "washing machines",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "laundry",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/laundry basket.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "powder",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/washing powder.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "dish",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/dishes.svg",
+        pluralForm: "dishes",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "liquid",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dishwashing liquid.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "sponge",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sponge.svg",
+        pluralForm: "sponges",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "fridge",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fridge.svg",
+        pluralForm: "fridges",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "freezer",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/freezer.svg",
+        pluralForm: "freezers",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "drier",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/tumble dryer.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "machine",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/machine.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "boiler",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boiler.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        colour: "green",
+        displayName: "hoist",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hoist.svg",
+        pastForm: "hoisted",
+        pluralForm: "hoists",
+        linkTo: "expanded",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "ramp",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ramp.png",
+        pluralForm: "ramps",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "level access",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/give access.png.varianted-skin.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "exit",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/emergency exit.png",
+        pastForm: "exited",
+        pluralForm: "exits",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "fence",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fence.png",
+        pastForm: "fenced",
+        pluralForm: "fences",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "gate",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/gates_201_g.svg",
+        pastForm: "gated",
+        pluralForm: "gates",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "floor",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/floor.png",
+        pastForm: "floored",
+        pluralForm: "floors",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "ceiling",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ceiling.png",
+        pluralForm: "celings",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "wall",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wall.png",
+        pastForm: "walled",
+        pluralForm: "walls",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "hole punch",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hole punch 2.svg.varianted-skin.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "staple",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/staple , to.svg.varianted-skin.svg",
+        pastForm: "stapled",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "laminate",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to laminate.png.varianted-skin.png",
+        pastForm: "laminated",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "print",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/print.svg",
+        pastForm: "printed",
+        pluralForm: "prints",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "fire",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fire_2.png",
+        pastForm: "fired",
+        pluralForm: "fires",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "mat",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bath mat.svg",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "wallpaper",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Roll_547_g.svg",
+        pastForm: "wallpapered",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "lino",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/floor tile_1.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "carpet",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/carpet.png",
+        linkTo: "expanded",
+        colour: "orange",
+      },
+      {
+        type: "textAndIcon",
+        displayName: "tile",
+        iconLink:
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tile.png",
+        pluralForm: "tiles",
+        linkTo: "expanded",
+        colour: "orange",
+      },
     ],
   },
   "expanded-food": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food",
+    path: ["expanded", "food"],
     tiles: [
       {
         type: "link",
@@ -10662,7 +11137,7 @@ const expanded = {
   "expanded-food-fruit": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ fruit",
+    path: ["expanded", "food", "fruit"],
     tiles: [
       {
         type: "link",
@@ -10683,7 +11158,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "apple ",
+        displayName: "apple",
         pluralForm: "apples",
         iconName: "apple",
         linkTo: "expanded",
@@ -10725,7 +11200,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "tomato ",
+        displayName: "tomato",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tomato.svg",
         pluralForm: "tomatoes",
@@ -10827,7 +11302,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "raspberry ",
+        displayName: "raspberry",
         pluralForm: "raspberries",
         iconName: "raspberry",
         linkTo: "expanded",
@@ -10944,7 +11419,7 @@ const expanded = {
   "expanded-food-veg": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ veg",
+    path: ["expanded", "food", "veg"],
     tiles: [
       {
         type: "link",
@@ -11226,7 +11701,7 @@ const expanded = {
   "expanded-food-carbs": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ carbs",
+    path: ["expanded", "food", "carbs"],
     tiles: [
       {
         type: "link",
@@ -11497,7 +11972,7 @@ const expanded = {
     ],
   },
   "expanded-food-proteins": {
-    path: "expanded ⇾ food ⇾ proteins",
+    path: ["expanded", "food", "proteins"],
     rows: 6,
     columns: 10,
     tiles: [
@@ -11757,7 +12232,7 @@ const expanded = {
   "expanded-food-meals": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ meals",
+    path: ["expanded", "food", "meals"],
     tiles: [
       {
         type: "link",
@@ -11786,7 +12261,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "kyiv ",
+        displayName: "kyiv",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chicken%20breast.svg.varianted-skin.svg",
         linkTo: "expanded",
@@ -11844,7 +12319,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "dahl ",
+        displayName: "dahl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lentils.png",
         linkTo: "expanded",
@@ -11869,7 +12344,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "tandoori ",
+        displayName: "tandoori",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/roast.png",
         linkTo: "expanded",
@@ -11906,7 +12381,7 @@ const expanded = {
       { type: "blank" },
       {
         type: "textAndIcon",
-        displayName: "mac and cheese ",
+        displayName: "mac and cheese",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/macaroni%20cheese.svg",
         linkTo: "expanded",
@@ -11914,7 +12389,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "bologese ",
+        displayName: "bologese",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spaghetti.png",
         linkTo: "expanded",
@@ -11964,7 +12439,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "pad thai ",
+        displayName: "pad thai",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f35c.svg",
         linkTo: "expanded",
@@ -11997,7 +12472,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "rice krispies ",
+        displayName: "rice krispies",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cereal.svg.varianted-skin.svg",
         linkTo: "expanded",
@@ -12021,7 +12496,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "wheatabix ",
+        displayName: "wheatabix",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brick.png",
         linkTo: "expanded",
@@ -12078,7 +12553,7 @@ const expanded = {
         displayName: "burrito",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f32f.svg",
-        pluralFormPronounciation: "burritos ",
+        pluralFormPronounciation: "burritos",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -12154,7 +12629,7 @@ const expanded = {
   "expanded-food-treats": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ treats",
+    path: ["expanded", "food", "treats"],
     tiles: [
       {
         type: "link",
@@ -12442,7 +12917,7 @@ const expanded = {
   "expanded-food-sauces": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ sauces",
+    path: ["expanded", "food", "sauces"],
     tiles: [
       {
         type: "link",
@@ -12568,7 +13043,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "hummus ",
+        displayName: "hummus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chickpea.png",
         linkTo: "expanded",
@@ -12688,7 +13163,7 @@ const expanded = {
   "expanded-food-drinks": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ food ⇾ drinks",
+    path: ["expanded", "food", "drinks"],
     tiles: [
       {
         type: "link",
@@ -12875,7 +13350,7 @@ const expanded = {
   "expanded-time": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ time",
+    path: ["expanded", "time"],
     tiles: [
       {
         type: "link",
@@ -13070,7 +13545,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "early ",
+        displayName: "early",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20get%20up%20early.png.variant-medium-dark.png",
         linkTo: "expanded",
@@ -13170,7 +13645,7 @@ const expanded = {
   "expanded-time-days": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ time ⇾ days",
+    path: ["expanded", "time", "days"],
     tiles: [
       {
         type: "link",
@@ -13334,7 +13809,7 @@ const expanded = {
   "expanded-time-months": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ time ⇾ months",
+    path: ["expanded", "time", "months"],
     tiles: [
       {
         type: "link",
@@ -13524,7 +13999,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "autumn ",
+        displayName: "autumn",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/autumn.png",
         linkTo: "feelings",
@@ -13548,7 +14023,7 @@ const expanded = {
   "expanded-time-celebrations": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ time ⇾ celebrations",
+    path: ["expanded", "time", "celebrations"],
     tiles: [
       {
         type: "link",
@@ -13739,7 +14214,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "eid ",
+        displayName: "eid",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Eid%20AlFitr%20(1).jpg",
         linkTo: "expanded",
@@ -13884,7 +14359,7 @@ const expanded = {
   "expanded-people": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ people",
+    path: ["expanded", "people"],
     tiles: [
       {
         type: "link",
@@ -14233,7 +14708,7 @@ const expanded = {
   "expanded-people-describe": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ people ⇾ describe",
+    path: ["expanded", "people", "describe"],
     tiles: [
       {
         type: "link",
@@ -14663,7 +15138,7 @@ const expanded = {
   "expanded-people-polite": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ people ⇾ polite",
+    path: ["expanded", "people", "polite"],
     tiles: [
       {
         type: "link",
@@ -14872,7 +15347,7 @@ const expanded = {
   "expanded-people-relationships": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ people ⇾ relationships",
+    path: ["expanded", "people", "relationships"],
     tiles: [
       {
         type: "link",
@@ -15038,11 +15513,11 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "separate ",
+        displayName: "separate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20separate_1.png.varianted-skin.png",
         pastForm: "separated",
-        pluralForm: "separates ",
+        pluralForm: "separates",
         linkTo: "expanded",
         colour: "green",
       },
@@ -15060,7 +15535,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "nephew ",
+        displayName: "nephew",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nephew_3.png.varianted-skin.png",
         pluralForm: "nephews",
@@ -15165,7 +15640,7 @@ const expanded = {
   "expanded-feelings": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ feelings",
+    path: ["expanded", "feelings"],
     tiles: [
       {
         type: "link",
@@ -15402,7 +15877,7 @@ const expanded = {
   "expanded-grammar": {
     rows: 6,
     columns: 10,
-    path: "expanded ⇾ grammar",
+    path: ["expanded", "grammar"],
     tiles: [
       {
         type: "link",
