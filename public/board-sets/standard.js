@@ -1965,7 +1965,14 @@ const standard = {
         linkTo: "standard",
         internalName: "bruise",
       },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "see",
+        iconName: "look",
+        colour: "green",
+        linkTo: "standard",
+        internalName: "see",
+      },
       { type: "blank" },
       {
         type: "textAndIcon",
@@ -1985,11 +1992,11 @@ const standard = {
       },
       {
         type: "textAndIcon",
-        displayName: "sick",
+        displayName: "ill",
         iconName: "sick",
         colour: "green",
         linkTo: "standard",
-        internalName: "sick",
+        internalName: "ill",
       },
       {
         type: "textAndIcon",
@@ -2749,7 +2756,14 @@ const standard = {
         internalName: "food",
       },
       { type: "blank" },
-      { type: "blank" },
+      {
+        type: "textAndIcon",
+        displayName: "can",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tin%20can.svg",
+        colour: "orange",
+        linkTo: "standard",
+        internalName: "can",
+      },
       {
         type: "textAndIcon",
         displayName: "meal",
@@ -2776,11 +2790,11 @@ const standard = {
       },
       {
         type: "textAndIcon",
-        displayName: "tea",
-        iconName: "tea",
+        displayName: "dinner",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/have%20tea.png.varianted-skin.png",
         colour: "grey",
         linkTo: "standard",
-        internalName: "tea",
+        internalName: "dinner",
       },
       {
         type: "textAndIcon",
@@ -2961,7 +2975,7 @@ const standard = {
       {
         type: "textAndIcon",
         displayName: "chicken",
-        iconName: "chicken",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chicken.svg",
         colour: "orange",
         linkTo: "standard",
         internalName: "chicken",

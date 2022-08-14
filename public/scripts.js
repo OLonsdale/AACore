@@ -168,6 +168,7 @@ function showSidebar() {
     loadButton.addEventListener("click", () => {
       localStorage.setItem("currentBoardName", board);
       localStorage.setItem("currentSet", board);
+      clearWordSearchButton.click();
       drawBoard(board);
     });
 
@@ -290,20 +291,35 @@ function findWord(word) {
 
   results.forEach((result) => {
     if (result.path.includes(localStorage.getItem("currentSet"))) {
+
       let tile = document.createElement("button");
       tile.classList.add("inlineSidebarButton");
-      let img = document.createElement("img");
-      img.src =
-        result.target.iconLink ||
-        `./resouces/icons/${result.target.iconName}.webp`;
-      img.classList.add("searchIcon");
-      tile.title = result.path.join("->");
-      tile.append(img);
+      let label = document.createElement("label");
+      label.innerText = result.path.at(-1);
 
+      if (result.target.iconLink || result.target.iconName) {
+        let img = document.createElement("img");
+
+        img.src =
+          result.target.iconLink ||
+          `./resouces/icons/${result.target.iconName}.webp`;
+
+        img.classList.add("searchIcon");
+
+        tile.title = result.path.join("⇾");
+
+        tile.append(img);
+      } else {
+        let text = document.createElement("p");
+        text.innerText = result.target.displayName;
+        text.classList.add("largeText");
+        tile.append(text)
+      }
+      tile.append(label);
       tile.addEventListener("click", () => {
         activeSearch = result;
         drawBoard(localStorage.getItem("currentBoardName"));
-        closeAllSidebars()
+        closeAllSidebars();
       });
 
       resultsElement.classList.add("cols-2");
@@ -344,7 +360,7 @@ function findPathToWord(word) {
     currentBoard.tiles.forEach((tile) => {
       if (!tile.displayName || tile.type === "link" || tile.type === "blank")
         return;
-      if (tile.displayName.toLowerCase() === word.toLowerCase()) {
+      if (tile.displayName.toLowerCase().replaceAll("⠀","") === word.toLowerCase()) {
         routes.push({
           target: tile,
           path: currentBoard.path,
@@ -726,7 +742,7 @@ function drawBoard(name) {
 
   let output = document.createDocumentFragment();
 
-  let hasTarget = false
+  let hasTarget = false;
 
   //for each tile
   board.tiles.forEach((tile) => {
@@ -758,27 +774,25 @@ function drawBoard(name) {
         showEditTileSidebar();
       }
     });
-    
-    
 
     if (activeSearch) {
       tileElement.classList.add("dimmed");
 
-
-      if(tile.displayName){
-        if (activeSearch.path.includes(tile.displayName.toLowerCase()) && tile.type === "link"){
-          tileElement.classList.remove("dimmed")
-          hasTarget = true
-        }
-  
-        if(activeSearch.target.displayName.toLowerCase() === tile.displayName.toLowerCase()) {
+      if (tile.displayName) {
+        if (
+          activeSearch.path.includes(tile.displayName.toLowerCase()) &&
+          tile.type === "link"
+        ) {
           tileElement.classList.remove("dimmed");
-          hasTarget = true
+          hasTarget = true;
+        }
+
+        if (activeSearch.target === tile) {
+          tileElement.classList.remove("dimmed");
+          hasTarget = true;
         }
       }
-
     }
-  
 
     if (tile.type !== "blank") {
       //Colour
@@ -815,12 +829,19 @@ function drawBoard(name) {
           //add to sentence and speak if desired
           sentence.push(tile);
           updateSentence();
-          activeSearch = ""
           if (JSON.parse(localStorage.getItem("speakOnAdd"))) {
             const word = tile.pronounciation || tile.displayName;
             speak(word);
           }
-          if (tile.linkTo) drawBoard(tile.linkTo);
+          if (activeSearch) {
+            activeSearch = "";
+            if (tile.linkTo) drawBoard(tile.linkTo);
+            else drawBoard(localStorage.getItem("currentBoardName"));
+          }
+          if (tile.linkTo) {
+            drawBoard(tile.linkTo);
+            return;
+          }
         }
       });
     }
@@ -834,10 +855,9 @@ function drawBoard(name) {
   //appends output to the dom
   boardSection.appendChild(output);
 
-  if(activeSearch && !hasTarget){
-    document.getElementById("0").classList.remove("dimmed")
+  if (activeSearch && !hasTarget) {
+    document.getElementById("0").classList.remove("dimmed");
   }
-
 }
 
 lockSidebarButton.addEventListener("click", () => {

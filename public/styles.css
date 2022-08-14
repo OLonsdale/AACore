@@ -146,6 +146,8 @@ select {
 }
 
 .inlineSidebarButton{
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 0 0 1px black;
   background-color: darkcyan;
   padding-top: 0.2em;
@@ -313,5 +315,5 @@ select {
 }
 
 .dimmed {
-  filter: brightness(50%) !important;
+  filter: brightness(20%) !important;
 }
