@@ -169,6 +169,7 @@ function showSidebar() {
       localStorage.setItem("currentBoardName", board);
       localStorage.setItem("currentSet", board);
       clearWordSearchButton.click();
+      activeSearch = "";
       drawBoard(board);
     });
 
@@ -291,7 +292,6 @@ function findWord(word) {
 
   results.forEach((result) => {
     if (result.path.includes(localStorage.getItem("currentSet"))) {
-
       let tile = document.createElement("button");
       tile.classList.add("inlineSidebarButton");
       let label = document.createElement("label");
@@ -313,7 +313,7 @@ function findWord(word) {
         let text = document.createElement("p");
         text.innerText = result.target.displayName;
         text.classList.add("largeText");
-        tile.append(text)
+        tile.append(text);
       }
       tile.append(label);
       tile.addEventListener("click", () => {
@@ -360,7 +360,10 @@ function findPathToWord(word) {
     currentBoard.tiles.forEach((tile) => {
       if (!tile.displayName || tile.type === "link" || tile.type === "blank")
         return;
-      if (tile.displayName.toLowerCase().replaceAll("⠀","") === word.toLowerCase()) {
+      if (
+        tile.displayName.toLowerCase().replaceAll("⠀", "") ===
+        word.toLowerCase()
+      ) {
         routes.push({
           target: tile,
           path: currentBoard.path,
@@ -382,6 +385,38 @@ function closeAllSidebars() {
   editTileSidebar.classList.add("hidden");
   aboutSidebar.classList.add("hidden");
   findIconSidebar.classList.add("hidden");
+  exportSidebar.classList.add("hidden");
+}
+
+function showExportSidebar() {
+  closeAllSidebars();
+
+  for (const boardName in boards) {
+    if (Object.hasOwnProperty.call(boards, boardName)) {
+      const board = boards[boardName];
+      if (!board.customBoard) continue;
+
+      let div = document.createElement("div");
+      div.classList.add("displayFlexRow");
+
+      let input = document.createElement("input");
+      input.id = `${boardName}Checkbox`;
+      input.type = "checkbox";
+      input.name = "board";
+      input.value = boardName;
+
+      let label = document.createElement("label");
+      label.htmlFor = `${boardName}Checkbox`;
+      label.innerText = boardName;
+
+      div.append(input);
+      div.append(label);
+
+      boardExportList.append(div);
+    }
+  }
+
+  exportSidebar.classList.remove("hidden");
 }
 
 function showAbout() {
@@ -482,25 +517,40 @@ sidebarButton.addEventListener("click", showSidebar);
 
 createBoardMenuButton.addEventListener("click", showCreateBoardSidebar);
 
-exportBoardButton.addEventListener("click", exportBoard);
+openExportSidebarButton.addEventListener("click", showExportSidebar);
 
-function exportBoard() {
-  const filename = `${localStorage.getItem("currentBoardName")}.json`;
-  const board = boards[localStorage.getItem("currentBoardName")];
-  const jsonStr = JSON.stringify(board);
+exportBoardsButton.addEventListener("click", exportBoards);
 
+function exportBoards() {
+  const offset = new Date().getTimezoneOffset();
+  let date = new Date(new Date().getTime() - offset * 60 * 1000);
+  let formattedDate = date.toISOString().replace("T", "--").slice(0, -5);
+  const filename = `boards-${formattedDate}.json`;
+  //could use a map or something here
+  let exportList = [];
+  Array.from(boardExportList).forEach((checkbox) => {
+    if (checkbox.checked) {
+      exportList.push(checkbox.value);
+    }
+  });
+
+  let output = {};
+  exportList.forEach((item) => {
+    output[item] = JSON.parse(JSON.stringify(boards[item]));
+  });
+
+  const jsonString = JSON.stringify(output);
+
+  //make invisible element, add properties, then click it to trigger download
   const element = document.createElement("a");
   element.setAttribute(
     "href",
-    "data:text/plain;charset=utf-8," + encodeURIComponent(jsonStr)
+    "data:application/json;charset=utf-8," + encodeURIComponent(jsonString)
   );
   element.setAttribute("download", filename);
-
   element.style.display = "none";
   document.body.appendChild(element);
-
   element.click();
-
   document.body.removeChild(element);
 }
 
@@ -522,14 +572,23 @@ importInput.addEventListener("change", (ev) => {
       console.error("Attempted to load invalid file", error);
     }
 
-    const newBoard = JSON.parse(event.target.result);
-    newBoard.customBoard = true;
-    delete newBoard.name;
-    const customBoards = JSON.parse(localStorage.getItem("customBoards"));
-    customBoards[ev.target.files[0].name.replace(".json", "")] = newBoard;
+    const newBoards = JSON.parse(event.target.result);
+    let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+
+    Object.keys(newBoards).forEach((key) => {
+      if (customBoards.hasOwnProperty(key)) {
+        if (!confirm(`Old "${key}" will be overridden?`)) {
+          delete newBoards[key];
+        }
+      }
+    });
+
+    customBoards = { ...customBoards, ...newBoards };
+
     localStorage.setItem("customBoards", JSON.stringify(customBoards));
-    console.log("custom board imported");
+    console.log("custom boards imported");
     blendBoards();
+    drawBoard(localStorage.getItem("currentBoardName"));
     showSidebar();
   });
 
@@ -546,7 +605,7 @@ function drawAllBoards() {
 
   if (
     !confirm(
-      `This will load all boards to allow all of the icons to load for offline use.`
+      `This will load the icons for all boards so it can be used without the internet`
     )
   )
     return;
@@ -844,6 +903,8 @@ function drawBoard(name) {
           }
         }
       });
+    } else {
+      tileElement.classList.add("blank");
     }
 
     //adds it to output

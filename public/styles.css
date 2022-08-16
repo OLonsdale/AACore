@@ -301,6 +301,10 @@ select {
   background-color: white;
 }
 
+.blank {
+  background-color: var(--background-colour);
+}
+
 .grammarMarkerColour {
   background-color: rgb(177, 156, 217);
 }

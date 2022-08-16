@@ -97,30 +97,20 @@
         </button>
 
         <div id="editBoardArea" class="hidden">
+          <br>
           <h3>Edit Board:</h3>
           <br />
-          <div>
-            <label for="duplicateCurrentBoardButton">Duplicate Board:</label>
             <button id="duplicateCurrentBoardButton" class="sidebarButton">
               Duplicate current board
             </button>
-          </div>
-          <br />
-          <div>
-            <label for="duplicateCurrentSetButton">Duplicate Set:</label>
             <button id="duplicateCurrentSetButton" class="sidebarButton">
               Duplicate current set
             </button>
-          </div>
-          <br />
-          <div>
-            <label for="deleteCurrentBoardButton">Delete Board:</label>
             <button
               id="deleteCurrentBoardButton"
               class="sidebarButton"
             ></button>
-          </div>
-          <br />
+            <br>
           <div>
             <label for="boardNameEditInput">Rename Board:</label>
             <input id="boardNameEditInput" />
@@ -169,23 +159,32 @@
       </div>
 
       <h3>Manage Boards:</h3>
-      <nav>
+      <div>
         <button class="sidebarButton" id="createBoardMenuButton">
           New Board
         </button>
         <button class="sidebarButton" id="importBoardButton">
-          Import Board
+          Import Boards
         </button>
-        <button class="sidebarButton" id="exportBoardButton">
-          Export Board
+        <button class="sidebarButton" id="openExportSidebarButton">
+          Export Boards
         </button>
-      </nav>
+
+      </div>
       <input id="importInput" type="file" accept=".json" class="hidden" />
 
       <h3>Other:</h3>
       <button class="sidebarButton" id="lockSidebarButton">Lock sidebar</button>
 
       <button id="showAboutButton" class="sidebarButton">About</button>
+    </div>
+
+    <div id="exportSidebar" class="sidebar hidden">
+      <button class="sidebarButton closeSidebarButton">Close</button>
+      <h2>Select boards to export:</h2>
+      <form id="boardExportList"></form>
+      <button id="exportBoardsButton" class="sidebarButton">Export</button>
+      
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
@@ -381,7 +380,7 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>Beta 19</p>
+      <p>Beta 20</p>
     </div>
 
     <div id="topBar" class="topBar">

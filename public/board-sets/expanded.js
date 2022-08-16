@@ -8417,7 +8417,7 @@ const expanded = {
       },
       {
         type: "textAndIcon",
-        displayName: "winow",
+        displayName: "window",
         iconName: "window",
         linkTo: "expanded",
         colour: "orange",
