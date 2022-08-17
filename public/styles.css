@@ -8,7 +8,8 @@
   --icon-filter: none;
 }
 
-html, body {
+html,
+body {
   touch-action: none;
 }
 
@@ -17,7 +18,7 @@ body {
   font-family: var(--font);
   background-color: var(--background-colour);
   user-select: none;
-  touch-action:none;
+  touch-action: none;
 }
 
 body.dark {
@@ -40,7 +41,6 @@ body.dark {
 .item:hover,
 .item:focus {
   filter: brightness(90%);
-  cursor: pointer;
 }
 
 .item {
@@ -58,13 +58,11 @@ body.dark {
 .icon {
   width: 70%;
   height: 70%;
-  pointer-events: none;
 }
 
 .searchIcon {
   width: 70px;
   height: 70px;
-  pointer-events: none;
 }
 
 
@@ -95,7 +93,8 @@ body.dark {
   height: 1.2em;
 }
 
-ol, li {
+ol,
+li {
   all: unset;
 }
 
@@ -114,7 +113,15 @@ button {
 }
 
 button:disabled {
-  background-color: grey;
+  filter: saturate(10%);
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+button:active {
+  filter: brightness(80%);
 }
 
 select {
@@ -145,7 +152,7 @@ select {
   z-index: -1;
 }
 
-.inlineSidebarButton{
+.inlineSidebarButton {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 0 1px black;
@@ -155,11 +162,12 @@ select {
   z-index: 1;
 }
 
-.sidebarButton:active, .inlineSidebarButton:active {
+.sidebarButton:active,
+.inlineSidebarButton:active {
   background-color: rgb(3, 99, 99);
 }
 
-.playbackButton > img {
+.playbackButton>img {
   /* icons to near white #efefef */
   filter: var(--icon-filter);
   height: 2rem;
@@ -173,7 +181,7 @@ select {
   justify-content: left;
 }
 
-.flex-grid{
+.flex-grid {
   display: inline-grid;
   grid-template-columns: repeat(3, 1fr);
   align-self: center;
@@ -184,14 +192,27 @@ select {
 
 .grid {
   display: grid;
+  max-width: 100px;
+}
+
+.colourInput {
+  height: 25px;
+  width: 25px;
+  box-shadow: 0 0 0 1px black;
 }
 
 /* Cols */
 
 /* Not used for boards */
-.cols-2 {
+.two-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.nine-cols {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+/* Boards */
 
 .cols-3 {
   grid-template-columns: repeat(3, var(--grid-size));
@@ -314,7 +335,7 @@ select {
   border-radius: 15px;
 }
 
-.editMode{
+.editMode {
   background-color: rgb(153, 71, 149);
 }
 

@@ -79,7 +79,7 @@ const boardSet = {
         internalName: "Feelings",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "I",
         iconName: "i",
         colour: "yellow",
@@ -88,307 +88,307 @@ const boardSet = {
         linkTo: "standard-am",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "want",
         iconName: "want",
         colour: "green",
         internalName: "want",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "more",
         iconName: "more",
         colour: "blue",
         internalName: "more",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "not",
         iconName: "not",
         colour: "grey",
         internalName: "not",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "go",
         iconName: "go",
         colour: "green",
         internalName: "go",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "help",
         iconName: "help",
         colour: "green",
         internalName: "help",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "look",
         iconName: "look",
         colour: "green",
         internalName: "look",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "need",
         iconName: "need",
         colour: "green",
         internalName: "need",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "have",
         iconName: "have",
         colour: "green",
         internalName: "have",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "you",
         iconName: "you",
         colour: "yellow",
         internalName: "you",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play",
         iconName: "play",
         colour: "green",
         internalName: "play",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "same",
         iconName: "same",
         colour: "blue",
         internalName: "same",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "different",
         iconName: "different",
         colour: "blue",
         internalName: "different",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "what",
         iconName: "what",
         colour: "pink",
         internalName: "what",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "like",
         iconName: "like",
         colour: "green",
         internalName: "like",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stop",
         iconName: "stop",
         colour: "green",
         internalName: "stop",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "where",
         iconName: "where",
         colour: "pink",
         internalName: "where",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "in",
         iconName: "in",
         colour: "red",
         internalName: "in",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "he",
         iconName: "he",
         colour: "yellow",
         internalName: "he",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eat",
         iconName: "eat",
         colour: "green",
         internalName: "eat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drink",
         iconName: "drink",
         colour: "green",
         internalName: "drink",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turn",
         iconName: "turn",
         colour: "green",
         internalName: "turn",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "up",
         iconName: "up",
         colour: "red",
         internalName: "up",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "down",
         iconName: "down",
         colour: "red",
         internalName: "down",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finish",
         iconName: "finish",
         colour: "green",
         internalName: "finish",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "who",
         iconName: "who",
         colour: "pink",
         internalName: "who",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "on",
         iconName: "on",
         colour: "red",
         internalName: "on",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "she",
         iconName: "she",
         colour: "yellow",
         internalName: "she",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "do",
         iconName: "do",
         colour: "green",
         internalName: "do",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "loud",
         iconName: "loud",
         colour: "blue",
         internalName: "loud",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quiet",
         iconName: "quiet",
         colour: "blue",
         internalName: "quiet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fast",
         iconName: "fast",
         colour: "blue",
         internalName: "fast",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slow",
         iconName: "slow",
         colour: "blue",
         internalName: "slow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "funny",
         iconName: "funny",
         colour: "blue",
         internalName: "funny",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "talk",
         iconName: "talk",
         colour: "green",
         internalName: "talk",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "off",
         iconName: "off",
         colour: "red",
         internalName: "off",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "it",
         iconName: "it",
         colour: "yellow",
         internalName: "it",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "put",
         iconName: "put",
         colour: "green",
         internalName: "put",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "make",
         iconName: "make",
         colour: "green",
         internalName: "make",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "feel",
         iconName: "feel",
         colour: "green",
         internalName: "feel",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "think",
         iconName: "think",
         colour: "green",
         internalName: "think",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "is",
         colour: "green",
         internalName: "is",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "close",
         iconName: "close",
         colour: "green",
         internalName: "close",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "open",
         iconName: "open",
         colour: "green",
         internalName: "open",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "here",
         iconName: "here",
         colour: "grey",
@@ -475,7 +475,7 @@ const boardSet = {
         internalName: "Feelings",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "I",
         iconName: "i",
         colour: "yellow",
@@ -483,7 +483,7 @@ const boardSet = {
         internalName: "I",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "want",
         iconName: "want",
         colour: "green",
@@ -491,7 +491,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "more",
         iconName: "more",
         colour: "blue",
@@ -499,7 +499,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "not",
         iconName: "not",
         colour: "grey",
@@ -507,7 +507,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "go",
         iconName: "go",
         colour: "green",
@@ -515,7 +515,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "help",
         iconName: "help",
         colour: "green",
@@ -523,7 +523,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "look",
         iconName: "look",
         colour: "green",
@@ -531,7 +531,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "need",
         iconName: "need",
         colour: "green",
@@ -539,7 +539,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "have",
         iconName: "have",
         colour: "green",
@@ -547,7 +547,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "you",
         iconName: "you",
         colour: "yellow",
@@ -555,7 +555,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play",
         iconName: "play",
         colour: "green",
@@ -563,7 +563,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "same",
         iconName: "same",
         colour: "blue",
@@ -571,7 +571,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "different",
         iconName: "different",
         colour: "blue",
@@ -579,7 +579,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "what",
         iconName: "what",
         colour: "pink",
@@ -587,7 +587,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "like",
         iconName: "like",
         colour: "green",
@@ -595,7 +595,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stop",
         iconName: "stop",
         colour: "green",
@@ -603,7 +603,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "where",
         iconName: "where",
         colour: "pink",
@@ -611,7 +611,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "in",
         iconName: "in",
         colour: "red",
@@ -619,7 +619,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "he",
         iconName: "he",
         colour: "yellow",
@@ -627,7 +627,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eat",
         iconName: "eat",
         colour: "green",
@@ -635,7 +635,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drink",
         iconName: "drink",
         colour: "green",
@@ -643,7 +643,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turn",
         iconName: "turn",
         colour: "green",
@@ -651,7 +651,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "up",
         iconName: "up",
         colour: "red",
@@ -659,7 +659,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "down",
         iconName: "down",
         colour: "red",
@@ -667,7 +667,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finish",
         iconName: "finish",
         colour: "green",
@@ -675,7 +675,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "who",
         iconName: "who",
         colour: "pink",
@@ -683,7 +683,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "on",
         iconName: "on",
         colour: "red",
@@ -691,7 +691,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "she",
         iconName: "she",
         colour: "yellow",
@@ -699,7 +699,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "do",
         iconName: "do",
         colour: "green",
@@ -707,7 +707,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "loud",
         iconName: "loud",
         colour: "blue",
@@ -715,7 +715,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quiet",
         iconName: "quiet",
         colour: "blue",
@@ -723,7 +723,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fast",
         iconName: "fast",
         colour: "blue",
@@ -731,7 +731,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slow",
         iconName: "slow",
         colour: "blue",
@@ -739,7 +739,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "funny",
         iconName: "funny",
         colour: "blue",
@@ -747,7 +747,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "talk",
         iconName: "talk",
         colour: "green",
@@ -755,7 +755,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "off",
         iconName: "off",
         colour: "red",
@@ -763,7 +763,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "it",
         iconName: "it",
         colour: "yellow",
@@ -771,7 +771,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "put",
         iconName: "put",
         colour: "green",
@@ -779,7 +779,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "make",
         iconName: "make",
         colour: "green",
@@ -787,7 +787,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "feel",
         iconName: "feel",
         colour: "green",
@@ -795,7 +795,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "think",
         iconName: "think",
         colour: "green",
@@ -803,14 +803,14 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "am",
         colour: "green",
         internalName: "am",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "close",
         iconName: "close",
         colour: "green",
@@ -818,7 +818,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "open",
         iconName: "open",
         colour: "green",
@@ -826,7 +826,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "here",
         iconName: "here",
         colour: "grey",
@@ -850,7 +850,7 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toy",
         iconName: "toys",
         colour: "orange",
@@ -858,7 +858,7 @@ const boardSet = {
         internalName: "toy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "game",
         iconName: "game",
         colour: "orange",
@@ -869,7 +869,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "computer",
         iconName: "computer",
         colour: "orange",
@@ -877,7 +877,7 @@ const boardSet = {
         internalName: "computer",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tablet",
         iconName: "tablet",
         colour: "orange",
@@ -885,7 +885,7 @@ const boardSet = {
         internalName: "tablet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "phone",
         iconName: "phone",
         colour: "orange",
@@ -893,7 +893,7 @@ const boardSet = {
         internalName: "phone",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ball",
         iconName: "ball",
         colour: "orange",
@@ -901,7 +901,7 @@ const boardSet = {
         internalName: "ball",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bubbles",
         iconName: "bubbles",
         colour: "orange",
@@ -909,7 +909,7 @@ const boardSet = {
         internalName: "bubbles",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "balloon",
         iconName: "balloon",
         colour: "orange",
@@ -917,7 +917,7 @@ const boardSet = {
         internalName: "balloon",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blocks",
         iconName: "blocks",
         colour: "orange",
@@ -925,7 +925,7 @@ const boardSet = {
         internalName: "blocks",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foam",
         iconName: "foam",
         colour: "orange",
@@ -933,7 +933,7 @@ const boardSet = {
         internalName: "foam",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spinner",
         iconName: "spinner",
         colour: "orange",
@@ -941,7 +941,7 @@ const boardSet = {
         internalName: "spinner",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yo-yo",
         iconName: "yo-yo",
         colour: "orange",
@@ -949,7 +949,7 @@ const boardSet = {
         internalName: "yo-yo",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stretchy bands",
         iconName: "stretchy-band",
         colour: "orange",
@@ -957,7 +957,7 @@ const boardSet = {
         internalName: "stretchy bands",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wind up",
         iconName: "wind-up",
         colour: "orange",
@@ -966,7 +966,7 @@ const boardSet = {
         pronounciation: "wined up",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jigsaw",
         iconName: "jigsaw",
         colour: "orange",
@@ -974,7 +974,7 @@ const boardSet = {
         internalName: "jigsaw",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mr potato",
         iconName: "mr-potato",
         colour: "orange",
@@ -982,7 +982,7 @@ const boardSet = {
         internalName: "mr potato",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dice",
         iconName: "dice",
         colour: "orange",
@@ -990,7 +990,7 @@ const boardSet = {
         internalName: "dice",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "doll",
         iconName: "doll",
         colour: "orange",
@@ -998,7 +998,7 @@ const boardSet = {
         internalName: "doll",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "teddy",
         iconName: "teddy",
         colour: "orange",
@@ -1006,7 +1006,7 @@ const boardSet = {
         internalName: "teddy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "board game",
         iconName: "board-game",
         colour: "orange",
@@ -1014,7 +1014,7 @@ const boardSet = {
         internalName: "board game",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "book",
         iconName: "book",
         colour: "orange",
@@ -1024,7 +1024,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sing",
         iconName: "sing",
         colour: "green",
@@ -1032,7 +1032,7 @@ const boardSet = {
         internalName: "sing",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "music",
         iconName: "music",
         colour: "orange",
@@ -1040,7 +1040,7 @@ const boardSet = {
         internalName: "music",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dance",
         iconName: "dance",
         colour: "green",
@@ -1048,7 +1048,7 @@ const boardSet = {
         internalName: "dance",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clap",
         iconName: "clap",
         colour: "green",
@@ -1056,7 +1056,7 @@ const boardSet = {
         internalName: "clap",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tickle",
         iconName: "tickle",
         colour: "green",
@@ -1064,7 +1064,7 @@ const boardSet = {
         internalName: "tickle",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "push",
         iconName: "push",
         colour: "green",
@@ -1072,7 +1072,7 @@ const boardSet = {
         internalName: "push",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "climb",
         iconName: "climb",
         colour: "green",
@@ -1080,7 +1080,7 @@ const boardSet = {
         internalName: "climb",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "read",
         iconName: "read",
         colour: "green",
@@ -1089,7 +1089,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sand pit",
         iconName: "sand-pit",
         colour: "orange",
@@ -1097,7 +1097,7 @@ const boardSet = {
         internalName: "sand pit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "water tray",
         iconName: "water-tray",
         colour: "orange",
@@ -1105,7 +1105,7 @@ const boardSet = {
         internalName: "water tray",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swing",
         iconName: "swing",
         colour: "orange",
@@ -1113,7 +1113,7 @@ const boardSet = {
         internalName: "swing",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slide",
         iconName: "slide",
         colour: "orange",
@@ -1121,7 +1121,7 @@ const boardSet = {
         internalName: "slide",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "roundabout",
         iconName: "roundabout",
         colour: "orange",
@@ -1129,7 +1129,7 @@ const boardSet = {
         internalName: "roundabout",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seesaw",
         iconName: "seesaw",
         colour: "orange",
@@ -1137,7 +1137,7 @@ const boardSet = {
         internalName: "seesaw",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ladder",
         iconName: "ladder",
         colour: "orange",
@@ -1147,7 +1147,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bike",
         iconName: "bike",
         colour: "orange",
@@ -1155,7 +1155,7 @@ const boardSet = {
         internalName: "bike",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scooter",
         iconName: "scooter",
         colour: "orange",
@@ -1186,14 +1186,14 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀0⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "zero",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "add",
         iconName: "add",
         colour: "grey",
@@ -1201,7 +1201,7 @@ const boardSet = {
         internalName: "add",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "minus",
         iconName: "minus",
         colour: "grey",
@@ -1209,7 +1209,7 @@ const boardSet = {
         internalName: "minus",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "divide",
         iconName: "divide",
         colour: "grey",
@@ -1217,7 +1217,7 @@ const boardSet = {
         internalName: "divide",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "times",
         iconName: "times",
         colour: "grey",
@@ -1225,7 +1225,7 @@ const boardSet = {
         internalName: "times",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "equals",
         iconName: "equals",
         colour: "grey",
@@ -1233,7 +1233,7 @@ const boardSet = {
         internalName: "equals",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "maths",
         iconName: "maths",
         colour: "grey",
@@ -1241,7 +1241,7 @@ const boardSet = {
         internalName: "maths",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "count",
         iconName: "count",
         colour: "green",
@@ -1249,70 +1249,70 @@ const boardSet = {
         internalName: "count",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀1⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "one",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀2⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "two",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀3⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "three",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀4⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "four",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀5⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "five",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀6⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "six",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀7⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "seven",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀8⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "eight",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀9⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "nine",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "learn",
         iconName: "learn",
         colour: "green",
@@ -1320,7 +1320,7 @@ const boardSet = {
         internalName: "learn",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cut",
         iconName: "cut",
         colour: "green",
@@ -1328,7 +1328,7 @@ const boardSet = {
         internalName: "cut",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "colour",
         iconName: "colour-activity",
         colour: "green",
@@ -1336,7 +1336,7 @@ const boardSet = {
         internalName: "colour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paint",
         iconName: "paint",
         colour: "green",
@@ -1349,7 +1349,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "red",
         iconName: "red",
         colour: "white",
@@ -1357,7 +1357,7 @@ const boardSet = {
         internalName: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "orange",
         iconName: "orange-colour",
         colour: "white",
@@ -1365,7 +1365,7 @@ const boardSet = {
         internalName: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yellow",
         iconName: "yellow",
         colour: "white",
@@ -1373,7 +1373,7 @@ const boardSet = {
         internalName: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "green",
         iconName: "green",
         colour: "white",
@@ -1381,7 +1381,7 @@ const boardSet = {
         internalName: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blue",
         iconName: "blue",
         colour: "white",
@@ -1389,7 +1389,7 @@ const boardSet = {
         internalName: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "purple",
         iconName: "purple",
         colour: "white",
@@ -1397,7 +1397,7 @@ const boardSet = {
         internalName: "purple",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pink",
         iconName: "pink",
         colour: "white",
@@ -1405,7 +1405,7 @@ const boardSet = {
         internalName: "pink",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "black",
         iconName: "black",
         colour: "white",
@@ -1413,7 +1413,7 @@ const boardSet = {
         internalName: "black",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brown",
         iconName: "brown",
         colour: "white",
@@ -1421,7 +1421,7 @@ const boardSet = {
         internalName: "brown",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stripes",
         iconName: "stripes",
         colour: "blue",
@@ -1429,7 +1429,7 @@ const boardSet = {
         internalName: "stripes",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dots",
         iconName: "dots",
         colour: "blue",
@@ -1442,7 +1442,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "white",
         iconName: "white",
         colour: "white",
@@ -1450,7 +1450,7 @@ const boardSet = {
         internalName: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grey",
         iconName: "grey",
         colour: "white",
@@ -1458,7 +1458,7 @@ const boardSet = {
         internalName: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pen",
         iconName: "pen",
         colour: "orange",
@@ -1466,7 +1466,7 @@ const boardSet = {
         internalName: "pen",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pencil",
         iconName: "pencil",
         colour: "orange",
@@ -1474,7 +1474,7 @@ const boardSet = {
         internalName: "pencil",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scissors",
         iconName: "scissors",
         colour: "orange",
@@ -1482,7 +1482,7 @@ const boardSet = {
         internalName: "scissors",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sharpener",
         iconName: "sharpener",
         colour: "orange",
@@ -1490,7 +1490,7 @@ const boardSet = {
         internalName: "sharpener",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ruler",
         iconName: "ruler",
         colour: "orange",
@@ -1498,7 +1498,7 @@ const boardSet = {
         internalName: "ruler",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "glitter",
         iconName: "glitter",
         colour: "orange",
@@ -1506,7 +1506,7 @@ const boardSet = {
         internalName: "glitter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "light",
         iconName: "light",
         colour: "blue",
@@ -1514,7 +1514,7 @@ const boardSet = {
         internalName: "light",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "heavy",
         iconName: "heavy",
         colour: "blue",
@@ -1522,7 +1522,7 @@ const boardSet = {
         internalName: "heavy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dark",
         iconName: "dark",
         colour: "blue",
@@ -1546,7 +1546,7 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "animal",
         iconName: "animal",
         colour: "orange",
@@ -1554,7 +1554,7 @@ const boardSet = {
         internalName: "animal",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pet",
         iconName: "pet",
         colour: "orange",
@@ -1562,7 +1562,7 @@ const boardSet = {
         internalName: "pet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "zoo",
         iconName: "zoo",
         colour: "red",
@@ -1570,7 +1570,7 @@ const boardSet = {
         internalName: "zoo",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "farm",
         iconName: "farm",
         colour: "red",
@@ -1578,7 +1578,7 @@ const boardSet = {
         internalName: "farm",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wild",
         iconName: "wild",
         colour: "blue",
@@ -1586,7 +1586,7 @@ const boardSet = {
         internalName: "wild",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fluffy",
         iconName: "fluffy",
         colour: "blue",
@@ -1595,7 +1595,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "big",
         iconName: "big",
         colour: "blue",
@@ -1603,7 +1603,7 @@ const boardSet = {
         internalName: "big",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cat",
         iconName: "cat",
         colour: "orange",
@@ -1611,7 +1611,7 @@ const boardSet = {
         internalName: "cat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dog",
         iconName: "dog",
         colour: "orange",
@@ -1619,7 +1619,7 @@ const boardSet = {
         internalName: "dog",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rabbit",
         iconName: "rabbit",
         colour: "orange",
@@ -1627,7 +1627,7 @@ const boardSet = {
         internalName: "rabbit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hamster",
         iconName: "hamster",
         colour: "orange",
@@ -1635,7 +1635,7 @@ const boardSet = {
         internalName: "hamster",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lizard",
         iconName: "lizard",
         colour: "orange",
@@ -1643,7 +1643,7 @@ const boardSet = {
         internalName: "lizard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tortoise",
         iconName: "tortoise",
         colour: "orange",
@@ -1651,7 +1651,7 @@ const boardSet = {
         internalName: "tortoise",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snake",
         iconName: "snake",
         colour: "orange",
@@ -1659,7 +1659,7 @@ const boardSet = {
         internalName: "snake",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bird",
         iconName: "bird",
         colour: "orange",
@@ -1668,7 +1668,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cow",
         iconName: "cow",
         colour: "orange",
@@ -1676,7 +1676,7 @@ const boardSet = {
         internalName: "cow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sheep",
         iconName: "sheep",
         colour: "orange",
@@ -1684,7 +1684,7 @@ const boardSet = {
         internalName: "sheep",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chicken",
         iconName: "chicken",
         colour: "orange",
@@ -1692,7 +1692,7 @@ const boardSet = {
         internalName: "chicken",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "horse",
         iconName: "horse",
         colour: "orange",
@@ -1700,7 +1700,7 @@ const boardSet = {
         internalName: "horse",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pig",
         iconName: "pig",
         colour: "orange",
@@ -1708,7 +1708,7 @@ const boardSet = {
         internalName: "pig",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "elephant",
         iconName: "elephant",
         colour: "orange",
@@ -1716,7 +1716,7 @@ const boardSet = {
         internalName: "elephant",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spider",
         iconName: "spider",
         colour: "orange",
@@ -1724,7 +1724,7 @@ const boardSet = {
         internalName: "spider",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bug",
         iconName: "bug",
         colour: "orange",
@@ -1732,7 +1732,7 @@ const boardSet = {
         internalName: "bug",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "small",
         iconName: "small",
         colour: "blue",
@@ -1740,7 +1740,7 @@ const boardSet = {
         internalName: "small",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "car",
         iconName: "car",
         colour: "orange",
@@ -1748,7 +1748,7 @@ const boardSet = {
         internalName: "car",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bus",
         iconName: "bus",
         colour: "orange",
@@ -1756,7 +1756,7 @@ const boardSet = {
         internalName: "bus",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "train",
         iconName: "train",
         colour: "orange",
@@ -1764,7 +1764,7 @@ const boardSet = {
         internalName: "train",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "motorbike",
         iconName: "motorbike",
         colour: "orange",
@@ -1772,7 +1772,7 @@ const boardSet = {
         internalName: "motorbike",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plane",
         iconName: "plane",
         colour: "orange",
@@ -1780,7 +1780,7 @@ const boardSet = {
         internalName: "plane",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "helicopter",
         iconName: "helicopter",
         colour: "orange",
@@ -1788,7 +1788,7 @@ const boardSet = {
         internalName: "helicopter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boat",
         iconName: "boat",
         colour: "orange",
@@ -1796,7 +1796,7 @@ const boardSet = {
         internalName: "boat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paw",
         iconName: "paw",
         colour: "orange",
@@ -1804,7 +1804,7 @@ const boardSet = {
         internalName: "paw",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tail",
         iconName: "tail",
         colour: "orange",
@@ -1814,7 +1814,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrong",
         iconName: "wrong",
         colour: "red",
@@ -1826,7 +1826,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "claw",
         iconName: "claw",
         colour: "orange",
@@ -1835,7 +1835,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wheel",
         iconName: "wheel",
         colour: "orange",
@@ -1844,7 +1844,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "left",
         iconName: "left",
         colour: "red",
@@ -1853,7 +1853,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "right",
         iconName: "right",
         colour: "red",
@@ -1862,7 +1862,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drive",
         iconName: "drive",
         colour: "green",
@@ -1870,7 +1870,7 @@ const boardSet = {
         internalName: "drive",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fly",
         iconName: "fly",
         colour: "green",
@@ -1878,7 +1878,7 @@ const boardSet = {
         internalName: "fly",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ride",
         iconName: "ride",
         colour: "green",
@@ -1902,7 +1902,7 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "body",
         iconName: "body",
         colour: "orange",
@@ -1910,7 +1910,7 @@ const boardSet = {
         internalName: "body",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "poo",
         iconName: "poo",
         colour: "orange",
@@ -1918,7 +1918,7 @@ const boardSet = {
         internalName: "poo",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wee",
         iconName: "wee",
         colour: "orange",
@@ -1926,7 +1926,7 @@ const boardSet = {
         internalName: "wee",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hurt",
         iconName: "hurt",
         colour: "green",
@@ -1934,7 +1934,7 @@ const boardSet = {
         internalName: "hurt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blood",
         iconName: "blood",
         colour: "orange",
@@ -1942,7 +1942,7 @@ const boardSet = {
         internalName: "blood",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "itch",
         iconName: "itch",
         colour: "green",
@@ -1950,7 +1950,7 @@ const boardSet = {
         internalName: "itch",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "broken",
         iconName: "broken",
         colour: "blue",
@@ -1958,7 +1958,7 @@ const boardSet = {
         internalName: "broken",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bruise",
         iconName: "bruise",
         colour: "orange",
@@ -1968,7 +1968,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nappy",
         iconName: "nappy",
         colour: "orange",
@@ -1976,7 +1976,7 @@ const boardSet = {
         internalName: "nappy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fart",
         iconName: "fart",
         colour: "green",
@@ -1984,7 +1984,7 @@ const boardSet = {
         internalName: "fart",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sick",
         iconName: "sick",
         colour: "green",
@@ -1992,7 +1992,7 @@ const boardSet = {
         internalName: "sick",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "period",
         iconName: "period",
         colour: "orange",
@@ -2000,7 +2000,7 @@ const boardSet = {
         internalName: "period",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pad",
         iconName: "pad",
         colour: "orange",
@@ -2008,7 +2008,7 @@ const boardSet = {
         internalName: "pad",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clean",
         iconName: "clean",
         colour: "green",
@@ -2016,7 +2016,7 @@ const boardSet = {
         internalName: "clean",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dirty",
         iconName: "dirty",
         colour: "blue",
@@ -2024,7 +2024,7 @@ const boardSet = {
         internalName: "dirty",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finger",
         iconName: "finger",
         colour: "orange",
@@ -2032,7 +2032,7 @@ const boardSet = {
         internalName: "finger",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hand",
         iconName: "hand",
         colour: "orange",
@@ -2040,7 +2040,7 @@ const boardSet = {
         internalName: "hand",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "arm",
         iconName: "arm",
         colour: "orange",
@@ -2048,7 +2048,7 @@ const boardSet = {
         internalName: "arm",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "elbow",
         iconName: "elbow",
         colour: "orange",
@@ -2056,7 +2056,7 @@ const boardSet = {
         internalName: "elbow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tummy",
         iconName: "tummy",
         colour: "orange",
@@ -2064,7 +2064,7 @@ const boardSet = {
         internalName: "tummy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "private parts",
         iconName: "private-parts",
         colour: "orange",
@@ -2072,7 +2072,7 @@ const boardSet = {
         internalName: "private parts",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eye",
         iconName: "eye",
         colour: "orange",
@@ -2080,7 +2080,7 @@ const boardSet = {
         internalName: "eye",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nose",
         iconName: "nose",
         colour: "orange",
@@ -2088,7 +2088,7 @@ const boardSet = {
         internalName: "nose",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mouth",
         iconName: "mouth",
         colour: "orange",
@@ -2096,7 +2096,7 @@ const boardSet = {
         internalName: "mouth",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toe",
         iconName: "toe",
         colour: "orange",
@@ -2104,7 +2104,7 @@ const boardSet = {
         internalName: "toe",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foot",
         iconName: "foot",
         colour: "orange",
@@ -2112,7 +2112,7 @@ const boardSet = {
         internalName: "foot",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "leg",
         iconName: "leg",
         colour: "orange",
@@ -2120,7 +2120,7 @@ const boardSet = {
         internalName: "leg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "knee",
         iconName: "knee",
         colour: "orange",
@@ -2128,7 +2128,7 @@ const boardSet = {
         internalName: "knee",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chest",
         iconName: "chest",
         colour: "orange",
@@ -2136,7 +2136,7 @@ const boardSet = {
         internalName: "chest",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "head",
         iconName: "head",
         colour: "orange",
@@ -2144,7 +2144,7 @@ const boardSet = {
         internalName: "head",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ear",
         iconName: "ear",
         colour: "orange",
@@ -2152,7 +2152,7 @@ const boardSet = {
         internalName: "ear",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hair",
         iconName: "hair",
         colour: "orange",
@@ -2160,7 +2160,7 @@ const boardSet = {
         internalName: "hair",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tooth",
         iconName: "tooth",
         colour: "orange",
@@ -2168,7 +2168,7 @@ const boardSet = {
         internalName: "tooth",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pants",
         iconName: "pants",
         colour: "orange",
@@ -2176,7 +2176,7 @@ const boardSet = {
         internalName: "pants",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "socks",
         iconName: "socks",
         colour: "orange",
@@ -2184,7 +2184,7 @@ const boardSet = {
         internalName: "socks",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shoe",
         iconName: "shoe",
         colour: "orange",
@@ -2192,7 +2192,7 @@ const boardSet = {
         internalName: "shoe",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trousers",
         iconName: "trousers",
         colour: "orange",
@@ -2200,7 +2200,7 @@ const boardSet = {
         internalName: "trousers",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shorts",
         iconName: "shorts",
         colour: "orange",
@@ -2208,7 +2208,7 @@ const boardSet = {
         internalName: "shorts",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shirt",
         iconName: "shirt",
         colour: "orange",
@@ -2216,7 +2216,7 @@ const boardSet = {
         internalName: "shirt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "skirt",
         iconName: "skirt",
         colour: "orange",
@@ -2224,7 +2224,7 @@ const boardSet = {
         internalName: "skirt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tights",
         iconName: "tights",
         colour: "orange",
@@ -2232,7 +2232,7 @@ const boardSet = {
         internalName: "tights",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jumper",
         iconName: "jumper",
         colour: "orange",
@@ -2241,7 +2241,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "zip",
         iconName: "zip",
         colour: "orange",
@@ -2249,7 +2249,7 @@ const boardSet = {
         internalName: "zip",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "button",
         iconName: "button",
         colour: "orange",
@@ -2257,7 +2257,7 @@ const boardSet = {
         internalName: "button",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lace",
         iconName: "lace",
         colour: "orange",
@@ -2265,7 +2265,7 @@ const boardSet = {
         internalName: "lace",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "velcro",
         iconName: "velcro",
         colour: "orange",
@@ -2275,7 +2275,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "coat",
         iconName: "coat",
         colour: "orange",
@@ -2300,7 +2300,7 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "school",
         iconName: "school",
         colour: "red",
@@ -2308,7 +2308,7 @@ const boardSet = {
         internalName: "school",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "home",
         iconName: "home",
         colour: "red",
@@ -2316,7 +2316,7 @@ const boardSet = {
         internalName: "home",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "park",
         iconName: "park",
         colour: "red",
@@ -2324,7 +2324,7 @@ const boardSet = {
         internalName: "park",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swimming pool",
         iconName: "swimming-pool",
         colour: "red",
@@ -2332,7 +2332,7 @@ const boardSet = {
         internalName: "swimming pool",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "restaurant",
         iconName: "restaurant",
         colour: "red",
@@ -2340,7 +2340,7 @@ const boardSet = {
         internalName: "restaurant",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shop",
         iconName: "shop",
         colour: "red",
@@ -2348,7 +2348,7 @@ const boardSet = {
         internalName: "shop",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "outside",
         iconName: "outside",
         colour: "red",
@@ -2356,7 +2356,7 @@ const boardSet = {
         internalName: "outside",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "weather",
         iconName: "weather",
         colour: "orange",
@@ -2364,7 +2364,7 @@ const boardSet = {
         internalName: "weather",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toilet",
         iconName: "toilet",
         colour: "orange",
@@ -2372,7 +2372,7 @@ const boardSet = {
         internalName: "toilet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kitchen",
         iconName: "kitchen",
         colour: "red",
@@ -2380,7 +2380,7 @@ const boardSet = {
         internalName: "kitchen",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "living room",
         iconName: "living-room",
         colour: "red",
@@ -2388,7 +2388,7 @@ const boardSet = {
         internalName: "living room",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bedroom",
         iconName: "bedroom",
         colour: "red",
@@ -2396,7 +2396,7 @@ const boardSet = {
         internalName: "bedroom",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bathroom",
         iconName: "bathroom",
         colour: "red",
@@ -2404,7 +2404,7 @@ const boardSet = {
         internalName: "bathroom",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dining room",
         iconName: "dining-room",
         colour: "red",
@@ -2412,7 +2412,7 @@ const boardSet = {
         internalName: "dining room",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stairs",
         iconName: "stairs",
         colour: "red",
@@ -2420,7 +2420,7 @@ const boardSet = {
         internalName: "stairs",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "inside",
         colour: "red",
         linkTo: "standard",
@@ -2429,7 +2429,7 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/inside%20room.svg.varianted-skin.svg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rain",
         iconName: "rain",
         colour: "orange",
@@ -2437,7 +2437,7 @@ const boardSet = {
         internalName: "rain",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cooker",
         iconName: "cooker",
         colour: "orange",
@@ -2445,7 +2445,7 @@ const boardSet = {
         internalName: "cooker",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soap",
         colour: "orange",
         linkTo: "standard",
@@ -2454,7 +2454,7 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Soap%20liquid.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chair",
         iconName: "chair",
         colour: "orange",
@@ -2462,7 +2462,7 @@ const boardSet = {
         internalName: "chair",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bed",
         iconName: "bed",
         colour: "orange",
@@ -2470,7 +2470,7 @@ const boardSet = {
         internalName: "bed",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shower",
         iconName: "shower",
         colour: "orange",
@@ -2478,7 +2478,7 @@ const boardSet = {
         internalName: "shower",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "table",
         iconName: "table",
         colour: "orange",
@@ -2486,7 +2486,7 @@ const boardSet = {
         internalName: "table",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "money",
         iconName: "money",
         colour: "orange",
@@ -2494,7 +2494,7 @@ const boardSet = {
         internalName: "money",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "window",
         iconName: "window",
         colour: "orange",
@@ -2502,7 +2502,7 @@ const boardSet = {
         internalName: "window",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sun",
         iconName: "sun",
         colour: "orange",
@@ -2510,7 +2510,7 @@ const boardSet = {
         internalName: "sun",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cook",
         iconName: "cook",
         colour: "green",
@@ -2518,7 +2518,7 @@ const boardSet = {
         internalName: "cook",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sponge",
         iconName: "sponge",
         colour: "orange",
@@ -2526,7 +2526,7 @@ const boardSet = {
         internalName: "sponge",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sofa",
         iconName: "sofa",
         colour: "orange",
@@ -2534,7 +2534,7 @@ const boardSet = {
         internalName: "sofa",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sleep",
         iconName: "sleep",
         colour: "green",
@@ -2542,7 +2542,7 @@ const boardSet = {
         internalName: "sleep",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bath",
         iconName: "bath",
         colour: "orange",
@@ -2550,7 +2550,7 @@ const boardSet = {
         internalName: "bath",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spoon",
         colour: "orange",
         linkTo: "standard",
@@ -2561,7 +2561,7 @@ const boardSet = {
         pluralForm: "spoons",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "buy",
         iconName: "buy",
         colour: "green",
@@ -2569,7 +2569,7 @@ const boardSet = {
         internalName: "buy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "door",
         iconName: "door",
         colour: "orange",
@@ -2577,7 +2577,7 @@ const boardSet = {
         internalName: "door",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cloud",
         iconName: "cloud",
         colour: "orange",
@@ -2586,7 +2586,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "towel",
         iconName: "towel",
         colour: "orange",
@@ -2594,7 +2594,7 @@ const boardSet = {
         internalName: "towel",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "TV",
         iconName: "tv",
         colour: "orange",
@@ -2602,7 +2602,7 @@ const boardSet = {
         internalName: "TV",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sheet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bottom%20sheet.png",
@@ -2611,7 +2611,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sink",
         colour: "orange",
         linkTo: "standard",
@@ -2620,7 +2620,7 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adapted%20wash%20basin.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fork",
         colour: "orange",
         linkTo: "standard",
@@ -2631,7 +2631,7 @@ const boardSet = {
         pluralForm: "forks",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "knife",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/knife_3.png",
@@ -2641,7 +2641,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curtain",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curtain.png",
@@ -2650,7 +2650,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mud",
         iconName: "mud",
         colour: "orange",
@@ -2659,7 +2659,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wash",
         iconName: "wash",
         colour: "green",
@@ -2667,7 +2667,7 @@ const boardSet = {
         internalName: "wash",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sit",
         iconName: "sit",
         colour: "green",
@@ -2675,7 +2675,7 @@ const boardSet = {
         internalName: "sit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pillow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pillow.png",
@@ -2684,7 +2684,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swim",
         iconName: "swim",
         colour: "green",
@@ -2692,7 +2692,7 @@ const boardSet = {
         internalName: "swim",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/soup%20dish.png",
@@ -2701,7 +2701,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hot",
         iconName: "hot",
         colour: "blue",
@@ -2709,7 +2709,7 @@ const boardSet = {
         internalName: "hot",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cold",
         iconName: "cold",
         colour: "blue",
@@ -2717,7 +2717,7 @@ const boardSet = {
         internalName: "cold",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snow",
         iconName: "snow",
         colour: "orange",
@@ -2741,7 +2741,7 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "food",
         iconName: "food",
         colour: "orange",
@@ -2751,7 +2751,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "meal",
         iconName: "meal",
         colour: "grey",
@@ -2759,7 +2759,7 @@ const boardSet = {
         internalName: "meal",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "breakfast",
         iconName: "breakfast",
         colour: "grey",
@@ -2767,7 +2767,7 @@ const boardSet = {
         internalName: "breakfast",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lunch",
         iconName: "lunch",
         colour: "grey",
@@ -2775,7 +2775,7 @@ const boardSet = {
         internalName: "lunch",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tea",
         iconName: "tea",
         colour: "grey",
@@ -2783,7 +2783,7 @@ const boardSet = {
         internalName: "tea",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snack",
         iconName: "snack",
         colour: "grey",
@@ -2791,7 +2791,7 @@ const boardSet = {
         internalName: "snack",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sauce",
         iconName: "sauce",
         colour: "orange",
@@ -2799,7 +2799,7 @@ const boardSet = {
         internalName: "sauce",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mash",
         iconName: "mash",
         colour: "orange",
@@ -2807,7 +2807,7 @@ const boardSet = {
         internalName: "mash",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curry",
         iconName: "curry",
         colour: "orange",
@@ -2815,7 +2815,7 @@ const boardSet = {
         internalName: "curry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rice",
         iconName: "rice",
         colour: "orange",
@@ -2823,7 +2823,7 @@ const boardSet = {
         internalName: "rice",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pasta",
         iconName: "pasta",
         colour: "orange",
@@ -2831,7 +2831,7 @@ const boardSet = {
         internalName: "pasta",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pizza",
         iconName: "pizza",
         colour: "orange",
@@ -2839,7 +2839,7 @@ const boardSet = {
         internalName: "pizza",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "favourite",
         iconName: "favourite",
         colour: "blue",
@@ -2847,7 +2847,7 @@ const boardSet = {
         internalName: "favourite",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burn",
         iconName: "burn",
         colour: "blue",
@@ -2855,7 +2855,7 @@ const boardSet = {
         internalName: "burn",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "healthy",
         iconName: "healthy",
         colour: "blue",
@@ -2863,7 +2863,7 @@ const boardSet = {
         internalName: "healthy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "veg",
         iconName: "veg",
         colour: "orange",
@@ -2871,7 +2871,7 @@ const boardSet = {
         internalName: "veg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "carrot",
         iconName: "carrot",
         colour: "orange",
@@ -2879,7 +2879,7 @@ const boardSet = {
         internalName: "carrot",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "broccoli",
         iconName: "broccoli",
         colour: "orange",
@@ -2887,7 +2887,7 @@ const boardSet = {
         internalName: "broccoli",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "potato",
         iconName: "potato",
         colour: "orange",
@@ -2895,7 +2895,7 @@ const boardSet = {
         internalName: "potato",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pea",
         iconName: "pea",
         colour: "orange",
@@ -2903,7 +2903,7 @@ const boardSet = {
         internalName: "pea",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bean",
         iconName: "bean",
         colour: "orange",
@@ -2911,7 +2911,7 @@ const boardSet = {
         internalName: "bean",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tomato",
         iconName: "tomato",
         colour: "orange",
@@ -2919,7 +2919,7 @@ const boardSet = {
         internalName: "tomato",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "salad",
         iconName: "salad",
         colour: "orange",
@@ -2927,7 +2927,7 @@ const boardSet = {
         internalName: "salad",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bread",
         iconName: "bread",
         colour: "orange",
@@ -2935,7 +2935,7 @@ const boardSet = {
         internalName: "bread",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "meat",
         iconName: "meat",
         colour: "orange",
@@ -2943,7 +2943,7 @@ const boardSet = {
         internalName: "meat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fish",
         iconName: "fish",
         colour: "orange",
@@ -2951,7 +2951,7 @@ const boardSet = {
         internalName: "fish",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ham",
         iconName: "ham",
         colour: "orange",
@@ -2959,7 +2959,7 @@ const boardSet = {
         internalName: "ham",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chicken",
         iconName: "chicken",
         colour: "orange",
@@ -2967,7 +2967,7 @@ const boardSet = {
         internalName: "chicken",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tuna",
         iconName: "tuna",
         colour: "orange",
@@ -2975,7 +2975,7 @@ const boardSet = {
         internalName: "tuna",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nugget",
         iconName: "nugget",
         colour: "orange",
@@ -2983,7 +2983,7 @@ const boardSet = {
         internalName: "nugget",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burger",
         iconName: "burger",
         colour: "orange",
@@ -2991,7 +2991,7 @@ const boardSet = {
         internalName: "burger",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sausage",
         iconName: "sausage",
         colour: "orange",
@@ -2999,7 +2999,7 @@ const boardSet = {
         internalName: "sausage",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toast",
         iconName: "toast",
         colour: "orange",
@@ -3007,7 +3007,7 @@ const boardSet = {
         internalName: "toast",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cereal",
         iconName: "cereal",
         colour: "orange",
@@ -3015,7 +3015,7 @@ const boardSet = {
         internalName: "cereal",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "egg",
         iconName: "egg",
         colour: "orange",
@@ -3024,7 +3024,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cheese",
         iconName: "cheese",
         colour: "orange",
@@ -3032,7 +3032,7 @@ const boardSet = {
         internalName: "cheese",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chocolate",
         iconName: "chocolate",
         colour: "orange",
@@ -3040,7 +3040,7 @@ const boardSet = {
         internalName: "chocolate",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "biscuit",
         iconName: "biscuit",
         colour: "orange",
@@ -3048,7 +3048,7 @@ const boardSet = {
         internalName: "biscuit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crisp",
         iconName: "crisp",
         colour: "orange",
@@ -3056,7 +3056,7 @@ const boardSet = {
         internalName: "crisp",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chip",
         iconName: "chip",
         colour: "orange",
@@ -3064,7 +3064,7 @@ const boardSet = {
         internalName: "chip",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sandwich",
         iconName: "sandwich",
         colour: "orange",
@@ -3072,7 +3072,7 @@ const boardSet = {
         internalName: "sandwich",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soup",
         iconName: "soup",
         colour: "orange",
@@ -3080,7 +3080,7 @@ const boardSet = {
         internalName: "soup",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "noodles",
         iconName: "noodles",
         colour: "orange",
@@ -3088,7 +3088,7 @@ const boardSet = {
         internalName: "noodles",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pancake",
         iconName: "pancake",
         colour: "orange",
@@ -3096,7 +3096,7 @@ const boardSet = {
         internalName: "pancake",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yogurt",
         iconName: "yogurt",
         colour: "orange",
@@ -3104,7 +3104,7 @@ const boardSet = {
         internalName: "yogurt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "butter",
         iconName: "butter",
         colour: "orange",
@@ -3112,7 +3112,7 @@ const boardSet = {
         internalName: "butter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jam",
         iconName: "jam",
         colour: "orange",
@@ -3120,7 +3120,7 @@ const boardSet = {
         internalName: "jam",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sweet",
         iconName: "sweet",
         colour: "orange",
@@ -3128,7 +3128,7 @@ const boardSet = {
         internalName: "sweet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spicy",
         iconName: "spicy",
         colour: "orange",
@@ -3136,7 +3136,7 @@ const boardSet = {
         internalName: "spicy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrap",
         iconName: "wrap",
         colour: "orange",
@@ -3166,7 +3166,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dry",
         iconName: "dry",
         colour: "blue",
@@ -3174,7 +3174,7 @@ const boardSet = {
         internalName: "dry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wet",
         iconName: "wet",
         colour: "blue",
@@ -3182,7 +3182,7 @@ const boardSet = {
         internalName: "wet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "juice",
         iconName: "juice",
         colour: "orange",
@@ -3190,7 +3190,7 @@ const boardSet = {
         internalName: "juice",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "water",
         iconName: "water",
         colour: "orange",
@@ -3198,7 +3198,7 @@ const boardSet = {
         internalName: "water",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "milk",
         iconName: "milk",
         colour: "orange",
@@ -3206,7 +3206,7 @@ const boardSet = {
         internalName: "milk",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "milkshake",
         iconName: "milkshake",
         colour: "orange",
@@ -3214,7 +3214,7 @@ const boardSet = {
         internalName: "milkshake",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fizzy",
         iconName: "fizzy",
         colour: "blue",
@@ -3222,7 +3222,7 @@ const boardSet = {
         internalName: "fizzy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lemonade",
         iconName: "lemonade",
         colour: "orange",
@@ -3230,7 +3230,7 @@ const boardSet = {
         internalName: "lemonade",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cola",
         iconName: "cola",
         colour: "orange",
@@ -3240,7 +3240,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tea",
         iconName: "tea",
         colour: "orange",
@@ -3248,7 +3248,7 @@ const boardSet = {
         internalName: "tea",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "coffee",
         iconName: "coffee",
         colour: "orange",
@@ -3256,7 +3256,7 @@ const boardSet = {
         internalName: "coffee",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hot chocolate",
         iconName: "hot-chocolate",
         colour: "orange",
@@ -3270,7 +3270,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fruit",
         iconName: "fruit",
         colour: "orange",
@@ -3278,7 +3278,7 @@ const boardSet = {
         internalName: "fruit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "apple",
         iconName: "apple",
         colour: "orange",
@@ -3286,7 +3286,7 @@ const boardSet = {
         internalName: "apple",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "banana",
         iconName: "banana",
         colour: "orange",
@@ -3294,7 +3294,7 @@ const boardSet = {
         internalName: "banana",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "orange",
         iconName: "orange-fruit",
         colour: "orange",
@@ -3302,7 +3302,7 @@ const boardSet = {
         internalName: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pear",
         iconName: "pear",
         colour: "orange",
@@ -3310,7 +3310,7 @@ const boardSet = {
         internalName: "pear",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lemon",
         iconName: "lemon",
         colour: "orange",
@@ -3318,7 +3318,7 @@ const boardSet = {
         internalName: "lemon",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grape",
         iconName: "grape",
         colour: "orange",
@@ -3326,7 +3326,7 @@ const boardSet = {
         internalName: "grape",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raisin",
         iconName: "raisin",
         colour: "orange",
@@ -3334,7 +3334,7 @@ const boardSet = {
         internalName: "raisin",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blackcurrant",
         iconName: "blackcurrant",
         colour: "orange",
@@ -3342,7 +3342,7 @@ const boardSet = {
         internalName: "blackcurrant",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "strawberry",
         iconName: "strawberry",
         colour: "orange",
@@ -3350,7 +3350,7 @@ const boardSet = {
         internalName: "strawberry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raspberry",
         iconName: "raspberry",
         colour: "orange",
@@ -3358,7 +3358,7 @@ const boardSet = {
         internalName: "raspberry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blueberry",
         iconName: "blueberry",
         colour: "orange",
@@ -3366,7 +3366,7 @@ const boardSet = {
         internalName: "blueberry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cherry",
         iconName: "cherry",
         colour: "orange",
@@ -3386,7 +3386,7 @@ const boardSet = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "full",
         iconName: "full",
         colour: "blue",
@@ -3394,7 +3394,7 @@ const boardSet = {
         internalName: "full",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "empty",
         iconName: "empty",
         colour: "blue",
@@ -3418,7 +3418,7 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "adult",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adult.png.varianted-skin.png",
@@ -3428,7 +3428,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "man",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/human%20(man).png.varianted-skin.png",
@@ -3437,7 +3437,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "woman",
         iconName: "adult",
         colour: "orange",
@@ -3448,7 +3448,7 @@ const boardSet = {
         pluralForm: "women",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "person",
         colour: "orange",
         linkTo: "standard",
@@ -3458,7 +3458,7 @@ const boardSet = {
         pluralForm: "people",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dad",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dad.png.varianted-skin.png",
@@ -3467,7 +3467,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mum",
         iconName: "mum",
         colour: "orange",
@@ -3475,7 +3475,7 @@ const boardSet = {
         internalName: "mum",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stranger",
         iconName: "Stranger",
         colour: "orange",
@@ -3486,7 +3486,7 @@ const boardSet = {
         pluralForm: "strangers",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "family",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/family_8.png.variant-medium.png",
@@ -3495,7 +3495,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "baby",
         colour: "orange",
         linkTo: "standard",
@@ -3505,7 +3505,7 @@ const boardSet = {
         pluralForm: "babies",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "child",
         iconName: "boy",
         colour: "orange",
@@ -3516,7 +3516,7 @@ const boardSet = {
         pluralForm: "children",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boy_3.png.varianted-skin.png",
@@ -3525,7 +3525,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "girl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/girl_2.png.varianted-skin.png",
@@ -3534,7 +3534,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "friend",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/friends_3.png.variant-medium-dark.png",
@@ -3543,7 +3543,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brother",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brother.png.varianted-skin.png",
@@ -3552,7 +3552,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sister",
         iconName: "sister",
         colour: "orange",
@@ -3560,7 +3560,7 @@ const boardSet = {
         internalName: "sister",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grandma",
         colour: "orange",
         linkTo: "standard",
@@ -3570,7 +3570,7 @@ const boardSet = {
         pluralForm: "grandmas",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grandpa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/grandpa.png.varianted-skin.png",
@@ -3579,7 +3579,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "woman",
         displayName: "auntie",
@@ -3589,7 +3589,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "girl",
         displayName: "uncle",
@@ -3599,7 +3599,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cousin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cousin.png.varianted-skin.png",
@@ -3608,7 +3608,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "partner",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/partner.svg.varianted-skin.svg",
@@ -3616,7 +3616,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "married",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to marry.png.varianted-skin.png",
@@ -3624,7 +3624,7 @@ const boardSet = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "people",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/group of people.png.varianted-skin.png",
@@ -3632,7 +3632,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "grandma",
         displayName: "boss",
@@ -3641,7 +3641,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "grandad",
         displayName: "teacher",
@@ -3650,7 +3650,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "assistant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/care assistant 1b.svg.varianted-skin.svg",
@@ -3658,7 +3658,7 @@ const boardSet = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "green",
         internalName: "baby",
         displayName: "love",
@@ -3667,7 +3667,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dislike.png.varianted-skin.png",
@@ -3675,7 +3675,7 @@ const boardSet = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "was",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/yesterday.png",
@@ -3684,7 +3684,7 @@ const boardSet = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "are",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/equal sign.png",
@@ -3692,7 +3692,7 @@ const boardSet = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "will",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/future.png",
@@ -3700,7 +3700,7 @@ const boardSet = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "separate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to separate_1.png.varianted-skin.png",
@@ -3709,7 +3709,7 @@ const boardSet = {
       },
       { type: "blank", colour: "orange", internalName: "nana" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "adopt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adoptive family.png.varianted-skin.png",
@@ -3717,7 +3717,7 @@ const boardSet = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/family.svg.varianted-skin.svg",
@@ -3725,13 +3725,13 @@ const boardSet = {
         colour: "green",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "me",
         colour: "yellow",
         linkTo: "standard",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "my",
         iconName: "my",
         colour: "yellow",
@@ -3739,7 +3739,7 @@ const boardSet = {
         internalName: "my",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "mine",
         iconName: "mine",
         colour: "yellow",
@@ -3747,7 +3747,7 @@ const boardSet = {
         internalName: "mine",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "our",
         iconName: "our",
         colour: "yellow",
@@ -3755,19 +3755,19 @@ const boardSet = {
         internalName: "our",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "your",
         linkTo: "standard",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "we",
         linkTo: "standard",
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kind",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nice.png.varianted-skin.png",
@@ -3776,7 +3776,7 @@ const boardSet = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mean",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hit.png",
@@ -3784,7 +3784,7 @@ const boardSet = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "annoying",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/annoyed_1.png.varianted-skin.png",
@@ -3792,49 +3792,49 @@ const boardSet = {
         colour: "blue",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "his",
         colour: "yellow",
         linkTo: "standard",
         internalName: "his",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "him",
         colour: "yellow",
         linkTo: "standard",
         internalName: "him",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "her",
         colour: "yellow",
         linkTo: "standard",
         internalName: "her",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "they",
         colour: "yellow",
         linkTo: "standard",
         internalName: "they",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "them",
         colour: "yellow",
         linkTo: "standard",
         internalName: "them",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "their",
         colour: "yellow",
         linkTo: "standard",
         internalName: "their",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "old",
         iconName: "old",
         colour: "blue",
@@ -3843,7 +3843,7 @@ const boardSet = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "young",
         iconName: "young",
         colour: "blue",
@@ -3869,7 +3869,7 @@ const boardSet = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "happy",
         iconName: "happy",
         colour: "blue",
@@ -3877,7 +3877,7 @@ const boardSet = {
         internalName: "happy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sad",
         iconName: "sad",
         colour: "blue",
@@ -3885,7 +3885,7 @@ const boardSet = {
         internalName: "sad",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "OK",
         iconName: "ok",
         colour: "blue",
@@ -3893,7 +3893,7 @@ const boardSet = {
         internalName: "OK",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "angry",
         iconName: "angry",
         colour: "blue",
@@ -3901,7 +3901,7 @@ const boardSet = {
         internalName: "smile",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sick",
         iconName: "sick",
         colour: "blue",
@@ -3916,7 +3916,7 @@ const boardSet = {
         internalName: "win",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hi",
         iconName: "hi",
         colour: "grey",
@@ -3926,7 +3926,7 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hello.png.variant-dark.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bye",
         iconName: "bye",
         colour: "grey",
@@ -3936,35 +3936,35 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Goodbye%20(M)_1.png.varianted-skin.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "worried",
         iconName: "worried",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bored",
         iconName: "bored",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "excited",
         iconName: "excited",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tired",
         iconName: "tired",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "confused",
         iconName: "confused",
         colour: "blue",
@@ -3985,7 +3985,7 @@ const boardSet = {
         internalName: "lose",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sorry",
         iconName: "sorry",
         colour: "grey",
@@ -3995,7 +3995,7 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/sorry.jpg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "please",
         iconName: "please",
         colour: "grey",
@@ -4005,28 +4005,28 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/please.png.varianted-skin.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "laugh",
         iconName: "laugh",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cry",
         iconName: "cry",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "smile",
         iconName: "smile",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shout",
         iconName: "shout",
         colour: "green",
@@ -4040,7 +4040,7 @@ const boardSet = {
         internalName: "shout",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yes",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Yes%20(M).png",
@@ -4055,7 +4055,7 @@ const boardSet = {
         type: "blank",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "no",
         iconName: "no",
         colour: "white",
@@ -4065,14 +4065,14 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/No%20(F).png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "win",
         iconName: "win",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lose",
         iconName: "lose",
         colour: "green",
@@ -4092,7 +4092,7 @@ const boardSet = {
         internalName: "cry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "morning",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/morning.png",
@@ -4101,7 +4101,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "afternoon",
         iconName: "afternoon",
         colour: "blue",
@@ -4110,7 +4110,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "day",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/day.png",
@@ -4119,7 +4119,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "night",
         iconName: "night",
         colour: "blue",
@@ -4129,14 +4129,14 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/night.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "easy",
         iconName: "easy",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "difficult",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hard.png.variant-medium.png",
@@ -4153,7 +4153,7 @@ const boardSet = {
         type: "blank",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "good",
         iconName: "like",
         colour: "blue",
@@ -4166,7 +4166,7 @@ const boardSet = {
         type: "blank",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bad",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bad.svg.varianted-skin.svg",
@@ -4174,7 +4174,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "birthday",
         iconName: "birthday",
         colour: "orange",
@@ -4182,7 +4182,7 @@ const boardSet = {
         internalName: "birthday",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "christmas",
         iconName: "christmas",
         colour: "orange",
@@ -4190,7 +4190,7 @@ const boardSet = {
         internalName: "christmas",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "easter",
         iconName: "easter",
         colour: "orange",
@@ -4198,7 +4198,7 @@ const boardSet = {
         internalName: "easter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eid",
         iconName: "eid",
         colour: "orange",
@@ -4206,7 +4206,7 @@ const boardSet = {
         internalName: "eid",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ramadam",
         iconName: "ramadam",
         colour: "orange",
@@ -4214,7 +4214,7 @@ const boardSet = {
         internalName: "ramadam",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hallowe'en ",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Halloween.svg.varianted-skin.svg",
@@ -4223,7 +4223,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "firework",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fireworks.svg",
@@ -4232,7 +4232,7 @@ const boardSet = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "present",
         iconName: "present",
         colour: "orange",
@@ -4241,7 +4241,7 @@ const boardSet = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/gift_1.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pray",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pray_2.png",

@@ -88,7 +88,7 @@ const expanded = {
         internalName: "Grammar",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "I",
         iconName: "i",
         colour: "yellow",
@@ -97,7 +97,7 @@ const expanded = {
         linkTo: "expanded-am",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "want",
         pluralForm: "wants",
         pastForm: "wanted",
@@ -106,21 +106,21 @@ const expanded = {
         internalName: "want",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "more",
         iconName: "more",
         colour: "blue",
         internalName: "more",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "not",
         iconName: "not",
         colour: "grey",
         internalName: "not",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "go",
         pluralForm: "goes",
         pastForm: "went",
@@ -129,7 +129,7 @@ const expanded = {
         internalName: "go",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "help",
         pluralForm: "helps",
         pastForm: "helped",
@@ -138,7 +138,7 @@ const expanded = {
         internalName: "help",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "look",
         pluralForm: "looks",
         pastForm: "looked",
@@ -147,7 +147,7 @@ const expanded = {
         internalName: "look",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "need",
         pluralForm: "needs",
         pastForm: "needed",
@@ -156,7 +156,7 @@ const expanded = {
         internalName: "need",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "have",
         pluralForm: "has",
         pastForm: "had",
@@ -173,14 +173,14 @@ const expanded = {
         internalName: "plural",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "you",
         iconName: "you",
         colour: "yellow",
         internalName: "you",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play",
         pluralForm: "plays",
         pastForm: "played",
@@ -189,21 +189,21 @@ const expanded = {
         internalName: "play",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "same",
         iconName: "same",
         colour: "blue",
         internalName: "same",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "different",
         iconName: "different",
         colour: "blue",
         internalName: "different",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "what",
         pluralForm: "what's",
         iconName: "what",
@@ -211,7 +211,7 @@ const expanded = {
         internalName: "what",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "like",
         iconName: "like",
         pluralForm: "likes",
@@ -220,7 +220,7 @@ const expanded = {
         internalName: "like",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stop",
         pluralForm: "stops",
         pastForm: "stopped",
@@ -229,7 +229,7 @@ const expanded = {
         internalName: "stop",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "where",
         pluralForm: "where's",
         iconName: "where",
@@ -237,7 +237,7 @@ const expanded = {
         internalName: "where",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "in",
         iconName: "in",
         colour: "red",
@@ -251,14 +251,14 @@ const expanded = {
         internalName: "past",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "he",
         iconName: "he",
         colour: "yellow",
         internalName: "he",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eat",
         pluralForm: "eats",
         pastForm: "ate",
@@ -267,7 +267,7 @@ const expanded = {
         internalName: "eat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drink",
         pluralForm: "drinks",
         pastForm: "drank",
@@ -276,7 +276,7 @@ const expanded = {
         internalName: "drink",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turn",
         pluralForm: "turns",
         pastForm: "turned",
@@ -285,21 +285,21 @@ const expanded = {
         internalName: "turn",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "up",
         iconName: "up",
         colour: "red",
         internalName: "up",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "down",
         iconName: "down",
         colour: "red",
         internalName: "down",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finish",
         pluralForm: "finishes",
         pastForm: "finished",
@@ -308,7 +308,7 @@ const expanded = {
         internalName: "finish",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "who",
         pluralForm: "who's",
         iconName: "who",
@@ -316,7 +316,7 @@ const expanded = {
         internalName: "who",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "on",
         iconName: "on",
         colour: "red",
@@ -330,14 +330,14 @@ const expanded = {
         internalName: "negative",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "she",
         iconName: "she",
         colour: "yellow",
         internalName: "she",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "do",
         pluralForm: "does",
         pastForm: "did",
@@ -347,42 +347,42 @@ const expanded = {
         internalName: "do",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "loud",
         iconName: "loud",
         colour: "blue",
         internalName: "loud",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quiet",
         iconName: "quiet",
         colour: "blue",
         internalName: "quiet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fast",
         iconName: "fast",
         colour: "blue",
         internalName: "fast",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slow",
         iconName: "slow",
         colour: "blue",
         internalName: "slow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "funny",
         iconName: "funny",
         colour: "blue",
         internalName: "funny",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "talk",
         pluralForm: "talks",
         pastForm: "talked",
@@ -391,27 +391,27 @@ const expanded = {
         internalName: "talk",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "off",
         iconName: "off",
         colour: "red",
         internalName: "off",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "to",
         colour: "grey",
         internalName: "to",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "it",
         iconName: "it",
         colour: "yellow",
         internalName: "it",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "put",
         pluralForm: "puts",
         iconName: "put",
@@ -419,7 +419,7 @@ const expanded = {
         internalName: "put",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "make",
         pluralForm: "makes",
         pastForm: "made",
@@ -428,7 +428,7 @@ const expanded = {
         internalName: "make",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "feel",
         pluralForm: "feels",
         pastForm: "felt",
@@ -437,7 +437,7 @@ const expanded = {
         internalName: "feel",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "think",
         pluralForm: "thinks",
         pastForm: "thought",
@@ -446,7 +446,7 @@ const expanded = {
         internalName: "think",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "is",
         pastForm: "was",
         negativeForm: "isn't",
@@ -454,7 +454,7 @@ const expanded = {
         internalName: "is",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "close",
         pluralForm: "closes",
         pastForm: "closed",
@@ -463,7 +463,7 @@ const expanded = {
         internalName: "close",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "open",
         pluralForm: "opens",
         pastForm: "opened",
@@ -472,7 +472,7 @@ const expanded = {
         internalName: "open",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "here",
         pluralForm: "here's",
         iconName: "here",
@@ -480,7 +480,7 @@ const expanded = {
         internalName: "here",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "will",
         iconName: "future",
         colour: "grey",
@@ -575,7 +575,7 @@ const expanded = {
         internalName: "Grammar",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "I",
         iconName: "i",
         colour: "yellow",
@@ -584,7 +584,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "want",
         pluralForm: "wants",
         pastForm: "wanted",
@@ -594,7 +594,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "more",
         iconName: "more",
         colour: "blue",
@@ -602,7 +602,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "not",
         iconName: "not",
         colour: "grey",
@@ -610,7 +610,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "go",
         pluralForm: "goes",
         pastForm: "went",
@@ -620,7 +620,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "help",
         pluralForm: "helps",
         pastForm: "helped",
@@ -630,7 +630,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "look",
         pluralForm: "looks",
         pastForm: "looked",
@@ -640,7 +640,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "need",
         pluralForm: "needs",
         pastForm: "needed",
@@ -650,7 +650,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "have",
         pluralForm: "has",
         pastForm: "had",
@@ -669,7 +669,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "you",
         iconName: "you",
         colour: "yellow",
@@ -677,7 +677,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play",
         pluralForm: "plays",
         pastForm: "played",
@@ -687,7 +687,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "same",
         iconName: "same",
         colour: "blue",
@@ -695,7 +695,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "different",
         iconName: "different",
         colour: "blue",
@@ -703,7 +703,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "what",
         pluralForm: "what's",
         iconName: "what",
@@ -712,7 +712,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "like",
         iconName: "like",
         pluralForm: "likes",
@@ -722,7 +722,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stop",
         pluralForm: "stops",
         pastForm: "stopped",
@@ -732,7 +732,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "where",
         pluralForm: "where's",
         iconName: "where",
@@ -741,7 +741,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "in",
         iconName: "in",
         colour: "red",
@@ -757,7 +757,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "he",
         iconName: "he",
         colour: "yellow",
@@ -765,7 +765,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eat",
         pluralForm: "eats",
         pastForm: "ate",
@@ -775,7 +775,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drink",
         pluralForm: "drinks",
         pastForm: "drank",
@@ -785,7 +785,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turn",
         pluralForm: "turns",
         pastForm: "turned",
@@ -795,7 +795,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "up",
         iconName: "up",
         colour: "red",
@@ -803,7 +803,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "down",
         iconName: "down",
         colour: "red",
@@ -811,7 +811,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finish",
         pluralForm: "finishes",
         pastForm: "finished",
@@ -821,7 +821,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "who",
         pluralForm: "who's",
         iconName: "who",
@@ -830,7 +830,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "on",
         iconName: "on",
         colour: "red",
@@ -846,7 +846,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "she",
         iconName: "she",
         colour: "yellow",
@@ -854,7 +854,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "do",
         pluralForm: "does",
         pastForm: "did",
@@ -865,7 +865,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "loud",
         iconName: "loud",
         colour: "blue",
@@ -873,7 +873,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quiet",
         iconName: "quiet",
         colour: "blue",
@@ -881,7 +881,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fast",
         iconName: "fast",
         colour: "blue",
@@ -889,7 +889,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slow",
         iconName: "slow",
         colour: "blue",
@@ -897,7 +897,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "funny",
         iconName: "funny",
         colour: "blue",
@@ -905,7 +905,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "talk",
         pluralForm: "talks",
         pastForm: "talked",
@@ -915,7 +915,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "off",
         iconName: "off",
         colour: "red",
@@ -923,14 +923,14 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "to",
         colour: "grey",
         internalName: "to",
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "it",
         iconName: "it",
         colour: "yellow",
@@ -938,7 +938,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "put",
         pluralForm: "puts",
         iconName: "put",
@@ -947,7 +947,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "make",
         pluralForm: "makes",
         pastForm: "made",
@@ -957,7 +957,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "feel",
         pluralForm: "feels",
         pastForm: "felt",
@@ -967,7 +967,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "think",
         pluralForm: "thinks",
         pastForm: "thought",
@@ -977,7 +977,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "am",
         pastForm: "was",
         negativeForm: "am not",
@@ -986,7 +986,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "close",
         pluralForm: "closes",
         pastForm: "closed",
@@ -996,7 +996,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "open",
         pluralForm: "opens",
         pastForm: "opened",
@@ -1006,7 +1006,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "here",
         pluralForm: "here's",
         iconName: "here",
@@ -1015,7 +1015,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "will",
         iconName: "future",
         colour: "grey",
@@ -1115,7 +1115,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sing",
         pastForm: "sang",
         pluralForm: "sings",
@@ -1124,14 +1124,14 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "music",
         iconName: "music",
         colour: "orange",
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dance",
         pastForm: "danced",
         pluralForm: "dances",
@@ -1140,7 +1140,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clap",
         pastForm: "clapped",
         pluralForm: "claps",
@@ -1149,7 +1149,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tickle",
         pastForm: "tickled",
         pluralForm: "tickles",
@@ -1158,7 +1158,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "push",
         pastForm: "pushed",
         pluralForm: "Pushes",
@@ -1167,7 +1167,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "climb",
         pastForm: "climbed",
         pluralForm: "climbing",
@@ -1176,7 +1176,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "read",
         pastForm: "read",
         pastPronounciation: "red",
@@ -1186,7 +1186,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "book",
         pluralForm: "books",
         iconName: "book",
@@ -1195,7 +1195,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "catch",
         pastForm: "caught",
         pluralForm: "catches",
@@ -1204,7 +1204,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "throw",
         pastForm: "threw",
         pluralForm: "throws",
@@ -1213,7 +1213,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kick",
         pastForm: "kicked",
         pluralForm: "kicks",
@@ -1224,7 +1224,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pull",
         pastForm: "Pulled",
         pluralForm: "Pulls",
@@ -1261,7 +1261,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toy",
         pluralForm: "toys",
         iconName: "toys",
@@ -1277,7 +1277,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ball",
         pluralFormPronounciation: "balls",
         iconName: "ball",
@@ -1285,7 +1285,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bubble",
         pluralForm: "bubbles",
         iconName: "bubbles",
@@ -1293,7 +1293,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "balloon",
         pluralForm: "balloons",
         iconName: "balloon",
@@ -1301,7 +1301,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "block",
         pluralForm: "blocks",
         iconName: "blocks",
@@ -1309,7 +1309,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foam",
         pastForm: "foamed",
         iconName: "foam",
@@ -1317,7 +1317,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spinner",
         pluralForm: "spinners",
         iconName: "spinner",
@@ -1325,14 +1325,14 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yo-yo",
         iconName: "yo-yo",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stretchy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stretchy.png.varianted-skin.png",
@@ -1341,7 +1341,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wind up",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/toy%20race%20car.png",
@@ -1350,7 +1350,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jigsaw",
         pluralForm: "jigsaws",
         iconName: "jigsaw",
@@ -1358,7 +1358,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "teddy",
         pluralForm: "teddies",
         iconName: "teddy",
@@ -1366,7 +1366,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "doll",
         pluralForm: "dolls",
         iconName: "doll",
@@ -1374,7 +1374,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fidget",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/koosh%20ball.svg",
@@ -1382,7 +1382,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lego",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/blocks_2.png",
@@ -1390,7 +1390,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jack in a box",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/box%20of%20surprises.png.varianted-skin.png",
@@ -1398,7 +1398,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "water pistol",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/water%20pistol.svg",
@@ -1406,7 +1406,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play doh",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/playdough.svg",
@@ -1414,7 +1414,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gears",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/language-craft/gears.png",
@@ -1423,7 +1423,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hammer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hammer_1.png",
@@ -1431,7 +1431,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "robot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/robot.png",
@@ -1440,7 +1440,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pirate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pirate.png.varianted-skin.png",
@@ -1449,7 +1449,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sword",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sword_1.png",
@@ -1458,7 +1458,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dinosaur",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dinosaur.png",
@@ -1467,7 +1467,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "unicorn",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/unicorn.png",
@@ -1476,7 +1476,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soldier",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/soldier_1.png.variant-medium-dark.png",
@@ -1486,7 +1486,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "springy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spring_1.png",
@@ -1496,7 +1496,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slime",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20squash.png.varianted-skin.png",
@@ -1505,7 +1505,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pokemon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Pokeball_531_g.svg",
@@ -1513,7 +1513,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Harry Potter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/language-craft/wizard.png",
@@ -1521,7 +1521,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ghost",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ghost_20_g.svg",
@@ -1529,7 +1529,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "torch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/torch.svg",
@@ -1537,7 +1537,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crane",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/crane_2.png",
@@ -1545,7 +1545,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ramp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ramp_1.png",
@@ -1556,7 +1556,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sort",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/groups.png.varianted-skin.png",
@@ -1566,7 +1566,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "line",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/line_1.png.varianted-skin.png",
@@ -1596,7 +1596,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "game",
         pastForm: "gamed",
         pluralForm: "games",
@@ -1605,7 +1605,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "board",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/sudoku_756_g.svg",
@@ -1614,14 +1614,14 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dice",
         iconName: "dice",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "roll",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/rolling_590_g.svg",
@@ -1631,7 +1631,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "piece",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/counters.svg",
@@ -1639,7 +1639,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "point",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/points.png",
@@ -1648,7 +1648,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "win",
         pastForm: "won",
         pluralForm: "wins",
@@ -1668,7 +1668,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chase",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chase.png.varianted-skin.png",
@@ -1678,7 +1678,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hide and seek",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hide-and-seek.png.varianted-skin.png",
@@ -1686,7 +1686,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tig",
         iconName:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20run%20holding%20hands.png.variant-medium-dark.png",
@@ -1696,7 +1696,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20run%20holding%20hands.png.variant-medium-dark.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "peekaboo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hide_2.png",
@@ -1708,7 +1708,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lose",
         pastForm: "lost",
         pluralForm: "loses",
@@ -1718,7 +1718,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "monopoly",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/Monopoly.png",
@@ -1726,7 +1726,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ludo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ludo.png",
@@ -1734,7 +1734,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snakes and ladders",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/language-craft/snakes.png",
@@ -1742,7 +1742,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "checkers",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/draughts.png",
@@ -1750,7 +1750,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "noughts and crosses",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tic-Tac-Toe_969_g.svg",
@@ -1758,14 +1758,14 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "connect four",
         iconName: "connect-four",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Pop up pirate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pirate.png.variant-medium-dark.png",
@@ -1776,7 +1776,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "card",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/playing%20card%20picture.svg.varianted-skin.svg",
@@ -1784,7 +1784,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snap",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Playing%20Cards-8b8b4f26ba.svg",
@@ -1792,7 +1792,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "go fish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fish%20,%20to.svg.varianted-skin.svg",
@@ -1800,7 +1800,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "happy families",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/family.svg.varianted-skin.svg",
@@ -1844,7 +1844,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sport",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sport.png",
@@ -1853,7 +1853,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "PE",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/PE.svg.varianted-skin.svg",
@@ -1863,7 +1863,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "football",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/soccer.png.variant-medium.png",
@@ -1871,21 +1871,21 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rugby",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rugby.png.variant-dark.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "basketball",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/basketball.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bowling",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20bowling.png.variant-medium-dark.png",
@@ -1909,7 +1909,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tennis%20racket-9e846f21ed.svg",
@@ -1917,7 +1917,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "goal",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/net.png",
@@ -1926,35 +1926,35 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tennis",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tennis.png.varianted-skin.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "badminton",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/badminton_2.png.variant-medium-dark.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cricket",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cricket.svg.varianted-skin.svg",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hockey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20hockey_1.png.variant-medium.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "golf",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20golf.png.variant-dark.png",
@@ -1964,7 +1964,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "team",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/team_2.png.varianted-skin.png",
@@ -1973,21 +1973,21 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snooker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pool%20snooker.svg.varianted-skin.svg",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "table tennis",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20ping%20pong.png.variant-medium-light.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "darts",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/darts.png",
@@ -1998,14 +1998,14 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "match",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20play%20rugby.png.variant-medium.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "competition",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/race.png.varianted-skin.png",
@@ -2013,42 +2013,42 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ice skating",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice%20skate_1.png.variant-medium.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "roller scate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/roller%20skate_1.png.varianted-skin.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "martial art",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/karate.png.variant-medium.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "archery",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/archery.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrestling",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20fight.png.varianted-skin.png",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boxing",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boxing.png.variant-medium-dark.png",
@@ -2056,7 +2056,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "aim",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/throwing.png.varianted-skin.png",
@@ -2065,7 +2065,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "miss",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/miss_243_g.svg",
@@ -2099,7 +2099,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "instrument",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/instruments.png",
@@ -2116,7 +2116,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "string",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/thread.png",
@@ -2125,7 +2125,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "guitar",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/guitar.png",
@@ -2134,7 +2134,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "violin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/viola.png",
@@ -2143,7 +2143,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cello",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cello.png",
@@ -2151,7 +2151,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "harp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/harp.png",
@@ -2164,7 +2164,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flute",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/flute.png",
@@ -2172,7 +2172,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trumpet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/trumpet.png",
@@ -2180,7 +2180,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "horn",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/horn_1.png",
@@ -2195,7 +2195,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drum",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/drum.png",
@@ -2205,7 +2205,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cymbal",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cymbals.png",
@@ -2214,7 +2214,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: " maraca",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/maracas.png",
@@ -2223,7 +2223,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "xylophone",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/xylophone.png",
@@ -2231,7 +2231,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "piano",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20the%20piano.png.varianted-skin.png",
@@ -2239,7 +2239,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tambourine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tambourine_1.png",
@@ -2247,7 +2247,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bell",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bell_1.png",
@@ -2257,7 +2257,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wood",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wood.png",
@@ -2274,7 +2274,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plastic",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plastic.png",
@@ -2283,7 +2283,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pop",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/music%20shop.png",
@@ -2291,7 +2291,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rock",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rock.png",
@@ -2299,7 +2299,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rap",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f5e3.svg",
@@ -2307,7 +2307,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "classical",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/orchestra.png.varianted-skin.png",
@@ -2315,7 +2315,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jazz",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/saxophone.png",
@@ -2323,7 +2323,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blues",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/piano.svg",
@@ -2331,7 +2331,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "carol",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sing%20carols.png.variant-medium-dark.png",
@@ -2341,7 +2341,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "metal",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/metal.png",
@@ -2365,7 +2365,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "story",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tales.png.varianted-skin.png",
@@ -2374,7 +2374,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "magazine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/illustrated%20children's%20book%20series.png",
@@ -2383,7 +2383,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "website",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/web.png.varianted-skin.png",
@@ -2392,7 +2392,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "newspaper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/newspaper.png",
@@ -2400,7 +2400,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "advert",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/advertisement_1.png",
@@ -2408,7 +2408,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "note",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/take%20note.png.variant-medium-dark.png",
@@ -2417,7 +2417,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "list",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/list.png",
@@ -2428,7 +2428,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "page",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/page.png",
@@ -2438,7 +2438,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "title",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/car%20insurance.png",
@@ -2450,7 +2450,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "subtitle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/subtitles.png",
@@ -2461,7 +2461,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "invite",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20invite.png.varianted-skin.png",
@@ -2471,7 +2471,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "letter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/letter_1.png",
@@ -2480,7 +2480,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "album",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/album.png.varianted-skin.png",
@@ -2494,7 +2494,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beanstalk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plant_5.png",
@@ -2502,7 +2502,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "monster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/monster.png",
@@ -2511,7 +2511,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beast",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/Green_Monster.png",
@@ -2519,7 +2519,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Pinocchio",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Pinocchio.png",
@@ -2528,7 +2528,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "once upon a time",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tale_1.png",
@@ -2536,7 +2536,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "castle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/castle_3.png",
@@ -2545,7 +2545,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cottage",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wind_1.png",
@@ -2554,7 +2554,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "poison",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/poison.png",
@@ -2562,7 +2562,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Puss in Boots",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/The%20Puss%20in%20Boots.png",
@@ -2570,7 +2570,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Jack",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/farmer_1.png.varianted-skin.png",
@@ -2578,7 +2578,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "giant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/giant.png.varianted-skin.png",
@@ -2586,7 +2586,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Rapunzel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tower.png",
@@ -2594,7 +2594,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Aladdin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/I%20have.jpg",
@@ -2603,7 +2603,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cast%20a%20spell%20on.png.variant-medium-dark.png",
@@ -2611,7 +2611,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "magic",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/magic_1.png.varianted-skin.png",
@@ -2619,7 +2619,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Bruno",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/human%20(man).png.variant-medium-dark.png",
@@ -2627,7 +2627,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Anna",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f469-var1f3fcUNI-200d-1f9b0.svg",
@@ -2635,7 +2635,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Elsa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f478-var1f3fcUNI.svg",
@@ -2643,7 +2643,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Sleeping Beauty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Sleeping%20Beauty.png.varianted-skin.png",
@@ -2651,7 +2651,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Belle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Cinderella.png.varianted-skin.png",
@@ -2659,7 +2659,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Snow White",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Snow%20White.png.varianted-skin.png",
@@ -2667,7 +2667,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Little Red Riding Hood",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Little%20Red%20Riding%20Hood.png.varianted-skin.png",
@@ -2676,7 +2676,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ogre",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ogre.png",
@@ -2684,7 +2684,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mermaid",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mermaid.png.variant-medium.png",
@@ -2693,7 +2693,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dwarf",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dwarf.png.varianted-skin.png",
@@ -2702,7 +2702,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "princess",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/princess.png.variant-medium-dark.png",
@@ -2710,7 +2710,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "prince",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/prince.png.variant-dark.png",
@@ -2718,7 +2718,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fairy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fairy.png",
@@ -2726,7 +2726,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "witch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/witch.svg.varianted-skin.svg",
@@ -2735,7 +2735,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "superhero",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Superman.png.varianted-skin.png",
@@ -2744,7 +2744,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Goldilocks",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Little%20Miss%20Goldilocks.png.varianted-skin.png",
@@ -2767,7 +2767,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "playground",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/park.png",
@@ -2799,7 +2799,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slide",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/toboggan.png",
@@ -2809,7 +2809,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swing",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/swing_1.png",
@@ -2819,7 +2819,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Rotate-dc4d8eb61c.svg",
@@ -2829,7 +2829,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dig",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/spade.svg",
@@ -2839,7 +2839,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "splash",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20splash.png.variant-medium-dark.png",
@@ -2849,7 +2849,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bounce",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20bounce_2.png.variant-medium-dark.png",
@@ -2859,7 +2859,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ride",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/riding_142_g.svg",
@@ -2874,7 +2874,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "roundabout",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/merry%20go%20round.svg",
@@ -2883,7 +2883,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sand",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sandbox_1.png",
@@ -2891,7 +2891,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "water tray",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/water%20table.svg.varianted-skin.svg",
@@ -2899,7 +2899,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trampoline",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/trampoline%20.png",
@@ -2907,7 +2907,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bike",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bike.png",
@@ -2918,7 +2918,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ladder",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/step%20ladder.png",
@@ -2928,7 +2928,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sandcastle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sandcastle.png",
@@ -2938,7 +2938,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seesaw",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/seesaw.png",
@@ -2946,7 +2946,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scooter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/scooter.png",
@@ -2962,7 +2962,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rocker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/Spring%20rider%20wobble.png",
@@ -2990,7 +2990,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "electric",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/electricity.png",
@@ -2998,7 +2998,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "charge",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/plug%20in%20power%20outlet.png",
@@ -3008,7 +3008,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "charger",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plug.png",
@@ -3022,7 +3022,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "internet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/internet.png",
@@ -3030,7 +3030,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "computer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/computer.png",
@@ -3039,7 +3039,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "laptop",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/laptop%20computer.png",
@@ -3048,7 +3048,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tablet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tablet.png",
@@ -3057,7 +3057,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "iPad",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/iPad-6b1c3b4f8f.svg",
@@ -3066,7 +3066,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "phone",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/take%20photos.png.variant-dark.png",
@@ -3076,7 +3076,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tv",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/television.png",
@@ -3088,7 +3088,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "volume",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Volume_625_g.svg",
@@ -3097,7 +3097,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "keyboard",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Computer%20Keyboard-19d40c3f5a.svg",
@@ -3106,7 +3106,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mouse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mouse_1.png",
@@ -3115,7 +3115,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "battery",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Battery-766ec3b631.svg",
@@ -3124,7 +3124,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "remote",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Remote-Control_753_597698.svg",
@@ -3139,7 +3139,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "youtube",
         iconLink:
           "https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg",
@@ -3147,7 +3147,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "app",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/Windows_Media_Player.png",
@@ -3156,7 +3156,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "text",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/text-message_250_g.svg",
@@ -3166,7 +3166,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "call",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20telephone_1.png.variant-medium.png",
@@ -3177,7 +3177,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "google",
         iconLink:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/240px-Google_%22G%22_Logo.svg.png",
@@ -3187,7 +3187,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "channel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/change%20channel.png.variant-medium-dark.png",
@@ -3198,7 +3198,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "xbox",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/console.png",
@@ -3207,7 +3207,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nintendo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/nintendo%20wii.png",
@@ -3215,7 +3215,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play station",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20computer%20games.png.varianted-skin.png",
@@ -3223,7 +3223,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "controller",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f3ae.svg",
@@ -3232,7 +3232,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "headphones",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/headphones.svg",
@@ -3269,7 +3269,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "learn",
         pastForm: "learned",
         pluralForm: "learns",
@@ -3318,7 +3318,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "write",
         pastForm: "wrote",
         pluralForm: "writes",
@@ -3329,7 +3329,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/write.png.variant-medium.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "draw",
         pastForm: "drew",
         pluralForm: "draws",
@@ -3340,7 +3340,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20draw_2.png.variant-medium.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paint",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/paint_1.png.varianted-skin.png",
@@ -3350,7 +3350,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cut",
         pluralForm: "cuts",
         iconName: "cut",
@@ -3358,7 +3358,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stick",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adhesive%20tape.png",
@@ -3368,14 +3368,14 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "glitter",
         iconName: "glitter",
         linkTo: "expanded-topic",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ruler",
         iconName: "ruler",
         linkTo: "expanded-topic",
@@ -3385,7 +3385,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pen",
         iconName: "pen",
         linkTo: "expanded",
@@ -3393,7 +3393,7 @@ const expanded = {
         pluralForm: "pens",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pencil",
         iconName: "pencil",
         linkTo: "expanded",
@@ -3401,7 +3401,7 @@ const expanded = {
         pluralForm: "pencils",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paintbrush",
         pluralForm: "paintbrushes",
         iconName: "paintbrush",
@@ -3411,7 +3411,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/paint%20brush.svg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scissors",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/scissors_4.png",
@@ -3422,7 +3422,7 @@ const expanded = {
         iconName: "scissors",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "glue",
         pastForm: "glued",
         pluralForm: "glues",
@@ -3433,7 +3433,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20paste_1.png.variant-medium.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/paper.png",
@@ -3442,7 +3442,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sharpener",
         iconName: "sharpener",
         linkTo: "expanded-topic",
@@ -3450,7 +3450,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sharp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sharp.svg",
@@ -3459,49 +3459,49 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "red",
         iconName: "red",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "orange",
         iconName: "orange-colour",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yellow",
         iconName: "yellow",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "green",
         iconName: "green",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blue",
         iconName: "blue",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "purple",
         iconName: "purple",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pink",
         iconName: "pink",
         linkTo: "expanded",
@@ -3511,35 +3511,35 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "black",
         iconName: "black",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "white",
         iconName: "white",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brown",
         iconName: "brown",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grey",
         iconName: "grey",
         linkTo: "expanded",
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "colour",
         pastForm: "coloured",
         pluralForm: "colours",
@@ -3550,14 +3550,14 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20colour.png.variant-medium.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "light",
         iconName: "light",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "heavy",
         iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/weights_1.png",
         linkTo: "expanded",
@@ -3565,7 +3565,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dark",
         iconName: "dark",
         linkTo: "expanded",
@@ -3588,15 +3588,15 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spell",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cast%20a%20spell%20on.png.varianted-skin.png",
         colour: "green",
       },
-      { type: "textOnly", displayName: "word", colour: "orange" },
+      { type: "regular", displayName: "word", colour: "orange" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "letter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/a%20-%20lower%20case.svg",
@@ -3620,35 +3620,35 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
-      { type: "textOnly", displayName: "⠀q⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀w⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀e⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀r⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀t⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀y⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀u⠀", colour: "white" },
-      { type: "textOnly", displayName: "i⠀ ⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀o⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀p⠀", colour: "white" },
+      { type: "regular", displayName: "⠀q⠀", colour: "white" },
+      { type: "regular", displayName: "⠀w⠀", colour: "white" },
+      { type: "regular", displayName: "⠀e⠀", colour: "white" },
+      { type: "regular", displayName: "⠀r⠀", colour: "white" },
+      { type: "regular", displayName: "⠀t⠀", colour: "white" },
+      { type: "regular", displayName: "⠀y⠀", colour: "white" },
+      { type: "regular", displayName: "⠀u⠀", colour: "white" },
+      { type: "regular", displayName: "i⠀ ⠀", colour: "white" },
+      { type: "regular", displayName: "⠀o⠀", colour: "white" },
+      { type: "regular", displayName: "⠀p⠀", colour: "white" },
       { type: "blank" },
-      { type: "textOnly", displayName: "⠀a⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀s⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀d⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀f⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀g⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀h⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀j⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀k⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀l⠀", colour: "white" },
+      { type: "regular", displayName: "⠀a⠀", colour: "white" },
+      { type: "regular", displayName: "⠀s⠀", colour: "white" },
+      { type: "regular", displayName: "⠀d⠀", colour: "white" },
+      { type: "regular", displayName: "⠀f⠀", colour: "white" },
+      { type: "regular", displayName: "⠀g⠀", colour: "white" },
+      { type: "regular", displayName: "⠀h⠀", colour: "white" },
+      { type: "regular", displayName: "⠀j⠀", colour: "white" },
+      { type: "regular", displayName: "⠀k⠀", colour: "white" },
+      { type: "regular", displayName: "⠀l⠀", colour: "white" },
       { type: "blank" },
       { type: "blank" },
-      { type: "textOnly", displayName: "⠀z⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀x⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀c⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀v⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀b⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀n⠀", colour: "white" },
-      { type: "textOnly", displayName: "⠀m⠀", colour: "white" },
+      { type: "regular", displayName: "⠀z⠀", colour: "white" },
+      { type: "regular", displayName: "⠀x⠀", colour: "white" },
+      { type: "regular", displayName: "⠀c⠀", colour: "white" },
+      { type: "regular", displayName: "⠀v⠀", colour: "white" },
+      { type: "regular", displayName: "⠀b⠀", colour: "white" },
+      { type: "regular", displayName: "⠀n⠀", colour: "white" },
+      { type: "regular", displayName: "⠀m⠀", colour: "white" },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -3658,7 +3658,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/astronaut.png",
         iconName: "space",
@@ -3687,7 +3687,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shape",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/shapes.svg",
@@ -3696,7 +3696,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "side",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/side.svg",
@@ -3705,7 +3705,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "corner",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/corner_1.png",
@@ -3714,35 +3714,35 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "2D",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/ranges_230_g.svg",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "3D",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/shape_135_g.svg",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "straight",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ruler_720_g.svg",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curve",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curved%20line.png",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "angle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Degree-Angle_774_599172.svg",
@@ -3760,49 +3760,49 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "circle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/circle.svg",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "triangle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/triangle%20equilateral.svg",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "square",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/square.svg",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rectangle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rectangle.svg",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pentagon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pentagon.svg",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hexagon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hexagon.svg",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "octagon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/octagon.svg",
@@ -3812,42 +3812,42 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sphere",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sphere_2.png",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pyramid",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pyramid_2.png",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cube",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bucket_6.png",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cylinder",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cylinder.png",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cone",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cone_3.png",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "prism",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/prism.png",
@@ -3892,43 +3892,43 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "maths",
         iconName: "maths",
         colour: "orange",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀0⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀1⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀2⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀3⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀4⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀5⠀",
         linkTo: "expanded",
         colour: "grey",
@@ -3936,7 +3936,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "number",
         iconName: "number",
         colour: "orange",
@@ -3944,46 +3944,46 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f522.svg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "count",
         iconName: "count",
         linkTo: "expanded",
         colour: "green",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀6⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀7⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀8⠀",
         linkTo: "expanded",
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀9⠀",
         linkTo: "expanded",
         colour: "grey",
       },
-      { type: "textOnly", displayName: "10", colour: "grey" },
+      { type: "regular", displayName: "10", colour: "grey" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hundred",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f4af.svg",
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "how many",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/how%20many_1.png",
@@ -3992,7 +3992,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "add",
         pastForm: "added",
         pluralForm: "adds",
@@ -4001,35 +4001,35 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "minus",
         iconName: "minus",
         linkTo: "expanded",
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "times",
         iconName: "times",
         linkTo: "expanded",
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "divide",
         iconName: "divide",
         linkTo: "expanded",
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "equals",
         iconName: "equals",
         linkTo: "expanded",
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "times table",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/multiplication.png",
@@ -4039,7 +4039,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "thousand",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/one%20thousand.png",
@@ -4049,14 +4049,14 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "whole",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/whole.svg",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "half",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/half.svg",
@@ -4066,7 +4066,7 @@ const expanded = {
         pluralForm: "halves",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quarter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/quarter.svg",
@@ -4076,7 +4076,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "third",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/one%20third.svg",
@@ -4088,7 +4088,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "million",
         pluralForm: "millions",
         colour: "grey",
@@ -4130,7 +4130,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "topic",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Language%20lesson.png",
@@ -4151,28 +4151,28 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "good",
         iconName:"like",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bad",
         iconLink:"https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bad.svg.varianted-skin.svg",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "big",
         iconName: "big",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "medium",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/medium.png",
@@ -4181,7 +4181,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "small",
         iconName: "small",
         linkTo: "expanded",
@@ -4195,7 +4195,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "animal",
         pluralForm: "animals",
         iconName: "animal",
@@ -4297,7 +4297,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pet.png",
@@ -4306,7 +4306,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cat.png",
@@ -4315,7 +4315,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dog",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dog.png",
@@ -4324,7 +4324,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rabbit",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rabbit.svg",
@@ -4333,7 +4333,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hamster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hamster.svg.varianted-skin.svg",
@@ -4342,7 +4342,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tortoise",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tortoise_1.png",
@@ -4350,7 +4350,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Guinea pig",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hamster.png",
@@ -4359,7 +4359,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ferret",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/ferret.svg",
@@ -4370,7 +4370,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mouse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/mouse.svg.varianted-skin.svg",
@@ -4379,7 +4379,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rat.png",
@@ -4395,7 +4395,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "farm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/farm.png",
@@ -4404,7 +4404,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cow.png",
@@ -4413,7 +4413,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sheep",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sheep.svg",
@@ -4421,7 +4421,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chicken",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chicken.png",
@@ -4430,7 +4430,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "goat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/goat_1.png.varianted-skin.png",
@@ -4439,7 +4439,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "horse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/horse.png",
@@ -4448,7 +4448,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pig",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pig.png",
@@ -4457,7 +4457,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "donkey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/donkey.svg",
@@ -4489,7 +4489,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fur",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/animal%20hair.png",
@@ -4497,7 +4497,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "claw",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/claw.png",
@@ -4506,7 +4506,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "whisker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/whiskers.svg",
@@ -4515,7 +4515,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tail",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tail.png",
@@ -4524,7 +4524,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "antler",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Deer-4d0a3d822c.svg",
@@ -4534,7 +4534,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wool",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Sheep_221_6472.svg",
@@ -4559,7 +4559,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wild",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wild.png",
@@ -4567,7 +4567,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "zoo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/zoological%20garden.png",
@@ -4581,7 +4581,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hedgehog",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hedgehog.svg",
@@ -4589,7 +4589,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fox",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fox.png",
@@ -4597,7 +4597,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "badger",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/badger%202.svg",
@@ -4605,7 +4605,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "racoon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/racoon.png",
@@ -4613,7 +4613,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "skunk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/skunk.png",
@@ -4621,7 +4621,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "squirrel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/squirrel_1.png",
@@ -4629,7 +4629,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "deer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/deer.png",
@@ -4637,14 +4637,14 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "meerkat",
         iconName: "needs a symbol",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kangaroo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/kangaroo.png",
@@ -4654,7 +4654,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lion",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lion_1.png",
@@ -4662,7 +4662,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tiger",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tiger.png",
@@ -4670,7 +4670,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cheetah",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cheetah.svg",
@@ -4678,7 +4678,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wolf",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wolf.png",
@@ -4686,7 +4686,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bear",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bear.svg",
@@ -4695,7 +4695,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "camel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dromedar_1.png",
@@ -4703,7 +4703,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "llama",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/llama.png",
@@ -4711,7 +4711,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "warthog",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boar.png",
@@ -4722,7 +4722,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rhino",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rhinoceros.svg",
@@ -4730,7 +4730,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hippo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hippopotamus.png",
@@ -4739,7 +4739,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "elephant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/elephant.png",
@@ -4747,7 +4747,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "giraffe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/giraffe.svg",
@@ -4756,7 +4756,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "zebra",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/zebra.png",
@@ -4764,7 +4764,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gazelle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/gazelle.png",
@@ -4772,7 +4772,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "porcupine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/porcupine.svg",
@@ -4783,7 +4783,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "monkey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/monkey.png",
@@ -4792,7 +4792,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gorilla",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/gorilla.png",
@@ -4800,7 +4800,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "panda",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/panda.png",
@@ -4808,7 +4808,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "koala",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/koala.png",
@@ -4817,7 +4817,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sloth",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sloth.png",
@@ -4831,7 +4831,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lizard",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lizard.png",
@@ -4840,7 +4840,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snake",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snake.png",
@@ -4849,7 +4849,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "iguana",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/iguana.png",
@@ -4879,7 +4879,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fish.png",
@@ -4897,7 +4897,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "octopus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/octopus_1.png",
@@ -4906,7 +4906,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sting ray",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/manta.png",
@@ -4915,7 +4915,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/eel.png",
@@ -4924,7 +4924,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "star fish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Starfish_717_469915.svg",
@@ -4932,7 +4932,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jelly fish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jellyfish.svg.varianted-skin.svg",
@@ -4943,7 +4943,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seaweed",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/seaweed_1.png",
@@ -4952,7 +4952,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crab",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/crab.svg",
@@ -4961,7 +4961,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lobster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lobster.png",
@@ -4970,7 +4970,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "oyster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/oyster%202.svg",
@@ -4979,7 +4979,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clam",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/clam.png",
@@ -4992,7 +4992,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pebble",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rock.png",
@@ -5002,7 +5002,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dolphin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dolphin.png",
@@ -5011,7 +5011,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shark",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/shark.png",
@@ -5020,7 +5020,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "whale",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/whale.png",
@@ -5029,7 +5029,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turtle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/turtle.svg",
@@ -5050,7 +5050,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "frog",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/frog_1.png",
@@ -5059,7 +5059,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crocodile",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/crocodile%202.svg",
@@ -5076,7 +5076,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seal",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/seal.png",
@@ -5085,7 +5085,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "otter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/otter.png",
@@ -5094,7 +5094,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beaver",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/beaver.png",
@@ -5103,7 +5103,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sea lion",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sea%20lion.png",
@@ -5112,7 +5112,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "polar bear",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/polar%20bear.png",
@@ -5123,7 +5123,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shell",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/shells.svg",
@@ -5132,7 +5132,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fin.png",
@@ -5156,7 +5156,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bird",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/birds_2.png",
@@ -5165,7 +5165,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bird of prey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bird%20of%20prey%20.png",
@@ -5173,7 +5173,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "songbird",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/budgie.svg",
@@ -5182,7 +5182,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flightless bird",
         pluralForm: "flightless birds",
         iconName: "flightless-bird",
@@ -5195,7 +5195,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sparrow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sparrow.png",
@@ -5204,7 +5204,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "robin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/robin.svg",
@@ -5213,7 +5213,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pigeon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pigeon_1.png",
@@ -5222,7 +5222,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "magpie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/magpie.png",
@@ -5231,7 +5231,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raven",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/raven.png",
@@ -5240,7 +5240,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seagull",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/seagull.svg.varianted-skin.svg",
@@ -5253,7 +5253,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "owl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/owl_1.png",
@@ -5262,7 +5262,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eagle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/eagle.png",
@@ -5271,7 +5271,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vulture",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/vulture.png",
@@ -5287,7 +5287,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "duck",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/duck.svg",
@@ -5296,7 +5296,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "goose",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/goose.png",
@@ -5305,7 +5305,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/swan.png",
@@ -5314,7 +5314,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pelican",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pelican.png",
@@ -5323,7 +5323,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turkey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/turkey.svg",
@@ -5337,7 +5337,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "parrot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/parrot.png",
@@ -5347,7 +5347,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "canary",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/canary.png",
@@ -5364,7 +5364,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flamingo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flamingo.svg.varianted-skin.svg",
@@ -5373,7 +5373,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "puffin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/puffin.svg",
@@ -5382,7 +5382,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "penguin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/penguin_1.png",
@@ -5391,7 +5391,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ostrich",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ostrich.png",
@@ -5401,7 +5401,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wing",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/wing.svg",
@@ -5411,7 +5411,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beak",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/beak.svg",
@@ -5420,7 +5420,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "feather",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/feather_1.png",
@@ -5445,7 +5445,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "insect",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/insect.png",
@@ -5454,7 +5454,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bug",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/beetle.png",
@@ -5469,7 +5469,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slimy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sticky.svg.varianted-skin.svg",
@@ -5478,7 +5478,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/ant.svg",
@@ -5487,7 +5487,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ladybird",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ladybug.png",
@@ -5496,7 +5496,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spider",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/spider.svg",
@@ -5505,7 +5505,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bee",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bee%20bumble.svg",
@@ -5514,7 +5514,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wasp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wasp.png",
@@ -5528,7 +5528,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "worm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/worm_1.png",
@@ -5537,7 +5537,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beetle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/beetle.svg",
@@ -5546,7 +5546,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "caterpillar",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/caterpillar.svg",
@@ -5555,7 +5555,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "butterfly",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/butterfly.png",
@@ -5564,7 +5564,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grasshopper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/grasshopper_2.png",
@@ -5578,7 +5578,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slug",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/slug.svg",
@@ -5587,7 +5587,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snail",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snail_1.png",
@@ -5638,7 +5638,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "space",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sky.png",
@@ -5646,7 +5646,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "planet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/planets.svg",
@@ -5656,7 +5656,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "moon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Moon.svg",
@@ -5664,7 +5664,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gravity",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fall.png.varianted-skin.png",
@@ -5672,7 +5672,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "star",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icomoon/star.svg",
@@ -5683,7 +5683,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rocket",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ferry.png",
@@ -5691,7 +5691,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "astronaut",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/astronaut.png",
@@ -5700,7 +5700,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "telescope",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/telescope.png",
@@ -5715,7 +5715,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mercury",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Mercury.svg",
@@ -5723,7 +5723,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "venus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Venus.svg",
@@ -5731,7 +5731,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "earth",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/world.svg",
@@ -5739,7 +5739,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mars",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Mars.svg",
@@ -5747,7 +5747,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jupiter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Jupiter.svg.varianted-skin.svg",
@@ -5755,7 +5755,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "saturn",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Saturn.svg",
@@ -5763,7 +5763,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "uranus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Uranus.svg",
@@ -5771,7 +5771,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "neptune",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Neptune.svg",
@@ -5779,7 +5779,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pluto",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Pluto.svg",
@@ -5788,7 +5788,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "comet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/comet.svg",
@@ -5796,7 +5796,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "twinkle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/star.svg",
@@ -5804,7 +5804,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sparkle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20shine.png",
@@ -5857,7 +5857,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drive",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20drive.png.variant-medium-dark.png",
@@ -5867,7 +5867,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "steer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Steering%20Wheel-ee4421f84b.svg",
@@ -5880,7 +5880,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "car",
         pluralForm: "cars",
         iconName: "car",
@@ -5888,7 +5888,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bus",
         pastForm: "bussed",
         pluralForm: "buses",
@@ -5897,7 +5897,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tram",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tram.png",
@@ -5906,7 +5906,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "train",
         pastForm: "trained",
         pluralForm: "trains",
@@ -5915,7 +5915,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lorry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lorry.svg",
@@ -5924,7 +5924,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "van",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/van.png",
@@ -5933,7 +5933,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "taxi",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/taxi.svg",
@@ -5942,7 +5942,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "motorbike",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/motorbike.png",
@@ -5953,7 +5953,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tyre",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tire-69dcafa93b.svg",
@@ -5962,7 +5962,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "police car",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/police%20car.svg",
@@ -5971,7 +5971,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ambulance",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/ambulance.svg",
@@ -5980,7 +5980,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fire engine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fire-engine.png",
@@ -5989,7 +5989,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tractor",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tractor.png",
@@ -5998,7 +5998,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tank",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tank_1.png",
@@ -6012,7 +6012,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trunk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/car%20boot.svg",
@@ -6020,7 +6020,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/boat.svg",
@@ -6030,7 +6030,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ferry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/ferry.svg",
@@ -6040,7 +6040,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "submarine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/submarine.png",
@@ -6049,7 +6049,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plane",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/aeroplane.svg",
@@ -6058,7 +6058,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "helicopter",
         pluralForm: "helicopters",
         iconName: "helicopter",
@@ -6067,7 +6067,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sleigh",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Santa's%20sledge.png",
@@ -6079,7 +6079,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seatbelt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Seat%20Belt-347c5a05a5.svg",
@@ -6097,7 +6097,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ticket",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ticket-4f04500f5e.svg",
@@ -6107,7 +6107,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "caravan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/caravan.svg",
@@ -6116,7 +6116,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "campervan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/caravan.png",
@@ -6125,7 +6125,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tent",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tent.png",
@@ -6135,7 +6135,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trailer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/trailer_3.png",
@@ -6204,7 +6204,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "body",
         pluralForm: "bodies",
         iconName: "body",
@@ -6213,7 +6213,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wee",
         pastForm: "wee'd",
         pastPronounciation: "weed",
@@ -6223,7 +6223,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "see",
         pastForm: "saw",
         pluralForm: "sees",
@@ -6232,7 +6232,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ill",
         iconName: "ill",
         colour: "green",
@@ -6241,7 +6241,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nappy",
         pluralForm: "nappies",
         iconName: "nappy",
@@ -6250,7 +6250,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clothes",
         pastForm: "clothed",
         iconName: "clothes",
@@ -6261,7 +6261,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "face",
         pastForm: "faced",
         pluralForm: "faces",
@@ -6272,7 +6272,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/face.png.variant-medium.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "head",
         pluralForm: "heads",
         iconName: "head",
@@ -6281,7 +6281,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "poo",
         pastForm: "pooed",
         pluralForm: "poos",
@@ -6290,7 +6290,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hear",
         pastForm: "heard",
         pluralForm: "hears",
@@ -6301,7 +6301,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20hear.png.variant-medium-dark.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vomit",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/vomit.png.variant-medium.png",
@@ -6311,7 +6311,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "coat",
         pluralForm: "coats",
         iconName: "coat",
@@ -6320,7 +6320,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wear",
         pastForm: "wore",
         pluralForm: "wears",
@@ -6333,14 +6333,14 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tummy",
         iconName: "tummy",
         colour: "orange",
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bum",
         pluralForm: "bums",
         iconName: "bottom",
@@ -6350,7 +6350,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/buttock.png.variant-medium.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fart",
         pastForm: "farted",
         pluralForm: "farts",
@@ -6359,7 +6359,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "listen",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20hear_2.png.varianted-skin.png",
@@ -6370,7 +6370,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hurt",
         pluralForm: "hurts",
         iconName: "hurt",
@@ -6378,7 +6378,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hat",
         pluralForm: "hats",
         iconName: "hat",
@@ -6389,7 +6389,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shirt",
         pluralForm: "shirts",
         iconName: "shirt",
@@ -6399,7 +6399,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foot",
         pluralForm: "feet",
         iconName: "foot",
@@ -6408,7 +6408,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blood",
         iconName: "blood",
         colour: "orange",
@@ -6417,7 +6417,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/red.svg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "smell",
         pastForm: "smelled",
         pluralForm: "smells",
@@ -6428,7 +6428,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/smell.png.variant-medium.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "itch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20itch%20.png.varianted-skin.png",
@@ -6438,7 +6438,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pants",
         iconName: "pants",
         colour: "orange",
@@ -6446,7 +6446,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trousers",
         iconName: "trousers",
         colour: "orange",
@@ -6455,7 +6455,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hand",
         pluralForm: "hands",
         iconName: "hand",
@@ -6464,7 +6464,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bleed",
         pluralForm: "bleeds",
         iconName: "blood",
@@ -6480,7 +6480,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bruise",
         pastForm: "bruised",
         pluralForm: "bruises",
@@ -6489,7 +6489,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shoe",
         pluralForm: "shoes",
         iconName: "shoe",
@@ -6498,7 +6498,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sock",
         pluralForm: "socks",
         iconName: "socks",
@@ -6521,7 +6521,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hair",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Hair%20(F).png",
@@ -6529,7 +6529,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eye",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/eye.png.varianted-skin.png",
@@ -6538,7 +6538,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nose",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nose.png.variant-medium.png",
@@ -6547,7 +6547,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mouth",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/mouth.svg",
@@ -6556,7 +6556,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tooth",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tooth.svg",
@@ -6565,7 +6565,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lips%201.svg",
@@ -6574,7 +6574,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tongue",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tongue.png",
@@ -6583,7 +6583,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ear",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ear.png.variant-medium.png",
@@ -6592,7 +6592,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "forehead",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/forehead.png.varianted-skin.png",
@@ -6600,7 +6600,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chin.png.varianted-skin.png",
@@ -6610,7 +6610,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eyebrow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/eyebrow.png",
@@ -6619,7 +6619,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beard",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/beard.png",
@@ -6629,7 +6629,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "moustache",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/moustache.png",
@@ -6638,7 +6638,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "neck",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/neck_1.png.varianted-skin.png",
@@ -6648,7 +6648,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shoulder",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/shoulder.png.variant-medium-dark.png",
@@ -6658,7 +6658,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chest",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chest.png.variant-medium.png",
@@ -6668,7 +6668,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "breast",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chest%20female.svg.variant-medium.svg",
@@ -6677,7 +6677,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stomach",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/stomach.svg.varianted-skin.svg",
@@ -6685,7 +6685,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "back",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/back.png.variant-medium.png",
@@ -6693,7 +6693,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "arm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/arm.png.varianted-skin.png",
@@ -6701,7 +6701,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrist",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wrist.png.varianted-skin.png",
@@ -6710,7 +6710,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finger",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/middle%20finger.png.varianted-skin.png",
@@ -6719,7 +6719,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "armpit",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/armpit.png.variant-medium.png",
@@ -6728,7 +6728,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hip.png.varianted-skin.png",
@@ -6737,7 +6737,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vulva",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/vulva.png.varianted-skin.png",
@@ -6745,7 +6745,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "penis",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/penis.png.varianted-skin.png",
@@ -6753,7 +6753,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "leg",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/leg_2.png.variant-medium-dark.png",
@@ -6763,7 +6763,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ankle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ankle.png.varianted-skin.png",
@@ -6772,7 +6772,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/toe%20nail.svg.varianted-skin.svg",
@@ -6782,7 +6782,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "skin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/skin.png.variant-medium-dark.png",
@@ -6792,7 +6792,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "muscle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/muscle.png.variant-medium.png",
@@ -6802,7 +6802,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nail",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nail_1.png.variant-medium-dark.png",
@@ -6812,7 +6812,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bone",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bone%202.svg",
@@ -6822,7 +6822,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "heart",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/organ_1.png",
@@ -6832,7 +6832,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lung",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lung.png",
@@ -6842,7 +6842,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brain",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brain.png",
@@ -6865,7 +6865,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "private",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/private.png",
@@ -6873,7 +6873,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "public",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/public.png.variant-medium-dark.png",
@@ -6903,7 +6903,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "function",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/occupational%20therapy.png.varianted-skin.png",
@@ -6913,7 +6913,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chewy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chewy%20tube.svg.varianted-skin.svg",
@@ -6928,7 +6928,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "breathe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/breathe%20in.png.varianted-skin.png",
@@ -6938,7 +6938,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swallow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/swallow%20food_1.png",
@@ -6948,7 +6948,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chew",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/chewing%20food_1.png",
@@ -6958,7 +6958,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lick",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20lick_2.png",
@@ -6968,7 +6968,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "watch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/watch%20television_2.png.variant-medium.png",
@@ -6979,7 +6979,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "special food",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/milkshake.png",
@@ -6988,7 +6988,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "glasses",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/glasses.svg",
@@ -6996,7 +6996,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hearing aid",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hearing%20aid.png",
@@ -7005,7 +7005,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "run",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20run_1.png.variant-medium.png",
@@ -7016,7 +7016,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jump",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/jump.png.varianted-skin.png",
@@ -7026,7 +7026,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "walk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/walk.png.varianted-skin.png",
@@ -7036,7 +7036,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crawl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20crawl.png.variant-medium-dark.png",
@@ -7046,7 +7046,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lay",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lie%20down.png.varianted-skin.png",
@@ -7056,7 +7056,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fall",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fall.png.variant-medium-dark.png",
@@ -7066,7 +7066,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wheelchair",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wheelchair.png",
@@ -7075,7 +7075,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "walker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/walker_2.png",
@@ -7084,7 +7084,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "walking stick",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/walking%20stick.png",
@@ -7092,7 +7092,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "splint",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/splint_1.png",
@@ -7101,7 +7101,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20grow_3.png.varianted-skin.png",
@@ -7111,7 +7111,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "puberty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adults_1.png.varianted-skin.png",
@@ -7119,7 +7119,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pregnant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pregnant.png.variant-medium-dark.png",
@@ -7127,7 +7127,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sex",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/make-love_841_g.svg",
@@ -7138,7 +7138,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "risk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/chance_100_g.svg",
@@ -7146,7 +7146,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dangerous",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/danger.png",
@@ -7154,7 +7154,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "safe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/security.png.varianted-skin.png",
@@ -7162,7 +7162,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "touch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/touch.png.variant-medium-dark.png",
@@ -7173,7 +7173,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20burp.png.varianted-skin.png",
@@ -7183,7 +7183,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pardon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/sorry.jpg",
@@ -7197,7 +7197,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "speak",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/talk.png.varianted-skin.png",
@@ -7207,7 +7207,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "say",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20say.png.varianted-skin.png",
@@ -7217,7 +7217,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sign language",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sign%20language.png.varianted-skin.png",
@@ -7225,7 +7225,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "talker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/communication%20aid%202.svg",
@@ -7233,7 +7233,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "remember",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20remember.png.variant-medium-dark.png",
@@ -7243,7 +7243,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "forget",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lost%20property.png",
@@ -7253,7 +7253,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "idea",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/have%20an%20idea.png.variant-medium.png",
@@ -7262,7 +7262,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "choice",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/choice.png",
@@ -7287,7 +7287,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "problem",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/problem.jpg",
@@ -7295,7 +7295,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ache",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stomach%20ache.png.varianted-skin.png",
@@ -7305,7 +7305,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "infection",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/sick_35_161101.svg",
@@ -7313,7 +7313,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bump",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bump%20on%20the%20head.png.varianted-skin.png",
@@ -7321,7 +7321,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "injury",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/injury.png.varianted-skin.png",
@@ -7329,7 +7329,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "broken",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/broken%20bone.svg",
@@ -7337,7 +7337,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sore",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/throat%20ache_1.png.variant-medium-light.png",
@@ -7345,7 +7345,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swollen",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hurt%20oneself_2.png.variant-dark.png",
@@ -7353,7 +7353,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rash",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rash.png.varianted-skin.png",
@@ -7361,7 +7361,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cough",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cough_2.png.variant-medium.png",
@@ -7371,7 +7371,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sneeze",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20sneeze.png.variant-medium.png",
@@ -7381,7 +7381,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20blow%20the%20nose_1.png.variant-medium-light.png",
@@ -7391,7 +7391,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dizzy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dizzy.png.varianted-skin.png",
@@ -7399,7 +7399,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fever",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fever.png.varianted-skin.png",
@@ -7407,7 +7407,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flu",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/flu.png.varianted-skin.png",
@@ -7415,7 +7415,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "attack",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/attack_3.png",
@@ -7425,7 +7425,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cold_1.png",
@@ -7433,7 +7433,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/yellow_1.png",
@@ -7441,7 +7441,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "disease",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/illnesses.png.varianted-skin.png",
@@ -7449,7 +7449,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "constipated",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/constipation_1.png.varianted-skin.png",
@@ -7457,7 +7457,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "asthma",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/asthma.png.varianted-skin.png",
@@ -7465,7 +7465,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seizure",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/seizure.svg.varianted-skin.svg",
@@ -7473,7 +7473,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mental health",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Brain-d9f5c3e5e3.svg",
@@ -7481,7 +7481,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eczema",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/eczema.png.variant-medium.png",
@@ -7489,7 +7489,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/acne%20spots.svg.varianted-skin.svg",
@@ -7498,7 +7498,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lump",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lump.svg.varianted-skin.svg",
@@ -7506,7 +7506,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cavity",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cavity.png",
@@ -7515,7 +7515,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "headlouse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nit.png",
@@ -7524,7 +7524,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scratch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20scratch_1.png.variant-medium.png",
@@ -7534,7 +7534,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sting",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sting%20bee.svg.varianted-skin.svg",
@@ -7543,7 +7543,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hayfever",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/flower_5.png",
@@ -7551,7 +7551,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "allergy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/allergy.png.varianted-skin.png",
@@ -7559,7 +7559,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "splinter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/injury.png.variant-dark.png",
@@ -7569,7 +7569,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blister",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/one%20dot.svg",
@@ -7581,7 +7581,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "braces",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dental%20apparatus.png",
@@ -7589,7 +7589,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "therapy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/group%20therapy.png.varianted-skin.png",
@@ -7597,7 +7597,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "operation",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/operation.svg.varianted-skin.svg",
@@ -7615,7 +7615,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "inhaler",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/inhaler.png",
@@ -7623,7 +7623,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "medicine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/medicine.png",
@@ -7631,7 +7631,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "calpol",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/syrup.png",
@@ -7639,7 +7639,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ointment",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ointment.png",
@@ -7647,7 +7647,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bandage",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bandage.png",
@@ -7657,7 +7657,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plaster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/band%20aid.png",
@@ -7667,7 +7667,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "prescription",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20prescribe.png.variant-medium-dark.png",
@@ -7675,7 +7675,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lotion",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lotion.svg.varianted-skin.svg",
@@ -7684,7 +7684,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "test",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/test%20tube.svg",
@@ -7692,7 +7692,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "epipen",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/syringe.svg",
@@ -7715,7 +7715,7 @@ const expanded = {
       },
       { type: "blank", colour: "orange" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pyjamas",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pyjama.png",
@@ -7723,7 +7723,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scarf",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/scarf.png",
@@ -7732,7 +7732,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "glove",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/glove_1.png",
@@ -7741,7 +7741,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dressing gown",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bathrobe.png",
@@ -7749,7 +7749,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jacket",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jacket.svg",
@@ -7758,7 +7758,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jumper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jumper.svg",
@@ -7767,7 +7767,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cardigan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cardigan_1.png",
@@ -7776,7 +7776,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "uniform",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/shirt.svg",
@@ -7786,7 +7786,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tee",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/t-shirt.svg",
@@ -7795,7 +7795,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vest",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/vest.svg",
@@ -7804,7 +7804,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "polo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/polo%20neck.png",
@@ -7812,7 +7812,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dress",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dress_10.png",
@@ -7823,7 +7823,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "skirt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/skirt.png",
@@ -7832,7 +7832,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shorts",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/shorts.svg",
@@ -7840,7 +7840,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jean",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/jeans.png",
@@ -7849,7 +7849,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "knickers",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/knickers.svg.varianted-skin.svg",
@@ -7857,7 +7857,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boxers",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/boxer%20shorts.svg",
@@ -7865,7 +7865,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bra",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bra.png",
@@ -7874,7 +7874,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "suit",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/suit%20-%20mans.svg",
@@ -7884,7 +7884,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tie.svg",
@@ -7894,7 +7894,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "costume",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bathing%20costume.png",
@@ -7903,7 +7903,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trunks",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/swimming%20trunks.svg",
@@ -7911,7 +7911,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "goggles",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/swimming%20goggles.png",
@@ -7919,7 +7919,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bikini",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bikini.png",
@@ -7928,7 +7928,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "helmet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/helmet_4.png",
@@ -7937,7 +7937,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ear defenders",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/ear%20muffs.svg",
@@ -7947,7 +7947,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ring",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ring_1.png",
@@ -7957,7 +7957,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "necklace",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/necklace%202.svg.varianted-skin.svg",
@@ -7966,7 +7966,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "earring",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/earrings.svg",
@@ -7975,7 +7975,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bracelet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wristband_1.png",
@@ -7984,7 +7984,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jewellery",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jewellery.svg",
@@ -7992,7 +7992,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "makeup",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/make%20up.svg.varianted-skin.svg",
@@ -8000,7 +8000,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lipstick",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/make%20up.png",
@@ -8008,7 +8008,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blusher",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/blusher.svg",
@@ -8016,7 +8016,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mascara",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mascara.png",
@@ -8024,7 +8024,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nail varnish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/nail%20polish.svg.varianted-skin.svg",
@@ -8032,7 +8032,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ankle%20boots.png",
@@ -8042,7 +8042,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "welly",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/wellington%20boots.svg",
@@ -8051,7 +8051,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sandal",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sandals.png",
@@ -8060,7 +8060,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flipflop",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/shoes_6.png",
@@ -8069,7 +8069,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trainer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/trainers.svg.varianted-skin.svg",
@@ -8078,7 +8078,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slipper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/trainers-slippers.png",
@@ -8087,7 +8087,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "insole",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/insole.png",
@@ -8096,7 +8096,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tights",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tights.svg.varianted-skin.svg",
@@ -8106,7 +8106,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sleeve",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sleeve.png",
@@ -8116,7 +8116,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "button",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/button.png",
@@ -8126,7 +8126,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "zip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/zip.png",
@@ -8136,7 +8136,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "velcro",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/Velcro.png",
@@ -8144,7 +8144,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lace",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20tie%20a%20bow.png.varianted-skin.png",
@@ -8154,7 +8154,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hood",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hood.png",
@@ -8182,28 +8182,28 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "home",
         iconName: "home",
         linkTo: "expanded",
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "school",
         iconName: "school",
         linkTo: "expanded",
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "garden",
         iconName: "garden",
         linkTo: "expanded",
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "inside",
         iconName: "inside",
         linkTo: "expanded",
@@ -8212,7 +8212,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20open%20the%20door_2.png.variant-medium-light.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "outside",
         iconName: "outside",
         linkTo: "expanded",
@@ -8230,21 +8230,21 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kitchen",
         iconName: "kitchen",
         linkTo: "expanded",
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bedroom",
         iconName: "bedroom",
         linkTo: "expanded",
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "classroom",
         iconName: "classroom",
         linkTo: "expanded",
@@ -8253,7 +8253,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/classroom_2.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sleep",
         pastForm: "slept",
         pluralForm: "sleeps",
@@ -8262,7 +8262,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "work",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20work_1.png.variant-medium.png",
@@ -8272,7 +8272,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dirty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dirty.png",
@@ -8280,7 +8280,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bed",
         iconName: "bed",
         linkTo: "expanded",
@@ -8297,7 +8297,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "living room",
         iconName: "living room",
         linkTo: "expanded",
@@ -8306,7 +8306,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Majlis%20(living%20room%20qatari).jpg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bathroom",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bathroom_4.png",
@@ -8314,7 +8314,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toilet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/toilet%20bowl.png",
@@ -8322,7 +8322,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wash",
         pastForm: "washed",
         pluralForm: "washes",
@@ -8331,7 +8331,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flush",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Flush%20the%20toilet.png",
@@ -8341,7 +8341,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clean",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20clean%20the%20window_1.png.varianted-skin.png",
@@ -8363,7 +8363,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dining room",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dining%20room_1.png",
@@ -8371,7 +8371,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soft play room",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ball%20pool.png",
@@ -8379,7 +8379,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sensory room",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sensory%20room.svg",
@@ -8387,7 +8387,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sit",
         pastForm: "sat",
         pluralForm: "sits",
@@ -8396,7 +8396,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lie%20down.png.variant-medium.png",
@@ -8406,7 +8406,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stand",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/stand.jpg",
@@ -8416,7 +8416,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "window",
         iconName: "window",
         linkTo: "expanded",
@@ -8426,7 +8426,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pool",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/swimming%20pool.png",
@@ -8434,7 +8434,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "park",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/countryside_1.png",
@@ -8442,7 +8442,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "corridor",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/corridor.png",
@@ -8450,7 +8450,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tidy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tidy%20up_4.png.varianted-skin.png",
@@ -8460,21 +8460,21 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shower",
         iconName: "shower",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bath",
         iconName: "bath",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "door",
         iconName: "door",
         linkTo: "expanded",
@@ -8491,7 +8491,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shop",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/shop.png",
@@ -8501,7 +8501,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "restaurant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/restaurant.png",
@@ -8509,7 +8509,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "street",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/street.png",
@@ -8517,7 +8517,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sink",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adapted%20wash%20basin.png",
@@ -8525,21 +8525,21 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chair",
         iconName: "chair",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "table",
         iconName: "table",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curtain",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curtain.png",
@@ -8571,7 +8571,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "weather",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/how%20is%20the%20weather.png",
@@ -8585,7 +8585,7 @@ const expanded = {
       { type: "blank", colour: "red" },
       { type: "blank", colour: "red" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ice",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice.png",
@@ -8595,7 +8595,7 @@ const expanded = {
       { type: "blank", colour: "red" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stormy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stormy.png",
@@ -8604,7 +8604,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "windy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wind_1.png",
@@ -8612,7 +8612,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sunny",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sunny.png",
@@ -8620,7 +8620,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cloudy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cloudy.png",
@@ -8628,7 +8628,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rainy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rain.png",
@@ -8636,7 +8636,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snowy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snow.png",
@@ -8644,7 +8644,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slippery",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/slip.png.varianted-skin.png",
@@ -8654,7 +8654,7 @@ const expanded = {
       { type: "blank", colour: "red" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "storm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/thunder%20storm.svg",
@@ -8662,7 +8662,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lightning",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/language-craft/lightning_bolt.png",
@@ -8670,7 +8670,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wind",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hail.png",
@@ -8678,7 +8678,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sun",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sun.png",
@@ -8686,7 +8686,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cloud",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cloud.png",
@@ -8694,7 +8694,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rain",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20rain.png",
@@ -8702,7 +8702,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Snowflake_810_g.svg",
@@ -8710,7 +8710,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/slip_1.png",
@@ -8720,7 +8720,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "frost",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20be%20a%20frost.png",
@@ -8729,7 +8729,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hurricane",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hurricane.png",
@@ -8739,7 +8739,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sun cream",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cream_1.png",
@@ -8748,7 +8748,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "puddle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/puddle.png",
@@ -8757,7 +8757,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snowball",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snow%20ball.png",
@@ -8773,7 +8773,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flood",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/flood.png",
@@ -8783,7 +8783,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snowman",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snowman.png",
@@ -8794,7 +8794,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "melt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/melt.png",
@@ -8806,7 +8806,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "umbrella",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/umbrella.svg",
@@ -8815,7 +8815,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sledge",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sledge_1.png",
@@ -8826,7 +8826,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "freeze",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice-cream_1.png",
@@ -8851,7 +8851,7 @@ const expanded = {
       },
       { type: "blank", colour: "red" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "park",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/park_1.png",
@@ -8860,7 +8860,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cross",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cross.png.varianted-skin.png",
@@ -8870,7 +8870,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "path",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Roman%20road.png",
@@ -8879,7 +8879,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "road",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/road.png",
@@ -8888,7 +8888,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "village",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/neighborhood.png",
@@ -8897,7 +8897,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "town",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/town_1.png",
@@ -8906,7 +8906,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "city",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/city.png",
@@ -8915,14 +8915,14 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "money",
         iconName:"money",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "police",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/local%20police.png.variant-medium.png",
@@ -8930,7 +8930,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fire fighter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fireman.png.varianted-skin.png",
@@ -8938,7 +8938,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hospital",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hospital.png",
@@ -8946,7 +8946,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "health centre",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/surgery%20health%20centre.svg",
@@ -8954,7 +8954,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "doctor",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/doctor_3.png.variant-medium-dark.png",
@@ -8963,7 +8963,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nurse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/RGN%20(Registered%20General%20Nurse)_2.png.varianted-skin.png",
@@ -8971,7 +8971,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crossing",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/zebra%20crossing.png",
@@ -8979,7 +8979,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "traffic light",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/traffic%20lights.svg",
@@ -8988,7 +8988,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sign",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/road-sign_85_g.svg",
@@ -8996,7 +8996,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "buy",
         iconName:"buy",
         pluralForm: "buys",
@@ -9005,7 +9005,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "post office",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/postal%20service_1.png",
@@ -9013,7 +9013,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "post box",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/post-box.png",
@@ -9021,7 +9021,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "post person",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/postman.png.variant-medium.png",
@@ -9031,7 +9031,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "farmer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/farmer.png.variant-dark.png",
@@ -9039,7 +9039,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/veterinarian%20.png.varianted-skin.png",
@@ -9048,7 +9048,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pub",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bar_1.png",
@@ -9057,7 +9057,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "waiter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/waiter%20(female).png.variant-medium-dark.png",
@@ -9066,7 +9066,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "train station",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/train%20station.png",
@@ -9074,7 +9074,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sell",
         pluralForm:"sells",
         pastForm:"sold",
@@ -9084,7 +9084,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plumber",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plumber.png.varianted-skin.png",
@@ -9092,7 +9092,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "electrician",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/electrician_1.png.variant-medium-dark.png",
@@ -9100,7 +9100,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "carpenter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/carpenter_1.png.varianted-skin.png",
@@ -9108,7 +9108,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "optician",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/optician_3.png.variant-medium-dark.png",
@@ -9116,7 +9116,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dentist",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dentist_1.png.varianted-skin.png",
@@ -9124,7 +9124,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "library",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/library_3.png",
@@ -9132,7 +9132,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "church",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/church.png",
@@ -9141,7 +9141,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mosque",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mosque.png",
@@ -9150,7 +9150,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "synagogue",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/synagogue.png",
@@ -9159,7 +9159,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "museum",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/museum_1.png",
@@ -9167,7 +9167,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bakery",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/baker_5.png",
@@ -9175,7 +9175,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "garage",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/garage.png",
@@ -9183,7 +9183,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shopping centre",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/shopping%20centre.png",
@@ -9191,7 +9191,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bank",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bank.png",
@@ -9200,7 +9200,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pray",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pray_2.png",
@@ -9210,7 +9210,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Quran",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Koran.png",
@@ -9218,7 +9218,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bible",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bible.png",
@@ -9227,7 +9227,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cleaner",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cleaner.png.varianted-skin.png",
@@ -9235,7 +9235,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "social worker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/social%20intervention%20team.png.varianted-skin.png",
@@ -9243,7 +9243,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gardener",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/gardener_1.png.variant-medium.png",
@@ -9251,7 +9251,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "life guard",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/life%20guard_4.png.variant-medium.png",
@@ -9259,7 +9259,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "launderette",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/wash%20clothes%20,%20to.svg.varianted-skin.svg",
@@ -9267,7 +9267,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pharmacy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pharmacy.png",
@@ -9275,7 +9275,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "petrol station",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/petrol%20station.png",
@@ -9283,7 +9283,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hotel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hotel_1.png",
@@ -9291,7 +9291,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hairdresser",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hairdresser.png.variant-dark.png",
@@ -9321,7 +9321,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank",},
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "high",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/high%20object2.jpg",
@@ -9329,7 +9329,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "top",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/top%202.svg",
@@ -9338,7 +9338,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "under",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/under%201.svg",
@@ -9346,7 +9346,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "over",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/over.svg",
@@ -9354,7 +9354,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beside",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/beside%20next%20to.svg",
@@ -9362,7 +9362,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "between",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/between.svg",
@@ -9370,7 +9370,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "in front",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/in%20front.svg",
@@ -9378,7 +9378,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "behind",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/behind.svg",
@@ -9388,7 +9388,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "middle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/middle.svg",
@@ -9397,7 +9397,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "below",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/below.svg",
@@ -9405,7 +9405,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "above",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/above.svg",
@@ -9413,7 +9413,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "by",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Goodbye%20(M)_1.png.varianted-skin.png",
@@ -9425,7 +9425,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "low",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/low%20object2.jpg",
@@ -9433,7 +9433,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bottom",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bottom%202.svg",
@@ -9444,7 +9444,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "from",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Letter-7bbd2da7cc.svg",
@@ -9453,7 +9453,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "backwards",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icomoon/backward2.svg",
@@ -9461,7 +9461,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "forward",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icomoon/forward3.svg",
@@ -9472,7 +9472,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "towards",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20come%20near.png",
@@ -9480,7 +9480,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "away",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/take%20away.png",
@@ -9489,7 +9489,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "near",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/near_742_g.svg",
@@ -9497,7 +9497,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "far",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/far_467_g.svg",
@@ -9506,7 +9506,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "something",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/something.jpg",
@@ -9514,7 +9514,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "everything",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/everything.png",
@@ -9522,7 +9522,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lots",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lots.png",
@@ -9530,7 +9530,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nothing",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nothing.png",
@@ -9539,7 +9539,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "about",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20say_1.png.varianted-skin.png",
@@ -9547,7 +9547,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "around",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/around.png",
@@ -9555,7 +9555,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "through",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/through_1.png",
@@ -9563,7 +9563,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "within",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/inside.png",
@@ -9573,7 +9573,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "all",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/all%20-%20everything_1.png",
@@ -9581,7 +9581,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "some",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/some_1.png",
@@ -9589,7 +9589,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "none",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/no%20one_2.png",
@@ -9611,7 +9611,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "world",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/the%20world.png",
@@ -9619,7 +9619,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "country",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/world%20map.png",
@@ -9628,7 +9628,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "map",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/map.png",
@@ -9637,7 +9637,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "direction",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20direct_3.png.variant-medium.png",
@@ -9645,7 +9645,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "travel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/travel.png.varianted-skin.png",
@@ -9655,7 +9655,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "passport",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/passport.svg",
@@ -9663,7 +9663,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "island",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/island.png",
@@ -9672,7 +9672,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "region",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/regional%20state_32.png",
@@ -9681,7 +9681,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Europe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Europe.png",
@@ -9689,7 +9689,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "United Kingdom",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/United%20Kingdom.png",
@@ -9698,7 +9698,7 @@ const expanded = {
         pastForm: "British",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "France",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/France.png",
@@ -9707,7 +9707,7 @@ const expanded = {
         pastForm: "French",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Spain",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Spain_1.png",
@@ -9716,7 +9716,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Italy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Italy.png",
@@ -9725,7 +9725,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Germany",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Germany.png",
@@ -9734,7 +9734,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Poland",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Poland_1.png",
@@ -9743,7 +9743,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Greece",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Greece.png",
@@ -9752,7 +9752,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Turkey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Turkey_3.png",
@@ -9762,7 +9762,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Africa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Africa.png",
@@ -9771,7 +9771,7 @@ const expanded = {
         pastPronounciation: "African",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Egypt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Egypt.svg",
@@ -9780,7 +9780,7 @@ const expanded = {
         pastForm: "Egyptian",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Democratic Republic of Congo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Congo%20Kinshasa.svg",
@@ -9788,7 +9788,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Nigeria",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Nigeria.svg",
@@ -9797,7 +9797,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Zimbabwe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Zimbabwe.svg",
@@ -9806,7 +9806,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Sudan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20The%20Sudan.svg",
@@ -9814,7 +9814,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Tunisia",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Tunisia.svg",
@@ -9823,7 +9823,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Libya",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1f1-1f1fe.svg",
@@ -9832,7 +9832,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Somalia",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Somalia.svg",
@@ -9842,7 +9842,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Asia",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/continent_2.png",
@@ -9851,7 +9851,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Russia",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1f7-1f1fa.svg",
@@ -9860,7 +9860,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "China",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20China.svg",
@@ -9869,7 +9869,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "India",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20India.svg",
@@ -9878,7 +9878,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Japan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Japan.svg",
@@ -9887,7 +9887,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Philippines",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Philippines.svg",
@@ -9896,7 +9896,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Australia",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f1e6-1f1fa.svg",
@@ -9905,7 +9905,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "New Zealand",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20New%20Zealand.svg",
@@ -9913,7 +9913,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Indonesia",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Indonesia.svg",
@@ -9923,7 +9923,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "America",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/America.png",
@@ -9932,7 +9932,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "USA",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/country%20United%20States.svg",
@@ -9940,7 +9940,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Brazil",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Brazil.svg",
@@ -9949,7 +9949,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Canada",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Canada.svg",
@@ -9958,7 +9958,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Argentina",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Argentina.svg",
@@ -9967,7 +9967,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Mexico",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Mexico.svg",
@@ -9976,7 +9976,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Caribbean",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sea%20conch_1.png",
@@ -9984,7 +9984,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Chile",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Chile.svg",
@@ -9994,7 +9994,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Peru",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Peru.svg",
@@ -10004,7 +10004,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Saudi Arabia",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Saudi%20Arabia.svg",
@@ -10012,7 +10012,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Pakistan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Pakistan.png",
@@ -10020,7 +10020,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Afganistan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Afghanistan.png",
@@ -10028,7 +10028,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Syria",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Syria.svg",
@@ -10037,7 +10037,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Iraq",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flag%20Iraq.svg",
@@ -10046,7 +10046,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "North",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/North.png",
@@ -10054,7 +10054,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "East",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/East.png",
@@ -10062,7 +10062,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "South",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/South.png",
@@ -10070,7 +10070,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "West",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/West.png",
@@ -10093,7 +10093,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "furniture",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/furniture.svg",
@@ -10101,7 +10101,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sofa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sofa_1.png",
@@ -10109,7 +10109,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cushion",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cushion.png",
@@ -10117,7 +10117,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hook",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hang.png.varianted-skin.png",
@@ -10127,7 +10127,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hang",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hang_2.png.varianted-skin.png",
@@ -10137,7 +10137,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lamp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lamp.png",
@@ -10146,7 +10146,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "calendar",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/calendar.png",
@@ -10155,7 +10155,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         displayName: "whiteboard",
         iconLink:
@@ -10164,7 +10164,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         displayName: "photo",
         iconLink:
@@ -10173,7 +10173,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sheet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bottom sheet.png",
@@ -10182,7 +10182,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blanket",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/blanket.svg",
@@ -10192,7 +10192,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "duvet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/duvet.png",
@@ -10200,7 +10200,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pillow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pillow.png",
@@ -10209,7 +10209,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sleeping bag",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sleeping bag.png",
@@ -10218,7 +10218,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wardrobe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wardrobe.png",
@@ -10227,7 +10227,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "draw",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chest of drawers.png",
@@ -10236,7 +10236,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cupboard",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cupboard.svg",
@@ -10245,7 +10245,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mirror",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mirror.png.varianted-skin.png",
@@ -10254,7 +10254,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "picture",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/picture.svg",
@@ -10263,7 +10263,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beanbag",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/beanbag.svg.varianted-skin.svg",
@@ -10271,7 +10271,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "desk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/work desk.png",
@@ -10280,7 +10280,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shelf",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/book shelf.svg",
@@ -10289,7 +10289,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fireplace",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chimney_1.png",
@@ -10297,7 +10297,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "radiator",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/radiator.png",
@@ -10306,7 +10306,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fan.png",
@@ -10315,7 +10315,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "air con",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/air conditioning.png",
@@ -10323,7 +10323,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "freeze",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice cube.png",
@@ -10333,7 +10333,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blinds",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/vertical blinds.svg.varianted-skin.svg",
@@ -10341,7 +10341,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "balcony",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/balcony_1.png",
@@ -10349,7 +10349,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "washing machine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/washing machine.png",
@@ -10358,7 +10358,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "laundry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/laundry basket.png",
@@ -10366,7 +10366,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "powder",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/washing powder.svg",
@@ -10374,7 +10374,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/dishes.svg",
@@ -10383,7 +10383,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "liquid",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dishwashing liquid.png",
@@ -10391,7 +10391,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sponge",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sponge.svg",
@@ -10400,7 +10400,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fridge",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fridge.svg",
@@ -10409,7 +10409,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "freezer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/freezer.svg",
@@ -10418,7 +10418,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drier",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/tumble dryer.png",
@@ -10426,7 +10426,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "machine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/machine.png",
@@ -10434,7 +10434,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boiler",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boiler.png",
@@ -10442,7 +10442,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "green",
         displayName: "hoist",
         iconLink:
@@ -10452,7 +10452,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ramp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ramp.png",
@@ -10461,7 +10461,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "level access",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/give access.png.varianted-skin.png",
@@ -10469,7 +10469,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "exit",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/emergency exit.png",
@@ -10479,7 +10479,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fence",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fence.png",
@@ -10489,7 +10489,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/gates_201_g.svg",
@@ -10499,7 +10499,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "floor",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/floor.png",
@@ -10509,7 +10509,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ceiling",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ceiling.png",
@@ -10518,7 +10518,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wall",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wall.png",
@@ -10528,7 +10528,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hole punch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hole punch 2.svg.varianted-skin.svg",
@@ -10536,7 +10536,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "staple",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/staple , to.svg.varianted-skin.svg",
@@ -10545,7 +10545,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "laminate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to laminate.png.varianted-skin.png",
@@ -10554,7 +10554,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "print",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/print.svg",
@@ -10564,7 +10564,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fire",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fire_2.png",
@@ -10574,7 +10574,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bath mat.svg",
@@ -10582,7 +10582,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wallpaper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Roll_547_g.svg",
@@ -10591,7 +10591,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lino",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/floor tile_1.png",
@@ -10599,7 +10599,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "carpet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/carpet.png",
@@ -10607,7 +10607,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tile",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tile.png",
@@ -10697,7 +10697,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "water",
         iconName: "water",
         linkTo: "expanded",
@@ -10708,7 +10708,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pour",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20pour_3.png.varianted-skin.png",
@@ -10718,7 +10718,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spread",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spread_1.png.variant-medium-dark.png",
@@ -10728,7 +10728,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/frying%20pan.png",
@@ -10737,7 +10737,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bowl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bowl_1.png",
@@ -10751,7 +10751,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pack up",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/packed%20lunch%202.svg.varianted-skin.svg",
@@ -10759,7 +10759,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tin.svg",
@@ -10768,7 +10768,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "peel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/peel.png.variant-medium-dark.png",
@@ -10778,7 +10778,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20fry_1.png.variant-medium-dark.png",
@@ -10788,7 +10788,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plate_2.png",
@@ -10798,7 +10798,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spicy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spicy.png.variant-medium.png",
@@ -10806,14 +10806,14 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sweet",
         linkTo: "expanded",
         colour: "blue",
         iconName: "sweet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "salty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/salty.png.variant-medium-dark.png",
@@ -10822,7 +10822,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "packet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/salad%20packet.svg",
@@ -10831,7 +10831,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boil",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20boil.png",
@@ -10841,7 +10841,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "microwave",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/microwave.png",
@@ -10849,7 +10849,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chop",
         pastForm: "chopped",
         pluralForm: "chops",
@@ -10859,7 +10859,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cut%20up.png.variant-dark.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spoon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spoon.png",
@@ -10869,14 +10869,14 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "healthy",
         iconName: "healthy",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burn",
         pastForm: "burned",
         pluralForm: "burns",
@@ -10885,14 +10885,14 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "favourite",
         iconName: "favourite",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raw",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/meat.png",
@@ -10900,7 +10900,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bottle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bottle.png",
@@ -10909,7 +10909,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kettle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/kettle.svg.varianted-skin.svg",
@@ -10918,7 +10918,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hob",
         pluralForm: "hobs",
         iconLink:
@@ -10927,7 +10927,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mix",
         pastForm: "mixed",
         pluralForm: "mixes",
@@ -10938,7 +10938,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/stir%20mix%20,%20to.svg.varianted-skin.svg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fork",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fork.png",
@@ -10948,7 +10948,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "breakfast",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/breakfast.png.varianted-skin.png",
@@ -10956,7 +10956,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lunch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/eat.png.variant-medium.png",
@@ -10964,7 +10964,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dinner",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/have%20tea.png.varianted-skin.png",
@@ -10972,7 +10972,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snack",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mid-morning%20snack_2.png.variant-medium-dark.png",
@@ -10981,7 +10981,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toaster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/toaster.png",
@@ -10990,7 +10990,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "oven",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/oven.png",
@@ -11000,7 +11000,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cook",
         pastForm: "cooked",
         pluralForm: "cooks",
@@ -11009,7 +11009,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "knife",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/knife_3.png",
@@ -11034,7 +11034,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fruit",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fruits_1.png",
@@ -11043,7 +11043,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "apple",
         pluralForm: "apples",
         iconName: "apple",
@@ -11051,7 +11051,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pear",
         pluralForm: "pear",
         iconName: "pear",
@@ -11059,7 +11059,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "banana",
         pluralForm: "bananas",
         iconName: "banana",
@@ -11067,7 +11067,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "strawberry",
         pluralForm: "strawberries",
         iconName: "strawberry",
@@ -11075,7 +11075,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "orange",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/orange.png",
@@ -11085,7 +11085,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tomato",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tomato.svg",
@@ -11096,7 +11096,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "apricot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/apricot.png",
@@ -11105,7 +11105,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "peach",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/peach_1.png",
@@ -11115,7 +11115,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plum",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plum.png",
@@ -11124,7 +11124,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pineapple",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pineapple.svg",
@@ -11134,7 +11134,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pomegranate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pomegranate.png",
@@ -11143,7 +11143,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lemon",
         pluralForm: "lemons",
         iconName: "lemon",
@@ -11151,7 +11151,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lime",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lime.png",
@@ -11160,7 +11160,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "date",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/dates.svg",
@@ -11170,7 +11170,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "berry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/berries.png",
@@ -11179,7 +11179,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cherry",
         pluralForm: "cherries",
         iconName: "cherry",
@@ -11187,7 +11187,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raspberry",
         pluralForm: "raspberries",
         iconName: "raspberry",
@@ -11195,7 +11195,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blueberry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/blueberry.png",
@@ -11204,7 +11204,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kiwi",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/kiwi.png",
@@ -11213,7 +11213,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mango",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/mango.svg",
@@ -11222,7 +11222,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "melon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/melon.svg",
@@ -11231,7 +11231,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grape",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/berries_1.png",
@@ -11240,7 +11240,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raisin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/raisin.svg.varianted-skin.svg",
@@ -11271,7 +11271,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pip.png",
@@ -11279,7 +11279,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "juicy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20squeeze.png.variant-medium-dark.png",
@@ -11287,7 +11287,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sour",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/acid.png.variant-medium-dark.png",
@@ -11316,7 +11316,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vegetable",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/vegetables.svg.varianted-skin.svg",
@@ -11326,7 +11326,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vegetarian",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/vegetarian.png",
@@ -11337,7 +11337,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mushroom",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/mushroom.svg.varianted-skin.svg",
@@ -11347,7 +11347,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "carrot",
         pluralForm: "carrots",
         iconName: "carrot",
@@ -11355,7 +11355,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cabbage",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cabbage.png",
@@ -11365,7 +11365,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cauliflower",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cauliflower.png",
@@ -11375,14 +11375,14 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "broccoli",
         iconName: "broccoli",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pea",
         pluralForm: "peas",
         iconName: "pea",
@@ -11390,7 +11390,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bean",
         pluralForm: "beans",
         iconName: "bean",
@@ -11398,7 +11398,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "onion",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/onion.svg",
@@ -11408,7 +11408,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "potato",
         pluralForm: "potatoes",
         iconName: "potato",
@@ -11416,7 +11416,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "garlic",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/garlic.png",
@@ -11425,7 +11425,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "parsnip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/parsnip.svg",
@@ -11434,7 +11434,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pepper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pepper_2.png",
@@ -11443,7 +11443,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chilli",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chilli.png",
@@ -11452,7 +11452,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cucumber",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cucumber.png",
@@ -11461,7 +11461,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "leek",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/leek.png",
@@ -11470,7 +11470,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spinach",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/spinach.svg",
@@ -11478,7 +11478,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sprout",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/brussel%20sprouts.svg",
@@ -11487,7 +11487,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beetroot",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/beetroot.png",
@@ -11495,7 +11495,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "corn",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/maize_1.png",
@@ -11504,7 +11504,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lettuce",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lettuce.svg",
@@ -11512,7 +11512,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "aubergine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/aubergine.png",
@@ -11520,7 +11520,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pumpkin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pumpkin.png",
@@ -11528,7 +11528,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "butternut squash",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/butternut%20squash.svg",
@@ -11536,7 +11536,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turnip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/turnip.svg",
@@ -11583,7 +11583,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rice",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rice.svg",
@@ -11591,7 +11591,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pasta",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pasta.svg.varianted-skin.svg",
@@ -11599,7 +11599,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spaghetti",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spaghetti_1.png",
@@ -11607,7 +11607,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "noodle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/noodles.png",
@@ -11616,7 +11616,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chips.svg",
@@ -11626,7 +11626,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jacket potato",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jacket%20potato%201.svg",
@@ -11634,7 +11634,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mash",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/mash%20potato%202.svg",
@@ -11642,7 +11642,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crisp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/crisps.svg",
@@ -11653,7 +11653,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cracker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/biscuit.png",
@@ -11662,7 +11662,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bread",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bread.svg",
@@ -11670,7 +11670,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toast",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/toast.svg",
@@ -11680,7 +11680,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrap",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pancake%202.svg",
@@ -11690,7 +11690,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bap",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/roll.png",
@@ -11699,7 +11699,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cereal",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cereals_1.png",
@@ -11707,7 +11707,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "roast potato",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/potato.svg.varianted-skin.svg",
@@ -11716,7 +11716,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bagel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bagel.svg",
@@ -11725,7 +11725,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nacho",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/tortilla-chips_364_192291.svg",
@@ -11735,7 +11735,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "poppadom",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/poppadoms.svg",
@@ -11744,7 +11744,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chapatti",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Chapati.png",
@@ -11752,7 +11752,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flour",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/flour%20plain.svg.varianted-skin.svg",
@@ -11760,7 +11760,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gluten free",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/gluten%20free_1.png",
@@ -11768,7 +11768,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "couscous",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/special%20fried%20rice.png",
@@ -11776,7 +11776,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quinoa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/rice-bowl_995_g.svg",
@@ -11788,7 +11788,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seed",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pumpkin%20seeds.png",
@@ -11797,7 +11797,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nut",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/nuts.svg",
@@ -11806,7 +11806,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lentils",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lentils.svg",
@@ -11856,7 +11856,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "protein",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/protein.svg",
@@ -11871,7 +11871,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "meat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/meat_5.png",
@@ -11880,7 +11880,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chicken",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chicken.svg",
@@ -11888,7 +11888,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pork",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pork.png",
@@ -11896,7 +11896,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beef",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/beef.png",
@@ -11904,7 +11904,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lamb",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lamb.svg.varianted-skin.svg",
@@ -11912,7 +11912,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turkey",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/roast%20duck.png",
@@ -11920,7 +11920,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fried%20fish%20in%20batter.png",
@@ -11928,7 +11928,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tuna",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/can%20of%20tuna.png",
@@ -11936,7 +11936,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "salmon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/salmon%20slice.png",
@@ -11945,7 +11945,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sausage",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sausages%202.svg",
@@ -11954,7 +11954,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ham",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/ham.svg.varianted-skin.svg",
@@ -11962,7 +11962,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bacon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bacon.png",
@@ -11970,7 +11970,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "patty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hamburger_1.png",
@@ -11978,7 +11978,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nugget",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chicken%20nuggets.svg",
@@ -11987,7 +11987,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fish finger",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fried%20fish%20in%20batter_1.png",
@@ -12000,7 +12000,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "egg",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/egg.svg",
@@ -12010,7 +12010,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "milk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/milk%202%20litre.svg",
@@ -12019,7 +12019,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cream",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cream.png",
@@ -12029,7 +12029,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cheese",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cheese.svg",
@@ -12037,7 +12037,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cream cheese",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cheese%20cream.png",
@@ -12045,7 +12045,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yogurt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/yogurt.png",
@@ -12058,7 +12058,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tofu",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tofu_441_104472.svg",
@@ -12066,7 +12066,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/green%20beans.svg",
@@ -12074,7 +12074,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "legumes",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/broad%20beans.svg",
@@ -12113,7 +12113,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pie.svg.varianted-skin.svg",
@@ -12122,7 +12122,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burger",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cheese%20burger.svg.varianted-skin.svg",
@@ -12131,7 +12131,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kyiv",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chicken%20breast.svg.varianted-skin.svg",
@@ -12139,7 +12139,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stew",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stew.png",
@@ -12147,7 +12147,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soup",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/soup.svg",
@@ -12155,7 +12155,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stir fry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/stir%20fry%20,%20to.svg.varianted-skin.svg",
@@ -12163,7 +12163,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "salad",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/salad.png",
@@ -12171,7 +12171,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "omlette",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/french%20omelette.png",
@@ -12181,7 +12181,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/curry.svg.varianted-skin.svg",
@@ -12189,7 +12189,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dahl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lentils.png",
@@ -12197,7 +12197,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pakora",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fritters.png",
@@ -12206,7 +12206,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sausage roll",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f4cf.svg",
@@ -12214,7 +12214,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tandoori",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/roast.png",
@@ -12222,7 +12222,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kebab",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mixed%20skewer.png",
@@ -12231,7 +12231,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "prawn cracker",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/crackers_360_g.svg",
@@ -12240,7 +12240,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hot dog",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hot%20dog.svg",
@@ -12251,7 +12251,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mac and cheese",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/macaroni%20cheese.svg",
@@ -12259,7 +12259,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bologese",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spaghetti.png",
@@ -12267,7 +12267,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lasagna",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/lasagna_53_g.svg",
@@ -12275,7 +12275,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "meatball",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/meat%20balls_1.png",
@@ -12284,7 +12284,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pizza",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pizza%202.svg",
@@ -12293,7 +12293,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paella",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/paella.png",
@@ -12301,7 +12301,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pho",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chinese%20food.svg.varianted-skin.svg",
@@ -12309,7 +12309,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pad thai",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f35c.svg",
@@ -12317,7 +12317,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sushi",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f363.svg",
@@ -12326,7 +12326,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "full English",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/breakfast%206.svg",
@@ -12334,7 +12334,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "porridge",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/porridge.svg",
@@ -12342,7 +12342,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rice krispies",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cereal.svg.varianted-skin.svg",
@@ -12350,7 +12350,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "museli",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cereal%20museli.svg",
@@ -12358,7 +12358,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "corn flakes",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cereals.png",
@@ -12366,7 +12366,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wheatabix",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brick.png",
@@ -12374,7 +12374,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pancake",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pancakes.svg",
@@ -12383,7 +12383,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "waffle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/belgian%20waffle.png",
@@ -12392,7 +12392,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dumpling",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f95f.svg",
@@ -12402,7 +12402,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sandwich",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sandwich.png",
@@ -12411,7 +12411,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fajita",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pancake%202.svg",
@@ -12420,7 +12420,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burrito",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f32f.svg",
@@ -12429,7 +12429,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "taco",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f32e.svg",
@@ -12438,7 +12438,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flan",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/quiche%20flan.svg",
@@ -12446,7 +12446,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pasty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/meat%20pasty.png",
@@ -12454,7 +12454,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "coleslaw",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/coleslaw.png",
@@ -12462,7 +12462,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Yorkshire pudding",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/yorkshire%20pudding.svg",
@@ -12470,7 +12470,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pastry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/danish%20pastry.svg",
@@ -12480,7 +12480,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank", colour: "orange" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bruschetta",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/toast.svg",
@@ -12510,7 +12510,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "treat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cake%20cup%20cake.svg",
@@ -12519,7 +12519,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sweetie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sweets.png",
@@ -12528,7 +12528,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chocolate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chocolate%20bar.png",
@@ -12537,7 +12537,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "caramel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/caramel.png",
@@ -12545,7 +12545,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pudding",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pudding.png",
@@ -12554,7 +12554,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "vanilla",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f366.svg",
@@ -12562,7 +12562,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mint",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mint.png",
@@ -12571,7 +12571,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "icing",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/decorate%20cake%20,%20to.svg.varianted-skin.svg",
@@ -12580,7 +12580,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cake",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cake.png",
@@ -12590,7 +12590,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cookie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/biscuit%20chocolate%20chip.svg",
@@ -12599,7 +12599,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "biscuit",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/biscuit.png",
@@ -12609,7 +12609,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mousse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brown%20sugar.png",
@@ -12618,7 +12618,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "candyfloss",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cotton%20candy.png",
@@ -12626,7 +12626,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tart",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jam%20tart.svg.varianted-skin.svg",
@@ -12635,7 +12635,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jelly",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jelly.svg",
@@ -12643,7 +12643,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trifle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f36e.svg",
@@ -12652,7 +12652,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ice cream",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice-cream.png",
@@ -12660,7 +12660,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cheesecake",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cake.svg",
@@ -12668,7 +12668,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "marshmallow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/marshmallows.svg",
@@ -12677,7 +12677,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "churro",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/doughnut.png",
@@ -12686,7 +12686,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "doughnut",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f369.svg",
@@ -12695,7 +12695,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mincepie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/mince%20pie.svg",
@@ -12704,7 +12704,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tiramisu",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/tiramisu.png",
@@ -12712,7 +12712,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rice pudding",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rice.svg",
@@ -12720,7 +12720,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scone",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cake%20sponge.svg",
@@ -12729,7 +12729,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "flapjack",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rice%20cake.svg.varianted-skin.svg",
@@ -12738,7 +12738,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "croissant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/croissant.png",
@@ -12790,7 +12790,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sauce",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/drink%20consistency%20juice%20straw.svg",
@@ -12798,7 +12798,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jar",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/can_1.png",
@@ -12809,7 +12809,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jug",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/jug.png",
@@ -12817,7 +12817,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dip",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/dip%20food%20,%20to.svg.varianted-skin.svg",
@@ -12827,7 +12827,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gravy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/gravy%20pour%20,%20to.svg",
@@ -12835,7 +12835,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "oil",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/oil_2.png",
@@ -12847,7 +12847,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ketchup",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sauce%20tomato.svg",
@@ -12855,7 +12855,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pickle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pickles%20can.png",
@@ -12863,7 +12863,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mustard",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mustard_1.png",
@@ -12871,7 +12871,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mayo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mayonnaise.png",
@@ -12879,7 +12879,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "salad cream",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/salad%20plate.svg",
@@ -12887,7 +12887,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "salsa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Tomato.png",
@@ -12895,7 +12895,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hummus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chickpea.png",
@@ -12903,7 +12903,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hot sauce",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Hot%20Sauce-0c75459484.svg",
@@ -12913,7 +12913,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jam",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/jam.svg",
@@ -12923,7 +12923,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "peanut butter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/peanut%20butter.svg.varianted-skin.svg",
@@ -12931,7 +12931,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chocolate spread",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Nutella.png",
@@ -12939,7 +12939,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "butter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/butter.png",
@@ -12974,7 +12974,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "herb",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/parsley.png",
@@ -12982,7 +12982,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spice",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/spice-container_824_g.svg",
@@ -13013,7 +13013,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "juice",
         iconName: "juice",
         linkTo: "expanded",
@@ -13021,7 +13021,7 @@ const expanded = {
       },
       { type: "blank", colour: "red" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "full",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/full.svg",
@@ -13029,7 +13029,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "empty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/empty.svg",
@@ -13038,7 +13038,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "straw",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/straw.svg",
@@ -13058,21 +13058,21 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tea",
         iconName: "tea",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "coffee",
         iconName: "coffee",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hot chocolate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/chocolate_2.png",
@@ -13081,7 +13081,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "milkshake",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/milkshake.png",
@@ -13089,28 +13089,28 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fizzy",
         iconName: "fizzy",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lemonade",
         iconName: "lemonade",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cola",
         iconName: "cola",
         linkTo: "expanded",
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slushy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Drink-7e6bac64c7.svg",
@@ -13140,7 +13140,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "alcohol",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Beer-932b36486a.svg",
@@ -13148,7 +13148,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "beer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/beer.svg",
@@ -13156,7 +13156,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wine.png",
@@ -13164,7 +13164,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spirits",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/whisky.png",
@@ -13172,7 +13172,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drunk",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20get%20drunk.png.variant-medium.png",
@@ -13199,7 +13199,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "time",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/time.png",
@@ -13236,7 +13236,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "day",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/day_1.png",
@@ -13245,7 +13245,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "morning",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/morning.png",
@@ -13253,7 +13253,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "afternoon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/afternoon.png",
@@ -13261,7 +13261,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "night",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/night_1.png",
@@ -13269,7 +13269,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "week",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/week%201.svg",
@@ -13278,7 +13278,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "month",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/month.png",
@@ -13287,7 +13287,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "celebrate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/celebrate_1.png.varianted-skin.png",
@@ -13298,7 +13298,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "at",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/'@'sign.png",
@@ -13307,7 +13307,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "minute",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/minute.svg",
@@ -13316,7 +13316,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hour",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/one%20hour.svg",
@@ -13343,7 +13343,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "now",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/now.png",
@@ -13351,7 +13351,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "next",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/next.svg",
@@ -13359,7 +13359,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "last",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/last.svg",
@@ -13367,7 +13367,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "before",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/before.png",
@@ -13375,7 +13375,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "after",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/after.png",
@@ -13383,7 +13383,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "early",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20get%20up%20early.png.variant-medium-dark.png",
@@ -13391,7 +13391,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "late",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20miss.png.varianted-skin.png",
@@ -13399,7 +13399,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soon",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/orange%20traffic%20light.png",
@@ -13407,7 +13407,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "later",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Time-d5f0069edc.svg",
@@ -13416,7 +13416,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "1st",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/one.png",
@@ -13424,7 +13424,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "2nd",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/second.svg",
@@ -13432,7 +13432,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "3rd",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/number%20three.png",
@@ -13440,14 +13440,14 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "th",
         linkTo: "expanded",
         colour: "grey",
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "timetable",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/timetable.png",
@@ -13455,7 +13455,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "timer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/Time%20Timer%2015%20red.png",
@@ -13463,7 +13463,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "watch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/time.jpg",
@@ -13471,7 +13471,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clock",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/clock-watch_5.png",
@@ -13495,7 +13495,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yesterday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/yesterday.svg",
@@ -13503,7 +13503,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "today",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/today.svg",
@@ -13511,7 +13511,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tomorrow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tomorrow.svg",
@@ -13529,7 +13529,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "weekend",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/weekend.svg",
@@ -13541,7 +13541,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Monday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/monday.svg",
@@ -13549,7 +13549,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Tuesday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/tuesday.svg",
@@ -13557,7 +13557,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Wednesday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/wednesday.svg",
@@ -13565,7 +13565,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Thursday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/thursday.svg",
@@ -13573,7 +13573,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Friday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/friday.svg",
@@ -13581,7 +13581,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Saturday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/saturday.svg",
@@ -13589,7 +13589,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Sunday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/sunday.svg",
@@ -13600,7 +13600,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "start",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/start.png",
@@ -13613,7 +13613,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "end",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/end.png",
@@ -13659,7 +13659,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "last month",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/last%20month.svg",
@@ -13667,7 +13667,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "monthly",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/this%20month.svg",
@@ -13675,7 +13675,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "next month",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/next%20month.svg",
@@ -13698,7 +13698,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "January",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/January.png.varianted-skin.png",
@@ -13706,7 +13706,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "February",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/February.png",
@@ -13714,7 +13714,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "March",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/March.png",
@@ -13722,7 +13722,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "April",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/April.png",
@@ -13730,7 +13730,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "May",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/May.png",
@@ -13738,7 +13738,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "June",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/calendar.png",
@@ -13746,7 +13746,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "July",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/June.png.varianted-skin.png",
@@ -13754,7 +13754,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "August",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/July.png",
@@ -13762,7 +13762,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "September",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/September.png.varianted-skin.png",
@@ -13771,7 +13771,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "October",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/November.png",
@@ -13779,7 +13779,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "November",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/november.png",
@@ -13787,7 +13787,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "December",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/coughdrop_symbols/december.png",
@@ -13812,7 +13812,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "season",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/seasons.png",
@@ -13821,7 +13821,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spring",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/season_2.png",
@@ -13829,7 +13829,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "summer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/summer.png",
@@ -13837,7 +13837,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "autumn",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/autumn.png",
@@ -13845,7 +13845,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "winter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/winter.png",
@@ -13872,7 +13872,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "party",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/party_3.png.variant-medium.png",
@@ -13882,7 +13882,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "birthday",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/party%20celebration.svg",
@@ -13890,7 +13890,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "present",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/present.svg",
@@ -13899,7 +13899,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "candle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/candle_2.png",
@@ -13908,7 +13908,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrapping paper",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/wrapping%20paper.svg",
@@ -13916,7 +13916,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrap",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cover_2.png.varianted-skin.png",
@@ -13926,7 +13926,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tape",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adhesive%20tape.png",
@@ -13936,7 +13936,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eve",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/yesterday.svg",
@@ -13945,7 +13945,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Christmas",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Christmas.svg.varianted-skin.svg",
@@ -13953,7 +13953,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Christmas tree",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Christmas%20tree_1.png",
@@ -13961,7 +13961,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Santa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/santa.png.variant-medium-dark.png",
@@ -13969,7 +13969,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "elf",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/elf.svg.varianted-skin.svg",
@@ -13978,7 +13978,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bauble",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/decorative%20ball.png",
@@ -13987,7 +13987,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tinsel",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tinsel.svg",
@@ -13995,7 +13995,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nativity",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nativity%20scene_2.png.variant-medium-dark.png",
@@ -14003,7 +14003,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Jesus",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Baby%20Jesus.png.variant-medium.png",
@@ -14011,7 +14011,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "reindeer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/reindeer.svg",
@@ -14020,7 +14020,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Allah",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/235-Allah.png",
@@ -14028,7 +14028,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Al-Jumuah",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/friday.jpg",
@@ -14036,7 +14036,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Kaaba",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f54b.svg",
@@ -14044,7 +14044,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Ramadam",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/fasting.jpg",
@@ -14052,7 +14052,7 @@ const expanded = {
         colour: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eid",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Eid%20AlFitr%20(1).jpg",
@@ -14065,7 +14065,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Hallowe’en",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Halloween.svg.varianted-skin.svg",
@@ -14073,7 +14073,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trick or treat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/trick%20or%20treat.svg.varianted-skin.svg",
@@ -14081,7 +14081,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mask",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mask.png",
@@ -14091,7 +14091,7 @@ const expanded = {
         pastForm: "masked",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fancy dress",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/disguise.png.variant-medium-dark.png",
@@ -14099,7 +14099,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bonfire night",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Bonfire%20Night.svg",
@@ -14107,7 +14107,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "guy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/guy.svg",
@@ -14115,7 +14115,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "firework",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fireworks.svg",
@@ -14124,7 +14124,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "new year",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/New%20Year's%20Day.png.varianted-skin.png",
@@ -14133,7 +14133,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "valentine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/St_Valentines_Day_3.png.varianted-skin.png",
@@ -14143,7 +14143,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Easter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Easter%20egg.png",
@@ -14151,7 +14151,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hunt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Easter%20egg%20hunt.svg",
@@ -14161,7 +14161,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "remembrance",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/poppy.png",
@@ -14169,7 +14169,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "card",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/birthday%20card.svg",
@@ -14208,7 +14208,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "person",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/black%20person.png",
@@ -14245,7 +14245,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "baby",
         pluralForm: "babies",
         iconName: "baby",
@@ -14254,21 +14254,21 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Mum",
         iconName: "mum",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "Dad",
         iconName: "dad",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "teacher",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Music%20teacher.png.variant-medium-dark.png",
@@ -14278,7 +14278,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hi",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hello.png.variant-dark.png",
@@ -14286,7 +14286,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "how are you",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/You%20(F).png",
@@ -14294,7 +14294,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bye",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Goodbye%20(M)_1.png.varianted-skin.png",
@@ -14302,7 +14302,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boy_3.png.varianted-skin.png",
@@ -14312,7 +14312,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "girl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/girl_2.png.varianted-skin.png",
@@ -14321,7 +14321,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "child",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/short.png.varianted-skin.png",
@@ -14331,21 +14331,21 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sister",
         iconName: "sister",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brother",
         iconName: "brother",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "friend",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/friends_3.png.varianted-skin.png",
@@ -14354,7 +14354,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sorry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/sorry.jpg",
@@ -14362,7 +14362,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "please",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/please.png.variant-medium-dark.png",
@@ -14372,7 +14372,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "thank",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Thank%20you%20(F).png",
@@ -14382,7 +14382,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "man",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/man_1.png.variant-medium-dark.png",
@@ -14391,7 +14391,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "woman",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/woman_2.png.variant-medium-dark.png",
@@ -14400,7 +14400,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "adult",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adult.png.varianted-skin.png",
@@ -14413,7 +14413,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yes",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Yes%20(M).png",
@@ -14421,7 +14421,7 @@ const expanded = {
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "name",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/what%20is%20your%20name%20(F)%20(1).jpg",
@@ -14429,7 +14429,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "no",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/No%20(F).png",
@@ -14441,90 +14441,90 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "me",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "my",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "mine",
         linkTo: "expanded",
         colour: "yellow",
       },
       { type: "blank" },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "his",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "him",
         linkTo: "expanded",
         colour: "yellow",
       },
       { type: "blank" },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "hers",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "her",
         linkTo: "expanded",
         colour: "yellow",
       },
       { type: "blank" },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "our",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "ours",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "they",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "their",
         pluralForm: "theirs",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "them",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "your",
         pluralForm: "yours",
         linkTo: "expanded",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "we",
         linkTo: "expanded",
         colour: "yellow",
@@ -14547,7 +14547,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "describe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tell_1.png",
@@ -14561,7 +14561,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clever",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/smart_287_g.svg",
@@ -14569,7 +14569,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "confident",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Speech-b528d7d499.svg",
@@ -14577,7 +14577,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "angelic",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/angel.png.varianted-skin.png",
@@ -14585,7 +14585,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wicked",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bad.png.varianted-skin.png",
@@ -14593,7 +14593,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hairstyle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/haircut.png.varianted-skin.png",
@@ -14601,7 +14601,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curly",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curl.png",
@@ -14610,7 +14610,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bald",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bald_1.png.varianted-skin.png",
@@ -14620,7 +14620,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blond",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/blond.png",
@@ -14628,7 +14628,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brunette",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brown_1.png",
@@ -14636,7 +14636,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "afro",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Afro-1ecf3883c0.svg",
@@ -14644,7 +14644,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hairy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hairy.png.varianted-skin.png",
@@ -14652,7 +14652,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trust",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Trust-Fall_757_26969.svg",
@@ -14662,7 +14662,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: " independant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20stand.png.varianted-skin.png",
@@ -14670,7 +14670,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "friendly",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Friends%20(F).png",
@@ -14678,7 +14678,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scary",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20scare_3.png.variant-medium-dark.png",
@@ -14686,7 +14686,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cute",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cute.png",
@@ -14694,7 +14694,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hide.png.varianted-skin.png",
@@ -14702,7 +14702,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chatty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20chat.png.varianted-skin.png",
@@ -14710,7 +14710,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lazy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lazy.png.variant-medium-dark.png",
@@ -14718,7 +14718,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "active",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/active.jpg",
@@ -14726,7 +14726,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "honest",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/honest%20and%20reliable.png.variant-medium-dark.png",
@@ -14734,7 +14734,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cheeky",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Monkey-0d638a29a5.svg",
@@ -14742,7 +14742,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "careful",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Be%20careful!.png.variant-medium.png",
@@ -14750,7 +14750,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gender",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/gender_925_g.svg",
@@ -14758,7 +14758,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "male",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Man-03a443e0de.svg",
@@ -14766,7 +14766,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "female",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Woman_747_g.svg",
@@ -14774,7 +14774,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gay",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f3f3-fe0f-200d-1f308.svg",
@@ -14782,7 +14782,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fat",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fat_4.png.varianted-skin.png",
@@ -14790,7 +14790,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "thin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/thin_3.png.varianted-skin.png",
@@ -14798,7 +14798,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "strong",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/strong.png.varianted-skin.png",
@@ -14806,7 +14806,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "weak",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/weak.png.varianted-skin.png",
@@ -14815,7 +14815,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "new",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/new_1.png",
@@ -14823,7 +14823,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "disability",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/disabled%20sign.svg",
@@ -14832,7 +14832,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "autism",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Infinity_318_637298.svg",
@@ -14840,7 +14840,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "learning disability",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Down's%20Syndrome.png.variant-medium.png",
@@ -14848,7 +14848,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "deaf",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/deaf_1.png.variant-medium.png",
@@ -14856,7 +14856,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blind",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/blind%202.svg.varianted-skin.svg",
@@ -14866,7 +14866,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "how old are you?",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/how%20old%20are%20you.png",
@@ -14874,7 +14874,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "old",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/old%20age.png.varianted-skin.png",
@@ -14882,7 +14882,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "young",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/baby.png.varianted-skin.png",
@@ -14890,7 +14890,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ethnic group",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/black%20woman.png",
@@ -14898,7 +14898,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "racism",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/shout_1.png.varianted-skin.png",
@@ -14907,7 +14907,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "long",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/long.svg",
@@ -14915,7 +14915,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tall",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tall.png.varianted-skin.png",
@@ -14923,7 +14923,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "short",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/short.png.varianted-skin.png",
@@ -14949,7 +14949,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "polite",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pretty_1.png.variant-medium-dark.png",
@@ -14957,7 +14957,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bless you",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/excuse%20me.jpg",
@@ -14965,7 +14965,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pardon me",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20burp.png.varianted-skin.png",
@@ -14973,7 +14973,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "have a nice day",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nice_1.png.varianted-skin.png",
@@ -14981,7 +14981,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "thank you very much",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Thank%20you%20(M).png",
@@ -14989,7 +14989,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "of course",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/I%20am%20fine%20(F).png",
@@ -14997,7 +14997,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ok_386_g.svg",
@@ -15005,7 +15005,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "please can I",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20ask_6.png.varianted-skin.png",
@@ -15013,7 +15013,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "would like",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Want%20(M).png",
@@ -15021,7 +15021,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "say it again",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20say.png.variant-medium.png",
@@ -15029,7 +15029,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "excuse me",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20fart.png.varianted-skin.png",
@@ -15037,7 +15037,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "I would rather not",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/no.png.variant-medium-dark.png",
@@ -15045,7 +15045,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "prefer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20prefer.png",
@@ -15061,7 +15061,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yay",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/celebrate%202%20,%20to.svg.varianted-skin.svg",
@@ -15069,7 +15069,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ooh",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20surprise.png",
@@ -15077,7 +15077,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ahh",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20scream.png",
@@ -15086,7 +15086,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "erm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/confused.png.varianted-skin.png",
@@ -15094,7 +15094,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ouch",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hurt%20oneself.png.varianted-skin.png",
@@ -15102,7 +15102,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "aww",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dog.png",
@@ -15158,7 +15158,7 @@ const expanded = {
         colour: "linkColour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "relationship",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/relationship.png.varianted-skin.png",
@@ -15168,7 +15168,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "girlfriend",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/girlfriend.png.varianted-skin.png",
@@ -15177,7 +15177,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boyfriend",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boyfriend.png.varianted-skin.png",
@@ -15186,7 +15186,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "partner",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/partner.svg.varianted-skin.svg",
@@ -15196,7 +15196,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "romantic",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/romantic.png.varianted-skin.png",
@@ -15207,7 +15207,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "gramdma",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/grandmother.png.varianted-skin.png",
@@ -15216,7 +15216,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grandpa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/grandfather_2.png.varianted-skin.png",
@@ -15226,7 +15226,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wife",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bride.png.variant-medium-dark.png",
@@ -15235,7 +15235,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "husband",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bridegroom.png.variant-dark.png",
@@ -15244,7 +15244,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "marry",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20marry.png.varianted-skin.png",
@@ -15254,7 +15254,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "date",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Couple-2b1e9ac352.svg",
@@ -15267,7 +15267,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "auntie",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/aunt_5.png.varianted-skin.png",
@@ -15276,7 +15276,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "uncle",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/uncle.png.varianted-skin.png",
@@ -15285,7 +15285,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cousin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cousin_9.png.varianted-skin.png",
@@ -15295,7 +15295,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wedding",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wedding_2.png",
@@ -15303,7 +15303,7 @@ const expanded = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "divorce",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/divorce.png",
@@ -15313,7 +15313,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "separate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20separate_1.png.varianted-skin.png",
@@ -15326,7 +15326,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "niece",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/niece.png.varianted-skin.png",
@@ -15335,7 +15335,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nephew",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nephew_3.png.varianted-skin.png",
@@ -15352,7 +15352,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "daughter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/daughter_1.png.varianted-skin.png",
@@ -15361,7 +15361,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "son",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/son_1.png.varianted-skin.png",
@@ -15378,7 +15378,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "great",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/great.svg.varianted-skin.svg",
@@ -15386,7 +15386,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "step",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Stairs_54_g.svg",
@@ -15396,7 +15396,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dad.png.varianted-skin.png",
@@ -15406,7 +15406,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "adopt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adoptive%20family.png.varianted-skin.png",
@@ -15420,7 +15420,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "babysitter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Mom-And-Son_774_g.svg",
@@ -15428,7 +15428,7 @@ const expanded = {
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "assistant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/care%20assistant%205b.svg.varianted-skin.svg",
@@ -15453,41 +15453,41 @@ const expanded = {
       { type: "blank", colour: "red" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "happy",
         iconName: "happy",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ok",
         iconName: "ok",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sad",
         iconName: "sad",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "angry",
         iconName: "angry",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scared",
         iconName: "scared",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sick",
         iconName: "sick",
         linkTo: "expanded",
@@ -15495,7 +15495,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "worry",
         pastTenseForm: "worried",
         pluralForm: "worries",
@@ -15504,35 +15504,35 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bored",
         iconName: "bored",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "excited",
         iconName: "excited",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tired",
         iconName: "tired",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "confused",
         iconName: "confused",
         linkTo: "expanded",
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "calm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/lazy_2.png.variant-dark.png",
@@ -15540,7 +15540,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lonely",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/alone.png.varianted-skin.png",
@@ -15548,7 +15548,7 @@ const expanded = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sweaty",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sweaty.png.variant-dark.png",
@@ -15558,7 +15558,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "laugh",
         pastTenseForm: "laughed",
         pluralForm: "laughs",
@@ -15567,7 +15567,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cry",
         pastTenseForm: "cried",
         pluralForm: "cries",
@@ -15576,7 +15576,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "smile",
         pastTenseForm: "smiled",
         pluralForm: "smiles",
@@ -15585,7 +15585,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shout",
         pastTenseForm: "shouted",
         pluralForm: "shouts",
@@ -15594,7 +15594,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tantrum",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stamp_3.png.varianted-skin.png",
@@ -15603,7 +15603,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hug",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20embrace.png.varianted-skin.png",
@@ -15613,7 +15613,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kiss",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/kiss_7.png.varianted-skin.png",
@@ -15623,7 +15623,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "love",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Love%20(F).png",
@@ -15633,7 +15633,7 @@ const expanded = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dislike.png.variant-medium-dark.png",
@@ -15689,25 +15689,25 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "a",
         colour: "grey",
         linkTo: "expanded",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "an",
         colour: "grey",
         linkTo: "expanded",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "the",
         colour: "grey",
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "this",
         colour: "grey",
         iconLink:
@@ -15715,7 +15715,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "that",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/that%20one.png",
@@ -15723,7 +15723,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "those",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/those.png",
@@ -15731,7 +15731,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "these",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/these.png",
@@ -15740,7 +15740,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "and",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ampersand_103_g.svg",
@@ -15748,7 +15748,7 @@ const expanded = {
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "but",
         iconName: "bottom",
         linkTo: "expanded",
@@ -15757,7 +15757,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/buttock.png.varianted-skin.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "because",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/reason.png",
@@ -15765,7 +15765,7 @@ const expanded = {
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "so",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20sew.png.variant-medium.png",
@@ -15773,7 +15773,7 @@ const expanded = {
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "or",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/to%20choose.jpg",
@@ -15781,7 +15781,7 @@ const expanded = {
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "if",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f517.svg",
@@ -15789,7 +15789,7 @@ const expanded = {
         colour: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "with",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/with.png",
@@ -15800,7 +15800,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "maybe",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/chance_100_g.svg",
@@ -15808,7 +15808,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "likely",
         iconName:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/past.svg",
@@ -15866,7 +15866,7 @@ const expanded = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "was",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/past.svg",
@@ -15875,7 +15875,7 @@ const expanded = {
         negativeForm: "wasn't",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "were",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/past.svg",
@@ -15884,7 +15884,7 @@ const expanded = {
         negativeForm: "weren't",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "going to",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/future.svg",
@@ -15892,7 +15892,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "be",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bee_1.png",
@@ -15901,7 +15901,7 @@ const expanded = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "get",
         iconName: "have",
         linkTo: "expanded",
@@ -15914,7 +15914,7 @@ const expanded = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "can",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tin%20can.svg",
@@ -15923,7 +15923,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "could",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/think_1.png.variant-dark.png",
@@ -15932,7 +15932,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "should",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/worksheet.svg",
@@ -15941,7 +15941,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "would",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wood.png",
@@ -15950,7 +15950,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "might",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ask_2.png.variant-medium-dark.png",
@@ -15959,7 +15959,7 @@ const expanded = {
         linkTo: "expanded",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "must",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20order.png.varianted-skin.png",

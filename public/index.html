@@ -143,7 +143,7 @@
           />
         </button>
       </div>
-      <div id="wordSearchResultsElement" class="grid cols-2">
+      <div id="wordSearchResultsElement" class="grid two-cols">
         <!-- filled by JS on search button -->
       </div>
 
@@ -243,87 +243,54 @@
         </button>
       </div>
 
-      <div><label for="selectedTileNumber">Selected Tile:</label></div>
-      <div><input id="selectedTileNumber" type="text" disabled /></div>
+      <input id="selectedTileNumber" type="text" disabled class="hidden" />
 
-      <div><label for="displayNameInput">Display Name:</label></div>
-      <div><input id="displayNameInput" type="text" /></div>
-
-      <button id="toggleEditTileExtra" class="sidebarButton">
-        Show Extra Options
-      </button>
-
-      <div id="editTileExtra" class="hidden">
-        <div>
-          <label for="pronounciationInput">Pronounciation (if required):</label>
-        </div>
-        <div><input id="pronounciationInput" type="text" /></div>
-
-        <div><label for="pastInput">Past Tense:</label></div>
-        <div><input id="pastInput" type="text" /></div>
-
-        <div>
-          <label for="pastPronounciationInput">
-            Past Tense Pronounciation:
-          </label>
-        </div>
-        <div><input id="pastPronounciationInput" type="text" /></div>
-
-        <div><label for="pluralInput">Plural/Third Person Form:</label></div>
-        <div><input id="pluralInput" type="text" /></div>
-
-        <div>
-          <label for="pluralPronounciationInput">
-            Plural/Third Person Pronounciation:
-          </label>
-        </div>
-
-        <div><input id="pluralPronounciationInput" type="text" /></div>
-
-        <div><label for="negationInput">Negative Form:</label></div>
-        <div><input id="negationInput" type="text" /></div>
-
-        <div>
-          <label for="negationPronounciationInput">
-            Negative Pronounciation:
-          </label>
-        </div>
-        <div><input id="negationPronounciationInput" type="text" /></div>
-      </div>
+      <div><label for="displayNameInput">Display Name:</label>
+        <input id="displayNameInput" type="text" /></div>
 
       <div>
         <label for="colourInput">Colour:</label>
       </div>
-      <div>
-        <select id="colourInput">
-          <option value="orange">Orange</option>
-          <option value="red">Red</option>
-          <option value="pink">Pink</option>
-          <option value="yellow">Yellow</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-          <option value="grey">Grey</option>
-          <option value="white">White</option>
-          <option value="linkColour">Link</option>
-        </select>
+      <div class="grid nine-cols">
+        <div value="orange" class="colourInput orange"></div>
+        <div value="red" class="colourInput red"></div>
+        <div value="pink" class="colourInput pink"></div>
+        <div value="yellow" class="colourInput yellow"></div>
+        <div value="green" class="colourInput green"></div>
+        <div value="blue" class="colourInput blue"></div>
+        <div value="grey" class="colourInput grey"></div>
+        <div value="white" class="colourInput white"></div>
+        <div value="linkColour" class="colourInput linkColour"></div>
       </div>
+
+      <select id="colourInput">
+        <option class="orange" value="orange">Orange</option>
+        <option class="red" value="red">Red</option>
+        <option class="pink" value="pink">Pink</option>
+        <option class="yellow" value="yellow">Yellow</option>
+        <option class="green" value="green">Green</option>
+        <option class="blue" value="blue">Blue</option>
+        <option class="grey" value="grey">Grey</option>
+        <option class="white" value="white">White</option>
+        <option class="linkColour" value="linkColour">Link</option>
+      </select>
 
       <div>
         <label for="tileType">Type:</label>
       </div>
       <div>
         <select id="tileTypeInput">
-          <option value="blank">Blank</option>
-          <option value="textAndIcon">Icon and Text</option>
-          <option value="textOnly">Text Only</option>
+          <option value="regular" selected>Regular tile</option>
           <option value="link">Link to another board (unspoken)</option>
+          <option value="blank">Blank</option>
         </select>
       </div>
-      <div id="iconTileSettings" class="hidden">
+      <div id="iconTileSettings">
         <div>
           <label id="iconNameInputLabel" for="iconNameInput">Icon Name:</label>
         </div>
         <div><input id="iconNameInput" type="text" /></div>
+        <bold>OR</bold>
         <div>
           <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
         </div>
@@ -345,6 +312,48 @@
         </select>
       </div>
 
+      <button id="toggleEditTileExtra" class="sidebarButton">
+        Show Extra Options
+      </button>
+
+      <div id="editTileExtra" class="hidden">
+        <div>
+          <label for="pronounciationInput">Pronounciation:</label>
+        </div>
+        <div><input id="pronounciationInput" type="text" /></div>
+
+        <div><label for="pastInput">Past Tense:</label></div>
+        <div><input id="pastInput" type="text" /></div>
+
+        <div>
+          <label for="pastPronounciationInput">
+            Past Tense Pronounciation:
+          </label>
+        </div>
+        <div><input id="pastPronounciationInput" type="text" /></div>
+
+        <div><label for="pluralInput">Plural/Third Person:</label></div>
+        <div><input id="pluralInput" type="text" /></div>
+
+        <div>
+          <label for="pluralPronounciationInput">
+            Plural/Third Person Pronounciation:
+          </label>
+        </div>
+
+        <div><input id="pluralPronounciationInput" type="text" /></div>
+
+        <div><label for="negationInput">Negative:</label></div>
+        <div><input id="negationInput" type="text" /></div>
+
+        <div>
+          <label for="negationPronounciationInput">
+            Negative Pronounciation:
+          </label>
+        </div>
+        <div><input id="negationPronounciationInput" type="text" /></div>
+      </div>
+
       <button class="sidebarButton" id="editTileSubmitButton">
         Save Edit to Tile
       </button>
@@ -359,7 +368,7 @@
           Search
         </button>
       </div>
-      <div id="iconResults" class="flex-grid cols-2"></div>
+      <div id="iconResults" class="flex-grid two-cols"></div>
       <footer>
         Results from <a href="https://www.opensymbols.org/">opensymbols.org</a>
       </footer>

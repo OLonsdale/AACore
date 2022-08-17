@@ -79,7 +79,7 @@ const standard = {
         internalName: "Feelings",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "I",
         iconName: "i",
         colour: "yellow",
@@ -88,307 +88,307 @@ const standard = {
         linkTo: "standard-am",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "want",
         iconName: "want",
         colour: "green",
         internalName: "want",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "more",
         iconName: "more",
         colour: "blue",
         internalName: "more",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "not",
         iconName: "not",
         colour: "grey",
         internalName: "not",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "go",
         iconName: "go",
         colour: "green",
         internalName: "go",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "help",
         iconName: "help",
         colour: "green",
         internalName: "help",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "look",
         iconName: "look",
         colour: "green",
         internalName: "look",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "need",
         iconName: "need",
         colour: "green",
         internalName: "need",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "have",
         iconName: "have",
         colour: "green",
         internalName: "have",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "you",
         iconName: "you",
         colour: "yellow",
         internalName: "you",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play",
         iconName: "play",
         colour: "green",
         internalName: "play",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "same",
         iconName: "same",
         colour: "blue",
         internalName: "same",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "different",
         iconName: "different",
         colour: "blue",
         internalName: "different",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "what",
         iconName: "what",
         colour: "pink",
         internalName: "what",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "like",
         iconName: "like",
         colour: "green",
         internalName: "like",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stop",
         iconName: "stop",
         colour: "green",
         internalName: "stop",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "where",
         iconName: "where",
         colour: "pink",
         internalName: "where",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "in",
         iconName: "in",
         colour: "red",
         internalName: "in",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "he",
         iconName: "he",
         colour: "yellow",
         internalName: "he",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eat",
         iconName: "eat",
         colour: "green",
         internalName: "eat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drink",
         iconName: "drink",
         colour: "green",
         internalName: "drink",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turn",
         iconName: "turn",
         colour: "green",
         internalName: "turn",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "up",
         iconName: "up",
         colour: "red",
         internalName: "up",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "down",
         iconName: "down",
         colour: "red",
         internalName: "down",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finish",
         iconName: "finish",
         colour: "green",
         internalName: "finish",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "who",
         iconName: "who",
         colour: "pink",
         internalName: "who",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "on",
         iconName: "on",
         colour: "red",
         internalName: "on",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "she",
         iconName: "she",
         colour: "yellow",
         internalName: "she",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "do",
         iconName: "do",
         colour: "green",
         internalName: "do",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "loud",
         iconName: "loud",
         colour: "blue",
         internalName: "loud",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quiet",
         iconName: "quiet",
         colour: "blue",
         internalName: "quiet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fast",
         iconName: "fast",
         colour: "blue",
         internalName: "fast",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slow",
         iconName: "slow",
         colour: "blue",
         internalName: "slow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "funny",
         iconName: "funny",
         colour: "blue",
         internalName: "funny",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "talk",
         iconName: "talk",
         colour: "green",
         internalName: "talk",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "off",
         iconName: "off",
         colour: "red",
         internalName: "off",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "it",
         iconName: "it",
         colour: "yellow",
         internalName: "it",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "put",
         iconName: "put",
         colour: "green",
         internalName: "put",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "make",
         iconName: "make",
         colour: "green",
         internalName: "make",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "feel",
         iconName: "feel",
         colour: "green",
         internalName: "feel",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "think",
         iconName: "think",
         colour: "green",
         internalName: "think",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "is",
         colour: "green",
         internalName: "is",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "close",
         iconName: "close",
         colour: "green",
         internalName: "close",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "open",
         iconName: "open",
         colour: "green",
         internalName: "open",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "here",
         iconName: "here",
         colour: "grey",
@@ -475,7 +475,7 @@ const standard = {
         internalName: "Feelings",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "I",
         iconName: "i",
         colour: "yellow",
@@ -483,7 +483,7 @@ const standard = {
         internalName: "I",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "want",
         iconName: "want",
         colour: "green",
@@ -491,7 +491,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "more",
         iconName: "more",
         colour: "blue",
@@ -499,7 +499,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "not",
         iconName: "not",
         colour: "grey",
@@ -507,7 +507,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "go",
         iconName: "go",
         colour: "green",
@@ -515,7 +515,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "help",
         iconName: "help",
         colour: "green",
@@ -523,7 +523,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "look",
         iconName: "look",
         colour: "green",
@@ -531,7 +531,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "need",
         iconName: "need",
         colour: "green",
@@ -539,7 +539,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "have",
         iconName: "have",
         colour: "green",
@@ -547,7 +547,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "you",
         iconName: "you",
         colour: "yellow",
@@ -555,7 +555,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "play",
         iconName: "play",
         colour: "green",
@@ -563,7 +563,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "same",
         iconName: "same",
         colour: "blue",
@@ -571,7 +571,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "different",
         iconName: "different",
         colour: "blue",
@@ -579,7 +579,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "what",
         iconName: "what",
         colour: "pink",
@@ -587,7 +587,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "like",
         iconName: "like",
         colour: "green",
@@ -595,7 +595,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stop",
         iconName: "stop",
         colour: "green",
@@ -603,7 +603,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "where",
         iconName: "where",
         colour: "pink",
@@ -611,7 +611,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "in",
         iconName: "in",
         colour: "red",
@@ -619,7 +619,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "he",
         iconName: "he",
         colour: "yellow",
@@ -627,7 +627,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eat",
         iconName: "eat",
         colour: "green",
@@ -635,7 +635,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drink",
         iconName: "drink",
         colour: "green",
@@ -643,7 +643,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "turn",
         iconName: "turn",
         colour: "green",
@@ -651,7 +651,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "up",
         iconName: "up",
         colour: "red",
@@ -659,7 +659,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "down",
         iconName: "down",
         colour: "red",
@@ -667,7 +667,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finish",
         iconName: "finish",
         colour: "green",
@@ -675,7 +675,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "who",
         iconName: "who",
         colour: "pink",
@@ -683,7 +683,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "on",
         iconName: "on",
         colour: "red",
@@ -691,7 +691,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "she",
         iconName: "she",
         colour: "yellow",
@@ -699,7 +699,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "do",
         iconName: "do",
         colour: "green",
@@ -707,7 +707,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "loud",
         iconName: "loud",
         colour: "blue",
@@ -715,7 +715,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "quiet",
         iconName: "quiet",
         colour: "blue",
@@ -723,7 +723,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fast",
         iconName: "fast",
         colour: "blue",
@@ -731,7 +731,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slow",
         iconName: "slow",
         colour: "blue",
@@ -739,7 +739,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "funny",
         iconName: "funny",
         colour: "blue",
@@ -747,7 +747,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "talk",
         iconName: "talk",
         colour: "green",
@@ -755,7 +755,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "off",
         iconName: "off",
         colour: "red",
@@ -763,7 +763,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "it",
         iconName: "it",
         colour: "yellow",
@@ -771,7 +771,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "put",
         iconName: "put",
         colour: "green",
@@ -779,7 +779,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "make",
         iconName: "make",
         colour: "green",
@@ -787,7 +787,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "feel",
         iconName: "feel",
         colour: "green",
@@ -795,7 +795,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "think",
         iconName: "think",
         colour: "green",
@@ -803,14 +803,14 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "am",
         colour: "green",
         internalName: "am",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "close",
         iconName: "close",
         colour: "green",
@@ -818,7 +818,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "open",
         iconName: "open",
         colour: "green",
@@ -826,7 +826,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "here",
         iconName: "here",
         colour: "grey",
@@ -850,7 +850,7 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toy",
         iconName: "toys",
         colour: "orange",
@@ -858,7 +858,7 @@ const standard = {
         internalName: "toy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "game",
         iconName: "game",
         colour: "orange",
@@ -869,7 +869,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "computer",
         iconName: "computer",
         colour: "orange",
@@ -877,7 +877,7 @@ const standard = {
         internalName: "computer",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tablet",
         iconName: "tablet",
         colour: "orange",
@@ -885,7 +885,7 @@ const standard = {
         internalName: "tablet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "phone",
         iconName: "phone",
         colour: "orange",
@@ -893,7 +893,7 @@ const standard = {
         internalName: "phone",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ball",
         iconName: "ball",
         colour: "orange",
@@ -901,7 +901,7 @@ const standard = {
         internalName: "ball",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bubbles",
         iconName: "bubbles",
         colour: "orange",
@@ -909,7 +909,7 @@ const standard = {
         internalName: "bubbles",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "balloon",
         iconName: "balloon",
         colour: "orange",
@@ -917,7 +917,7 @@ const standard = {
         internalName: "balloon",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blocks",
         iconName: "blocks",
         colour: "orange",
@@ -925,7 +925,7 @@ const standard = {
         internalName: "blocks",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foam",
         iconName: "foam",
         colour: "orange",
@@ -933,7 +933,7 @@ const standard = {
         internalName: "foam",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spinner",
         iconName: "spinner",
         colour: "orange",
@@ -941,7 +941,7 @@ const standard = {
         internalName: "spinner",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yo-yo",
         iconName: "yo-yo",
         colour: "orange",
@@ -949,7 +949,7 @@ const standard = {
         internalName: "yo-yo",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stretchy bands",
         iconName: "stretchy-band",
         colour: "orange",
@@ -957,7 +957,7 @@ const standard = {
         internalName: "stretchy bands",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wind up",
         iconName: "wind-up",
         colour: "orange",
@@ -966,7 +966,7 @@ const standard = {
         pronounciation: "wined up",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jigsaw",
         iconName: "jigsaw",
         colour: "orange",
@@ -974,7 +974,7 @@ const standard = {
         internalName: "jigsaw",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mr potato",
         iconName: "mr-potato",
         colour: "orange",
@@ -982,7 +982,7 @@ const standard = {
         internalName: "mr potato",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dice",
         iconName: "dice",
         colour: "orange",
@@ -990,7 +990,7 @@ const standard = {
         internalName: "dice",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "doll",
         iconName: "doll",
         colour: "orange",
@@ -998,7 +998,7 @@ const standard = {
         internalName: "doll",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "teddy",
         iconName: "teddy",
         colour: "orange",
@@ -1006,7 +1006,7 @@ const standard = {
         internalName: "teddy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "board game",
         iconName: "board-game",
         colour: "orange",
@@ -1014,7 +1014,7 @@ const standard = {
         internalName: "board game",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "book",
         iconName: "book",
         colour: "orange",
@@ -1024,7 +1024,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sing",
         iconName: "sing",
         colour: "green",
@@ -1032,7 +1032,7 @@ const standard = {
         internalName: "sing",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "music",
         iconName: "music",
         colour: "orange",
@@ -1040,7 +1040,7 @@ const standard = {
         internalName: "music",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dance",
         iconName: "dance",
         colour: "green",
@@ -1048,7 +1048,7 @@ const standard = {
         internalName: "dance",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clap",
         iconName: "clap",
         colour: "green",
@@ -1056,7 +1056,7 @@ const standard = {
         internalName: "clap",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tickle",
         iconName: "tickle",
         colour: "green",
@@ -1064,7 +1064,7 @@ const standard = {
         internalName: "tickle",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "push",
         iconName: "push",
         colour: "green",
@@ -1072,7 +1072,7 @@ const standard = {
         internalName: "push",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "climb",
         iconName: "climb",
         colour: "green",
@@ -1080,7 +1080,7 @@ const standard = {
         internalName: "climb",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "read",
         iconName: "read",
         colour: "green",
@@ -1089,7 +1089,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sand pit",
         iconName: "sand-pit",
         colour: "orange",
@@ -1097,7 +1097,7 @@ const standard = {
         internalName: "sand pit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "water tray",
         iconName: "water-tray",
         colour: "orange",
@@ -1105,7 +1105,7 @@ const standard = {
         internalName: "water tray",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swing",
         iconName: "swing",
         colour: "orange",
@@ -1113,7 +1113,7 @@ const standard = {
         internalName: "swing",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "slide",
         iconName: "slide",
         colour: "orange",
@@ -1121,7 +1121,7 @@ const standard = {
         internalName: "slide",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "roundabout",
         iconName: "roundabout",
         colour: "orange",
@@ -1129,7 +1129,7 @@ const standard = {
         internalName: "roundabout",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "seesaw",
         iconName: "seesaw",
         colour: "orange",
@@ -1137,7 +1137,7 @@ const standard = {
         internalName: "seesaw",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ladder",
         iconName: "ladder",
         colour: "orange",
@@ -1147,7 +1147,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bike",
         iconName: "bike",
         colour: "orange",
@@ -1155,7 +1155,7 @@ const standard = {
         internalName: "bike",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scooter",
         iconName: "scooter",
         colour: "orange",
@@ -1186,14 +1186,14 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀0⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "zero",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "add",
         iconName: "add",
         colour: "grey",
@@ -1201,7 +1201,7 @@ const standard = {
         internalName: "add",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "minus",
         iconName: "minus",
         colour: "grey",
@@ -1209,7 +1209,7 @@ const standard = {
         internalName: "minus",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "divide",
         iconName: "divide",
         colour: "grey",
@@ -1217,7 +1217,7 @@ const standard = {
         internalName: "divide",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "times",
         iconName: "times",
         colour: "grey",
@@ -1225,7 +1225,7 @@ const standard = {
         internalName: "times",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "equals",
         iconName: "equals",
         colour: "grey",
@@ -1233,7 +1233,7 @@ const standard = {
         internalName: "equals",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "maths",
         iconName: "maths",
         colour: "grey",
@@ -1241,7 +1241,7 @@ const standard = {
         internalName: "maths",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "count",
         iconName: "count",
         colour: "green",
@@ -1249,70 +1249,70 @@ const standard = {
         internalName: "count",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀1⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "one",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀2⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "two",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀3⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "three",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀4⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "four",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀5⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "five",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀6⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "six",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀7⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "seven",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀8⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "eight",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "⠀9⠀",
         colour: "grey",
         linkTo: "standard",
         internalName: "nine",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "learn",
         iconName: "learn",
         colour: "green",
@@ -1320,7 +1320,7 @@ const standard = {
         internalName: "learn",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cut",
         iconName: "cut",
         colour: "green",
@@ -1328,7 +1328,7 @@ const standard = {
         internalName: "cut",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "colour",
         iconName: "colour-activity",
         colour: "green",
@@ -1336,7 +1336,7 @@ const standard = {
         internalName: "colour",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paint",
         iconName: "paint",
         colour: "green",
@@ -1349,7 +1349,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "red",
         iconName: "red",
         colour: "white",
@@ -1357,7 +1357,7 @@ const standard = {
         internalName: "red",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "orange",
         iconName: "orange-colour",
         colour: "white",
@@ -1365,7 +1365,7 @@ const standard = {
         internalName: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yellow",
         iconName: "yellow",
         colour: "white",
@@ -1373,7 +1373,7 @@ const standard = {
         internalName: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "green",
         iconName: "green",
         colour: "white",
@@ -1381,7 +1381,7 @@ const standard = {
         internalName: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blue",
         iconName: "blue",
         colour: "white",
@@ -1389,7 +1389,7 @@ const standard = {
         internalName: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "purple",
         iconName: "purple",
         colour: "white",
@@ -1397,7 +1397,7 @@ const standard = {
         internalName: "purple",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pink",
         iconName: "pink",
         colour: "white",
@@ -1405,7 +1405,7 @@ const standard = {
         internalName: "pink",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "black",
         iconName: "black",
         colour: "white",
@@ -1413,7 +1413,7 @@ const standard = {
         internalName: "black",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brown",
         iconName: "brown",
         colour: "white",
@@ -1421,7 +1421,7 @@ const standard = {
         internalName: "brown",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stripes",
         iconName: "stripes",
         colour: "blue",
@@ -1429,7 +1429,7 @@ const standard = {
         internalName: "stripes",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dots",
         iconName: "dots",
         colour: "blue",
@@ -1442,7 +1442,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "white",
         iconName: "white",
         colour: "white",
@@ -1450,7 +1450,7 @@ const standard = {
         internalName: "white",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grey",
         iconName: "grey",
         colour: "white",
@@ -1458,7 +1458,7 @@ const standard = {
         internalName: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pen",
         iconName: "pen",
         colour: "orange",
@@ -1466,7 +1466,7 @@ const standard = {
         internalName: "pen",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pencil",
         iconName: "pencil",
         colour: "orange",
@@ -1474,7 +1474,7 @@ const standard = {
         internalName: "pencil",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "scissors",
         iconName: "scissors",
         colour: "orange",
@@ -1482,7 +1482,7 @@ const standard = {
         internalName: "scissors",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sharpener",
         iconName: "sharpener",
         colour: "orange",
@@ -1490,7 +1490,7 @@ const standard = {
         internalName: "sharpener",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ruler",
         iconName: "ruler",
         colour: "orange",
@@ -1498,7 +1498,7 @@ const standard = {
         internalName: "ruler",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "glitter",
         iconName: "glitter",
         colour: "orange",
@@ -1506,7 +1506,7 @@ const standard = {
         internalName: "glitter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "light",
         iconName: "light",
         colour: "blue",
@@ -1514,7 +1514,7 @@ const standard = {
         internalName: "light",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "heavy",
         iconName: "heavy",
         colour: "blue",
@@ -1522,7 +1522,7 @@ const standard = {
         internalName: "heavy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dark",
         iconName: "dark",
         colour: "blue",
@@ -1546,7 +1546,7 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "animal",
         iconName: "animal",
         colour: "orange",
@@ -1554,7 +1554,7 @@ const standard = {
         internalName: "animal",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pet",
         iconName: "pet",
         colour: "orange",
@@ -1562,7 +1562,7 @@ const standard = {
         internalName: "pet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "zoo",
         iconName: "zoo",
         colour: "red",
@@ -1570,7 +1570,7 @@ const standard = {
         internalName: "zoo",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "farm",
         iconName: "farm",
         colour: "red",
@@ -1578,7 +1578,7 @@ const standard = {
         internalName: "farm",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wild",
         iconName: "wild",
         colour: "blue",
@@ -1586,7 +1586,7 @@ const standard = {
         internalName: "wild",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fluffy",
         iconName: "fluffy",
         colour: "blue",
@@ -1595,7 +1595,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "big",
         iconName: "big",
         colour: "blue",
@@ -1603,7 +1603,7 @@ const standard = {
         internalName: "big",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cat",
         iconName: "cat",
         colour: "orange",
@@ -1611,7 +1611,7 @@ const standard = {
         internalName: "cat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dog",
         iconName: "dog",
         colour: "orange",
@@ -1619,7 +1619,7 @@ const standard = {
         internalName: "dog",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rabbit",
         iconName: "rabbit",
         colour: "orange",
@@ -1627,7 +1627,7 @@ const standard = {
         internalName: "rabbit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hamster",
         iconName: "hamster",
         colour: "orange",
@@ -1635,7 +1635,7 @@ const standard = {
         internalName: "hamster",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lizard",
         iconName: "lizard",
         colour: "orange",
@@ -1643,7 +1643,7 @@ const standard = {
         internalName: "lizard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tortoise",
         iconName: "tortoise",
         colour: "orange",
@@ -1651,7 +1651,7 @@ const standard = {
         internalName: "tortoise",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snake",
         iconName: "snake",
         colour: "orange",
@@ -1659,7 +1659,7 @@ const standard = {
         internalName: "snake",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bird",
         iconName: "bird",
         colour: "orange",
@@ -1668,7 +1668,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cow",
         iconName: "cow",
         colour: "orange",
@@ -1676,7 +1676,7 @@ const standard = {
         internalName: "cow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sheep",
         iconName: "sheep",
         colour: "orange",
@@ -1684,7 +1684,7 @@ const standard = {
         internalName: "sheep",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chicken",
         iconName: "chicken",
         colour: "orange",
@@ -1692,7 +1692,7 @@ const standard = {
         internalName: "chicken",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "horse",
         iconName: "horse",
         colour: "orange",
@@ -1700,7 +1700,7 @@ const standard = {
         internalName: "horse",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pig",
         iconName: "pig",
         colour: "orange",
@@ -1708,7 +1708,7 @@ const standard = {
         internalName: "pig",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "elephant",
         iconName: "elephant",
         colour: "orange",
@@ -1716,7 +1716,7 @@ const standard = {
         internalName: "elephant",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spider",
         iconName: "spider",
         colour: "orange",
@@ -1724,7 +1724,7 @@ const standard = {
         internalName: "spider",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bug",
         iconName: "bug",
         colour: "orange",
@@ -1732,7 +1732,7 @@ const standard = {
         internalName: "bug",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "small",
         iconName: "small",
         colour: "blue",
@@ -1740,7 +1740,7 @@ const standard = {
         internalName: "small",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "car",
         iconName: "car",
         colour: "orange",
@@ -1748,7 +1748,7 @@ const standard = {
         internalName: "car",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bus",
         iconName: "bus",
         colour: "orange",
@@ -1756,7 +1756,7 @@ const standard = {
         internalName: "bus",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "train",
         iconName: "train",
         colour: "orange",
@@ -1764,7 +1764,7 @@ const standard = {
         internalName: "train",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "motorbike",
         iconName: "motorbike",
         colour: "orange",
@@ -1772,7 +1772,7 @@ const standard = {
         internalName: "motorbike",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "plane",
         iconName: "plane",
         colour: "orange",
@@ -1780,7 +1780,7 @@ const standard = {
         internalName: "plane",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "helicopter",
         iconName: "helicopter",
         colour: "orange",
@@ -1788,7 +1788,7 @@ const standard = {
         internalName: "helicopter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boat",
         iconName: "boat",
         colour: "orange",
@@ -1796,7 +1796,7 @@ const standard = {
         internalName: "boat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "paw",
         iconName: "paw",
         colour: "orange",
@@ -1804,7 +1804,7 @@ const standard = {
         internalName: "paw",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tail",
         iconName: "tail",
         colour: "orange",
@@ -1814,7 +1814,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrong",
         iconName: "wrong",
         colour: "red",
@@ -1826,7 +1826,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "claw",
         iconName: "claw",
         colour: "orange",
@@ -1835,7 +1835,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wheel",
         iconName: "wheel",
         colour: "orange",
@@ -1844,7 +1844,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "left",
         iconName: "left",
         colour: "red",
@@ -1853,7 +1853,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "right",
         iconName: "right",
         colour: "red",
@@ -1862,7 +1862,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "drive",
         iconName: "drive",
         colour: "green",
@@ -1870,7 +1870,7 @@ const standard = {
         internalName: "drive",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fly",
         iconName: "fly",
         colour: "green",
@@ -1878,7 +1878,7 @@ const standard = {
         internalName: "fly",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ride",
         iconName: "ride",
         colour: "green",
@@ -1902,7 +1902,7 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "body",
         iconName: "body",
         colour: "orange",
@@ -1910,7 +1910,7 @@ const standard = {
         internalName: "body",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "poo",
         iconName: "poo",
         colour: "orange",
@@ -1918,7 +1918,7 @@ const standard = {
         internalName: "poo",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wee",
         iconName: "wee",
         colour: "orange",
@@ -1926,7 +1926,7 @@ const standard = {
         internalName: "wee",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hurt",
         iconName: "hurt",
         colour: "green",
@@ -1934,7 +1934,7 @@ const standard = {
         internalName: "hurt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blood",
         iconName: "blood",
         colour: "orange",
@@ -1942,7 +1942,7 @@ const standard = {
         internalName: "blood",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "itch",
         iconName: "itch",
         colour: "green",
@@ -1950,7 +1950,7 @@ const standard = {
         internalName: "itch",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "broken",
         iconName: "broken",
         colour: "blue",
@@ -1958,7 +1958,7 @@ const standard = {
         internalName: "broken",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bruise",
         iconName: "bruise",
         colour: "orange",
@@ -1966,7 +1966,7 @@ const standard = {
         internalName: "bruise",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "see",
         iconName: "look",
         colour: "green",
@@ -1975,7 +1975,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nappy",
         iconName: "nappy",
         colour: "orange",
@@ -1983,7 +1983,7 @@ const standard = {
         internalName: "nappy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fart",
         iconName: "fart",
         colour: "green",
@@ -1991,7 +1991,7 @@ const standard = {
         internalName: "fart",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ill",
         iconName: "sick",
         colour: "green",
@@ -1999,7 +1999,7 @@ const standard = {
         internalName: "ill",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "period",
         iconName: "period",
         colour: "orange",
@@ -2007,7 +2007,7 @@ const standard = {
         internalName: "period",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pad",
         iconName: "pad",
         colour: "orange",
@@ -2015,7 +2015,7 @@ const standard = {
         internalName: "pad",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "clean",
         iconName: "clean",
         colour: "green",
@@ -2023,7 +2023,7 @@ const standard = {
         internalName: "clean",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dirty",
         iconName: "dirty",
         colour: "blue",
@@ -2031,7 +2031,7 @@ const standard = {
         internalName: "dirty",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "finger",
         iconName: "finger",
         colour: "orange",
@@ -2039,7 +2039,7 @@ const standard = {
         internalName: "finger",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hand",
         iconName: "hand",
         colour: "orange",
@@ -2047,7 +2047,7 @@ const standard = {
         internalName: "hand",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "arm",
         iconName: "arm",
         colour: "orange",
@@ -2055,7 +2055,7 @@ const standard = {
         internalName: "arm",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "elbow",
         iconName: "elbow",
         colour: "orange",
@@ -2063,7 +2063,7 @@ const standard = {
         internalName: "elbow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tummy",
         iconName: "tummy",
         colour: "orange",
@@ -2071,7 +2071,7 @@ const standard = {
         internalName: "tummy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "private parts",
         iconName: "private-parts",
         colour: "orange",
@@ -2079,7 +2079,7 @@ const standard = {
         internalName: "private parts",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eye",
         iconName: "eye",
         colour: "orange",
@@ -2087,7 +2087,7 @@ const standard = {
         internalName: "eye",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nose",
         iconName: "nose",
         colour: "orange",
@@ -2095,7 +2095,7 @@ const standard = {
         internalName: "nose",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mouth",
         iconName: "mouth",
         colour: "orange",
@@ -2103,7 +2103,7 @@ const standard = {
         internalName: "mouth",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toe",
         iconName: "toe",
         colour: "orange",
@@ -2111,7 +2111,7 @@ const standard = {
         internalName: "toe",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foot",
         iconName: "foot",
         colour: "orange",
@@ -2119,7 +2119,7 @@ const standard = {
         internalName: "foot",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "leg",
         iconName: "leg",
         colour: "orange",
@@ -2127,7 +2127,7 @@ const standard = {
         internalName: "leg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "knee",
         iconName: "knee",
         colour: "orange",
@@ -2135,7 +2135,7 @@ const standard = {
         internalName: "knee",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chest",
         iconName: "chest",
         colour: "orange",
@@ -2143,7 +2143,7 @@ const standard = {
         internalName: "chest",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "head",
         iconName: "head",
         colour: "orange",
@@ -2151,7 +2151,7 @@ const standard = {
         internalName: "head",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ear",
         iconName: "ear",
         colour: "orange",
@@ -2159,7 +2159,7 @@ const standard = {
         internalName: "ear",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hair",
         iconName: "hair",
         colour: "orange",
@@ -2167,7 +2167,7 @@ const standard = {
         internalName: "hair",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tooth",
         iconName: "tooth",
         colour: "orange",
@@ -2175,7 +2175,7 @@ const standard = {
         internalName: "tooth",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pants",
         iconName: "pants",
         colour: "orange",
@@ -2183,7 +2183,7 @@ const standard = {
         internalName: "pants",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "socks",
         iconName: "socks",
         colour: "orange",
@@ -2191,7 +2191,7 @@ const standard = {
         internalName: "socks",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shoe",
         iconName: "shoe",
         colour: "orange",
@@ -2199,7 +2199,7 @@ const standard = {
         internalName: "shoe",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "trousers",
         iconName: "trousers",
         colour: "orange",
@@ -2207,7 +2207,7 @@ const standard = {
         internalName: "trousers",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shorts",
         iconName: "shorts",
         colour: "orange",
@@ -2215,7 +2215,7 @@ const standard = {
         internalName: "shorts",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shirt",
         iconName: "shirt",
         colour: "orange",
@@ -2223,7 +2223,7 @@ const standard = {
         internalName: "shirt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "skirt",
         iconName: "skirt",
         colour: "orange",
@@ -2231,7 +2231,7 @@ const standard = {
         internalName: "skirt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tights",
         iconName: "tights",
         colour: "orange",
@@ -2239,7 +2239,7 @@ const standard = {
         internalName: "tights",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jumper",
         iconName: "jumper",
         colour: "orange",
@@ -2248,7 +2248,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "zip",
         iconName: "zip",
         colour: "orange",
@@ -2256,7 +2256,7 @@ const standard = {
         internalName: "zip",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "button",
         iconName: "button",
         colour: "orange",
@@ -2264,7 +2264,7 @@ const standard = {
         internalName: "button",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lace",
         iconName: "lace",
         colour: "orange",
@@ -2272,7 +2272,7 @@ const standard = {
         internalName: "lace",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "velcro",
         iconName: "velcro",
         colour: "orange",
@@ -2282,7 +2282,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "coat",
         iconName: "coat",
         colour: "orange",
@@ -2307,7 +2307,7 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "school",
         iconName: "school",
         colour: "red",
@@ -2315,7 +2315,7 @@ const standard = {
         internalName: "school",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "home",
         iconName: "home",
         colour: "red",
@@ -2323,7 +2323,7 @@ const standard = {
         internalName: "home",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "park",
         iconName: "park",
         colour: "red",
@@ -2331,7 +2331,7 @@ const standard = {
         internalName: "park",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swimming pool",
         iconName: "swimming-pool",
         colour: "red",
@@ -2339,7 +2339,7 @@ const standard = {
         internalName: "swimming pool",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "restaurant",
         iconName: "restaurant",
         colour: "red",
@@ -2347,7 +2347,7 @@ const standard = {
         internalName: "restaurant",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shop",
         iconName: "shop",
         colour: "red",
@@ -2355,7 +2355,7 @@ const standard = {
         internalName: "shop",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "outside",
         iconName: "outside",
         colour: "red",
@@ -2363,7 +2363,7 @@ const standard = {
         internalName: "outside",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "weather",
         iconName: "weather",
         colour: "orange",
@@ -2371,7 +2371,7 @@ const standard = {
         internalName: "weather",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toilet",
         iconName: "toilet",
         colour: "orange",
@@ -2379,7 +2379,7 @@ const standard = {
         internalName: "toilet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kitchen",
         iconName: "kitchen",
         colour: "red",
@@ -2387,7 +2387,7 @@ const standard = {
         internalName: "kitchen",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "living room",
         iconName: "living-room",
         colour: "red",
@@ -2395,7 +2395,7 @@ const standard = {
         internalName: "living room",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bedroom",
         iconName: "bedroom",
         colour: "red",
@@ -2403,7 +2403,7 @@ const standard = {
         internalName: "bedroom",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bathroom",
         iconName: "bathroom",
         colour: "red",
@@ -2411,7 +2411,7 @@ const standard = {
         internalName: "bathroom",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dining room",
         iconName: "dining-room",
         colour: "red",
@@ -2419,7 +2419,7 @@ const standard = {
         internalName: "dining room",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stairs",
         iconName: "stairs",
         colour: "red",
@@ -2427,7 +2427,7 @@ const standard = {
         internalName: "stairs",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "inside",
         colour: "red",
         linkTo: "standard",
@@ -2436,7 +2436,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/inside%20room.svg.varianted-skin.svg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rain",
         iconName: "rain",
         colour: "orange",
@@ -2444,7 +2444,7 @@ const standard = {
         internalName: "rain",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cooker",
         iconName: "cooker",
         colour: "orange",
@@ -2452,7 +2452,7 @@ const standard = {
         internalName: "cooker",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soap",
         colour: "orange",
         linkTo: "standard",
@@ -2461,7 +2461,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Soap%20liquid.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chair",
         iconName: "chair",
         colour: "orange",
@@ -2469,7 +2469,7 @@ const standard = {
         internalName: "chair",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bed",
         iconName: "bed",
         colour: "orange",
@@ -2477,7 +2477,7 @@ const standard = {
         internalName: "bed",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shower",
         iconName: "shower",
         colour: "orange",
@@ -2485,7 +2485,7 @@ const standard = {
         internalName: "shower",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "table",
         iconName: "table",
         colour: "orange",
@@ -2493,7 +2493,7 @@ const standard = {
         internalName: "table",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "money",
         iconName: "money",
         colour: "orange",
@@ -2501,7 +2501,7 @@ const standard = {
         internalName: "money",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "window",
         iconName: "window",
         colour: "orange",
@@ -2509,7 +2509,7 @@ const standard = {
         internalName: "window",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sun",
         iconName: "sun",
         colour: "orange",
@@ -2517,7 +2517,7 @@ const standard = {
         internalName: "sun",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cook",
         iconName: "cook",
         colour: "green",
@@ -2525,7 +2525,7 @@ const standard = {
         internalName: "cook",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sponge",
         iconName: "sponge",
         colour: "orange",
@@ -2533,7 +2533,7 @@ const standard = {
         internalName: "sponge",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sofa",
         iconName: "sofa",
         colour: "orange",
@@ -2541,7 +2541,7 @@ const standard = {
         internalName: "sofa",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sleep",
         iconName: "sleep",
         colour: "green",
@@ -2549,7 +2549,7 @@ const standard = {
         internalName: "sleep",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bath",
         iconName: "bath",
         colour: "orange",
@@ -2557,7 +2557,7 @@ const standard = {
         internalName: "bath",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spoon",
         colour: "orange",
         linkTo: "standard",
@@ -2568,7 +2568,7 @@ const standard = {
         pluralForm: "spoons",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "buy",
         iconName: "buy",
         colour: "green",
@@ -2576,7 +2576,7 @@ const standard = {
         internalName: "buy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "door",
         iconName: "door",
         colour: "orange",
@@ -2584,7 +2584,7 @@ const standard = {
         internalName: "door",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cloud",
         iconName: "cloud",
         colour: "orange",
@@ -2593,7 +2593,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "towel",
         iconName: "towel",
         colour: "orange",
@@ -2601,7 +2601,7 @@ const standard = {
         internalName: "towel",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "TV",
         iconName: "tv",
         colour: "orange",
@@ -2609,7 +2609,7 @@ const standard = {
         internalName: "TV",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sheet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bottom%20sheet.png",
@@ -2618,7 +2618,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sink",
         colour: "orange",
         linkTo: "standard",
@@ -2627,7 +2627,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adapted%20wash%20basin.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fork",
         colour: "orange",
         linkTo: "standard",
@@ -2638,7 +2638,7 @@ const standard = {
         pluralForm: "forks",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "knife",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/knife_3.png",
@@ -2648,7 +2648,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curtain",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curtain.png",
@@ -2657,7 +2657,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mud",
         iconName: "mud",
         colour: "orange",
@@ -2666,7 +2666,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wash",
         iconName: "wash",
         colour: "green",
@@ -2674,7 +2674,7 @@ const standard = {
         internalName: "wash",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sit",
         iconName: "sit",
         colour: "green",
@@ -2682,7 +2682,7 @@ const standard = {
         internalName: "sit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pillow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pillow.png",
@@ -2691,7 +2691,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "swim",
         iconName: "swim",
         colour: "green",
@@ -2699,7 +2699,7 @@ const standard = {
         internalName: "swim",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dish",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/soup%20dish.png",
@@ -2708,7 +2708,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hot",
         iconName: "hot",
         colour: "blue",
@@ -2716,7 +2716,7 @@ const standard = {
         internalName: "hot",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cold",
         iconName: "cold",
         colour: "blue",
@@ -2724,7 +2724,7 @@ const standard = {
         internalName: "cold",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snow",
         iconName: "snow",
         colour: "orange",
@@ -2748,7 +2748,7 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "food",
         iconName: "food",
         colour: "orange",
@@ -2757,7 +2757,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "can",
         iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tin%20can.svg",
         colour: "orange",
@@ -2765,7 +2765,7 @@ const standard = {
         internalName: "can",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "meal",
         iconName: "meal",
         colour: "grey",
@@ -2773,7 +2773,7 @@ const standard = {
         internalName: "meal",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "breakfast",
         iconName: "breakfast",
         colour: "grey",
@@ -2781,7 +2781,7 @@ const standard = {
         internalName: "breakfast",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lunch",
         iconName: "lunch",
         colour: "grey",
@@ -2789,7 +2789,7 @@ const standard = {
         internalName: "lunch",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dinner",
         iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/have%20tea.png.varianted-skin.png",
         colour: "grey",
@@ -2797,7 +2797,7 @@ const standard = {
         internalName: "dinner",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "snack",
         iconName: "snack",
         colour: "grey",
@@ -2805,7 +2805,7 @@ const standard = {
         internalName: "snack",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sauce",
         iconName: "sauce",
         colour: "orange",
@@ -2813,7 +2813,7 @@ const standard = {
         internalName: "sauce",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mash",
         iconName: "mash",
         colour: "orange",
@@ -2821,7 +2821,7 @@ const standard = {
         internalName: "mash",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "curry",
         iconName: "curry",
         colour: "orange",
@@ -2829,7 +2829,7 @@ const standard = {
         internalName: "curry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "rice",
         iconName: "rice",
         colour: "orange",
@@ -2837,7 +2837,7 @@ const standard = {
         internalName: "rice",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pasta",
         iconName: "pasta",
         colour: "orange",
@@ -2845,7 +2845,7 @@ const standard = {
         internalName: "pasta",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pizza",
         iconName: "pizza",
         colour: "orange",
@@ -2853,7 +2853,7 @@ const standard = {
         internalName: "pizza",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "favourite",
         iconName: "favourite",
         colour: "blue",
@@ -2861,7 +2861,7 @@ const standard = {
         internalName: "favourite",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burn",
         iconName: "burn",
         colour: "blue",
@@ -2869,7 +2869,7 @@ const standard = {
         internalName: "burn",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "healthy",
         iconName: "healthy",
         colour: "blue",
@@ -2877,7 +2877,7 @@ const standard = {
         internalName: "healthy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "veg",
         iconName: "veg",
         colour: "orange",
@@ -2885,7 +2885,7 @@ const standard = {
         internalName: "veg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "carrot",
         iconName: "carrot",
         colour: "orange",
@@ -2893,7 +2893,7 @@ const standard = {
         internalName: "carrot",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "broccoli",
         iconName: "broccoli",
         colour: "orange",
@@ -2901,7 +2901,7 @@ const standard = {
         internalName: "broccoli",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "potato",
         iconName: "potato",
         colour: "orange",
@@ -2909,7 +2909,7 @@ const standard = {
         internalName: "potato",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pea",
         iconName: "pea",
         colour: "orange",
@@ -2917,7 +2917,7 @@ const standard = {
         internalName: "pea",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bean",
         iconName: "bean",
         colour: "orange",
@@ -2925,7 +2925,7 @@ const standard = {
         internalName: "bean",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tomato",
         iconName: "tomato",
         colour: "orange",
@@ -2933,7 +2933,7 @@ const standard = {
         internalName: "tomato",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "salad",
         iconName: "salad",
         colour: "orange",
@@ -2941,7 +2941,7 @@ const standard = {
         internalName: "salad",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bread",
         iconName: "bread",
         colour: "orange",
@@ -2949,7 +2949,7 @@ const standard = {
         internalName: "bread",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "meat",
         iconName: "meat",
         colour: "orange",
@@ -2957,7 +2957,7 @@ const standard = {
         internalName: "meat",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fish",
         iconName: "fish",
         colour: "orange",
@@ -2965,7 +2965,7 @@ const standard = {
         internalName: "fish",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ham",
         iconName: "ham",
         colour: "orange",
@@ -2973,7 +2973,7 @@ const standard = {
         internalName: "ham",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chicken",
         iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chicken.svg",
         colour: "orange",
@@ -2981,7 +2981,7 @@ const standard = {
         internalName: "chicken",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tuna",
         iconName: "tuna",
         colour: "orange",
@@ -2989,7 +2989,7 @@ const standard = {
         internalName: "tuna",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "nugget",
         iconName: "nugget",
         colour: "orange",
@@ -2997,7 +2997,7 @@ const standard = {
         internalName: "nugget",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "burger",
         iconName: "burger",
         colour: "orange",
@@ -3005,7 +3005,7 @@ const standard = {
         internalName: "burger",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sausage",
         iconName: "sausage",
         colour: "orange",
@@ -3013,7 +3013,7 @@ const standard = {
         internalName: "sausage",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "toast",
         iconName: "toast",
         colour: "orange",
@@ -3021,7 +3021,7 @@ const standard = {
         internalName: "toast",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cereal",
         iconName: "cereal",
         colour: "orange",
@@ -3029,7 +3029,7 @@ const standard = {
         internalName: "cereal",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "egg",
         iconName: "egg",
         colour: "orange",
@@ -3038,7 +3038,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cheese",
         iconName: "cheese",
         colour: "orange",
@@ -3046,7 +3046,7 @@ const standard = {
         internalName: "cheese",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chocolate",
         iconName: "chocolate",
         colour: "orange",
@@ -3054,7 +3054,7 @@ const standard = {
         internalName: "chocolate",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "biscuit",
         iconName: "biscuit",
         colour: "orange",
@@ -3062,7 +3062,7 @@ const standard = {
         internalName: "biscuit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "crisp",
         iconName: "crisp",
         colour: "orange",
@@ -3070,7 +3070,7 @@ const standard = {
         internalName: "crisp",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "chip",
         iconName: "chip",
         colour: "orange",
@@ -3078,7 +3078,7 @@ const standard = {
         internalName: "chip",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sandwich",
         iconName: "sandwich",
         colour: "orange",
@@ -3086,7 +3086,7 @@ const standard = {
         internalName: "sandwich",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "soup",
         iconName: "soup",
         colour: "orange",
@@ -3094,7 +3094,7 @@ const standard = {
         internalName: "soup",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "noodles",
         iconName: "noodles",
         colour: "orange",
@@ -3102,7 +3102,7 @@ const standard = {
         internalName: "noodles",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pancake",
         iconName: "pancake",
         colour: "orange",
@@ -3110,7 +3110,7 @@ const standard = {
         internalName: "pancake",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yogurt",
         iconName: "yogurt",
         colour: "orange",
@@ -3118,7 +3118,7 @@ const standard = {
         internalName: "yogurt",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "butter",
         iconName: "butter",
         colour: "orange",
@@ -3126,7 +3126,7 @@ const standard = {
         internalName: "butter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "jam",
         iconName: "jam",
         colour: "orange",
@@ -3134,7 +3134,7 @@ const standard = {
         internalName: "jam",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sweet",
         iconName: "sweet",
         colour: "orange",
@@ -3142,7 +3142,7 @@ const standard = {
         internalName: "sweet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "spicy",
         iconName: "spicy",
         colour: "orange",
@@ -3150,7 +3150,7 @@ const standard = {
         internalName: "spicy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wrap",
         iconName: "wrap",
         colour: "orange",
@@ -3180,7 +3180,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dry",
         iconName: "dry",
         colour: "blue",
@@ -3188,7 +3188,7 @@ const standard = {
         internalName: "dry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "wet",
         iconName: "wet",
         colour: "blue",
@@ -3196,7 +3196,7 @@ const standard = {
         internalName: "wet",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "juice",
         iconName: "juice",
         colour: "orange",
@@ -3204,7 +3204,7 @@ const standard = {
         internalName: "juice",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "water",
         iconName: "water",
         colour: "orange",
@@ -3212,7 +3212,7 @@ const standard = {
         internalName: "water",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "milk",
         iconName: "milk",
         colour: "orange",
@@ -3220,7 +3220,7 @@ const standard = {
         internalName: "milk",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "milkshake",
         iconName: "milkshake",
         colour: "orange",
@@ -3228,7 +3228,7 @@ const standard = {
         internalName: "milkshake",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fizzy",
         iconName: "fizzy",
         colour: "blue",
@@ -3236,7 +3236,7 @@ const standard = {
         internalName: "fizzy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lemonade",
         iconName: "lemonade",
         colour: "orange",
@@ -3244,7 +3244,7 @@ const standard = {
         internalName: "lemonade",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cola",
         iconName: "cola",
         colour: "orange",
@@ -3254,7 +3254,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tea",
         iconName: "tea",
         colour: "orange",
@@ -3262,7 +3262,7 @@ const standard = {
         internalName: "tea",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "coffee",
         iconName: "coffee",
         colour: "orange",
@@ -3270,7 +3270,7 @@ const standard = {
         internalName: "coffee",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hot chocolate",
         iconName: "hot-chocolate",
         colour: "orange",
@@ -3284,7 +3284,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "fruit",
         iconName: "fruit",
         colour: "orange",
@@ -3292,7 +3292,7 @@ const standard = {
         internalName: "fruit",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "apple",
         iconName: "apple",
         colour: "orange",
@@ -3300,7 +3300,7 @@ const standard = {
         internalName: "apple",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "banana",
         iconName: "banana",
         colour: "orange",
@@ -3308,7 +3308,7 @@ const standard = {
         internalName: "banana",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "orange",
         iconName: "orange-fruit",
         colour: "orange",
@@ -3316,7 +3316,7 @@ const standard = {
         internalName: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pear",
         iconName: "pear",
         colour: "orange",
@@ -3324,7 +3324,7 @@ const standard = {
         internalName: "pear",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lemon",
         iconName: "lemon",
         colour: "orange",
@@ -3332,7 +3332,7 @@ const standard = {
         internalName: "lemon",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grape",
         iconName: "grape",
         colour: "orange",
@@ -3340,7 +3340,7 @@ const standard = {
         internalName: "grape",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raisin",
         iconName: "raisin",
         colour: "orange",
@@ -3348,7 +3348,7 @@ const standard = {
         internalName: "raisin",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blackcurrant",
         iconName: "blackcurrant",
         colour: "orange",
@@ -3356,7 +3356,7 @@ const standard = {
         internalName: "blackcurrant",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "strawberry",
         iconName: "strawberry",
         colour: "orange",
@@ -3364,7 +3364,7 @@ const standard = {
         internalName: "strawberry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "raspberry",
         iconName: "raspberry",
         colour: "orange",
@@ -3372,7 +3372,7 @@ const standard = {
         internalName: "raspberry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "blueberry",
         iconName: "blueberry",
         colour: "orange",
@@ -3380,7 +3380,7 @@ const standard = {
         internalName: "blueberry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cherry",
         iconName: "cherry",
         colour: "orange",
@@ -3400,7 +3400,7 @@ const standard = {
       { type: "blank" },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "full",
         iconName: "full",
         colour: "blue",
@@ -3408,7 +3408,7 @@ const standard = {
         internalName: "full",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "empty",
         iconName: "empty",
         colour: "blue",
@@ -3432,7 +3432,7 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "adult",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adult.png.varianted-skin.png",
@@ -3442,7 +3442,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "man",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/human%20(man).png.varianted-skin.png",
@@ -3451,7 +3451,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "woman",
         iconName: "adult",
         colour: "orange",
@@ -3462,7 +3462,7 @@ const standard = {
         pluralForm: "women",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "person",
         colour: "orange",
         linkTo: "standard",
@@ -3472,7 +3472,7 @@ const standard = {
         pluralForm: "people",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "dad",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dad.png.varianted-skin.png",
@@ -3481,7 +3481,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mum",
         iconName: "mum",
         colour: "orange",
@@ -3489,7 +3489,7 @@ const standard = {
         internalName: "mum",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "stranger",
         iconName: "Stranger",
         colour: "orange",
@@ -3500,7 +3500,7 @@ const standard = {
         pluralForm: "strangers",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "family",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/family_8.png.variant-medium.png",
@@ -3509,7 +3509,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "baby",
         colour: "orange",
         linkTo: "standard",
@@ -3519,7 +3519,7 @@ const standard = {
         pluralForm: "babies",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "child",
         iconName: "boy",
         colour: "orange",
@@ -3530,7 +3530,7 @@ const standard = {
         pluralForm: "children",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "boy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boy_3.png.varianted-skin.png",
@@ -3539,7 +3539,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "girl",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/girl_2.png.varianted-skin.png",
@@ -3548,7 +3548,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "friend",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/friends_3.png.variant-medium-dark.png",
@@ -3557,7 +3557,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "brother",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brother.png.varianted-skin.png",
@@ -3566,7 +3566,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sister",
         iconName: "sister",
         colour: "orange",
@@ -3574,7 +3574,7 @@ const standard = {
         internalName: "sister",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grandma",
         colour: "orange",
         linkTo: "standard",
@@ -3584,7 +3584,7 @@ const standard = {
         pluralForm: "grandmas",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "grandpa",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/grandpa.png.varianted-skin.png",
@@ -3593,7 +3593,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "woman",
         displayName: "auntie",
@@ -3603,7 +3603,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "girl",
         displayName: "uncle",
@@ -3613,7 +3613,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cousin",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cousin.png.varianted-skin.png",
@@ -3622,7 +3622,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "partner",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/partner.svg.varianted-skin.svg",
@@ -3630,7 +3630,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "married",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to marry.png.varianted-skin.png",
@@ -3638,7 +3638,7 @@ const standard = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "people",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/group of people.png.varianted-skin.png",
@@ -3646,7 +3646,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "grandma",
         displayName: "boss",
@@ -3655,7 +3655,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "orange",
         internalName: "grandad",
         displayName: "teacher",
@@ -3664,7 +3664,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "assistant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/care assistant 1b.svg.varianted-skin.svg",
@@ -3672,7 +3672,7 @@ const standard = {
         colour: "orange",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         colour: "green",
         internalName: "baby",
         displayName: "love",
@@ -3681,7 +3681,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dislike.png.varianted-skin.png",
@@ -3689,7 +3689,7 @@ const standard = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "was",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/yesterday.png",
@@ -3698,7 +3698,7 @@ const standard = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "are",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/equal sign.png",
@@ -3706,7 +3706,7 @@ const standard = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "will",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/future.png",
@@ -3714,7 +3714,7 @@ const standard = {
         colour: "grey",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "separate",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to separate_1.png.varianted-skin.png",
@@ -3723,7 +3723,7 @@ const standard = {
       },
       { type: "blank", colour: "orange", internalName: "nana" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "adopt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adoptive family.png.varianted-skin.png",
@@ -3731,7 +3731,7 @@ const standard = {
         colour: "green",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "foster",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/family.svg.varianted-skin.svg",
@@ -3739,13 +3739,13 @@ const standard = {
         colour: "green",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "me",
         colour: "yellow",
         linkTo: "standard",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "my",
         iconName: "my",
         colour: "yellow",
@@ -3753,7 +3753,7 @@ const standard = {
         internalName: "my",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "mine",
         iconName: "mine",
         colour: "yellow",
@@ -3761,7 +3761,7 @@ const standard = {
         internalName: "mine",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "our",
         iconName: "our",
         colour: "yellow",
@@ -3769,19 +3769,19 @@ const standard = {
         internalName: "our",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "your",
         linkTo: "standard",
         colour: "yellow",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "we",
         linkTo: "standard",
         colour: "yellow",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "kind",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/nice.png.varianted-skin.png",
@@ -3790,7 +3790,7 @@ const standard = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "mean",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hit.png",
@@ -3798,7 +3798,7 @@ const standard = {
         colour: "blue",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "annoying",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/annoyed_1.png.varianted-skin.png",
@@ -3806,49 +3806,49 @@ const standard = {
         colour: "blue",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "his",
         colour: "yellow",
         linkTo: "standard",
         internalName: "his",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "him",
         colour: "yellow",
         linkTo: "standard",
         internalName: "him",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "her",
         colour: "yellow",
         linkTo: "standard",
         internalName: "her",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "they",
         colour: "yellow",
         linkTo: "standard",
         internalName: "they",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "them",
         colour: "yellow",
         linkTo: "standard",
         internalName: "them",
       },
       {
-        type: "textOnly",
+        type: "regular",
         displayName: "their",
         colour: "yellow",
         linkTo: "standard",
         internalName: "their",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "old",
         iconName: "old",
         colour: "blue",
@@ -3857,7 +3857,7 @@ const standard = {
       },
       { type: "blank" },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "young",
         iconName: "young",
         colour: "blue",
@@ -3881,7 +3881,7 @@ const standard = {
         internalName: "Back",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "happy",
         iconName: "happy",
         colour: "blue",
@@ -3889,7 +3889,7 @@ const standard = {
         internalName: "happy",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sad",
         iconName: "sad",
         colour: "blue",
@@ -3897,7 +3897,7 @@ const standard = {
         internalName: "sad",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "OK",
         iconName: "ok",
         colour: "blue",
@@ -3905,7 +3905,7 @@ const standard = {
         internalName: "OK",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "angry",
         iconName: "angry",
         colour: "blue",
@@ -3913,7 +3913,7 @@ const standard = {
         internalName: "smile",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sick",
         iconName: "sick",
         colour: "blue",
@@ -3928,7 +3928,7 @@ const standard = {
         internalName: "win",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hi",
         iconName: "hi",
         colour: "grey",
@@ -3938,7 +3938,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hello.png.variant-dark.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bye",
         iconName: "bye",
         colour: "grey",
@@ -3948,35 +3948,35 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Goodbye%20(M)_1.png.varianted-skin.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "worried",
         iconName: "worried",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bored",
         iconName: "bored",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "excited",
         iconName: "excited",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "tired",
         iconName: "tired",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "confused",
         iconName: "confused",
         colour: "blue",
@@ -3997,7 +3997,7 @@ const standard = {
         internalName: "lose",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "sorry",
         iconName: "sorry",
         colour: "grey",
@@ -4007,7 +4007,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/sorry.jpg",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "please",
         iconName: "please",
         colour: "grey",
@@ -4017,28 +4017,28 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/please.png.varianted-skin.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "laugh",
         iconName: "laugh",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "cry",
         iconName: "cry",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "smile",
         iconName: "smile",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "shout",
         iconName: "shout",
         colour: "green",
@@ -4052,7 +4052,7 @@ const standard = {
         internalName: "shout",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "yes",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Yes%20(M).png",
@@ -4067,7 +4067,7 @@ const standard = {
         type: "blank",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "no",
         iconName: "no",
         colour: "white",
@@ -4077,14 +4077,14 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/No%20(F).png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "win",
         iconName: "win",
         colour: "green",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "lose",
         iconName: "lose",
         colour: "green",
@@ -4104,7 +4104,7 @@ const standard = {
         internalName: "cry",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "morning",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/morning.png",
@@ -4113,7 +4113,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "afternoon",
         iconName: "afternoon",
         colour: "blue",
@@ -4122,7 +4122,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "day",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/day.png",
@@ -4131,7 +4131,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "night",
         iconName: "night",
         colour: "blue",
@@ -4141,14 +4141,14 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/night.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "easy",
         iconName: "easy",
         colour: "blue",
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "difficult",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hard.png.variant-medium.png",
@@ -4165,7 +4165,7 @@ const standard = {
         type: "blank",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "good",
         iconName: "like",
         colour: "blue",
@@ -4178,7 +4178,7 @@ const standard = {
         type: "blank",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "bad",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/bad.svg.varianted-skin.svg",
@@ -4186,7 +4186,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "birthday",
         iconName: "birthday",
         colour: "orange",
@@ -4194,7 +4194,7 @@ const standard = {
         internalName: "birthday",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "christmas",
         iconName: "christmas",
         colour: "orange",
@@ -4202,7 +4202,7 @@ const standard = {
         internalName: "christmas",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "easter",
         iconName: "easter",
         colour: "orange",
@@ -4210,7 +4210,7 @@ const standard = {
         internalName: "easter",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "eid",
         iconName: "eid",
         colour: "orange",
@@ -4218,7 +4218,7 @@ const standard = {
         internalName: "eid",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "ramadam",
         iconName: "ramadam",
         colour: "orange",
@@ -4226,7 +4226,7 @@ const standard = {
         internalName: "ramadam",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "hallowe'en ",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/Halloween.svg.varianted-skin.svg",
@@ -4235,7 +4235,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "firework",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/fireworks.svg",
@@ -4244,7 +4244,7 @@ const standard = {
         linkTo: "standard",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "present",
         iconName: "present",
         colour: "orange",
@@ -4253,7 +4253,7 @@ const standard = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/gift_1.png",
       },
       {
-        type: "textAndIcon",
+        type: "regular",
         displayName: "pray",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pray_2.png",

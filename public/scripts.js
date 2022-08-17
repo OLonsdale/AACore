@@ -455,11 +455,6 @@ function showEditTileSidebar() {
   }
   const board = boards[localStorage.getItem("currentBoardName")];
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
-
-  //shows icon settings if it should
-  if (tileTypeInput.value === "textAndIcon") {
-    iconTileSettings.classList.remove("hidden");
-  } else iconTileSettings.classList.add("hidden");
 }
 
 function showFindIconSidebar() {
@@ -669,7 +664,7 @@ clearCurrentTileButton.addEventListener("click", clearCurrentTile);
 
 function clearCurrentTile() {
   displayNameInput.value = "";
-  tileTypeInput.value = "blank";
+  tileTypeInput.value = "";
   iconLinkInput.value = "";
   pronounciationInput.value = "";
   pastInput.value = "";
@@ -692,24 +687,19 @@ function editTile() {
     return;
   }
 
-  if (!displayNameInput.value && tileTypeInput.value !== "blank") {
-    alert("You must enter a display name if the tile is not blank");
-    return;
-  }
-
   const board = boards[localStorage.getItem("currentBoardName")];
   const selectedTile = board.tiles[selectedTileNumber.value];
-  selectedTile.displayName = displayNameInput.value;
+  selectedTile.displayName = displayNameInput.value
+  selectedTile.pronounciation = pronounciationInput.value;
   selectedTile.type = tileTypeInput.value;
   selectedTile.iconLink = iconLinkInput.value;
-  selectedTile.pronounciation = pronounciationInput.value;
+  selectedTile.iconName = iconNameInput.value;
   selectedTile.pastForm = pastInput.value;
   selectedTile.pastPronounciation = pastPronounciationInput.value;
   selectedTile.pluralForm = pluralInput.value;
   selectedTile.pluralFormPronounciation = pluralPronounciationInput.value;
   selectedTile.negativeForm = negationInput.value;
   selectedTile.negativeFormPronounciation = negationPronounciationInput.value;
-  selectedTile.iconName = iconNameInput.value;
   selectedTile.linkTo = linkToInput.value;
   selectedTile.colour = colourInput.value;
 
@@ -750,14 +740,6 @@ function sizeGrid() {
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
 }
-
-tileTypeInput.addEventListener("change", () => {
-  if (tileTypeInput.value === "textOnly" || tileTypeInput.value === "blank") {
-    iconTileSettings.classList.add("hidden");
-  } else {
-    iconTileSettings.classList.remove("hidden");
-  }
-});
 
 toggleEditTileExtra.addEventListener("click", () => {
   editTileExtra.classList.toggle("hidden");
@@ -816,7 +798,7 @@ function drawBoard(name) {
       if (editMode) {
         selectedTileNumber.value = tileElement.id;
         displayNameInput.value = tile.displayName || "";
-        tileTypeInput.value = tile.type || "blank";
+        tileTypeInput.value = tile.type || "regular";
         pronounciationInput.value = tile.pronounciation || "";
         pastInput.value = tile.pastForm || "";
         pastPronounciationInput.value = tile.pastPronounciation || "";
