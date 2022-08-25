@@ -17,28 +17,20 @@
       contents="AACore, app, AAC, TTS, accessibility, communication, free, online, offline, open-souce"
     />
 
-    <link rel="stylesheet" href="styles.css" />
     <link
-      rel="shortcut icon"
-      href="./resouces/favicon_16px.png"
-      type="image/x-icon"
+    rel="shortcut icon"
+    href="./resouces/favicon_16px.png"
+    type="image/x-icon"
     />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./resouces/favicon-ios.png"
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./resouces/favicon-ios.png"
     />
-
+    
     <link rel="manifest" href="./manifest.json" />
-
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js").then(function () {
-          console.log("Service Worker Registered");
-        });
-      }
-    </script>
-
+    
+    <link rel="stylesheet" href="styles.css" />
     <script type="module" src="scripts.js" defer></script>
 
     <title>AACore</title>
@@ -251,16 +243,16 @@
       <div>
         <label for="colourInput">Colour:</label>
       </div>
-      <div class="grid nine-cols">
-        <div value="orange" class="colourInput orange"></div>
-        <div value="red" class="colourInput red"></div>
-        <div value="pink" class="colourInput pink"></div>
-        <div value="yellow" class="colourInput yellow"></div>
-        <div value="green" class="colourInput green"></div>
-        <div value="blue" class="colourInput blue"></div>
-        <div value="grey" class="colourInput grey"></div>
-        <div value="white" class="colourInput white"></div>
-        <div value="linkColour" class="colourInput linkColour"></div>
+      <div class="flex">
+        <button value="red" class="colourInput red"></button>
+        <button value="pink" class="colourInput pink"></button>
+        <button value="orange" class="colourInput orange"></button>
+        <button value="yellow" class="colourInput yellow"></button>
+        <button value="green" class="colourInput green"></button>
+        <button value="blue" class="colourInput blue"></button>
+        <button value="grey" class="colourInput grey"></button>
+        <button value="white" class="colourInput white"></button>
+        <button value="linkColour" class="colourInput linkColour"></button>
       </div>
 
       <select id="colourInput">
@@ -389,7 +381,7 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>Beta 20</p>
+      <p>1.0.0</p>
     </div>
 
     <div id="topBar" class="topBar">

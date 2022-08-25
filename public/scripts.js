@@ -1,5 +1,15 @@
 "use strict";
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js').then(registration => {
+      console.log('SW registered: ', registration);
+    }).catch(registrationError => {
+      console.log('SW registration failed: ', registrationError);
+    });
+  });
+}
+
 import { expanded } from "./board-sets/expanded.js";
 import { initial } from "./board-sets/initial.js";
 import { standard } from "./board-sets/standard.js";
