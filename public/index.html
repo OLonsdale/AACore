@@ -241,9 +241,18 @@
         <input id="displayNameInput" type="text" /></div>
 
       <div>
+        <label for="tileType">Type:</label>
+      </div>
+      <div>
+        <select id="tileTypeInput">
+          <option value="regular" selected>Regular tile</option>
+          <option value="link">Link to another board (unspoken)</option>
+          <option value="blank">Blank</option>
+        </select>
+      </div>      <div>
         <label for="colourInput">Colour:</label>
       </div>
-      <div class="flex">
+      <div id="colourSelectButtons" class="flex">
         <button value="red" class="colourInput red"></button>
         <button value="pink" class="colourInput pink"></button>
         <button value="orange" class="colourInput orange"></button>
@@ -255,33 +264,12 @@
         <button value="linkColour" class="colourInput linkColour"></button>
       </div>
 
-      <select id="colourInput">
-        <option class="orange" value="orange">Orange</option>
-        <option class="red" value="red">Red</option>
-        <option class="pink" value="pink">Pink</option>
-        <option class="yellow" value="yellow">Yellow</option>
-        <option class="green" value="green">Green</option>
-        <option class="blue" value="blue">Blue</option>
-        <option class="grey" value="grey">Grey</option>
-        <option class="white" value="white">White</option>
-        <option class="linkColour" value="linkColour">Link</option>
-      </select>
-
-      <div>
-        <label for="tileType">Type:</label>
-      </div>
-      <div>
-        <select id="tileTypeInput">
-          <option value="regular" selected>Regular tile</option>
-          <option value="link">Link to another board (unspoken)</option>
-          <option value="blank">Blank</option>
-        </select>
-      </div>
+      <input id="colourInput" disabled></input>
       <div id="iconTileSettings">
         <div>
           <label id="iconNameInputLabel" for="iconNameInput">Icon Name:</label>
         </div>
-        <div><input id="iconNameInput" type="text" /></div>
+        <div><input id="iconNameInput" type="text" placeholder="e.g 'navigate-back'"/></div>
         <bold>OR</bold>
         <div>
           <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
@@ -381,7 +369,7 @@
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>1.0.1</p>
+      <p>1.0.2</p>
     </div>
 
     <div id="topBar" class="topBar">

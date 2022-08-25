@@ -463,6 +463,14 @@ function showEditTileSidebar() {
       linkToInput.append(option);
     }
   }
+
+  Array.from(colourSelectButtons.children).forEach(button => {
+    button.addEventListener("click", () => {
+      console.log(button.value)
+      colourInput.value = button.value
+    })
+  })
+
   const board = boards[localStorage.getItem("currentBoardName")];
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
 }
@@ -674,7 +682,7 @@ clearCurrentTileButton.addEventListener("click", clearCurrentTile);
 
 function clearCurrentTile() {
   displayNameInput.value = "";
-  tileTypeInput.value = "";
+  tileTypeInput.value = "blank";
   iconLinkInput.value = "";
   pronounciationInput.value = "";
   pastInput.value = "";
