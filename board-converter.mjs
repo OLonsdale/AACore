@@ -1,10 +1,10 @@
-const standard = {
+const boardSet = {
   standard: {
     name: "Standard",
     topLevel: true,
     rows: 6,
     columns: 9,
-    path: ["standard"],
+    path: "standard",
     tiles: [
       {
         type: "link",
@@ -400,7 +400,7 @@ const standard = {
   "standard-am": {
     rows: 6,
     columns: 9,
-    path: ["standard", "I"],
+    path: "standard ⇾ I",
     tiles: [
       {
         type: "link",
@@ -839,7 +839,7 @@ const standard = {
   "standard-toys": {
     rows: 6,
     columns: 9,
-    path: ["standard", "toys"],
+    path: "standard ⇾ toys",
     tiles: [
       {
         type: "link",
@@ -1175,7 +1175,7 @@ const standard = {
   "standard-learn": {
     rows: 6,
     columns: 9,
-    path: ["standard", "learn"],
+    path: "standard ⇾ learn",
     tiles: [
       {
         type: "link",
@@ -1535,7 +1535,7 @@ const standard = {
   "standard-topic": {
     rows: 6,
     columns: 9,
-    path: ["standard", "topic"],
+    path: "standard ⇾ topic",
     tiles: [
       {
         type: "link",
@@ -1891,7 +1891,7 @@ const standard = {
   "standard-body": {
     rows: 6,
     columns: 9,
-    path: ["standard", "body"],
+    path: "standard ⇾ body",
     tiles: [
       {
         type: "link",
@@ -1965,14 +1965,7 @@ const standard = {
         linkTo: "standard",
         internalName: "bruise",
       },
-      {
-        type: "regular",
-        displayName: "see",
-        iconName: "look",
-        colour: "green",
-        linkTo: "standard",
-        internalName: "see",
-      },
+      { type: "blank" },
       { type: "blank" },
       {
         type: "regular",
@@ -1992,11 +1985,11 @@ const standard = {
       },
       {
         type: "regular",
-        displayName: "ill",
+        displayName: "sick",
         iconName: "sick",
         colour: "green",
         linkTo: "standard",
-        internalName: "ill",
+        internalName: "sick",
       },
       {
         type: "regular",
@@ -2296,7 +2289,7 @@ const standard = {
   "standard-home": {
     rows: 6,
     columns: 9,
-    path: ["standard", "home"],
+    path: "standard ⇾ home",
     tiles: [
       {
         type: "link",
@@ -2737,7 +2730,7 @@ const standard = {
   "standard-food": {
     rows: 6,
     columns: 9,
-    path: ["standard", "food"],
+    path: "standard ⇾ food",
     tiles: [
       {
         type: "link",
@@ -2756,14 +2749,7 @@ const standard = {
         internalName: "food",
       },
       { type: "blank" },
-      {
-        type: "regular",
-        displayName: "can",
-        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/tin%20can.svg",
-        colour: "orange",
-        linkTo: "standard",
-        internalName: "can",
-      },
+      { type: "blank" },
       {
         type: "regular",
         displayName: "meal",
@@ -2790,11 +2776,11 @@ const standard = {
       },
       {
         type: "regular",
-        displayName: "dinner",
-        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/have%20tea.png.varianted-skin.png",
+        displayName: "tea",
+        iconName: "tea",
         colour: "grey",
         linkTo: "standard",
-        internalName: "dinner",
+        internalName: "tea",
       },
       {
         type: "regular",
@@ -2975,7 +2961,7 @@ const standard = {
       {
         type: "regular",
         displayName: "chicken",
-        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/chicken.svg",
+        iconName: "chicken",
         colour: "orange",
         linkTo: "standard",
         internalName: "chicken",
@@ -3163,7 +3149,7 @@ const standard = {
   "standard-drinks": {
     rows: 6,
     columns: 9,
-    path: ["standard", "drinks"],
+    path: "standard ⇾ drinks",
     tiles: [
       {
         type: "link",
@@ -3421,7 +3407,7 @@ const standard = {
   "standard-people": {
     rows: 6,
     columns: 9,
-    path: ["standard", "people"],
+    path: "standard ⇾ people",
     tiles: [
       {
         type: "link",
@@ -3865,12 +3851,14 @@ const standard = {
         internalName: "young",
       },
     ],
+    topLevel: true,
+    customBoard: true,
   },
 
   "standard-feelings": {
     rows: 6,
     columns: 9,
-    path: ["standard", "feelings"],
+    path: "standard ⇾ feelings",
     tiles: [
       {
         type: "link",
@@ -4265,4 +4253,20 @@ const standard = {
   },
 };
 
-export { standard };
+let words = [];
+let duplicates = new Set()
+for (const board in boardSet) {
+  if(board === "standard-am") continue
+  const currentBoard = boardSet[board];
+  currentBoard.tiles.forEach((tile) => {
+
+    if (words.includes(tile.displayName) && tile.displayName && tile.displayName !== "Back") {
+      duplicates.add(tile.displayName)
+    }
+
+    else if(tile.displayName) words.push(tile.displayName)
+
+  });
+}
+
+console.log(duplicates)

@@ -1,40 +1,33 @@
 # An Open Source Augmentative and Alternative Communication Web App
 
-## How the project was described
+![v](https://github.com/lonsdale1086/AACorePlain/blob/beta/public/resouces/screenshot.png)
 
-- A series of grids of tiles, containing a word and an icon.
-- You click an icon and the word is spoken.
-- Each tile has a background colour.
+## The Site
 
-## How the project turned out
+AACore is a free and open-source progressive web app for Augmentative and Alternative Communication.
 
-- When a word is clicked, it is added to a "sentence". The words in the sentence can be spoken together with the play button.
-- Not all words have icons.
-- The same word may be used in different contexts, and will require different icons. E.g orange the colour and orange the fruit.
-- Some icons are links to other grids, and those grids need to return you to the last grid upon clicking an item.
-- Some words need to be pronounced differently to how they are written.
-- Numbers need to be spoken not as individual words. adding 2 and 3 to the sentence should be spoken "twenty-three".
-- Not all grids are the same size.
-- The layout of the grids must be consistant accross devices.
-- Some icons need to modify other icons on the grid.
-- There needs to be a button to change the last word into its plural form etc,
-- There needs to be a locakable settings menu.
-- User Generated Content
+Users can chose from a selection of boards or create their own through the integrated board creator.
+
+Click on words to add them to the sentence bar. Click the sentence bar to speak the whole sentence at once.
+
+The purple buttons with change the last word in the bar, making them plural, past tense or negative.
+
+Boards can be selected and options changed through the sidebar, including changing the background colour, selecting fonts and voices, and changing whether or not the word is spoken as it is added to the sentence bar.
 
 ## Notes
 
+[Live version at aacore.app](https://aacore.app) hosted on Google Firebase.
+
 Icons from [opensymbols.org](opensymbols.org)
 
-Voices from the speech engine of each device
+Icons are WEBP files stored on the server or hotlinked to opensymbols.org.
 
-Grids designed by Beth Lonsdale
+Voices from the speech engine of the device.
 
-System developed in vanilla HTML, Javascript and CSS, using visual studio code.
+Grids designed by Beth Lonsdale.
+
+System developed in vanilla HTML, Javascript and CSS, using Visual Studio Code.
 
 Tile grids are defined as JSON objects, and rendered on the client side via javascript.
 
-Icons are all WEBP files stored on the server.
-
-[Live version](https://aacore-80543.web.app) hosted on Google Firebase
-
-Will be installable as a PWA for offline use.
+Can be installed and used offline through the power of Progressive Web Apps.

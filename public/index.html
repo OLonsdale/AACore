@@ -4,32 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#faebd7"/>
+    <meta name="theme-color" content="#faebd7" />
+    <meta name="name" contents="AACore" />
+    <meta name="application-name" contents="AACore" />
+    <meta
+      name="description"
+      contents="A free and open-source progressive web app for Augmentative and Alternative Communication"
+    />
+    <meta name="author" contents="Beth Lonsdale, Oliver Lonsdale" />
+    <meta
+      name="keywords"
+      contents="AACore, app, AAC, TTS, accessibility, communication, free, online, offline, open-souce"
+    />
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="./resouces/favicon_16px.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./resouces/favicon-ios.png" />
+    <link
+    rel="shortcut icon"
+    href="./resouces/favicon_16px.png"
+    type="image/x-icon"
+    />
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./resouces/favicon-ios.png"
+    />
     
     <link rel="manifest" href="./manifest.json" />
-
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').then(function() { 
-          console.log("Service Worker Registered"); 
-        });
-      }
-    </script>
-
-    <script type="module" src="scripts.js" defer></script>
     
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="scripts.js" defer></script>
+
     <title>AACore</title>
   </head>
 
   <body>
     <div id="sidebar" class="hidden sidebar">
       <button class="sidebarButton closeSidebarButton">Close</button>
-      <button id="toggleSettingsButton" class="sidebarButton">Show/Hide Settings</button>
-      <div id="sidebarSettings" class="inlideSidebar hidden">
+      <button id="toggleSettingsButton" class="sidebarButton">
+        Show/Hide Settings
+      </button>
+      <div id="sidebarSettings" class="hidden">
         <h2>Settings:</h2>
         <div>
           <label for="voicesSelect">Select Voice:</label>
@@ -37,65 +50,92 @@
             <option disabled>Select Voice</option>
           </select>
         </div>
-        <div>
-          <label for="sentenceAutoDeleteCheckbox">
-            Delete sentence after speaking:
-          </label>
-          <input type="checkbox" name="delete" id="sentenceAutoDeleteCheckbox" />
-        </div>
-  
+
         <div>
           <label for="fontSelectionDropdown">Font:</label>
-          <select id="fontSelectionDropdown" >
+          <select id="fontSelectionDropdown">
             <option value="Helvetica, sans-serif">Standard</option>
-            <option value="Comic Sans MS, Comic Neue, sans-serif">Comicbook</option>
+            <option value="Comic Sans MS, Comic Neue, sans-serif">
+              Comicbook
+            </option>
             <option value="OpenDyslexic, sans-serif">Dyslexia Friendly</option>
           </select>
         </div>
 
         <div>
-          <label for="backgroundColourSelection">Background Colour:</label>
-          <input id="backgroundColourSelection" type="color">
+          <label for="sentenceAutoDeleteCheckbox">
+            Delete sentence after speaking:
+          </label>
+          <input type="checkbox" id="sentenceAutoDeleteCheckbox" />
         </div>
-  
+
         <div>
-          <label for="editModeCheckbox">Edit boards:</label>
+          <label for="speakOnAddCheckbox"> Speak word on click:</label>
+          <input type="checkbox" id="speakOnAddCheckbox" />
+        </div>
+
+        <div>
+          <label for="darkModeCheckbox">Dark Mode:</label>
+          <input type="checkbox" id="darkModeCheckbox" />
+        </div>
+
+        <div>
+          <label for="editModeCheckbox">Edit Mode:</label>
           <input type="checkbox" name="editMode" id="editModeCheckbox" />
         </div>
-      
 
-        <div id="editBoardArea" class="inlineSidebar hidden">
+        <button class="sidebarButton" id="goOfflineButton">
+          Prepare to go offline
+        </button>
+
+        <div id="editBoardArea" class="hidden">
+          <br>
           <h3>Edit Board:</h3>
-          <br>
+          <br />
+            <button id="duplicateCurrentBoardButton" class="sidebarButton">
+              Duplicate current board
+            </button>
+            <button id="duplicateCurrentSetButton" class="sidebarButton">
+              Duplicate current set
+            </button>
+            <button
+              id="deleteCurrentBoardButton"
+              class="sidebarButton"
+            ></button>
+            <br>
           <div>
-            <label for="duplicateCurrentBoardButton">Duplicate Board</label>
-            <button id="duplicateCurrentBoardButton" class="sidebarButton">Duplicate current board</button>
+            <label for="boardNameEditInput">Rename Board:</label>
+            <input id="boardNameEditInput" />
           </div>
-          <br>
+          <br />
           <div>
-            <label for="deleteCurrentBoardButton">Delete Board</label>
-            <button id="deleteCurrentBoardButton" class="sidebarButton"></button>
+            <label for="topLevelEditInput">Board is visible in sidebar:</label>
+            <input type="checkbox" id="topLevelEditInput" />
           </div>
-          <br>
-          <div>
-            <label for="boardNameEditInput">Rename Board:</label> 
-            <input id="boardNameEditInput">
-          </div>
-          <br>
-          <div>
-            <label for="topLevelEditInput">Board is visible in sidebar</label>
-            <input type="checkbox" id="topLevelEditInput">
-          </div>
-          <br>
-          <button class="sidebarButton" id="saveBoardEditButton">Save Edit</button>
+          <br />
+          <button class="sidebarButton" id="saveBoardEditButton">
+            Save Edit
+          </button>
         </div>
       </div>
       <h3>Find Word:</h3>
       <div class="displayFlexRow">
-        <input type="text" id="findWordInput">
-        <button id="clearWordSearchButton" title="Clear" aria-label="Clear search" class="inlineSidebarButton"><img alt="delete icon" width="30" height="20" src="./resouces/delete.svg"></button>
+        <input type="text" id="findWordInput" />
+        <button
+          id="clearWordSearchButton"
+          title="Clear"
+          aria-label="Clear search"
+          class="inlineSidebarButton"
+        >
+          <img
+            alt="delete icon"
+            width="30"
+            height="20"
+            src="./resouces/delete.svg"
+          />
+        </button>
       </div>
-      <div id="wordSearchResultsElement">
+      <div id="wordSearchResultsElement" class="grid two-cols">
         <!-- filled by JS on search button -->
       </div>
 
@@ -104,36 +144,43 @@
         <!-- Filled by JS -->
       </div>
 
-      <h3>Custom Boards:</h3>
+      <h3 id="customBoardsHeader">Custom Boards:</h3>
+      <!-- Shown and hidden dynamically by JS -->
       <div id="customBoardSelectionList">
         <!-- Filled by JS -->
       </div>
 
-      <h3>Boards:</h3>
-      <nav>
+      <h3>Manage Boards:</h3>
+      <div>
         <button class="sidebarButton" id="createBoardMenuButton">
           New Board
         </button>
         <button class="sidebarButton" id="importBoardButton">
-          Import Board
+          Import Boards
         </button>
-        <button class="sidebarButton" id="exportBoardButton">
-          Export Board
+        <button class="sidebarButton" id="openExportSidebarButton">
+          Export Boards
         </button>
-      </nav>
+
+      </div>
       <input id="importInput" type="file" accept=".json" class="hidden" />
 
       <h3>Other:</h3>
       <button class="sidebarButton" id="lockSidebarButton">Lock sidebar</button>
 
       <button id="showAboutButton" class="sidebarButton">About</button>
+    </div>
+
+    <div id="exportSidebar" class="sidebar hidden">
+      <button class="sidebarButton closeSidebarButton">Close</button>
+      <h2>Select boards to export:</h2>
+      <form id="boardExportList"></form>
+      <button id="exportBoardsButton" class="sidebarButton">Export</button>
       
     </div>
 
     <div id="createBoardSidebar" class="hidden sidebar">
-      <button class="sidebarButton closeSidebarButton">
-        Close
-      </button>
+      <button class="sidebarButton closeSidebarButton">Close</button>
       <h2>Create Board</h2>
       <div>
         <label for="nameInput">Name: (must be unique)</label>
@@ -179,19 +226,83 @@
     </div>
 
     <div id="editTileSidebar" class="hidden sidebar">
-      <button class="sidebarButton closeSidebarButton">
-        Close
-      </button>
-      
+      <button class="sidebarButton closeSidebarButton">Close</button>
+
       <h2>Edit Tile</h2>
-      <div><button class="sidebarButton" id="clearCurrentTileButton">Clear Current Tile</button></div>
+      <div>
+        <button class="sidebarButton" id="clearCurrentTileButton">
+          Clear Current Tile
+        </button>
+      </div>
 
-      <div><label for="selectedTileNumber">Selected Tile:</label></div>
-      <div><input id="selectedTileNumber" type="text" disabled /></div>
+      <input id="selectedTileNumber" type="text" disabled class="hidden" />
 
+      <div><label for="displayNameInput">Display Name:</label>
+        <input id="displayNameInput" type="text" /></div>
 
-      <div><label for="displayNameInput">Display Name:</label></div>
-      <div><input id="displayNameInput" type="text" /></div>
+      <div>
+        <label for="colourInput">Colour:</label>
+      </div>
+      <div class="flex">
+        <button value="red" class="colourInput red"></button>
+        <button value="pink" class="colourInput pink"></button>
+        <button value="orange" class="colourInput orange"></button>
+        <button value="yellow" class="colourInput yellow"></button>
+        <button value="green" class="colourInput green"></button>
+        <button value="blue" class="colourInput blue"></button>
+        <button value="grey" class="colourInput grey"></button>
+        <button value="white" class="colourInput white"></button>
+        <button value="linkColour" class="colourInput linkColour"></button>
+      </div>
+
+      <select id="colourInput">
+        <option class="orange" value="orange">Orange</option>
+        <option class="red" value="red">Red</option>
+        <option class="pink" value="pink">Pink</option>
+        <option class="yellow" value="yellow">Yellow</option>
+        <option class="green" value="green">Green</option>
+        <option class="blue" value="blue">Blue</option>
+        <option class="grey" value="grey">Grey</option>
+        <option class="white" value="white">White</option>
+        <option class="linkColour" value="linkColour">Link</option>
+      </select>
+
+      <div>
+        <label for="tileType">Type:</label>
+      </div>
+      <div>
+        <select id="tileTypeInput">
+          <option value="regular" selected>Regular tile</option>
+          <option value="link">Link to another board (unspoken)</option>
+          <option value="blank">Blank</option>
+        </select>
+      </div>
+      <div id="iconTileSettings">
+        <div>
+          <label id="iconNameInputLabel" for="iconNameInput">Icon Name:</label>
+        </div>
+        <div><input id="iconNameInput" type="text" /></div>
+        <bold>OR</bold>
+        <div>
+          <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
+        </div>
+        <div class="displayFlexRow">
+          <div><input id="iconLinkInput" type="text" /></div>
+          <button id="openIconSearchButton" class="inlineSidebarButton">
+            Find
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <label for="linkToInput">Link to board:</label>
+      </div>
+      <div>
+        <select id="linkToInput">
+          <option value="">None</option>
+          <!-- Other options added by JS -->
+        </select>
+      </div>
 
       <button id="toggleEditTileExtra" class="sidebarButton">
         Show Extra Options
@@ -199,7 +310,7 @@
 
       <div id="editTileExtra" class="hidden">
         <div>
-          <label for="pronounciationInput">Pronounciation (if required):</label>
+          <label for="pronounciationInput">Pronounciation:</label>
         </div>
         <div><input id="pronounciationInput" type="text" /></div>
 
@@ -213,7 +324,7 @@
         </div>
         <div><input id="pastPronounciationInput" type="text" /></div>
 
-        <div><label for="pluralInput">Plural/Third Person Form:</label></div>
+        <div><label for="pluralInput">Plural/Third Person:</label></div>
         <div><input id="pluralInput" type="text" /></div>
 
         <div>
@@ -224,7 +335,7 @@
 
         <div><input id="pluralPronounciationInput" type="text" /></div>
 
-        <div><label for="negationInput">Negative Form:</label></div>
+        <div><label for="negationInput">Negative:</label></div>
         <div><input id="negationInput" type="text" /></div>
 
         <div>
@@ -235,107 +346,70 @@
         <div><input id="negationPronounciationInput" type="text" /></div>
       </div>
 
-      <div>
-        <label for="colourInput">Colour:</label>
-      </div>
-      <div>
-        <select id="colourInput">
-          <option value="orange">Orange</option>
-          <option value="red">Red</option>
-          <option value="pink">Pink</option>
-          <option value="yellow">Yellow</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-          <option value="grey">Grey</option>
-          <option value="white">White</option>
-          <option value="linkColour">Link</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="tileType">Type:</label>
-      </div>
-      <div>
-        <select id="tileTypeInput">
-          <option value="blank">Blank</option>
-          <option value="textAndIcon">Icon and Text</option>
-          <option value="textOnly">Text Only</option>
-          <option value="link">Link to another board (unspoken)</option>
-        </select>
-      </div>
-      <div id="iconTileSettings" class="hidden">
-        <div>
-          <label id="iconNameInputLable" for="iconNameInput">Icon Name:</label>
-        </div>
-        <div><input id="iconNameInput" type="text" /></div>
-
-        <div>
-          <label id="iconLinkInputHidden" for="iconLinkInput">Icon Link:</label>
-        </div>
-        <div><input id="iconLinkInput" type="text" /></div>
-      </div>
-
-      <div>
-        <label for="linkToInput">Link to board:</label>
-      </div>
-      <div>
-        <select id="linkToInput">
-          <option value="">None</option>
-          <!-- Other options added by JS -->
-        </select>
-      </div>
-
       <button class="sidebarButton" id="editTileSubmitButton">
         Save Edit to Tile
       </button>
     </div>
 
+    <div id="findIconSidebar" class="sidebar hidden">
+      <button id="backToEditTileButton" class="sidebarButton">Back</button>
+      <h2>Find an icon</h2>
+      <div class="displayFlexRow">
+        <input id="iconSearchBar" type="text" />
+        <button id="searchForIcons" type="submit" class="inlineSidebarButton">
+          Search
+        </button>
+      </div>
+      <div id="iconResults" class="flex-grid two-cols"></div>
+      <footer>
+        Results from <a href="https://www.opensymbols.org/">opensymbols.org</a>
+      </footer>
+    </div>
+
     <div id="aboutSidebar" class="hidden sidebar">
       <button class="sidebarButton closeSidebarButton">Close</button>
       <h2>About</h2>
-      <p>Welcome to AACore. 
-        <br><br> 
-        This is an initiative to provide free access to a robust voice output communication system for children and young people with communication difficulties. 
-        <br><br>
-        Resources to be used under supervision of a Speech and Language Therapist 
+      <p>
+        Welcome to AACore. <br /><br />
+        This is an initiative to provide free access to a robust voice output
+        communication system for children and young people with communication
+        difficulties.
+        <br /><br />
+        Resources to be used under supervision of a Speech and Language
+        Therapist
       </p>
       <p>For help, direct emails to support@aacore.app</p>
       <p>To give feedback, feedback@aacore.app</p>
       <h2>Version</h2>
-      <p>0.0.89</p>
+      <p>1.0.0</p>
     </div>
 
     <div id="topBar" class="topBar">
-      <button id="sidebarButton" class="largeText">☰</button>
-      <input
+      <button id="sidebarButton" class="playbackButton" title="Open Menu">
+        <img alt="hamburger menu icon" src="./resouces/menu.svg" />
+      </button>
+      <div
         class="sentenceDisplay"
         id="sentenceDisplay"
         title="Click to play sentence"
         readonly
-      >
-      </input>
+      ></div>
 
       <button
-      title="Delete Last Word"
-      aria-label="Delete Last Word"
-      id="deleteLastButton"
-      class="playbackButton"
-    >
-      <img
-        alt="delete icon"
-        src="./resouces/delete.svg"
-      />
-    </button>
+        title="Delete Last Word"
+        aria-label="Delete Last Word"
+        id="deleteLastButton"
+        class="playbackButton"
+      >
+        <img alt="delete icon" src="./resouces/delete.svg" />
+      </button>
       <button
         title="Delete Sentence"
         aria-label="Clear Sentence"
         id="clearButton"
         class="playbackButton"
       >
-        <img
-          alt="delete icon"
-          src="./resouces/delete-all.svg"
-        />
+        <img alt="delete icon" src="./resouces/delete-all.svg" />
       </button>
     </div>
 
@@ -347,29 +421,5 @@
         </noscript>
       </ol>
     </div>
-
-    <!-- <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCSAcOic3TkQX0O2DnDhBNYCUcd0CZQVKM",
-        authDomain: "aacore-80543.firebaseapp.com",
-        projectId: "aacore-80543",
-        storageBucket: "aacore-80543.appspot.com",
-        messagingSenderId: "977847235379",
-        appId: "1:977847235379:web:e8cf0e8ae82dbd5f448446",
-        measurementId: "G-CBG84BD8M8",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script> -->
   </body>
 </html>

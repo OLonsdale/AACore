@@ -1,13 +1,15 @@
 In WSL:
 mogrify -format webp *.png
+                TO    .FROM
 
 firebase deploy
+firebase hosting:channel:deploy aacore-beta
 
 ctrl + alt + s -> w
 Update service worker before deploying
 
 open symbols api search cheeky
-https://www.opensymbols.org/api/v1/symbols/search?q=zzzz
+https://www.opensymbols.org/api/v1/symbols/search?q=[Query]
 
 Clear old service worker (all goes in sw.js):
 
@@ -24,3 +26,44 @@ Clear old service worker (all goes in sw.js):
         clients.forEach(client => client.navigate(client.url))
       });
   });
+
+
+<!-- <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCSAcOic3TkQX0O2DnDhBNYCUcd0CZQVKM",
+    authDomain: "aacore-80543.firebaseapp.com",
+    projectId: "aacore-80543",
+    storageBucket: "aacore-80543.appspot.com",
+    messagingSenderId: "977847235379",
+    appId: "1:977847235379:web:e8cf0e8ae82dbd5f448446",
+    measurementId: "G-CBG84BD8M8",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> -->
+
+
+ text.addEventListener("click", () => {
+        let drawnTiles = boardSection.children
+        for (let i = 0; i < drawnTiles.length; i++) {
+          let element = drawnTiles[i].children;     //<li>
+          let button = element[0]                   //<button>
+          console.log(button)
+          if(button.innerHTML === "") continue //check for blank tile
+          let label = button.children[0]            //<label>
+          let labelText = label.innerText.toLowerCase()
+
+          if( !result.includes(labelText) || result.includes(word.toLowerCase()) ){
+            button.classList.add("dimmed")
+          }
+        }

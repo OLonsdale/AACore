@@ -3,8 +3,14 @@
 
 :root {
   --grid-size: 100px;
-  --font: "Helvetica, sans-serif";
-  --background-colour: #faebd7;
+  --font: "Helvetica", "sans-serif";
+  --background-colour: rgb(230, 230, 230);
+  --icon-filter: none;
+}
+
+html,
+body {
+  touch-action: none;
 }
 
 body {
@@ -12,60 +18,57 @@ body {
   font-family: var(--font);
   background-color: var(--background-colour);
   user-select: none;
+  touch-action: none;
+}
+
+body.dark {
+  --icon-filter: invert(100%) sepia(35%) saturate(6%) hue-rotate(65deg) brightness(117%) contrast(87%);
+  --background-colour: #111;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 }
 
 .board {
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
   display: grid;
-  gap: 5px;
-  grid-auto-flow: row;
 }
 
 .item:hover,
 .item:focus {
   filter: brightness(90%);
-  cursor: pointer;
 }
 
 .item {
+  /* Set scale font size to hopefully fit in the boxes */
   font-size: min(calc(var(--grid-size) * 0.3), 2ch);
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px inset black;
   width: var(--grid-size);
   height: var(--grid-size);
   overflow: hidden;
+  text-align: center;
 }
 
 .icon {
-  max-width: 70%;
-  max-height: 70%;
-  pointer-events: none;
+  width: 70%;
+  height: 70%;
 }
+
+.searchIcon {
+  width: 70px;
+  height: 70px;
+}
+
 
 .hidden {
   display: none !important;
 }
-
-.linkItem {
-  border-radius: 15px;
-}
-
 
 .largeText {
   font-size: xx-large;
@@ -73,25 +76,24 @@ body {
 
 .topBar {
   display: flex;
-  gap: 5px;
-  margin-bottom: 5px;
+  gap: 0.2em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
   align-items: center;
-  justify-content: center;
   height: 5vh;
-  overflow: hidden;
 }
 
 .sentenceDisplay {
+  box-shadow: 0 0 0 1px black;
+  background-color: #efefef;
   font-size: 3vh;
-  line-height: 100%;
   width: 100%;
   cursor: pointer;
+  overflow: hidden;
+  height: 1.2em;
 }
 
-ol {
-  all: unset;
-}
-
+ol,
 li {
   all: unset;
 }
@@ -107,10 +109,19 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 button:disabled {
-  background-color: grey;
+  filter: saturate(10%);
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+button:active {
+  filter: brightness(80%);
 }
 
 select {
@@ -132,12 +143,6 @@ select {
   box-shadow: 0 0 0 1px black;
 }
 
-.inlineSidebar {
-  box-shadow: 0 0 0 1px black;
-  background-color: rgba(122, 117, 117, 0.788);
-
-}
-
 .sidebarButton {
   box-shadow: 0 0 0 1px black;
   width: 100%;
@@ -147,7 +152,9 @@ select {
   z-index: -1;
 }
 
-.inlineSidebarButton{
+.inlineSidebarButton {
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 0 0 1px black;
   background-color: darkcyan;
   padding-top: 0.2em;
@@ -155,18 +162,14 @@ select {
   z-index: 1;
 }
 
-.sidebarButton:active, .inlineSidebarButton:active {
+.sidebarButton:active,
+.inlineSidebarButton:active {
   background-color: rgb(3, 99, 99);
 }
 
-.playbackButton {
-  /* background-color: aqua; */
-  height: 100%;
-  width: max-content;
-}
-
-.playbackButton > img {
-  /* background-color: red; */
+.playbackButton>img {
+  /* icons to near white #efefef */
+  filter: var(--icon-filter);
   height: 2rem;
   width: 2rem;
 }
@@ -178,7 +181,47 @@ select {
   justify-content: left;
 }
 
+.flex-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.grid {
+  display: grid;
+  /* max-width: 100px; */
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.colourInput {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0 0 1px black;
+}
+
 /* Cols */
+
+/* Not used for boards */
+.two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nine-cols {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+/* Boards */
 
 .cols-3 {
   grid-template-columns: repeat(3, var(--grid-size));
@@ -288,14 +331,23 @@ select {
   background-color: white;
 }
 
+.blank {
+  background-color: var(--background-colour);
+}
+
 .grammarMarkerColour {
   background-color: rgb(177, 156, 217);
 }
 
 .linkColour {
   background-color: darkcyan;
+  border-radius: 15px;
 }
 
-.editMode{
+.editMode {
   background-color: rgb(153, 71, 149);
+}
+
+.dimmed {
+  filter: brightness(20%) !important;
 }

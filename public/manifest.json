@@ -1,41 +1,48 @@
 {
-
-"name": "AACore",
-"short_name": "AACore",
-"start_url": "/",
-"display": "fullscreen",
-"description": "An Open Source PWA for Augmentative and Alternative Commication",
-"lang": "english",
-"dir": "auto",
-"theme_color": "#000000",
-"background_color": "#faebd7",
-"orientation": "landscape",
-"screenshots": [{}], 
-"icons": [
-  {
-    "src": "./resouces/favicon_128px.png",
-    "sizes": "128x128",
-    "type": "image/png",
-    "purpose": "maskable"
-  },
-  {
-    "src": "./resouces/favicon_128px.png",
-    "sizes": "128x128",
-    "type": "image/png",
-    "purpose": "any"
-  },
-  {
-    "src": "./resouces/favicon_512px.png",
-    "sizes": "512x512",
-    "type": "image/png",
-    "purpose": "any"
-  }
-],
-"shortcuts": [
-  {
-    "name":"AACore",
-    "url":"/",
-    "description":"Open the app"
-  }
-]
+  "name": "AACore",
+  "short_name": "AACore",
+  "start_url": "/",
+  "display": "fullscreen",
+  "description": "An Open Source PWA for Augmentative and Alternative Commication",
+  "lang": "english",
+  "dir": "auto",
+  "theme_color": "#000000",
+  "background_color": "#faebd7",
+  "orientation": "landscape",
+  "screenshots": [
+    {
+      "src": "./resouces/screenshot.png",
+      "sizes": "1508x947",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Expanded board"
+    }
+  ],
+  "icons": [
+    {
+      "src": "./resouces/favicon_128px.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./resouces/favicon_128px.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./resouces/favicon_512px.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AACore",
+      "url": "/",
+      "description": "Open the app"
+    }
+  ]
 }

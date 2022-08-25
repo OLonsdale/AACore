@@ -1,8 +1,19 @@
 "use strict";
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js').then(registration => {
+      console.log('SW registered: ', registration);
+    }).catch(registrationError => {
+      console.log('SW registration failed: ', registrationError);
+    });
+  });
+}
+
 import { expanded } from "./board-sets/expanded.js";
 import { initial } from "./board-sets/initial.js";
 import { standard } from "./board-sets/standard.js";
+import { ttsKeyboard } from "./board-sets/tts-keyboard.js";
 // Basic, Main, Toys, Learn, Topic, Body, Home, Food, Drinks, People, Feelings
 
 let boards = {};
@@ -10,6 +21,13 @@ let boards = {};
 //takes all the board files and the boards in local storage and puts them into one object
 //should maybe check for duplicate boards and alert user, currently overides
 function blendBoards() {
+  if (
+    JSON.parse(localStorage.getItem("customBoards")) === null ||
+    JSON.parse(localStorage.getItem("customBoards")) === ""
+  ) {
+    localStorage.setItem("customBoards", "{}");
+  }
+
   //patch for old custom boards, to remove next update
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
 
@@ -22,12 +40,13 @@ function blendBoards() {
     }
   }
 
-  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
 
   boards = {
     ...initial,
     ...standard,
     ...expanded,
+    ...ttsKeyboard,
     ...customBoards,
   };
 }
@@ -50,30 +69,15 @@ let unlockAttempt = [];
 let sentenceAutoDelete = localStorage.getItem("sentenceAutoDelete") || true;
 let editMode = false;
 
-//load selected font
-document.documentElement.style.setProperty(
-  "--font",
-  localStorage.getItem("selectedFont")
-);
-
-//set background colour
-document.documentElement.style.setProperty(
-  "--background-colour",
-  localStorage.getItem("selectedBackgroundColour")
-);
+let activeSearch;
 
 //change font to selected font in dropdown
 fontSelectionDropdown.addEventListener("change", () => {
+  console.log("Font selected");
   const root = document.documentElement;
   localStorage.setItem("selectedFont", fontSelectionDropdown.value);
   root.style.setProperty("--font", localStorage.getItem("selectedFont"));
 });
-
-backgroundColourSelection.addEventListener("input", () => {
-  console.log("background colour changed")
-  localStorage.setItem("selectedBackgroundColour", backgroundColourSelection.value);
-  document.documentElement.style.setProperty("--background-colour", backgroundColourSelection.value);
-})
 
 editModeCheckbox.addEventListener("change", toggleEditMode);
 
@@ -97,9 +101,10 @@ function toggleEditMode() {
 }
 
 toggleSettingsButton.addEventListener("click", () => {
-  sidebarSettings.classList.toggle("hidden")
-})
+  sidebarSettings.classList.toggle("hidden");
+});
 
+//
 saveBoardEditButton.addEventListener("click", saveBoardEdit);
 //renames boards and changes whether they show on the sidebar via a menu shown in the main sidebar when edit mode is enabled.
 function saveBoardEdit() {
@@ -173,6 +178,8 @@ function showSidebar() {
     loadButton.addEventListener("click", () => {
       localStorage.setItem("currentBoardName", board);
       localStorage.setItem("currentSet", board);
+      clearWordSearchButton.click();
+      activeSearch = "";
       drawBoard(board);
     });
 
@@ -182,8 +189,14 @@ function showSidebar() {
       premadeBoardSelectionList.append(loadButton);
     }
   }
+
+  if (customBoardSelectionList.innerHTML != "") {
+    customBoardsHeader.classList.remove("hidden");
+  } else customBoardsHeader.classList.add("hidden");
+
   fontSelectionDropdown.value = localStorage.getItem("selectedFont");
-  backgroundColourSelection.value = localStorage.getItem("selectedBackgroundColour");
+  darkModeCheckbox.checked = JSON.parse(localStorage.getItem("darkTheme"));
+  speakOnAddCheckbox.checked = JSON.parse(localStorage.getItem("speakOnAdd"));
 }
 
 deleteCurrentBoardButton.addEventListener("click", () => {
@@ -224,7 +237,7 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
 
   //actually copy the board, sets attributes
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
-  customBoards[newName] = boards[oldName];
+  customBoards[newName] = JSON.parse(JSON.stringify(boards[oldName]));
   customBoards[newName].topLevel = true;
   customBoards[newName].customBoard = true;
   delete customBoards[newName].name;
@@ -237,33 +250,110 @@ duplicateCurrentBoardButton.addEventListener("click", () => {
   showSidebar();
 });
 
+duplicateCurrentSetButton.addEventListener("click", duplicateSet);
+
+function duplicateSet() {
+  let current = localStorage.getItem("currentBoardName");
+  if (!(current === "expanded" || current === "standard")) {
+    alert("Please select (from the sidebar) the set you want to duplicate");
+    return;
+  }
+  let newName = window.prompt("Enter the new prefix for the set", "new");
+  if (!newName || newName === "expanded" || newName === "standard") {
+    alert("Please enter a new (unique) prefix for the set");
+    return;
+  }
+
+  let newSet = JSON.stringify(standard);
+  newSet = newSet.replaceAll(current, newName);
+  newSet = JSON.parse(newSet);
+  newName = `${newName}-${current}`;
+  let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+
+  for (const board in newSet) {
+    if (Object.hasOwnProperty.call(newSet, board)) {
+      const currentBoard = newSet[board];
+      if (currentBoard.name) delete currentBoard.name;
+      currentBoard.customBoard = true;
+    }
+  }
+
+  customBoards = { ...customBoards, ...newSet };
+  console.log(customBoards);
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
+  blendBoards();
+  closeAllSidebars();
+  showSidebar();
+}
+
 findWordInput.addEventListener("input", () => {
   findWord(findWordInput.value);
 });
 
+//displays the route to a given word from within the active set
 function findWord(word) {
-  console.log("searched");
   const resultsElement = document.getElementById("wordSearchResultsElement");
   resultsElement.innerHTML = "";
   if (!word) return;
+
   const results = findPathToWord(word);
+
+  let outOfSetResults = false;
+
   results.forEach((result) => {
-    if (result.includes(localStorage.getItem("currentSet"))) {
-      const text = document.createElement("p");
-      text.innerHTML = `<b>${result}</b>`;
-      resultsElement.append(text);
-    }
+    if (result.path.includes(localStorage.getItem("currentSet"))) {
+      let tile = document.createElement("button");
+      tile.classList.add("inlineSidebarButton");
+      let label = document.createElement("label");
+      label.innerText = result.path.at(-1);
+
+      if (result.target.iconLink || result.target.iconName) {
+        let img = document.createElement("img");
+
+        img.src =
+          result.target.iconLink ||
+          `./resouces/icons/${result.target.iconName}.webp`;
+
+        img.classList.add("searchIcon");
+
+        tile.title = result.path.join("⇾");
+
+        tile.append(img);
+      } else {
+        let text = document.createElement("p");
+        text.innerText = result.target.displayName;
+        text.classList.add("largeText");
+        tile.append(text);
+      }
+      tile.append(label);
+      tile.addEventListener("click", () => {
+        activeSearch = result;
+        drawBoard(localStorage.getItem("currentBoardName"));
+        closeAllSidebars();
+      });
+
+      resultsElement.classList.add("cols-2");
+      resultsElement.append(tile);
+    } else outOfSetResults = true;
   });
   if (results.length === 0 && findWordInput.value) {
-    console.log("no results");
     const text = document.createElement("p");
-    text.innerHTML = `<b>No Results</b>`;
+    text.innerHTML = `<b>No results</b>`;
+    resultsElement.classList.remove("cols-2");
+    resultsElement.append(text);
+  }
+
+  if (outOfSetResults && resultsElement.innerHTML === "") {
+    const text = document.createElement("p");
+    text.innerHTML = `<b>No results in current set</b>`;
+    resultsElement.classList.remove("cols-2");
     resultsElement.append(text);
   }
 }
 
+//generates an array of paths to the given word
 function findPathToWord(word) {
-  const paths = [];
+  const routes = [];
 
   for (const board in boards) {
     //don't even know what this check's for, it's just added by the IDE so I left it in
@@ -272,20 +362,26 @@ function findPathToWord(word) {
     if (
       (board === "expanded-am" || board === "standard-am") &&
       (word != "am" || word != "Am")
-    ) {
+    )
       continue;
-    }
 
     const currentBoard = boards[board];
 
     currentBoard.tiles.forEach((tile) => {
-      if (!tile.displayName || tile.type === "link") return;
-      if (tile.displayName.toLowerCase() === word.toLowerCase()) {
-        paths.push(`${currentBoard.path} ⇨ ${word.toLowerCase()}`);
+      if (!tile.displayName || tile.type === "link" || tile.type === "blank")
+        return;
+      if (
+        tile.displayName.toLowerCase().replaceAll("⠀", "") ===
+        word.toLowerCase()
+      ) {
+        routes.push({
+          target: tile,
+          path: currentBoard.path,
+        });
       }
     });
   }
-  return paths || null;
+  return routes;
 }
 
 clearWordSearchButton.addEventListener("click", () => {
@@ -298,6 +394,39 @@ function closeAllSidebars() {
   createBoardSidebar.classList.add("hidden");
   editTileSidebar.classList.add("hidden");
   aboutSidebar.classList.add("hidden");
+  findIconSidebar.classList.add("hidden");
+  exportSidebar.classList.add("hidden");
+}
+
+function showExportSidebar() {
+  closeAllSidebars();
+
+  for (const boardName in boards) {
+    if (Object.hasOwnProperty.call(boards, boardName)) {
+      const board = boards[boardName];
+      if (!board.customBoard) continue;
+
+      let div = document.createElement("div");
+      div.classList.add("displayFlexRow");
+
+      let input = document.createElement("input");
+      input.id = `${boardName}Checkbox`;
+      input.type = "checkbox";
+      input.name = "board";
+      input.value = boardName;
+
+      let label = document.createElement("label");
+      label.htmlFor = `${boardName}Checkbox`;
+      label.innerText = boardName;
+
+      div.append(input);
+      div.append(label);
+
+      boardExportList.append(div);
+    }
+  }
+
+  exportSidebar.classList.remove("hidden");
 }
 
 function showAbout() {
@@ -338,31 +467,95 @@ function showEditTileSidebar() {
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
 }
 
+function showFindIconSidebar() {
+  findIconSidebar.classList.remove("hidden");
+}
+
+openIconSearchButton.addEventListener("click", () => {
+  closeAllSidebars();
+  iconSearchBar.value = displayNameInput.value;
+  if (iconSearchBar.value) {
+    searchForIcons.click();
+  }
+  showFindIconSidebar();
+});
+
+backToEditTileButton.addEventListener("click", () => {
+  closeAllSidebars();
+  showEditTileSidebar();
+});
+
+searchForIcons.addEventListener("click", searchIcons);
+
+async function searchIcons() {
+  iconResults.innerHTML = "";
+  let searchTerm = iconSearchBar.value;
+  if (!searchTerm) return;
+  console.log(`Searching for ${searchTerm}`);
+  let searchResults = await fetch(
+    `https://www.opensymbols.org/api/v1/symbols/search?q=${searchTerm}`
+  );
+  searchResults = await searchResults.json();
+
+  searchResults.forEach((icon) => {
+    let element = document.createElement("img");
+    element.classList.add("inlineSidebarButton");
+    element.src = icon.image_url;
+    element.width = 75;
+    element.height = 75;
+
+    element.addEventListener("click", () => {
+      iconLinkInput.value = icon.image_url;
+      showEditTileSidebar();
+    });
+
+    iconResults.append(element);
+  });
+
+  if (searchResults.length === 0) {
+    iconResults.innerHTML = "<a></a><b>No Results</b>";
+  }
+}
+
 //hides and shows the sidebar
 sidebarButton.addEventListener("click", showSidebar);
 
 createBoardMenuButton.addEventListener("click", showCreateBoardSidebar);
 
-exportBoardButton.addEventListener("click", exportBoard);
+openExportSidebarButton.addEventListener("click", showExportSidebar);
 
-function exportBoard() {
-  const filename = `${localStorage.getItem("currentBoardName")}.json`;
-  const jsonStr = JSON.stringify(
-    boards[localStorage.getItem("currentBoardName")]
-  );
+exportBoardsButton.addEventListener("click", exportBoards);
 
+function exportBoards() {
+  const offset = new Date().getTimezoneOffset();
+  let date = new Date(new Date().getTime() - offset * 60 * 1000);
+  let formattedDate = date.toISOString().replace("T", "--").slice(0, -5);
+  const filename = `boards-${formattedDate}.json`;
+  //could use a map or something here
+  let exportList = [];
+  Array.from(boardExportList).forEach((checkbox) => {
+    if (checkbox.checked) {
+      exportList.push(checkbox.value);
+    }
+  });
+
+  let output = {};
+  exportList.forEach((item) => {
+    output[item] = JSON.parse(JSON.stringify(boards[item]));
+  });
+
+  const jsonString = JSON.stringify(output);
+
+  //make invisible element, add properties, then click it to trigger download
   const element = document.createElement("a");
   element.setAttribute(
     "href",
-    "data:text/plain;charset=utf-8," + encodeURIComponent(jsonStr)
+    "data:application/json;charset=utf-8," + encodeURIComponent(jsonString)
   );
   element.setAttribute("download", filename);
-
   element.style.display = "none";
   document.body.appendChild(element);
-
   element.click();
-
   document.body.removeChild(element);
 }
 
@@ -380,23 +573,62 @@ importInput.addEventListener("change", (ev) => {
       }
       JSON.parse(event.target.result);
     } catch (error) {
-      alert("Invalid File");
-      console.alert("Attempted to load invalid file");
+      alert("This file could not be read");
+      console.error("Attempted to load invalid file", error);
     }
 
-    const newBoard = JSON.parse(event.target.result);
-    newBoard.customBoard = true;
-    delete newBoard.name;
-    const customBoards = JSON.parse(localStorage.getItem("customBoards"));
-    customBoards[ev.target.files[0].name.replace(".json", "")] = newBoard;
+    const newBoards = JSON.parse(event.target.result);
+    let customBoards = JSON.parse(localStorage.getItem("customBoards"));
+
+    Object.keys(newBoards).forEach((key) => {
+      if (customBoards.hasOwnProperty(key)) {
+        if (!confirm(`Old "${key}" will be overridden?`)) {
+          delete newBoards[key];
+        }
+      }
+    });
+
+    customBoards = { ...customBoards, ...newBoards };
+
     localStorage.setItem("customBoards", JSON.stringify(customBoards));
-    console.log("custom board imported");
+    console.log("custom boards imported");
     blendBoards();
+    drawBoard(localStorage.getItem("currentBoardName"));
     showSidebar();
   });
 
   reader.readAsText(fileList[0]);
 });
+
+goOfflineButton.addEventListener("click", drawAllBoards);
+function drawAllBoards() {
+  const boardNames = Object.keys(boards);
+
+  // It will take around ${Math.floor(
+  //   (boardNames.length * 2) / 60
+  // )} minutes to complete.
+
+  if (
+    !confirm(
+      `This will load the icons for all boards so it can be used without the internet`
+    )
+  )
+    return;
+
+  let i = 0;
+
+  const loop = setInterval(() => {
+    if (i != boardNames.length) {
+      drawBoard(boardNames[i]);
+      console.log(boardNames[i]);
+      i++;
+    } else {
+      console.log("Done");
+      alert("Preloading completed");
+      clearInterval(loop);
+    }
+  }, 200);
+}
 
 function createNewBoard() {
   const boardName = nameInput.value;
@@ -427,7 +659,7 @@ function createNewBoard() {
     customBoard: true,
   };
 
-  localStorage.setItem("customBoards", JSON.stringify(customBoards))
+  localStorage.setItem("customBoards", JSON.stringify(customBoards));
 
   blendBoards();
   drawBoard(boardName);
@@ -465,49 +697,47 @@ function editTile() {
     return;
   }
 
-  if (!displayNameInput.value && tileTypeInput.value !== "blank") {
-    alert("You must enter a display name if the tile is not blank");
-    return;
-  }
-
   const board = boards[localStorage.getItem("currentBoardName")];
   const selectedTile = board.tiles[selectedTileNumber.value];
-  selectedTile.displayName = displayNameInput.value;
+  selectedTile.displayName = displayNameInput.value
+  selectedTile.pronounciation = pronounciationInput.value;
   selectedTile.type = tileTypeInput.value;
   selectedTile.iconLink = iconLinkInput.value;
-  selectedTile.pronounciation = pronounciationInput.value;
+  selectedTile.iconName = iconNameInput.value;
   selectedTile.pastForm = pastInput.value;
   selectedTile.pastPronounciation = pastPronounciationInput.value;
   selectedTile.pluralForm = pluralInput.value;
   selectedTile.pluralFormPronounciation = pluralPronounciationInput.value;
   selectedTile.negativeForm = negationInput.value;
   selectedTile.negativeFormPronounciation = negationPronounciationInput.value;
-  selectedTile.iconName = iconNameInput.value;
   selectedTile.linkTo = linkToInput.value;
   selectedTile.colour = colourInput.value;
 
-  console.log(selectedTile);
-
-  Object.keys(board).forEach((key) => {
-    if (board[key] === "") {
-      delete board[key];
+  //removes empty props from tile, not board.
+  Object.keys(selectedTile).forEach((key) => {
+    if (selectedTile[key] === "") {
+      delete selectedTile[key];
     }
   });
 
   const saveName = localStorage.getItem("currentBoardName");
   const customBoards = JSON.parse(localStorage.getItem("customBoards"));
   customBoards[saveName] = board;
-
+  console.log("Selected tile edited");
   localStorage.setItem("customBoards", JSON.stringify(customBoards));
   blendBoards();
   drawBoard(localStorage.getItem("currentBoardName"));
 }
 
-window.addEventListener("resize", sizeGrid)
-window.addEventListener("scroll",sizeGrid)
+window.addEventListener("resize", sizeGrid);
+window.addEventListener("scroll", sizeGrid);
+
+//bad
+// setInterval(sizeGrid, 1000);
 
 //still imperfect
 function sizeGrid() {
+  // console.log("sized")
   const board = boards[localStorage.getItem("currentBoardName")];
 
   const tileWidth = Math.floor(window.innerWidth / board.columns);
@@ -515,19 +745,11 @@ function sizeGrid() {
     (window.innerHeight - topBar.offsetHeight) / board.rows
   );
 
-  const itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - 5;
+  const itemSize = (tileWidth > tileHeight ? tileHeight : tileWidth) - 1;
 
   const root = document.documentElement;
   root.style.setProperty("--grid-size", itemSize + "px");
 }
-
-tileTypeInput.addEventListener("change", () => {
-  if (tileTypeInput.value === "textOnly" || tileTypeInput.value === "blank") {
-    iconTileSettings.classList.add("hidden");
-  } else {
-    iconTileSettings.classList.remove("hidden");
-  }
-});
 
 toggleEditTileExtra.addEventListener("click", () => {
   editTileExtra.classList.toggle("hidden");
@@ -569,19 +791,24 @@ function drawBoard(name) {
 
   sizeGrid();
 
+  let output = document.createDocumentFragment();
+
+  let hasTarget = false;
+
   //for each tile
   board.tiles.forEach((tile) => {
     //create button
     const tileElement = document.createElement("button");
     tileElement.classList.add("item");
-    tileElement.id = board.tiles.indexOf(tile);
-    const li = document.createElement("li");
 
+    tileElement.id = board.tiles.indexOf(tile);
+
+    //open and populate edit tile menu when clicked in edit mode
     tileElement.addEventListener("click", () => {
       if (editMode) {
         selectedTileNumber.value = tileElement.id;
         displayNameInput.value = tile.displayName || "";
-        tileTypeInput.value = tile.type || "blank";
+        tileTypeInput.value = tile.type || "regular";
         pronounciationInput.value = tile.pronounciation || "";
         pastInput.value = tile.pastForm || "";
         pastPronounciationInput.value = tile.pastPronounciation || "";
@@ -599,66 +826,91 @@ function drawBoard(name) {
       }
     });
 
-    //if blank, just add streight to board and return
-    if (tile.type === "blank") {
-      li.append(tileElement);
-      boardSection.append(li);
-      return;
-    }
+    if (activeSearch) {
+      tileElement.classList.add("dimmed");
 
-    //if not blank, add what is common to all tiles
-    tileElement.classList.add(tile.colour); //sets colour
-    tileElement.append(tile.displayName);
-
-    //then add conditional elements. Avoiding elses for clarity.
-    if (tile.type !== "textOnly") {
-      const image = new Image();
-      image.src = tile.iconLink || `./resouces/icons/${tile.iconName}.webp`;
-      image.classList.add("icon");
-      tileElement.append(image);
-    }
-
-    if (tile.type === "grammarMarker") {
-      if (editMode) return;
-      tileElement.addEventListener("click", () => {
-        applyGrammarMarker(tile.internalName);
-      });
-      li.append(tileElement);
-      boardSection.append(li);
-      return;
-    }
-
-    if (tile.type === "textOnly") {
-      tileElement.classList.add("largeText");
-    }
-
-    if (tile.linkTo) {
-      tileElement.addEventListener("click", () => {
-        if (!editMode) {
-          drawBoard(tile.linkTo);
+      if (tile.displayName) {
+        if (
+          activeSearch.path.includes(tile.displayName.toLowerCase()) &&
+          tile.type === "link"
+        ) {
+          tileElement.classList.remove("dimmed");
+          hasTarget = true;
         }
-      });
+
+        if (activeSearch.target === tile) {
+          tileElement.classList.remove("dimmed");
+          hasTarget = true;
+        }
+      }
     }
 
-    if (tile.type === "link") {
-      tileElement.classList.add("linkItem");
-    }
+    if (tile.type !== "blank") {
+      //Colour
+      if (tile.colour) {
+        tileElement.classList.add(tile.colour);
+      }
+      //Tile Label
+      if (tile.displayName) {
+        tileElement.innerHTML = `<label class="tileLabel">${tile.displayName}</label>`;
+      }
 
-    if (tile.type !== "link") {
+      //Tile image
+      if (tile.iconLink) {
+        tileElement.innerHTML += `<img src="${tile.iconLink}" class="icon">`;
+      } else if (tile.iconName) {
+        tileElement.innerHTML += `<img src="./resouces/icons/${tile.iconName}.webp" class="icon">`;
+      } else if (tile.displayName) {
+        tileElement.classList.add("largeText");
+      }
+
       tileElement.addEventListener("click", () => {
-        if (!editMode) {
+        if (editMode) return;
+
+        if (tile.type === "grammarMarker") {
+          applyGrammarMarker(tile.internalName);
+          return;
+        }
+
+        //annoying. draws board and doesn't speak if link,
+        //but if not link, checks again after speaking to return from sub-boards to
+        if (tile.type === "link") {
+          drawBoard(tile.linkTo);
+        } else {
+          //add to sentence and speak if desired
           sentence.push(tile);
           updateSentence();
-          const word = tile.pronounciation || tile.displayName;
-          speak(word);
+          if (JSON.parse(localStorage.getItem("speakOnAdd"))) {
+            const word = tile.pronounciation || tile.displayName;
+            speak(word);
+          }
+          if (activeSearch) {
+            activeSearch = "";
+            if (tile.linkTo) drawBoard(tile.linkTo);
+            else drawBoard(localStorage.getItem("currentBoardName"));
+          }
+          if (tile.linkTo) {
+            drawBoard(tile.linkTo);
+            return;
+          }
         }
       });
+    } else {
+      tileElement.classList.add("blank");
     }
 
-    //adds it to dom
+    //adds it to output
+    const li = document.createElement("li");
     li.append(tileElement);
-    boardSection.append(li);
+    output.appendChild(li);
   });
+
+  //appends output to the dom
+  boardSection.appendChild(output);
+
+  if (activeSearch && !hasTarget) {
+    document.getElementById("0").classList.remove("dimmed");
+  }
 }
 
 lockSidebarButton.addEventListener("click", () => {
@@ -685,15 +937,13 @@ deleteLastButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", clearSentence);
 
-//todo, combine grammar markers
-//makes the last word plural, if plural form specified
-
 function applyGrammarMarker(type) {
   if (sentence.length === 0) return;
+  //copy by value not reference
   const last = JSON.parse(JSON.stringify(sentence[sentence.length - 1]));
   const lastInitial = last.pronounciation || last.displayName;
 
-  console.log(type);
+  console.log("Converting last word to " + type);
 
   last.pronounciation =
     last[`${type}FormPronounciation`] ||
@@ -717,10 +967,12 @@ function updateSentence() {
   const sentenceDisplayArray = sentence.map((tile) => tile.displayName);
 
   //dirty hack for getting consecutive letters/numbers from keyboard to be spoken as a single word
-  sentenceDisplayElement.value = sentenceDisplayArray
+  sentenceDisplayElement.innerHTML = sentenceDisplayArray
     .join(" ")
     .replaceAll("⠀ ⠀", "")
     .replaceAll("⠀", "");
+
+  sentenceDisplayElement.scrollTop = sentenceDisplayElement.scrollHeight;
 }
 
 //speaks whatever is passed to it
@@ -811,6 +1063,19 @@ Array.from(document.getElementsByClassName("closeSidebarButton")).forEach(
   }
 );
 
+darkModeCheckbox.addEventListener("click", () => {
+  localStorage.setItem("darkTheme", JSON.stringify(darkModeCheckbox.checked));
+  loadTheme();
+});
+
+speakOnAddCheckbox.addEventListener("click", () => {
+  localStorage.setItem(
+    "speakOnAdd",
+    JSON.stringify(speakOnAddCheckbox.checked)
+  );
+  loadTheme();
+});
+
 //lock screen generates four random numbers between 0 and 100
 //and randomly selects ascending or descending order
 //the numbers are put into buttons, and must be clicked in the order chosen
@@ -852,7 +1117,7 @@ function showLockScreen() {
     button.textContent = number;
     button.classList.add("sidebarButton");
 
-    //the logic for the unlocking is contained in the event listner and the global variables at the top
+    //the logic for the unlocking is contained in the event listener and the global variables at the top
     //disables the button when clicked, and adds the value to "unlock attempt"
     //if the length of unlock attempt is 4, check sort the "numbers" array containing the password,
     //based on the randomly chosen method, asc/desc,
@@ -877,7 +1142,7 @@ function showLockScreen() {
           sidebarLocked = false;
           localStorage.setItem("sidebarLocked", false);
           showSidebar();
-        } else alert("wrong order, try again");
+        } else alert("That was not correct, please try again");
         closePasswordButton.click(); //dirty
       }
     });
@@ -887,13 +1152,17 @@ function showLockScreen() {
 
   document.body.prepend(popup);
 }
+// set the colours depending on the value of "dark theme" in local storage
+function loadTheme() {
+  if (JSON.parse(localStorage.getItem("darkTheme"))) {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+}
 
 if (!localStorage.getItem("selectedFont")) {
   localStorage.setItem("selectedFont", "Helvetica, sans-serif");
-}
-
-if (!localStorage.getItem("selectedBackgroundColour")) {
-  localStorage.setItem("selectedBackgroundColour", "#faebd7");
 }
 
 if (!localStorage.getItem("currentBoardName")) {
@@ -905,11 +1174,10 @@ if (!localStorage.getItem("currentSet")) {
 }
 
 if (
-  !localStorage.getItem("customBoards") ||
-  localStorage.getItem("customBoards") === ""
+  JSON.parse(localStorage.getItem("customBoards")) === null ||
+  JSON.parse(localStorage.getItem("customBoards")) === ""
 ) {
-  const customBoards = {};
-  localStorage.setItem("customBoards", JSON.stringify(customBoards));
+  localStorage.setItem("customBoards", "{}");
 }
 
 if (!localStorage.getItem("sidebarLocked")) {
@@ -920,12 +1188,36 @@ if (!localStorage.getItem("sentenceAutoDelete")) {
   localStorage.setItem("sentenceAutoDelete", true);
 }
 
+if (!localStorage.getItem("speakOnAdd")) {
+  localStorage.setItem("speakOnAdd", true);
+}
+
 if (!localStorage.getItem("firstVisit")) {
   localStorage.setItem("firstVisit", false);
   showAbout();
 }
 
+//create dark theme local storage file, checks the default theme as defined by the system
+if (!localStorage.getItem("darkTheme")) {
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  if (darkThemeMq.matches) {
+    localStorage.setItem("darkTheme", "true");
+    console.log("set dark theme as default");
+  } else {
+    localStorage.setItem("darkTheme", "false");
+    console.log("set light theme as default");
+  }
+}
+
+//load selected font
+document.documentElement.style.setProperty(
+  "--font",
+  localStorage.getItem("selectedFont")
+);
+
 //loads board from localstorage to keep same board on page refresh
 drawBoard(localStorage.getItem("currentBoardName"));
+
+loadTheme();
 
 populateVoiceList();
