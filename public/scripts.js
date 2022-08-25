@@ -23,7 +23,8 @@ function clearSW() {
       clients.forEach((client) => client.navigate(client.url));
     });
 }
-clearSWButton.addEventListener("click", () => {
+document.getElementById("clearSWButton").addEventListener("click", () => {
+  console.log("clear sw button clicked")
   if(confirm("Clear service worker (if you don't know what this means, click \"cancel\")")){
     clearSW()
   }
