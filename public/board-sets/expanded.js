@@ -839,7 +839,7 @@ const expanded = {
       },
       {
         type: "grammarMarker",
-        displayName: "negation",
+        displayName: "-n't",
         iconName: "negation",
         colour: "grammarMarkerColour",
         internalName: "negative",
@@ -1037,7 +1037,13 @@ const expanded = {
         colour: "linkColour",
         linkTo: "expanded",
       },
-      { type: "blank" },
+      {
+        type: "regular",
+        displayName: "fun",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20have%20fun_1.png.varianted-skin.png",
+        linkTo: "expanded",
+        colour: "blue",
+      },
       {
         type: "link",
         displayName: "Toys",
@@ -1170,7 +1176,7 @@ const expanded = {
         type: "regular",
         displayName: "climb",
         pastForm: "climbed",
-        pluralForm: "climbing",
+        pluralForm: "climbs",
         iconName: "climb",
         colour: "green",
         linkTo: "expanded",
@@ -1226,8 +1232,8 @@ const expanded = {
       {
         type: "regular",
         displayName: "pull",
-        pastForm: "Pulled",
-        pluralForm: "Pulls",
+        pastForm: "pulled",
+        pluralForm: "pulls",
         iconName: "pull",
         colour: "green",
         linkTo: "expanded",
@@ -1251,7 +1257,7 @@ const expanded = {
   "expanded-fun-toys": {
     rows: 6,
     columns: 10,
-    path: ["expanded", "food", "toys"],
+    path: ["expanded", "fun", "toys"],
     tiles: [
       {
         type: "link",
@@ -1279,9 +1285,9 @@ const expanded = {
       {
         type: "regular",
         displayName: "ball",
-        pluralFormPronounciation: "balls",
+        pluralForm: "balls",
         iconName: "ball",
-        linkTo: "standard",
+        linkTo: "expanded",
         colour: "orange",
       },
       {
@@ -1338,15 +1344,16 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stretchy.png.varianted-skin.png",
         iconName: "stretchy bands",
         linkTo: "expanded",
-        colour: "orange",
+        colour: "blue",
       },
       {
         type: "regular",
         displayName: "wind up",
+        pronounciation: "wined up",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/toy%20race%20car.png",
         linkTo: "expanded",
-        colour: "orange",
+        colour: "green",
       },
       { type: "blank" },
       {
@@ -1376,6 +1383,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "fidget",
+        pluralForm: "fidgets",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/koosh%20ball.svg",
         linkTo: "expanded",
@@ -1400,6 +1408,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "water pistol",
+        pluralForm: "water pistols",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/water%20pistol.svg",
         linkTo: "expanded",
@@ -1408,6 +1417,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "play doh",
+        pronounciation:"play dough",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/playdough.svg",
         linkTo: "expanded",
@@ -1491,7 +1501,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/spring_1.png",
         linkTo: "expanded",
-        colour: "orange",
+        colour: "blue",
       },
       { type: "blank" },
       { type: "blank" },
@@ -1523,6 +1533,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "ghost",
+        pluralForm:"ghosts",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ghost_20_g.svg",
         linkTo: "expanded",
@@ -1568,6 +1579,8 @@ const expanded = {
       {
         type: "regular",
         displayName: "line",
+        pluralForm:"lines",
+        pastForm:"lined",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/line_1.png.varianted-skin.png",
         linkTo: "expanded",
@@ -1633,6 +1646,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "piece",
+        pluralForm:"pieces",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/counters.svg",
         linkTo: "expanded",
@@ -1641,6 +1655,8 @@ const expanded = {
       {
         type: "regular",
         displayName: "point",
+        pluralForm:"points",
+        pastForm:"pointed",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/points.png",
         linkTo: "expanded",
@@ -1778,6 +1794,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "card",
+        pluralForm:"cards",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/playing%20card%20picture.svg.varianted-skin.svg",
         linkTo: "expanded",
@@ -1869,6 +1886,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/soccer.png.variant-medium.png",
         pluralForm: "footballs",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1876,6 +1894,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rugby.png.variant-dark.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1883,6 +1902,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/basketball.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1890,6 +1910,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20bowling.png.variant-medium-dark.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -1899,6 +1920,7 @@ const expanded = {
         pastForm: "missed",
         pluralForm: "misses",
         colour: "green",
+        linkTo: "expanded",
       },
       {
         type: "blank",
@@ -1907,6 +1929,7 @@ const expanded = {
         pastForm: "aimed",
         pluralForm: "aims",
         colour: "green",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1915,6 +1938,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tennis%20racket-9e846f21ed.svg",
         pluralForm: "bats",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1922,6 +1946,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/net.png",
         colour: "orange",
+        linkTo: "expanded",
         pluralForm: "goals",
       },
       { type: "blank" },
@@ -1931,6 +1956,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tennis.png.varianted-skin.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1938,6 +1964,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/badminton_2.png.variant-medium-dark.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1945,6 +1972,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/cricket.svg.varianted-skin.svg",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1952,6 +1980,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20hockey_1.png.variant-medium.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1959,6 +1988,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20golf.png.variant-dark.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       { type: "blank" },
       { type: "blank" },
@@ -1970,6 +2000,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/team_2.png.varianted-skin.png",
         pluralForm: "teams",
         colour: "orange",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -1978,6 +2009,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pool%20snooker.svg.varianted-skin.svg",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -1985,13 +2017,16 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/play%20ping%20pong.png.variant-medium-light.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
-        displayName: "darts",
+        displayName: "dart",
+        pluralForm:"darts",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/darts.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       { type: "blank" },
       { type: "blank" },
@@ -2000,16 +2035,20 @@ const expanded = {
       {
         type: "regular",
         displayName: "match",
+        pluralForm:"matches",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20play%20rugby.png.variant-medium.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
         displayName: "competition",
+        pluralForm:"competitions",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/race.png.varianted-skin.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -2018,13 +2057,16 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice%20skate_1.png.variant-medium.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
-        displayName: "roller scate",
+        displayName: "roller skate",
+        pluralForm:"roller skates",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/roller%20skate_1.png.varianted-skin.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -2032,6 +2074,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/karate.png.variant-medium.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -2039,6 +2082,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/archery.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -2046,6 +2090,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20fight.png.varianted-skin.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -2053,6 +2098,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/boxing.png.variant-medium-dark.png",
         colour: "orange",
+        linkTo: "expanded",
       },
       { type: "blank" },
       {
@@ -2063,6 +2109,7 @@ const expanded = {
         pastForm: "aimed",
         pluralForm: "aims",
         colour: "green",
+        linkTo: "expanded",
       },
       {
         type: "regular",
@@ -2072,8 +2119,17 @@ const expanded = {
         pastForm: "missed",
         pluralForm: "misses",
         colour: "green",
+        linkTo: "expanded",
       },
-      { type: "blank" },
+      {
+        type: "regular",
+        displayName: "hit",
+        pluralForm: "hits",
+        iconLink:        
+          "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hit_11.png.varianted-skin.png",
+        colour: "green",
+        linkTo: "expanded",
+      },
       { type: "blank" },
       { type: "blank" },
       { type: "blank" },
@@ -2145,6 +2201,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "cello",
+        pluralForm:"cellos",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cello.png",
         linkTo: "expanded",
@@ -2153,6 +2210,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "harp",
+        pluralForm:"harps",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/harp.png",
         linkTo: "expanded",
@@ -2174,6 +2232,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "trumpet",
+        pluralForm:"trumpets",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/trumpet.png",
         linkTo: "expanded",
@@ -2182,6 +2241,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "horn",
+        pluralForm:"horns",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/horn_1.png",
         linkTo: "expanded",
@@ -2209,7 +2269,7 @@ const expanded = {
         displayName: "cymbal",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cymbals.png",
-        pluralForm: "symbals",
+        pluralForm: "cymbals",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -2225,6 +2285,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "xylophone",
+        pluralForm: "xylophones",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/xylophone.png",
         linkTo: "expanded",
@@ -2241,6 +2302,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "tambourine",
+        pluralForm:"tambourines",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/tambourine_1.png",
         linkTo: "expanded",
@@ -2259,6 +2321,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "wood",
+        pluralForm:"woods",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/wood.png",
         linkTo: "expanded",
@@ -2276,6 +2339,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "plastic",
+        pluralForm:"plastics",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plastic.png",
         linkTo: "expanded",
@@ -2285,6 +2349,8 @@ const expanded = {
       {
         type: "regular",
         displayName: "pop",
+        pastForm:"popped",
+        pluralForm:"pops",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/music%20shop.png",
         linkTo: "expanded",
@@ -2293,6 +2359,8 @@ const expanded = {
       {
         type: "regular",
         displayName: "rock",
+        pluralForm:"rocks",
+        pastForm:"rocked",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rock.png",
         linkTo: "expanded",
@@ -2343,6 +2411,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "metal",
+        pluralForm:"metals",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/metal.png",
         linkTo: "expanded",
@@ -2394,6 +2463,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "newspaper",
+        pluralForm:"newspapers",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/newspaper.png",
         linkTo: "expanded",
@@ -2402,6 +2472,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "advert",
+        pluralForm:"adverts",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/advertisement_1.png",
         linkTo: "expanded",
@@ -2482,6 +2553,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "album",
+        pluralForm:"albums",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/album.png.varianted-skin.png",
         linkTo: "expanded",
@@ -2513,6 +2585,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "beast",
+        pluralForm:"beasts",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/icon_archive/Green_Monster.png",
         linkTo: "expanded",
@@ -2556,6 +2629,8 @@ const expanded = {
       {
         type: "regular",
         displayName: "poison",
+        pluralForm:"poisons",
+        pastForm:"poisoned",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/poison.png",
         linkTo: "expanded",
@@ -2580,6 +2655,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "giant",
+        pluralForm:"giants",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/giant.png.varianted-skin.png",
         linkTo: "expanded",
@@ -2605,10 +2681,12 @@ const expanded = {
       {
         type: "regular",
         displayName: "curse",
+        pluralForm:"curses",
+        pastForm:"cursed",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cast%20a%20spell%20on.png.variant-medium-dark.png",
         linkTo: "expanded",
-        colour: "orange",
+        colour: "green",
       },
       {
         type: "regular",
@@ -2678,6 +2756,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "ogre",
+        pluralForm:"ogres",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ogre.png",
         linkTo: "expanded",
@@ -2704,6 +2783,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "princess",
+        pluralForm:"princesses",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/princess.png.variant-medium-dark.png",
         linkTo: "expanded",
@@ -2712,6 +2792,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "prince",
+        pluralForm:"princes",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/prince.png.variant-dark.png",
         linkTo: "expanded",
@@ -2720,6 +2801,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "fairy",
+        pluralForm:"fairies",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fairy.png",
         linkTo: "expanded",
@@ -2893,6 +2975,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "water tray",
+        pluralForm:"water trays",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/water%20table.svg.varianted-skin.svg",
         linkTo: "expanded",
@@ -2901,6 +2984,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "trampoline",
+        pluralForm:"trampolines",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/trampoline%20.png",
         linkTo: "expanded",
@@ -2909,6 +2993,8 @@ const expanded = {
       {
         type: "regular",
         displayName: "bike",
+        pluralForm:"bikes",
+        pastForm:"biked",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bike.png",
         linkTo: "expanded",
@@ -2920,6 +3006,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "ladder",
+        pluralForm:"ladders",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/step%20ladder.png",
         linkTo: "expanded",
@@ -2940,6 +3027,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "seesaw",
+        pluralForm:"seesaws",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/seesaw.png",
         linkTo: "expanded",
@@ -2948,6 +3036,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "scooter",
+        pluralForm:"scooter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/scooter.png",
         linkTo: "expanded",
@@ -2964,6 +3053,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "rocker",
+        pronounciation:"rock-er",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/Spring%20rider%20wobble.png",
         pluralForm: "rockers",
@@ -2992,6 +3082,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "electric",
+        pluralForm:"electrics",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/electricity.png",
         linkTo: "expanded",
@@ -3189,6 +3280,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "channel",
+        pluralForm:"channels",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/change%20channel.png.variant-medium-dark.png",
         linkTo: "expanded",
@@ -3354,7 +3446,7 @@ const expanded = {
         displayName: "cut",
         pluralForm: "cuts",
         iconName: "cut",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "green",
       },
       {
@@ -3364,21 +3456,21 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adhesive%20tape.png",
         pastForm: "stuck",
         pluralForm: "sticks",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "green",
       },
       {
         type: "regular",
         displayName: "glitter",
         iconName: "glitter",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "orange",
       },
       {
         type: "regular",
         displayName: "ruler",
         iconName: "ruler",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "orange",
       },
       { type: "blank" },
@@ -3417,7 +3509,7 @@ const expanded = {
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/scissors_4.png",
         pastForm: "painted",
         pluralForm: "paints",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "orange",
         iconName: "scissors",
       },
@@ -3427,7 +3519,7 @@ const expanded = {
         pastForm: "glued",
         pluralForm: "glues",
         iconName: "glue",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "green",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20paste_1.png.variant-medium.png",
@@ -3438,14 +3530,14 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/paper.png",
         pluralForm: "papers",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "orange",
       },
       {
         type: "regular",
         displayName: "sharpener",
         iconName: "sharpener",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "orange",
       },
       { type: "blank" },
@@ -3454,7 +3546,7 @@ const expanded = {
         displayName: "sharp",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sharp.svg",
-        linkTo: "expanded-topic",
+        linkTo: "expanded",
         colour: "blue",
       },
       { type: "blank" },
@@ -3593,15 +3685,17 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20cast%20a%20spell%20on.png.varianted-skin.png",
         colour: "green",
+        linkTo:"expanded",
       },
-      { type: "regular", displayName: "word", colour: "orange" },
+      { type: "regular", displayName: "word", colour: "orange", linkTo:"expanded", },
       {
         type: "regular",
         displayName: "letter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/a%20-%20lower%20case.svg",
         colour: "orange",
-        linkTo: "grammar",
+        linkTo:"expanded",
+
       },
       { type: "blank" },
       { type: "blank" },
@@ -3627,7 +3721,7 @@ const expanded = {
       { type: "regular", displayName: "⠀t⠀", colour: "white" },
       { type: "regular", displayName: "⠀y⠀", colour: "white" },
       { type: "regular", displayName: "⠀u⠀", colour: "white" },
-      { type: "regular", displayName: "i⠀ ⠀", colour: "white" },
+      { type: "regular", displayName: "⠀i⠀", colour: "white" },
       { type: "regular", displayName: "⠀o⠀", colour: "white" },
       { type: "regular", displayName: "⠀p⠀", colour: "white" },
       { type: "blank" },
@@ -3665,6 +3759,7 @@ const expanded = {
         linkTo: "grammar",
         colour: "grey",
         pronounciation: "space",
+        linkTo:"expanded",
       },
       { type: "blank" },
       { type: "blank" },
@@ -3694,6 +3789,7 @@ const expanded = {
         pastForm: "shaped",
         pluralForm: "shapes",
         colour: "orange",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3703,6 +3799,7 @@ const expanded = {
         pastForm: "sided",
         pluralForm: "sides",
         colour: "red",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3712,6 +3809,7 @@ const expanded = {
         pastForm: "cornered",
         pluralForm: "corners",
         colour: "red",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3719,6 +3817,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/ranges_230_g.svg",
         colour: "blue",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3726,6 +3825,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/shape_135_g.svg",
         colour: "blue",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3733,6 +3833,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ruler_720_g.svg",
         colour: "blue",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3740,6 +3841,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/curved%20line.png",
         colour: "blue",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3747,6 +3849,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Degree-Angle_774_599172.svg",
         colour: "orange",
+        linkTo:"expanded",
       },
       { type: "blank" },
       { type: "blank" },
@@ -3765,6 +3868,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/circle.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3772,6 +3876,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/triangle%20equilateral.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3779,6 +3884,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/square.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3786,6 +3892,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rectangle.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3793,6 +3900,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/pentagon.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3800,6 +3908,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hexagon.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3807,6 +3916,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/octagon.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       { type: "blank" },
       { type: "blank" },
@@ -3817,6 +3927,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sphere_2.png",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3824,6 +3935,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pyramid_2.png",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3831,6 +3943,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bucket_6.png",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3838,6 +3951,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cylinder.png",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3845,6 +3959,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cone_3.png",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -3852,6 +3967,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/prism.png",
         colour: "grey",
+        linkTo:"expanded",
       },
       { type: "blank" },
       { type: "blank" },
@@ -3896,41 +4012,36 @@ const expanded = {
         displayName: "maths",
         iconName: "maths",
         colour: "orange",
+        linkTo:"expanded",
       },
       {
         type: "regular",
         displayName: "⠀0⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀1⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀2⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀3⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀4⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀5⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       { type: "blank" },
@@ -3942,45 +4053,43 @@ const expanded = {
         colour: "orange",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f522.svg",
+          linkTo:"expanded",
       },
       {
         type: "regular",
         displayName: "count",
         iconName: "count",
-        linkTo: "expanded",
         colour: "green",
+        linkTo:"expanded",
       },
       {
         type: "regular",
         displayName: "⠀6⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀7⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀8⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
       {
         type: "regular",
         displayName: "⠀9⠀",
-        linkTo: "expanded",
         colour: "grey",
       },
-      { type: "regular", displayName: "10", colour: "grey" },
+      { type: "regular", displayName: "10", colour: "grey" ,linkTo:"expanded",},
       {
         type: "regular",
         displayName: "hundred",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/twemoji/1f4af.svg",
         colour: "grey",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -4054,6 +4163,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/whole.svg",
         colour: "blue",
+        linkTo:"expanded",
       },
       {
         type: "regular",
@@ -4092,6 +4202,7 @@ const expanded = {
         displayName: "million",
         pluralForm: "millions",
         colour: "grey",
+        linkTo:"expanded",
       },
       { type: "blank" },
       { type: "blank" },
@@ -4664,7 +4775,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "meerkat",
-        iconName: "needs a symbol",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/hamster.svg.varianted-skin.svg",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -5240,6 +5351,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "pigeon",
+        pluralForm:"pigeons",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pigeon_1.png",
         pluralFormPronounciation: "pigeons",
@@ -5418,6 +5530,7 @@ const expanded = {
       {
         type: "regular",
         displayName: "ostrich",
+        pluralForm:"ostriches",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ostrich.png",
         linkTo: "expanded",
@@ -8487,7 +8600,13 @@ const expanded = {
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank" },
+      {
+        type: "regular",
+        displayName: "here",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/here_1.png",
+        linkTo: "expanded",
+        colour: "red",
+      },
       { type: "blank" },
       { type: "blank" },
       {
@@ -8541,11 +8660,18 @@ const expanded = {
       {
         type: "regular",
         displayName: "door",
+        pluralForm:"doors",
         iconName: "door",
         linkTo: "expanded",
         colour: "orange",
       },
-      { type: "blank", colour: "red" },
+      {
+        type: "regular",
+        displayName: "there",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/there.png",
+        linkTo: "expanded",
+        colour: "red",
+      },
       {
         type: "link",
         displayName: "Position",
@@ -11075,7 +11201,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/oven.png",
         pluralForm: "ovens",
-        iconName: "symbol to add",
+        iconLink: "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/oven.png",
         linkTo: "expanded",
         colour: "orange",
       },
