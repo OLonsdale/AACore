@@ -63,6 +63,8 @@ body.dark {
 .searchIcon {
   width: 70px;
   height: 70px;
+  pointer-events: none;
+  /* stops dragging icons and prevents my hover-zoom activating */
 }
 
 

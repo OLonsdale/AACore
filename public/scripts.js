@@ -1,14 +1,34 @@
 "use strict";
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js').then(registration => {
-      console.log('SW registered: ', registration);
-    }).catch(registrationError => {
-      console.log('SW registration failed: ', registrationError);
-    });
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((registration) => {
+        console.log("SW registered: ", registration);
+      })
+      .catch((registrationError) => {
+        console.log("SW registration failed: ", registrationError);
+      });
   });
 }
+
+function clearSW() {
+  self.registration
+    .unregister()
+    .then(function () {
+      return self.clients.matchAll();
+    })
+    .then(function (clients) {
+      clients.forEach((client) => client.navigate(client.url));
+    });
+}
+document.getElementById("clearSWButton").addEventListener("click", () => {
+  console.log("clear sw button clicked")
+  if(confirm("Clear service worker (if you don't know what this means, click \"cancel\")")){
+    clearSW()
+  }
+})
 
 import { expanded } from "./board-sets/expanded.js";
 import { initial } from "./board-sets/initial.js";
@@ -463,6 +483,14 @@ function showEditTileSidebar() {
       linkToInput.append(option);
     }
   }
+
+  Array.from(colourSelectButtons.children).forEach((button) => {
+    button.addEventListener("click", () => {
+      console.log(button.value);
+      colourInput.value = button.value;
+    });
+  });
+
   const board = boards[localStorage.getItem("currentBoardName")];
   linkToInput.value = board.tiles[selectedTileNumber.value].linkTo;
 }
@@ -674,7 +702,7 @@ clearCurrentTileButton.addEventListener("click", clearCurrentTile);
 
 function clearCurrentTile() {
   displayNameInput.value = "";
-  tileTypeInput.value = "";
+  tileTypeInput.value = "blank";
   iconLinkInput.value = "";
   pronounciationInput.value = "";
   pastInput.value = "";
@@ -699,7 +727,7 @@ function editTile() {
 
   const board = boards[localStorage.getItem("currentBoardName")];
   const selectedTile = board.tiles[selectedTileNumber.value];
-  selectedTile.displayName = displayNameInput.value
+  selectedTile.displayName = displayNameInput.value;
   selectedTile.pronounciation = pronounciationInput.value;
   selectedTile.type = tileTypeInput.value;
   selectedTile.iconLink = iconLinkInput.value;
