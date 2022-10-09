@@ -6381,11 +6381,12 @@ const expanded = {
         type: "regular",
         displayName: "ill",
         iconName: "ill",
-        colour: "green",
+        colour: "blue",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/become%20ill_3.png.varianted-skin.png",
         linkTo: "expanded",
       },
+      { type: "blank" },
       {
         type: "regular",
         displayName: "nappy",
@@ -6394,7 +6395,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "regular",
         displayName: "clothes",
@@ -6456,6 +6456,7 @@ const expanded = {
         colour: "green",
         linkTo: "expanded",
       },
+      { type: "blank" },
       {
         type: "regular",
         displayName: "coat",
@@ -6464,7 +6465,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "regular",
         displayName: "wear",
@@ -6523,6 +6523,7 @@ const expanded = {
         colour: "green",
         linkTo: "expanded",
       },
+      { type: "blank" },
       {
         type: "regular",
         displayName: "hat",
@@ -6533,7 +6534,6 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hat.png",
       },
-      { type: "blank" },
       {
         type: "regular",
         displayName: "shirt",
@@ -6583,6 +6583,7 @@ const expanded = {
         colour: "green",
         linkTo: "expanded",
       },
+      { type: "blank" },
       {
         type: "regular",
         displayName: "pants",
@@ -6590,7 +6591,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "regular",
         displayName: "trousers",
@@ -6634,6 +6634,7 @@ const expanded = {
         colour: "green",
         linkTo: "expanded",
       },
+      { type: "blank" },
       {
         type: "regular",
         displayName: "shoe",
@@ -6642,7 +6643,6 @@ const expanded = {
         colour: "orange",
         linkTo: "expanded",
       },
-      { type: "blank" },
       {
         type: "regular",
         displayName: "sock",
@@ -6843,6 +6843,8 @@ const expanded = {
         displayName: "arm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/arm.png.varianted-skin.png",
+        pluralForm: "arms",
+        pastForm: "armed",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7109,7 +7111,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20lick_2.png",
         pastForm: "licked",
-        pluralForm: "licking",
+        pluralForm: "licks",
         linkTo: "expanded",
         colour: "green",
       },
@@ -7452,6 +7454,7 @@ const expanded = {
         displayName: "problem",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/problem.jpg",
+        pluralForm: "problems"
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7470,6 +7473,7 @@ const expanded = {
         displayName: "infection",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/sick_35_161101.svg",
+        pluralForm: "infections",
         linkTo: "expanded",
         colour: "blue",
       },
@@ -7478,6 +7482,8 @@ const expanded = {
         displayName: "bump",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bump%20on%20the%20head.png.varianted-skin.png",
+        pluralForm: "bumps",
+        pastForm: "bumped",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7486,6 +7492,8 @@ const expanded = {
         displayName: "injury",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/injury.png.varianted-skin.png",
+        pluralForm: "injuries",
+        pastForm: "injured",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7502,6 +7510,7 @@ const expanded = {
         displayName: "sore",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/throat%20ache_1.png.variant-medium-light.png",
+        pluralForm: "sores",
         linkTo: "expanded",
         colour: "blue",
       },
@@ -7518,6 +7527,7 @@ const expanded = {
         displayName: "rash",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rash.png.varianted-skin.png",
+        pluralForm: "rashes",
         linkTo: "expanded",
         colour: "blue",
       },
@@ -7564,6 +7574,8 @@ const expanded = {
         displayName: "fever",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fever.png.varianted-skin.png",
+        pluralForm: "fevers",
+        pastForm: "fevered",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7606,6 +7618,7 @@ const expanded = {
         displayName: "disease",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/illnesses.png.varianted-skin.png",
+        pluralForm: "diseases",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7630,6 +7643,7 @@ const expanded = {
         displayName: "seizure",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/seizure.svg.varianted-skin.svg",
+        pluralForm: "seizures",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7655,6 +7669,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/acne%20spots.svg.varianted-skin.svg",
         pluralForm: "spots",
+        pastForm: "spotted",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7663,6 +7678,7 @@ const expanded = {
         displayName: "lump",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lump.svg.varianted-skin.svg",
+        pluralForm: "lumps",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7700,6 +7716,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sting%20bee.svg.varianted-skin.svg",
         pastForm: "stung",
+        pluralForm: "stings",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7716,6 +7733,7 @@ const expanded = {
         displayName: "allergy",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/allergy.png.varianted-skin.png",
+        pluralForm: "allergies",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7762,6 +7780,7 @@ const expanded = {
         displayName: "operation",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/operation.svg.varianted-skin.svg",
+        pluralForm: "operations",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7780,6 +7799,7 @@ const expanded = {
         displayName: "inhaler",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/inhaler.png",
+        pluralForm: "inhalers",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7788,6 +7808,7 @@ const expanded = {
         displayName: "medicine",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/medicine.png",
+        pluralForm: "medicines",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7804,6 +7825,7 @@ const expanded = {
         displayName: "ointment",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ointment.png",
+        pluralForm: "ointments",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7832,6 +7854,7 @@ const expanded = {
         displayName: "prescription",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20prescribe.png.variant-medium-dark.png",
+        pluralForm: "prescriptions",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7849,6 +7872,7 @@ const expanded = {
         displayName: "test",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/test%20tube.svg",
+        pluralForm: "tests",
         linkTo: "expanded",
         colour: "green",
       },
@@ -7906,6 +7930,7 @@ const expanded = {
         displayName: "dressing gown",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bathrobe.png",
+        pluralForm: "dressing gowns",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -7969,6 +7994,7 @@ const expanded = {
         displayName: "polo",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/polo%20neck.png",
+        pluralForm: "polos",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8346,6 +8372,7 @@ const expanded = {
         type: "regular",
         displayName: "home",
         iconName: "home",
+        pluralForm: "homes",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8353,6 +8380,7 @@ const expanded = {
         type: "regular",
         displayName: "school",
         iconName: "school",
+        pluralForm: "schools",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8360,6 +8388,7 @@ const expanded = {
         type: "regular",
         displayName: "garden",
         iconName: "garden",
+        pluralForm: "gardens",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8402,6 +8431,7 @@ const expanded = {
         type: "regular",
         displayName: "kitchen",
         iconName: "kitchen",
+        pluralForm: "kitchens",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8409,6 +8439,7 @@ const expanded = {
         type: "regular",
         displayName: "bedroom",
         iconName: "bedroom",
+        pluralForm: "bedrooms",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8416,6 +8447,7 @@ const expanded = {
         type: "regular",
         displayName: "classroom",
         iconName: "classroom",
+        pluralForm: "classrooms",
         linkTo: "expanded",
         colour: "red",
         iconLink:
@@ -8452,6 +8484,7 @@ const expanded = {
         type: "regular",
         displayName: "bed",
         iconName: "bed",
+        pluralForm: "beds",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8470,6 +8503,7 @@ const expanded = {
         displayName: "living room",
         iconName: "living room",
         linkTo: "expanded",
+        pluralForm: "living rooms",
         colour: "red",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/Majlis%20(living%20room%20qatari).jpg",
@@ -8479,6 +8513,7 @@ const expanded = {
         displayName: "bathroom",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bathroom_4.png",
+        pluralForm: "bathrooms",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8487,6 +8522,7 @@ const expanded = {
         displayName: "toilet",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/toilet%20bowl.png",
+        pluralForm: "toilets",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8545,6 +8581,7 @@ const expanded = {
         displayName: "dining room",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dining%20room_1.png",
+        pluralForm: "dining rooms",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8553,6 +8590,7 @@ const expanded = {
         displayName: "soft play room",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ball%20pool.png",
+        pluralForm: "soft play rooms",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8561,6 +8599,7 @@ const expanded = {
         displayName: "sensory room",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sensory%20room.svg",
+        pluralForm: "sensory rooms",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8597,6 +8636,7 @@ const expanded = {
         type: "regular",
         displayName: "window",
         iconName: "window",
+        pluralForm: "windows",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8614,6 +8654,7 @@ const expanded = {
         displayName: "pool",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/swimming%20pool.png",
+        pluralForm: "pools",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8622,6 +8663,8 @@ const expanded = {
         displayName: "park",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/countryside_1.png",
+        pastForm: "parked",
+        pluralForm: "parks",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8630,6 +8673,7 @@ const expanded = {
         displayName: "corridor",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/corridor.png",
+        pluralForm: "corridors",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8647,6 +8691,7 @@ const expanded = {
         type: "regular",
         displayName: "shower",
         iconName: "shower",
+        pluralForm: "showers",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8696,6 +8741,7 @@ const expanded = {
         displayName: "restaurant",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/restaurant.png",
+        pluralForm: "restaurants",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8704,6 +8750,7 @@ const expanded = {
         displayName: "street",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/street.png",
+        pluralForm: "streets",
         linkTo: "expanded",
         colour: "red",
       },
@@ -8712,6 +8759,8 @@ const expanded = {
         displayName: "sink",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/adapted%20wash%20basin.png",
+        pluralForm: "sinks",
+        pastForm: "sank",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8719,6 +8768,7 @@ const expanded = {
         type: "regular",
         displayName: "chair",
         iconName: "chair",
+        pluralForm: "chairs",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8726,6 +8776,7 @@ const expanded = {
         type: "regular",
         displayName: "table",
         iconName: "table",
+        pluralForm: "tables",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8788,6 +8839,8 @@ const expanded = {
         displayName: "ice",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice.png",
+        pluralForm: "ices",
+        pastForm: "iced",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8857,6 +8910,7 @@ const expanded = {
         displayName: "storm",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/thunder%20storm.svg",
+        pluralForm: "storms",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8873,6 +8927,7 @@ const expanded = {
         displayName: "wind",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hail.png",
+        pluralForm: "winds",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8881,6 +8936,7 @@ const expanded = {
         displayName: "sun",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sun.png",
+        pluralForm: "suns",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8889,6 +8945,7 @@ const expanded = {
         displayName: "cloud",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cloud.png",
+        pluralForm: "clouds",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8897,6 +8954,7 @@ const expanded = {
         displayName: "rain",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to%20rain.png",
+        pluralForm: "rains",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8905,6 +8963,7 @@ const expanded = {
         displayName: "snow",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Snowflake_810_g.svg",
+        pluralForm: "snows",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8932,6 +8991,7 @@ const expanded = {
         displayName: "hurricane",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hurricane.png",
+        pluralForm: "hurricanes",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8942,6 +9002,7 @@ const expanded = {
         displayName: "sun cream",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cream_1.png",
+        pluralForm: "sun creams",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8960,6 +9021,7 @@ const expanded = {
         displayName: "snowball",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snow%20ball.png",
+        pluralForm: "snowballs",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8986,6 +9048,7 @@ const expanded = {
         displayName: "snowman",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snowman.png",
+        pluralForm: "snowmen",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -8997,6 +9060,7 @@ const expanded = {
         displayName: "melt",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/melt.png",
+        pluralForm: "melts",
         linkTo: "expanded",
         colour: "green",
       },
@@ -9055,6 +9119,7 @@ const expanded = {
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/park_1.png",
         pastForm: "parked",
+        pluralForm: "parks",
         linkTo: "expanded",
         colour: "green",
       },
@@ -9133,6 +9198,7 @@ const expanded = {
         displayName: "fire fighter",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/fireman.png.varianted-skin.png",
+        pluralForm: "fire fighters",
         linkTo: "expanded",
         colour: "yellow",
       },
@@ -9141,6 +9207,7 @@ const expanded = {
         displayName: "hospital",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hospital.png",
+        pluralForm: "hospitals",
         linkTo: "expanded",
         colour: "red",
       },
@@ -9149,6 +9216,7 @@ const expanded = {
         displayName: "health centre",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/surgery%20health%20centre.svg",
+        pluralForm: "health centres",
         linkTo: "expanded",
         colour: "red",
       },
@@ -9166,6 +9234,7 @@ const expanded = {
         displayName: "nurse",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/RGN%20(Registered%20General%20Nurse)_2.png.varianted-skin.png",
+        pluralForm: "nurses",
         linkTo: "expanded",
         colour: "yellow",
       },
@@ -9174,6 +9243,7 @@ const expanded = {
         displayName: "crossing",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/zebra%20crossing.png",
+        pluralForm: "crossings",
         linkTo: "expanded",
         colour: "red",
       },
@@ -9191,6 +9261,7 @@ const expanded = {
         displayName: "sign",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/road-sign_85_g.svg",
+        pluralForm: "signs",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -9208,6 +9279,7 @@ const expanded = {
         displayName: "post office",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/postal%20service_1.png",
+        pluralForm: "post offices",
         linkTo: "expanded",
         colour: "red",
       },
@@ -9216,6 +9288,7 @@ const expanded = {
         displayName: "post box",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/post-box.png",
+        pluralForm: "post boxes",
         linkTo: "expanded",
         colour: "orange",
       },
@@ -9234,6 +9307,7 @@ const expanded = {
         displayName: "farmer",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/farmer.png.variant-dark.png",
+        pluralForm: "farmers",
         linkTo: "expanded",
         colour: "yellow",
       },
@@ -9269,6 +9343,7 @@ const expanded = {
         displayName: "train station",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/train%20station.png",
+        pluralForm: "train stations",
         linkTo: "expanded",
         colour: "red",
       },
@@ -9287,6 +9362,7 @@ const expanded = {
         displayName: "plumber",
         iconLink:
           "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/plumber.png.varianted-skin.png",
+        pluralForm: "plumbers",
         linkTo: "expanded",
         colour: "yellow",
       },
