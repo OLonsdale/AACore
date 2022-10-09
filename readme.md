@@ -1,7 +1,5 @@
 # An Open Source Augmentative and Alternative Communication Web App
 
-![v](https://github.com/lonsdale1086/AACorePlain/blob/beta/public/resouces/screenshot.png)
-
 ## The Site
 
 AACore is a free and open-source progressive web app for Augmentative and Alternative Communication.

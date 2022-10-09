@@ -1,6 +1,5 @@
 /.firebase
-/.firebaserc
-/firebase.json
 /node_modules
 firebase.js
 icons-png
+/.vscode
